@@ -1,3 +1,26 @@
 {
-  "events": []
+  "events": [
+    {
+      "id": "computing-career-ready-2026-10-19",
+      "reviewed": true,
+      "title": "Career-Ready Night",
+      "society": "Computing Society",
+      "starts_at": "2026-10-19T18:00:00+01:00",
+      "ends_at": "2026-10-19T20:00:00+01:00",
+      "location": "TLC113",
+      "food": "Free pizza",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "source_url": "https://www.instagram.com/p/DejspkriikV/",
+      "source_label": "Computing Society Instagram - caption and poster reviewed",
+      "description": "A career panel and Q&A, with professional headshots and free pizza. Entry cost and registration requirements are not stated; check the original organiser post.",
+      "verified_at": "2026-10-17T11:59:53.363632Z",
+      "post_published_at": "2026-10-16T14:00:11Z",
+      "verification_notes": "Caption explicitly promises free pizza and says Monday. Original poster states 19 October, 6pm to 8pm, TLC113. Year 2026 follows the original 16 October 2026 publication and matching weekday."
+    }
+  ]
 }

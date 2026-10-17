@@ -1,3 +1,20 @@
 {
-  "accounts": []
+  "accounts": [
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7857/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/palatinate/",
+      "evidence_url": "https://www.palatinate.org.uk/",
+      "verified_at": "2026-10-17T11:59:53.363632Z",
+      "reviewed": true
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7857/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/palatinateuk/",
+      "evidence_url": "https://www.palatinate.org.uk/",
+      "verified_at": "2026-10-17T11:59:53.363632Z",
+      "reviewed": true
+    }
+  ]
 }

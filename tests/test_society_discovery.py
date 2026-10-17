@@ -176,6 +176,45 @@ class SafeFetchTests(unittest.TestCase):
         self.assertEqual(session.get.call_args.kwargs['timeout'], (5, 10))
         self.assertFalse(session.get.call_args.kwargs['allow_redirects'])
 
+    @patch.object(discovery.socket, 'getaddrinfo', return_value=[(2, 1, 6, '', ('93.184.216.34', 443))])
+    def test_http_200_access_challenges_are_reported_as_unavailable(self, dns):
+        fixtures = [
+            '<html><title>Just a moment...</title><p>Enable JavaScript and cookies to continue.</p></html>',
+            '<main><h1>Verify you are human</h1><div class="g-recaptcha"></div></main>',
+            '<html><p>Checking your browser before accessing this website.</p></html>',
+            '<title>Security check</title><p>Complete the CAPTCHA to proceed.</p>',
+            '<title>Society members</title><h1>Sign in to continue</h1>',
+            '<title>Log in - Society</title><form><input type="password"></form>',
+        ]
+        for html in fixtures:
+            with self.subTest(html=html):
+                response = self._response(chunks=(html.encode(),))
+                session = self._session([response])
+                with patch.object(discovery.requests, 'Session', return_value=session):
+                    with self.assertRaisesRegex(ValueError, 'access unavailable'):
+                        discovery.safe_discovery_fetch('https://soc.example.org/')
+                response.close.assert_called_once()
+
+    @patch.object(discovery.socket, 'getaddrinfo', return_value=[(2, 1, 6, '', ('93.184.216.34', 443))])
+    def test_login_navigation_and_contact_captcha_do_not_hide_public_accounts(self, dns):
+        html = ('<title>Society home</title><nav><h2>Sign in to continue</h2><a href="/login">Login</a></nav>'
+                '<main><h1>Welcome to our society</h1><a href="https://instagram.com/real_society">Instagram</a>'
+                '<form>Member login <input type="password"></form><form class="g-recaptcha">Contact us</form></main>'
+                '<footer>This site is protected by reCAPTCHA. Verify you are human.</footer>'
+                '<script>window.challengeMessage="Just a moment";</script>')
+        session = self._session([self._response(chunks=(html.encode(),))])
+        with patch.object(discovery.requests, 'Session', return_value=session):
+            self.assertEqual(discovery.safe_discovery_fetch('https://soc.example.org/'), html)
+
+    @patch.object(discovery.socket, 'getaddrinfo', return_value=[(2, 1, 6, '', ('93.184.216.34', 443))])
+    def test_challenge_failure_is_distinct_from_successful_missing_links(self, dns):
+        session = self._session([self._response(chunks=(b'<title>Just a moment...</title>',))])
+        with patch.object(discovery.requests, 'Session', return_value=session):
+            result = discovery.discover_accounts('<a href="https://soc.example.org/">Our website</a>', SU, discovery.safe_discovery_fetch)
+        self.assertEqual(result['discovery_status'], 'error')
+        self.assertEqual(result['social_accounts'], [])
+        self.assertIn('access unavailable', result['discovery_errors'][0]['error'])
+
 
 if __name__ == '__main__':
     unittest.main()

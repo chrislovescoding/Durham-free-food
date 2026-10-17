@@ -78,6 +78,34 @@ def _assert_public_dns(url: str) -> None:
         raise ValueError("Website resolves to a private or reserved network address")
 
 
+def _assert_page_accessible(html: str) -> None:
+    """Recognize explicit access interstitials without treating login links as gates."""
+    soup = BeautifulSoup(html, "html.parser")
+    for element in soup.select("script, style, template, [hidden], [aria-hidden='true']"):
+        element.decompose()
+    # Navigation and footer login/CAPTCHA notices do not describe page access.
+    for element in soup.select("nav, footer, aside"):
+        element.decompose()
+    prominent = " ".join(element.get_text(" ", strip=True) for element in soup.select("title, h1, h2"))
+    visible = " ".join(soup.get_text(" ", strip=True).split())
+    challenge = re.compile(
+        r"\b(?:just a moment|verify (?:that )?you(?: are|'re|\u2019re) (?:a )?human|"
+        r"checking your browser|verifying your browser|human verification required|"
+        r"complete (?:the |a )?(?:captcha|security check)|attention required.*cloudflare)\b", re.I)
+    access_gate = re.compile(
+        r"\b(?:sign[ -]?in|log[ -]?in) (?:is required |required |to |before (?:you can )?)"
+        r"(?:continue|access|view|read|proceed)\b", re.I)
+    login_title = re.compile(r"^(?:member |account )?(?:sign[ -]?in|log[ -]?in)(?:\s*[-|:]|$)", re.I)
+    has_password = soup.select_one('form input[type="password"]') is not None
+    title = soup.title.get_text(" ", strip=True) if soup.title else ""
+    # Body-only matching is limited to short interstitials. Longer articles may
+    # legitimately discuss CAPTCHA or authentication while remaining readable.
+    if (challenge.search(prominent) or access_gate.search(prominent)
+            or (len(visible) < 1500 and (challenge.search(visible) or access_gate.search(visible)))
+            or (has_password and login_title.search(title))):
+        raise ValueError("Website access unavailable: public page requires an access challenge or sign-in")
+
+
 def safe_discovery_fetch(url: str) -> str:
     """Fetch <=2 MB of public HTTPS HTML, checking every redirect (at most three).
 
@@ -116,7 +144,9 @@ def safe_discovery_fetch(url: str) -> str:
                     if size > MAX_BYTES or time.monotonic() - started > 25:
                         raise ValueError("Discovery source exceeds its size or time limit")
                     chunks.append(chunk)
-                return b"".join(chunks).decode(response.encoding or "utf-8", errors="replace")
+                html = b"".join(chunks).decode(response.encoding or "utf-8", errors="replace")
+                _assert_page_accessible(html)
+                return html
             finally:
                 response.close()
     raise ValueError("Website redirect limit reached")

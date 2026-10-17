@@ -40,11 +40,13 @@ The frontend checks the public repository's latest `main/dist/data/*.json` data 
 
 The initial crawl found **319 societies** and **77 society profiles with a direct social link** in the [Durham SU directory](https://www.durhamsu.com/groups/studentgroups/). Supported sources include public ICS calendars, JSON-LD event pages and the SU's public Native event listings. The [DAISI site](https://durhamaisafety.uk/) links a public Luma calendar. The [SU Pantry](https://www.durhamsu.com/support/pantry/) is also linked as an ongoing food resource; its opening hours are not invented.
 
-No verified upcoming free-food event was found in the initial source checks on 17 October 2026. An event with free entry or a mention of food is insufficient to assert that the food is free. Ambiguous entries go into a review queue.
+The initial calendar checks found no qualifying upcoming event. Reviewing a collected Instagram caption and its original poster subsequently confirmed **Computing Society’s Career-Ready Night, 19 October 2026, 18:00–20:00, TLC113, with free pizza**. Entry price and signup requirements remain unknown. It is published through the reviewed-event input with the original post link. An event with free entry or a mention of food is insufficient to assert that the food is free.
 
 The expanded crawl on 17 October 2026 discovered accounts for **113 societies** and stored **417 real Instagram posts from 90 societies**. **206 societies still need verified account links**, and no Facebook posts have been collected. These are social posts, not 417 confirmed free-food events.
 
 **Instagram post collection now works without credentials for accounts whose public embeds expose posts.** It collects the society's captions, publication dates and permalinks, not bios, comments or followers. A public embed usually exposes only six recent posts; daily collection retains observed posts for 60 days. It cannot guarantee complete history or catch a post that leaves that window between runs. The public Facebook pages tested did not expose captions; their coverage is marked unavailable rather than reported as an empty successful feed.
+
+The first GitHub-hosted collection test completed successfully but Instagram rate-limited its cloud runner. The collector stopped that platform and retained previously collected posts with their original timestamps. This validates failure handling, not reliable unattended Instagram access.
 
 An official Meta API adapter is included for accounts with authorised access. It has not been connected because no API credentials are configured. See [the social access guide](scripts/README-social.md) for repository secrets, account mapping and the difference between public professional Instagram accounts and Facebook Page permissions. No password, session cookie or access token belongs in the source repository.
 
