@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T11:45:15.076711Z",
+  "updated_at": "2026-10-17T11:55:16.828474Z",
   "timezone": "Europe/London",
   "events": [],
   "sources": [
@@ -9,9 +9,9 @@
       "url": "https://durhamsu.native.fm/events",
       "label": "Durham SU Â· What's On",
       "name": "Durham SU Â· What's On",
-      "last_attempt_at": "2026-10-17T11:45:15.076711Z",
+      "last_attempt_at": "2026-10-17T11:55:16.828474Z",
       "status": "ok",
-      "last_success_at": "2026-10-17T11:45:15.076711Z",
+      "last_success_at": "2026-10-17T11:55:16.828474Z",
       "events_seen": 55,
       "parsed_count": 55,
       "eligible_count": 0,
@@ -25,9 +25,9 @@
       "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
       "label": "DAISI Â· Luma calendar",
       "name": "DAISI Â· Luma calendar",
-      "last_attempt_at": "2026-10-17T11:45:15.076711Z",
+      "last_attempt_at": "2026-10-17T11:55:16.828474Z",
       "status": "ok",
-      "last_success_at": "2026-10-17T11:45:15.076711Z",
+      "last_success_at": "2026-10-17T11:55:16.828474Z",
       "events_seen": 31,
       "parsed_count": 31,
       "eligible_count": 6,
@@ -41,15 +41,15 @@
       "url": "https://www.durhamsu.com/groups/studentgroups/",
       "label": "Durham Students' Union",
       "name": "Durham Students' Union",
-      "last_attempt_at": "2026-10-17T11:52:23.011177Z",
+      "last_attempt_at": "2026-10-17T11:55:16.828474Z",
       "status": "partial",
-      "last_success_at": "2026-10-17T11:52:23.011177Z",
+      "last_success_at": "2026-10-17T11:55:16.828474Z",
       "society_count": 319,
       "parsed_count": 319,
       "profiles_failed": 0,
       "profile_errors": [],
-      "societies_with_accounts": 113,
-      "discovery_partial": 3
+      "societies_with_accounts": 112,
+      "discovery_partial": 5
     },
     {
       "id": "social-instagram",
@@ -57,11 +57,11 @@
       "name": "Instagram society posts",
       "url": "https://www.instagram.com/",
       "status": "partial",
-      "parsed_count": 417,
-      "account_count": 113,
-      "accounts_checked": 113,
-      "accounts_with_posts": 90,
-      "last_attempt_at": "2026-10-17T11:45:15.076711Z",
+      "parsed_count": 411,
+      "account_count": 112,
+      "accounts_checked": 1,
+      "accounts_with_posts": 0,
+      "last_attempt_at": "2026-10-17T11:55:16.828474Z",
       "last_success_at": "2026-10-17T11:45:15.076711Z"
     },
     {
@@ -72,9 +72,9 @@
       "status": "unavailable",
       "parsed_count": 0,
       "account_count": 30,
-      "accounts_checked": 19,
+      "accounts_checked": 18,
       "accounts_with_posts": 0,
-      "last_attempt_at": "2026-10-17T11:45:15.076711Z",
+      "last_attempt_at": "2026-10-17T11:55:16.828474Z",
       "last_success_at": null
     }
   ],
@@ -93,16 +93,16 @@
     "social_ingestion": "Public Instagram/Facebook posts are collected where exposed; full-directory coverage and account access status are in social-posts.json.",
     "society_count": 319,
     "directory_status": "partial",
-    "social_post_count": 417,
-    "social_account_count": 143,
+    "social_post_count": 411,
+    "social_account_count": 142,
     "society_coverage": {
       "total_societies": 319,
-      "societies_with_accounts": 113,
-      "societies_with_recent_posts": 90,
-      "societies_needing_accounts": 206,
+      "societies_with_accounts": 112,
+      "societies_with_recent_posts": 89,
+      "societies_needing_accounts": 207,
       "societies_needing_attention": 23,
       "societies_stale": 0,
-      "post_count": 417
+      "post_count": 411
     }
   }
 }
