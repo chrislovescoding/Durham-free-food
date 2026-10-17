@@ -96,11 +96,15 @@ function play() {
     const rest = mascot.getBoundingClientRect();
     const home = point(rest, bounds), width = rest.width, height = rest.height;
     const moveTo = (x, y, scale = 1) => `translate(${x - home.x}px, ${y - home.y}px) scale(${scale})`;
-    const mobile = bounds.width < 660;
+    const mobile = matchMedia('(max-width: 700px)').matches;
+    const pace = 1.55;
+    const sequence = (element, frames, options) => animate(element, frames, {
+      ...options, delay: (options.delay || 0) * pace, duration: options.duration * pace,
+    });
     let cursor = 220, previous = { x: -width, y: 35 };
-    const path = [{ offset: 0, transform: moveTo(previous.x, previous.y, .82), opacity: 0 }];
-    const total = 5350;
-    const add = (time, x, y, scale = 1, opacity = 1) => path.push({ offset: time / total, transform: moveTo(x,y,scale), opacity });
+    const path = [{ at: 0, transform: moveTo(previous.x, previous.y, .82), opacity: 0 }];
+    const addAt = (at, x, y, scale = 1, opacity = 1) => path.push({ at, transform: moveTo(x,y,scale), opacity });
+    const add = (time, ...position) => addAt(time * pace, ...position);
     for (const [index, phrase] of phrases.entries()) {
       const box = phrase.before.getBoundingClientRect(), position = point(box, bounds);
       // Mirrored logo: the lower bite faces forward; the upper bite trails.
@@ -116,7 +120,7 @@ function play() {
       add(arrive + chew + 210, endX + 12, y - 5, 1.025);
       phrase.inLetters.forEach((letter, i, letters) => {
         const fraction = letters.length === 1 ? 1 : i / (letters.length - 1);
-        animate(letter, [
+        sequence(letter, [
           { transform: 'translate(0,0) rotate(0) scale(1)', opacity: 1 },
           { transform: 'translate(-3px,-4px) rotate(-8deg) scale(1.08)', opacity: 1, offset: .35 },
           { transform: 'translate(-8px,3px) rotate(12deg) scale(.08)', opacity: 0 },
@@ -128,14 +132,14 @@ function play() {
         const originX = startX + Math.min(1, (200 + fraction * 540) / chew) * (endX - startX) + width * .24;
         const originY = y + height * .18;
         const dx = originX - targetPoint.x - target.width / 2, dy = originY - targetPoint.y - target.height / 2;
-        animate(letter, [
+        sequence(letter, [
           { transform: `translate(${dx}px,${dy}px) rotate(-25deg) scale(.08)`, opacity: 0 },
           { transform: `translate(${dx * .78}px,${dy - 23}px) rotate(-12deg) scale(.5)`, opacity: 1, offset: .25 },
           { transform: 'translate(0,-5px) rotate(2deg) scale(1.06)', opacity: 1, offset: .76 },
           { transform: 'translate(0,0) rotate(0) scale(1)', opacity: 1 },
         ], { delay: emit + fraction * 540, duration: 490, easing: 'cubic-bezier(.2,.7,.3,1)' });
       });
-      animate(body, [
+      sequence(body, [
         { transform: 'scale(1,1) rotate(0)' },
         { transform: 'scale(1.09,.92) rotate(-5deg)', offset: .2 },
         { transform: 'scale(.94,1.06) rotate(3deg)', offset: .5 },
@@ -144,31 +148,62 @@ function play() {
       ], { delay: arrive, duration: chew, fill: 'none', iterations: 1 });
       // The lower lobe is the real jaw, split at the neck in the source SVG.
       // Negative rotation lowers its front while the right-hand hinge stays put.
-      animate(jaw, [
+      sequence(jaw, [
         { transform: 'rotate(0deg)' },
         { transform: 'rotate(-14deg)', offset: .42 },
         { transform: 'rotate(-11deg)', offset: .58 },
         { transform: 'rotate(0deg)' },
       ], { delay: arrive, duration: 210, iterations: 3, fill: 'none', easing: 'ease-in-out' });
-      crumbs.forEach((crumb, i) => animate(crumb, [
+      crumbs.forEach((crumb, i) => sequence(crumb, [
         { transform: `translate(${endX + width * .73}px,${y + height * .7}px) scale(.2)`, opacity: 0 },
         { transform: `translate(${endX + width * .73 + 11 + i * 6}px,${y + height * .7 - 19 - i * 8}px) scale(1)`, opacity: .85, offset: .35 },
         { transform: `translate(${endX + width * .73 + 25 + i * 5}px,${y + height * .7 + 22}px) scale(0)`, opacity: 0 },
       ], { delay: arrive + chew - 120 + i * 45, duration: 400, fill: 'none' }));
       cursor = arrive + 1050; previous = { x: endX + 12, y: y - 5 };
     }
-    // The last movement is a turn back to the supplied logo's orientation.
-    add(cursor + 280, home.x - 5, home.y - 8, 1.035);
-    add(total - 180, home.x, home.y + 4, .98);
-    add(total, home.x, home.y);
-    const travel = animate(mascot, path, { duration: total, easing: 'linear' });
+    // Let the last letters arrive, crouch, then take a proper ballistic hop.
+    // The hop keeps its own brisk timing while the eating runs more slowly.
+    const jumpStart = (cursor + 230) * pace;
+    const takeOff = jumpStart + 140, flight = 620, landing = takeOff + flight;
+    const total = landing + 380;
+    const arc = Math.min(120, height * .7, Math.min(previous.y, home.y) + 48);
+    addAt(jumpStart, previous.x, previous.y);
+    addAt(takeOff, previous.x, previous.y);
+    for (let step = 1; step <= 24; step++) {
+      const t = step / 24;
+      addAt(takeOff + flight * t,
+        previous.x + (home.x - previous.x) * t,
+        previous.y + (home.y - previous.y) * t - 4 * arc * t * (1 - t));
+    }
+    addAt(landing + 60, home.x, home.y);
+    for (let step = 1; step <= 12; step++) {
+      const t = step / 12;
+      addAt(landing + 60 + 200 * t, home.x, home.y - 4 * 14 * t * (1 - t));
+    }
+    addAt(total, home.x, home.y);
+    const travel = animate(mascot, path.map(({ at, ...frame }) => ({ ...frame, offset: at / total })), { duration: total, easing: 'linear' });
+    const spring = [
+      [0, 'scale(1,1)'],
+      [140, 'scale(1.13,.82)'],
+      [195, 'scale(.9,1.13)'],
+      [650, 'scale(.97,1.04)'],
+      [760, 'scale(1.02,.98)'],
+      [805, 'scale(1.24,.74)'],
+      [870, 'scale(.95,1.08)'],
+      [1020, 'scale(1.06,.95)'],
+      [1140, 'scale(1,1)'],
+    ];
+    animate(body, spring.map(([time, transform]) => ({
+      offset: time / 1140, transform, transformOrigin: '50% 100%', easing: 'ease-in-out',
+    })), { delay: jumpStart, duration: 1140, fill: 'none' });
     animate(facing, [
       { transform: 'perspective(600px) rotateY(180deg)' },
-      { transform: 'perspective(600px) rotateY(180deg)', offset: (cursor + 40) / total },
-      { transform: 'perspective(600px) rotateY(-12deg)', offset: (total - 220) / total },
+      { transform: 'perspective(600px) rotateY(180deg)', offset: takeOff / total, easing: 'ease-in-out' },
+      { transform: 'perspective(600px) rotateY(-12deg)', offset: (landing - 90) / total },
+      { transform: 'perspective(600px) rotateY(0)', offset: landing / total },
       { transform: 'perspective(600px) rotateY(0)' },
-    ], { duration: total, easing: 'ease-in-out' });
-    animate(eye, [{ transform: 'scaleY(1)' },{ transform: 'scaleY(.1)', offset: .45 },{ transform: 'scaleY(1)' }], { delay: total - 340, duration: 230, fill: 'none' });
+    ], { duration: total, easing: 'linear' });
+    animate(eye, [{ transform: 'scaleY(1)' },{ transform: 'scaleY(.1)', offset: .45 },{ transform: 'scaleY(1)' }], { delay: total - 250, duration: 200, fill: 'none' });
     travel.finished.then(() => { if (generation === run) finish(); }).catch(() => {});
   } catch { finish(); }
 }
