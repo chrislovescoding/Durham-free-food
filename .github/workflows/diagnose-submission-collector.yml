@@ -1,0 +1,22 @@
+name: Diagnose submission collector (no paid runs)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'requests>=2.32,<3' 'Pillow>=11,<13' 'tzdata>=2025.1'
+      - name: Read metadata and existing runs, validate input without starting an actor
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python scripts/diagnose_submission_collector.py

@@ -4,12 +4,13 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import Mock
 
 from PIL import Image
 
 from scripts.ai_posts import APIError
 from scripts.process_suggestions import (Processor, Deferred, QueueError, canonical_source,
-    artifact_safe, normalize_post, ReviewRequired, DirectPostClient, CompletionRejected, CAP)
+    artifact_safe, normalize_post, ReviewRequired, DirectPostClient, CompletionRejected, ApifyHTTPError, CAP)
 
 NOW = datetime(2026, 10, 17, 12, tzinfo=timezone.utc)
 SOURCE = 'https://www.instagram.com/p/TestPost/'
@@ -260,6 +261,33 @@ class SubmissionProcessorTests(unittest.TestCase):
         self.assertIsNone(canonical_source('https://www.instagram.com/reels/TestPost/'))
         self.assertIsNone(canonical_source('https://instagram.com.evil.test/p/TestPost/'))
         self.assertIsNone(canonical_source('https://user:secret@instagram.com/p/TestPost/'))
+
+    def test_apify_secret_whitespace_is_trimmed_before_request_headers(self):
+        session = Mock()
+        response = Mock(status_code=201)
+        response.iter_content.return_value = [json.dumps({'data': {'id': 'run123'}}).encode()]
+        session.request.return_value = response
+        client = DirectPostClient('  test-token\r\n', session=session)
+        client.start(SOURCE, '2026-09-17T12:00:00+00:00')
+        kwargs = session.request.call_args.kwargs
+        self.assertEqual(kwargs['headers']['Authorization'], 'Bearer test-token')
+        self.assertEqual(kwargs['json']['onlyPostsNewerThan'], '2026-09-17T12:00:00Z')
+        self.assertEqual(kwargs['params']['maxTotalChargeUsd'], 0.05)
+        self.assertNotIn('maxItems', kwargs['params'])
+
+    def test_confirmed_apify_error_keeps_status_type_without_raw_message(self):
+        session = Mock()
+        response = Mock(status_code=400)
+        response.iter_content.return_value = [json.dumps({'error': {
+            'type': 'invalid-input', 'message': 'Do not expose this raw response'}}).encode()]
+        session.request.return_value = response
+        client = DirectPostClient('test-token', session=session)
+        with self.assertRaises(ApifyHTTPError) as raised:
+            client.start(SOURCE, '2026-09-17T12:00:00Z')
+        self.assertEqual(raised.exception.status, 400)
+        self.assertEqual(raised.exception.error_type, 'invalid-input')
+        self.assertNotIn('raw response', str(raised.exception))
+        self.assertEqual(session.request.call_count, 1)
 
 
 if __name__ == '__main__':

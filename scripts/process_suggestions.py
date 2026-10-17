@@ -66,6 +66,12 @@ class Deferred(RuntimeError):
     pass
 
 
+class ApifyHTTPError(ReviewRequired):
+    def __init__(self, status, error_type):
+        self.status, self.error_type = status, error_type
+        super().__init__(f'Instagram collection was rejected (HTTP {status}, {error_type}); no automatic retry.')
+
+
 def canonical_source(value):
     if not isinstance(value, str) or len(value) > 2048 or '\\' in value:
         return None
@@ -109,9 +115,9 @@ def artifact_safe(value):
     return value
 
 
-def bounded_json(response, maximum=2 * 1024 * 1024):
+def bounded_json(response, maximum=2 * 1024 * 1024, *, allow_http_error=False):
     try:
-        if not 200 <= response.status_code < 300:
+        if not allow_http_error and not 200 <= response.status_code < 300:
             raise ValueError()
         body = bytearray()
         for chunk in response.iter_content(65536):
@@ -156,9 +162,9 @@ class QueueClient:
 
 class DirectPostClient:
     def __init__(self, token, session=None):
-        if not token:
+        if not isinstance(token, str) or not token.strip():
             raise ReviewRequired('Instagram collection is not configured.')
-        self.token = token
+        self.token = token.strip()
         self.session = session or requests.Session()
         self.session.trust_env = False
 
@@ -167,18 +173,34 @@ class DirectPostClient:
             response = self.session.request(method, 'https://api.apify.com/v2' + path,
                 headers={'Authorization': 'Bearer ' + self.token}, json=body, params=params,
                 timeout=(15, 55), allow_redirects=False, stream=True)
-            result = bounded_json(response)
+            status = response.status_code
+            result = bounded_json(response, allow_http_error=True)
             if self.token in json.dumps(result):
                 raise ValueError()
+            if not 200 <= status < 300:
+                raw = result.get('error', {}).get('type') if isinstance(result, dict) else None
+                code = raw if isinstance(raw, str) and re.fullmatch(r'[a-z0-9-]{1,100}', raw) else 'unclassified-error'
+                # Status and machine error type are safe; never expose error
+                # messages, response bodies or signed request URLs in logs.
+                print(f'Apify {method}: HTTP {status} ({code}).', flush=True)
+                if 400 <= status < 500:
+                    raise ApifyHTTPError(status, code)
+                raise Deferred(f'Instagram collection HTTP {status}; outcome needs reconciliation.')
             return result
-        except (requests.RequestException, ValueError):
+        except requests.RequestException as error:
+            print('Apify transport failure: ' + type(error).__name__ + '.', flush=True)
+            raise Deferred('Instagram collection response was not confirmed.') from None
+        except ValueError:
+            print('Apify returned invalid or unsafe JSON.', flush=True)
             raise Deferred('Instagram collection response was not confirmed.') from None
 
     def start(self, source, cutoff):
         return self.request('POST', f'/actors/{ACTOR}/runs', body={
             'directUrls': [source], 'resultsType': 'posts', 'resultsLimit': 1,
-            'onlyPostsNewerThan': cutoff}, params={
-            'maxTotalChargeUsd': CAP, 'maxItems': 1, 'restartOnError': 'false', 'timeout': 600})['data']
+            'onlyPostsNewerThan': timestamp(cutoff).astimezone(timezone.utc).isoformat().replace('+00:00', 'Z')}, params={
+            # maxItems applies only to pay-per-result actors; this actor now
+            # uses pay-per-event pricing. The total USD cap covers that model.
+            'maxTotalChargeUsd': CAP, 'restartOnError': 'false', 'timeout': 600})['data']
 
     def run(self, identity):
         if not isinstance(identity, str) or not re.fullmatch(r'[A-Za-z0-9]{1,100}', identity):
@@ -360,6 +382,10 @@ class Processor:
                     save()
                     try:
                         run = self.apify.start(source, apify['cutoff'])
+                    except ApifyHTTPError as error:
+                        apify.update(phase='start_rejected', http_status=error.status, error_type=error.error_type)
+                        save()
+                        raise
                     except (Deferred, KeyError, TypeError):
                         raise ReviewRequired('Instagram collection start was unconfirmed; no replacement paid run was started.') from None
                     apify['run_id'] = run.get('id')
