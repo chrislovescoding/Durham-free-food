@@ -2161,5 +2161,16 @@
         "Durham Wrestling Society facebook"
       ]
     }
-  ]
+  ],
+  "collection_check": {
+    "attempt_started_at": "2026-10-17T12:40:13.285104Z",
+    "configured_accounts": 444,
+    "supported_accounts_checked": 405,
+    "login_required": 290,
+    "no_public_posts": 115,
+    "unsupported_group_references": 39,
+    "new_posts_observed": 0,
+    "previous_posts_retained": 417,
+    "registry_errors": 0
+  }
 }

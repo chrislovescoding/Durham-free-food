@@ -84,3 +84,5 @@ tests/                     Date, feed and parser regression checks
 ```
 
 The frontend is ordinary HTML, CSS and JavaScript, so it can be hosted on any static host.
+
+The post-expansion live collection run on 17 October checked 405 configured public profiles/Pages: 290 redirected to login and 115 exposed no owned post captions. Another 39 configured references were unsupported groups and were not fetched. No new posts were observed; the 417 earlier Instagram posts were retained with their original observation times. This is an account-discovery improvement, not proof of reliable social-platform access.
