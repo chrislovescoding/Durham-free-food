@@ -1,0 +1,494 @@
+{
+  "updated_at": "2026-10-17T14:48:21.572537+00:00",
+  "status": "partial",
+  "expected_batches": 29,
+  "completed_batches": 15,
+  "max_charge_usd": 4.1,
+  "sum_batch_caps_usd": 4.06,
+  "run_charge_usd": 2.3058,
+  "returned_items": 854,
+  "accepted_posts": 755,
+  "images_inspected": 1594,
+  "images_failed_or_skipped": 0,
+  "errors": [
+    {
+      "batch_id": "08",
+      "post_id": "social-16956bac5525a4ebe3",
+      "reason": "OpenAI decisions HTTP 413; no automatic retry"
+    },
+    {
+      "batch_id": "11",
+      "post_id": "social-05ebd42d695a1a1f98",
+      "reason": "Post evidence or extraction validation failed"
+    },
+    {
+      "batch_id": "17",
+      "post_id": "social-f33fa659fa8e434950",
+      "reason": "Post evidence or extraction validation failed"
+    },
+    {
+      "batch_id": "18",
+      "post_id": "social-f33fa659fa8e434950",
+      "reason": "Post evidence or extraction validation failed"
+    },
+    {
+      "batch_id": "19",
+      "post_id": "social-50892bf8c660c23dd9",
+      "reason": "OpenAI decisions HTTP 413; no automatic retry"
+    },
+    {
+      "batch_id": "24",
+      "post_id": "social-a6d867014486a533fe",
+      "reason": "Post evidence or extraction validation failed"
+    }
+  ],
+  "batches": [
+    {
+      "id": "01",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "PmaLnoG3d4u2VcziG",
+      "run_charge_usd": 0.11610000000000001,
+      "max_charge_usd": 0.14,
+      "returned_items": 43,
+      "accepted_posts": 43,
+      "ai_posts_merged": 42,
+      "stale_or_missing_ai_post_ids": [
+        "social-3900a56a5fea7a4a42"
+      ],
+      "errors": []
+    },
+    {
+      "id": "02",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "CwZL0exHXsc4JeqUm",
+      "run_charge_usd": 0.10799999999999998,
+      "max_charge_usd": 0.14,
+      "returned_items": 40,
+      "accepted_posts": 40,
+      "ai_posts_merged": 40,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "03",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "bXNJf1XtMuqUgzCWB",
+      "run_charge_usd": 0.059399999999999994,
+      "max_charge_usd": 0.14,
+      "returned_items": 22,
+      "accepted_posts": 19,
+      "ai_posts_merged": 19,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "04",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "yvKNtVQMcvccLbxOK",
+      "run_charge_usd": 0.0783,
+      "max_charge_usd": 0.14,
+      "returned_items": 29,
+      "accepted_posts": 23,
+      "ai_posts_merged": 22,
+      "stale_or_missing_ai_post_ids": [
+        "social-00451664fae8479938"
+      ],
+      "errors": []
+    },
+    {
+      "id": "05",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "o4wIZuJhFkczIqxxr",
+      "run_charge_usd": 0.11069999999999999,
+      "max_charge_usd": 0.14,
+      "returned_items": 41,
+      "accepted_posts": 40,
+      "ai_posts_merged": 39,
+      "stale_or_missing_ai_post_ids": [
+        "social-94d2d1ea8183a01c7d"
+      ],
+      "errors": []
+    },
+    {
+      "id": "06",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "ehaDEq6nOuiYEXHxa",
+      "run_charge_usd": 0.0756,
+      "max_charge_usd": 0.14,
+      "returned_items": 28,
+      "accepted_posts": 24,
+      "ai_posts_merged": 22,
+      "stale_or_missing_ai_post_ids": [
+        "social-b720cbfd57c0f1a0c9",
+        "social-99676733a449015cc8"
+      ],
+      "errors": []
+    },
+    {
+      "id": "07",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "khMIDvymLCaQkZkfO",
+      "run_charge_usd": 0.0567,
+      "max_charge_usd": 0.14,
+      "returned_items": 21,
+      "accepted_posts": 16,
+      "ai_posts_merged": 15,
+      "stale_or_missing_ai_post_ids": [
+        "social-6f8e88a045f1a4309b"
+      ],
+      "errors": []
+    },
+    {
+      "id": "08",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "dYXotdWNTcwNFlKAv",
+      "run_charge_usd": 0.0648,
+      "max_charge_usd": 0.14,
+      "returned_items": 24,
+      "accepted_posts": 21,
+      "ai_posts_merged": 8,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": [
+        {
+          "batch_id": "08",
+          "post_id": "social-16956bac5525a4ebe3",
+          "reason": "OpenAI decisions HTTP 413; no automatic retry"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "pZw3FSBnPbtT8Wv4o",
+      "run_charge_usd": 0.0648,
+      "max_charge_usd": 0.14,
+      "returned_items": 24,
+      "accepted_posts": 20,
+      "ai_posts_merged": 20,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "10",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "cxKmLzv4HIozOAVL2",
+      "run_charge_usd": 0.09989999999999999,
+      "max_charge_usd": 0.14,
+      "returned_items": 37,
+      "accepted_posts": 34,
+      "ai_posts_merged": 34,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "11",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "zo9Xz9UBcSVkh6Ur8",
+      "run_charge_usd": 0.0864,
+      "max_charge_usd": 0.14,
+      "returned_items": 32,
+      "accepted_posts": 29,
+      "ai_posts_merged": 29,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": [
+        {
+          "batch_id": "11",
+          "post_id": "social-05ebd42d695a1a1f98",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "wHagR5b8Eifj26th3",
+      "run_charge_usd": 0.0675,
+      "max_charge_usd": 0.14,
+      "returned_items": 25,
+      "accepted_posts": 21,
+      "ai_posts_merged": 21,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "13",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "9E3qI8KWiFUzWc58M",
+      "run_charge_usd": 0.0567,
+      "max_charge_usd": 0.14,
+      "returned_items": 21,
+      "accepted_posts": 17,
+      "ai_posts_merged": 17,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "14",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "7NNqrF4h7T93ILTCf",
+      "run_charge_usd": 0.07289999999999999,
+      "max_charge_usd": 0.14,
+      "returned_items": 27,
+      "accepted_posts": 23,
+      "ai_posts_merged": 23,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "15",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "etbFS8cgLg7Yh9EX0",
+      "run_charge_usd": 0.0783,
+      "max_charge_usd": 0.14,
+      "returned_items": 29,
+      "accepted_posts": 25,
+      "ai_posts_merged": 24,
+      "stale_or_missing_ai_post_ids": [
+        "social-dd04861d8d55b8d625"
+      ],
+      "errors": []
+    },
+    {
+      "id": "16",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "W5VOrEyD3Ht3rv08l",
+      "run_charge_usd": 0.0837,
+      "max_charge_usd": 0.14,
+      "returned_items": 31,
+      "accepted_posts": 27,
+      "ai_posts_merged": 27,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "17",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "A4MOrOIB1UiBy8DjI",
+      "run_charge_usd": 0.09179999999999999,
+      "max_charge_usd": 0.14,
+      "returned_items": 34,
+      "accepted_posts": 33,
+      "ai_posts_merged": 30,
+      "stale_or_missing_ai_post_ids": [
+        "social-00451664fae8479938",
+        "social-f2d4c74b1718428620",
+        "social-f33fa659fa8e434950"
+      ],
+      "errors": [
+        {
+          "batch_id": "17",
+          "post_id": "social-f33fa659fa8e434950",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "tfB431uNcvXksG0ue",
+      "run_charge_usd": 0.0864,
+      "max_charge_usd": 0.14,
+      "returned_items": 32,
+      "accepted_posts": 30,
+      "ai_posts_merged": 29,
+      "stale_or_missing_ai_post_ids": [
+        "social-46a5f34377a16903c0"
+      ],
+      "errors": [
+        {
+          "batch_id": "18",
+          "post_id": "social-f33fa659fa8e434950",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "L5McrWLLdfutsdhnb",
+      "run_charge_usd": 0.0783,
+      "max_charge_usd": 0.14,
+      "returned_items": 29,
+      "accepted_posts": 28,
+      "ai_posts_merged": 4,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": [
+        {
+          "batch_id": "19",
+          "post_id": "social-50892bf8c660c23dd9",
+          "reason": "OpenAI decisions HTTP 413; no automatic retry"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "eHydpcU5SqPoDiOVN",
+      "run_charge_usd": 0.0783,
+      "max_charge_usd": 0.14,
+      "returned_items": 29,
+      "accepted_posts": 26,
+      "ai_posts_merged": 26,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "21",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "27lNFKQhIJrQkBKaL",
+      "run_charge_usd": 0.07289999999999999,
+      "max_charge_usd": 0.14,
+      "returned_items": 27,
+      "accepted_posts": 22,
+      "ai_posts_merged": 21,
+      "stale_or_missing_ai_post_ids": [
+        "social-99676733a449015cc8"
+      ],
+      "errors": []
+    },
+    {
+      "id": "22",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "TCktyuI1x3tI4fSEt",
+      "run_charge_usd": 0.09720000000000001,
+      "max_charge_usd": 0.14,
+      "returned_items": 36,
+      "accepted_posts": 33,
+      "ai_posts_merged": 31,
+      "stale_or_missing_ai_post_ids": [
+        "social-46a5f34377a16903c0",
+        "social-99676733a449015cc8"
+      ],
+      "errors": []
+    },
+    {
+      "id": "23",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "fosvF9KzYXdP56SOu",
+      "run_charge_usd": 0.062099999999999995,
+      "max_charge_usd": 0.14,
+      "returned_items": 23,
+      "accepted_posts": 20,
+      "ai_posts_merged": 20,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "24",
+      "status": "partial",
+      "collection_status": "SUCCEEDED",
+      "run_id": "4dHvF1ddIuGlKebwC",
+      "run_charge_usd": 0.0567,
+      "max_charge_usd": 0.14,
+      "returned_items": 21,
+      "accepted_posts": 15,
+      "ai_posts_merged": 15,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": [
+        {
+          "batch_id": "24",
+          "post_id": "social-a6d867014486a533fe",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "lmxiCyiimlCIPC9rl",
+      "run_charge_usd": 0.0891,
+      "max_charge_usd": 0.14,
+      "returned_items": 33,
+      "accepted_posts": 31,
+      "ai_posts_merged": 31,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "26",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "PAB52CRbRKMfBDtgF",
+      "run_charge_usd": 0.0648,
+      "max_charge_usd": 0.14,
+      "returned_items": 24,
+      "accepted_posts": 15,
+      "ai_posts_merged": 15,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "27",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "jNT5lG9OQvs9vbO31",
+      "run_charge_usd": 0.1026,
+      "max_charge_usd": 0.14,
+      "returned_items": 38,
+      "accepted_posts": 36,
+      "ai_posts_merged": 36,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "28",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "B5Dv4tnik46FsUBD0",
+      "run_charge_usd": 0.1053,
+      "max_charge_usd": 0.14,
+      "returned_items": 39,
+      "accepted_posts": 34,
+      "ai_posts_merged": 34,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    },
+    {
+      "id": "29",
+      "status": "complete",
+      "collection_status": "SUCCEEDED",
+      "run_id": "1kvkL07TG3GHsSSlU",
+      "run_charge_usd": 0.040499999999999994,
+      "max_charge_usd": 0.14,
+      "returned_items": 15,
+      "accepted_posts": 10,
+      "ai_posts_merged": 10,
+      "stale_or_missing_ai_post_ids": [],
+      "errors": []
+    }
+  ],
+  "posts_considered": 718,
+  "cache_hits": 57,
+  "decision_requests": 657,
+  "extraction_requests": 35,
+  "images_sent_to_decisions": 1354,
+  "events_extracted": 10,
+  "unique_posts": 741,
+  "unique_ai_posts_merged": 704,
+  "planned_accounts": 289,
+  "requested_posts": 1445
+}

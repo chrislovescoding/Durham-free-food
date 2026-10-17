@@ -1,7 +1,42 @@
 {
-  "updated_at": "2026-10-17T14:07:52.921625Z",
+  "updated_at": "2026-10-17T14:48:22.761101Z",
   "timezone": "Europe/London",
   "events": [
+    {
+      "title": "Hot Chocolate Quiz",
+      "location": "Kingsgate, Student Union, Durham",
+      "food": "Free hot chocolate for members only; bring your own mug. · Members only.",
+      "description": "A hot chocolate and general-knowledge quiz, with prizes for the winners. Bring your own mug.",
+      "id": "ai-instagram-ea090fc2fe08de6e44",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-2f4d77ca69a65b0cf4",
+      "society": "Hot Chocolate Society",
+      "source_url": "https://www.instagram.com/p/DehBqTHsXR2/",
+      "starts_at": "2026-10-17T13:00:00+01:00",
+      "ends_at": "2026-10-17T15:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Members only.",
+      "dietary": [],
+      "evidence": {
+        "food": "“at least you got some free hot chocolate”; “Members Only”; “Bring your own mug!”",
+        "date": "“17TH OCT”",
+        "time": "“1-3PM”",
+        "location": "“kingsgate, Student Union”",
+        "eligibility": "“Members Only”"
+      },
+      "verified_at": "2026-10-17T14:36:33.657310Z",
+      "post_published_at": "2026-10-15T13:06:01Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "8cb7baec42ba0fde01289ac257345caf8f5cb06acc5c3e3039e7e20752518bae"
+    },
     {
       "ends_at": "2026-10-19T20:00:00+01:00",
       "price": null,
@@ -23,6 +58,41 @@
       "post_published_at": "2026-10-16T14:00:11Z",
       "verification_notes": "Caption explicitly promises free pizza and says Monday. Original poster states 19 October, 6pm to 8pm, TLC113. Year 2026 follows the original 16 October 2026 publication and matching weekday.",
       "source_id": "manual"
+    },
+    {
+      "title": "Italian Society Welcome Event",
+      "location": "Coviello Wine Bar, 24 Silver St, Durham",
+      "food": "Free pizza",
+      "description": "Welcome event with wine, free pizza and conversation; you do not need to speak Italian.",
+      "id": "ai-instagram-12b834dbb368ac3af9",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-7e43dda6ee67980bab",
+      "society": "Italian Society",
+      "source_url": "https://www.instagram.com/p/DehqFZooZ2A/",
+      "starts_at": "2026-10-21T20:00:00+01:00",
+      "ends_at": "2026-10-21T23:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "evidence": {
+        "food": "some free pizza",
+        "date": "Wednesday 21st October",
+        "time": "8-11 PM",
+        "location": "COVIELLO WINE BAR, 24 SILVER ST",
+        "eligibility": null
+      },
+      "verified_at": "2026-10-17T14:46:59.928622Z",
+      "post_published_at": "2026-10-15T18:59:30Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "f91cb82faa44d9ca42e94d3a82317c487f2387ecf00407ed4ad15e03be893123"
     },
     {
       "ends_at": null,
@@ -234,13 +304,13 @@
       "name": "Instagram society posts",
       "url": "https://www.instagram.com/",
       "status": "partial",
-      "parsed_count": 43,
-      "posts_stored": 450,
+      "parsed_count": 10,
+      "posts_stored": 853,
       "account_count": 290,
-      "accounts_checked": 51,
-      "accounts_with_posts": 114,
-      "last_attempt_at": "2026-10-17T14:04:44.639018Z",
-      "last_success_at": "2026-10-17T14:04:44.639018Z"
+      "accounts_checked": 9,
+      "accounts_with_posts": 211,
+      "last_attempt_at": "2026-10-17T14:45:45.840037Z",
+      "last_success_at": "2026-10-17T14:45:45.840037Z"
     },
     {
       "id": "social-facebook",
@@ -264,28 +334,28 @@
     "failed_sources": 1,
     "partial_sources": 1,
     "parse_error_count": 0,
-    "live_event_count": 8,
+    "live_event_count": 10,
     "reviewed_event_count": 8,
-    "candidate_count": 53,
+    "candidate_count": 130,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
     "society_count": 319,
     "directory_status": "partial",
-    "social_post_count": 450,
+    "social_post_count": 853,
     "social_account_count": 444,
     "society_coverage": {
       "total_societies": 319,
       "societies_with_accounts": 294,
-      "societies_with_recent_posts": 114,
+      "societies_with_recent_posts": 211,
       "societies_needing_accounts": 25,
-      "societies_needing_attention": 180,
+      "societies_needing_attention": 83,
       "societies_stale": 0,
-      "post_count": 450
+      "post_count": 853
     },
-    "ai_event_count": 0,
-    "ai_review_count": 7,
-    "ai_processed_at": "2026-10-17T14:07:11.345068+00:00",
-    "ai_stale_post_count": 0
+    "ai_event_count": 2,
+    "ai_review_count": 62,
+    "ai_processed_at": "2026-10-17T14:47:18.758659+00:00",
+    "ai_stale_post_count": 3
   }
 }
