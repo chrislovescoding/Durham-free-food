@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T13:24:06.460122Z",
+  "updated_at": "2026-10-17T13:33:14.483852Z",
   "candidates": [
     {
       "title": "Spicy Noodle Challenge",
@@ -266,39 +266,6 @@
       "needs_visual_review": true
     },
     {
-      "title": "dmscf first fellowship! 🇲🇾🇸🇬",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DefsNShiHLR/",
-      "post_id": "social-fdc0e65242ab8ae2dd",
-      "society": "Malaysia Singapore Christian Fellowship",
-      "evidence": {
-        "caption": {
-          "text": "dmscf first fellowship! 🇲🇾🇸🇬\n\nso good to finally meet everyone! can’t wait for the next fellowship 💪🔥",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "Sweet friendships refresh the\n\nsoul and awaken our hearts\n\nwith joy,\n\nfor good friends are like the\n\nanointing oil\n\nthat yields the fragrant\n\nincense of God's presence.\n\n=\n\nGD,\n\n‘\n\n% t\n\n4.\n\n\\~\n\n4\n\nif\n\nv4\n\na",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "c7dcb585b14c123b29646709",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/846809145_18107156888123074_4607984117823996218_n.jpg?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=Rdc-DxKHg6AQ7kNvwGnU6Z8&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQO2qYdqKcamuBW0CgyDdmkTWhXBEZFzztj5AmRpIqnPag&oe=6AD946DC&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
       "title": "Hello everyone! Join us for our blood glucose talk on Wednesday 21 Oct!",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/Deew0AVCAm5/",
@@ -310,25 +277,35 @@
           "free_food": null
         },
         "image_ocr": {
-          "text": "A 20-MINUTE TALK\n\nBlood glucose\n\ntalk\n\nWed 21 Oct - 7-8:30pm\n\nEveryone welcome!!!\n\nhand Wi",
+          "text": "A 20-MINUTE TALK\n\nBlood glucose\n\ntalk\n\nWed 21 Oct - 7-8:30pm\n\nEveryone welcome!!!\n\nIth and Wellbeing Society\n\nWHAT IT IS\n\nHow food changes\n\nyour blood glucose\n\nA 20-minute talk learning about the impact of\n\nfoods on our entire biology: how the foods we eat\n\naffect our blood glucose and, in turn, our health\n\nand experience of life, with an impact on our\n\nbodies now and in the long term, and what you\n\ncan do about it.\n\nIncluding understanding why we get tired after\n\nlunch, crave sweet things, feel hungry again so\n\nsoon, struggle to focus and struggle to lose\n\nweight, and how we can super easily improve it\n\noe Be\n\nIllustration only: a spike vs a gentle curve after eating\n\nape\n\n/\n\nr\n\nsith\n\ncH\n\n4\n\na\n\nbl\n\nFIND US\n\nElvet Riverside\n\nRoom ER143 - New Elvet, Durham\n\nWhittard of ©\n\n@\n\nChelsea Durham\n\nBac\n\nDurham Castle (x)\n\n—\n\nDurham\n\nElvet Riverside |\n\nae\n\nDurham University\n\n=k ap aL\n\nDurham Cathedral (t+)\n\niy\n\n=\n\ny\n\nPrebends Bridge Cs)\n\nx\n\n%\n\nScan for the map\n\nMap data © Google\n\nWHO IT'S FOR\n\nEvery one! No science background needed.\n\nGOOD TO KNOW\n\nGeneral information, not medical advice. If you have a health\n\ncondition or take medication, speak to your GP or pharmacist\n\nbefore changing your diet.",
           "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 3,
+          "inspected_images": 3,
           "images": [
             {
-              "image_id": "161236071f42d91415097d71",
+              "image_id": "f50dea7fb1c8bfb53518532b",
+              "status": "ok"
+            },
+            {
+              "image_id": "14c8c0ee14ebc0dbcc3c123d",
+              "status": "ok"
+            },
+            {
+              "image_id": "81670526452b88d1568f3429",
               "status": "ok"
             }
           ]
         }
       },
       "media_urls": [
-        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/848014602_17913225867499949_6626956290198029874_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=ZGJcIU9xN2gQ7kNvwEWbZQ_&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQMcLz6smIHErRjq_d6wbV4Nuk0qKtoptk4hl3dt7lAYrw&oe=6AD95B0D&_nc_sid=bc0c2c"
+        "https://instagram.fgdl5-1.fna.fbcdn.net/v/t51.82787-15/848014602_17913225867499949_6626956290198029874_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNzY3MTE2NjU5NjA4NDkwNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=eDmSgvmj4KMQ7kNvwFsUyQY&_nc_oc=Adrb-3_igrIqro5SK73y6H6-n05ir6u3ELCbQrBpsn2BvNaj3B4xCN_Hz03lHu4a5jM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgdl5-1.fna&_nc_gid=K7Uz5uZOpzG2GwgphgQQgw&_nc_ss=7a22e&oh=00_AQOpWJVuraL2vvpOSlejz7FfYFRnQ1SItGPA4EdWxWj8BA&oe=6AD95B0D",
+        "https://instagram.fgdl5-1.fna.fbcdn.net/v/t51.82787-15/846809144_17913225870499949_701944647085045271_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNzY3MTE2NTgwNzU0ODM5OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=BlFEDpCRj1sQ7kNvwFBafH7&_nc_oc=AdooCXaLLov6oFPhdx5d3Z5200WWAz5zuDbhl1urle6uZWIcDlKkihORtfVcgXmM3Xw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgdl5-1.fna&_nc_gid=K7Uz5uZOpzG2GwgphgQQgw&_nc_ss=7a22e&oh=00_AQMRst-sSCPpJsoPF0bPFrlPvsjiraq0-Hgt1JrxtHUd-g&oe=6AD9332C",
+        "https://instagram.fgdl5-5.fna.fbcdn.net/v/t51.82787-15/848665254_17913225873499949_8251935334988365498_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNzY3MTE2NDkzNTEzMjE1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=vx8z2reWzcIQ7kNvwE7YvdM&_nc_oc=AdoxwsduxE6NpRt4Uo2em5a3ehG5SqgI7Xzba_SDNJwozej9_EJGu0Xci6_ATWEjk6k&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgdl5-5.fna&_nc_gid=K7Uz5uZOpzG2GwgphgQQgw&_nc_ss=7a22e&oh=00_AQMiLUx6ggg9mlDbja2NWYl-BNmfjzf4dy9CtSIEQEsxnA&oe=6AD961A9"
       ],
       "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "reason": "Caption and image evidence need review together before publishing",
       "needs_visual_review": true
     },
     {
@@ -343,25 +320,30 @@
           "free_food": null
         },
         "image_ocr": {
-          "text": "MICHAELMAS TERM 2026 - UPDATED\n\nWhat's still to come\n\nHealth and Wellbeing Society\n\noe\n\n“Is it healthy?” discussion\n\nHow we can optimise our\n\nGm)\n\nperformance discussion\n\n(CSLDEE )\n\nRelationships talk\n\nMore will be announced\n\ncs\n\nas our term goes on!\n\nAdd them to your diary!",
+          "text": "MICHAELMAS TERM 2026 - UPDATED\n\nWhat's still to come\n\nHealth and Wellbeing Society\n\n=\n\n“Is it healthy?” discussion\n\nHow we can optimise our\n\nGime)\n\nperformance discussion\n\nCUSLEEE\n\nRelationships talk\n\nMore will be announced\n\nCc\n\nas our term goes on!\n\nAdd them to your diary!\n\nMORE TO COME\n\nMany more to come!\n\nJoin our WhatsApp community and\n\nmessage in the group chat what\n\nyou're interested in and what ideas\n\nyou have, and we'll organise it!\n\n_3re\n\nlon\n\na os\n\nwai\n\nrs\n\n|\n\nScan to join\n\nthe WhatsApp\n\na8\n\na | rl\n\ni oe\n\n|\n\ncommunity\n\nTat\n\na it\n\nFree to join,\n\n¥.\n\nae\n\n=k\" Ey\n\neveryone welcome\n\n. =",
           "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 2,
+          "inspected_images": 2,
           "images": [
             {
-              "image_id": "e5007edc8a20059fa8d0f3c2",
+              "image_id": "152fada2bc2ecf06e46ba665",
+              "status": "ok"
+            },
+            {
+              "image_id": "6bc6766f95a9d26f26551f2d",
               "status": "ok"
             }
           ]
         }
       },
       "media_urls": [
-        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/847386823_17913223743499949_8661094796688688657_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=ZbbS8QOAFVQQ7kNvwFXBfH-&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOI_L5y4OwdIOk66hu8XeeJcczJJnTtZ4jUve6yegi_xQ&oe=6AD941C7&_nc_sid=bc0c2c"
+        "https://scontent-atl3-1.cdninstagram.com/v/t51.82787-15/847386823_17913223743499949_8661094796688688657_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwNzY2Mjg5NzUyNjMzNjY3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=bBVRiLe-0MQQ7kNvwH3pXWf&_nc_oc=AdqUJ1RRjFLyQ0HSXmTKweEn_i8cbR5XL2PVDKQjm0A0yFlLMlE_vN3pYjDKpln5Q7hVT-CXZWWWFtsLHynfl0E2&_nc_ad=z-m&_nc_cid=3&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=BWKZma9fT8iPgzZFnrzhQA&_nc_ss=7a22e&oh=00_AQPtQokAUgiYWRFc7rNwf_WssfHa31E2x0Hpvum8T9nBOw&oe=6AD941C7",
+        "https://scontent-atl3-2.cdninstagram.com/v/t51.82787-15/847952975_17913223740499949_1181870326873549799_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwNzY2Mjg5NzY3NzMxNjY2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=LDq2ve9mhisQ7kNvwHyKN3b&_nc_oc=AdrrY1Qpk0LxNZDOxcfbuyuquqIEPM21tcTGc2iJ0YfEBkdvwbUnBE8wPUMNRgXLLVFyLQLqvF5Xv8nG0AOqkOU8&_nc_ad=z-m&_nc_cid=3&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=BWKZma9fT8iPgzZFnrzhQA&_nc_ss=7a22e&oh=00_AQM4nvdxl107DCS6pKpql-G8E_O4NLvSlKLRIe6WwOElsw&oe=6AD94D99"
       ],
       "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "reason": "Caption and image evidence need review together before publishing",
       "needs_visual_review": true
     },
     {
@@ -381,72 +363,6 @@
       "society": "Islamic Studies Society",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
-      "title": "Night vision activated 🌙",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DeZ5EaUEag3/",
-      "post_id": "social-1e3de2479c3c349e5d",
-      "society": "Vegetarian and Vegan",
-      "evidence": {
-        "caption": {
-          "text": "Night vision activated 🌙",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "a |\n\ni}\n\ni\n\n-\n\ni)\n\nx\n\n».\n\n\\»\n\nAlt\n\nic\n\ni\n\nLe\n\na,\n\nge\n\na\n\n—s\n\nc\n\nZa\n\nWEE\n\ni\n\nZa\n\nZa\n\n\\\n\n(\n\n>\n\n4",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "9da2543f6957b6dc1ca16791",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/846221437_18153195769551967_4961770178721624331_n.webp?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=8PQBUu4X7AcQ7kNvwFWa6tL&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQNPyxXz7r91tCQkT6pzE9Zw2Y7XUlz8HloPz8Gok9T6PA&oe=6AD933AE&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
-      "title": "fellowship night #1 · 14.10 · 7pm @ lizzie’s 🙌🔥",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DeXEwo3iNAw/",
-      "post_id": "social-14da5e07bbdf6d4440",
-      "society": "Malaysia Singapore Christian Fellowship",
-      "evidence": {
-        "caption": {
-          "text": "fellowship night #1 · 14.10 · 7pm @ lizzie’s 🙌🔥\n\nwe’ll be having a fun time of fellowship and Bible study :) looking forward to seeing everyone! 💐\n\nfull address in whatsapp gc (sign up via link in bio to be added in)",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "Mow)\n\nTe\n\n+ By\n\new\n\nPPM 14/410 WED a LIZZIE'S (HATSAPP GC FOR LOCATION)\n\nSB om gs\n\nWw\n\nGonser",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "916d12439a7b932f054eb1cb",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/845747313_18106481333123074_4324985985405345478_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=YvH1iCM0AZ0Q7kNvwFCkg7N&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOWhkJ85oYx8sDUs1cix849K3cqHdmLiPRHWksOltRhyQ&oe=6AD93068&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
     },
     {
       "title": "⚠️🚨FIRST SOCIAL OF THE YEAR!🚨⚠️",
@@ -527,39 +443,6 @@
       "reason": "Food mentioned without an explicit free-food promise"
     },
     {
-      "title": "Hello everyone! This Saturday is World Mental Health Day, so come along to our mental health discussion!",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DeMZ9DKiJUs/",
-      "post_id": "social-3aa88a9d4b260f1c04",
-      "society": "Health & Wellbeing Society",
-      "evidence": {
-        "caption": {
-          "text": "Hello everyone! This Saturday is World Mental Health Day, so come along to our mental health discussion!\nSat 10 Oct · 2-4pm · TLC040\nIt's an open, relaxed conversation to learn what each other know about mental health and how to improve it. Everything from what causes it to what strategies work. It's for everyone, there's no pressure to share anything, and you can come and talk about something else if you like, as mental health is just the theme.\nHope to see you there ❤️",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "RRS\n\nhe\n\nWORLD MENTAL HEALTH DAY\n\nMental health\n\ndiscussion\n\nSat10 Oct - 2-4pm\n\nTLCO40\n\nEveryone welcome!!!\n\nHealth and Wellbeing Society",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "fed69c18b7193aa6ec104105",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/837858231_17912229102499949_6337800012773106194_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=lBH0YUuZ2XAQ7kNvwFws0xV&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPh1zX9Z5roMmxvUzKzrykKE0nVc65kbw_XlOGEIZwAaw&oe=6AD93D62&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
       "title": "FIRST THURSDAY SESSION OF THE YEAR!!! We’ll be hosting an introductory session with free pizzas and drinks 👀👀👀 Come along to learn a bit about the bas",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeK21vgN4x0/",
@@ -604,25 +487,30 @@
           "free_food": null
         },
         "image_ocr": {
-          "text": "MICHAELMAS TERM 2026\n\nWhat's coming up\n\nHealth and Wellbeing Society\n\n“Is it healthy?” discussion\n\nHow we optimise our\n\nGr\n\nperformance discussion\n\nRelationships talk\n\nMore will be announced\n\nC=)\n\nas our term goes on!\n\nAdd them to your diary!",
+          "text": "MICHAELMAS TERM 2026\n\nWhat's coming up\n\nHealth and Wellbeing Society\n\n“Is it healthy?” discussion\n\nHow we optimise our\n\nCie\n\nperformance discussion\n\nRelationships talk\n\nMore will be announced\n\nES)\n\nas our term goes on!\n\nAdd them to your diary!\n\nMORE TO COME\n\nMany more to come!\n\nJoin our WhatsApp community and\n\nmessage in the group chat what\n\nyou're interested in and what ideas\n\nyou have, and we'll organise it!\n\n_3re\n\nlon\n\na os\n\nwai\n\nrs\n\n|\n\nScan to join\n\nthe WhatsApp\n\na8\n\na | rl\n\ni oe\n\n|\n\ncommunity\n\nTat\n\na it\n\nFree to join,\n\n¥.\n\nae\n\n=k\" Ey\n\neveryone welcome\n\n. =",
           "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 2,
+          "inspected_images": 2,
           "images": [
             {
-              "image_id": "d9e5c4c7774cb9946621c6e0",
+              "image_id": "855af8dea383ad0a8295a9b2",
+              "status": "ok"
+            },
+            {
+              "image_id": "c4d4301d48dd89af1a8ed990",
               "status": "ok"
             }
           ]
         }
       },
       "media_urls": [
-        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/837268819_17912098473499949_59238586354082816_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=s7uKRKBzerUQ7kNvwEP5C79&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPaULKTGpvuxKhALthouvxVbAWVnrVZHbH9UtlmuiuEJQ&oe=6AD930C5&_nc_sid=bc0c2c"
+        "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/837268819_17912098473499949_59238586354082816_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwMTk5MzE1NDQ1ODU3MTA4Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=vFgz3KRNnMoQ7kNvwG3DZkr&_nc_oc=AdpNdt94WQaYPjZPvoPi6351sNE5OA71w3I_SuN_TJswqu6-jvoQ6K2cut8eSgZ9Ci8RHzgT4jeWQHuXbKXvAxzA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=GOQldbRynfN9Y4iLehUhvg&_nc_ss=7a22e&oh=00_AQP-wpqrwUjlAQk78sChdyzViO1fcayXsbwYf57E-52ULg&oe=6AD930C5",
+        "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/838682091_17912098470499949_370160134163598923_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwMTk5MzE1NDUwODkyMjcxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=xDTR66ZyKmAQ7kNvwFnYCnu&_nc_oc=Adrz9l-iLY4ZL7OIcqBZnAkAKPJTxk5IC8lsu9xmuJqhZae3NexdgG6fQVu1qCIFPUy4n3rqVSXIulA-nmSBX4AY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=GOQldbRynfN9Y4iLehUhvg&_nc_ss=7a22e&oh=00_AQO0hFMbTKKI3t58gbA1veVqKL_Asyh7fOFwYgMSgR-xQg&oe=6AD95E76"
       ],
       "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "reason": "Caption and image evidence need review together before publishing",
       "needs_visual_review": true
     },
     {
@@ -660,39 +548,6 @@
       "society": "Bar Society",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
-      "title": "I hear you ask, “what’s going on at Durham CU this week?”",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DeEzLTAjTkX/",
-      "post_id": "social-0c7923242393ceeeaf",
-      "society": "Christian Union",
-      "evidence": {
-        "caption": {
-          "text": "I hear you ask, “what’s going on at Durham CU this week?”\n\nLook no further. Here is what’s on this week, please do come along!\n\nWe would love to see you there 🕺🙌🏼🔥",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "DURHAMCU.ORG\n\nTHIS WEEK",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "e486badf8311788a32d98ce5",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/834678160_18639317623038286_4241789231588354426_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGF8WFTL8gHS5ytgNIzo33yuBJoPS4tWKu6KrGRLcNcU5SR1HuBd5FjCoSNvsxf7SUV8TfBXFA8FXT2aUP5KJzP&_nc_ohc=WuVcRNm-AqoQ7kNvwGofCOH&_nc_gid=fRYTllRPpqnVIIeMfE1imw&edm=APU89FABAAAA&ccb=7-5&oh=00_AQM8qK4nJGczTCGp61AZnF4WphBSzGx9r3lns13iRK-hVQ&oe=6AD95919&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
     },
     {
       "title": "Durham City Methodists are hosting a welcome lunch tomorrow, after their 10:30am service. The service will last around an hour. You’re welcome to come",
@@ -755,72 +610,6 @@
       "needs_visual_review": true
     },
     {
-      "title": "First of all, we'd like to thank @effectivealtruismdurham for sharing their table with us yesterday at the fresher's fair, and another big thank you t",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/Dd8xdpACLlU/",
-      "post_id": "social-fe80c7db89fcc86855",
-      "society": "Durham AI Safety Initiative",
-      "evidence": {
-        "caption": {
-          "text": "First of all, we'd like to thank @effectivealtruismdurham for sharing their table with us yesterday at the fresher's fair, and another big thank you to all of you who stopped to chat with us! \n-\nJoin us for our first event of Michaelmas, where we will be joined by Iyngkarran Kumar, a Research Associate currently contracted by Google DeepMind via Adecco to research frontier AI safety risks. \n-\nThe vision is to provide further insight into why those on the fringes of this field should still be concerned about the risks posed by advanced AI. A broad overview of the pathways to harm and recent incidents where these risks have played out in real time will provide students seeking a broader understanding of the AI sector with the relevant facts and objectives.\n-\nLocation: Elvet Riverside 1, ER142\nDate: Thursday 8th October\nTime: 18:30 - 19:30",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "WITH\n\nee\n\na\n\nIYNGKARRAN. KUMAR\n\nResearch Associate (Contract) @ Google DeepMind, via Adecco\n\nTHURSDAY 8TH OCTOBER | 18:30 — 19:30] ER142",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "16a6ae880863dac6bbc719e6",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/831768824_17981071905094081_141568078736352513_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gFy3AGI3u03kuuCysduce2x3u7mILyDKjwjK5Qltj6Yn4WPMKA0rVTpb24we9SMDRM&_nc_ohc=lhTDlRblELIQ7kNvwFUNhA4&_nc_gid=oYTDJ6P_zcNu9VNdCDFYsQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOoc9is3caa-BxP-qUb1FpnR0IRGCCkii_0OHIOIaFflQ&oe=6AD954E5&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
-      "title": "🙌 THANK YOU to everyone who came to say hello at the Welcome Fair! It was brilliant meeting so many of you ❤️",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/Dd8ptFLkWx-/",
-      "post_id": "social-6983358efad5fec3e7",
-      "society": "Health & Wellbeing Society",
-      "evidence": {
-        "caption": {
-          "text": "🙌 THANK YOU to everyone who came to say hello at the Welcome Fair! It was brilliant meeting so many of you ❤️\n\nScan the QR code on the next slide (or use the link below) to join our WhatsApp community to get up-to-date info on what's coming up, ask any questions you like and keep the conversations going!\nhttps://chat.whatsapp.com/G2iSNKGYw2JK5M5iorewcK\n\nWant to join the society officially? Link in bio to join on the SU website. It's completely free, so there's nothing to lose!\n\nWe look forward to seeing you at our events and we will be releasing an agenda soon!",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "WELCOME FAIR 2026\n\nil ime\n\n—\n\nTHANK YOU\n\n1Oly\n\nLO\n\nif\n\nHt\n\nSa\n\n—\n\ni oa\n\ncay\n\niaray |\n\n: ~~\n\n~\n\n~ Soe\n\net\n\nry,\n\ner,\n\n%\n\nasi\n\n‘\n\nLa\n\n——\n\n—_\n\nky\n\na\n\n4\n\n=\n\n/\n\n|\n\nSwipe to join the community —>\n\nHERALTH\n\ni\n\n‘ome and say hello!",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "d4b61f7ca7710c31d5a726cc",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/833107081_17911325178499949_2287202660033266124_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=Q0xBdBahuNsQ7kNvwF5m-pg&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQNlAog_-YyzllPkUID6XI_CPO5KvQP5lJ0Eofy94rVFvg&oe=6AD93FB6&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
       "title": "We loved meeting you all today at the freshers fair. If you missed us or want to meet even more of the society then join us at our annual welcome pizz",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/Dd65922idCa/",
@@ -828,39 +617,6 @@
       "society": "Computing",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
-      "title": "⭐️Introducing the 2026/2027 Vegsoc exec!!⭐️",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/Dd11S8cCOHM/",
-      "post_id": "social-d991d49957bb6b3d38",
-      "society": "Vegetarian and Vegan",
-      "evidence": {
-        "caption": {
-          "text": "⭐️Introducing the 2026/2027 Vegsoc exec!!⭐️\n\nVegsoc is back with exciting plans for the the coming academic year \nMake sure to visit our stand at the freshers fair on Wednesday the 30th :)\n🍄🌿🥬🐰💚",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "——\n\nrem,\n\nPa Le\n\nPp\n\na\n\na\n\noi\n\ntee |\n\nLi\n\nfi\n\nA)\n\ney\n\nd\n\np\n\nmeet\n\nalle, -P\n\np,\n\n— waa.\n\ndj\n\n| f\n\nvf\n\nfr)\n\n“i\n\ne 2\n\n\\ a ize W\n\nSs\n\n<€\n\nnemeom\n\nmare",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "7099e8f242ada9be2dabb474",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/830137888_18151040404551967_3277821911678066520_n.webp?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=hwKAJmIPdh4Q7kNvwG-DMy_&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPZ5YbgWVT1T4GosJqyPsKTfx0SX3AOC7FXnZCF0jCfVA&oe=6AD94037&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
     },
     {
       "title": "📣 IT’S FRESHER’S WEEK ‼️",
@@ -874,25 +630,40 @@
           "free_food": null
         },
         "image_ocr": {
-          "text": "FRESHERS\n\nWHAT'S ON\n\nTHIS WEEK\n\n—>",
+          "text": "FRESHERS\n\nWHAT'S ON\n\nTHIS WEEK\n\n—>\n\nNNER\n\nBRING AND\n\nSHARE LUNCH\n\ni\n\nat\n\nay\n\non\n\noe\n\n=\n\nSg iti mae\n\n=\n\nie\n\nener\n\nmak ail\n\nat\n\n“*\n\ncle\n\nwR\n\nye\n\nal\n\n‘G\n\nee Jani\n\ngaia\n\n-\n\n=\n\nLI\n\nSee\n\nBe\n\nboca\n\n4\n\n=,\n\nhit\n\ner\n\nae\n\n5\n\ni)\n\nie i\n\nRaa\n\npaiaatne\n\na\n\nCOFFEE AND\n\n=\n\nBe\n\nCAKE\n\ntee\n\ncoc\n\n(9\n\npee\n\nN=\n\nar\n\nirs\n\nee\n\nRP\n\nBe\n\n=\n\nad\n\nfor\n\nms\n\n“ze\n\nee\n\nor\n\nma\n\nAN\n\ndi\n\nPe eee\n\n—_—\n\nra $\n\noe\n\n2\n\nos\n\nPh\n\ncs\n\neS,\n\ncan\n\n%\n\ni\n\ngas.\n\nvag\n\nis\n\nLia\n\nie\n\nfa,\n\noe\n\na\n\ngin\n\na\n\nnies\n\nag\n\nee\n\nony\n\nrs\n\nas\n\nee\n\n“\n\nes\n\nat\n\neae\n\nRig\n\n2\n\nee\n\na\n\nSe\n\nee\n\nie\n\noy\n\nBe np\n\nWs\n\nKoste et\n\ni\n\n“age\n\noy\n\nee\n\n‘a\n\n4\n\npk\n\nCas\n\n2\n\nSite\n\nee\n\nAes\n\nLy\n\nsee\n\nGeen\n\nse,\n\n22\n\nae\n\n“a\n\n37)\n\noes\n\nies\n\ne\n\nae\n\nee.\n\noF\n\nAge!\n\nee\n\nee\n\n“is\n\nze\n\n2\n\nae\n\nee\n\nbod\n\nRae sg\n\npe\n\nwe;\n\n3\n\nBagh\n\nma\n\n‘<\n\na\n\n(a\n\nPARKRU\n\nNAND\n\nPANCAKES\n\nWITH DURHAM CIS\n\nia\n\nqs\n\n4\n\n— mae OU\n\niaee™",
           "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 4,
+          "inspected_images": 4,
           "images": [
             {
-              "image_id": "1c3678895ed80863b7e0c664",
+              "image_id": "9b5b983648a5c800f1480b52",
+              "status": "ok"
+            },
+            {
+              "image_id": "24b3164cd7fc3adca679e9bc",
+              "status": "ok"
+            },
+            {
+              "image_id": "39d7d48aa67bf3f9b7278deb",
+              "status": "ok"
+            },
+            {
+              "image_id": "e10c5a1bac8f3a4db6d2289a",
               "status": "ok"
             }
           ]
         }
       },
       "media_urls": [
-        "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/828018361_18637166296038286_3824400592696862293_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGF8WFTL8gHS5ytgNIzo33yuBJoPS4tWKu6KrGRLcNcU5SR1HuBd5FjCoSNvsxf7SUV8TfBXFA8FXT2aUP5KJzP&_nc_ohc=2kVPtPqCsxAQ7kNvwGaWVRI&_nc_gid=fRYTllRPpqnVIIeMfE1imw&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPGClRjgVtplNv_iYE94r4Eo_-Mbqf2V8Gq38rwdlNAxQ&oe=6AD93166&_nc_sid=bc0c2c"
+        "https://instagram.fcgh10-2.fna.fbcdn.net/v/t51.82787-15/828018361_18637166296038286_3824400592696862293_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5NjE5MzMwMDg4Nzg3OTE0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tOhPVuRAU3UQ7kNvwG90H1L&_nc_oc=AdqMDtENX439D5FU7LlHwkmY7jZxwFdI_qqxr5dUZgrYiFVTnmSvV-ugPp_C4oINAy8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgh10-2.fna&_nc_gid=xtt6kX1v4Bue-ZJaHqzxhw&_nc_ss=7a22e&oh=00_AQOOeZB07lMAbxoo-8Z1D6TiEVR25Ct4Py2HZmuepzp6qg&oe=6AD93166",
+        "https://instagram.fcgh10-1.fna.fbcdn.net/v/t51.82787-15/825325558_18637166329038286_7890586889866756200_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5NjE5MzMwMTU1ODc4ODA4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Ra7RyGZS_CsQ7kNvwH2i-Nf&_nc_oc=AdqZB160doVGKKmYrhxTENGofpZWlBWTUiTkK2Voe1GYh-JkO0yoOSIS8lsNF9I-Eqw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgh10-1.fna&_nc_gid=xtt6kX1v4Bue-ZJaHqzxhw&_nc_ss=7a22e&oh=00_AQMK0MQ_d8s1FaFSLM1uqLjMADBcOQG473BHkna4ce_SkQ&oe=6AD94FDA",
+        "https://instagram.fcgh10-2.fna.fbcdn.net/v/t51.82787-15/827902788_18637166317038286_28545472719193795_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5NjE5MzMwMjk3NjU2NTA1NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TF3Un62RGMEQ7kNvwHExG7f&_nc_oc=AdoGxUZQkhZGtN7ygRScKNu6wG0NPYBUkfaQtM8_m1RLjQePfozfZSR-34r5dsnDlXU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgh10-2.fna&_nc_gid=xtt6kX1v4Bue-ZJaHqzxhw&_nc_ss=7a22e&oh=00_AQMfB410elHjcMYsS-wunhO9HXjdDjZcz8I0vkUh-lH7oQ&oe=6AD95AAB",
+        "https://instagram.fcgh10-1.fna.fbcdn.net/v/t51.82787-15/829073190_18637166308038286_7892769264097797258_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5NjE5MzMwMzQ5NjQ5OTIzMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=vDi5HV4LGxMQ7kNvwEP673A&_nc_oc=AdrLXaaznjpV6lRbOZz3lKZdmuTPI3RezIq_IdQ38zy_YX__1g_Tt-8uUgIa-xvDkYw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgh10-1.fna&_nc_gid=xtt6kX1v4Bue-ZJaHqzxhw&_nc_ss=7a22e&oh=00_AQP6WAUe2EX-xp3sET4ao7Ww9iUvDos5iquoqtuzv38dmQ&oe=6AD94C2D"
       ],
       "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "reason": "Caption and image evidence need review together before publishing",
       "needs_visual_review": true
     },
     {
@@ -912,39 +683,6 @@
       "society": "Instant Noodle Society",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
-      "title": "🗓️ 【 Term 1 聚會 Schedule 出爐！ 】 ",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DdlyySICnU4/",
-      "post_id": "social-8a81c569b5d678ed7d",
-      "society": "Durham Chinese Christian Fellowship",
-      "evidence": {
-        "caption": {
-          "text": "🗓️ 【 Term 1 聚會 Schedule 出爐！ 】 \n新學期開始，大家準備好了嗎？❤️‍🔥\nTerm 1 聚會內容包括：迎新遊戲、主題分享、專題查經、問答環節、詩歌分享及禱告會等。不論你是想探索信仰的新朋友，還是想建立屬靈同路的基督徒，都歡迎加入我們！\n\n星期五的團契若設有晚餐，活動將於晚上六點半開始，而正式聚會時間則為晚上七點半。\n\n我們每周日下午兩點也有主日崇拜，也歡迎所有有興趣的弟兄姊妹出席 ❤️\n\n 💡 迎新福利：第一次出席的新朋友可享用免費晚餐 🍚（其後聚會晚餐費用也只是£4)\n詳細日期、地點及時間請參閱圖中 Schedule。如聚會安排有任何調整，我們將透過社交平台即時公佈 🔔 如有任何問題，歡迎dm我們！",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "TERM 1: 48+ FARE\n\nARR\n\nPy)\n\nSoBh\n\nBEER 2\n\n30/9\n\nFreshers’ Fair\n\nMaiden Castle\n\nN/A\n\nWeek 1:\n\nNorth Road Methodist\n\n09/10\n\nChurch\n\nWelcoming & Games\n\nWeek 2:\n\n16/10\n\nBF&e- wat\n\nElvet Methodist Church\n\n23/10\n\nWeek 3:\n\nElvet Methodist Church\n\nRBS\n\nWeek 4:\n\n30/10\n\nFUR\n\nElvet Methodist Church\n\nWeek 5:\n\nElvet Methodist Church\n\n06/11\n\nme\n\nWeek 6:\n\n13/11\n\nElvet Methodist Church\n\nBae\n\n‘4\n\n’\n\ni\n\nv\n\n@DGCE22 62%\n\naneees",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "c9e01657d5a2c564944bdd81",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://instagram.fnap2-1.fna.fbcdn.net/v/t51.82787-15/818062535_18091836101655492_2717601534275379993_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fnap2-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFtMNiasnoy7luGVf48XP1wAETSsLfwFbfWyTuqCYcT-_SlVFYQhyz42_bQ3zH9RMw&_nc_ohc=uGnMbnTxWNQQ7kNvwEz6Xmb&_nc_gid=EgIIVNonX1YyKHA2uVAYxg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQP7s8F7fE7Lt21F8Jg3kIC2mMIQMfQGUpQOsX9q3ZKEtg&oe=6AD958AA&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
     },
     {
       "title": "🌟Join the AW26 cohort of DAISI's Foundations of AI Safety Fellowship, starting at 18:30 BST on Thursday 15th October (subject to change due to fellow ",
@@ -977,39 +715,6 @@
       ],
       "kind": "social_post_review",
       "reason": "Caption and image evidence need review together before publishing",
-      "needs_visual_review": true
-    },
-    {
-      "title": "📣We're back!",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/Ddlo-6KCNvR/",
-      "post_id": "social-1511e6740b6945c4cd",
-      "society": "Durham AI Safety Initiative",
-      "evidence": {
-        "caption": {
-          "text": "📣We're back!\n\nDurham Artificial Intelligence Safety Initiative (DAISI) is excited to be running a range of events and programmes this term to help students engage with AI safety - from introductory fellowships to policy hackathons, mixed socials, and watch parties (some in collaboration with Durham Effective Altruism). \n\nHere are a few highlights you won't want to miss:\n⭐Introduction to AI safety talk by Google DeepMind Research Associate Iyngkarran Kumar (18:30 BST, Thursday 8th October) - Kick off the term with an overview of AI safety, our work, and guidance on how to get involved. \n⭐Foundations of AI Safety Fellowship: AW26 (Starts 18:30 BST, Thursday 15th October) - Applications are now open for our selective 8-week programme covering how advanced AI develops, the pathways to harm, and the narrative being portrayed in media. It involves discussion-based sessions and includes a certificate upon completion (Application form linked in bio!).\n\n👉Check out our website to learn more about what we’re planning for this term and how to get involved: https://durhamaisafety.uk\n-\n-\n-\n-\n-\n#aisafety #aiethics #durham #durhamuniversity #durhamuni #computerscience #philosophy #ai #ethics #aigovernance #aialignment #politics",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "TERM\n\nDurham AI Saf\n\ntive (D\n\nto be running a\n\nof events\n\nthis term to help\n\n— from introd\n\neget!\n\nhackathons,\n\nals,\n\nSEE THE NEXT SLIDE FOR\n\nEVENTS YOU WON'T W.\n\no>\n\ndurhamaisafety.uk",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "d385176410774b723a551284",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/820180390_17979730551094081_3294393670369930757_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gFy3AGI3u03kuuCysduce2x3u7mILyDKjwjK5Qltj6Yn4WPMKA0rVTpb24we9SMDRM&_nc_ohc=AxvqxDLrK3oQ7kNvwGTqyVX&_nc_gid=oYTDJ6P_zcNu9VNdCDFYsQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOlqE9B7YO7Uq22KqbvfGFSmu-A4KFY55RrfCUoAANsCA&oe=6AD95D51&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
       "needs_visual_review": true
     },
     {
@@ -1057,58 +762,60 @@
           "free_food": null
         },
         "image_ocr": {
-          "text": "Lf\n\nKaw\n\nLzneg\n\nds\n\nDU YURH/\n\nM MILos\n\nSIMG AY\n\nco. CH\n\nmeet the 26/27 eat\n\nrer (AMV\n\nFELLOWH\n\neo\n\nomscr",
+          "text": "Lf\n\nKav\n\nLzng\n\nds\n\nDU URHE\n\nM Mio\n\nSIMG Ae\n\noe CH\n\nmeet the een cee\n\nLeer (AM\n\nFELLOWH\n\neo\n\nomscr\n\n==\n\neel\n\n\\\n\nm&\\.\n\neS\n\n=\n\nvi QUAM\n\nSS\n\n==\n\nPRESIDENT\n\n1ST YEAR PSYCHOLOGY, ST. CUTHS\n\nFrom: Penang, Malaysia\n\nFav bible verse:\n\n“Surely your goodness\n\nFun Facts im sorry to both sides\n\nbut i thought kl and sg were the\n\nand love will follow me all\n\nsame thing until i was 8\n\nthe days of my life, and |\n\nwill dwell in the house of\n\nUnpopular opinion\n\nthe LORD forever.”\n\nabout sg/msia:\n\nPsalm 23:6\n\nsingaporeans say la differently and i\n\nwill die on this hill\n\nSaomscr\n\n4\n\nAm F3\n\na\n\n=a\n\noe...\n\nTe =\n\nVICE PRESIDENT\n\n2ND YEAR LAW, JOHN SNOW\n\nFrom: Singapore\n\nFav bible verse:\n\nMy flesh and my heart\n\nFun Fact: ECP (east coast park),\n\nmay fail, but God is the\n\nSingapore and Observatory Hill,\n\nstrength of my heart and\n\nDurham are my favourite places ever\n\nmy portion forever\n\nPsalm 73:26\n\nUnpopular opinion\n\nabout sg/msia: broidk|ol\n\nSaomscr\n\n\\=\n\na\n\nXAVIER tom\n\nSECRETARY\n\n2ND YEAR LAW, ST. MARY’S\n\nFrom: Sengkang, Singapore\n\nFav bible verse:\n\nFun Facts Likes to play piano\n\n“Ask and it will be given to\n\nyou; seek and you will\n\nfind; knock and the door\n\nUnpopular opinion\n\nwill be opened to you.”\n\nabout sg/msia:\n\nMatthew 7:7\n\nPublic transport too\n\nexpensive in SG\n\nStomscr\n\nee @&\n\nTREASURER\n\n2ND YEAR LAW, SOUTH\n\nFrom: Jurong West, Singapore/\n\nFav bible verse:\n\nJohor Bahru, Malaysia\n\n\"The fear of the LORD is the\n\nFun Fact: staying at home is the\n\nbeginning of wisdom, and\n\nperfect activity for me\n\nknowledge of the Holy One is\n\nunderstanding.”\n\nUnpopular opinion\n\nProverbs 9:10\n\nabout sg/msia:\n\nmsia has better food than sg\n\nStomscr\n\na’\n\n4\n\nPe. N\n\n=\n\nLibel\n\n—\n\nFRESHERS & WELCOME COORINATOR\n\n3RD YEAR LAW, STEPHENSON\n\nFrom: Kuala Lumpur, Malaysia\n\nFav bible verse:\n\n“I cry to you, LORD; | say, ‘You\n\nFun Fact: somehow the go to\n\nperson for 0.5x videos and photos\n\nare my refuge, my portion in\n\nm\n\nthe land of the living.\n\nPsalm 142:5\n\nUnpopular opinion\n\nabout sg/msia:\n\nsingaporeans' kiasuness is actually\n\nkind of impressive\n\nSaomscr\n\ni\n\na il\n\nof\n\nNaythen ml\n\nEVENTS COORINATOR\n\n1ST YEAR LAW, SOUTH\n\nFrom: Singapore\n\nFav bible verse:\n\n“Now these three remain\n\nFun Facts | give a Netflix series 5\n\nseconds to impress me before i skip\n\nfaith, hope, love. But the\n\nit\n\ngreatest of these is love”\n\n1 Corinthians 13:13\n\nUnpopular opinion\n\nabout sg/msia:\n\nDurian is an A tier fruit\n\nSaomscr\n\nGhonscr\n\n[=]\n\n10\n\n[=]\n\nFOLLOW US FOR MORE UPDATES FOR\n\n26/27!",
           "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 8,
+          "inspected_images": 8,
           "images": [
             {
-              "image_id": "3d68a803c0155e693c163dc8",
+              "image_id": "fa5d92a53c368e35dbdb8bb9",
+              "status": "ok"
+            },
+            {
+              "image_id": "20661d1b009b60350a00499b",
+              "status": "ok"
+            },
+            {
+              "image_id": "2cf603d0be991980fc3558f5",
+              "status": "ok"
+            },
+            {
+              "image_id": "a49f02d80579d7e1a83829bd",
+              "status": "ok"
+            },
+            {
+              "image_id": "1cfccf381b11376cd1bb0c57",
+              "status": "ok"
+            },
+            {
+              "image_id": "d62678079238e0cc60d5e60a",
+              "status": "ok"
+            },
+            {
+              "image_id": "4aaa0e941a34b30eb7fc672f",
+              "status": "ok"
+            },
+            {
+              "image_id": "d8a0c6d2e9f386a59014034f",
               "status": "ok"
             }
           ]
         }
       },
       "media_urls": [
-        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/795662387_18100372475123074_703348121329361495_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=sdIh-eMV2u0Q7kNvwGm0bL1&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQP0i13EGDE6IDfM5cXS-LME-JEVRy6T_EdYDfWMGcOp8g&oe=6AD93F31&_nc_sid=bc0c2c"
+        "https://scontent-mrs2-1.cdninstagram.com/v/t51.82787-15/795662387_18100372475123074_703348121329361495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk4NzI1MDk1OTU5NTM2Njg3Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6gnCrZBvQx4Q7kNvwGPBX_D&_nc_oc=Adoz7grzwgUgckjRvcL2ceiRQKqil7JQnLIGd-GTsEomm-MYYtv2IWySn-LdH5HunQo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQOiX70d4t647lc69KhTgi0is2-1EFMDu1bOoGd0S59rIQ&oe=6AD93F31",
+        "https://scontent-mrs2-1.cdninstagram.com/v/t51.82787-15/810900358_18100372484123074_8148029599081590760_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk4NzI1MDk2MzAyNjQ2NjU1Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zrMyJVZH4E4Q7kNvwHNyhe5&_nc_oc=AdoGlwxfjgck945QY8sYA0RITrJhLl3toNCj6qamw2ggKwuToHWhOSHtQs7vzUNJ0U8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQPWSuIRb8QuMBKaibDRtyftVoPYK-1ev3UZpkV0C_U1BQ&oe=6AD95455",
+        "https://scontent-mrs2-2.cdninstagram.com/v/t51.82787-15/811935367_18100372502123074_8829298170735605941_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzk4NzI1MDk2Mzk3NDM3NjAyMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=rDlMHT98kM4Q7kNvwFs2pIB&_nc_oc=AdoIhgztqlESNq3wtjU9QgqZeoDYP4YD8AC2XV7gI94fCXTYuKkEO2vo8rvHZiOwhvQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQMQIcNhPRDjUubVfAUcLKrYB6AwvRMbw7OckfWBElsQBg&oe=6AD95444",
+        "https://scontent-mrs2-2.cdninstagram.com/v/t51.82787-15/812645728_18100372499123074_7560256832321550378_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk4NzI1MDk2NDY2MjEzNDk3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4OvyGgf7HnkQ7kNvwE0WPBN&_nc_oc=AdoO5SINjQJLd0Aptd6HCjra7v5DAsDeHQIl6RVWrHi6rFVRD7cOiQEAbgsSt672d0U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQM3NmQSi99EY0_SsRmCKBO54mAlGoQB-DKWMCZbYxbkzg&oe=6AD931E1",
+        "https://scontent-mrs2-1.cdninstagram.com/v/t51.82787-15/808507464_18100372526123074_5651385261303883391_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk4NzI1MDk2NTUxNzgyMDcwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=5byI9btLRUoQ7kNvwF1oJrw&_nc_oc=AdroX5Bg8OyxersXhxe0D8iiRpmGinEIOi9_dxMmqxrLdU0R3xYCHLEYDMdCxBZawLQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQM3_knxs2H31etHGcIkgkfeG7BUc6WLLB55u_l9z3GcuQ&oe=6AD944EA",
+        "https://scontent-mrs2-2.cdninstagram.com/v/t51.82787-15/796439835_18100372520123074_2780452876194886129_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk4NzI1MDk2NjA3OTk4ODA5OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=a3B3q34rk-wQ7kNvwFJTgfo&_nc_oc=Adr4P2VWpVlkcxXzDb56Vw2X4semIef9v5qfyiqYDd9w8Bp_Xhd2-nQEuNXnyghJ_cs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQNSOaJPdvNOuc5tbswQOMrHdL_G1RliigaiaPQhjoF06Q&oe=6AD93E0F",
+        "https://scontent-mrs2-3.cdninstagram.com/v/t51.82787-15/797035952_18100372544123074_7546486221403852904_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk4NzI1MDk2NzQxMzczODcyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ztFapAKPRmcQ7kNvwHTAp2g&_nc_oc=Adp7-j9yBGMa9vJdz3GXCKE1q9dJ85t5tTQjpZuYh9LEOUW5GUmAgKbkpowv8ahFdZY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-3.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQM-L4HI2zqjvgk4WsPvhMPRXglc012BR5xztrIa64l6pg&oe=6AD945A7",
+        "https://scontent-mrs2-1.cdninstagram.com/v/t51.82787-15/795027802_18100372565123074_1141972835204339317_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk4NzI1MDk2Nzk0MjE4NjY3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=1l-W2lhWvq8Q7kNvwGt410l&_nc_oc=Adrc6h3KoSQRuAId2quEVXXfu-QLBRF4cmUHaGXTLc0brkcMGO_hAzIZ047tO4aX4L0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_gid=KIqSzP2aTgPb4g5gj1qamA&_nc_ss=7a22e&oh=00_AQOQLXeTIG5rc8wa71Vsxe4s0JQu7GxoXHuIDeX3YCoElg&oe=6AD95622"
       ],
       "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
-      "title": "DMSCF 26/27 is LIVE!! 🇸🇬🇲🇾🇬🇧",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DdVjhkDAdR4/",
-      "post_id": "social-4c401dfbafdf6b2fa5",
-      "society": "Malaysia Singapore Christian Fellowship",
-      "evidence": {
-        "caption": {
-          "text": "DMSCF 26/27 is LIVE!! 🇸🇬🇲🇾🇬🇧\n\nJoin us today to grow in faith away from home 🙌",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "ee\n\n=,\n\n[else tm]\n\nOty\n\npdm &\n\n—S\n\n- *\n\neS se\n\n==,\n\nRH\n\nM-\n\nY SIAN é SINGA\n\nEANN\n\naes\n\nTt OWSH)\n\na\n\nA flows om pha and vt singapore ss\n\nanother\n\n~ Me ,\n\nwf\n\nZa\n\n\\) CID,",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "d43c827991b84f289ae9c69e",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/797024129_18100371737123074_7633656391221044331_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=DLmbo_TTPwgQ7kNvwF1861p&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPA0kp98ckmGE0wZV1L-TOvLJmfu_zp-2_C5O5ykIMQ3g&oe=6AD964EC&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "reason": "Caption and image evidence need review together before publishing",
       "needs_visual_review": true
     },
     {
@@ -1161,105 +868,6 @@
       "society": "Meditation Society",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
-      "title": "Exec form is out in bio 🍐 Apply now to get involved!!!",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DXz_zoMDDXQ/",
-      "post_id": "social-9609826e1ba8ccbbd8",
-      "society": "Vegetarian and Vegan",
-      "evidence": {
-        "caption": {
-          "text": "Exec form is out in bio 🍐 Apply now to get involved!!!\nOpen to all, including 1st years. DM for any questions :)\n\n Let's make next year ⭐️ VEGTASTIC ⭐️",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "og Mary\n\nAPPLICATIONS OPEN\n\nf President 3\n\na\n\nte,\n\n\\\n\nq\n\nSecretary\n\n15h 0 .\n\ny\n\nSoria Social sec\n\n6) * tase, ©\n\nLINK TO NOMINATE YOURSELF\n\n\\\n\nIN BIO",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "999bd48ec1cdc0e927037371",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/683200751_18135767704551967_9083151793397232802_n.webp?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=pr0dFWPOdtEQ7kNvwHeFqTt&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQON1rtWPSw9zUObHQk5MeQSBGE8oCWRPdqwEdmLcePQLg&oe=6AD93FE2&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
-      "title": "Let us know through the group chat if you’ll be attending!!!! We are so excited ♠️♥️♦️♣️",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DRiSDn2D9fk/",
-      "post_id": "social-8099bf48b367cb87ec",
-      "society": "Bridge Club",
-      "evidence": {
-        "caption": {
-          "text": "Let us know through the group chat if you’ll be attending!!!! We are so excited ♠️♥️♦️♣️",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "Did someone s(t...\n\nWa\n\n—=\n\nNG\n\nEOS OXES\n\nEXP\n\nAY\n\n>\n\nwe\n\nXS\n\nsek\n\nPu“",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "d9d2fa6da3b08d438a631732",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/587608596_17987506397913343_9062141632306638973_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fktw4-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gHu_v4EAcw1ZPv1etRkT5u8_rpUb36CDYOvfbeEzRPBXLBMyaWpg-32iANGk1fhy9g&_nc_ohc=HUfIa6uUm-4Q7kNvwFD9LEe&_nc_gid=oyIinYmpc9fL3i7e8y6O2w&edm=APU89FABAAAA&ccb=7-5&oh=00_AQP-96vbwzLZ_uW2OfWyh1EItweBUpuARfyrcSSlG1Q4Gw&oe=6AD934D1&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
-    },
-    {
-      "title": "Long overdue… We present you with this years exec ♠️♥️♦️♣️",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/DRfHqnNDcJW/",
-      "post_id": "social-fb6d5971c25174981c",
-      "society": "Bridge Club",
-      "evidence": {
-        "caption": {
-          "text": "Long overdue… We present you with this years exec ♠️♥️♦️♣️",
-          "free_food": null
-        },
-        "image_ocr": {
-          "text": "Long overdue...\n\n+\n\nPresenting our\n\nExec for the\n\nyear\n\n» 26\n\n—\n\nK\n\nawe! AO]\n\nv\n\n-\n\nq\n\nFWY,\n\n|\n\na4\n\n@durhambridgeclub",
-          "free_food": null,
-          "status": "partial",
-          "coverage_complete": false,
-          "expected_images": 1,
-          "inspected_images": 1,
-          "images": [
-            {
-              "image_id": "b6693bb425cfb6b0ea9c07dd",
-              "status": "ok"
-            }
-          ]
-        }
-      },
-      "media_urls": [
-        "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/587705207_17987384447913343_5650465006440157477_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fktw4-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gHu_v4EAcw1ZPv1etRkT5u8_rpUb36CDYOvfbeEzRPBXLBMyaWpg-32iANGk1fhy9g&_nc_ohc=Mor-ha71hNIQ7kNvwEUwH4d&_nc_gid=oyIinYmpc9fL3i7e8y6O2w&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPMSt1tUDRM0wrCTZNAyLpe95IKCgN71TuppqXZDYU5YQ&oe=6AD95A1A&_nc_sid=bc0c2c"
-      ],
-      "kind": "social_post_review",
-      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
-      "needs_visual_review": true
     }
   ]
 }
