@@ -1,4 +1,4 @@
-import { eventStatus, filterEvents, formatDate, friendlyDay, entryLabel, signupLabel, calendarFile, safeUrl, isValidEvent } from './events.js';
+import { eventStatus, filterEvents, formatDate, friendlyDay, entryLabel, signupLabel, calendarFile, safeUrl, mergeEventFeeds } from './events.js';
 import { renderEventDetails } from './event-details.js';
 import { buildGridItems } from './promotions.js';
 
@@ -103,31 +103,79 @@ $$('[data-close]').forEach(button=>button.addEventListener('click',()=>document.
 $$('dialog').forEach(dialog=>dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}}));
 $('#event-dialog').addEventListener('close',()=>{state.activeEvent=null;$('#event-dialog-content').replaceChildren();});
 let suggestionAttempt=null;
-function openSuggestions(){
-  if(!$('#suggest-success').hidden){$('#suggest-form').reset();suggestionAttempt=null;}
-  $('#suggest-form').hidden=false;$('#suggest-success').hidden=true;$('.suggest-intro').hidden=false;$('#suggest-error').hidden=true;
-  $('#submit-dialog').showModal();
+let trackedSuggestion=null, suggestionPoll=null, suggestionPolls=0;
+const suggestionStatuses=['pending','processing','published','rejected','needs_review','failed'];
+try {const saved=JSON.parse(localStorage.getItem('grubr:last-submission')||'null');if(saved&&/^[a-f0-9-]{36}$/i.test(saved.id))trackedSuggestion=saved;}catch{}
+function rememberSuggestion(result){
+  trackedSuggestion={id:result.id,status:result.status,reason:typeof result.reason==='string'?result.reason:''};
+  try {localStorage.setItem('grubr:last-submission',JSON.stringify(trackedSuggestion));}catch{}
 }
+function showSuggestionStatus(result){
+  const content={
+    pending:['You’re in the queue.','We’ll check the caption and every image. This usually takes a few minutes; you can close this window.','clock'],
+    processing:['Checking the post…','We’re reading the caption and images, and checking the food, date, location and any conditions.','search'],
+    published:['It’s on the menu.','The event is now listed. If it was already on Grubr, we’ve kept the existing listing.','check'],
+    rejected:['This one doesn’t qualify.','We couldn’t confirm a Durham event offering free food. It hasn’t been added.','food'],
+    needs_review:['A few details need checking.','We couldn’t confidently verify all the details, so this event hasn’t been published.','search'],
+    failed:['We couldn’t check this post.','The post couldn’t be read or the check was interrupted. It has been saved, but hasn’t been published.','clock']
+  }[result.status];
+  if(!content)return;
+  $('#suggest-form').hidden=true;$('.suggest-intro').hidden=true;$('#suggest-success').hidden=false;
+  $('#suggest-status-title').textContent=content[0];
+  $('#suggest-status-copy').textContent=typeof result.reason==='string'&&result.reason.trim()?result.reason:content[1];
+  $('#suggest-status-icon').innerHTML=icon(content[2]);
+}
+async function pollSuggestion(){
+  clearTimeout(suggestionPoll);
+  const id=trackedSuggestion?.id;if(!id||!$('#submit-dialog').open)return;
+  try{
+    const result=await fetchJson(`/api/suggestions/${encodeURIComponent(id)}`);
+    if(trackedSuggestion?.id!==id)return;
+    if(result.id!==id||!suggestionStatuses.includes(result.status))throw new Error('Invalid status');
+    rememberSuggestion(result);showSuggestionStatus(result);
+    if(result.status==='published')await refreshSubmittedEvents();
+    if(!['pending','processing'].includes(result.status))return;
+  }catch{
+    if(trackedSuggestion?.id!==id)return;
+    $('#suggest-status-copy').textContent='Your submission is saved. We can’t refresh its status right now; reopen this window to check again.';
+  }
+  if(suggestionPolls++<40&&$('#submit-dialog').open)suggestionPoll=setTimeout(pollSuggestion,15000);
+  else $('#suggest-status-copy').textContent='Your submission is still saved. You can close this window and reopen it later to check the result.';
+}
+function newSuggestion(){
+  clearTimeout(suggestionPoll);trackedSuggestion=null;suggestionAttempt=null;
+  try {localStorage.removeItem('grubr:last-submission');}catch{}
+  $('#suggest-form').reset();$('#suggest-form').hidden=false;$('#suggest-success').hidden=true;$('.suggest-intro').hidden=false;$('#suggest-error').hidden=true;
+  $('#suggest-form [name=source]').focus();
+}
+function openSuggestions(){
+  $('#submit-dialog').showModal();
+  if(trackedSuggestion){showSuggestionStatus(trackedSuggestion);suggestionPolls=0;pollSuggestion();}
+  else {$('#suggest-form').hidden=false;$('#suggest-success').hidden=true;$('.suggest-intro').hidden=false;$('#suggest-error').hidden=true;}
+}
+$('#submit-dialog').addEventListener('close',()=>clearTimeout(suggestionPoll));
+$('#another-suggestion').addEventListener('click',newSuggestion);
 $('#submit-event').addEventListener('click',openSuggestions);
 $('#suggest-form').addEventListener('submit',async event=>{
   event.preventDefault();
   const form=event.target,fields=new FormData(form),source=safeUrl(fields.get('source'));
   const error=$('#suggest-error'),button=$('#send-suggestion');
   error.hidden=true;
-  if(!source){error.textContent='Please add a full event or post link, beginning with https://.';error.hidden=false;return;}
-  const payload={title:String(fields.get('title')||'').trim(),source_url:source,details:String(fields.get('details')||'').trim(),website:String(fields.get('website')||'')};
+  const postUrl=source?new URL(source):null;
+  if(!postUrl||postUrl.protocol!=='https:'||!['instagram.com','www.instagram.com','m.instagram.com'].includes(postUrl.hostname)||!/^\/(?:p|reel|tv)\/[A-Za-z0-9_-]+\/?$/.test(postUrl.pathname)||postUrl.username||postUrl.password||postUrl.port){error.textContent='Please paste a public Instagram post link, such as https://www.instagram.com/p/…';error.hidden=false;return;}
+  const payload={title:String(fields.get('title')||'').trim()||'Instagram event',source_url:source,details:String(fields.get('details')||'').trim(),website:String(fields.get('website')||'')};
   const signature=JSON.stringify(payload);
   if(!suggestionAttempt||suggestionAttempt.signature!==signature)suggestionAttempt={signature,id:crypto.randomUUID()};
   button.disabled=true;button.textContent='Sending…';
   try{
     const response=await fetch('/api/suggestions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...payload,idempotency_key:suggestionAttempt.id}),signal:AbortSignal.timeout(15000)});
     const result=await response.json().catch(()=>({}));
-    if(!response.ok)throw new Error(response.status===429?'A few too many suggestions at once. Please try again in a little while.':response.status===400?'Please check the event name and link, then try again.':'We couldn’t save your suggestion. Your details are still here—please try again.');
-    if(result.status!=='pending'||typeof result.id!=='string')throw new Error('We couldn’t confirm your suggestion was saved. Please try again.');
-    form.hidden=true;$('.suggest-intro').hidden=true;$('#suggest-success').hidden=false;suggestionAttempt=null;
+    if(!response.ok)throw new Error(response.status===429?'A few too many suggestions at once. Please try again in a little while.':response.status===400?'Please check the Instagram post link and try again.':'We couldn’t save your suggestion. Your details are still here—please try again.');
+    if(!suggestionStatuses.includes(result.status)||typeof result.id!=='string')throw new Error('We couldn’t confirm your suggestion was saved. Please try again.');
+    rememberSuggestion(result);showSuggestionStatus(result);suggestionAttempt=null;suggestionPolls=0;pollSuggestion();
     $('#suggest-success button').focus();
   }catch(problem){error.textContent=problem.name==='TimeoutError'||problem.name==='TypeError'?'The connection was interrupted. Your details are still here—please try again.':problem.message;error.hidden=false;}
-  finally{button.disabled=false;button.textContent='Send suggestion';}
+  finally{button.disabled=false;button.textContent='Check and add event';}
 });
 async function fetchJson(url){const response=await fetch(url,{signal:AbortSignal.timeout(7000),cache:'no-cache'});if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json();}
 async function loadFeed(name, arrayKey=name) {
@@ -142,12 +190,30 @@ function renderFreshness(){
   const updated=state.data.updated_at;
   $('#freshness-text').textContent=updated?`Listings updated ${formatDate(updated,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}. Times shown are local to Durham.`:'';
 }
+let baseFeed={events:[]},submittedFeed={events:[]},submittedRefresh=null,submittedLoadVersion=0;
+function combineFeeds(){
+  state.data={...baseFeed,events:mergeEventFeeds(baseFeed.events,submittedFeed.events)};
+  if(Date.parse(submittedFeed.updated_at)> (Date.parse(baseFeed.updated_at)||0))state.data.updated_at=submittedFeed.updated_at;
+}
+async function refreshSubmittedEvents(){
+  if(submittedRefresh)return submittedRefresh;
+  const version=++submittedLoadVersion;
+  submittedRefresh=(async()=>{
+    try {const feed=await fetchJson('/api/submitted-events');if(!Array.isArray(feed.events)||version!==submittedLoadVersion)return;submittedFeed=feed;combineFeeds();render();renderFreshness();}
+    catch {/* Keep the last successfully loaded feed while offline. */}
+    finally{submittedRefresh=null;}
+  })();
+  return submittedRefresh;
+}
 async function init(){
   state.loaded=false;state.loadError=false;render();
-  try {const feed=await loadFeed('events');state.data=feed.value;state.data.events=state.data.events.filter(isValidEvent);}
-  catch {state.loadError=true;}
+  const version=++submittedLoadVersion;
+  const results=await Promise.allSettled([loadFeed('events'),fetchJson('/api/submitted-events')]);
+  if(results[0].status==='fulfilled')baseFeed=results[0].value.value;
+  if(results[1].status==='fulfilled'&&Array.isArray(results[1].value.events)&&version===submittedLoadVersion)submittedFeed=results[1].value;
+  combineFeeds();state.loadError=results[0].status==='rejected'&&!state.data.events.length;
   state.loaded=true;render();renderFreshness();
 }
 init();
-setInterval(()=>{if(state.loaded)render();},60000);
-document.addEventListener('visibilitychange',()=>{if(!document.hidden&&state.loaded)render();});
+setInterval(()=>{if(state.loaded){render();if(!document.hidden)refreshSubmittedEvents();}},60000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&state.loaded){render();refreshSubmittedEvents();}});

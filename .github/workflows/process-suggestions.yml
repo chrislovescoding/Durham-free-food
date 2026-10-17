@@ -1,0 +1,43 @@
+name: Check submitted event links
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: grubr-submission-processor
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install image and API dependencies
+        run: python -m pip install 'requests>=2.32,<3' 'Pillow>=11,<13' 'tzdata>=2025.1'
+      - name: Verify submission processing without network calls
+        run: python -m unittest discover -s tests -p 'test_process_suggestions.py'
+      - name: Check captions and every image, then publish valid events
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GRUBR_QUEUE_TOKEN: ${{ secrets.GRUBR_QUEUE_TOKEN }}
+          SITE_URL: https://durham-free-food-chris.chris9p.chatgpt.site
+        run: python scripts/process_suggestions.py
+      - name: Keep source captions, actual images and completed AI results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: submitted-events-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/submission-processing/
+          retention-days: 90
+          if-no-files-found: ignore

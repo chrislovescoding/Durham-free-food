@@ -74,17 +74,17 @@
   </dialog>
   <dialog id="submit-dialog" aria-labelledby="submit-title">
     <button class="dialog-close" aria-label="Close suggestion form" data-close="submit-dialog">×</button>
-    <div class="suggest-intro"><span class="suggest-icon" data-icon="food"></span><h2 id="submit-title">Share a good find.</h2><p>Spotted free food? Send us the event link and we’ll check the details before adding it.</p></div>
+    <div class="suggest-intro"><span class="suggest-icon" data-icon="food"></span><h2 id="submit-title">Share a good find.</h2><p>Paste an Instagram post. We’ll check its caption and images, then add it automatically if the event details and free food are confirmed.</p></div>
     <form id="suggest-form">
-      <label>Event name<input name="title" required minlength="3" maxlength="150" placeholder="e.g. Welcome social with free pizza"></label>
-      <label>Original event or post link<input name="source" type="url" required maxlength="2000" placeholder="https://…"></label>
+      <label>Instagram post link<input name="source" type="url" required maxlength="2000" placeholder="https://www.instagram.com/p/…"></label>
+      <label>Event name <span class="optional">Optional</span><input name="title" minlength="3" maxlength="150" placeholder="e.g. Welcome social with free pizza"></label>
       <label>Anything else we should know? <span class="optional">Optional</span><textarea name="details" rows="3" maxlength="2000" placeholder="When, where, and what’s on the menu"></textarea></label>
       <div class="form-trap" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
       <p id="suggest-error" class="form-error" role="alert" hidden></p>
-      <button id="send-suggestion" type="submit" class="primary-button">Send suggestion <span data-icon="arrow-down" class="send-arrow"></span></button>
-      <p class="suggest-note">No account needed. Your suggestion is saved for review.</p>
+      <button id="send-suggestion" type="submit" class="primary-button">Check and add event <span data-icon="arrow-down" class="send-arrow"></span></button>
+      <p class="suggest-note">Usually a few minutes. Public Instagram posts only. You can close this window while we check.</p>
     </form>
-    <div id="suggest-success" class="suggest-success" role="status" hidden><span class="success-icon" data-icon="check"></span><h3>Thanks for sharing.</h3><p>We’ve received your suggestion. We’ll check the original post before adding it to Grubr.</p><button class="primary-button" data-close="submit-dialog">Back to the food</button></div>
+    <div id="suggest-success" class="suggest-success" role="status" aria-live="polite" hidden><span id="suggest-status-icon" class="success-icon" data-icon="clock"></span><h3 id="suggest-status-title">You’re in the queue.</h3><p id="suggest-status-copy">We’ll check the caption and every image before publishing.</p><button class="primary-button" data-close="submit-dialog">Back to the food</button><button id="another-suggestion" class="text-button">Submit another event</button></div>
   </dialog>
   <div id="toast" class="toast" role="status" hidden></div>
 </body>

@@ -16,6 +16,17 @@ export function eventStatus(event, now = new Date()) {
 export function isValidEvent(event) {
   return Boolean(event && event.id && event.title && event.society && Number.isFinite(Date.parse(event.starts_at)) && /(?:Z|[+-]\d{2}:\d{2})$/.test(event.starts_at) && safeUrl(event.source_url) && event.food_is_free === true && (event.price === null || (typeof event.price === 'number' && event.price >= 0)));
 }
+export function mergeEventFeeds(base = [], submitted = []) {
+  const seen = new Set();
+  return [...base, ...submitted].filter(isValidEvent).filter(event => {
+    const url = new URL(event.source_url);
+    const post = /(?:^|\.)instagram\.com$/.test(url.hostname) && url.pathname.match(/^\/(?:p|reel|tv)\/([A-Za-z0-9_-]+)\/?$/);
+    const source = post ? `instagram:${post[1]}` : url.origin + url.pathname.replace(/\/$/, '');
+    const identity = source + ':' + Date.parse(event.starts_at);
+    if (seen.has(identity)) return false;
+    seen.add(identity); return true;
+  });
+}
 export function filterEvents(events, filters = {}, now = new Date()) {
   const today = dayKey(now); const search = (filters.search || '').trim().toLocaleLowerCase('en-GB');
   const date = filters.date || 'recent';
