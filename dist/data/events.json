@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T13:39:32.839826Z",
+  "updated_at": "2026-10-17T13:54:26.515230Z",
   "timezone": "Europe/London",
   "events": [
     {
@@ -266,7 +266,7 @@
     "parse_error_count": 0,
     "live_event_count": 8,
     "reviewed_event_count": 8,
-    "candidate_count": 96,
+    "candidate_count": 50,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
@@ -282,6 +282,10 @@
       "societies_needing_attention": 203,
       "societies_stale": 0,
       "post_count": 424
-    }
+    },
+    "ai_event_count": 0,
+    "ai_review_count": 3,
+    "ai_processed_at": "2026-10-17T13:53:11.626511+00:00",
+    "ai_stale_post_count": 0
   }
 }

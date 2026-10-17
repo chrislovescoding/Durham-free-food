@@ -1,0 +1,1583 @@
+{
+  "version": "grubr-vision-v1",
+  "posts": {
+    "social-7c92f296259d65e669": {
+      "fingerprint": "93499350c456f554c64e0386008c0be2b780296d29c3a9e2243e195c1e9b3f9b",
+      "post_id": "social-7c92f296259d65e669",
+      "source_url": "https://www.instagram.com/p/DeaWvCMIdBL/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1892,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1892
+        }
+      }
+    },
+    "social-0c7923242393ceeeaf": {
+      "fingerprint": "dd00de2d6c1753433d3b1219a00d13668b766887c710a1e541462efda3704724",
+      "post_id": "social-0c7923242393ceeeaf",
+      "source_url": "https://www.instagram.com/p/DeEzLTAjTkX/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3287,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3287
+        }
+      }
+    },
+    "social-7a36f4d4ffe2f24ef4": {
+      "fingerprint": "dd6125f63cc9c88673402b5bd4c632bddd17e325117c077f8956bd6b131f89c3",
+      "post_id": "social-7a36f4d4ffe2f24ef4",
+      "source_url": "https://www.instagram.com/p/Dd1Vkf_DRE8/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.7,
+        "id": null,
+        "usage": {
+          "input_tokens": 6448,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 6448
+        }
+      },
+      "extraction": {
+        "events": [],
+        "review_reason": null
+      },
+      "response_id": "resp_0014eed1d4229161016ad37dcaf04887d0918196477ec9865b",
+      "usage": {
+        "input_tokens": 7940,
+        "input_tokens_details": {
+          "cache_write_tokens": 7937,
+          "cached_tokens": 0
+        },
+        "output_tokens": 133,
+        "output_tokens_details": {
+          "reasoning_tokens": 114
+        },
+        "total_tokens": 8073
+      }
+    },
+    "social-a8a8553a3b5a9abf47": {
+      "fingerprint": "588832ebb02dde449eb8ce9f9a3c1b1dc525e20363cebf74cf74afa67ec6d1b9",
+      "post_id": "social-a8a8553a3b5a9abf47",
+      "source_url": "https://www.instagram.com/p/DdbYDdTNSVt/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1242,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1242
+        }
+      }
+    },
+    "social-5c311767236d7fd553": {
+      "fingerprint": "3176560f632e4cffeb8e4092e513234d8b1d7c60feab162df471eb0ae0184da3",
+      "post_id": "social-5c311767236d7fd553",
+      "source_url": "https://www.instagram.com/p/DdNBY2EttHA/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1315,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1315
+        }
+      }
+    },
+    "social-fdc0e65242ab8ae2dd": {
+      "fingerprint": "f13edc33c7cd637712aeefac460a40d961d1c08c271f843fd047911490033154",
+      "post_id": "social-fdc0e65242ab8ae2dd",
+      "source_url": "https://www.instagram.com/p/DefsNShiHLR/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 12739,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 12739
+        }
+      }
+    },
+    "social-14da5e07bbdf6d4440": {
+      "fingerprint": "b3331b6be76d0df8342b50553660eae6dd5243116cb9b84c8a8792be9ff6d038",
+      "post_id": "social-14da5e07bbdf6d4440",
+      "source_url": "https://www.instagram.com/p/DeXEwo3iNAw/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3305,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3305
+        }
+      }
+    },
+    "social-5bad06c5d95e3f24b2": {
+      "fingerprint": "e6c160643d3e224d22019b605c4f8982d4b2936cd46ede69a9367b86464768f9",
+      "post_id": "social-5bad06c5d95e3f24b2",
+      "source_url": "https://www.instagram.com/p/DdVkIyNAaB-/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 12074,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 12074
+        }
+      }
+    },
+    "social-4c401dfbafdf6b2fa5": {
+      "fingerprint": "40c0c252a4772e901847d25704f1693b18c3a5b41d509e902a46adeebe8b3cf7",
+      "post_id": "social-4c401dfbafdf6b2fa5",
+      "source_url": "https://www.instagram.com/p/DdVjhkDAdR4/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 4741,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 4741
+        }
+      }
+    },
+    "social-af766e174752f97fe1": {
+      "fingerprint": "fb1f85abd9deae1ae2548fb71ec4fe95f52f73433c033e9a9fd0b6d1cc39286e",
+      "post_id": "social-af766e174752f97fe1",
+      "source_url": "https://www.instagram.com/p/DehWwfbM61S/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.07,
+        "id": null,
+        "usage": {
+          "input_tokens": 1798,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1798
+        }
+      }
+    },
+    "social-1e3de2479c3c349e5d": {
+      "fingerprint": "2204eb71736c9fecbfdc26cadf5cc42c5fea05f72b72f9023d822f3a1b697745",
+      "post_id": "social-1e3de2479c3c349e5d",
+      "source_url": "https://www.instagram.com/p/DeZ5EaUEag3/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 13154,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 13154
+        }
+      }
+    },
+    "social-de4cf47f0a7cc9d5a6": {
+      "fingerprint": "295af79a0680b37bc8847da1cfa3da9661de2bcc33caddf088e47410e6e4cc4b",
+      "post_id": "social-de4cf47f0a7cc9d5a6",
+      "source_url": "https://www.instagram.com/p/DeE_MM1sebS/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1809,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1809
+        }
+      }
+    },
+    "social-d991d49957bb6b3d38": {
+      "fingerprint": "995861ab52d971f81d0ae8026fa9d959dcade9731d75e1046aaa563e5d51b48c",
+      "post_id": "social-d991d49957bb6b3d38",
+      "source_url": "https://www.instagram.com/p/Dd11S8cCOHM/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 14903,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 14903
+        }
+      }
+    },
+    "social-9609826e1ba8ccbbd8": {
+      "fingerprint": "a3b0a91816d5a6b86a4d55facfa876a15a026b560d4a2db7069f401c018948da",
+      "post_id": "social-9609826e1ba8ccbbd8",
+      "source_url": "https://www.instagram.com/p/DXz_zoMDDXQ/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 10043,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 10043
+        }
+      }
+    },
+    "social-443510db99036bb474": {
+      "fingerprint": "d9080c04f6d7d47f8be2ef0bc81b674f812514a91be7133ac32b60f1abe65ebd",
+      "post_id": "social-443510db99036bb474",
+      "source_url": "https://www.instagram.com/p/DeMw-65IpG2/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1883,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1883
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "Coffee Morning",
+            "starts_at": "2026-10-10T11:00:00+01:00",
+            "ends_at": "2026-10-10T12:00:00+01:00",
+            "location": "Whitechurch Durham",
+            "food": "Free coffee and a slice of cake",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Anyone is welcome; no background knowledge required.",
+            "dietary": [],
+            "description": "Coffee morning exploring ideas in AI safety, AI ethics, AI consciousness, and related topics. Anyone is welcome, and no background knowledge is required.",
+            "evidence": {
+              "food": "who doesn’t love free coffee and a slice of cake?",
+              "date": "10th October 2026",
+              "time": "11:00-12:00",
+              "location": "Whitechurch Durham",
+              "eligibility": "anyone is welcome"
+            },
+            "needs_review": false
+          }
+        ],
+        "review_reason": null
+      },
+      "response_id": "resp_07753c9a21985d92016ad37dd6998087d0b04c6ddc5d010cae",
+      "usage": {
+        "input_tokens": 2499,
+        "input_tokens_details": {
+          "cache_write_tokens": 2496,
+          "cached_tokens": 0
+        },
+        "output_tokens": 204,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2703
+      }
+    },
+    "social-fe80c7db89fcc86855": {
+      "fingerprint": "e2023517b2c74cbf46b4d83da46ba24653fc8790170ccf26d5f73a08949ca721",
+      "post_id": "social-fe80c7db89fcc86855",
+      "source_url": "https://www.instagram.com/p/Dd8xdpACLlU/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3432,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3432
+        }
+      }
+    },
+    "social-08307e0da2d64c2534": {
+      "fingerprint": "0689e0ac2ccb56d8c9ff6fd1e3192d18788b266b63c19b0b1218cd87b036d98c",
+      "post_id": "social-08307e0da2d64c2534",
+      "source_url": "https://www.instagram.com/p/DdlrJSWCApx/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2006,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2006
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "DAISI Foundations of AI Safety Fellowship",
+            "starts_at": "2026-10-15T18:30:00+01:00",
+            "ends_at": "2026-10-15T20:00:00+01:00",
+            "location": "Durham, UK (venue unspecified)",
+            "food": "Free Rudy's pizza for fellowship attendees.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": true,
+            "signup_deadline": "2026-10-09",
+            "eligibility": "Application-based; open to anyone, with participation subject to selection.",
+            "dietary": [],
+            "description": "First weekly session of DAISI's eight-week, discussion-based AI safety fellowship. The start date is subject to change due to fellow availability.",
+            "evidence": {
+              "food": "eat free Rudy's pizza with lots of like-minded people",
+              "date": "starting at 18:30 BST on Thursday 15th October",
+              "time": "90-minute session each week between 18:30 and 20:00",
+              "location": "Durham’s community",
+              "eligibility": "Application-based, but open to anyone!"
+            },
+            "needs_review": true
+          }
+        ],
+        "review_reason": "The post does not specify the venue, and says the start date is subject to change."
+      },
+      "response_id": "resp_026080cbdf82fad8016ad37dda612087d08c83da2e9c505a1e",
+      "usage": {
+        "input_tokens": 2622,
+        "input_tokens_details": {
+          "cache_write_tokens": 2619,
+          "cached_tokens": 0
+        },
+        "output_tokens": 454,
+        "output_tokens_details": {
+          "reasoning_tokens": 195
+        },
+        "total_tokens": 3076
+      }
+    },
+    "social-1511e6740b6945c4cd": {
+      "fingerprint": "fe0e8810dc98ad74878f0f8ff504401face3237e285655655a58ab6d2b79f2cf",
+      "post_id": "social-1511e6740b6945c4cd",
+      "source_url": "https://www.instagram.com/p/Ddlo-6KCNvR/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3535,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3535
+        }
+      }
+    },
+    "social-e8e7d3d746797d8ae5": {
+      "fingerprint": "a21515a1676c4fede658dd7c42d6b8a2678c56c52863c065fce5bf37da28d768",
+      "post_id": "social-e8e7d3d746797d8ae5",
+      "source_url": "https://www.instagram.com/p/DdlmtZrCOF2/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1924,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1924
+        }
+      }
+    },
+    "social-9dc0487d34fe060b88": {
+      "fingerprint": "c0f94b3ad5180a21ca0842ed8559219311733d899251154446766624b521373b",
+      "post_id": "social-9dc0487d34fe060b88",
+      "source_url": "https://www.instagram.com/p/DejlMz0uZVs/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1882,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1882
+        }
+      }
+    },
+    "social-3ed2537cdf38f385c4": {
+      "fingerprint": "a63cf32fdeab66d45b20d344f98cd336fc65c11cdfcb443ed69705da12ac3677",
+      "post_id": "social-3ed2537cdf38f385c4",
+      "source_url": "https://www.instagram.com/p/DehFFGJMxsG/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1975,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1975
+        }
+      }
+    },
+    "social-21dd931717d992fba3": {
+      "fingerprint": "f74e2ffce81aabab8bbfc24ef3548b97c0d7be07bb03b73cfa5bb00af8cdd6bf",
+      "post_id": "social-21dd931717d992fba3",
+      "source_url": "https://www.instagram.com/p/DeIIkPZsFpT/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1815,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1815
+        }
+      }
+    },
+    "social-0b62822c278ce13a74": {
+      "fingerprint": "1e662e4ae75d9053e923e018e5d0b16fa4b93be6c160d0b389a679f08a0f95fc",
+      "post_id": "social-0b62822c278ce13a74",
+      "source_url": "https://www.instagram.com/p/DeClroDMD1G/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1836,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1836
+        }
+      }
+    },
+    "social-4ae8da5ab7cc37b657": {
+      "fingerprint": "afffbce5470ebfc6bb5f88d3589f2530f3daf9ddefb3b6172df038eee60dfd9c",
+      "post_id": "social-4ae8da5ab7cc37b657",
+      "source_url": "https://www.instagram.com/p/Dd9ulKdsnXp/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1842,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1842
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "Sisters’ Games Night",
+            "starts_at": "2026-10-02T17:00:00+01:00",
+            "ends_at": null,
+            "location": "Grey Prayer Room",
+            "food": "Free food provided",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Sisters only",
+            "dietary": [],
+            "description": "An evening of games and laughter for sisters, with free food provided.",
+            "evidence": {
+              "food": "Free food provided!!",
+              "date": "Friday, 2 October",
+              "time": "Starts at 5 PM",
+              "location": "Grey Prayer Room",
+              "eligibility": "SISTERS ONLY"
+            },
+            "needs_review": false
+          }
+        ],
+        "review_reason": null
+      },
+      "response_id": "resp_01531cca12f22524016ad37de309e487d0960fe5982ca5a7e6",
+      "usage": {
+        "input_tokens": 2458,
+        "input_tokens_details": {
+          "cache_write_tokens": 2455,
+          "cached_tokens": 0
+        },
+        "output_tokens": 280,
+        "output_tokens_details": {
+          "reasoning_tokens": 121
+        },
+        "total_tokens": 2738
+      }
+    },
+    "social-53ddb19ce695239ee8": {
+      "fingerprint": "d5e963846abd2a2d7aec6e84eb401873d3525aaac57479682e4ae2037f376f84",
+      "post_id": "social-53ddb19ce695239ee8",
+      "source_url": "https://www.instagram.com/p/DelxYGRCt4y/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1776,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1776
+        }
+      }
+    },
+    "social-3239f6c6bae9999cdb": {
+      "fingerprint": "2c12aaa6188239e11d7234a91e4d8f49c70350611347436258f2379365b681f4",
+      "post_id": "social-3239f6c6bae9999cdb",
+      "source_url": "https://www.instagram.com/p/DejspkriikV/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1478,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1478
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "Career-Ready Night",
+            "starts_at": "2026-10-19T18:00:00+01:00",
+            "ends_at": "2026-10-19T20:00:00+01:00",
+            "location": "TLC113, Durham",
+            "food": "Free pizza",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": null,
+            "dietary": [],
+            "description": "Career panel and Q&A to help prepare your professional profile for application season, with free pizza.",
+            "evidence": {
+              "food": "Free pizza as usual",
+              "date": "19th October",
+              "time": "6pm - 8pm",
+              "location": "TLC113",
+              "eligibility": null
+            },
+            "needs_review": false
+          }
+        ],
+        "review_reason": null
+      },
+      "response_id": "resp_0d73ab51db201c4e016ad37de776c887d0b5a2816309424d67",
+      "usage": {
+        "input_tokens": 2033,
+        "input_tokens_details": {
+          "cache_write_tokens": 2030,
+          "cached_tokens": 0
+        },
+        "output_tokens": 283,
+        "output_tokens_details": {
+          "reasoning_tokens": 111
+        },
+        "total_tokens": 2316
+      }
+    },
+    "social-8eb99a29fa4ed1d30a": {
+      "fingerprint": "e45f90cbfe8505c2597c3df8e3eabcc35a8879af44e87b8cd91996fda74d439b",
+      "post_id": "social-8eb99a29fa4ed1d30a",
+      "source_url": "https://www.instagram.com/p/DeULS61CSoU/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1488,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1488
+        }
+      }
+    },
+    "social-44906653ec13f5a8ed": {
+      "fingerprint": "241073e9dc8abc7542bbb6d82d303fdda0d1fbedbae4bd1bf3f16db93f1b08ec",
+      "post_id": "social-44906653ec13f5a8ed",
+      "source_url": "https://www.instagram.com/p/DeHbd-vsf13/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1801,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1801
+        }
+      }
+    },
+    "social-1b48d00ef80c981a77": {
+      "fingerprint": "b428125e1a967d726c3945c7b3abb45f0338555c4cba29e3b291410df7c83f20",
+      "post_id": "social-1b48d00ef80c981a77",
+      "source_url": "https://www.instagram.com/p/Dd9T3uOgser/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1484,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1484
+        }
+      }
+    },
+    "social-375bee3f02b51ab74a": {
+      "fingerprint": "c8978b40b29429461273cbdac95894c9cbb363ecc68d99544f92f97eec5c111e",
+      "post_id": "social-375bee3f02b51ab74a",
+      "source_url": "https://www.instagram.com/p/DeejD06iigw/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2186,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2186
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "Seeds & True Vine",
+            "starts_at": "2026-10-16T18:30:00+01:00",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham, DH1 3HL",
+            "food": "Dinner is free for first-time visitors; returning group members pay £4.00.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": "2026-10-16T00:00:00+01:00",
+            "eligibility": "First-time visitors receive free dinner; returning group members pay £4.00. Attendees are asked to try to sign up in the WhatsApp/WeChat group before Friday 00:00.",
+            "dietary": [],
+            "description": "DCCF Term 1 Week 2 gathering. Dinner is served at 6:30 PM, followed by the gathering at 7:30 PM. Attendees are asked to bring their own cutlery.",
+            "evidence": {
+              "food": "第一次來的朋友晚餐是免費的哦！舊團友只需要 £4.00。",
+              "date": "16 OCT",
+              "time": "晚餐 6:30 PM | 聚會 7:30 PM",
+              "location": "Elvet Methodist Church 8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次來的朋友晚餐是免費的哦！舊團友只需要 £4.00。"
+            },
+            "needs_review": false
+          }
+        ],
+        "review_reason": null
+      },
+      "response_id": "resp_06f4dfe88b29c293016ad37dec111487d0967cf605e1e87f29",
+      "usage": {
+        "input_tokens": 2802,
+        "input_tokens_details": {
+          "cache_write_tokens": 2799,
+          "cached_tokens": 0
+        },
+        "output_tokens": 548,
+        "output_tokens_details": {
+          "reasoning_tokens": 226
+        },
+        "total_tokens": 3350
+      }
+    },
+    "social-f4720bafdbb61ef0b9": {
+      "fingerprint": "f0bb8dae4510fbade70ffb6f0251befbce2c32882d79a3fd8e43995ada85bce3",
+      "post_id": "social-f4720bafdbb61ef0b9",
+      "source_url": "https://www.instagram.com/p/DeMhf-5CjFL/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2036,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2036
+        }
+      }
+    },
+    "social-eaa559b5dc26bd9789": {
+      "fingerprint": "55d9b447878f1ce4eb4e6bc82173665ee614d0292f82415c8946b4d8a225050d",
+      "post_id": "social-eaa559b5dc26bd9789",
+      "source_url": "https://www.instagram.com/p/DdmdcizCnq_/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1963,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1963
+        }
+      }
+    },
+    "social-c16f7e716e2eea9ea6": {
+      "fingerprint": "b4e380da161d277518d799f262a1fda61386285fc88de8da5aa4ce194892ce77",
+      "post_id": "social-c16f7e716e2eea9ea6",
+      "source_url": "https://www.instagram.com/p/DdmdXA3itOR/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1921,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1921
+        }
+      }
+    },
+    "social-8a81c569b5d678ed7d": {
+      "fingerprint": "c616bfd4582c9740ad8d8b8166c2263a54b4daf1df6432968e36b3625d4164f3",
+      "post_id": "social-8a81c569b5d678ed7d",
+      "source_url": "https://www.instagram.com/p/DdlyySICnU4/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 7831,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7831
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "Week 2: Seed & Truth — Fellowship Dinner",
+            "starts_at": "2026-10-16T18:30:00+01:00",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "16/10",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 3: New Growth — Fellowship Dinner",
+            "starts_at": "2026-10-23T18:30:00+01:00",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "23/10",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 4: Rooted — Fellowship Dinner",
+            "starts_at": "2026-10-30T18:30:00Z",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "30/10",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 5: Ask and Explore — Fellowship Dinner",
+            "starts_at": "2026-11-06T18:30:00Z",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "06/11",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 6: Prayer Meeting — Fellowship Dinner",
+            "starts_at": "2026-11-13T18:30:00Z",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "13/11",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 7: Soil Analysis — Fellowship Dinner",
+            "starts_at": "2026-11-20T18:30:00Z",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "20/11",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 8: Hymn and Testimony Sharing — Fellowship Dinner",
+            "starts_at": "2026-11-27T18:30:00Z",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship gathering. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "27/11",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          },
+          {
+            "title": "Week 10: Christmas Party — Fellowship Dinner",
+            "starts_at": "2026-12-11T18:30:00Z",
+            "ends_at": null,
+            "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+            "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4.",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
+            "dietary": [],
+            "description": "Fellowship Christmas party. Dinner is offered from 6:30 pm, before the formal meeting at 7:30 pm.",
+            "evidence": {
+              "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+              "date": "11/12",
+              "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+              "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+              "eligibility": "第一次出席的新朋友"
+            },
+            "needs_review": false
+          }
+        ],
+        "review_reason": null
+      },
+      "response_id": "resp_0d8073dbae7f3781016ad37df4d36c87d083dab93f8530dd98",
+      "usage": {
+        "input_tokens": 9607,
+        "input_tokens_details": {
+          "cache_write_tokens": 9604,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2125,
+        "output_tokens_details": {
+          "reasoning_tokens": 172
+        },
+        "total_tokens": 11732
+      }
+    },
+    "social-3900a56a5fea7a4a42": {
+      "fingerprint": "35d8e0a2fa513208f3f6aa36b0cee2bc4add9a28ff4adcfe9f0b9f5848873885",
+      "post_id": "social-3900a56a5fea7a4a42",
+      "source_url": "https://www.instagram.com/p/DekLsgtF34U/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 7662,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7662
+        }
+      }
+    },
+    "social-e5214b93ca761b3813": {
+      "fingerprint": "ad0651ff9b68f03987f2e242f7071f819b629f3566af6ee5196be7aa815c1b81",
+      "post_id": "social-e5214b93ca761b3813",
+      "source_url": "https://www.instagram.com/p/DebsOCQuFyP/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1872,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1872
+        }
+      }
+    },
+    "social-955afca720986699cf": {
+      "fingerprint": "750fee746d2380cbf14b95e7a6b13fd6cb7cdaf8083f9c718d50dd7b2a08fb01",
+      "post_id": "social-955afca720986699cf",
+      "source_url": "https://www.instagram.com/p/DeEnXMzusdl/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1928,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1928
+        }
+      }
+    },
+    "social-453db618701c907508": {
+      "fingerprint": "98382038dad02812bc813a9317e80dcbdaab2d5e99075d1f5469ce2454cad7f7",
+      "post_id": "social-453db618701c907508",
+      "source_url": "https://www.instagram.com/p/Dd174Z0OGIA/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1858,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1858
+        }
+      }
+    },
+    "social-7db4622d2d25e47896": {
+      "fingerprint": "e3761ba58fdaafaee7ada40a119d61a5b9722382ab50913bf1d1c31840692f43",
+      "post_id": "social-7db4622d2d25e47896",
+      "source_url": "https://www.instagram.com/p/DdJgbR1OPe2/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1810,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1810
+        }
+      }
+    },
+    "social-598528574f1a7b0543": {
+      "fingerprint": "a99f2409f408efde359ea2726078a3a75b64a279f91bb17c7d4af12489a4e5eb",
+      "post_id": "social-598528574f1a7b0543",
+      "source_url": "https://www.instagram.com/p/DeK21vgN4x0/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 1.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1890,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1890
+        }
+      },
+      "extraction": {
+        "events": [
+          {
+            "title": "Beginner’s Bridge Session",
+            "starts_at": "2026-10-08T19:30:00+01:00",
+            "ends_at": null,
+            "location": "Kingsgate, at the Student Union",
+            "food": "Free pizza and drinks",
+            "food_is_free": true,
+            "price": null,
+            "signup_required": null,
+            "signup_deadline": null,
+            "eligibility": "All welcome; the introductory session is aimed at complete beginners.",
+            "dietary": [],
+            "description": "Introductory bridge session to learn the basic rules and play.",
+            "evidence": {
+              "food": "“FREE PIZZA AND DRINKS!”",
+              "date": "“08.10.2026”",
+              "time": "“AT 7:30PM”",
+              "location": "“MEET IN KINGSGATE AT THE STUDENT”",
+              "eligibility": "“AIMED AT COMPLETE BEGINNERS - ALL WELCOME!!!!!”"
+            },
+            "needs_review": false
+          }
+        ],
+        "review_reason": null
+      },
+      "response_id": "resp_0bc6b4936ecb66b4016ad37e09ede887d0b43e64a53ca65e1e",
+      "usage": {
+        "input_tokens": 2520,
+        "input_tokens_details": {
+          "cache_write_tokens": 2517,
+          "cached_tokens": 0
+        },
+        "output_tokens": 407,
+        "output_tokens_details": {
+          "reasoning_tokens": 205
+        },
+        "total_tokens": 2927
+      }
+    },
+    "social-753a86188147b1c4a7": {
+      "fingerprint": "446db37597c16428a44022ec2275d38a0cd9aea5e7e569092bd0eef2c2efcc1d",
+      "post_id": "social-753a86188147b1c4a7",
+      "source_url": "https://www.instagram.com/p/DVpQEQoCh4E/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1857,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1857
+        }
+      }
+    },
+    "social-59fdf49a78350d8cce": {
+      "fingerprint": "5b42397fdece16ef50d354d9b04a1ce7435a9df1e58e612a6f789fbf50b4aab9",
+      "post_id": "social-59fdf49a78350d8cce",
+      "source_url": "https://www.instagram.com/p/DT8rRuzDe5n/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1361,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1361
+        }
+      }
+    },
+    "social-8099bf48b367cb87ec": {
+      "fingerprint": "1ffc16ab531e9303d36c7c3bdf9746b58f0c888272581ac032c695016684d088",
+      "post_id": "social-8099bf48b367cb87ec",
+      "source_url": "https://www.instagram.com/p/DRiSDn2D9fk/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3263,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3263
+        }
+      }
+    },
+    "social-fb6d5971c25174981c": {
+      "fingerprint": "513534990a9169a2375f8942c6af2e7430b0f31a1205b641b7d677ec21e6e955",
+      "post_id": "social-fb6d5971c25174981c",
+      "source_url": "https://www.instagram.com/p/DRfHqnNDcJW/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 9108,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 9108
+        }
+      }
+    },
+    "social-fb6e3a4e30e2b980bd": {
+      "fingerprint": "5f5a7fc8186f62cd3d68f9377c57fc3b88739266d3ccc9be48f2b7fdf0028847",
+      "post_id": "social-fb6e3a4e30e2b980bd",
+      "source_url": "https://www.instagram.com/p/Deew0AVCAm5/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 4881,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 4881
+        }
+      }
+    },
+    "social-ee8d7af0053306162b": {
+      "fingerprint": "b5d5a028ba9fb410f6175a7f63f24fa2712b774a05247f26a6414ba15cce82fa",
+      "post_id": "social-ee8d7af0053306162b",
+      "source_url": "https://www.instagram.com/p/DeeFC3RkYhi/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3379,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3379
+        }
+      }
+    },
+    "social-3aa88a9d4b260f1c04": {
+      "fingerprint": "70e1b4da54cdfc2f666bf36556e31fd13fd9ac35a97e1cfd2bcfd03bcc6cb446",
+      "post_id": "social-3aa88a9d4b260f1c04",
+      "source_url": "https://www.instagram.com/p/DeMZ9DKiJUs/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 4811,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 4811
+        }
+      }
+    },
+    "social-f9890a68263922f2f2": {
+      "fingerprint": "f28983fe8c128de7273640c5bfbfdd6e232bac732c1bd8dc518038b77f807e7f",
+      "post_id": "social-f9890a68263922f2f2",
+      "source_url": "https://www.instagram.com/p/DeJ75PpjMvw/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3380,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3380
+        }
+      }
+    },
+    "social-6983358efad5fec3e7": {
+      "fingerprint": "f460f2df10e65b2da52f78357e418c2377a9b0ed18d9168f5af7795212ceb74f",
+      "post_id": "social-6983358efad5fec3e7",
+      "source_url": "https://www.instagram.com/p/Dd8ptFLkWx-/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T13:53:11.626511+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3381,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3381
+        }
+      }
+    }
+  }
+}
