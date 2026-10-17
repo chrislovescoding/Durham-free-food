@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T14:48:22.761101Z",
+  "updated_at": "2026-10-17T14:51:43.278335Z",
   "timezone": "Europe/London",
   "events": [
     {
@@ -28,7 +28,7 @@
         "location": "“kingsgate, Student Union”",
         "eligibility": "“Members Only”"
       },
-      "verified_at": "2026-10-17T14:36:33.657310Z",
+      "verified_at": "2026-10-17T14:50:09.009876Z",
       "post_published_at": "2026-10-15T13:06:01Z",
       "extraction": {
         "method": "ai",
@@ -336,7 +336,7 @@
     "parse_error_count": 0,
     "live_event_count": 10,
     "reviewed_event_count": 8,
-    "candidate_count": 130,
+    "candidate_count": 90,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
@@ -354,8 +354,8 @@
       "post_count": 853
     },
     "ai_event_count": 2,
-    "ai_review_count": 62,
-    "ai_processed_at": "2026-10-17T14:47:18.758659+00:00",
-    "ai_stale_post_count": 3
+    "ai_review_count": 59,
+    "ai_processed_at": "2026-10-17T14:50:30.512317+00:00",
+    "ai_stale_post_count": 0
   }
 }
