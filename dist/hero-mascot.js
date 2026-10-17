@@ -4,9 +4,50 @@ const mascot = document.querySelector('#mascot-travel');
 const facing = mascot?.querySelector('.mascot-facing');
 const body = mascot?.querySelector('.mascot-body');
 const eye = mascot?.querySelector('.mascot-eye');
-const mouth = mascot?.querySelector('.mascot-mouth');
+const gaze = mascot?.querySelector('.mascot-gaze');
+const jaw = mascot?.querySelector('.mascot-jaw');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let animations = [], playing = false, generation = 0;
+let pointer = null, gazeFrame = 0, lookX = 0, lookY = 0;
+
+function centreEye() {
+  cancelAnimationFrame(gazeFrame); gazeFrame = 0; lookX = 0; lookY = 0;
+  gaze.style.setProperty('--look-x', '0px'); gaze.style.setProperty('--look-y', '0px');
+}
+function updateGaze() {
+  gazeFrame = 0;
+  if (playing || reducedMotion.matches || document.hidden) { centreEye(); return; }
+  const rect = body.getBoundingClientRect();
+  let targetX = 0, targetY = 0;
+  if (pointer && rect.width && rect.height) {
+    const dx = pointer.x - (rect.left + rect.width * .4725);
+    const dy = pointer.y - (rect.top + rect.height * .3875);
+    const distance = Math.hypot(dx, dy);
+    const strength = Math.min(distance / (rect.width * 1.6), 1);
+    if (distance) {
+      // An elliptical limit keeps the entire pupil inside the logo's white eye.
+      targetX = dx / distance * rect.width * .105 * strength;
+      targetY = dy / distance * rect.height * .075 * strength;
+    }
+  }
+  lookX += (targetX - lookX) * .24; lookY += (targetY - lookY) * .24;
+  const moving = Math.abs(targetX - lookX) + Math.abs(targetY - lookY) > .03;
+  if (!moving) { lookX = targetX; lookY = targetY; }
+  gaze.style.setProperty('--look-x', `${lookX.toFixed(3)}px`);
+  gaze.style.setProperty('--look-y', `${lookY.toFixed(3)}px`);
+  if (moving) gazeFrame = requestAnimationFrame(updateGaze);
+}
+function requestGaze() {
+  if (!playing && !reducedMotion.matches && !gazeFrame) gazeFrame = requestAnimationFrame(updateGaze);
+}
+function releasePointer() { pointer = null; requestGaze(); }
+window.addEventListener('pointermove', event => {
+  if (event.pointerType !== 'mouse' && event.pointerType !== 'pen') return;
+  pointer = { x: event.clientX, y: event.clientY }; requestGaze();
+}, { passive: true });
+window.addEventListener('pointerout', event => { if (!event.relatedTarget) releasePointer(); });
+window.addEventListener('blur', releasePointer);
+window.addEventListener('scroll', requestGaze, { passive: true });
 
 // Real text is kept in the h1. These letters are purely decorative, including
 // during the transition, so screen readers always get the finished message.
@@ -38,6 +79,7 @@ function finish() {
   replay.innerHTML = '<span aria-hidden="true">↻</span> Replay the munch';
   replay.setAttribute('aria-label', 'Replay the mascot animation');
   replay.hidden = reducedMotion.matches;
+  if (reducedMotion.matches) centreEye(); else requestGaze();
 }
 function point(rect, bounds) { return { x: rect.left - bounds.left, y: rect.top - bounds.top }; }
 function play() {
@@ -45,6 +87,7 @@ function play() {
   if (reducedMotion.matches || !Element.prototype.animate || document.hidden) return;
   const run = generation;
   playing = true; stage.classList.add('is-playing'); stage.dataset.state = 'playing';
+  centreEye();
   replay.hidden = false;
   replay.innerHTML = '<span aria-hidden="true">→</span> Skip animation';
   replay.setAttribute('aria-label', 'Skip the mascot animation');
@@ -99,7 +142,14 @@ function play() {
         { transform: 'scale(1.06,.94) rotate(-3deg)', offset: .75 },
         { transform: 'scale(1,1) rotate(0)' },
       ], { delay: arrive, duration: chew, fill: 'none', iterations: 1 });
-      animate(mouth, [{ opacity: 0, transform: 'rotate(16deg) scale(1)' },{ opacity: 1, transform: 'rotate(16deg) scale(1.25,2.8)' },{ opacity: 0, transform: 'rotate(16deg) scale(.8,.4)' }], { delay: arrive, duration: 210, iterations: 3, fill: 'none' });
+      // The lower lobe is the real jaw, split at the neck in the source SVG.
+      // Negative rotation lowers its front while the right-hand hinge stays put.
+      animate(jaw, [
+        { transform: 'rotate(0deg)' },
+        { transform: 'rotate(-14deg)', offset: .42 },
+        { transform: 'rotate(-11deg)', offset: .58 },
+        { transform: 'rotate(0deg)' },
+      ], { delay: arrive, duration: 210, iterations: 3, fill: 'none', easing: 'ease-in-out' });
       crumbs.forEach((crumb, i) => animate(crumb, [
         { transform: `translate(${endX + width * .73}px,${y + height * .7}px) scale(.2)`, opacity: 0 },
         { transform: `translate(${endX + width * .73 + 11 + i * 6}px,${y + height * .7 - 19 - i * 8}px) scale(1)`, opacity: .85, offset: .35 },
@@ -124,7 +174,7 @@ function play() {
 }
 replay.addEventListener('click', () => playing ? finish() : play());
 reducedMotion.addEventListener('change', finish);
-document.addEventListener('visibilitychange', () => { if (document.hidden && playing) finish(); });
-window.addEventListener('resize', () => { if (playing) finish(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) { if (playing) finish(); pointer = null; centreEye(); } });
+window.addEventListener('resize', () => { if (playing) finish(); else requestGaze(); });
 // Wait briefly for type metrics, without making the content depend on fonts.
 Promise.race([document.fonts.ready, new Promise(resolve => setTimeout(resolve, 900))]).then(play);
