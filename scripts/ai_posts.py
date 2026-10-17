@@ -138,7 +138,7 @@ def prepare_input(post, folder):
         sort_keys=True).encode()).hexdigest()
     complete = (image.get('coverage_complete') is True
         and image.get('expected_images') == len(hashes)
-        and all(r.get('status') == 'ok' for r in records))
+        and all(r.get('status') in {'ok', 'no_text'} for r in records))
     return [{'role': 'user', 'content': content}], fingerprint, complete, len(hashes)
 
 
@@ -186,7 +186,7 @@ def process(folder, root=ROOT, limit=50, client=None, retry_errors=False):
     folder, root = Path(folder), Path(root)
     batch = load(folder / 'posts-with-images.json', {})
     posts = batch.get('posts')
-    if not isinstance(posts, list) or not posts:
+    if not isinstance(posts, list):
         raise ValueError('An existing posts-with-images.json collector artifact is required')
     client = client or OpenAIClient(os.environ.get('OPENAI_API_KEY'))
     cache_path = root / 'data/ai-post-cache.json'
@@ -209,10 +209,11 @@ def process(folder, root=ROOT, limit=50, client=None, retry_errors=False):
     report = {'model': MODEL, 'pipeline_version': VERSION, 'started_at': now.isoformat(),
         'posts_considered': 0, 'cache_hits': 0, 'decision_requests': 0,
         'extraction_requests': 0, 'images_sent_to_decisions': 0, 'events_extracted': 0,
-        'errors': [], 'usage': [], 'apify_requests': 0}
+        'errors': [], 'usage': [], 'apify_requests': 0, 'processed_post_ids': []}
     for post in posts[:limit]:
         report['posts_considered'] += 1
         post_id = post['id']
+        report['processed_post_ids'].append(post_id)
         events, queue = [], []
         failed = False
         try:

@@ -313,10 +313,18 @@ def main():
     parser.add_argument("--cache-dir", required=True, type=Path)
     parser.add_argument("--max-posts", type=int, default=50)
     parser.add_argument("--max-images", type=int, default=250)
+    parser.add_argument("--max-seconds", type=int, default=600)
+    parser.add_argument("--skip-ocr", action="store_true", help="Save actual PNGs for vision models without running optional local OCR")
     args = parser.parse_args()
     payload = json.loads(args.posts.read_text(encoding="utf-8-sig"))
     posts = payload if isinstance(payload, list) else payload["posts"]
-    enriched, report = inspect_posts(posts, args.cache_dir, max_posts=args.max_posts, max_images=args.max_images)
+    enriched, report = inspect_posts(posts, args.cache_dir, max_posts=args.max_posts, max_images=args.max_images,
+        max_seconds=args.max_seconds, ocr=(lambda *a, **kw: '') if args.skip_ocr else None)
+    if args.skip_ocr:
+        report['engine'] = 'cached-png-for-openai-vision'
+        report['notice'] = 'Actual PNG images saved for Decisions and Luna; local OCR skipped.'
+        for post in enriched:
+            post['image_ocr']['engine'] = report['engine']
     output = enriched if isinstance(payload, list) else {**payload, "posts": enriched}
     _write_json(args.output, output)
     _write_json(args.report, report)

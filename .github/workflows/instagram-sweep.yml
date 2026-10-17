@@ -1,0 +1,182 @@
+name: Full Instagram sweep (five recent posts per account)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: refresh-food-events
+  cancel-in-progress: false
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      batches: ${{ steps.plan.outputs.batches }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: git pull --ff-only origin "$GITHUB_REF_NAME"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Verify required credentials before collection
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os
+          for name in ('APIFY_TOKEN', 'OPENAI_API_KEY'):
+              if not os.environ.get(name):
+                  raise SystemExit(name + ' is missing; no paid collection started')
+          print('Required credentials are configured.')
+          PY
+      - name: Test collector, accounting, images, extraction and website integration
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Restore known real posts and images for a no-spend regression check
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: '39036821230'
+          name: instagram-pilot-39036821230-1
+          path: work/preflight/
+      - name: Verify actual images, positive detections, eligibility and expired-event filtering
+        run: python scripts/sweep_preflight.py --folder work/preflight
+      - name: Prepare all capped batches
+        id: plan
+        run: |
+          python scripts/plan_instagram_sweep.py --output work/instagram-sweep
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          plan=json.loads(Path('work/instagram-sweep/plan.json').read_text())
+          print('batches='+json.dumps(plan['batch_ids']))
+          PY
+      - name: Check credit and reserve this sweep once
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python scripts/reserve_instagram_sweep.py
+      - name: Persist reservation before any paid actor starts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/instagram-sweep-reservations.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Reserve the approved complete Instagram sweep budget'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: instagram-sweep-plan-${{ github.run_id }}
+          path: work/instagram-sweep/
+          retention-days: 90
+          overwrite: true
+  batch:
+    needs: preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        batch: ${{ fromJSON(needs.preflight.outputs.batches) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: instagram-sweep-plan-${{ github.run_id }}
+          path: work/instagram-sweep/
+      - name: Restore saved run journal and images when rerunning a job
+        id: restore
+        if: github.run_attempt != '1'
+        uses: actions/download-artifact@v4
+        with:
+          name: instagram-sweep-batch-${{ matrix.batch }}-${{ github.run_id }}
+          path: work/instagram-sweep/
+      - name: Collect or resume at most fifty posts within the batch cap
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          BATCH: ${{ matrix.batch }}
+        run: python scripts/apify_posts.py --config "work/instagram-sweep/batches/$BATCH/config.json" --output "work/instagram-sweep/batches/$BATCH"
+      - name: Cache all actual images for the vision models
+        env:
+          BATCH: ${{ matrix.batch }}
+        run: >-
+          python scripts/post_images.py
+          --posts "work/instagram-sweep/batches/$BATCH/posts.json"
+          --output "work/instagram-sweep/batches/$BATCH/posts-with-images.json"
+          --report "work/instagram-sweep/batches/$BATCH/images.json"
+          --cache-dir "work/instagram-sweep/batches/$BATCH/image-cache"
+          --max-images 1000 --max-seconds 1200 --skip-ocr
+      - name: Run Decisions and Luna with cached checkpoints
+        id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BATCH: ${{ matrix.batch }}
+        run: python scripts/ai_posts.py --folder "work/instagram-sweep/batches/$BATCH" --limit 50
+      - name: Preserve model checkpoints
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        env:
+          BATCH: ${{ matrix.batch }}
+        run: |
+          mkdir -p "work/instagram-sweep/batches/$BATCH/ai-checkpoints"
+          for path in data/ai-post-cache.json data/ai-events.json; do
+            if [ -f "$path" ]; then cp -- "$path" "work/instagram-sweep/batches/$BATCH/ai-checkpoints/"; fi
+          done
+      - name: Keep purchased posts, full images, receipts and partial results
+        if: ${{ always() && (github.run_attempt == '1' || steps.restore.outcome == 'success') }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-sweep-batch-${{ matrix.batch }}-${{ github.run_id }}
+          path: work/instagram-sweep/
+          retention-days: 90
+          overwrite: true
+          if-no-files-found: error
+  publish:
+    needs: [preflight, batch]
+    if: ${{ always() && needs.preflight.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - run: git pull --ff-only origin "$GITHUB_REF_NAME"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: instagram-sweep-*-${{ github.run_id }}
+          path: work/instagram-sweep/
+          merge-multiple: true
+      - name: Merge completed batches without overwriting reviewed events
+        run: |
+          python scripts/merge_instagram_sweep.py --folder work/instagram-sweep
+          python scripts/refresh.py --offline
+      - name: Commit results and receipts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ai-post-cache.json data/ai-events.json data/instagram-sweep-report.json data/review-queue.json dist/data/events.json dist/data/social-posts.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish validated events from the complete Instagram sweep'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+      - name: Summarise coverage and actual spending
+        run: cat data/instagram-sweep-report.json >> "$GITHUB_STEP_SUMMARY"

@@ -81,6 +81,25 @@ class AIPostPipelineTests(unittest.TestCase):
         self.assertEqual(report["events_extracted"], 1)
         self.assertFalse(self.stored()["events"][0]["extraction"]["human_reviewed"])
 
+    def test_downloaded_image_without_local_ocr_is_still_complete_vision_input(self):
+        self.post['image_ocr']['images'][0]['status'] = 'no_text'
+        self.write_post()
+        client = FakeClient()
+        report = process(self.folder, root=self.root, client=client)
+        self.assertEqual(report['events_extracted'], 1)
+        self.assertEqual(report['processed_post_ids'], [self.post['id']])
+        self.assertEqual(len(client.calls), 2)
+        self.assertEqual(self.stored()['queue'], [])
+
+    def test_empty_recent_collection_needs_no_api_request(self):
+        (self.folder / 'posts-with-images.json').write_text(json.dumps({'posts': []}), encoding='utf-8')
+        client = FakeClient()
+        report = process(self.folder, root=self.root, client=client)
+        self.assertEqual(client.calls, [])
+        self.assertEqual(report['posts_considered'], 0)
+        self.assertEqual(report['processed_post_ids'], [])
+        self.assertEqual(report['errors'], [])
+
     def test_negative_decision_skips_extraction_and_is_cached(self):
         client = FakeClient(probability=0.05)
         first = process(self.folder, root=self.root, client=client)
