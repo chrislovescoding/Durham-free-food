@@ -73,13 +73,15 @@ class IntegrationTests(unittest.TestCase):
 
     def test_a_retained_post_does_not_make_a_deferred_account_freshly_checked(self):
         events = {'events': [], 'sources': [], 'status': {}}
-        social = {'updated_at': '2026-10-17T12:00:00Z', 'posts': [POST], 'accounts': [
+        social = {'updated_at': '2026-10-17T12:00:00Z', 'posts': [{**POST, 'observed_at': '2026-10-16T12:00:00Z'}], 'accounts': [
             {'platform': 'instagram', 'provider': 'public_html', 'status': 'deferred', 'posts_collected': 0,
              'last_attempt_at': '2026-10-16T12:00:00Z'}], 'status': {}}
         integrate_social(events, {'candidates': []}, social, NOW)
         source = next(s for s in events['sources'] if s['id'] == 'social-instagram')
         self.assertEqual(source['accounts_checked'], 0)
         self.assertEqual(source['status'], 'partial')
+        self.assertEqual(source['parsed_count'], 0)
+        self.assertEqual(source['posts_stored'], 1)
 
     def test_partially_fetched_accounts_do_not_become_healthy_sources(self):
         events = {'events': [], 'sources': [], 'status': {}}

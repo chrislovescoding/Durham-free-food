@@ -635,12 +635,13 @@ def integrate_social(events, queue, social, now):
     for platform in ("instagram", "facebook"):
         accounts = [a for a in social.get("accounts", []) if a.get("platform") == platform and a.get("provider") == "public_html"]
         posts = [p for p in social.get("posts", []) if p.get("platform") == platform]
+        observed = [p for p in posts if p.get("observed_at") == social.get("updated_at")]
         checked = [a for a in accounts if a.get("last_attempt_at") == social.get("updated_at")]
         accessible = [a for a in accounts if a.get("posts_collected", 0) > 0]
         healthy = accounts and len(checked) == len(accounts) and all(a.get("status") == "ok" for a in accounts)
         events["sources"].append({"id": "social-" + platform, "type": "social", "name": platform.capitalize() + " society posts",
             "url": "https://www." + platform + ".com/", "status": "ok" if healthy else "partial" if posts else "unavailable",
-            "parsed_count": len(posts), "account_count": len(accounts), "accounts_checked": len(checked), "accounts_with_posts": len(accessible),
+            "parsed_count": len(observed), "posts_stored": len(posts), "account_count": len(accounts), "accounts_checked": len(checked), "accounts_with_posts": len(accessible),
             "last_attempt_at": social.get("updated_at"), "last_success_at": max((p.get("observed_at") or "" for p in posts), default=None)})
     events["status"].update(live_event_count=len(events["events"]), candidate_count=len(queue["candidates"]),
         social_post_count=len(social.get("posts", [])), social_account_count=social.get("status", {}).get("account_count", 0),
