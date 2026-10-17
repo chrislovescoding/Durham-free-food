@@ -25,7 +25,7 @@
       "url": "https://durhamsu.native.fm/events",
       "api_url": "https://api.native.fm/api/all-events/01KT3TJBYGY0T3HG1KB0Y48TKS/",
       "society": "Durham Students' Union",
-      "source_label": "Durham SU \u00c2\u00b7 What's On",
+      "source_label": "Durham SU · What's On",
       "timezone": "Europe/London"
     },
     {
@@ -33,7 +33,7 @@
       "type": "ics",
       "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
       "society": "Durham AI Safety Initiative",
-      "source_label": "DAISI \u00c2\u00b7 Luma calendar",
+      "source_label": "DAISI · Luma calendar",
       "timezone": "Europe/London",
       "website": "https://durhamaisafety.uk/"
     }
