@@ -20,7 +20,7 @@ Open `http://127.0.0.1:4173` for live listings or `http://127.0.0.1:4173/?demo=1
 python -m pip install -r requirements.txt
 python scripts/refresh.py
 node --test tests/events.test.js
-python -m unittest discover -s tests -p 'test_ingestion.py' -v
+python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
 ## What works
@@ -29,7 +29,8 @@ python -m unittest discover -s tests -p 'test_ingestion.py' -v
 - Event details show food, entry cost, date, time, place, sign-up rules/deadline, eligibility, dietary information and original source. Unknown information stays unknown.
 - Started events remain grey for the rest of their London calendar day, then disappear. Date filtering is repeated every minute and when returning to the tab.
 - Save events on the current browser and download an `.ics` calendar entry. No account is required; saved events do not sync across devices.
-- Browse the real SU society directory and the social-profile links exposed on each public society page.
+- Browse every SU society, filter collection coverage, and suggest missing or corrected account links with ownership evidence.
+- Collect recent public Instagram captions, publication times and original post links through public profile embeds; inspect per-account results under **How it works**. Facebook public HTML and authorised Meta API adapters are also included.
 - Suggest an event through a pre-filled GitHub issue. The visitor reviews and submits it; it is not automatically published.
 - The refresh workflow runs around **20:00 Europe/London** each day, handling British Summer Time. GitHub may delay scheduled runs. It can also be run manually from the Actions tab.
 
@@ -37,13 +38,21 @@ The frontend checks the public repository's latest `main/dist/data/*.json` data 
 
 ## Real sources and current limits
 
-The first crawl found **319 societies** and **77 society profiles with a public Instagram or Facebook link** in the [Durham SU directory](https://www.durhamsu.com/groups/studentgroups/). Supported sources include public ICS calendars, JSON-LD event pages and the SU's public Native event listings. The [DAISI site](https://durhamaisafety.uk/) links a public Luma calendar. The [SU Pantry](https://www.durhamsu.com/support/pantry/) is also linked as an ongoing food resource; its opening hours are not invented.
+The initial crawl found **319 societies** and **77 society profiles with a direct social link** in the [Durham SU directory](https://www.durhamsu.com/groups/studentgroups/). Supported sources include public ICS calendars, JSON-LD event pages and the SU's public Native event listings. The [DAISI site](https://durhamaisafety.uk/) links a public Luma calendar. The [SU Pantry](https://www.durhamsu.com/support/pantry/) is also linked as an ongoing food resource; its opening hours are not invented.
 
 No verified upcoming free-food event was found in the initial source checks on 17 October 2026. An event with free entry or a mention of food is insufficient to assert that the food is free. Ambiguous entries go into a review queue.
 
-**Instagram and Facebook posts are not automatically scraped in this prototype.** Their public profile links are discovered, but feed access is inconsistent and often requires platform permissions. To extend coverage, add supported organiser feeds or review original social posts into `data/reviewed-events.json`. A future Meta integration should use appropriately authorised accounts and API access. It should not depend on scraping login pages.
+The expanded crawl on 17 October 2026 discovered accounts for **113 societies** and stored **417 real Instagram posts from 90 societies**. **206 societies still need verified account links**, and no Facebook posts have been collected. These are social posts, not 417 confirmed free-food events.
+
+**Instagram post collection now works without credentials for accounts whose public embeds expose posts.** It collects the society's captions, publication dates and permalinks, not bios, comments or followers. A public embed usually exposes only six recent posts; daily collection retains observed posts for 60 days. It cannot guarantee complete history or catch a post that leaves that window between runs. The public Facebook pages tested did not expose captions; their coverage is marked unavailable rather than reported as an empty successful feed.
+
+An official Meta API adapter is included for accounts with authorised access. It has not been connected because no API credentials are configured. See [the social access guide](scripts/README-social.md) for repository secrets, account mapping and the difference between public professional Instagram accounts and Facebook Page permissions. No password, session cookie or access token belongs in the source repository.
+
+The social caption parser only publishes unambiguous date/time/location and free-food offers. Publication time is never used as event time. Relative wording is anchored to the original post's timestamp. Multiple event times, poster-only details, unsupported language or ambiguous signup deadlines require manual review; the automated candidate queue only detects supported caption phrases. The site displays collected posts separately from confirmed events.
 
 The collector uses conservative text rules, not a language-model service. Nuanced captions, image-only posters and recurrence require human review. Failed sources keep their last good records and verification timestamps, and the site reports incomplete coverage. Source assertions are not a guarantee that an organiser will run the event unchanged.
+
+Coverage is explicitly measured across **all 319 societies**, including those without discoverable accounts. Discovery follows direct links, plain-text handles and linked society websites; a separate reviewed account registry fills verified gaps. Public scraping cannot promise every post from every society.
 
 See [the ingestion guide](scripts/README-backend.md) for source configuration, review format, status fields and recovery behavior.
 
@@ -55,6 +64,9 @@ dist/                       Static frontend, ready to host
   events.js                 London dates, eligibility filters and calendar helpers
   data/                     Generated public event and society feeds
 scripts/refresh.py          Public-source collector
+scripts/social_posts.py     Public Instagram/Facebook post collection
+scripts/meta_posts.py       Optional authorised Meta Graph API adapter
+scripts/social_events.py    Conservative caption-to-event extraction
 data/sources.json           Supported source configuration
 data/reviewed-events.json   Explicitly reviewed real event inputs
 data/review-queue.json      Candidates requiring human review

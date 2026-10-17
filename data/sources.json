@@ -1,5 +1,23 @@
 {
   "society_directory": "https://www.durhamsu.com/groups/studentgroups/",
+  "social": {
+    "enabled": true,
+    "max_accounts": 800,
+    "max_requests": 1800,
+    "max_posts_per_account": 8,
+    "max_permalink_requests_per_account": 2,
+    "request_interval_seconds": 0.3,
+    "retention_days": 60,
+    "meta": {
+      "enabled": true,
+      "facebook_page_ids": {},
+      "max_accounts": 100,
+      "max_pages_per_account": 2,
+      "posts_per_account": 25,
+      "retention_days": 60
+    },
+    "max_stored_posts_per_account": 100
+  },
   "feeds": [
     {
       "id": "durham-su-native",
@@ -7,7 +25,7 @@
       "url": "https://durhamsu.native.fm/events",
       "api_url": "https://api.native.fm/api/all-events/01KT3TJBYGY0T3HG1KB0Y48TKS/",
       "society": "Durham Students' Union",
-      "source_label": "Durham SU · What's On",
+      "source_label": "Durham SU \u00c2\u00b7 What's On",
       "timezone": "Europe/London"
     },
     {
@@ -15,7 +33,7 @@
       "type": "ics",
       "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
       "society": "Durham AI Safety Initiative",
-      "source_label": "DAISI · Luma calendar",
+      "source_label": "DAISI \u00c2\u00b7 Luma calendar",
       "timezone": "Europe/London",
       "website": "https://durhamaisafety.uk/"
     }

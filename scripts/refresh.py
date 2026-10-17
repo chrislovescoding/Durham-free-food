@@ -21,7 +21,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 LONDON = ZoneInfo("Europe/London")
-FOODS = r"(?:pizza|food|snacks?|refreshments?|lunch|dinner|breakfast|buffet|meals?|sandwich(?:es)?|cake|cookies|biscuits|doughnuts|donuts|pastries|noodles?|curry|soup)"
+FOODS = r"(?:pizza|food|snacks?|refreshments?|lunch|dinner|breakfast|buffet|meals?|sandwich(?:es)?|cake|cookies|biscuits|doughnuts|donuts|pastries|noodles?|curry|soup|coffee|tea|hot chocolate)"
 FREE_FOOD = re.compile(
     rf"\b(?:free|complimentary)\s+(?:(?:vegan|vegetarian|hot|fresh|cheese|delicious|tasty)\s+){{0,2}}{FOODS}\b|"
     rf"\b{FOODS}\s+(?:(?:will\s+be|is|are|for)\s+)?free\b", re.I
@@ -127,15 +127,19 @@ def refresh_societies(config: dict, previous: dict, now: datetime, *, directory_
         return previous, status
     previous_by_url = {item["url"]: item for item in previous.get("societies", [])}
     for society in societies:
-        for key in ("instagram_url", "facebook_url", "socials_checked_at"):
+        for key in ("instagram_url", "facebook_url", "social_accounts", "socials_checked_at", "discovery_status", "discovery_errors", "discovery_review_links"):
             if key in previous_by_url.get(society["url"], {}):
                 society[key] = previous_by_url[society["url"]][key]
     failures = []
     if not directory_only:
         def discover(society):
+            try:
+                from scripts.society_discovery import discover_accounts, safe_discovery_fetch
+            except ModuleNotFoundError:
+                from society_discovery import discover_accounts, safe_discovery_fetch
             time.sleep(0.25)
             html = fetch(society["url"])
-            return social_links(html, society["url"])
+            return discover_accounts(html, society["url"], safe_discovery_fetch)
 
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {executor.submit(discover, society): society for society in societies}
@@ -144,16 +148,30 @@ def refresh_societies(config: dict, previous: dict, now: datetime, *, directory_
                 try:
                     # A successful profile fetch replaces old accounts if removed.
                     links = future.result()
+                    failed_pages = {error.get("url", "").rstrip("/") for error in links.get("discovery_errors", [])}
+                    # A failed linked website is not evidence its account vanished.
+                    # Retain only mappings previously evidenced by that failed page.
+                    existing = {a.get("url", "").rstrip("/") for a in links.get("social_accounts", [])}
+                    for account in society.get("social_accounts", []):
+                        if account.get("evidence_url", "").rstrip("/") in failed_pages and account.get("url", "").rstrip("/") not in existing:
+                            links.setdefault("social_accounts", []).append({**account, "discovery_stale": True,
+                                "last_confirmed_at": account.get("last_confirmed_at") or society.get("socials_checked_at")})
+                            links.setdefault(account["platform"] + "_url", account["url"])
+                            links["discovery_status"] = "partial"
                     society.pop("instagram_url", None)
                     society.pop("facebook_url", None)
+                    society.pop("social_accounts", None)
                     society.update(links, socials_checked_at=stamp)
                 except Exception as error:
                     failures.append({"url": society["url"], "error": str(error)})
+                    society["discovery_status"] = "stale" if society.get("socials_checked_at") else "fetch_failed"
     payload = {"updated_at": stamp, "source_url": url, "societies": societies}
-    status.update(status="partial" if failures else "ok", last_success_at=stamp, society_count=len(societies),
+    discovery_partial = sum(bool(s.get("discovery_errors")) for s in societies)
+    status.update(status="partial" if failures or discovery_partial else "ok", last_success_at=stamp, society_count=len(societies),
                   parsed_count=len(societies),
                   profiles_failed=len(failures), profile_errors=failures,
-                  social_account_count=sum(bool(s.get("instagram_url") or s.get("facebook_url")) for s in societies))
+                  societies_with_accounts=sum(bool(s.get("instagram_url") or s.get("facebook_url") or s.get("social_accounts")) for s in societies),
+                  discovery_partial=discovery_partial)
     return payload, status
 
 
@@ -506,7 +524,7 @@ def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime) 
               "failed_sources": failed, "partial_sources": partial, "parse_error_count": sum(source.get("parse_error_count", 0) for source in sources),
               "live_event_count": len(published), "reviewed_event_count": len(manual_events),
               "candidate_count": len(candidates), "expired_count": expired, "manual_errors": manual_errors,
-              "social_ingestion": "Public social account links are discovered; Instagram and Facebook posts are not automatically ingested."}
+              "social_ingestion": "Social post collection is merged in a separate pipeline step."}
     payload = {"updated_at": iso(now), "timezone": "Europe/London", "events": published, "sources": sources, "status": status}
     review_queue = {"updated_at": iso(now), "candidates": candidates}
     return payload, review_queue
@@ -517,6 +535,8 @@ def main() -> int:
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--now", help="ISO timestamp, for reproducible checks")
     parser.add_argument("--skip-societies", action="store_true")
+    parser.add_argument("--skip-social", action="store_true", help="Keep the previous social snapshot without making social requests")
+    parser.add_argument("--social-only", action="store_true", help="Collect social posts using the saved society directory")
     parser.add_argument("--directory-only", action="store_true", help="Refresh names without visiting profile pages")
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
@@ -524,8 +544,13 @@ def main() -> int:
     config = load_json(args.root / "data/sources.json", {})
     previous_events = load_json(args.root / "dist/data/events.json", {})
     reviewed = load_json(args.root / "data/reviewed-events.json", {"events": []})
-    events, queue = refresh_events(config, previous_events, reviewed, now)
-    if not args.skip_societies:
+    if args.social_only:
+        events = {**previous_events, "updated_at": iso(now), "events": [e for e in previous_events.get("events", []) if not e.get("source_id", "").startswith("social-") and visible_today_or_future(e, now)], "sources": [s for s in previous_events.get("sources", []) if not s.get("id", "").startswith("social-")], "status": dict(previous_events.get("status", {}))}
+        old_queue = load_json(args.root / "data/review-queue.json", {"candidates": []})
+        queue = {"updated_at": iso(now), "candidates": [c for c in old_queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")]}
+    else:
+        events, queue = refresh_events(config, previous_events, reviewed, now)
+    if not args.skip_societies and not args.social_only:
         previous_societies = load_json(args.root / "dist/data/societies.json", {"updated_at": None, "societies": []})
         societies, directory_status = refresh_societies(config, previous_societies, now, directory_only=args.directory_only, workers=max(1, min(args.workers, 4)))
         events["sources"].append(directory_status)
@@ -539,13 +564,96 @@ def main() -> int:
             if source.get("type") == "directory":
                 source = {**source, "name": source.get("name", source.get("label", "Society directory")),
                           "parsed_count": source.get("parsed_count", source.get("society_count", 0))}
-                events["sources"].append(source)
+                if not any(s.get("id") == source.get("id") for s in events["sources"]):
+                    events["sources"].append(source)
                 events["status"]["society_count"] = source.get("society_count", 0)
                 events["status"]["directory_status"] = source["status"]
+    societies = load_json(args.root / "dist/data/societies.json", {"societies": []})
+    try:
+        from scripts.social_registry import apply_registry
+        from scripts.social_coverage import build_coverage
+    except ModuleNotFoundError:
+        from social_registry import apply_registry
+        from social_coverage import build_coverage
+    registry = load_json(args.root / "data/society-accounts.json", {"accounts": []})
+    effective_societies, registry_errors = apply_registry(societies.get("societies", []), registry, now)
+    previous_social = load_json(args.root / "dist/data/social-posts.json", {"posts": [], "accounts": []})
+    if args.skip_social:
+        social = previous_social
+    else:
+        social = refresh_social_sources(config.get("social", {}), effective_societies, previous_social, now)
+    social["coverage"] = build_coverage(effective_societies, social, now)
+    social["registry_errors"] = registry_errors
+    write_json(args.root / "dist/data/social-posts.json", social)
+    integrate_social(events, queue, social, now)
     write_json(args.root / "dist/data/events.json", events)
     write_json(args.root / "data/review-queue.json", queue)
     print(json.dumps(events["status"], indent=2))
     return 0
+
+
+def refresh_social_sources(config, societies, previous, now):
+    try:
+        from scripts.social_posts import collect_social_posts, canonical_account_url
+        from scripts.meta_posts import collect_meta_posts
+        from scripts.social_registry import expand_accounts
+    except ModuleNotFoundError:
+        from social_posts import collect_social_posts, canonical_account_url
+        from meta_posts import collect_meta_posts
+        from social_registry import expand_accounts
+    def prior(provider):
+        return {**previous, "posts": [p for p in previous.get("posts", []) if (p.get("origin") == "meta_api") == (provider == "meta_api")],
+                "accounts": [a for a in previous.get("accounts", []) if a.get("provider", "public_html") == provider]}
+    expanded = expand_accounts(societies)
+    public = collect_social_posts(expanded, config, prior("public_html"), now)
+    meta = collect_meta_posts(expanded, config, prior("meta_api"), now)
+    posts = {}
+    for post in public.get("posts", []) + meta.get("posts", []):
+        # Prefer fresh official API data when both routes expose the same post.
+        if post.get("source_url") and (post["source_url"] not in posts or str(post.get("observed_at", "")) >= str(posts[post["source_url"]].get("observed_at", ""))):
+            posts[post["source_url"]] = post
+    accounts = [{**a, "provider": "public_html"} for a in public.get("accounts", [])] + [{**a, "provider": "meta_api"} for a in meta.get("accounts", [])]
+    return {"updated_at": iso(now), "posts": sorted(posts.values(), key=lambda p: p.get("published_at") or "", reverse=True),
+            "accounts": accounts, "status": {"public": public.get("status", {}), "meta": meta.get("status", {}),
+            "post_count": len(posts), "account_count": len({canonical_account_url(a.get("url")) or str(a.get("url", "")).lower().rstrip("/") for a in accounts}),
+            "note": "Public embeds expose a limited recent window. API coverage requires configured Meta access."}}
+
+
+def integrate_social(events, queue, social, now):
+    try:
+        from scripts.social_events import posts_to_events
+    except ModuleNotFoundError:
+        from social_events import posts_to_events
+    found, pending = posts_to_events(social.get("posts", []), now, food_evidence)
+    queue["candidates"] = [c for c in queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")] + pending
+    identity = lambda e: (e["source_url"].rstrip("/"), parse_datetime(e["starts_at"]).astimezone(timezone.utc))
+    unique = {identity(e): e for e in events.get("events", []) if not e.get("source_id", "").startswith("social-")}
+    for event in found:
+        unique.setdefault(identity(event), event)
+    events["events"] = sorted(unique.values(), key=lambda e: parse_datetime(e["starts_at"]))
+    events["sources"] = [s for s in events.get("sources", []) if not s.get("id", "").startswith("social-")]
+    for platform in ("instagram", "facebook"):
+        accounts = [a for a in social.get("accounts", []) if a.get("platform") == platform and a.get("provider") == "public_html"]
+        posts = [p for p in social.get("posts", []) if p.get("platform") == platform]
+        checked = [a for a in accounts if a.get("last_attempt_at") == social.get("updated_at")]
+        accessible = [a for a in accounts if a.get("posts_collected", 0) > 0]
+        healthy = accounts and len(checked) == len(accounts) and all(a.get("status") == "ok" for a in accounts)
+        events["sources"].append({"id": "social-" + platform, "type": "social", "name": platform.capitalize() + " society posts",
+            "url": "https://www." + platform + ".com/", "status": "ok" if healthy else "partial" if posts else "unavailable",
+            "parsed_count": len(posts), "account_count": len(accounts), "accounts_checked": len(checked), "accounts_with_posts": len(accessible),
+            "last_attempt_at": social.get("updated_at"), "last_success_at": max((p.get("observed_at") or "" for p in posts), default=None)})
+    events["status"].update(live_event_count=len(events["events"]), candidate_count=len(queue["candidates"]),
+        social_post_count=len(social.get("posts", [])), social_account_count=social.get("status", {}).get("account_count", 0),
+        social_ingestion="Public Instagram/Facebook posts are collected where exposed; full-directory coverage and account access status are in social-posts.json.")
+    coverage = social.get("coverage", {}).get("summary", {})
+    events["status"]["society_coverage"] = coverage
+    source_states = [s.get("status", "error") for s in events["sources"] if s.get("type") != "directory"]
+    failed = sum(s in ("error", "unavailable") for s in source_states)
+    partial = sum(s == "partial" for s in source_states)
+    events["status"].update(source_count=len(source_states), successful_sources=len(source_states) - failed,
+        failed_sources=failed, partial_sources=partial)
+    incomplete = any(coverage.get(key, 0) for key in ("societies_needing_accounts", "societies_needing_attention", "societies_stale"))
+    events["status"]["state"] = "error" if failed == len(source_states) and not events["events"] else "partial" if failed or partial or incomplete or social.get("registry_errors") or events["status"].get("manual_errors") or events["status"].get("directory_status", "ok") != "ok" else "ok"
 
 
 if __name__ == "__main__":

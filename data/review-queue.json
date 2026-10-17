@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T11:15:29.632456Z",
+  "updated_at": "2026-10-17T11:45:15.076711Z",
   "candidates": [
     {
       "title": "Spicy Noodle Challenge",
@@ -77,6 +77,244 @@
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
+    },
+    {
+      "title": "Introduction to Self Defence",
+      "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence-3/291609",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Run，Durham！",
+      "source_url": "https://durhamsu.native.fm/event/run-durham/294213",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Introduction to Self Defence",
+      "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence/291605",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Introduction to Self Defence",
+      "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence-1/291606",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "AI and the Value Alignment Problem | Dr Travis LaCroix",
+      "source_url": "https://luma.com/sqd7r1hr",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "✍️ Workshop: Blog-post Writing",
+      "source_url": "https://luma.com/a8kwvumg",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "📖 Reading Group: Cognitive Toll - Is AI Dulling Our Brain?",
+      "source_url": "https://luma.com/b1l52zyr",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "💡AIS101: Cognitive Toll - Is AI Dulling Our Brain?",
+      "source_url": "https://luma.com/lvzklpi2",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "📖 Reading Group: AI & Sexism",
+      "source_url": "https://luma.com/ct7glh8m",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "🧑‍💻Drop-in Coworking - LSESU AI Governance and Law Conference",
+      "source_url": "https://luma.com/o2gtj8ja",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "💡AIS101 - AI & Sexism",
+      "source_url": "https://luma.com/z6bb4a71",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "📖 Reading Group: AI & Geopolitics",
+      "source_url": "https://luma.com/d8se5gey",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "📖 Research Presentation (Chain-of-Thought Overthinking)",
+      "source_url": "https://luma.com/dsof4kf7",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "🧑‍💻Drop-in Coworking - Applications / Conferences (EAG)",
+      "source_url": "https://luma.com/kz1kzbbs",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "🎤 Virtual Talk with Colleen Kerr (Microsoft)",
+      "source_url": "https://luma.com/suguj06s",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "AI Safety Coffee Morning",
+      "source_url": "https://luma.com/4v819nl3",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "daisi-luma"
+    },
+    {
+      "title": "Come along on Monday! Free pizza as usual 🍕",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DejspkriikV/",
+      "post_id": "social-3239f6c6bae9999cdb",
+      "society": "Computing",
+      "kind": "social_post_review",
+      "reason": "Caption needs one unambiguous event date"
+    },
+    {
+      "title": "A late Halloween swing ball in Durham! We will have a beginner lesson, a live band - The Magpies of Swing, lots of social dancing and, most importantl",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DehwuRays0x/",
+      "post_id": "social-36d230a9c8b95a87ad",
+      "society": "Swing",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "⭐️ 🧁 This SATURDAY- Come along for a chat and a slice of cake! 🎂 ⭐️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DehWwfbM61S/",
+      "post_id": "social-af766e174752f97fe1",
+      "society": "Vegetarian and Vegan",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Join the Anime and Manga Society for a day of Japanese culture, food, and festival fun at Teikyo University of Japan in Durham :D",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DecsZ4wRRdi/",
+      "post_id": "social-48008378d9336dd6dc",
+      "society": "Anime & Manga Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "This is our first event of the year! Come and join us on Friday the 16th of October to socialise and enjoy some delicious meals at our halal food craw",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Deca1fCEdU9/",
+      "post_id": "social-b063c009a8f74ce008",
+      "society": "Islamic Studies Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "⚠️🚨FIRST SOCIAL OF THE YEAR!🚨⚠️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeUJgJzO0fg/",
+      "post_id": "social-e8418e3c9f316c6383",
+      "society": "Iranian Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "☕️🍵Coffee morning",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeMw-65IpG2/",
+      "post_id": "social-443510db99036bb474",
+      "society": "Durham AI Safety Initiative",
+      "kind": "social_post_review",
+      "reason": "Mixed explicit and relative date references need review"
+    },
+    {
+      "title": "Come along to our first session of term! We will share food and play games together to get to know one another. Everyone is welcome!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeMkfvujGuT/",
+      "post_id": "social-5caa38ceeb18b49fc9",
+      "society": "Inclusive Christian Movement Durham",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Here are a list of the ULaw events happening next week.",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeBu626iAf0/",
+      "post_id": "social-595acaa6afc4ae064b",
+      "society": "Non-law into law Society",
+      "kind": "social_post_review",
+      "reason": "Multiple or unsupported relative event dates need review"
+    },
+    {
+      "title": "Sisters’ Games Night is TOMORROW! 🎲 Free food provided!!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd9ulKdsnXp/",
+      "post_id": "social-4ae8da5ab7cc37b657",
+      "society": "Islamic Society",
+      "kind": "social_post_review",
+      "reason": "Mixed explicit and relative date references need review"
+    },
+    {
+      "title": "We loved meeting you all today at the freshers fair. If you missed us or want to meet even more of the society then join us at our annual welcome pizz",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd65922idCa/",
+      "post_id": "social-380b119cfdf5603842",
+      "society": "Computing",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "📣 IT’S FRESHER’S WEEK ‼️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd1Vkf_DRE8/",
+      "post_id": "social-7a36f4d4ffe2f24ef4",
+      "society": "Christian Union",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "🌟Join the AW26 cohort of DAISI's Foundations of AI Safety Fellowship, starting at 18:30 BST on Thursday 15th October (subject to change due to fellow ",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DdlrJSWCApx/",
+      "post_id": "social-08307e0da2d64c2534",
+      "society": "Durham AI Safety Initiative",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "✨MEET THE EXEC✨",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dc51owNDKrw/",
+      "post_id": "social-eb12057fb1509d957e",
+      "society": "Inclusive Christian Movement Durham",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
     }
   ]
 }

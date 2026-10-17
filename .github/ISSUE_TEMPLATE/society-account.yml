@@ -1,0 +1,25 @@
+name: Add or correct a society account
+description: Help fill an account-discovery gap with a verified organiser link.
+title: "Society account: "
+body:
+  - type: input
+    id: society
+    attributes:
+      label: Durham SU society profile URL
+      placeholder: https://www.durhamsu.com/groups/studentgroup/...
+    validations:
+      required: true
+  - type: textarea
+    id: accounts
+    attributes:
+      label: Instagram or Facebook account links
+      description: Use public society accounts. Please do not share passwords, cookies or API tokens.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How can we verify these accounts belong to the society?
+      description: Link the society website, SU profile or another public organiser source that links these accounts.
+    validations:
+      required: true

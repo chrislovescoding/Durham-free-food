@@ -1,0 +1,117 @@
+from datetime import datetime, timezone
+import importlib.util
+from pathlib import Path
+import unittest
+
+def module(name):
+    spec = importlib.util.spec_from_file_location(name, Path(__file__).parents[1] / 'scripts' / (name + '.py'))
+    result = importlib.util.module_from_spec(spec); spec.loader.exec_module(result); return result
+
+parser = module('social_events')
+refresh = module('refresh')
+NOW = datetime(2026, 10, 17, 12, tzinfo=timezone.utc)
+
+class SocialEventsTests(unittest.TestCase):
+    def post(self, text):
+        return {'id':'ig-abc', 'platform':'instagram', 'society':'Test Society', 'source_url':'https://www.instagram.com/p/abc/', 'text':text, 'published_at':'2026-10-16T12:00:00Z', 'observed_at':'2026-10-17T12:00:00Z', 'origin':'public_html'}
+
+    def extract(self, text):
+        return parser.posts_to_events([self.post(text)], NOW, refresh.food_evidence)
+
+    def test_real_caption_fields_are_distinct_from_post_date(self):
+        events, queue = self.extract('Welcome social\nFree pizza! Sunday 18 October 2026 at 6pm\nLocation: Kingsgate Cafe\nFree entry. Just turn up.')
+        self.assertFalse(queue)
+        event=events[0]
+        self.assertEqual(event['starts_at'],'2026-10-18T18:00:00+01:00')
+        self.assertEqual(event['price'],0)
+        self.assertFalse(event['signup_required'])
+        self.assertEqual(event['location'],'Kingsgate Cafe')
+
+    def test_unknown_price_and_signup_stay_unknown(self):
+        events,_=self.extract('Free pizza! 18 October 2026 at 18:30\nVenue: Room 1')
+        self.assertIsNone(events[0]['price']);self.assertIsNone(events[0]['signup_required'])
+
+    def test_relative_date_anchors_to_post_not_crawl(self):
+        events,_=self.extract('Free pizza tomorrow at 6pm\n📍 Student room')
+        self.assertEqual(events[0]['starts_at'],'2026-10-17T18:00:00+01:00')
+
+    def test_old_posts_do_not_resurface_as_new_events(self):
+        post=self.post('Free pizza tomorrow at 6pm\nLocation: Durham')
+        post['published_at']='2025-10-16T12:00:00Z'
+        self.assertEqual(parser.posts_to_events([post],NOW,refresh.food_evidence),([],[]))
+
+    def test_yearless_dates_require_known_publication(self):
+        post=self.post('Free pizza 18 October at 6pm\nLocation: Durham');post['published_at']=None
+        events,queue=parser.posts_to_events([post],NOW,refresh.food_evidence)
+        self.assertFalse(events);self.assertEqual(len(queue),1)
+
+    def test_ambiguous_caption_and_image_only_details_need_review(self):
+        for text in ['Free pizza 18 October 2026 at 6pm', 'Free pizza 18 October 2026 at 6pm and 8pm\nLocation: Durham', 'Free pizza Monday 18 October 2026 at 6pm\nLocation: Durham', 'Free pizza 18 October 2026 at 6pm. Register by 17 October\nLocation: Durham', 'Free pizza 25 October 2026 at 1:30am\nLocation: Durham']:
+            with self.subTest(text=text):
+                events,queue=self.extract(text);self.assertFalse(events);self.assertTrue(queue)
+
+    def test_ticket_release_and_booking_times_are_not_event_start_times(self):
+        for timing in [
+            'Tickets go live today at 6pm.',
+            'Tickets go on sale at 6pm.',
+            'Tickets will be released at 6pm.',
+            'Booking closes tomorrow at 6pm.',
+            'Registration opens at 6pm.',
+            'Sign-ups close at 6pm.',
+            'RSVP before 6pm.',
+            'Opening time for bookings: 6pm.',
+        ]:
+            with self.subTest(timing=timing):
+                events, queue = self.extract('Free pizza social on 18 October 2026!\n' + timing + '\nLocation: Durham')
+                self.assertFalse(events)
+                self.assertEqual(len(queue), 1)
+                self.assertIn('registration timing', queue[0]['reason'])
+        events, queue = self.extract('Free pizza social! Booking closes tomorrow at 6pm.\nLocation: Durham')
+        self.assertFalse(events)
+        self.assertEqual(len(queue), 1)
+
+    def test_mixed_explicit_and_relative_dates_are_not_silently_ignored(self):
+        for relative in ('today', 'tomorrow', 'tonight', 'next week', 'next Monday'):
+            with self.subTest(relative=relative):
+                events, queue = self.extract('Free pizza social on 18 October 2026!\nMore information ' + relative + ' at 6pm.\nLocation: Durham')
+                self.assertFalse(events)
+                self.assertEqual(len(queue), 1)
+                self.assertIn('Mixed explicit and relative', queue[0]['reason'])
+
+    def test_compound_relative_date_is_not_mistaken_for_tomorrow(self):
+        events, queue = self.extract('Free pizza the day after tomorrow at 6pm\nLocation: Durham')
+        self.assertFalse(events)
+        self.assertEqual(len(queue), 1)
+
+    def test_conditional_and_tiered_free_entry_needs_review(self):
+        for offer in [
+            'Free entry for members; £3 for non-members.',
+            'Free admission. Membership required.',
+            'Free entry before 7pm.',
+            'Free entry with a student card.',
+            'Free entry for Durham students.',
+            'Free entry for the first 20 arrivals.',
+            'Free entry. Advance tickets £2.',
+            'Free entry. Standard tickets 3 GBP.',
+            'Not free entry.',
+            'Free entry is not available.',
+        ]:
+            with self.subTest(offer=offer):
+                events, queue = self.extract('Free pizza! 18 October 2026 at 6pm\nLocation: Durham\n' + offer)
+                self.assertFalse(events)
+                self.assertEqual(len(queue), 1)
+
+    def test_unconditional_free_entry_and_paid_entry_remain_supported(self):
+        for offer, price in [('Free entry.', 0), ('Free admission for everyone.', 0), ('£3 entry.', 3)]:
+            with self.subTest(offer=offer):
+                events, queue = self.extract('Free pizza! 18 October 2026 at 6pm\nLocation: Durham\n' + offer)
+                self.assertFalse(queue)
+                self.assertEqual(events[0]['price'], price)
+
+    def test_paid_entry_and_negated_food(self):
+        events,_=self.extract('Free pizza 18 October 2026 at 6pm\nLocation: Durham\n£3 entry. Registration required.')
+        self.assertEqual(events[0]['price'],3);self.assertTrue(events[0]['signup_required'])
+        events,queue=self.extract('No longer free pizza. 18 October 2026 at 6pm\nLocation: Durham')
+        self.assertFalse(events);self.assertTrue(queue)
+
+if __name__=='__main__': unittest.main()

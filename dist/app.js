@@ -11,6 +11,8 @@ $$('[data-icon]').forEach(node => node.innerHTML = icon(node.dataset.icon));
 let storedSaved = [];
 try { const stored = JSON.parse(localStorage.getItem('dff:saved') || '[]'); if(Array.isArray(stored)) storedSaved = stored.filter(id => typeof id === 'string'); } catch {}
 const state = { mode:new URLSearchParams(location.search).get('demo') === '1' ? 'demo' : 'live', view:'events', search:'', date:'all', freeEntry:false, signup:'all', savedOnly:false, savedIds:storedSaved, data:{events:[],sources:[]}, societies:[], societyLimit:30, loaded:false, activeEvent:null };
+state.social={posts:[],accounts:[],status:{}};
+state.postLimit=6;
 let toastTimer;
 function toast(message) { $('#toast').textContent = message; $('#toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('#toast').hidden = true, 3500); }
 function allEvents() { return state.mode === 'demo' ? demoEvents() : state.data.events; }
@@ -106,20 +108,28 @@ $('#suggest-form').addEventListener('submit',event=>{
   window.open(issue.href,'_blank','noopener,noreferrer');
 });
 $('#society-search').addEventListener('input',()=>{state.societyLimit=30;renderSocieties();});
+$('#society-coverage-filter').addEventListener('change',()=>{state.societyLimit=30;renderSocieties();});
 $('#load-societies').addEventListener('click',()=>{state.societyLimit+=30;renderSocieties();});
 function renderSocieties(){
-  const search=$('#society-search').value.trim().toLowerCase();const matches=state.societies.filter(s=>s.name.toLowerCase().includes(search));
-  $('#society-count').textContent=state.loaded?`${matches.length} ${matches.length===1?'society':'societies'}${search?' matching your search':''} · Links go to their original pages`:'Loading societies…';
-  $('#society-grid').innerHTML=matches.slice(0,state.societyLimit).map(s=>`<article class="society-card"><span class="society-avatar" aria-hidden="true">${escape(s.name.slice(0,1))}</span><div><h3><a href="${escape(safeUrl(s.url)||'https://www.durhamsu.com/groups/studentgroups/')}" target="_blank" rel="noopener noreferrer">${escape(s.name)}</a></h3><div class="society-links"><a href="${escape(safeUrl(s.url)||'https://www.durhamsu.com/groups/studentgroups/')}" target="_blank" rel="noopener noreferrer">SU profile ↗</a>${safeUrl(s.instagram_url)?`<a href="${escape(safeUrl(s.instagram_url))}" target="_blank" rel="noopener noreferrer">Instagram ↗</a>`:''}${safeUrl(s.facebook_url)?`<a href="${escape(safeUrl(s.facebook_url))}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>`:''}</div></div></article>`).join('');
+  const search=$('#society-search').value.trim().toLowerCase(), filter=$('#society-coverage-filter').value;
+  const coverage=new Map((state.social.coverage?.societies||[]).map(s=>[s.url,s]));
+  const labels={collected:'Recent posts seen · limited coverage',missing_accounts:'Account links needed',needs_attention:'Posts not accessible yet',stale:'Collection needs a refresh'};
+  const matches=state.societies.filter(s=>s.name.toLowerCase().includes(search)&&(filter==='all'||coverage.get(s.url)?.status===filter));
+  $('#society-count').textContent=state.loaded?`${matches.length} ${matches.length===1?'society':'societies'}${search?' matching your search':''} · Collection status is shown for every society`:'Loading societies…';
+  $('#society-grid').innerHTML=matches.slice(0,state.societyLimit).map(s=>{
+    const row=coverage.get(s.url), links=row?.accounts||['instagram','facebook'].filter(p=>s[p+'_url']).map(p=>({platform:p,url:s[p+'_url']}));
+    const issue=new URL('https://github.com/chrislovescoding/Durham-free-food/issues/new');issue.searchParams.set('template','society-account.yml');issue.searchParams.set('title',`Society account: ${s.name}`);issue.searchParams.set('society',s.url);
+    return `<article class="society-card"><span class="society-avatar" aria-hidden="true">${escape(s.name.slice(0,1))}</span><div><h3><a href="${escape(safeUrl(s.url)||'https://www.durhamsu.com/groups/studentgroups/')}" target="_blank" rel="noopener noreferrer">${escape(s.name)}</a></h3><p class="society-coverage ${escape(row?.status||'')}">${escape(labels[row?.status]||'Coverage not checked')}${row?.posts_stored?` · ${row.posts_stored} posts`:''}</p><div class="society-links"><a href="${escape(safeUrl(s.url)||'https://www.durhamsu.com/groups/studentgroups/')}" target="_blank" rel="noopener noreferrer">SU profile ↗</a>${links.filter(a=>safeUrl(a.url)).map(a=>`<a href="${escape(safeUrl(a.url))}" target="_blank" rel="noopener noreferrer">${a.platform==='instagram'?'Instagram':'Facebook'} ↗</a>`).join('')}<a href="${escape(issue.href)}" target="_blank" rel="noopener noreferrer">Add / correct account ↗</a></div></div></article>`;
+  }).join('');
   if(!matches.length&&state.loaded)$('#society-grid').innerHTML='<p class="muted">No societies found. Try a shorter search, or open the SU directory above.</p>';
   $('#load-societies').hidden=matches.length<=state.societyLimit;
 }
 async function fetchJson(url){const response=await fetch(url,{signal:AbortSignal.timeout(7000),cache:'no-cache'});if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json();}
-async function loadFeed(name) {
+async function loadFeed(name, arrayKey=name) {
   const local=fetchJson(`./data/${name}.json`).then(value=>({value,origin:'bundled'}));
   const remote=fetchJson(`https://raw.githubusercontent.com/chrislovescoding/Durham-free-food/main/dist/data/${name}.json`).then(value=>({value,origin:'repository'}));
   const results=await Promise.allSettled([local,remote]);
-  const valid=results.filter(r=>r.status==='fulfilled'&&Array.isArray(r.value.value[name])).map(r=>r.value);
+  const valid=results.filter(r=>r.status==='fulfilled'&&Array.isArray(r.value.value[arrayKey])).map(r=>r.value);
   if(!valid.length)throw new Error('No feed available');
   valid.sort((a,b)=>(Date.parse(b.value.updated_at)||0)-(Date.parse(a.value.updated_at)||0));return valid[0];
 }
@@ -132,15 +142,32 @@ function renderCoverage() {
   else if(state.data.status?.state&&!healthy){$('#feed-warning').hidden=false;$('#feed-warning').textContent='Some sources could not be checked. Existing listings retain their last checked dates.';}
   const sources=Array.isArray(state.data.sources)?state.data.sources:[];
   const eventSourceCount=sources.filter(source=>source.type!=='directory').length;
-  $('#coverage-summary').textContent=`${state.societies.length} societies in the directory. ${eventSourceCount} configured public event source${eventSourceCount===1?'':'s'}. Instagram and Facebook posts are not automatically collected by this prototype.`;
+  $('#coverage-summary').textContent=`${state.societies.length} societies in the directory. ${eventSourceCount} configured event and social sources. ${state.social.posts.length} real social posts in the latest snapshot. See collection coverage below.`;
   $('#source-status').innerHTML=sources.map(source=>{const url=safeUrl(source.url||source.source_url);const title=source.name||source.label||source.id||'Event source';const status=source.status||'Not checked';return `<div class="source-row">${url?`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(title)}</a>`:`<strong>${escape(title)}</strong>`}<span>${escape(status)}${typeof source.parsed_count==='number'?` · ${source.parsed_count} entries checked`:''}</span></div>`;}).join('')||'<p class="muted">No source report is available yet.</p>';
 }
+function renderSocial(){
+  const publicAccounts=state.social.accounts.filter(a=>a.provider==='public_html');
+  const withPosts=publicAccounts.filter(a=>a.posts_collected>0).length;
+  const instagram=state.social.posts.filter(p=>p.platform==='instagram').length;
+  const facebook=state.social.posts.filter(p=>p.platform==='facebook').length;
+  const meta=state.social.status.meta||{};
+  const metaReady=meta.accounts_checked>0;
+  const coverage=state.social.coverage?.summary||{};
+  $('#social-coverage-summary').textContent=`${instagram} Instagram posts and ${facebook} Facebook posts stored. Public posts were collected from ${withPosts} of ${publicAccounts.length} discovered accounts on the last run. ${metaReady?'An authorised API connection was also checked.':'Meta API access is not connected. Facebook and restricted accounts may need that connection.'}`;
+  $('#directory-coverage-summary').textContent=coverage.total_societies!==undefined?`${coverage.societies_with_recent_posts} of ${coverage.total_societies} societies have recently observed posts. ${coverage.societies_needing_accounts} need verified account links; ${coverage.societies_needing_attention} have accounts with no accessible recent posts; ${coverage.societies_stale} have stale collections. Recent posts do not mean a complete timeline. Browse Societies to inspect and help fill these gaps.`:'Full-directory coverage will appear after the next collection.';
+  const labels={ok:'Posts collected',partial:'Some posts collected',no_public_posts:'No posts exposed publicly',login_required:'Login required',access_denied:'Public access denied',rate_limited:'Rate limited',deferred:'Deferred this run',error:'Could not check',unavailable:'Posts unavailable',disabled:'Collection disabled',unsupported:'Unsupported profile'};
+  $('#social-account-status').innerHTML=publicAccounts.map(a=>`<div class="source-row"><div><a href="${escape(safeUrl(a.url)||'#')}" target="_blank" rel="noopener noreferrer">${escape(a.society||a.url)}</a><small>${escape(a.platform)}${a.last_success_at?' · Last collection '+formatDate(a.last_success_at,{day:'numeric',month:'short'}):''}</small></div><span>${escape(labels[a.status]||a.status)}${a.posts_collected?` · ${a.posts_collected}`:''}</span></div>`).join('')||'<p class="muted">No account checks are available yet.</p>';
+  $('#collected-posts').innerHTML=state.social.posts.slice(0,state.postLimit).map(post=>`<article class="collected-post"><div><strong>${escape(post.society)}</strong><span>${escape(post.platform)}${post.published_at&&Number.isFinite(Date.parse(post.published_at))?' · '+formatDate(post.published_at,{day:'numeric',month:'short',year:'numeric'}):' · Publication date unavailable'}</span></div><p>${escape((post.text||'').slice(0,320))}${post.text?.length>320?'…':''}</p><a href="${escape(safeUrl(post.source_url)||'#')}" target="_blank" rel="noopener noreferrer">Read the original post ↗</a></article>`).join('')||'<p class="muted">No post captions have been collected yet. The coverage list records access problems separately from empty feeds.</p>';
+  $('#more-posts').hidden=state.social.posts.length<=state.postLimit;
+}
+$('#more-posts').addEventListener('click',()=>{state.postLimit+=6;renderSocial();});
 async function init(){
   render();
-  const [events,societies]=await Promise.allSettled([loadFeed('events'),loadFeed('societies')]);
+  const [events,societies,social]=await Promise.allSettled([loadFeed('events'),loadFeed('societies'),loadFeed('social-posts','posts')]);
   if(events.status==='fulfilled'){state.data=events.value.value;state.data.events=state.data.events.filter(isValidEvent);}else{$('#feed-warning').hidden=false;$('#feed-warning').textContent='The live feed could not be loaded. Refresh to try again, or explore the clearly labelled demo.';}
   if(societies.status==='fulfilled')state.societies=societies.value.value.societies.filter(s=>typeof s.name==='string').sort((a,b)=>a.name.localeCompare(b.name));
-  state.loaded=true;render();renderSocieties();renderCoverage();
+  if(social.status==='fulfilled'){state.social=social.value.value;state.social.accounts=Array.isArray(state.social.accounts)?state.social.accounts:[];state.social.status=state.social.status||{};}
+  state.loaded=true;render();renderSocieties();renderCoverage();renderSocial();
 }
 init();
 // Re-evaluate event status and London midnight expiry while the page stays open.
