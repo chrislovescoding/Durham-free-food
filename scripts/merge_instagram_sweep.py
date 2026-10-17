@@ -189,6 +189,18 @@ def _current_success(post, cache, stored, social_posts):
     return all(record.get('input_signature') == signature for record in records)
 
 
+def _superseded_success(post, cache, stored, social_posts):
+    """A completed newer observation replaces an older view of the same post."""
+    current = social_posts.get(post['id'])
+    if (not current or current.get('id') != post['id']
+            or current.get('source_url', '').rstrip('/') != post.get('source_url', '').rstrip('/')
+            or not current.get('observed_at') or not post.get('observed_at')
+            or _time(current['observed_at']) <= _time(post['observed_at'])
+            or evidence_signature(current) == evidence_signature(post)):
+        return False
+    return _current_success(current, cache, stored, social_posts)
+
+
 def merge_sweep(folder, root=ROOT):
     folder, root = Path(folder), Path(root)
     plan, batches, sum_caps = _read_batches(folder)
@@ -203,7 +215,7 @@ def merge_sweep(folder, root=ROOT):
               'sum_batch_caps_usd': round(sum_caps, 6), 'run_charge_usd': 0, 'returned_items': 0,
               'accepted_posts': 0, 'images_inspected': 0, 'images_failed_or_skipped': 0,
               'errors': [], 'superseded_errors': [], 'batches': [], **{key: 0 for key in COUNTS}}
-    seen, processed, completed, retained = set(), set(), set(), set()
+    seen, processed, completed, retained, superseded = set(), set(), set(), set(), set()
     # Merge all observations first, so stale results cannot replace newer evidence
     # when the same coauthored post appears in two different account batches.
     for item in batches:
@@ -223,12 +235,16 @@ def merge_sweep(folder, root=ROOT):
         accepted, _ = merged[item['id']]
         posts = item['batch'].get('posts', [])
         successful = {post['id'] for post in posts if _current_success(post, cache, stored, current_posts)}
+        superseded_ids = {post['id'] for post in posts
+                          if _superseded_success(post, cache, stored, current_posts)}
+        successful.update(superseded_ids)
         retained_ids = successful - set(accepted)
         stale = sorted({post['id'] for post in posts} - successful)
         seen.update(post['id'] for post in posts)
         processed.update(accepted)
         completed.update(successful)
         retained.update(retained_ids)
+        superseded.update(superseded_ids)
         historical_errors = [{'batch_id': item['id'], **error} for error in ai.get('errors', [])]
         errors = [error for error in historical_errors if error.get('post_id') not in successful]
         superseded_errors = [error for error in historical_errors if error.get('post_id') in successful]
@@ -244,6 +260,7 @@ def merge_sweep(folder, root=ROOT):
                   'accepted_posts': len(posts), 'ai_posts_merged': len(accepted),
                   'ai_posts_completed': len(successful), 'ai_posts_retained': len(retained_ids),
                   'retained_ai_post_ids': sorted(retained_ids),
+                  'superseded_observation_post_ids': sorted(superseded_ids),
                   'stale_or_missing_ai_post_ids': stale, 'errors': errors,
                   'superseded_errors': superseded_errors}
         report['batches'].append(status)
@@ -258,6 +275,7 @@ def merge_sweep(folder, root=ROOT):
     report['run_charge_usd'] = round(report['run_charge_usd'], 6)
     report.update(unique_posts=len(seen), unique_ai_posts_merged=len(processed),
                   unique_ai_posts_completed=len(completed), unique_ai_posts_retained=len(retained),
+                  unique_superseded_observation_posts=len(superseded),
                   planned_accounts=plan.get('planned_accounts'), requested_posts=plan.get('requested_posts'))
     if report['completed_batches'] != report['expected_batches']:
         report['status'] = 'partial'

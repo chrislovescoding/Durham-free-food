@@ -5,7 +5,7 @@ import tempfile
 import unittest
 
 from scripts.ai_events import evidence_signature
-from scripts.merge_instagram_sweep import merge_sweep
+from scripts.merge_instagram_sweep import merge_sweep, _superseded_success
 
 
 EARLY = '2026-10-17T12:00:00Z'
@@ -270,6 +270,44 @@ class MergeInstagramSweepTests(unittest.TestCase):
         self.assertEqual(report['status'], 'partial')
         self.assertEqual(report['unique_ai_posts_completed'], 0)
         self.assertEqual([batch['status'] for batch in report['batches']], ['partial', 'partial'])
+
+    def test_newer_different_evidence_success_supersedes_older_observation(self):
+        old = self.post('post01', observed=EARLY)
+        current = self.post('post01', observed=LATE, text='Updated time: free pizza at 7pm')
+        self.batch('01', [old], at=EARLY)
+        self.batch('02', [])
+        entry, _ = self.saved_success(current)
+        self.write(self.root / 'dist/data/social-posts.json', {
+            'posts': [current], 'accounts': [], 'status': {}, 'updated_at': LATE})
+        report = merge_sweep(self.folder, self.root)
+        self.assertEqual(report['status'], 'complete')
+        self.assertEqual(report['batches'][0]['superseded_observation_post_ids'], ['post01'])
+        self.assertEqual(report['batches'][0]['stale_or_missing_ai_post_ids'], [])
+        self.assertEqual(report['unique_superseded_observation_posts'], 1)
+        self.assertEqual(self.read(self.root / 'data/ai-post-cache.json')['posts']['post01'], entry)
+
+    def test_newer_different_evidence_error_does_not_supersede_older_observation(self):
+        old = self.post('post01', observed=EARLY)
+        current = self.post('post01', observed=LATE, text='Changed event details')
+        self.batch('01', [old], at=EARLY)
+        self.batch('02', [])
+        self.saved_success(current, error='API request failed')
+        self.write(self.root / 'dist/data/social-posts.json', {
+            'posts': [current], 'accounts': [], 'status': {}, 'updated_at': LATE})
+        report = merge_sweep(self.folder, self.root)
+        self.assertEqual(report['status'], 'partial')
+        self.assertEqual(report['batches'][0]['superseded_observation_post_ids'], [])
+        self.assertEqual(report['batches'][0]['stale_or_missing_ai_post_ids'], ['post01'])
+
+    def test_superseding_observation_requires_same_identity_source_and_later_time(self):
+        old = self.post('post01', observed=EARLY)
+        for change in ({'id': 'another-post'}, {'source_url': 'https://www.instagram.com/p/OTHER/'},
+                       {'observed_at': EARLY}, {'observed_at': None}):
+            with self.subTest(change=change):
+                current = {**self.post('post01', observed=LATE, text='New evidence'), **change}
+                entry, stored = self.saved_success(current)
+                cache = {'posts': {current['id']: entry}}
+                self.assertFalse(_superseded_success(old, cache, stored, {'post01': current}))
 
 
 if __name__ == '__main__':

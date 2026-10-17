@@ -1,6 +1,42 @@
 {
   "events": [
     {
+      "title": "Hot Chocolate Quiz",
+      "location": "Kingsgate, Student Union, Durham",
+      "food": "Free hot chocolate for members only; bring your own mug. · Members only.",
+      "description": "A hot chocolate and general-knowledge quiz, with prizes for the winners. Bring your own mug.",
+      "id": "ai-instagram-ea090fc2fe08de6e44",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-2f4d77ca69a65b0cf4",
+      "society": "Hot Chocolate Society",
+      "source_url": "https://www.instagram.com/p/DehBqTHsXR2/",
+      "starts_at": "2026-10-17T13:00:00+01:00",
+      "ends_at": "2026-10-17T15:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Members only.",
+      "dietary": [],
+      "evidence": {
+        "food": "“at least you got some free hot chocolate”; “Members Only”; “Bring your own mug!”",
+        "date": "“17TH OCT”",
+        "time": "“1-3PM”",
+        "location": "“kingsgate, Student Union”",
+        "eligibility": "“Members Only”"
+      },
+      "verified_at": "2026-10-17T14:50:09.009876Z",
+      "post_published_at": "2026-10-15T13:06:01Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "decision_probability": 1.0,
+      "input_signature": "8cb7baec42ba0fde01289ac257345caf8f5cb06acc5c3e3039e7e20752518bae"
+    },
+    {
       "title": "Week 3: New Growth — Fellowship Dinner",
       "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
       "food": "Dinner is free for first-time attendees; dinner at subsequent meetings costs £4. · Free dinner for new friends attending for the first time; subsequent meeting dinners cost £4.",
@@ -289,42 +325,6 @@
       "input_signature": "dbda9698e9d18cc42c8c8642172f86c84784530d215964de5ee08c8ff97c6fd5"
     },
     {
-      "title": "Hot Chocolate Quiz",
-      "location": "Kingsgate, Student Union, Durham",
-      "food": "Free hot chocolate for members only; bring your own mug. · Members only.",
-      "description": "A hot chocolate and general-knowledge quiz, with prizes for the winners. Bring your own mug.",
-      "id": "ai-instagram-ea090fc2fe08de6e44",
-      "source_id": "ai-instagram",
-      "source_label": "Instagram · AI extracted",
-      "post_id": "social-2f4d77ca69a65b0cf4",
-      "society": "Hot Chocolate Society",
-      "source_url": "https://www.instagram.com/p/DehBqTHsXR2/",
-      "starts_at": "2026-10-17T13:00:00+01:00",
-      "ends_at": "2026-10-17T15:00:00+01:00",
-      "food_is_free": true,
-      "price": null,
-      "signup_required": null,
-      "signup_deadline": null,
-      "eligibility": "Members only.",
-      "dietary": [],
-      "evidence": {
-        "food": "“at least you got some free hot chocolate”; “Members Only”; “Bring your own mug!”",
-        "date": "“17TH OCT”",
-        "time": "“1-3PM”",
-        "location": "“kingsgate, Student Union”",
-        "eligibility": "“Members Only”"
-      },
-      "verified_at": "2026-10-17T14:50:09.009876Z",
-      "post_published_at": "2026-10-15T13:06:01Z",
-      "extraction": {
-        "method": "ai",
-        "model": "gpt-6-luna",
-        "human_reviewed": false
-      },
-      "decision_probability": 1.0,
-      "input_signature": "8cb7baec42ba0fde01289ac257345caf8f5cb06acc5c3e3039e7e20752518bae"
-    },
-    {
       "title": "Italian Society Welcome Event",
       "location": "Coviello Wine Bar, 24 Silver St, Durham",
       "food": "Free pizza",
@@ -383,6 +383,112 @@
       "reason": "No free food found in available images; video or remaining media still needs review",
       "needs_visual_review": true,
       "input_signature": "af719d27683271355f9e934ac3c443cdf8f7c358c85f3a5d1a150e9887f044ab"
+    },
+    {
+      "id": "ai-review-7a574231b55e0752",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-40876dd5f4b0cfe932",
+      "source_url": "https://www.instagram.com/p/DeUePaWDM6M/",
+      "society": "Astronomical Society",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "de1fdfa36903bb4cca0c0aa66c4a21bcd55fa1641aee069de3ad9b376553c4d5"
+    },
+    {
+      "id": "ai-review-7c40957081f69e3b",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-5c85e43c1eec48c057",
+      "source_url": "https://www.instagram.com/p/Dd4j8X6shhS/",
+      "society": "Astronomical Society",
+      "reason": "The poster does not specify the fair’s venue or hours; the free availability of sweets is implied by “grab some” rather than explicitly stated.",
+      "input_signature": "8b06c57b700f537a9066636cc710af693c3daa719de08f6f83e2784ca14f2e97"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-33b442aaa2104d8c20",
+      "source_url": "https://www.instagram.com/p/DeeumruqhVn/",
+      "society": "DUCFS",
+      "title": "#ad PARTNER REVEAL | DUCFS X DURFC CHARITY MATCH",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "75a2229dbf0ef6a5cfb0ad772b322a0ab594a1150db8c4ef935448199f950a0e"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-9471300fcabcb62a3e",
+      "source_url": "https://www.instagram.com/p/DeFidafOeUK/",
+      "society": "Iranian Society",
+      "title": "The video says it all 🤷‍♀️",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "5156a2b35a343763be856679098df412653274c9cacf08fb4ffdc83a454048d5"
+    },
+    {
+      "id": "ai-review-306188a0a04cab38",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-e8418e3c9f316c6383",
+      "source_url": "https://www.instagram.com/p/DeUJgJzO0fg/",
+      "society": "Iranian Society",
+      "reason": "Incomplete image/video coverage; inspect original post",
+      "input_signature": "f6a7c3e909f288ce415f73521e50571963f71e2e9bbb47ce3336d35fc8d34ae0"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-b4536f258a1ef11578",
+      "source_url": "https://www.instagram.com/p/DeSIq-6OynO/",
+      "society": "Iranian Society",
+      "title": "Just join anyways 👀🕺",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "ebb4c4a3e90c5e12e25fd7add226b6cc6c3492a83d25237a8840e627efd9c32b"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-fc68818168d01e30ec",
+      "source_url": "https://www.instagram.com/p/DeANbCNuX0l/",
+      "society": "Iranian Society",
+      "title": "This is your sign to join Durham unis greatest society 🙂‍↕️",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "92e33a9f34ec3a051832bae46b8d33605c004187065073673d1a65fa4027ecdb"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-c5176462ded9712997",
+      "source_url": "https://www.instagram.com/p/DeEWauSA4m7/",
+      "society": "Gliding",
+      "title": "✈️✈️",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "a31fcf416939531019a000a9bd804973f52b13f2aa2ead0251333ba5335afdaf"
+    },
+    {
+      "id": "ai-review-f28590d395f74375",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-3383f6e1b89c5be14a",
+      "source_url": "https://www.instagram.com/p/DeEcenLMdm7/",
+      "society": "Hot Chocolate Society",
+      "reason": "The post advertises free hot chocolate for members (£3 membership) every Saturday, but gives no specific event date, time, or location.",
+      "input_signature": "862f78f9efa0d1b7fb78e4219de7e660197d9eaf1254c0827c8b026d082d4970"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-b3712973b19f490a20",
+      "source_url": "https://www.instagram.com/p/Dd0mVcShDoy/",
+      "society": "Kendo",
+      "title": "Come talk to us at Maiden Castle! ⚔️",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "2c41d8f8a72861c299e637da7bb75901a7d8dc4b5b8d1fe77afa4a2bcf34bc76"
     },
     {
       "id": "ai-review-a419c7b67391cfd7",
@@ -632,101 +738,6 @@
       "input_signature": "29f90eec6c17510f8defddb4bb23f0400ab5187745095ae4b3f697aac44ca5c0"
     },
     {
-      "id": "ai-review-7a574231b55e0752",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-40876dd5f4b0cfe932",
-      "source_url": "https://www.instagram.com/p/DeUePaWDM6M/",
-      "society": "Astronomical Society",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "de1fdfa36903bb4cca0c0aa66c4a21bcd55fa1641aee069de3ad9b376553c4d5"
-    },
-    {
-      "id": "ai-review-7c40957081f69e3b",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-5c85e43c1eec48c057",
-      "source_url": "https://www.instagram.com/p/Dd4j8X6shhS/",
-      "society": "Astronomical Society",
-      "reason": "The poster does not specify the fair’s venue or hours; the free availability of sweets is implied by “grab some” rather than explicitly stated.",
-      "input_signature": "8b06c57b700f537a9066636cc710af693c3daa719de08f6f83e2784ca14f2e97"
-    },
-    {
-      "kind": "ai_post_review",
-      "source_id": "ai-instagram",
-      "post_id": "social-33b442aaa2104d8c20",
-      "source_url": "https://www.instagram.com/p/DeeumruqhVn/",
-      "society": "DUCFS",
-      "title": "#ad PARTNER REVEAL | DUCFS X DURFC CHARITY MATCH",
-      "reason": "No free food found in available images; video or remaining media still needs review",
-      "needs_visual_review": true,
-      "input_signature": "75a2229dbf0ef6a5cfb0ad772b322a0ab594a1150db8c4ef935448199f950a0e"
-    },
-    {
-      "kind": "ai_post_review",
-      "source_id": "ai-instagram",
-      "post_id": "social-9471300fcabcb62a3e",
-      "source_url": "https://www.instagram.com/p/DeFidafOeUK/",
-      "society": "Iranian Society",
-      "title": "The video says it all 🤷‍♀️",
-      "reason": "No free food found in available images; video or remaining media still needs review",
-      "needs_visual_review": true,
-      "input_signature": "5156a2b35a343763be856679098df412653274c9cacf08fb4ffdc83a454048d5"
-    },
-    {
-      "id": "ai-review-306188a0a04cab38",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-e8418e3c9f316c6383",
-      "source_url": "https://www.instagram.com/p/DeUJgJzO0fg/",
-      "society": "Iranian Society",
-      "reason": "Incomplete image/video coverage; inspect original post",
-      "input_signature": "f6a7c3e909f288ce415f73521e50571963f71e2e9bbb47ce3336d35fc8d34ae0"
-    },
-    {
-      "kind": "ai_post_review",
-      "source_id": "ai-instagram",
-      "post_id": "social-b4536f258a1ef11578",
-      "source_url": "https://www.instagram.com/p/DeSIq-6OynO/",
-      "society": "Iranian Society",
-      "title": "Just join anyways 👀🕺",
-      "reason": "No free food found in available images; video or remaining media still needs review",
-      "needs_visual_review": true,
-      "input_signature": "ebb4c4a3e90c5e12e25fd7add226b6cc6c3492a83d25237a8840e627efd9c32b"
-    },
-    {
-      "kind": "ai_post_review",
-      "source_id": "ai-instagram",
-      "post_id": "social-fc68818168d01e30ec",
-      "source_url": "https://www.instagram.com/p/DeANbCNuX0l/",
-      "society": "Iranian Society",
-      "title": "This is your sign to join Durham unis greatest society 🙂‍↕️",
-      "reason": "No free food found in available images; video or remaining media still needs review",
-      "needs_visual_review": true,
-      "input_signature": "92e33a9f34ec3a051832bae46b8d33605c004187065073673d1a65fa4027ecdb"
-    },
-    {
-      "kind": "ai_post_review",
-      "source_id": "ai-instagram",
-      "post_id": "social-c5176462ded9712997",
-      "source_url": "https://www.instagram.com/p/DeEWauSA4m7/",
-      "society": "Gliding",
-      "title": "✈️✈️",
-      "reason": "No free food found in available images; video or remaining media still needs review",
-      "needs_visual_review": true,
-      "input_signature": "a31fcf416939531019a000a9bd804973f52b13f2aa2ead0251333ba5335afdaf"
-    },
-    {
-      "id": "ai-review-f28590d395f74375",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-3383f6e1b89c5be14a",
-      "source_url": "https://www.instagram.com/p/DeEcenLMdm7/",
-      "society": "Hot Chocolate Society",
-      "reason": "The post advertises free hot chocolate for members (£3 membership) every Saturday, but gives no specific event date, time, or location.",
-      "input_signature": "862f78f9efa0d1b7fb78e4219de7e660197d9eaf1254c0827c8b026d082d4970"
-    },
-    {
       "kind": "ai_post_review",
       "source_id": "ai-instagram",
       "post_id": "social-94d2d1ea8183a01c7d",
@@ -851,17 +862,6 @@
       "society": "Ahlulbayt Society",
       "reason": "Food is mentioned, but the caption does not establish that snacks or pizza are free.",
       "input_signature": "eebdbe6790dfc1e7ae7223bcfada526fae5e7b3b9183216e04d17fa6c7abd6b4"
-    },
-    {
-      "kind": "ai_post_review",
-      "source_id": "ai-instagram",
-      "post_id": "social-b3712973b19f490a20",
-      "source_url": "https://www.instagram.com/p/Dd0mVcShDoy/",
-      "society": "Kendo",
-      "title": "Come talk to us at Maiden Castle! ⚔️",
-      "reason": "No free food found in available images; video or remaining media still needs review",
-      "needs_visual_review": true,
-      "input_signature": "2c41d8f8a72861c299e637da7bb75901a7d8dc4b5b8d1fe77afa4a2bcf34bc76"
     },
     {
       "kind": "ai_post_review",

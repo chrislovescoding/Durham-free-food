@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-17T14:51:41.706345+00:00",
-  "status": "partial",
+  "updated_at": "2026-10-17T14:55:51.754160+00:00",
+  "status": "complete",
   "expected_batches": 29,
-  "completed_batches": 19,
+  "completed_batches": 29,
   "max_charge_usd": 4.1,
   "sum_batch_caps_usd": 4.06,
   "run_charge_usd": 2.3058,
@@ -11,11 +11,42 @@
   "images_inspected": 1594,
   "images_failed_or_skipped": 0,
   "errors": [],
-  "superseded_errors": [],
+  "superseded_errors": [
+    {
+      "batch_id": "08",
+      "post_id": "social-16956bac5525a4ebe3",
+      "reason": "OpenAI decisions HTTP 413; no automatic retry"
+    },
+    {
+      "batch_id": "11",
+      "post_id": "social-05ebd42d695a1a1f98",
+      "reason": "Post evidence or extraction validation failed"
+    },
+    {
+      "batch_id": "17",
+      "post_id": "social-f33fa659fa8e434950",
+      "reason": "Post evidence or extraction validation failed"
+    },
+    {
+      "batch_id": "18",
+      "post_id": "social-f33fa659fa8e434950",
+      "reason": "Post evidence or extraction validation failed"
+    },
+    {
+      "batch_id": "19",
+      "post_id": "social-50892bf8c660c23dd9",
+      "reason": "OpenAI decisions HTTP 413; no automatic retry"
+    },
+    {
+      "batch_id": "24",
+      "post_id": "social-a6d867014486a533fe",
+      "reason": "Post evidence or extraction validation failed"
+    }
+  ],
   "batches": [
     {
       "id": "01",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "PmaLnoG3d4u2VcziG",
       "run_charge_usd": 0.11610000000000001,
@@ -23,12 +54,15 @@
       "returned_items": 43,
       "accepted_posts": 43,
       "ai_posts_merged": 42,
-      "ai_posts_completed": 42,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 43,
+      "ai_posts_retained": 1,
+      "retained_ai_post_ids": [
         "social-3900a56a5fea7a4a42"
       ],
+      "superseded_observation_post_ids": [
+        "social-3900a56a5fea7a4a42"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
@@ -45,6 +79,7 @@
       "ai_posts_completed": 40,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -62,13 +97,14 @@
       "ai_posts_completed": 19,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "04",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "yvKNtVQMcvccLbxOK",
       "run_charge_usd": 0.0783,
@@ -76,18 +112,21 @@
       "returned_items": 29,
       "accepted_posts": 23,
       "ai_posts_merged": 22,
-      "ai_posts_completed": 22,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 23,
+      "ai_posts_retained": 1,
+      "retained_ai_post_ids": [
         "social-00451664fae8479938"
       ],
+      "superseded_observation_post_ids": [
+        "social-00451664fae8479938"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "05",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "o4wIZuJhFkczIqxxr",
       "run_charge_usd": 0.11069999999999999,
@@ -95,18 +134,21 @@
       "returned_items": 41,
       "accepted_posts": 40,
       "ai_posts_merged": 39,
-      "ai_posts_completed": 39,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 40,
+      "ai_posts_retained": 1,
+      "retained_ai_post_ids": [
         "social-94d2d1ea8183a01c7d"
       ],
+      "superseded_observation_post_ids": [
+        "social-94d2d1ea8183a01c7d"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "06",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "ehaDEq6nOuiYEXHxa",
       "run_charge_usd": 0.0756,
@@ -114,19 +156,23 @@
       "returned_items": 28,
       "accepted_posts": 24,
       "ai_posts_merged": 22,
-      "ai_posts_completed": 22,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 24,
+      "ai_posts_retained": 2,
+      "retained_ai_post_ids": [
         "social-99676733a449015cc8",
         "social-b720cbfd57c0f1a0c9"
       ],
+      "superseded_observation_post_ids": [
+        "social-99676733a449015cc8",
+        "social-b720cbfd57c0f1a0c9"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "07",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "khMIDvymLCaQkZkfO",
       "run_charge_usd": 0.0567,
@@ -134,12 +180,15 @@
       "returned_items": 21,
       "accepted_posts": 16,
       "ai_posts_merged": 15,
-      "ai_posts_completed": 15,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 16,
+      "ai_posts_retained": 1,
+      "retained_ai_post_ids": [
         "social-6f8e88a045f1a4309b"
       ],
+      "superseded_observation_post_ids": [
+        "social-6f8e88a045f1a4309b"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
@@ -152,13 +201,42 @@
       "max_charge_usd": 0.14,
       "returned_items": 24,
       "accepted_posts": 21,
-      "ai_posts_merged": 21,
+      "ai_posts_merged": 0,
       "ai_posts_completed": 21,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
+      "ai_posts_retained": 21,
+      "retained_ai_post_ids": [
+        "social-0d5d1965c6d4af0448",
+        "social-16956bac5525a4ebe3",
+        "social-25a337c61c1a6fccec",
+        "social-33b442aaa2104d8c20",
+        "social-38d4deaaa1399fdf4c",
+        "social-40876dd5f4b0cfe932",
+        "social-4b402bfba53b7790a8",
+        "social-5576e5a8ea024073d5",
+        "social-5673afdbca98d0e8af",
+        "social-5b47c2c9d1c6d55516",
+        "social-5bf8861f073702ff1b",
+        "social-5c85e43c1eec48c057",
+        "social-61a7af25f1bd3889cc",
+        "social-75c949131e07413af6",
+        "social-76c756955dacf79cb0",
+        "social-7d95f31e171c4eedc4",
+        "social-9b2de0e642329835f6",
+        "social-b7015053a6489d1d60",
+        "social-c4101a37f1300bf186",
+        "social-cb53d5dd5b93c9e914",
+        "social-e1d57ae7613f884065"
+      ],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
-      "superseded_errors": []
+      "superseded_errors": [
+        {
+          "batch_id": "08",
+          "post_id": "social-16956bac5525a4ebe3",
+          "reason": "OpenAI decisions HTTP 413; no automatic retry"
+        }
+      ]
     },
     {
       "id": "09",
@@ -173,6 +251,7 @@
       "ai_posts_completed": 20,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -190,6 +269,7 @@
       "ai_posts_completed": 34,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -203,13 +283,50 @@
       "max_charge_usd": 0.14,
       "returned_items": 32,
       "accepted_posts": 29,
-      "ai_posts_merged": 29,
+      "ai_posts_merged": 0,
       "ai_posts_completed": 29,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
+      "ai_posts_retained": 29,
+      "retained_ai_post_ids": [
+        "social-05ebd42d695a1a1f98",
+        "social-0984a5e31152ff63eb",
+        "social-0efb9be493c8d5a714",
+        "social-19007ed4ad3ce670eb",
+        "social-1c44b416c8084edfbc",
+        "social-2c325f1cc1c7dbc928",
+        "social-2c5c9808d736d28129",
+        "social-2f4d77ca69a65b0cf4",
+        "social-3335ac3b1eac61c88e",
+        "social-3383f6e1b89c5be14a",
+        "social-440b55a262ce235afa",
+        "social-4c692b2f9781915698",
+        "social-5822a7d84493cec6ba",
+        "social-620c60afb4d3dc7b92",
+        "social-722efda1e9676d635f",
+        "social-9471300fcabcb62a3e",
+        "social-98bf435d2fad72a821",
+        "social-9e0573ec77370cf130",
+        "social-a403ed10eb92115e9b",
+        "social-b4536f258a1ef11578",
+        "social-bc6515feb3f3a799d0",
+        "social-c180a81fae69f022ed",
+        "social-c5176462ded9712997",
+        "social-c9a4e624393fb9d14e",
+        "social-e66d05e8621f838be9",
+        "social-e8418e3c9f316c6383",
+        "social-f9667459200a772e23",
+        "social-fc68818168d01e30ec",
+        "social-fc97440e4e4d3d1bd9"
+      ],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
-      "superseded_errors": []
+      "superseded_errors": [
+        {
+          "batch_id": "11",
+          "post_id": "social-05ebd42d695a1a1f98",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
     },
     {
       "id": "12",
@@ -224,6 +341,7 @@
       "ai_posts_completed": 21,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -241,6 +359,7 @@
       "ai_posts_completed": 17,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -258,13 +377,14 @@
       "ai_posts_completed": 23,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "15",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "etbFS8cgLg7Yh9EX0",
       "run_charge_usd": 0.0783,
@@ -272,12 +392,15 @@
       "returned_items": 29,
       "accepted_posts": 25,
       "ai_posts_merged": 24,
-      "ai_posts_completed": 24,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 25,
+      "ai_posts_retained": 1,
+      "retained_ai_post_ids": [
         "social-dd04861d8d55b8d625"
       ],
+      "superseded_observation_post_ids": [
+        "social-dd04861d8d55b8d625"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
@@ -294,49 +417,129 @@
       "ai_posts_completed": 27,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "17",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "A4MOrOIB1UiBy8DjI",
       "run_charge_usd": 0.09179999999999999,
       "max_charge_usd": 0.14,
       "returned_items": 34,
       "accepted_posts": 33,
-      "ai_posts_merged": 30,
-      "ai_posts_completed": 30,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_merged": 0,
+      "ai_posts_completed": 33,
+      "ai_posts_retained": 33,
+      "retained_ai_post_ids": [
+        "social-00451664fae8479938",
+        "social-00b0137d1bc3fc7ea2",
+        "social-0620cda650c25d2cc6",
+        "social-0dcb670b5e0e97e2c4",
+        "social-10aaeaeb4a257065a9",
+        "social-1269630912ca4c5834",
+        "social-1ac9a4c5325f06d7ff",
+        "social-1e75481d324147430a",
+        "social-21760b94481cc915ec",
+        "social-21760ec0e287bca649",
+        "social-21fe7c8685dc08e26a",
+        "social-24781a7448f787cd09",
+        "social-445994f7358c7cc38c",
+        "social-45aa012d032c7c82db",
+        "social-547f557ba6be9bc35b",
+        "social-57e2eeb1b75226286b",
+        "social-5f1825765a5056e1f2",
+        "social-6f8e88a045f1a4309b",
+        "social-70f887d5cb8b6ac29e",
+        "social-76018f64cd5d2b5498",
+        "social-8e0bc7dab2524fd990",
+        "social-a38b7093b75cfdfc73",
+        "social-a5ed1fa7dfd6e2876c",
+        "social-bed3b5468e4aef6e59",
+        "social-c01b692e04dadd1bd8",
+        "social-d267d6163b2412bb33",
+        "social-e225514b88acf5eb21",
+        "social-e58eb066b95c15c671",
+        "social-e8cee4f07c56014cbe",
+        "social-f2d4c74b1718428620",
+        "social-f33fa659fa8e434950",
+        "social-f6f519a5e3795b17cf",
+        "social-fd3f33713c19f45d5e"
+      ],
+      "superseded_observation_post_ids": [
         "social-00451664fae8479938",
         "social-f2d4c74b1718428620",
         "social-f33fa659fa8e434950"
       ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
-      "superseded_errors": []
+      "superseded_errors": [
+        {
+          "batch_id": "17",
+          "post_id": "social-f33fa659fa8e434950",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
     },
     {
       "id": "18",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "tfB431uNcvXksG0ue",
       "run_charge_usd": 0.0864,
       "max_charge_usd": 0.14,
       "returned_items": 32,
       "accepted_posts": 30,
-      "ai_posts_merged": 29,
-      "ai_posts_completed": 29,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_merged": 0,
+      "ai_posts_completed": 30,
+      "ai_posts_retained": 30,
+      "retained_ai_post_ids": [
+        "social-0d4c47de1a574a7936",
+        "social-16761d3443e309a0a0",
+        "social-1afd78c850a2cf95ce",
+        "social-231fd1a5afd8aa54d3",
+        "social-3331cdd57578674255",
+        "social-3eed0ba9ab4331a54f",
+        "social-46a5f34377a16903c0",
+        "social-48ee338854e514adc4",
+        "social-4b5ef00750d721fc7f",
+        "social-4d616535037f1b43b6",
+        "social-4f6fed26ed6d84bc86",
+        "social-66b00d62c044edbebb",
+        "social-6b443c07f2d6271aa9",
+        "social-73f8e08a14d4bc40d1",
+        "social-77eaef03b19e73873d",
+        "social-8167ee377f33e54d1d",
+        "social-91ccd10a1448fe82b0",
+        "social-a591fe98e5567205ef",
+        "social-aec8f5b72e021b5073",
+        "social-af1ac27a5608ea0d24",
+        "social-b695ee4c87e12b9c19",
+        "social-c04832027faada524b",
+        "social-c1b6e73f7eccdea114",
+        "social-dfdd80ab74f3eccb9e",
+        "social-e27e142164d916e587",
+        "social-ef7b358f4ac060c39c",
+        "social-f1832a2900887c2ef0",
+        "social-f2d4c74b1718428620",
+        "social-f33fa659fa8e434950",
+        "social-fd6d5baa099154eaa2"
+      ],
+      "superseded_observation_post_ids": [
         "social-46a5f34377a16903c0"
       ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
-      "superseded_errors": []
+      "superseded_errors": [
+        {
+          "batch_id": "18",
+          "post_id": "social-f33fa659fa8e434950",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
     },
     {
       "id": "19",
@@ -347,13 +550,49 @@
       "max_charge_usd": 0.14,
       "returned_items": 29,
       "accepted_posts": 28,
-      "ai_posts_merged": 28,
+      "ai_posts_merged": 0,
       "ai_posts_completed": 28,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
+      "ai_posts_retained": 28,
+      "retained_ai_post_ids": [
+        "social-272871bf56b93cdcbf",
+        "social-2d7fecace9ab4ad50f",
+        "social-461f478102294f44a6",
+        "social-4ad8f7c98c7ef15d14",
+        "social-50892bf8c660c23dd9",
+        "social-5b04789aca07529e7a",
+        "social-6b614df7e2d86e7f97",
+        "social-74118bd7517d23eb2b",
+        "social-760e8cf942af0376a0",
+        "social-76888f33d6911c21e2",
+        "social-85632f27968652f36c",
+        "social-85e3dff6ba288257df",
+        "social-94e42a72843788e649",
+        "social-aad9a20ab7ecbf75f4",
+        "social-b063c009a8f74ce008",
+        "social-b3712973b19f490a20",
+        "social-b78a601ddee7840860",
+        "social-b7c7df3eeab3d3cab8",
+        "social-bda74ee995bc32f929",
+        "social-c07cd7bf87c0004b69",
+        "social-c42a0054b746c9beaa",
+        "social-c99587b7411046c272",
+        "social-d385216b42f8c9dab1",
+        "social-d447c3c5d3f4776ba9",
+        "social-d776e1531a9c62e900",
+        "social-dc6cac1867ed962d20",
+        "social-e5ec0e35c4827d8bda",
+        "social-f2e2a28cc71e7f43b0"
+      ],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
-      "superseded_errors": []
+      "superseded_errors": [
+        {
+          "batch_id": "19",
+          "post_id": "social-50892bf8c660c23dd9",
+          "reason": "OpenAI decisions HTTP 413; no automatic retry"
+        }
+      ]
     },
     {
       "id": "20",
@@ -368,13 +607,14 @@
       "ai_posts_completed": 26,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "21",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "27lNFKQhIJrQkBKaL",
       "run_charge_usd": 0.07289999999999999,
@@ -382,18 +622,21 @@
       "returned_items": 27,
       "accepted_posts": 22,
       "ai_posts_merged": 21,
-      "ai_posts_completed": 21,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 22,
+      "ai_posts_retained": 1,
+      "retained_ai_post_ids": [
         "social-99676733a449015cc8"
       ],
+      "superseded_observation_post_ids": [
+        "social-99676733a449015cc8"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
     {
       "id": "22",
-      "status": "partial",
+      "status": "complete",
       "collection_status": "SUCCEEDED",
       "run_id": "TCktyuI1x3tI4fSEt",
       "run_charge_usd": 0.09720000000000001,
@@ -401,13 +644,17 @@
       "returned_items": 36,
       "accepted_posts": 33,
       "ai_posts_merged": 31,
-      "ai_posts_completed": 31,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
-      "stale_or_missing_ai_post_ids": [
+      "ai_posts_completed": 33,
+      "ai_posts_retained": 2,
+      "retained_ai_post_ids": [
         "social-46a5f34377a16903c0",
         "social-99676733a449015cc8"
       ],
+      "superseded_observation_post_ids": [
+        "social-46a5f34377a16903c0",
+        "social-99676733a449015cc8"
+      ],
+      "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     },
@@ -424,6 +671,7 @@
       "ai_posts_completed": 20,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -437,13 +685,36 @@
       "max_charge_usd": 0.14,
       "returned_items": 21,
       "accepted_posts": 15,
-      "ai_posts_merged": 15,
+      "ai_posts_merged": 0,
       "ai_posts_completed": 15,
-      "ai_posts_retained": 0,
-      "retained_ai_post_ids": [],
+      "ai_posts_retained": 15,
+      "retained_ai_post_ids": [
+        "social-055b1c9229fa30b800",
+        "social-10644af3d6813bb408",
+        "social-1eb53a0bc27176c04f",
+        "social-1f27c1e87a1e1458e9",
+        "social-2e4c7bfd6b38bf8d3d",
+        "social-36d230a9c8b95a87ad",
+        "social-5d743f4e6d51d8abd6",
+        "social-6f5f4b9fcd50dc3fb7",
+        "social-6fddd07cd67561cc18",
+        "social-a6d867014486a533fe",
+        "social-ab9607d7c71a2bbc05",
+        "social-d0ede13986dd9d6842",
+        "social-de4e0b82ccdf8f98b8",
+        "social-e57582e500f7e0d50a",
+        "social-fc60d64ac1f8d407f9"
+      ],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
-      "superseded_errors": []
+      "superseded_errors": [
+        {
+          "batch_id": "24",
+          "post_id": "social-a6d867014486a533fe",
+          "reason": "Post evidence or extraction validation failed"
+        }
+      ]
     },
     {
       "id": "25",
@@ -458,6 +729,7 @@
       "ai_posts_completed": 31,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -475,6 +747,7 @@
       "ai_posts_completed": 15,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -492,6 +765,7 @@
       "ai_posts_completed": 36,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -509,6 +783,7 @@
       "ai_posts_completed": 34,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
@@ -526,21 +801,23 @@
       "ai_posts_completed": 10,
       "ai_posts_retained": 0,
       "retained_ai_post_ids": [],
+      "superseded_observation_post_ids": [],
       "stale_or_missing_ai_post_ids": [],
       "errors": [],
       "superseded_errors": []
     }
   ],
-  "posts_considered": 755,
-  "cache_hits": 165,
-  "decision_requests": 590,
-  "extraction_requests": 28,
-  "images_sent_to_decisions": 1254,
+  "posts_considered": 718,
+  "cache_hits": 57,
+  "decision_requests": 657,
+  "extraction_requests": 35,
+  "images_sent_to_decisions": 1354,
   "events_extracted": 10,
   "unique_posts": 741,
-  "unique_ai_posts_merged": 741,
+  "unique_ai_posts_merged": 589,
   "unique_ai_posts_completed": 741,
-  "unique_ai_posts_retained": 0,
+  "unique_ai_posts_retained": 159,
+  "unique_superseded_observation_posts": 10,
   "planned_accounts": 289,
   "requested_posts": 1445
 }
