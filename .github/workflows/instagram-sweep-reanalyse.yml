@@ -1,0 +1,187 @@
+name: Reanalyse saved Instagram sweep batches (no Apify collection)
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_workflow_run_id:
+        description: 'Completed sweep run containing the original plan, posts and images'
+        required: true
+        default: '39040881025'
+        type: string
+      batches:
+        description: 'Comma-separated two-digit batch IDs from the original plan, for example 08,12'
+        required: true
+        default: '08'
+        type: string
+      retry_errors:
+        description: 'Explicitly retry failed model calls; OpenAI charges may apply'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: refresh-food-events
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      batches: ${{ steps.select.outputs.batches }}
+      source_run_id: ${{ steps.source.outputs.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate the original workflow run ID
+        id: source
+        env:
+          SOURCE_RUN_ID: ${{ inputs.source_workflow_run_id }}
+        run: |
+          python - <<'PY'
+          import os, re
+          value = os.environ['SOURCE_RUN_ID'].strip()
+          if not re.fullmatch(r'[1-9][0-9]{0,19}', value):
+              raise SystemExit('Use a numeric GitHub workflow run ID.')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              print('run_id=' + value, file=output)
+          PY
+      - name: Download the original saved plan
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ steps.source.outputs.run_id }}
+          name: instagram-sweep-plan-${{ steps.source.outputs.run_id }}
+          path: work/instagram-sweep/
+      - name: Select only existing batches from that plan
+        id: select
+        env:
+          SELECTED_BATCHES: ${{ inputs.batches }}
+        run: |
+          python - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          plan = json.loads(Path('work/instagram-sweep/plan.json').read_text())
+          selected = [value.strip() for value in os.environ['SELECTED_BATCHES'].split(',')]
+          planned = {batch['id'] for batch in plan['batches']}
+          if (not selected or any(not re.fullmatch(r'[0-9]{2}', value) for value in selected)
+                  or len(selected) != len(set(selected)) or not set(selected) <= planned):
+              raise SystemExit('Choose unique two-digit batch IDs present in the original sweep plan.')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              print('batches=' + json.dumps(selected), file=output)
+          print('Reanalysing saved batches: ' + ', '.join(selected) + '. No collection will run.')
+          PY
+
+  analyse:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        batch: ${{ fromJSON(needs.prepare.outputs.batches) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Restore purchased posts, original images and model checkpoints
+        id: restore
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ needs.prepare.outputs.source_run_id }}
+          name: instagram-sweep-batch-${{ matrix.batch }}-${{ needs.prepare.outputs.source_run_id }}
+          path: work/instagram-sweep/
+      - name: Reanalyse the saved images with Decisions and Luna
+        id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BATCH: ${{ matrix.batch }}
+          RETRY_ERRORS: ${{ inputs.retry_errors }}
+        run: |
+          args=()
+          if [ "$RETRY_ERRORS" = 'true' ]; then args+=(--retry-errors); fi
+          python scripts/ai_posts.py --folder "work/instagram-sweep/batches/$BATCH" --limit 50 "${args[@]}"
+      - name: Preserve completed and interrupted model checkpoints
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        env:
+          BATCH: ${{ matrix.batch }}
+        run: |
+          mkdir -p "work/instagram-sweep/batches/$BATCH/ai-checkpoints"
+          for path in data/ai-post-cache.json data/ai-events.json; do
+            if [ -f "$path" ]; then cp -- "$path" "work/instagram-sweep/batches/$BATCH/ai-checkpoints/"; fi
+          done
+      - name: Save recovery results separately from the original archive
+        if: ${{ always() && steps.restore.outcome == 'success' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-sweep-reanalysis-batch-${{ matrix.batch }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            work/instagram-sweep/plan.json
+            work/instagram-sweep/batches/${{ matrix.batch }}/
+          retention-days: 90
+          if-no-files-found: error
+
+  publish:
+    needs: [prepare, analyse]
+    if: ${{ always() && needs.prepare.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Restore the complete original sweep
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ needs.prepare.outputs.source_run_id }}
+          pattern: instagram-sweep-*-${{ needs.prepare.outputs.source_run_id }}
+          path: work/instagram-sweep/
+          merge-multiple: true
+      - name: Overlay only this attempt's recovered batches
+        uses: actions/download-artifact@v4
+        with:
+          pattern: instagram-sweep-reanalysis-batch-*-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/instagram-sweep/
+          merge-multiple: true
+      - name: Merge saved results and rebuild the feed without network collection
+        run: |
+          python scripts/merge_instagram_sweep.py --folder work/instagram-sweep
+          python scripts/refresh.py --offline
+      - name: Commit completed results and checkpoints to main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ai-post-cache.json data/ai-events.json data/instagram-sweep-report.json data/review-queue.json dist/data/events.json dist/data/social-posts.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Reanalyse saved Instagram sweep images without collecting again'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Summarise the recovered results
+        run: |
+          echo 'Analysis used saved posts and PNGs. No Apify collection or image downloading was performed; OpenAI calls may incur charges.' >> "$GITHUB_STEP_SUMMARY"
+          cat data/instagram-sweep-report.json >> "$GITHUB_STEP_SUMMARY"

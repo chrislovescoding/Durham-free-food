@@ -1,13 +1,15 @@
 """Reusable Instagram captions + images -> Decisions -> Luna -> website events.
 
 Consumes an existing collector artifact. Never calls Apify. Checkpoints each API
-response to avoid paying again for unchanged posts; no automatic HTTP retries.
+response to avoid paying again for unchanged posts. Only a confirmed HTTP 413
+permits one smaller transport retry; ambiguous outcomes are never retried.
 """
 import argparse
 import base64
 from copy import deepcopy
 from datetime import datetime, timezone
 import hashlib
+from io import BytesIO
 import json
 import math
 import os
@@ -15,6 +17,7 @@ from pathlib import Path
 import re
 
 import requests
+from PIL import Image, UnidentifiedImageError
 
 try:
     from scripts.ai_events import EXTRACTION_SCHEMA, validate_extraction, evidence_signature
@@ -62,6 +65,59 @@ class APIError(RuntimeError):
     pass
 
 
+def _request_bytes(body):
+    # iterencode avoids allocating another complete large base64 request string.
+    return sum(len(part.encode('utf-8')) for part in json.JSONEncoder().iterencode(body))
+
+
+def compact_image_body(body, *, start_profile=0):
+    """Re-encode every image for transport without changing saved evidence."""
+    compact = deepcopy(body)
+    try:
+        images = [part for item in compact['input'] for part in item['content']
+                  if part.get('type') == 'input_image']
+        if not images or len(images) > 20:
+            raise ValueError('Invalid image count')
+        sources = []
+        for part in images:
+            url = part['image_url']
+            if not isinstance(url, str) or not url.startswith(('data:image/png;base64,', 'data:image/jpeg;base64,')):
+                raise ValueError('Only cached image bytes may be compacted')
+            data = base64.b64decode(url.split(',', 1)[1], validate=True)
+            if len(data) > 10 * 1024 * 1024:
+                raise ValueError('Image is too large')
+            sources.append(data)
+        profiles = ((None, 90), (1600, 80), (1280, 80))
+        for profile in range(start_profile, len(profiles)):
+            max_edge, quality = profiles[profile]
+            total = 0
+            for part, data in zip(images, sources):
+                with Image.open(BytesIO(data)) as original:
+                    if original.width * original.height > 2400 * 2400:
+                        raise ValueError('Cached image exceeds expected pixel limit')
+                    original.load()
+                    rgb = original.convert('RGB')
+                    try:
+                        if max_edge:
+                            rgb.thumbnail((max_edge, max_edge), Image.Resampling.LANCZOS)
+                        buffer = BytesIO()
+                        rgb.save(buffer, format='JPEG', quality=quality, optimize=True, subsampling=0)
+                        encoded = buffer.getvalue()
+                    finally:
+                        rgb.close()
+                total += len(encoded)
+                part['image_url'] = 'data:image/jpeg;base64,' + base64.b64encode(encoded).decode('ascii')
+            # Preserve all caption text and all panels. Never drop a panel just
+            # to make a request fit; overlarge evidence needs explicit review.
+            if total <= 4 * 1024 * 1024 and _request_bytes(compact) <= 6 * 1024 * 1024:
+                return compact, {'images': len(images), 'image_bytes_before': sum(map(len, sources)),
+                                 'image_bytes_after': total, 'jpeg_quality': quality,
+                                 'max_edge': max_edge, 'profile': profile}
+    except (KeyError, TypeError, ValueError, OSError, UnidentifiedImageError, Image.DecompressionBombError):
+        raise APIError('OpenAI image payload could not be safely compacted; no further retry') from None
+    raise APIError('OpenAI all images cannot fit the compact request limit; no further retry')
+
+
 class OpenAIClient:
     def __init__(self, key, session=None):
         if not key:
@@ -70,10 +126,10 @@ class OpenAIClient:
         self.session.trust_env = False
         self.key = key
         self.calls = 0
+        self.transport_retries = []
+        self.transport_compactions = []
 
-    def post(self, endpoint, body):
-        if endpoint not in ('decisions', 'responses'):
-            raise ValueError('Unsupported API endpoint')
+    def _send(self, endpoint, body):
         if self.calls >= 100:
             raise APIError('Maximum 100 API requests per run reached')
         self.calls += 1
@@ -83,6 +139,27 @@ class OpenAIClient:
                 json=body, timeout=(15, 120), allow_redirects=False)
         except requests.RequestException:
             raise APIError('OpenAI request did not complete; no automatic retry') from None
+        return response
+
+    def post(self, endpoint, body):
+        if endpoint not in ('decisions', 'responses'):
+            raise ValueError('Unsupported API endpoint')
+        original_body, profile = body, -1
+        if _request_bytes(body) > 6 * 1024 * 1024:
+            body, metadata = compact_image_body(body)
+            profile = metadata['profile']
+            self.transport_compactions.append({'endpoint': endpoint, **metadata})
+            print(f"OpenAI {endpoint}: compacted {metadata['images']} images for transport ({metadata['image_bytes_after']} bytes).", flush=True)
+        response = self._send(endpoint, body)
+        if response.status_code == 413:
+            # A confirmed rejection did not accept this payload for inference.
+            # Retry once with every image present, changing transport bytes only.
+            compact, metadata = compact_image_body(original_body, start_profile=profile + 1)
+            if self.calls >= 100:
+                raise APIError('Maximum 100 API requests per run reached')
+            self.transport_retries.append({'endpoint': endpoint, 'reason': 'HTTP 413', **metadata})
+            print(f"OpenAI {endpoint}: HTTP 413; one compact retry with {metadata['images']} images ({metadata['image_bytes_after']} bytes).", flush=True)
+            response = self._send(endpoint, compact)
         if not 200 <= response.status_code < 300:
             code = ''
             try:
@@ -126,7 +203,7 @@ def prepare_input(post, folder):
         if not data.startswith(b'\x89PNG\r\n\x1a\n'):
             raise ValueError('Image cache is not a PNG')
         total_bytes += len(data)
-        if total_bytes > 30 * 1024 * 1024:
+        if total_bytes > 200 * 1024 * 1024:
             raise ValueError('Post images exceed request size limit')
         hashes.append(hashlib.sha256(data).hexdigest())
         content.append({'type': 'input_image', 'image_url':
@@ -209,7 +286,8 @@ def process(folder, root=ROOT, limit=50, client=None, retry_errors=False):
     report = {'model': MODEL, 'pipeline_version': VERSION, 'started_at': now.isoformat(),
         'posts_considered': 0, 'cache_hits': 0, 'decision_requests': 0,
         'extraction_requests': 0, 'images_sent_to_decisions': 0, 'events_extracted': 0,
-        'errors': [], 'usage': [], 'apify_requests': 0, 'processed_post_ids': []}
+        'errors': [], 'usage': [], 'apify_requests': 0, 'processed_post_ids': [],
+        'transport_retries': [], 'transport_compactions': []}
     for post in posts[:limit]:
         report['posts_considered'] += 1
         post_id = post['id']
@@ -286,6 +364,8 @@ def process(folder, root=ROOT, limit=50, client=None, retry_errors=False):
         stored['updated_at'] = now.isoformat()
         _write_json(stored_path, stored)
         report['events_extracted'] += len(events)
+        report['transport_retries'] = deepcopy(getattr(client, 'transport_retries', []))
+        report['transport_compactions'] = deepcopy(getattr(client, 'transport_compactions', []))
         _write_json(folder / 'ai-report.json', report)
         print(f"{report['posts_considered']}/{min(limit, len(posts))}: {post_id}: {len(events)} events, {len(queue)} for review", flush=True)
         if failed:

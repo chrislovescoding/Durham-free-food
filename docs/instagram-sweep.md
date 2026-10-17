@@ -16,6 +16,8 @@ The approved 17 October 2026 plan covers **289 Instagram accounts for 285 societ
 
 `post_images.py --skip-ocr` saves the actual downloadable poster and carousel images as PNGs. OCR is not required for this sweep. `ai_posts.py` sends the caption, publication date and every available cached image directly to OpenAI:
 
+Oversized requests use compact JPEG copies for transport while retaining every panel and the original PNG evidence. A confirmed HTTP 413 allows one smaller retry; other HTTP failures and unknown network outcomes are not automatically retried. Transport changes do not invalidate successful cached analysis of the same source evidence.
+
 - **Decisions API:** `POST /v1/decisions` with `gpt-6-luna` tests whether the post explicitly offers free food, including conditional offers. A probability of at least 0.20 goes on to extraction; this threshold favors checking potential matches.
 - **Luna extraction:** `POST /v1/responses` with `gpt-6-luna` produces a strict event schema. One post can produce several dated events. The instructions require source evidence, correct UK dates, and clear conditions such as “free on your first visit; £4 otherwise.” Unknown optional details remain unknown.
 - **Validation:** `ai_events.py` checks required fields, evidence, source URLs, date ordering and eligibility. It excludes events before the current Europe/London date, preserves same-day events for the website's started-event treatment, and sends uncertain results to `data/review-queue.json`. Model-generated evidence is still model output, not an independent guarantee of accuracy.
@@ -42,6 +44,8 @@ This command preserves each artifact in its own directory. To use `merge_instagr
 ## Rerun without repurchasing
 
 Use **Re-run failed jobs on the existing GitHub run**, not a fresh dispatch of the reserved sweep. Batch jobs restore their saved journals, images and checkpoints. If a paid start's outcome is unknown or its artifact is missing, stop and reconcile the run in Apify; never delete its journal or reservation merely to get past the guard.
+
+After fixing analysis code, use the **Reanalyse saved Instagram sweep batches** workflow on the current main branch. Supply the original sweep run ID and comma-separated batch IDs. Enable `retry_errors` only when intentionally retrying failed model calls. This workflow has no Apify credential or collection step: it restores the purchased posts and images, saves a separate recovery artifact, and rebuilds the website feed. Original archives remain available.
 
 To rebuild results from an already restored sweep, these commands make no Apify or model calls:
 
