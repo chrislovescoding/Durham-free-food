@@ -1,6 +1,7 @@
 from copy import deepcopy
 from datetime import datetime, timezone
 import json
+import re
 from pathlib import Path
 import tempfile
 import unittest
@@ -10,7 +11,7 @@ from PIL import Image
 
 from scripts.ai_posts import APIError
 from scripts.process_suggestions import (Processor, Deferred, QueueError, canonical_source,
-    artifact_safe, normalize_post, ReviewRequired, DirectPostClient, CompletionRejected, ApifyHTTPError, CAP)
+    artifact_safe, normalize_post, ReviewRequired, DirectPostClient, CompletionRejected, ApifyHTTPError, direct_post_input, CAP)
 
 NOW = datetime(2026, 10, 17, 12, tzinfo=timezone.utc)
 SOURCE = 'https://www.instagram.com/p/TestPost/'
@@ -274,6 +275,15 @@ class SubmissionProcessorTests(unittest.TestCase):
         self.assertEqual(kwargs['json']['onlyPostsNewerThan'], '2026-09-17T12:00:00Z')
         self.assertEqual(kwargs['params']['maxTotalChargeUsd'], 0.05)
         self.assertNotIn('maxItems', kwargs['params'])
+
+    def test_actor_datepicker_accepts_utc_z_not_iso_offset(self):
+        # Exact onlyPostsNewerThan schema from the actor's default build, read
+        # 2026-10-17. ISO +00:00 caused the live input-validation rejection.
+        pattern = r'^(\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])(T[0-2]\d:[0-5]\d(:[0-5]\d)?(\.\d+)?Z?)?$|^(\d+)\s*(minute|hour|day|week|month|year)s?$'
+        original = '2026-09-17T17:06:20.000000+00:00'
+        self.assertIsNone(re.fullmatch(pattern, original))
+        corrected = direct_post_input(SOURCE, original)['onlyPostsNewerThan']
+        self.assertIsNotNone(re.fullmatch(pattern, corrected))
 
     def test_confirmed_apify_error_keeps_status_type_without_raw_message(self):
         session = Mock()

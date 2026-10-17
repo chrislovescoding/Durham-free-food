@@ -160,6 +160,12 @@ class QueueClient:
         return self.call('complete', {'job_id': job['id'], 'lease_token': job['lease_token'], **result})
 
 
+def direct_post_input(source, cutoff):
+    """Actor datepicker schema accepts UTC Z, but rejects explicit +00:00."""
+    return {'directUrls': [source], 'resultsType': 'posts', 'resultsLimit': 1,
+            'onlyPostsNewerThan': timestamp(cutoff).astimezone(timezone.utc).isoformat().replace('+00:00', 'Z')}
+
+
 class DirectPostClient:
     def __init__(self, token, session=None):
         if not isinstance(token, str) or not token.strip():
@@ -195,9 +201,7 @@ class DirectPostClient:
             raise Deferred('Instagram collection response was not confirmed.') from None
 
     def start(self, source, cutoff):
-        return self.request('POST', f'/actors/{ACTOR}/runs', body={
-            'directUrls': [source], 'resultsType': 'posts', 'resultsLimit': 1,
-            'onlyPostsNewerThan': timestamp(cutoff).astimezone(timezone.utc).isoformat().replace('+00:00', 'Z')}, params={
+        return self.request('POST', f'/actors/{ACTOR}/runs', body=direct_post_input(source, cutoff), params={
             # maxItems applies only to pay-per-result actors; this actor now
             # uses pay-per-event pricing. The total USD cap covers that model.
             'maxTotalChargeUsd': CAP, 'restartOnError': 'false', 'timeout': 600})['data']
