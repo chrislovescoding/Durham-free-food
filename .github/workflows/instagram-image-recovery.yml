@@ -88,6 +88,7 @@ jobs:
           --cache-dir work/apify-pilot/image-cache
       - name: Merge image evidence
         run: |
+          python scripts/pilot_review_page.py
           python scripts/import_apify.py
           python scripts/refresh.py --offline
       - name: Preserve recovery receipt and images

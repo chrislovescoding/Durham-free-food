@@ -54,6 +54,7 @@ jobs:
           --cache-dir work/apify-pilot/image-cache
       - name: Merge posts and queue caption plus image evidence
         run: |
+          python scripts/pilot_review_page.py
           python scripts/import_apify.py
           python scripts/refresh.py --offline
       - name: Save purchased data and image evidence even if later steps fail
