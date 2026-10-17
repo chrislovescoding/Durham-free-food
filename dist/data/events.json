@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T11:13:18.810319Z",
+  "updated_at": "2026-10-17T11:15:29.632456Z",
   "timezone": "Europe/London",
   "events": [],
   "sources": [
@@ -9,9 +9,9 @@
       "url": "https://durhamsu.native.fm/events",
       "label": "Durham SU · What's On",
       "name": "Durham SU · What's On",
-      "last_attempt_at": "2026-10-17T11:13:18.810319Z",
+      "last_attempt_at": "2026-10-17T11:15:29.632456Z",
       "status": "ok",
-      "last_success_at": "2026-10-17T11:13:18.810319Z",
+      "last_success_at": "2026-10-17T11:15:29.632456Z",
       "events_seen": 55,
       "parsed_count": 55,
       "eligible_count": 0,
@@ -25,9 +25,9 @@
       "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
       "label": "DAISI · Luma calendar",
       "name": "DAISI · Luma calendar",
-      "last_attempt_at": "2026-10-17T11:13:18.810319Z",
+      "last_attempt_at": "2026-10-17T11:15:29.632456Z",
       "status": "ok",
-      "last_success_at": "2026-10-17T11:13:18.810319Z",
+      "last_success_at": "2026-10-17T11:15:29.632456Z",
       "events_seen": 31,
       "parsed_count": 31,
       "eligible_count": 3,
@@ -40,15 +40,15 @@
       "type": "directory",
       "url": "https://www.durhamsu.com/groups/studentgroups/",
       "label": "Durham Students' Union",
-      "last_attempt_at": "2026-10-17T11:06:52.352705Z",
+      "name": "Durham Students' Union",
+      "last_attempt_at": "2026-10-17T11:15:29.632456Z",
       "status": "ok",
-      "last_success_at": "2026-10-17T11:06:52.352705Z",
+      "last_success_at": "2026-10-17T11:15:29.632456Z",
       "society_count": 319,
+      "parsed_count": 319,
       "profiles_failed": 0,
       "profile_errors": [],
-      "social_account_count": 77,
-      "name": "Durham Students' Union",
-      "parsed_count": 319
+      "social_account_count": 77
     }
   ],
   "status": {
