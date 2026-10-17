@@ -114,4 +114,49 @@ class SocialEventsTests(unittest.TestCase):
         events,queue=self.extract('No longer free pizza. 18 October 2026 at 6pm\nLocation: Durham')
         self.assertFalse(events);self.assertTrue(queue)
 
+    def test_image_only_free_food_is_attributed_and_needs_review(self):
+        post = self.post('Our next society social!')
+        post.update(origin='apify', media_urls=['https://example.org/poster.jpg'], image_ocr={
+            'status': 'ok', 'coverage_complete': True, 'expected_images': 1, 'inspected_images': 1,
+            'text': 'Free pizza 18 October 2026 at 6pm\nLocation: Durham SU',
+            'images': [{'image_id': 'poster', 'status': 'ok', 'text': 'Free pizza'}]})
+        events, queue = parser.posts_to_events([post], NOW, refresh.food_evidence)
+        self.assertFalse(events)
+        self.assertEqual(len(queue), 1)
+        self.assertIsNone(queue[0]['evidence']['caption']['free_food'])
+        self.assertEqual(queue[0]['evidence']['image_ocr']['free_food'], 'Free pizza')
+        self.assertTrue(queue[0]['needs_visual_review'])
+
+    def test_caption_and_poster_conflict_never_auto_publishes(self):
+        post = self.post('Free pizza 18 October 2026 at 6pm\nLocation: Durham SU')
+        post['image_ocr'] = {'status': 'ok', 'coverage_complete': True, 'text': 'CANCELLED. No free pizza.'}
+        events, queue = parser.posts_to_events([post], NOW, refresh.food_evidence)
+        self.assertFalse(events)
+        self.assertIn('review together', queue[0]['reason'])
+        self.assertEqual(queue[0]['evidence']['caption']['free_food'], 'Free pizza')
+        self.assertIsNone(queue[0]['evidence']['image_ocr']['free_food'])
+
+    def test_missing_or_unreadable_images_are_not_silently_dropped(self):
+        for image in (None, {'status': 'failed', 'coverage_complete': False, 'text': ''},
+                      {'status': 'ok', 'coverage_complete': True, 'text': ''},
+                      {'status': 'partial', 'coverage_complete': False, 'text': 'Society social'}):
+            with self.subTest(image=image):
+                post = {**self.post(''), 'origin': 'apify', 'image_ocr': image}
+                events, queue = parser.posts_to_events([post], NOW, refresh.food_evidence)
+                self.assertFalse(events)
+                self.assertEqual(len(queue), 1)
+                self.assertIn('inspect the original images', queue[0]['reason'])
+                self.assertEqual(queue[0]['title'], 'Society social' if image and image.get('text') else 'Society post')
+
+    def test_successful_non_food_ocr_does_not_create_an_event_candidate(self):
+        post = {**self.post('Committee elections'), 'origin': 'apify',
+                'image_ocr': {'status': 'ok', 'coverage_complete': True, 'text': 'Voting opens next week'}}
+        self.assertEqual(parser.posts_to_events([post], NOW, refresh.food_evidence), ([], []))
+
+    def test_apify_caption_without_ocr_still_requires_image_review(self):
+        post = {**self.post('Free pizza 18 October 2026 at 6pm\nLocation: Durham SU'), 'origin': 'apify'}
+        events, queue = parser.posts_to_events([post], NOW, refresh.food_evidence)
+        self.assertFalse(events)
+        self.assertEqual(queue[0]['evidence']['image_ocr']['status'], 'not_processed')
+
 if __name__=='__main__': unittest.main()

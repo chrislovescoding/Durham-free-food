@@ -36,7 +36,29 @@ Official references: [Instagram Business Discovery](https://developers.facebook.
 
 Captions are collected before event eligibility is assessed. Auto-publication requires an explicit free-food promise, one unambiguous event date and start time, and a labelled location. Unknown entry prices, dietary requirements and registration rules stay unknown. The publication timestamp anchors phrases such as “tomorrow”; it is never substituted for the event date. Explicit yearless dates must fit a short window after publication, and weekday/date mismatches go for review.
 
-Image-only event details, languages unsupported by the English phrase/date rules, time ranges or multiple dates require a person to inspect the original post/poster and add a reviewed record. OCR and model-based poster extraction are not implemented. Candidates are stored in `data/review-queue.json`; approved data goes in `data/reviewed-events.json` using the format in the ingestion guide.
+The manual Apify pilot inspects captions and every supplied image/carousel panel with free local Tesseract OCR. Image-only event details, unsupported languages, time ranges, conflicting text or unreadable posters require visual review and a reviewed record. OCR is machine reading, not verification. Candidates retain caption and image evidence separately in `data/review-queue.json`; approved data goes in `data/reviewed-events.json` using the format in the ingestion guide.
+
+## Reusable capped Instagram pilot
+
+The **Instagram pilot (50 posts, 25 cent cap)** GitHub Actions workflow is manual only. It reads the existing `APIFY_TOKEN` Actions secret and `data/apify-pilot.json`. The initial batch is ten verified society accounts, up to five recent posts each. Both caption and all supplied images are inspected, including image-only posts. Videos receive cover-image OCR; video frames/audio and missing carousel panels are explicitly incomplete.
+
+1. Open **Actions → Instagram pilot (50 posts, 25 cent cap) → Run workflow**. Leave `resume_run_id` blank only when intentionally buying a new batch. Each new dispatch is a separate paid run.
+2. The collector explicitly selects `basicData`, disables music extras, skips pinned posts, validates a maximum of 50 requested posts, and sends `maxTotalChargeUsd=0.25` to Apify. The provider enforces this actor-run charge cap; tiny post-run dataset access costs are separate. There is no automatic monthly spending or daily Apify schedule.
+3. The job saves a journal before the one non-retrying start request and records the returned run ID immediately. An uncertain start is never automatically repeated. Workflow reruns cannot start a new paid run. To recover, inspect Apify and pass the existing run ID via `resume_run_id`. The original configuration must match. Recovery fetches the existing dataset, without starting another actor.
+4. Download the `instagram-pilot-...` workflow artifact. It contains the run receipt/actual charge, cached source fields, normalized posts, OCR evidence, and PNGs for visual review. No token, comments, or follower data are included. Artifacts expire after 30 days; public normalized data and the latest receipt are committed to the repository.
+5. Review the caption **and** PNGs together. Only confirmed upcoming events go into `data/reviewed-events.json`. Then run `python scripts/refresh.py --offline` to rebuild events and review candidates without fetching social platforms again. Publish the static `dist/` snapshot through the existing website hosting process.
+
+For repeated local processing of a downloaded artifact (Tesseract English and Python requirements installed):
+
+```sh
+python scripts/post_images.py --posts work/apify-pilot/posts.json --output work/apify-pilot/posts-with-images.json --report work/apify-pilot/images.json --cache-dir work/apify-pilot/image-cache
+python scripts/import_apify.py
+python scripts/refresh.py --offline
+```
+
+Successful OCR is cached by post and image identity, so rerunning image analysis does not call Apify. Set `only_posts_newer_than` to an absolute ISO timestamp for a later incremental batch. A date cutoff reduces repeated collection but is not a billing-deduplication guarantee. The evening public collector preserves the purchased posts and evidence for 60 days. It does not launch Apify.
+
+Official contracts: [actor start and charge cap](https://docs.apify.com/api/v2/actors-runs-post), [Instagram input](https://apify.com/apify/instagram-post-scraper/input-schema), [Instagram pricing](https://apify.com/apify/instagram-post-scraper/pricing), [run accounting](https://docs.apify.com/api/v2/actor-run-get).
 
 ## Coverage across all societies
 

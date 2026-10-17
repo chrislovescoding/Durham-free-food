@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from copy import deepcopy
+from datetime import datetime, timedelta, timezone
 import hashlib
 import json
 import math
@@ -461,10 +462,17 @@ def visible_today_or_future(event: dict, now: datetime) -> bool:
     return parse_datetime(event["starts_at"]).astimezone(LONDON).date() >= now.astimezone(LONDON).date()
 
 
-def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime) -> tuple[dict, dict]:
+def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime, *, offline=False) -> tuple[dict, dict]:
     events, candidates, sources = [], [], []
     previous_status = {source["id"]: source for source in previous.get("sources", [])}
     for source in config.get("feeds", []):
+        if offline:
+            events.extend(event for event in previous.get("events", []) if event.get("source_id") == source["id"])
+            sources.append(previous_status.get(source["id"], {
+                "id": source["id"], "type": source["type"], "url": source["url"],
+                "name": source.get("source_label", source["society"]), "status": "unavailable",
+                "error": "No saved source result; offline rebuild made no requests"}))
+            continue
         status = {"id": source["id"], "type": source["type"], "url": source["url"],
                   "label": source.get("source_label", source["society"]), "name": source.get("source_label", source["society"]), "last_attempt_at": iso(now)}
         try:
@@ -534,12 +542,15 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--now", help="ISO timestamp, for reproducible checks")
+    parser.add_argument("--offline", action="store_true", help="Rebuild events and review queue from saved posts/feeds and reviewed events without network requests")
     parser.add_argument("--skip-societies", action="store_true")
     parser.add_argument("--skip-social", action="store_true", help="Keep the previous social snapshot without making social requests")
     parser.add_argument("--social-only", action="store_true", help="Collect social posts using the saved society directory")
     parser.add_argument("--directory-only", action="store_true", help="Refresh names without visiting profile pages")
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
+    if args.offline and args.social_only:
+        parser.error("--offline already rebuilds saved social posts and reviewed events; do not combine with --social-only")
     now = parse_datetime(args.now) if args.now else datetime.now(timezone.utc)
     config = load_json(args.root / "data/sources.json", {})
     previous_events = load_json(args.root / "dist/data/events.json", {})
@@ -549,8 +560,11 @@ def main() -> int:
         old_queue = load_json(args.root / "data/review-queue.json", {"candidates": []})
         queue = {"updated_at": iso(now), "candidates": [c for c in old_queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")]}
     else:
-        events, queue = refresh_events(config, previous_events, reviewed, now)
-    if not args.skip_societies and not args.social_only:
+        events, queue = refresh_events(config, previous_events, reviewed, now, offline=args.offline)
+        if args.offline:
+            old_queue = load_json(args.root / "data/review-queue.json", {"candidates": []})
+            queue["candidates"] = [c for c in old_queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")]
+    if not args.offline and not args.skip_societies and not args.social_only:
         previous_societies = load_json(args.root / "dist/data/societies.json", {"updated_at": None, "societies": []})
         societies, directory_status = refresh_societies(config, previous_societies, now, directory_only=args.directory_only, workers=max(1, min(args.workers, 4)))
         events["sources"].append(directory_status)
@@ -578,7 +592,7 @@ def main() -> int:
     registry = load_json(args.root / "data/society-accounts.json", {"accounts": []})
     effective_societies, registry_errors = apply_registry(societies.get("societies", []), registry, now)
     previous_social = load_json(args.root / "dist/data/social-posts.json", {"posts": [], "accounts": []})
-    if args.skip_social:
+    if args.skip_social or args.offline:
         social = previous_social
     else:
         social = refresh_social_sources(config.get("social", {}), effective_societies, previous_social, now)
@@ -592,31 +606,75 @@ def main() -> int:
     return 0
 
 
+def merge_post_evidence(previous, incoming):
+    """Prefer the latest post, reusing OCR only for exactly unchanged evidence.
+
+    Keep the review requirement when another collector returns a thinner or
+    edited version, so losing OCR cannot accidentally enable auto-publication.
+    """
+    if previous is None:
+        return deepcopy(incoming)
+    if str(incoming.get("observed_at") or "") < str(previous.get("observed_at") or ""):
+        previous, incoming = incoming, previous
+    result = deepcopy(incoming)
+    unchanged = (str(previous.get("text") or "") == str(incoming.get("text") or "")
+                 and previous.get("media_urls", []) == incoming.get("media_urls", []))
+    if unchanged and "image_ocr" not in incoming and "image_ocr" in previous:
+        result["image_ocr"] = deepcopy(previous["image_ocr"])
+    if (previous.get("origin") == "apify" or previous.get("image_ocr")
+            or previous.get("image_review_required") is True):
+        result["image_review_required"] = True
+        if not unchanged and "image_ocr" not in incoming:
+            result["image_ocr"] = {"status": "invalidated", "coverage_complete": False,
+                                   "text": "", "expected_images": len(incoming.get("media_urls") or []),
+                                   "inspected_images": 0, "images": []}
+    return result
+
+
 def refresh_social_sources(config, societies, previous, now):
     try:
-        from scripts.social_posts import collect_social_posts, canonical_account_url
+        from scripts.social_posts import collect_social_posts, canonical_account_url, canonical_post_url, platform_for
         from scripts.meta_posts import collect_meta_posts
         from scripts.social_registry import expand_accounts
     except ModuleNotFoundError:
-        from social_posts import collect_social_posts, canonical_account_url
+        from social_posts import collect_social_posts, canonical_account_url, canonical_post_url, platform_for
         from meta_posts import collect_meta_posts
         from social_registry import expand_accounts
     def prior(provider):
-        return {**previous, "posts": [p for p in previous.get("posts", []) if (p.get("origin") == "meta_api") == (provider == "meta_api")],
+        return {**previous, "posts": [p for p in previous.get("posts", []) if p.get("origin", "public_html") == provider],
                 "accounts": [a for a in previous.get("accounts", []) if a.get("provider", "public_html") == provider]}
     expanded = expand_accounts(societies)
+    registered = {url for row in expanded for platform in ("instagram", "facebook")
+                  if (url := canonical_account_url(row.get(platform + "_url")))}
+    cutoff = now.astimezone(timezone.utc) - timedelta(days=60)
+    retained = []
+    for post in previous.get("posts", []):
+        if post.get("origin") != "apify":
+            continue
+        account = canonical_account_url(post.get("account_url"))
+        url = canonical_post_url(post.get("source_url"))
+        try:
+            dated = parse_datetime(post.get("published_at") or post.get("observed_at"))
+        except (ValueError, TypeError):
+            continue
+        if account in registered and url and platform_for(url) == platform_for(account) and cutoff <= dated <= now:
+            retained.append({**post, "account_url": account, "source_url": url})
     public = collect_social_posts(expanded, config, prior("public_html"), now)
     meta = collect_meta_posts(expanded, config, prior("meta_api"), now)
     posts = {}
-    for post in public.get("posts", []) + meta.get("posts", []):
-        # Prefer fresh official API data when both routes expose the same post.
-        if post.get("source_url") and (post["source_url"] not in posts or str(post.get("observed_at", "")) >= str(posts[post["source_url"]].get("observed_at", ""))):
-            posts[post["source_url"]] = post
+    old_posts = {p.get("source_url"): p for p in previous.get("posts", [])}
+    for post in retained + public.get("posts", []) + meta.get("posts", []):
+        # Prefer fresh official API data at equal observation times while
+        # preserving OCR when neither the caption nor media has changed.
+        if post.get("source_url"):
+            url = post["source_url"]
+            posts[url] = merge_post_evidence(posts.get(url, old_posts.get(url)), post)
     accounts = [{**a, "provider": "public_html"} for a in public.get("accounts", [])] + [{**a, "provider": "meta_api"} for a in meta.get("accounts", [])]
-    return {"updated_at": iso(now), "posts": sorted(posts.values(), key=lambda p: p.get("published_at") or "", reverse=True),
-            "accounts": accounts, "status": {"public": public.get("status", {}), "meta": meta.get("status", {}),
+    accounts.extend(a for a in previous.get("accounts", []) if a.get("provider") == "apify" and canonical_account_url(a.get("url")) in registered)
+    return {**previous, "updated_at": iso(now), "posts": sorted(posts.values(), key=lambda p: p.get("published_at") or "", reverse=True),
+            "accounts": accounts, "status": {**previous.get("status", {}), "public": public.get("status", {}), "meta": meta.get("status", {}),
             "post_count": len(posts), "account_count": len({canonical_account_url(a.get("url")) or str(a.get("url", "")).lower().rstrip("/") for a in accounts}),
-            "note": "Public embeds expose a limited recent window. API coverage requires configured Meta access."}}
+            "note": "Public collection and configured provider snapshots are merged. Apify runs are separately budgeted; retained posts do not imply a new paid run."}}
 
 
 def integrate_social(events, queue, social, now):
@@ -645,7 +703,7 @@ def integrate_social(events, queue, social, now):
             "last_attempt_at": social.get("updated_at"), "last_success_at": max((p.get("observed_at") or "" for p in posts), default=None)})
     events["status"].update(live_event_count=len(events["events"]), candidate_count=len(queue["candidates"]),
         social_post_count=len(social.get("posts", [])), social_account_count=social.get("status", {}).get("account_count", 0),
-        social_ingestion="Public Instagram/Facebook posts are collected where exposed; full-directory coverage and account access status are in social-posts.json.")
+        social_ingestion="Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.")
     coverage = social.get("coverage", {}).get("summary", {})
     events["status"]["society_coverage"] = coverage
     source_states = [s.get("status", "error") for s in events["sources"] if s.get("type") != "directory"]

@@ -1,4 +1,4 @@
-"""Turn collected organiser captions into dated events without guessing poster text."""
+"""Extract caption events and queue separately attributed caption/poster evidence."""
 from datetime import datetime, timedelta, timezone
 import hashlib
 import re
@@ -24,6 +24,10 @@ BOOKING_TIMING_RE = re.compile(
 RELATIVE_DATE_RE = re.compile(
     r'\b(?:day after tomorrow|day before yesterday|today|tomorrow|yesterday|tonight|'
     r'(?:this|next|last)\s+(?:week(?:end)?|month|monday|tuesday|wednesday|thursday|friday|saturday|sunday))\b', re.I
+)
+FOOD_MENTION_RE = re.compile(
+    r'\b(food|pizza|snacks?|refreshments?|buffet|meals?|lunch|dinner|breakfast|curry|'
+    r'pastries|cake|doughnuts?|donuts?|sandwich(?:es)?|cookies|biscuits|noodles?|soup|coffee|tea|hot chocolate)\b', re.I
 )
 
 def timestamp(value):
@@ -117,12 +121,40 @@ def posts_to_events(posts, now, food_evidence):
     for post in posts:
         text = str(post.get('text') or '')
         food = food_evidence(text)
-        if not food and not re.search(r'\b(food|pizza|snacks?|buffet|meal|curry|pastries|cake|doughnuts|donuts)\b', text, re.I):
-            # Image-only posts are visible in coverage, but never guessed into events.
+        image = post.get('image_ocr') if isinstance(post.get('image_ocr'), dict) else {}
+        image_text = str(image.get('text') or '')
+        image_food = food_evidence(image_text)
+        image_review = bool(image) or post.get('origin') == 'apify' or post.get('image_review_required') is True
+        incomplete_images = image_review and (
+            image.get('coverage_complete') is not True or not image_text.strip()
+            or image.get('status') not in ('ok', 'complete')
+        )
+        if not food and not image_food and not FOOD_MENTION_RE.search(text + '\n' + image_text) and not incomplete_images:
             continue
         source_id = 'social-' + post.get('platform', 'unknown')
-        candidate = {'title': text.splitlines()[0][:150] or 'Society post', 'source_id': source_id,
+        heading = text.strip() or image_text.strip() or 'Society post'
+        candidate = {'title': heading.splitlines()[0][:150], 'source_id': source_id,
                      'source_url': post['source_url'], 'post_id': post['id'], 'society': post['society']}
+        if image_review:
+            # OCR is search evidence, not verification: a poster can contradict a
+            # caption or describe several events. Never concatenate it into the
+            # strict caption parser and silently publish the inferred fields.
+            candidate['evidence'] = {
+                'caption': {'text': text, 'free_food': food},
+                'image_ocr': {'text': image_text, 'free_food': image_food,
+                              'status': image.get('status', 'not_processed'),
+                              'coverage_complete': image.get('coverage_complete') is True,
+                              'expected_images': image.get('expected_images'),
+                              'inspected_images': image.get('inspected_images'),
+                              'images': [{key: item[key] for key in ('image_id', 'status', 'error') if key in item}
+                                         for item in image.get('images', []) if isinstance(item, dict)]},
+            }
+            candidate['media_urls'] = post.get('media_urls', [])
+            reason = ('Image text is missing, unreadable or incomplete; inspect the original images and caption'
+                      if incomplete_images else 'Caption and image evidence need review together before publishing')
+            queue.append({**candidate, 'kind': 'social_post_review', 'reason': reason,
+                          'needs_visual_review': True})
+            continue
         try:
             if not food:
                 raise ValueError('Food mentioned without an explicit free-food promise')

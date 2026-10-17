@@ -1,0 +1,92 @@
+name: Instagram pilot (50 posts, 25 cent cap)
+
+on:
+  workflow_dispatch:
+    inputs:
+      resume_run_id:
+        description: 'Existing Apify run ID to reprocess without starting a paid run; leave empty for a new pilot'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-food-events
+  cancel-in-progress: false
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install collection and free image OCR
+        run: |
+          python -m pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr
+      - name: Check collector safeguards
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Collect or resume the bounded Instagram pilot
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          RESUME_RUN_ID: ${{ inputs.resume_run_id }}
+        run: |
+          if [ -n "$RESUME_RUN_ID" ]; then
+            python scripts/apify_posts.py --resume-run-id "$RESUME_RUN_ID"
+          else
+            python scripts/apify_posts.py
+          fi
+      - name: Inspect every available post image and carousel panel
+        run: >-
+          python scripts/post_images.py
+          --posts work/apify-pilot/posts.json
+          --output work/apify-pilot/posts-with-images.json
+          --report work/apify-pilot/images.json
+          --cache-dir work/apify-pilot/image-cache
+      - name: Merge posts and queue caption plus image evidence
+        run: |
+          python scripts/import_apify.py
+          python scripts/refresh.py --offline
+      - name: Save purchased data and image evidence even if later steps fail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-pilot-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/apify-pilot/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Record actual cost and inspection results
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          report = json.loads(Path('data/apify-pilot-report.json').read_text())
+          run = report['collection']['run']
+          print('# Instagram pilot')
+          print(f"Apify run: `{run['id']}`; status: **{run['status']}**")
+          print(f"Actor charge: **${run.get('usageTotalUsd')}**; enforced actor cap: **${run.get('max_charge_usd')}**")
+          print(f"Accepted posts: **{report['collection']['accepted_posts']}**")
+          print('Image inspection:')
+          print('```json\n' + json.dumps(report['image_inspection'], indent=2) + '\n```')
+          print('Captions and OCR are evidence for review. OCR alone never confirms a live event.')
+          print('To retry processing, download this run artifact or dispatch with the Apify run ID. A new dispatch with no ID starts another paid pilot.')
+          PY
+      - name: Commit reusable collection results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/data/events.json dist/data/societies.json dist/data/social-posts.json data/review-queue.json data/apify-pilot-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record capped Instagram pilot and image evidence'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
