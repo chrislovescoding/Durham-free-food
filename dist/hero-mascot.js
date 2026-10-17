@@ -97,7 +97,7 @@ function play() {
     const home = point(rest, bounds), width = rest.width, height = rest.height;
     const moveTo = (x, y, scale = 1) => `translate(${x - home.x}px, ${y - home.y}px) scale(${scale})`;
     const mobile = matchMedia('(max-width: 700px)').matches;
-    const pace = 1.55;
+    const pace = 1.35;
     const sequence = (element, frames, options) => animate(element, frames, {
       ...options, delay: (options.delay || 0) * pace, duration: options.duration * pace,
     });
@@ -111,11 +111,24 @@ function play() {
       const startX = position.x - width * .73, endX = position.x + box.width - width * .73;
       const y = position.y + box.height * .52 - height * .7;
       const arrive = cursor + (index ? 230 : 180), chew = 650, emit = arrive + 200;
-      if (index && mobile) {
-        add(cursor + 85, previous.x + 12, previous.y + 10, .72);
-        add(cursor + 170, startX - 10, y - 15, .72);
-      }
-      add(arrive, startX, y);
+      if (index) {
+        const hopStart = cursor - 40, takeOff = cursor;
+        const hopHeight = Math.max(mobile ? 22 : 26, (y - previous.y) / 4 + 14);
+        add(takeOff, previous.x, previous.y);
+        for (let step = 1; step <= 14; step++) {
+          const t = step / 14;
+          add(takeOff + (arrive - takeOff) * t,
+            previous.x + (startX - previous.x) * t,
+            previous.y + (y - previous.y) * t - 4 * hopHeight * t * (1 - t));
+        }
+        sequence(body, [
+          { transform: 'scale(1,1)', transformOrigin: '50% 100%' },
+          { transform: 'scale(1.08,.9)', transformOrigin: '50% 100%', offset: .15 },
+          { transform: 'scale(.95,1.06)', transformOrigin: '50% 100%', offset: .4 },
+          { transform: 'scale(1.04,.96)', transformOrigin: '50% 100%', offset: .87 },
+          { transform: 'scale(1,1)', transformOrigin: '50% 100%' },
+        ], { delay: hopStart, duration: arrive - hopStart, fill: 'none', easing: 'ease-in-out' });
+      } else add(arrive, startX, y);
       add(arrive + chew, endX, y);
       add(arrive + chew + 210, endX + 12, y - 5, 1.025);
       phrase.inLetters.forEach((letter, i, letters) => {
@@ -159,11 +172,11 @@ function play() {
         { transform: `translate(${endX + width * .73 + 11 + i * 6}px,${y + height * .7 - 19 - i * 8}px) scale(1)`, opacity: .85, offset: .35 },
         { transform: `translate(${endX + width * .73 + 25 + i * 5}px,${y + height * .7 + 22}px) scale(0)`, opacity: 0 },
       ], { delay: arrive + chew - 120 + i * 45, duration: 400, fill: 'none' }));
-      cursor = arrive + 1050; previous = { x: endX + 12, y: y - 5 };
+      cursor = arrive + 900; previous = { x: endX + 12, y: y - 5 };
     }
-    // Let the last letters arrive, crouch, then take a proper ballistic hop.
-    // The hop keeps its own brisk timing while the eating runs more slowly.
-    const jumpStart = (cursor + 230) * pace;
+    // All letters have been spat out: crouch and hop while they finish landing.
+    // The hop keeps its own brisk timing, independent of the eating pace.
+    const jumpStart = (cursor + 20) * pace;
     const takeOff = jumpStart + 140, flight = 620, landing = takeOff + flight;
     const total = landing + 380;
     const arc = Math.min(120, height * .7, Math.min(previous.y, home.y) + 48);
