@@ -195,6 +195,7 @@ def process(folder, root=ROOT, limit=50, client=None, retry_errors=False):
     for post_id, entry in recovered.get('posts', {}).items():
         if entry.get('updated_at', '') > cache['posts'].get(post_id, {}).get('updated_at', ''):
             cache['posts'][post_id] = entry
+    _write_json(cache_path, cache)
     stored_path = root / 'data/ai-events.json'
     stored = load(stored_path, {'events': [], 'queue': [], 'processed_post_ids': []})
     recovered = load(folder / 'ai-checkpoints/ai-events.json', {})

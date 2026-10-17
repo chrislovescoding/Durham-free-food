@@ -100,6 +100,23 @@ class AIPostPipelineTests(unittest.TestCase):
         self.assertEqual(second["extraction_requests"], 0)
         self.assertEqual(len(self.stored()["events"]), 1)
 
+    def test_artifact_checkpoint_is_persisted_when_every_post_is_cached(self):
+        process(self.folder, root=self.root, client=FakeClient())
+        cache_path = self.root / "data/ai-post-cache.json"
+        checkpoint = cache_path.read_text(encoding="utf-8")
+        checkpoint_path = self.folder / "ai-checkpoints/ai-post-cache.json"
+        checkpoint_path.parent.mkdir()
+        checkpoint_path.write_text(checkpoint, encoding="utf-8")
+        cache_path.unlink()
+        client = FakeClient()
+        report = process(self.folder, root=self.root, client=client)
+        self.assertEqual(client.calls, [])
+        self.assertEqual(report["cache_hits"], 1)
+        self.assertEqual(report["decision_requests"], 0)
+        self.assertEqual(report["extraction_requests"], 0)
+        self.assertEqual(json.loads(cache_path.read_text(encoding="utf-8")), json.loads(checkpoint))
+        self.assertEqual(len(self.stored()["events"]), 1)
+
     def test_changed_caption_invalidates_both_cached_stages(self):
         client = FakeClient()
         process(self.folder, root=self.root, client=client)
