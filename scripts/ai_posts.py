@@ -340,7 +340,7 @@ def process(folder, root=ROOT, limit=50, client=None, retry_errors=False):
                     for event in payload.get('events', []):
                         event['needs_review'] = True
                     payload['review_reason'] = 'Incomplete image/video coverage; inspect original post'
-                events, queue = validate_extraction(payload, {**post, 'extraction_model': MODEL}, now)
+                events, queue = validate_extraction(payload, {**post, 'extraction_model': MODEL}, now, include_past=True)
                 for event in events:
                     event['decision_probability'] = entry['decision']['probability']
             elif not complete:

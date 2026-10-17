@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T14:55:55.832943Z",
+  "updated_at": "2026-10-17T15:11:45.905118Z",
   "candidates": [
     {
       "title": "Spicy Noodle Challenge",
@@ -249,26 +249,6 @@
       "input_signature": "af719d27683271355f9e934ac3c443cdf8f7c358c85f3a5d1a150e9887f044ab"
     },
     {
-      "id": "ai-review-7a574231b55e0752",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-40876dd5f4b0cfe932",
-      "source_url": "https://www.instagram.com/p/DeUePaWDM6M/",
-      "society": "Astronomical Society",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "de1fdfa36903bb4cca0c0aa66c4a21bcd55fa1641aee069de3ad9b376553c4d5"
-    },
-    {
-      "id": "ai-review-7c40957081f69e3b",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-5c85e43c1eec48c057",
-      "source_url": "https://www.instagram.com/p/Dd4j8X6shhS/",
-      "society": "Astronomical Society",
-      "reason": "The poster does not specify the fair’s venue or hours; the free availability of sweets is implied by “grab some” rather than explicitly stated.",
-      "input_signature": "8b06c57b700f537a9066636cc710af693c3daa719de08f6f83e2784ca14f2e97"
-    },
-    {
       "kind": "ai_post_review",
       "source_id": "ai-instagram",
       "post_id": "social-33b442aaa2104d8c20",
@@ -363,26 +343,6 @@
       "society": "Vegetarian and Vegan",
       "reason": "The post advertises cake and vegan sweet treats, but does not establish that the food is free.",
       "input_signature": "365fb4c9c951a02f1a51e490de242d2221c2507a0d46b88eb71bc87062fa7806"
-    },
-    {
-      "id": "ai-review-3801feeb53a6cca8",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-598528574f1a7b0543",
-      "source_url": "https://www.instagram.com/p/DeK21vgN4x0/",
-      "society": "Bridge Club",
-      "reason": "The poster’s location text is cut off after “AT THE STUDENT,” so the full venue is uncertain.",
-      "input_signature": "5fbc4f6575888f8995c489af29b4ce7deec21aa51b66e612c13d83b167592a33"
-    },
-    {
-      "id": "ai-review-739b41a7e77a2b83",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-08307e0da2d64c2534",
-      "source_url": "https://www.instagram.com/p/DdlrJSWCApx/",
-      "society": "Durham AI Safety Initiative",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "8c28bce1bcda447234ff88d3346c8055241fe907c08abce1553e7483462e01e4"
     },
     {
       "kind": "ai_post_review",
@@ -527,26 +487,6 @@
       "input_signature": "7f4e9b2a3a8d2768850c768bc5a75a459d23ab0a6770498e87f43361cb176fe3"
     },
     {
-      "id": "ai-review-2753d70fd0ea4346",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-8bf3808244582f749e",
-      "source_url": "https://www.instagram.com/p/DeUQN2FsZTK/",
-      "society": "Women in Maths",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "57d2f67b82034425ab63cb2159f55da3e4a042c0807f821c63d4044959dec66d"
-    },
-    {
-      "id": "ai-review-031e176b067c01b5",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-92e7d5c030ab192bb8",
-      "source_url": "https://www.instagram.com/p/DeRDhrwACyp/",
-      "society": "Conservation",
-      "reason": "The caption and poster conflict on the date, and the source does not say whether the refreshments are free.",
-      "input_signature": "995327caf0658a540cc098fe8eef2ae98b07ed8b469ef6184100ec34312495ce"
-    },
-    {
       "kind": "ai_post_review",
       "source_id": "ai-instagram",
       "post_id": "social-da6019b70680214649",
@@ -645,16 +585,6 @@
       "input_signature": "1ed981d0fbe377208e081f4de513609197aa2c770dabfa8daf588459479825c9"
     },
     {
-      "id": "ai-review-e189c530e6760cba",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-5c0e58b3371500efb6",
-      "source_url": "https://www.instagram.com/p/Dee1kKvDVAr/",
-      "society": "Kpop Society",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "76340761561d1764a8cce89e9c7ff3af24dac68581599a3641cd93ffd82e8502"
-    },
-    {
       "kind": "ai_post_review",
       "source_id": "ai-instagram",
       "post_id": "social-c1dee7aa594af64b2b",
@@ -664,16 +594,6 @@
       "reason": "No free food found in available images; video or remaining media still needs review",
       "needs_visual_review": true,
       "input_signature": "5d91161307ac4f485b25cfdf4145bf4c4492b6e687a87593f107d8fe9a7a8b3b"
-    },
-    {
-      "id": "ai-review-7e7c43708f1bb2ed",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-bfec57c86154b17cff",
-      "source_url": "https://www.instagram.com/p/DeHu2vWAY6D/",
-      "society": "Orthodox Christian Society",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "47caf046be8846d41600cad9039e5f184c7c6f8a025e2389831494b46ef7aa09"
     },
     {
       "kind": "ai_post_review",
@@ -706,16 +626,6 @@
       "society": "Anglo-Japanese Society",
       "reason": "The poster says “Tea and snacks included,” but does not establish that the food is free.",
       "input_signature": "7fe2df49d19b0d166c6c91372142dd4794e27a46ab23a57f3f047333d66e72b9"
-    },
-    {
-      "id": "ai-review-bd269be747ea6fa1",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-415ce9f854f9f0d1c5",
-      "source_url": "https://www.instagram.com/p/Dd3v0PVNIc1/",
-      "society": "Caledonian Society",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "6caa2eb71a1b2fe9008f2fec8187559cb377201b88001d451444dec0e76cc6b8"
     },
     {
       "id": "ai-review-fba06a34c670b079",
@@ -814,16 +724,6 @@
       "input_signature": "8f225dd1db72ad1729902edccf327765d1d289cb3128d28545a8be69f65084c4"
     },
     {
-      "id": "ai-review-9ec4aa44078d42aa",
-      "source_id": "ai-instagram",
-      "kind": "ai_extraction_review",
-      "post_id": "social-b4a9841b42a573623b",
-      "source_url": "https://www.instagram.com/p/DeXROfliwoZ/",
-      "society": "Plant Based Society",
-      "reason": "The model flagged uncertain event details",
-      "input_signature": "3fc4727e2e3534acd44e46b2103059947d30ae3e6093caadb4e547d219a3bd6f"
-    },
-    {
       "kind": "ai_post_review",
       "source_id": "ai-instagram",
       "post_id": "social-c93191ca028fe4a808",
@@ -855,6 +755,96 @@
       "reason": "No free food found in available images; video or remaining media still needs review",
       "needs_visual_review": true,
       "input_signature": "065d7b900407111df87e8fc7888163f6f7c8849a6a1a300211d2f0126e69f87a"
+    },
+    {
+      "id": "ai-review-739b41a7e77a2b83",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-08307e0da2d64c2534",
+      "source_url": "https://www.instagram.com/p/DdlrJSWCApx/",
+      "society": "Durham AI Safety Initiative",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "8c28bce1bcda447234ff88d3346c8055241fe907c08abce1553e7483462e01e4"
+    },
+    {
+      "id": "ai-review-2753d70fd0ea4346",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-8bf3808244582f749e",
+      "source_url": "https://www.instagram.com/p/DeUQN2FsZTK/",
+      "society": "Women in Maths",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "57d2f67b82034425ab63cb2159f55da3e4a042c0807f821c63d4044959dec66d"
+    },
+    {
+      "id": "ai-review-031e176b067c01b5",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-92e7d5c030ab192bb8",
+      "source_url": "https://www.instagram.com/p/DeRDhrwACyp/",
+      "society": "Conservation",
+      "reason": "The caption and poster conflict on the date, and the source does not say whether the refreshments are free.",
+      "input_signature": "995327caf0658a540cc098fe8eef2ae98b07ed8b469ef6184100ec34312495ce"
+    },
+    {
+      "id": "ai-review-7a574231b55e0752",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-40876dd5f4b0cfe932",
+      "source_url": "https://www.instagram.com/p/DeUePaWDM6M/",
+      "society": "Astronomical Society",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "de1fdfa36903bb4cca0c0aa66c4a21bcd55fa1641aee069de3ad9b376553c4d5"
+    },
+    {
+      "id": "ai-review-7c40957081f69e3b",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-5c85e43c1eec48c057",
+      "source_url": "https://www.instagram.com/p/Dd4j8X6shhS/",
+      "society": "Astronomical Society",
+      "reason": "The poster does not specify the fair’s venue or hours; the free availability of sweets is implied by “grab some” rather than explicitly stated.",
+      "input_signature": "8b06c57b700f537a9066636cc710af693c3daa719de08f6f83e2784ca14f2e97"
+    },
+    {
+      "id": "ai-review-e189c530e6760cba",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-5c0e58b3371500efb6",
+      "source_url": "https://www.instagram.com/p/Dee1kKvDVAr/",
+      "society": "Kpop Society",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "76340761561d1764a8cce89e9c7ff3af24dac68581599a3641cd93ffd82e8502"
+    },
+    {
+      "id": "ai-review-7e7c43708f1bb2ed",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-bfec57c86154b17cff",
+      "source_url": "https://www.instagram.com/p/DeHu2vWAY6D/",
+      "society": "Orthodox Christian Society",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "47caf046be8846d41600cad9039e5f184c7c6f8a025e2389831494b46ef7aa09"
+    },
+    {
+      "id": "ai-review-bd269be747ea6fa1",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-415ce9f854f9f0d1c5",
+      "source_url": "https://www.instagram.com/p/Dd3v0PVNIc1/",
+      "society": "Caledonian Society",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "6caa2eb71a1b2fe9008f2fec8187559cb377201b88001d451444dec0e76cc6b8"
+    },
+    {
+      "id": "ai-review-9ec4aa44078d42aa",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-b4a9841b42a573623b",
+      "source_url": "https://www.instagram.com/p/DeXROfliwoZ/",
+      "society": "Plant Based Society",
+      "reason": "The model flagged uncertain event details",
+      "input_signature": "3fc4727e2e3534acd44e46b2103059947d30ae3e6093caadb4e547d219a3bd6f"
     }
   ]
 }

@@ -24,8 +24,13 @@ class NoNetwork:
 def preflight(folder):
     folder = Path(folder)
     posts = json.loads((folder / 'posts-with-images.json').read_text(encoding='utf-8'))['posts']
-    cache = json.loads((ROOT / 'data/ai-post-cache.json').read_text(encoding='utf-8'))['posts']
-    now = datetime.now(timezone.utc)
+    checkpoint = folder / 'ai-checkpoints'
+    if not (checkpoint / 'ai-post-cache.json').is_file():
+        raise ValueError('Preflight requires the saved AI artifact with its matching model checkpoints')
+    cache = json.loads((checkpoint / 'ai-post-cache.json').read_text(encoding='utf-8'))['posts']
+    # Historical fixtures have a fixed assessment date; the regression check
+    # must still work after the dinners themselves have passed.
+    now = datetime(2026, 10, 17, 13, tzinfo=timezone.utc)
     by_url = {post['source_url'].rstrip('/'): post for post in posts}
     bridge = by_url['https://www.instagram.com/p/DeK21vgN4x0']
     bridge_ai = cache[bridge['id']]
@@ -40,14 +45,17 @@ def preflight(folder):
         root = Path(temporary)
         (root / 'data').mkdir()
         for filename in ('ai-post-cache.json', 'ai-events.json'):
-            shutil.copy2(ROOT / 'data' / filename, root / 'data' / filename)
+            shutil.copy2(checkpoint / filename, root / 'data' / filename)
         with redirect_stdout(StringIO()):
             report = process(folder, root=root, client=NoNetwork())
         assert report['posts_considered'] == 49 and report['cache_hits'] == 49
         assert not report['errors'] and report['decision_requests'] == report['extraction_requests'] == 0
-        assert report['events_extracted'] == 8, 'Saved real-post replay failed'
+        replayed = json.loads((root / 'data/ai-events.json').read_text(encoding='utf-8'))
+        assert any(e['post_id'] == bridge['id'] and e['starts_at'].startswith('2026-10-08')
+                   for e in replayed['events']), 'Validated Bridge history was not retained'
+        assert report['events_extracted'] >= 9, 'Saved real-post history replay failed'
     print(json.dumps({'status': 'passed', 'real_posts_replayed': 49,
-        'positive_controls': ['Bridge free pizza detected then expired', 'Seven first-visit dinners', 'Eight upcoming events'],
+        'positive_controls': ['Bridge free pizza retained as history', 'Seven first-visit dinners', 'Saved images and responses reused'],
         'new_api_requests': 0}))
 
 

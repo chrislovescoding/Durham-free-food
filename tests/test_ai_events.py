@@ -88,6 +88,18 @@ class AiEventTests(unittest.TestCase):
         self.assertEqual(len(events), 2)
         self.assertNotEqual(events[0]["id"], events[1]["id"])
 
+    def test_history_opt_in_keeps_past_dates_without_relaxing_validation(self):
+        past = {**EVENT, "starts_at": "2026-10-08T18:30:00+01:00"}
+        events, queue = validate_extraction({"events": [past, {**past, "food_is_free": False}],
+                                             "review_reason": None}, POST, NOW, include_past=True)
+        self.assertEqual(len(events), 1)
+        self.assertEqual(len(queue), 1)
+        self.assertEqual(events[0]["starts_at"], past["starts_at"])
+        manual = {**events[0], "source_id": "manual", "id": "reviewed-history"}
+        feed, pending = {"events": [manual]}, {"candidates": []}
+        integrate_ai(feed, pending, {"events": events}, NOW, include_past=True)
+        self.assertEqual(feed["events"], [manual])
+
     def test_manual_precedence_queue_replacement_and_repeated_merge(self):
         ai, _ = extract()
         manual = {**ai[0], "id": "reviewed", "source_id": "manual", "title": "Human reviewed dinner"}
@@ -133,6 +145,49 @@ class AiEventTests(unittest.TestCase):
         self.assertEqual(len(events["events"]), 1)
         self.assertFalse(queue["candidates"])
         self.assertEqual(events["events"][0]["input_signature"], signature)
+
+    def test_repeat_posts_merge_same_occurrence_and_keep_source_evidence(self):
+        first, _ = extract({**EVENT, 'location': 'Elvet Methodist Church, Durham, DH1 3HL'})
+        second, _ = extract({**EVENT, 'location': 'ELVET METHODIST CHURCH Durham DH1 3HL'},
+                            {**POST, 'id': 'post-2', 'source_url': 'https://www.instagram.com/p/SECOND/',
+                             'published_at': '2026-10-17T12:00:00Z'})
+        feed, queue = {'events': []}, {'candidates': []}
+        integrate_ai(feed, queue, {'events': first + second}, NOW, include_past=True)
+        self.assertEqual(len(feed['events']), 1)
+        self.assertEqual(feed['events'][0]['source_url'], second[0]['source_url'])
+        self.assertEqual(feed['events'][0]['corroborating_sources'][0]['source_url'], first[0]['source_url'])
+        self.assertEqual(feed['events'][0]['corroborating_sources'][0]['evidence'], first[0]['evidence'])
+        manual = {**first[0], 'id': 'reviewed', 'source_id': 'manual', 'title': 'Reviewed dinner'}
+        feed['events'] = [manual]
+        integrate_ai(feed, queue, {'events': second}, NOW, include_past=True)
+        self.assertEqual(feed['events'][0]['id'], 'reviewed')
+        self.assertEqual(feed['events'][0]['corroborating_sources'][0]['source_url'], second[0]['source_url'])
+
+    def test_cross_post_dedupe_keeps_other_venues_societies_and_dates(self):
+        records, _ = extract()
+        changes = [({'location': EVENT['location'] + ' Room 2'}, {}),
+                   ({}, {'society': 'Other Society'}),
+                   ({'starts_at': '2026-10-24T18:30:00+01:00'}, {})]
+        for index, (event_changes, post_changes) in enumerate(changes):
+            found, _ = extract({**EVENT, **event_changes}, {**POST, **post_changes,
+                               'id': 'post-' + str(index + 2),
+                               'source_url': 'https://www.instagram.com/p/OTHER' + str(index) + '/'})
+            records.extend(found)
+        feed, queue = {'events': []}, {'candidates': []}
+        integrate_ai(feed, queue, {'events': records}, NOW, include_past=True)
+        self.assertEqual(len(feed['events']), 4)
+
+    def test_only_explicit_whole_post_manual_review_resolves_its_queue(self):
+        ai, _ = extract()
+        manual = {**ai[0], 'source_id': 'manual', 'id': 'reviewed'}
+        pending = [{'source_url': POST['source_url'], 'post_id': POST['id'], 'source_id': 'ai-instagram'},
+                   {'source_url': 'https://www.instagram.com/p/OTHER/', 'post_id': 'other', 'source_id': 'ai-instagram'}]
+        feed, queue = {'events': [manual]}, {'candidates': []}
+        integrate_ai(feed, queue, {'events': [], 'queue': pending}, NOW)
+        self.assertEqual(len(queue['candidates']), 2)
+        feed['events'] = [{**manual, 'resolves_post_review': True}]
+        integrate_ai(feed, queue, {'events': [], 'queue': pending}, NOW)
+        self.assertEqual(queue['candidates'], [pending[1]])
 
 
 if __name__ == "__main__":

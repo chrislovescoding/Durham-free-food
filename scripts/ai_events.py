@@ -2,10 +2,12 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from copy import deepcopy
 import hashlib
 import json
 import math
 import re
+import unicodedata
 from urllib.parse import urlparse, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
@@ -144,7 +146,7 @@ def _validate_event(record, post, now):
     return result
 
 
-def validate_extraction(payload, post, now):
+def validate_extraction(payload, post, now, *, include_past=False):
     """Return (publishable events, review queue); never publish partial guesses."""
     events, queue = [], []
     if (not isinstance(payload, dict) or set(payload) != {"events", "review_reason"}
@@ -158,7 +160,7 @@ def validate_extraction(payload, post, now):
     for index, record in enumerate(payload["events"]):
         try:
             event = _validate_event(record, post, now)
-            if _timestamp(event["starts_at"]).astimezone(LONDON).date() < now.astimezone(LONDON).date():
+            if not include_past and _timestamp(event["starts_at"]).astimezone(LONDON).date() < now.astimezone(LONDON).date():
                 continue
             if event["id"] not in seen:
                 events.append(event)
@@ -168,7 +170,44 @@ def validate_extraction(payload, post, now):
     return events, queue
 
 
-def integrate_ai(events, queue, stored, now, posts=None):
+def merge_same_occurrences(records):
+    """Collapse repeat posts only for the same society, instant and exact venue.
+
+    Punctuation/case are insignificant in venue names; different rooms, dates
+    and societies remain separate. Keep the chosen source's details intact.
+    """
+    groups = {}
+    for record in records:
+        location = ' '.join(re.sub(r'[^\w]+', ' ', unicodedata.normalize('NFKC', record['location']).casefold()).split())
+        key = (record['society'], _timestamp(record['starts_at']).astimezone(timezone.utc), location)
+        groups.setdefault(key, []).append(record)
+
+    def priority(record):
+        published = record.get('post_published_at') or record.get('verified_at')
+        try:
+            stamp = _timestamp(published).astimezone(timezone.utc)
+        except (TypeError, ValueError):
+            stamp = datetime.min.replace(tzinfo=timezone.utc)
+        return record.get('source_id') == 'manual', stamp, record.get('source_url', '')
+
+    merged = []
+    for group in groups.values():
+        ordered = sorted(group, key=priority, reverse=True)
+        winner = deepcopy(ordered[0])
+        winner.pop('corroborating_sources', None)
+        other_sources = {}
+        for other in ordered[1:]:
+            url = other['source_url'].rstrip('/')
+            if url != winner['source_url'].rstrip('/'):
+                other_sources.setdefault(url, {key: deepcopy(other[key]) for key in
+                    ('source_url', 'source_label', 'post_id', 'post_published_at', 'evidence') if key in other})
+        if other_sources:
+            winner['corroborating_sources'] = list(other_sources.values())
+        merged.append(winner)
+    return merged
+
+
+def integrate_ai(events, queue, stored, now, posts=None, *, include_past=False):
     """Merge stored validated extractions; human entries always win duplicates."""
     def identity(event):
         return event["source_url"].rstrip("/"), _timestamp(event["starts_at"]).astimezone(timezone.utc)
@@ -181,7 +220,12 @@ def integrate_ai(events, queue, stored, now, posts=None):
         return (signatures is None or bool(item.get("input_signature"))
                 and item["input_signature"] == signatures.get(item.get("post_id")))
 
-    pending = [item for item in stored.get("queue", []) if fresh(item)]
+    # An editor can explicitly resolve an entire post, rather than accidentally
+    # dismiss every occurrence after reviewing just one date on a term poster.
+    resolved_urls = {event['source_url'].rstrip('/') for event in unique.values()
+                     if event.get('source_id') == 'manual' and event.get('resolves_post_review') is True}
+    pending = [item for item in stored.get("queue", []) if fresh(item)
+               and str(item.get('source_url', '')).rstrip('/') not in resolved_urls]
     accepted_posts = {post_id for post_id in stored.get("processed_post_ids", [])
                       if signatures is None or (processed_signatures.get(post_id)
                                                 and processed_signatures[post_id] == signatures.get(post_id))}
@@ -205,7 +249,7 @@ def integrate_ai(events, queue, stored, now, posts=None):
             validated["verified_at"] = event["verified_at"]
             if event.get("input_signature"):
                 validated["input_signature"] = event["input_signature"]
-            if _timestamp(validated["starts_at"]).astimezone(LONDON).date() < now.astimezone(LONDON).date():
+            if not include_past and _timestamp(validated["starts_at"]).astimezone(LONDON).date() < now.astimezone(LONDON).date():
                 continue
             key = identity(validated)
             if key not in unique or unique[key].get("source_id", "").startswith("social-"):
@@ -213,7 +257,7 @@ def integrate_ai(events, queue, stored, now, posts=None):
             accepted_posts.add(validated["post_id"])
         except (ValueError, TypeError, KeyError, OverflowError, AttributeError) as error:
             pending.append(_queue(event if isinstance(event, dict) else {}, "Stored AI extraction: " + str(error)))
-    events["events"] = sorted(unique.values(), key=lambda item: _timestamp(item["starts_at"]))
+    events["events"] = sorted(merge_same_occurrences(unique.values()), key=lambda item: _timestamp(item["starts_at"]))
     queue["candidates"] = [item for item in queue.get("candidates", [])
                            if item.get("source_id") != "ai-instagram"
                            and not (item.get("source_id", "").startswith("social-")

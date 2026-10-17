@@ -175,6 +175,30 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person."
+    },
+    {
+      "id": "bridge-beginners-pizza-2026-10-08",
+      "reviewed": true,
+      "title": "Beginner’s Bridge Session — free pizza and drinks",
+      "society": "Bridge Club",
+      "starts_at": "2026-10-08T19:30:00+01:00",
+      "ends_at": null,
+      "location": "Kingsgate, Student Union, Durham",
+      "food": "Free pizza and drinks",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "All welcome; aimed at complete beginners.",
+      "dietary": [],
+      "source_url": "https://www.instagram.com/p/DeK21vgN4x0/",
+      "source_label": "Bridge Club Instagram — original caption and poster reviewed",
+      "description": "An introductory bridge session for complete beginners with free pizza and drinks. All welcome. Entry price, dietary options and registration requirements were not stated. This event has already happened.",
+      "verified_at": "2026-10-17T15:08:14.340835+00:00",
+      "post_published_at": "2026-10-06T22:30:03Z",
+      "post_id": "social-598528574f1a7b0543",
+      "verification_notes": "Assistant visual review of complete archived source PNG 767792408ac2981a5c70ed69.png (1408x1877). Poster explicitly states 08.10.2026 at 7:30PM, meet in Kingsgate at the Student Union, FREE PIZZA AND DRINKS, complete beginners, ALL WELCOME. Caption independently confirms free pizzas and drinks. The AI review queue had incorrectly described the location as cut off; the full saved poster shows UNION at the bottom. No model result was altered.",
+      "resolves_post_review": true
     }
   ]
 }

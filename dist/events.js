@@ -18,24 +18,35 @@ export function isValidEvent(event) {
 }
 export function filterEvents(events, filters = {}, now = new Date()) {
   const today = dayKey(now); const search = (filters.search || '').trim().toLocaleLowerCase('en-GB');
+  const date = filters.date || 'recent';
   return events.filter(event => {
     const key = dayKey(event.starts_at);
-    if (key < today) return false;
-    if (filters.date === 'today' && key !== today) return false;
-    if (filters.date === 'tomorrow' && key !== addDays(today, 1)) return false;
-    if (filters.date === 'week' && key >= addDays(today, 7)) return false;
+    const status = eventStatus(event, now);
+    if (date === 'recent' && key < addDays(today, -14)) return false;
+    if (date === 'upcoming' && !['upcoming', 'started'].includes(status)) return false;
+    if (date === 'past' && !['past', 'ended'].includes(status)) return false;
+    if (date === 'today' && key !== today) return false;
+    if (date === 'tomorrow' && key !== addDays(today, 1)) return false;
+    if (date === 'week' && (key < today || key >= addDays(today, 7))) return false;
     if (filters.freeEntry && event.price !== 0) return false;
     if (filters.signup === 'none' && event.signup_required !== false) return false;
     if (filters.signup === 'required' && event.signup_required !== true) return false;
     if (filters.savedOnly && !filters.savedIds?.includes(event.id)) return false;
     if (search && ![event.title, event.society, event.location, event.food, event.description, ...(event.dietary || [])].filter(Boolean).join(' ').toLocaleLowerCase('en-GB').includes(search)) return false;
     return true;
-  }).sort((a,b) => new Date(a.starts_at) - new Date(b.starts_at));
+  }).sort((a,b) => {
+    const aPast = ['past', 'ended'].includes(eventStatus(a, now));
+    const bPast = ['past', 'ended'].includes(eventStatus(b, now));
+    if (aPast !== bPast) return aPast ? 1 : -1;
+    const chronological = new Date(a.starts_at) - new Date(b.starts_at);
+    return aPast ? -chronological : chronological;
+  });
 }
 export function formatDate(date, options = {}) { return new Intl.DateTimeFormat('en-GB', { timeZone: TIME_ZONE, ...options }).format(new Date(date)); }
-export function friendlyDay(date, now = new Date()) { const key = dayKey(date), today = dayKey(now); return key === today ? 'Today' : key === addDays(today,1) ? 'Tomorrow' : formatDate(date,{weekday:'short',day:'numeric',month:'short'}); }
+export function friendlyDay(date, now = new Date()) { const key = dayKey(date), today = dayKey(now); return key === today ? 'Today' : key === addDays(today,1) ? 'Tomorrow' : formatDate(date,{weekday:'short',day:'numeric',month:'short',...(key.slice(0,4)!==today.slice(0,4)?{year:'numeric'}:{})}); }
 export function entryLabel(price) { return price === null || price === undefined ? 'Entry price unconfirmed' : price === 0 ? 'Free entry' : `£${Number(price).toFixed(price % 1 ? 2 : 0)} entry`; }
 export function signupLabel(event, now = new Date()) {
+  if (['past', 'ended'].includes(eventStatus(event, now))) return 'Event finished';
   if (event.signup_required === false) return 'Just turn up';
   if (event.signup_required === null || event.signup_required === undefined) return 'Sign-up unconfirmed';
   if (event.signup_deadline && new Date(event.signup_deadline) <= now) return 'Sign-up closed';
@@ -64,7 +75,7 @@ export function demoEvents(now = new Date()) {
     {id:'demo-curry',title:'Curry, conversation & community',society:'Example Cultural Society',food:'A free vegetarian curry',location:'Students’ Union · example venue',offset:2,hour:19,price:0,signup_required:true,emoji:'🍛',color:'#DDE9D6',description:'An example community dinner with advance registration. The prototype displays sign-up deadlines separately from the event time.',dietary:['Vegetarian']},
     {id:'demo-games',title:'Board games. Big snacks.',society:'Example Games Society',food:'Popcorn, crisps & snacks',location:'City centre · example venue',offset:3,hour:17,price:2,signup_required:false,emoji:'🍿',color:'#F7DAD6',description:'An example of free food at an event with an entry fee. Use “Free entry only” to hide events like this.',dietary:[]},
     {id:'demo-doughnuts',title:'Something sweet, someone new',society:'Example Volunteering Society',food:'Doughnuts & hot chocolate',location:'Palatine Centre · example venue',offset:5,hour:14,price:0,signup_required:true,emoji:'🍩',color:'#E2DFF4',description:'An illustrative volunteering meet-up with a sweet treat. Save it to try planning your week.',dietary:['Vegan options']},
-    {id:'demo-breakfast',title:'Breakfast before the books',society:'Example Study Society',food:'Toast, fruit & tea',location:'Library café · example venue',offset:0,hour:8,price:0,signup_required:false,emoji:'🥞',color:'#F1E4CD',description:'An example morning event. Once it has started it becomes grey, and it disappears after midnight in Durham.',dietary:[]}
+    {id:'demo-breakfast',title:'Breakfast before the books',society:'Example Study Society',food:'Toast, fruit & tea',location:'Library café · example venue',offset:0,hour:8,price:0,signup_required:false,emoji:'🥞',color:'#F1E4CD',description:'An example morning event. Finished events turn grey and stay available in the event history.',dietary:[]}
   ];
   return entries.map(e => ({...e,starts_at:londonTime(addDays(today,e.offset),e.hour,e.minute||0),ends_at:londonTime(addDays(today,e.offset),e.hour+2,e.minute||0),signup_deadline:e.signup_required?londonTime(addDays(today,e.offset-1),20):null,source_url:null,source_label:'Example listing',demo:true,food_is_free:true,eligibility:'Example only — not an event to attend',verified_at:null}));
 }

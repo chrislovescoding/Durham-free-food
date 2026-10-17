@@ -93,6 +93,14 @@ class AIPostPipelineTests(unittest.TestCase):
         self.assertEqual(len(client.calls), 2)
         self.assertEqual(self.stored()['queue'], [])
 
+    def test_pipeline_retains_validated_past_events_for_the_archive(self):
+        payload = extraction()
+        payload['events'][0]['starts_at'] = '2000-10-23T18:30:00+01:00'
+        with patch(__name__ + '.extraction', return_value=payload):
+            report = process(self.folder, root=self.root, client=FakeClient())
+        self.assertEqual(report['events_extracted'], 1)
+        self.assertEqual(self.stored()['events'][0]['starts_at'], '2000-10-23T18:30:00+01:00')
+
     def test_empty_recent_collection_needs_no_api_request(self):
         (self.folder / 'posts-with-images.json').write_text(json.dumps({'posts': []}), encoding='utf-8')
         client = FakeClient()

@@ -33,7 +33,7 @@ class IntegrationTests(unittest.TestCase):
         self.assertFalse(public.call_args.args[2]['posts'])
         self.assertFalse(meta.call_args.args[2]['posts'])
 
-    def test_removed_accounts_and_expired_apify_posts_are_not_retained(self):
+    def test_old_apify_evidence_is_retained_but_removed_accounts_are_not(self):
         previous = {'posts': [{**POST, 'origin': 'apify', 'published_at': '2026-01-01T12:00:00Z'},
                               {**POST, 'origin': 'apify', 'account_url': 'https://www.instagram.com/removed/'}],
                     'accounts': [{'provider': 'apify', 'url': 'https://www.instagram.com/removed/'}]}
@@ -41,7 +41,8 @@ class IntegrationTests(unittest.TestCase):
         empty = {'posts': [], 'accounts': [], 'status': {}}
         with patch('scripts.social_posts.collect_social_posts', return_value=empty), patch('scripts.meta_posts.collect_meta_posts', return_value=empty):
             result = refresh_social_sources({}, societies, previous, NOW)
-        self.assertFalse(result['posts'])
+        self.assertEqual(len(result['posts']), 1)
+        self.assertEqual(result['posts'][0]['published_at'], '2026-01-01T12:00:00Z')
         self.assertFalse(result['accounts'])
 
     def test_ocr_survives_identical_post_and_is_invalidated_by_caption_or_media_edits(self):

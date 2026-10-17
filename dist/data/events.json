@@ -1,7 +1,443 @@
 {
-  "updated_at": "2026-10-17T14:55:55.832943Z",
+  "updated_at": "2026-10-17T15:11:45.905118Z",
   "timezone": "Europe/London",
   "events": [
+    {
+      "title": "Groups and Societies Fair",
+      "location": "Maiden Castle, Durham",
+      "food": "Free sweets",
+      "description": "Find the Book Aid International Charity Society at the groups and societies fair, giving out free books, sweets and jewellery.",
+      "id": "ai-instagram-a781e13fb6c8ff1fbb",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-4128060f7e10ac876f",
+      "society": "Book Aid International Charity Society",
+      "source_url": "https://www.instagram.com/p/DdzblIWuqNi/",
+      "starts_at": "2026-09-30T10:00:00+01:00",
+      "ends_at": "2026-09-30T18:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "evidence": {
+        "food": "We are giving out free books, sweets and jewellery!!!!!",
+        "date": "Wednesday 30th September",
+        "time": "10:00-18:00",
+        "location": "in Maiden Castle",
+        "eligibility": null
+      },
+      "verified_at": "2026-10-17T14:42:54.613571+00:00",
+      "post_published_at": "2026-09-27T20:07:39Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "5f81ad626bf2544200dfdf9e31199a9bb8896ee80546be2d519688e632b8ef2f",
+      "temporal_status": "past"
+    },
+    {
+      "title": "DUSCS Welcome Talk",
+      "location": "Mill Hill Lane, Room 452, Durham",
+      "food": "Free refreshments",
+      "description": "DUSCS welcome talk in partnership with the Department of Sociology, with free refreshments and a chance to meet the executive committee.",
+      "id": "ai-instagram-2daf578069f814d97c",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-488eef46c97dab1116",
+      "society": "Sociology and Criminology Society (DUSCS)",
+      "source_url": "https://www.instagram.com/p/Dd9OhSzoify/",
+      "starts_at": "2026-10-02T12:00:00+01:00",
+      "ends_at": "2026-10-02T14:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "evidence": {
+        "food": "Come along for free refreshments",
+        "date": "on Friday 2nd of October",
+        "time": "at 12pm until 2pm",
+        "location": "Mill Hill Lane; Room 452",
+        "eligibility": null
+      },
+      "verified_at": "2026-10-17T14:31:03.723732+00:00",
+      "post_published_at": "2026-10-01T15:30:10Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "4ead97a4437a78574107231c304fee5c4f22d123fb97f686148609dd4c9a8240",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Sisters’ Games Night",
+      "location": "Grey Prayer Room",
+      "food": "Free food provided · Sisters only",
+      "description": "An evening of games and laughter for sisters, with free food provided.",
+      "id": "ai-instagram-d91280be037d4048f1",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-4ae8da5ab7cc37b657",
+      "society": "Islamic Society",
+      "source_url": "https://www.instagram.com/p/Dd9ulKdsnXp/",
+      "starts_at": "2026-10-02T17:00:00+01:00",
+      "ends_at": null,
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Sisters only",
+      "dietary": [],
+      "evidence": {
+        "food": "Free food provided!!",
+        "date": "Friday, 2 October",
+        "time": "Starts at 5 PM",
+        "location": "Grey Prayer Room",
+        "eligibility": "SISTERS ONLY"
+      },
+      "verified_at": "2026-10-17T13:53:11.626511+00:00",
+      "post_published_at": "2026-10-01T20:07:26Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "eade17a9e9e48a08db9ec0efc67b30d99bde7d0d7d0d83fdca131ca44c2f9bb3",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Hot Chocolate Taster Session",
+      "location": "Student Union Lounge, Student Union, Durham",
+      "food": "Free hot chocolate",
+      "description": "A hot chocolate taster session with board games.",
+      "id": "ai-instagram-1c91ef311bacfd3bc9",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-19007ed4ad3ce670eb",
+      "society": "Hot Chocolate Society",
+      "source_url": "https://www.instagram.com/p/Dd9QP41s5j9/",
+      "starts_at": "2026-10-03T13:00:00+01:00",
+      "ends_at": "2026-10-03T15:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "evidence": {
+        "food": "FREE HOT CHOCOLATE + BOARD GAMES!!",
+        "date": "SATURDAY 3RD OCTOBER",
+        "time": "13:00 - 15:00",
+        "location": "STUDENT UNION LOUNGE",
+        "eligibility": null
+      },
+      "verified_at": "2026-10-17T14:36:33.657310+00:00",
+      "post_published_at": "2026-10-01T15:40:49Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "f339b3ae8b2358c2e089ed35c2b09b20464f02db65f02343759ee21586ddacbb",
+      "temporal_status": "past"
+    },
+    {
+      "title": "ULaw Coffee Truck",
+      "location": "Library Square, Durham",
+      "food": "Free hot drink",
+      "description": "Grab a free hot drink in a free coffee cup and chat with ULaw.",
+      "id": "ai-instagram-5472ac66110ac0e843",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-595acaa6afc4ae064b",
+      "society": "Non-law into law Society",
+      "source_url": "https://www.instagram.com/p/DeBu626iAf0/",
+      "starts_at": "2026-10-06T10:00:00+01:00",
+      "ends_at": "2026-10-06T14:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "evidence": {
+        "food": "grab a free hot drink in a free coffee cup",
+        "date": "October 6th",
+        "time": "10:00-14:00",
+        "location": "Library Square",
+        "eligibility": null
+      },
+      "verified_at": "2026-10-17T14:47:18.758659+00:00",
+      "post_published_at": "2026-10-03T09:25:45Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "a6109fb8d139e3995f26e8d877c0ba973cc951830071de896fc553a4a5ad2fca",
+      "temporal_status": "past"
+    },
+    {
+      "ends_at": null,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "All welcome; aimed at complete beginners.",
+      "source_label": "Bridge Club Instagram — original caption and poster reviewed",
+      "description": "An introductory bridge session for complete beginners with free pizza and drinks. All welcome. Entry price, dietary options and registration requirements were not stated. This event has already happened.",
+      "dietary": [],
+      "id": "bridge-beginners-pizza-2026-10-08",
+      "title": "Beginner’s Bridge Session — free pizza and drinks",
+      "society": "Bridge Club",
+      "starts_at": "2026-10-08T19:30:00+01:00",
+      "location": "Kingsgate, Student Union, Durham",
+      "food": "Free pizza and drinks",
+      "food_is_free": true,
+      "source_url": "https://www.instagram.com/p/DeK21vgN4x0/",
+      "verified_at": "2026-10-17T15:08:14.340835+00:00",
+      "post_published_at": "2026-10-06T22:30:03Z",
+      "post_id": "social-598528574f1a7b0543",
+      "verification_notes": "Assistant visual review of complete archived source PNG 767792408ac2981a5c70ed69.png (1408x1877). Poster explicitly states 08.10.2026 at 7:30PM, meet in Kingsgate at the Student Union, FREE PIZZA AND DRINKS, complete beginners, ALL WELCOME. Caption independently confirms free pizzas and drinks. The AI review queue had incorrectly described the location as cut off; the full saved poster shows UNION at the bottom. No model result was altered.",
+      "resolves_post_review": true,
+      "source_id": "manual",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Coffee morning",
+      "location": "Whitechurch Durham",
+      "food": "Free coffee and a slice of cake. · Anyone is welcome; no background knowledge is required.",
+      "description": "A coffee morning to discuss the philosophy behind AI safety, AI ethics, AI consciousness and related topics. No background knowledge is required.",
+      "id": "ai-instagram-e5ce5c43e291bce17e",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-443510db99036bb474",
+      "society": "Durham AI Safety Initiative",
+      "source_url": "https://www.instagram.com/p/DeMw-65IpG2/",
+      "starts_at": "2026-10-10T11:00:00+01:00",
+      "ends_at": "2026-10-10T12:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Anyone is welcome; no background knowledge is required.",
+      "dietary": [],
+      "evidence": {
+        "food": "“who doesn’t love free coffee and a slice of cake?”",
+        "date": "“This Saturday (10th October 2026)”",
+        "time": "“11:00-12:00”",
+        "location": "“Whitechurch Durham”",
+        "eligibility": "“anyone is welcome”"
+      },
+      "verified_at": "2026-10-17T14:30:51.491644+00:00",
+      "post_published_at": "2026-10-07T16:21:04Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "a2e67495a039c8a1166ad8cf4dc68b2e11ea55d4b3b392f2948cedb42d9616a5",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Members-Only Puzzle Competition",
+      "location": "Kingsgate, Student Union",
+      "food": "Hot chocolate is free for members who bring their own mug; otherwise the price is not stated. · Hot chocolate is free only if you are a member and bring your own mug; otherwise the price is not stated.",
+      "description": "Puzzle competition with prizes; attendees can also relax or observe and have hot chocolate.",
+      "id": "ai-instagram-bc924f231c741930e2",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-c9a4e624393fb9d14e",
+      "society": "Hot Chocolate Society",
+      "source_url": "https://www.instagram.com/p/DePWIofMkWg/",
+      "starts_at": "2026-10-10T13:00:00+01:00",
+      "ends_at": "2026-10-10T15:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Hot chocolate is free only if you are a member and bring your own mug; otherwise the price is not stated.",
+      "dietary": [],
+      "evidence": {
+        "food": "“have some hot chocolate. On the house (if you're a member and bring your own mug)”",
+        "date": "“10.10.2026”",
+        "time": "“1:00 PM - 3:00 PM”",
+        "location": "“Join us at Kingsgate, Student Union”",
+        "eligibility": "“if you're a member and bring your own mug”"
+      },
+      "verified_at": "2026-10-17T14:36:33.657310+00:00",
+      "post_published_at": "2026-10-08T16:18:35Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "8e2464879711c64ecd72248285eba50ad71f3068a8b561518a74edc3dc1e5875",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Welcome Social",
+      "location": "SU Lounge, Durham",
+      "food": "Free food",
+      "description": "Welcome social with free food.",
+      "id": "ai-instagram-c751f503fc85222871",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-f9540c6e64a48bf44c",
+      "society": "Women in Maths",
+      "source_url": "https://www.instagram.com/p/DeUbNf6MnPy/",
+      "starts_at": "2026-10-14T13:00:00+01:00",
+      "ends_at": null,
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": null,
+      "dietary": [],
+      "evidence": {
+        "food": "Free Food!",
+        "date": "WEEK 2; Wed 14 Oct",
+        "time": "1PM",
+        "location": "SU Lounge",
+        "eligibility": null
+      },
+      "verified_at": "2026-10-17T14:33:27.634490+00:00",
+      "post_published_at": "2026-10-10T15:39:08Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "93f691095fe1757d04ec16515a60bb0403bec7ae9fec4482968f8639900816f0",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Durham 93% Club Coffee Social",
+      "location": "Whitechurch, Durham",
+      "food": "Coffee is free for the first 20 attendees; the price for others is not stated. · Free coffee is limited to the first 20 attendees; eligibility beyond that is not stated.",
+      "description": "Meet the Durham 93% Club exec and committee over coffee.",
+      "id": "ai-instagram-8e046087e2b18a5dd5",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-40d5239002ef4e2710",
+      "society": "93% Club Durham",
+      "source_url": "https://www.instagram.com/p/DeZOcbSITMQ/",
+      "starts_at": "2026-10-14T15:45:00+01:00",
+      "ends_at": null,
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Free coffee is limited to the first 20 attendees; eligibility beyond that is not stated.",
+      "dietary": [],
+      "evidence": {
+        "food": "first 20 Coffees free!!",
+        "date": "Wednesday 14th October",
+        "time": "October 3:45pm",
+        "location": "@ Whitechurch",
+        "eligibility": "First 20 coffees are free ☕️ ⭐️"
+      },
+      "verified_at": "2026-10-17T14:31:03.723732+00:00",
+      "post_published_at": "2026-10-12T12:25:49Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "a6dcd0a79d75ef96f3b66a4566f83ec006759ea56cfeebfa78434ca0bfb21221",
+      "temporal_status": "past"
+    },
+    {
+      "title": "Meet the Exec Coffee Morning",
+      "location": "Leonard’s Coffee House, Durham",
+      "food": "Coffee is free for the first 30 people; the price for others is not stated. · Free coffee is limited to the first 30 people; the price for others is not stated.",
+      "description": "Join the exec for a coffee chat. The first 30 people to join receive a free cup of coffee.",
+      "id": "ai-instagram-a6486dee30738a45af",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-005c4ead300a05d918",
+      "society": "Bar Society",
+      "source_url": "https://www.instagram.com/p/DeHeRa-Ms8k/",
+      "starts_at": "2026-10-15T11:00:00+01:00",
+      "ends_at": "2026-10-15T13:00:00+01:00",
+      "food_is_free": true,
+      "price": null,
+      "signup_required": null,
+      "signup_deadline": null,
+      "eligibility": "Free coffee is limited to the first 30 people; the price for others is not stated.",
+      "dietary": [],
+      "evidence": {
+        "food": "“The first 30 people to join will get a free cup of coffee!”",
+        "date": "“THURSDAY 15TH OCT”",
+        "time": "“11AM - 1PM”",
+        "location": "“LEONARD’S COFFEE HOUSE”",
+        "eligibility": "“The first 30 people to join”"
+      },
+      "verified_at": "2026-10-17T14:39:23.212711+00:00",
+      "post_published_at": "2026-10-05T15:02:28Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "b0189f7c4c8e2565fd4ad150310afbe1a54c05a062c0abf137548f3aa885cc92",
+      "temporal_status": "past"
+    },
+    {
+      "title": "DCCF Term 1 Week 2 dinner and fellowship",
+      "location": "Elvet Methodist Church, 8 Old Elvet, Durham, DH1 3HL",
+      "food": "Dinner is free for first-time visitors; returning group members pay £4. · Dinner is free for first-time visitors; returning group members pay £4. Attendees are encouraged to register for dinner in the WhatsApp/WeChat group by Friday at 00:00.",
+      "description": "Dinner is served before the fellowship gathering. The theme is “Seeds & the True Vine.” Attendees are asked to bring their own tableware.",
+      "id": "ai-instagram-5d8b59825c500fb078",
+      "source_id": "ai-instagram",
+      "source_label": "Instagram · AI extracted",
+      "post_id": "social-375bee3f02b51ab74a",
+      "society": "Durham Chinese Christian Fellowship",
+      "source_url": "https://www.instagram.com/p/DeejD06iigw/",
+      "starts_at": "2026-10-16T18:30:00+01:00",
+      "ends_at": null,
+      "food_is_free": true,
+      "price": null,
+      "signup_required": false,
+      "signup_deadline": "2026-10-16T00:00:00+01:00",
+      "eligibility": "Dinner is free for first-time visitors; returning group members pay £4. Attendees are encouraged to register for dinner in the WhatsApp/WeChat group by Friday at 00:00.",
+      "dietary": [],
+      "evidence": {
+        "food": "第一次來的朋友晚餐是免費的哦！舊團友只需要 £4.00。",
+        "date": "16 OCT",
+        "time": "晚餐 6:30 PM",
+        "location": "Elvet Methodist Church, 8 Old Elvet, Durham DH1 3HL",
+        "eligibility": "第一次來的朋友晚餐是免費的哦！舊團友只需要 £4.00。"
+      },
+      "verified_at": "2026-10-17T14:30:51.491644+00:00",
+      "post_published_at": "2026-10-14T14:00:02Z",
+      "extraction": {
+        "method": "ai",
+        "model": "gpt-6-luna",
+        "human_reviewed": false
+      },
+      "input_signature": "e1fbecf914d11a95989bffab2c3bd417cbb2d213489f7ee6e8e266362cc93e22",
+      "corroborating_sources": [
+        {
+          "source_url": "https://www.instagram.com/p/DdlyySICnU4/",
+          "source_label": "Instagram · AI extracted",
+          "post_id": "social-8a81c569b5d678ed7d",
+          "post_published_at": "2026-09-22T13:00:04Z",
+          "evidence": {
+            "food": "第一次出席的新朋友可享用免費晚餐（其後聚會晚餐費用也只是£4)",
+            "date": "16/10",
+            "time": "星期五的團契若設有晚餐，活動將於晚上六點半開始",
+            "location": "Elvet Methodist Church 地址：8 Old Elvet, Durham DH1 3HL",
+            "eligibility": "第一次出席的新朋友"
+          }
+        }
+      ],
+      "temporal_status": "past"
+    },
     {
       "title": "Hot Chocolate Quiz",
       "location": "Kingsgate, Student Union, Durham",
@@ -28,14 +464,15 @@
         "location": "“kingsgate, Student Union”",
         "eligibility": "“Members Only”"
       },
-      "verified_at": "2026-10-17T14:50:09.009876Z",
+      "verified_at": "2026-10-17T14:36:33.657310+00:00",
       "post_published_at": "2026-10-15T13:06:01Z",
       "extraction": {
         "method": "ai",
         "model": "gpt-6-luna",
         "human_reviewed": false
       },
-      "input_signature": "8cb7baec42ba0fde01289ac257345caf8f5cb06acc5c3e3039e7e20752518bae"
+      "input_signature": "8cb7baec42ba0fde01289ac257345caf8f5cb06acc5c3e3039e7e20752518bae",
+      "temporal_status": "ended"
     },
     {
       "ends_at": "2026-10-19T20:00:00+01:00",
@@ -57,7 +494,8 @@
       "verified_at": "2026-10-17T11:59:53.363632Z",
       "post_published_at": "2026-10-16T14:00:11Z",
       "verification_notes": "Caption explicitly promises free pizza and says Monday. Original poster states 19 October, 6pm to 8pm, TLC113. Year 2026 follows the original 16 October 2026 publication and matching weekday.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "title": "Italian Society Welcome Event",
@@ -85,14 +523,15 @@
         "location": "COVIELLO WINE BAR, 24 SILVER ST",
         "eligibility": null
       },
-      "verified_at": "2026-10-17T14:46:59.928622Z",
+      "verified_at": "2026-10-17T14:46:59.928622+00:00",
       "post_published_at": "2026-10-15T18:59:30Z",
       "extraction": {
         "method": "ai",
         "model": "gpt-6-luna",
         "human_reviewed": false
       },
-      "input_signature": "f91cb82faa44d9ca42e94d3a82317c487f2387ecf00407ed4ad15e03be893123"
+      "input_signature": "f91cb82faa44d9ca42e94d3a82317c487f2387ecf00407ed4ad15e03be893123",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -114,7 +553,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -136,7 +576,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -158,7 +599,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -180,7 +622,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -202,7 +645,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -224,7 +668,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     },
     {
       "ends_at": null,
@@ -246,7 +691,8 @@
       "verified_at": "2026-10-17T13:39:01Z",
       "post_published_at": "2026-09-22T13:00:04Z",
       "verification_notes": "The Chinese caption explicitly offers a free dinner to first-time visitors, £4 thereafter, and gives the dinner and meeting times. The schedule marks this date with a dinner tick at Elvet Methodist Church; panel 3 supplies its address. The year is anchored to the September 2026 post and matching Friday dates. 4 December is marked no dinner and excluded. These are separately dated first-visit opportunities, not seven free dinners per person.",
-      "source_id": "manual"
+      "source_id": "manual",
+      "temporal_status": "upcoming"
     }
   ],
   "sources": [
@@ -334,9 +780,9 @@
     "failed_sources": 1,
     "partial_sources": 1,
     "parse_error_count": 0,
-    "live_event_count": 10,
-    "reviewed_event_count": 8,
-    "candidate_count": 90,
+    "live_event_count": 9,
+    "reviewed_event_count": 9,
+    "candidate_count": 89,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
@@ -353,9 +799,17 @@
       "societies_stale": 0,
       "post_count": 853
     },
-    "ai_event_count": 2,
-    "ai_review_count": 59,
-    "ai_processed_at": "2026-10-17T14:50:30.512317+00:00",
-    "ai_stale_post_count": 0
+    "ai_event_count": 13,
+    "ai_review_count": 58,
+    "ai_processed_at": "2026-10-17T15:06:15.492510+00:00",
+    "ai_stale_post_count": 0,
+    "past_event_count": 12,
+    "past_14_day_event_count": 9,
+    "ended_today_event_count": 1,
+    "started_today_event_count": 0,
+    "upcoming_event_count": 9,
+    "total_event_count": 22,
+    "history_included": true,
+    "default_history_days": 14
   }
 }

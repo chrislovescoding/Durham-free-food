@@ -42,10 +42,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           github-token: ${{ github.token }}
-          run-id: '39036821230'
-          name: instagram-pilot-39036821230-1
+          run-id: '39038384179'
+          name: instagram-ai-39038384179-1
           path: work/preflight/
-      - name: Verify actual images, positive detections, eligibility and expired-event filtering
+      - name: Verify actual images, positive detections, eligibility and event history
         run: python scripts/sweep_preflight.py --folder work/preflight
       - name: Prepare all capped batches
         id: plan

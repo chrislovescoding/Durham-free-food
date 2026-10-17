@@ -228,7 +228,7 @@ def ics_datetime(value: str, params: dict, default_timezone: str) -> datetime:
     return parse_datetime(parsed.isoformat(), params.get("TZID", default_timezone))
 
 
-def parse_ics(text: str, source: dict, now: datetime) -> tuple[list[dict], list[dict], int]:
+def parse_ics(text: str, source: dict, now: datetime, *, observed_urls=None) -> tuple[list[dict], list[dict], int]:
     if "BEGIN:VCALENDAR" not in text or "END:VCALENDAR" not in text:
         raise ValueError("Source did not return a complete iCalendar document")
     unfolded = re.sub(r"\r?\n[ \t]", "", text)
@@ -249,12 +249,14 @@ def parse_ics(text: str, source: dict, now: datetime) -> tuple[list[dict], list[
     for record in records:
         get = lambda key, default="": record.get(key, (default, {}))[0]
         title, description = get("SUMMARY"), plain(get("DESCRIPTION"))
-        if get("STATUS").upper() == "CANCELLED":
-            continue
         url = http_url(get("URL"))
         if not url:
             match = re.search(r"https://(?:lu\.ma|luma\.com)/[A-Za-z0-9_-]+", description)
             url = match.group(0) if match else source["url"]
+        if observed_urls is not None:
+            observed_urls.add(url.rstrip('/'))
+        if get("STATUS").upper() == "CANCELLED":
+            continue
         try:
             if "RRULE" in record or "RDATE" in record:
                 raise ValueError("Recurring event requires review; recurrence is not expanded")
@@ -282,7 +284,7 @@ def jsonld_nodes(value: Any):
                 yield from jsonld_nodes(value[key])
 
 
-def parse_jsonld(html: str, source: dict, now: datetime) -> tuple[list[dict], list[dict], int]:
+def parse_jsonld(html: str, source: dict, now: datetime, *, observed_urls=None) -> tuple[list[dict], list[dict], int]:
     soup = BeautifulSoup(html, "html.parser")
     nodes = []
     for script in soup.find_all("script", type="application/ld+json"):
@@ -294,6 +296,8 @@ def parse_jsonld(html: str, source: dict, now: datetime) -> tuple[list[dict], li
     for record in records:
         title, description = plain(record.get("name")), plain(record.get("description"))
         url = http_url(record.get("url")) or source["url"]
+        if observed_urls is not None:
+            observed_urls.add(url.rstrip('/'))
         if str(record.get("eventStatus", "")).endswith(("EventCancelled", "EventPostponed")):
             continue
         try:
@@ -359,7 +363,7 @@ def native_detail(html: str) -> dict:
     raise ValueError("Native event details not found; public page markup may have changed")
 
 
-def parse_native(text: str, source: dict, now: datetime) -> tuple[list[dict], list[dict], int]:
+def parse_native(text: str, source: dict, now: datetime, *, observed_urls=None) -> tuple[list[dict], list[dict], int]:
     """Paginate the same public JSON endpoint used by Durham SU's What's On page."""
     page = json.loads(text)
     records = {}
@@ -379,6 +383,9 @@ def parse_native(text: str, source: dict, now: datetime) -> tuple[list[dict], li
     else:
         raise ValueError("Native event index exceeded the 25-page safety limit")
     events, candidates = [], []
+    if observed_urls is not None:
+        observed_urls.update(urljoin(source['url'], '/event/' + str(record['slug']) + '/' + str(record['id'])).rstrip('/')
+                             for record in records.values())
 
     def inspect(record):
         url = urljoin(source["url"], "/event/" + str(record["slug"]) + "/" + str(record["id"]))
@@ -448,6 +455,8 @@ def reviewed_event(record: dict, now: datetime) -> dict:
     signup = record.get("signup_required")
     if signup is not None and not isinstance(signup, bool):
         raise ValueError("signup_required must be true, false or null")
+    if 'resolves_post_review' in record and not isinstance(record['resolves_post_review'], bool):
+        raise ValueError('resolves_post_review must be true or false')
     dietary = record.get("dietary", [])
     if not isinstance(dietary, list) or not all(isinstance(item, str) for item in dietary):
         raise ValueError("dietary must be a list of confirmed dietary labels")
@@ -462,7 +471,7 @@ def visible_today_or_future(event: dict, now: datetime) -> bool:
     return parse_datetime(event["starts_at"]).astimezone(LONDON).date() >= now.astimezone(LONDON).date()
 
 
-def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime, *, offline=False) -> tuple[dict, dict]:
+def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime, *, offline=False, include_past=False) -> tuple[dict, dict]:
     events, candidates, sources = [], [], []
     previous_status = {source["id"]: source for source in previous.get("sources", [])}
     for source in config.get("feeds", []):
@@ -480,12 +489,22 @@ def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime, 
             parser = {"ics": parse_ics, "jsonld": parse_jsonld, "native": parse_native}.get(source["type"])
             if parser is None:
                 raise ValueError("Unsupported feed type; use ics, jsonld or native")
-            found, pending, seen = parser(content, source, now)
+            observed_urls = set()
+            found, pending, seen = parser(content, source, now, observed_urls=observed_urls)
             events.extend(found)
             candidates.extend({**item, "source_id": source["id"]} for item in pending)
             parse_errors = [item for item in pending if item.get("kind") == "parse_error"]
             failed_urls = {item["source_url"] for item in parse_errors}
             retained = [event for event in previous.get("events", []) if event.get("source_id") == source["id"] and event.get("source_url") in failed_urls]
+            if include_past:
+                # Feeds commonly drop old listings. Retain historical evidence
+                # only when its URL disappeared entirely; a current cancellation,
+                # changed food offer or other update must take precedence.
+                handled = observed_urls | {str(item.get('source_url', '')).rstrip('/') for item in found + pending}
+                retained.extend(event for event in previous.get('events', [])
+                    if event.get('source_id') == source['id']
+                    and not visible_today_or_future(event, now)
+                    and event.get('source_url', '').rstrip('/') not in handled)
             events.extend(retained)
             status.update(status="partial" if parse_errors else "ok", last_success_at=iso(now), events_seen=seen,
                           parsed_count=seen,
@@ -513,7 +532,7 @@ def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime, 
     expired = 0
     for event in events:
         try:
-            if not visible_today_or_future(event, now):
+            if not include_past and not visible_today_or_future(event, now):
                 expired += 1
                 continue
             if event.get("food_is_free") is not True:
@@ -538,6 +557,38 @@ def refresh_events(config: dict, previous: dict, reviewed: dict, now: datetime, 
     return payload, review_queue
 
 
+def annotate_event_history(payload: dict, now: datetime) -> None:
+    """Keep archive counts separate from events people can still plan to attend."""
+    today = now.astimezone(LONDON).date()
+    earliest = today - timedelta(days=14)
+    counts = {"past_event_count": 0, "past_14_day_event_count": 0,
+              "ended_today_event_count": 0, "started_today_event_count": 0,
+              "upcoming_event_count": 0}
+    for event in payload.get("events", []):
+        start = parse_datetime(event["starts_at"])
+        day = start.astimezone(LONDON).date()
+        end = parse_datetime(event["ends_at"]) if event.get("ends_at") else None
+        if day < today:
+            status = "past"
+            counts["past_event_count"] += 1
+            counts["past_14_day_event_count"] += int(day >= earliest)
+        elif end is not None and end <= now:
+            status = "ended"
+            counts["ended_today_event_count"] += 1
+        elif start <= now:
+            status = "started"
+            counts["started_today_event_count"] += 1
+        else:
+            status = "upcoming"
+            counts["upcoming_event_count"] += 1
+        event["temporal_status"] = status
+    payload.setdefault("status", {}).update(
+        **counts, total_event_count=len(payload.get("events", [])),
+        live_event_count=counts["upcoming_event_count"] + counts["started_today_event_count"],
+        history_included=True, default_history_days=14,
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
@@ -556,11 +607,11 @@ def main() -> int:
     previous_events = load_json(args.root / "dist/data/events.json", {})
     reviewed = load_json(args.root / "data/reviewed-events.json", {"events": []})
     if args.social_only:
-        events = {**previous_events, "updated_at": iso(now), "events": [e for e in previous_events.get("events", []) if not e.get("source_id", "").startswith("social-") and visible_today_or_future(e, now)], "sources": [s for s in previous_events.get("sources", []) if not s.get("id", "").startswith("social-")], "status": dict(previous_events.get("status", {}))}
+        events = {**previous_events, "updated_at": iso(now), "events": [e for e in previous_events.get("events", []) if not e.get("source_id", "").startswith("social-")], "sources": [s for s in previous_events.get("sources", []) if not s.get("id", "").startswith("social-")], "status": dict(previous_events.get("status", {}))}
         old_queue = load_json(args.root / "data/review-queue.json", {"candidates": []})
         queue = {"updated_at": iso(now), "candidates": [c for c in old_queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")]}
     else:
-        events, queue = refresh_events(config, previous_events, reviewed, now, offline=args.offline)
+        events, queue = refresh_events(config, previous_events, reviewed, now, offline=args.offline, include_past=True)
         if args.offline:
             old_queue = load_json(args.root / "data/review-queue.json", {"candidates": []})
             queue["candidates"] = [c for c in old_queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")]
@@ -605,7 +656,8 @@ def main() -> int:
     except ModuleNotFoundError:
         from ai_events import integrate_ai
     ai_events = load_json(args.root / "data/ai-events.json", {"events": [], "queue": []})
-    integrate_ai(events, queue, ai_events, now, posts=social.get("posts", []))
+    integrate_ai(events, queue, ai_events, now, posts=social.get("posts", []), include_past=True)
+    annotate_event_history(events, now)
     write_json(args.root / "dist/data/events.json", events)
     write_json(args.root / "data/review-queue.json", queue)
     print(json.dumps(events["status"], indent=2))
@@ -652,7 +704,6 @@ def refresh_social_sources(config, societies, previous, now):
     expanded = expand_accounts(societies)
     registered = {url for row in expanded for platform in ("instagram", "facebook")
                   if (url := canonical_account_url(row.get(platform + "_url")))}
-    cutoff = now.astimezone(timezone.utc) - timedelta(days=60)
     retained = []
     for post in previous.get("posts", []):
         if post.get("origin") != "apify":
@@ -663,7 +714,9 @@ def refresh_social_sources(config, societies, previous, now):
             dated = parse_datetime(post.get("published_at") or post.get("observed_at"))
         except (ValueError, TypeError):
             continue
-        if account in registered and url and platform_for(url) == platform_for(account) and cutoff <= dated <= now:
+        # Saved evidence backs the event archive indefinitely. The collector's
+        # separate 30-day acquisition cutoff does not delete purchased posts.
+        if account in registered and url and platform_for(url) == platform_for(account) and dated <= now:
             retained.append({**post, "account_url": account, "source_url": url})
     public = collect_social_posts(expanded, config, prior("public_html"), now)
     meta = collect_meta_posts(expanded, config, prior("meta_api"), now)
