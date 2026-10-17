@@ -1,0 +1,109 @@
+name: Complete Instagram pilot carousel images
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_workflow_run_id:
+        description: 'GitHub run ID containing the original pilot artifact'
+        required: true
+        type: string
+      source_artifact_name:
+        description: 'Exact instagram-pilot artifact name from that run'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: refresh-food-events
+  cancel-in-progress: false
+
+jobs:
+  recover-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Restore already purchased data and inspected images
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.source_workflow_run_id }}
+          name: ${{ inputs.source_artifact_name }}
+          path: work/apify-pilot/
+      - name: Install and check
+        run: |
+          python -m pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr
+          python -m unittest discover -s tests -p 'test_*.py'
+      - name: Complete carousel data within the original total pilot budget
+        # Persist intent before spending: restoring an old artifact must never
+        # reset the authorization if a previous runner lost its start response.
+        if: success()
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          original = json.loads(Path('work/apify-pilot/run.json').read_text())['run']['id']
+          journal_path = Path('work/apify-pilot/image-enrichment-run.json')
+          journal = json.loads(journal_path.read_text()) if journal_path.exists() else {}
+          ledger_path = Path('data/apify-recovery-intents.json')
+          ledger = json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
+          prior = ledger.get(original)
+          if prior and prior['github_run_id'] != os.environ['GITHUB_RUN_ID'] and not journal.get('run', {}).get('id'):
+              raise SystemExit('Recovery was already attempted. Restore its newest artifact containing the saved run ID; do not reuse the original artifact.')
+          if not prior:
+              ledger[original] = {'github_run_id': os.environ['GITHUB_RUN_ID'], 'created_at': datetime.now(timezone.utc).isoformat()}
+              ledger_path.write_text(json.dumps(ledger, indent=2) + '\n')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/apify-recovery-intents.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Reserve the existing Instagram pilot image recovery budget'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+      - name: Fetch the missing carousel panels
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python scripts/enrich_apify_images.py
+      - name: Read captions and all supplied image panels
+        run: >-
+          python scripts/post_images.py
+          --posts work/apify-pilot/posts.json
+          --output work/apify-pilot/posts-with-images.json
+          --report work/apify-pilot/images.json
+          --cache-dir work/apify-pilot/image-cache
+      - name: Merge image evidence
+        run: |
+          python scripts/import_apify.py
+          python scripts/refresh.py --offline
+      - name: Preserve recovery receipt and images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-pilot-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/apify-pilot/
+          retention-days: 30
+      - name: Commit recovered evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/data/events.json dist/data/societies.json dist/data/social-posts.json data/review-queue.json data/apify-pilot-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Complete carousel image evidence within pilot budget'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi

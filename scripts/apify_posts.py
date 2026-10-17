@@ -59,6 +59,17 @@ def account_map(societies):
     return result
 
 
+def load_accounts(root=ROOT):
+    try:
+        from scripts.social_registry import apply_registry
+    except ImportError:
+        from social_registry import apply_registry
+    societies = json.loads((root / 'dist/data/societies.json').read_text(encoding='utf-8'))
+    registry = json.loads((root / 'data/society-accounts.json').read_text(encoding='utf-8'))
+    societies['societies'], _ = apply_registry(societies['societies'], registry, datetime.now(timezone.utc))
+    return account_map(societies)
+
+
 def validate_config(config, accounts):
     usernames = config.get("usernames")
     count, cap = config.get("posts_per_account"), config.get("max_charge_usd")
@@ -76,7 +87,10 @@ def validate_config(config, accounts):
     selected = {f"https://www.instagram.com/{name}/": accounts.get(f"https://www.instagram.com/{name}/") for name in usernames}
     if not all(selected.values()):
         raise ApifyError("Every selected account must exist in the verified society registry.")
-    body = {"username": usernames, "resultsLimit": count, "dataDetailLevel": "basicData",
+    detail = config.get("data_detail_level", "basicData")
+    if detail not in {"basicData", "detailedData"}:
+        raise ApifyError("Choose basicData or detailedData explicitly.")
+    body = {"username": usernames, "resultsLimit": count, "dataDetailLevel": detail,
             "includeMusicData": False, "skipPinnedPosts": True}
     cutoff = config.get("only_posts_newer_than")
     if cutoff:
@@ -288,8 +302,7 @@ def main():
     args = parser.parse_args()
     try:
         config = json.loads(args.config.read_text(encoding="utf-8"))
-        societies = json.loads((ROOT / "dist/data/societies.json").read_text(encoding="utf-8"))
-        payload, report = collect(Client(os.environ.get("APIFY_TOKEN")), config, account_map(societies), args.output, resume_run_id=args.resume_run_id)
+        payload, report = collect(Client(os.environ.get("APIFY_TOKEN")), config, load_accounts(), args.output, resume_run_id=args.resume_run_id)
         print(json.dumps({"posts": len(payload["posts"]), "run": report["run"]}, indent=2))
         return 0
     except (ApifyError, KeyError, ValueError) as error:

@@ -2,6 +2,7 @@
   "description": "Manual Instagram pilot: five recent posts from ten verified Durham society accounts. No scheduled paid runs.",
   "usernames": ["ducompsoc", "duisoc", "ais_durham", "dubridgeclub", "durham_cu", "durhamvegsoc", "durhamccf", "dmscf.du", "du.abacus", "du_healthandwellbeing_soc"],
   "posts_per_account": 5,
+  "data_detail_level": "detailedData",
   "max_charge_usd": 0.25,
   "only_posts_newer_than": null
 }
