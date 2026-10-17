@@ -1,0 +1,26 @@
+name: Check Apify usage (read only)
+on:
+  workflow_dispatch:
+    inputs:
+      report_public_key_b64:
+        description: 'Base64 RSA public PEM key for encrypting the private usage report'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  usage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read account credit and usage without starting actors
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          REPORT_PUBLIC_KEY_B64: ${{ inputs.report_public_key_b64 }}
+        run: node scripts/apify_usage.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: encrypted-apify-usage-${{ github.run_id }}
+          path: work/apify-usage-report/encrypted.json
+          retention-days: 1
