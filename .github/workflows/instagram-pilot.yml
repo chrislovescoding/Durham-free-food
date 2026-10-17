@@ -19,7 +19,7 @@ concurrency:
 jobs:
   pilot:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     permissions:
       contents: write
     steps:
@@ -28,6 +28,14 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+      - name: Check event extraction is configured before buying posts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo 'Add OPENAI_API_KEY in repository Settings > Secrets and variables > Actions.' >&2
+            exit 1
+          fi
       - name: Install collection and free image OCR
         run: |
           python -m pip install -r requirements.txt
@@ -56,7 +64,21 @@ jobs:
         run: |
           python scripts/pilot_review_page.py
           python scripts/import_apify.py
-          python scripts/refresh.py --offline
+      - name: Classify captions and images, then extract events with Luna
+        id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/ai_posts.py --folder work/apify-pilot --limit 50
+      - name: Rebuild the website feed from completed results
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        run: python scripts/refresh.py --offline
+      - name: Back up API checkpoints with the saved batch
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        run: |
+          mkdir -p work/apify-pilot/ai-checkpoints
+          for path in data/ai-post-cache.json data/ai-events.json; do
+            if [ -f "$path" ]; then cp -- "$path" work/apify-pilot/ai-checkpoints/; fi
+          done
       - name: Save purchased data and image evidence even if later steps fail
         if: always()
         uses: actions/upload-artifact@v4
@@ -78,14 +100,18 @@ jobs:
           print(f"Accepted posts: **{report['collection']['accepted_posts']}**")
           print('Image inspection:')
           print('```json\n' + json.dumps(report['image_inspection'], indent=2) + '\n```')
-          print('Captions and OCR are evidence for review. OCR alone never confirms a live event.')
+          print('OpenAI Decisions checks captions and original images; Luna extracts structured event details. Uncertain or incomplete results stay in review.')
+          print('OpenAI API charges are separate from the Apify actor cap.')
           print('To retry processing, download this run artifact or dispatch with the Apify run ID. A new dispatch with no ID starts another paid pilot.')
           PY
       - name: Commit reusable collection results
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add dist/data/events.json dist/data/societies.json dist/data/social-posts.json data/review-queue.json data/apify-pilot-report.json
+          for path in dist/data/events.json dist/data/societies.json dist/data/social-posts.json data/review-queue.json data/apify-pilot-report.json data/ai-post-cache.json data/ai-events.json; do
+            if [ -f "$path" ]; then git add -- "$path"; fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m 'Record capped Instagram pilot and image evidence'
             git pull --rebase origin "$GITHUB_REF_NAME"

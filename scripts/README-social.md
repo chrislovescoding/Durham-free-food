@@ -36,23 +36,44 @@ Official references: [Instagram Business Discovery](https://developers.facebook.
 
 Captions are collected before event eligibility is assessed. Auto-publication requires an explicit free-food promise, one unambiguous event date and start time, and a labelled location. Unknown entry prices, dietary requirements and registration rules stay unknown. The publication timestamp anchors phrases such as “tomorrow”; it is never substituted for the event date. Explicit yearless dates must fit a short window after publication, and weekday/date mismatches go for review.
 
-The manual Apify pilot inspects captions and every supplied image/carousel panel with free local Tesseract OCR. Image-only event details, unsupported languages, time ranges, conflicting text or unreadable posters require visual review and a reviewed record. OCR is machine reading, not verification. Candidates retain caption and image evidence separately in `data/review-queue.json`; approved data goes in `data/reviewed-events.json` using the format in the ingestion guide.
+The Apify pipeline sends the original caption and cached post images to OpenAI Decisions to check for a free-food mention. Positive posts then go to Luna through the Responses API to extract structured events, including multiple dates from one poster. Local Tesseract OCR remains supporting evidence; images themselves are also supplied to the models. Dates, location, source links and conditional eligibility are validated before an event reaches the website feed. Uncertain results remain for review. Videos have cover images only, so their frames and audio are not inspected.
+
+Model-generated records are stored separately in `data/ai-events.json`. Existing human-reviewed records in `data/reviewed-events.json` take precedence. The website rebuild excludes past events and retains the existing same-day behaviour. Do not label an automated extraction as a human review.
+
+## Reuse collected posts with Decisions and Luna
+
+Add `OPENAI_API_KEY` in this repository's **Settings → Secrets and variables → Actions**. Then run **Actions → Extract food events from saved Instagram posts → Run workflow**. The defaults point to the existing complete pilot artifact, so this path does not call Apify or purchase posts again. Set the limit to 1–50 posts. Artifact retention is 30 days; select an available saved batch if the original has expired.
+
+For each new or changed post, Decisions first checks the caption and available original images; a positive decision triggers Luna extraction. Processing is bounded to at most two model requests per post (100 for a 50-post batch). OpenAI charges are separate from the Apify $0.25 actor cap. The pipeline caches completed stages in `data/ai-post-cache.json`; unchanged content reuses its results. The workflow commits checkpoints even when a later API call fails and saves a copy in the downloadable artifact's `ai-checkpoints/` folder. Use the newest artifact when resuming a failed batch. Failed or interrupted requests are not retried by default because they might already have been charged; explicitly select `retry_errors` (locally, `--retry-errors`) only when ready to retry them.
+
+The workflow rebuilds `dist/data/events.json` with completed valid results and leaves incomplete or ambiguous posts in review. Inspect `ai-report.json` in the workflow artifact for the batch outcome. To process a downloaded batch locally, set `OPENAI_API_KEY` in your environment without committing it, then run:
+
+```sh
+python scripts/import_apify.py
+python scripts/ai_posts.py --folder work/apify-pilot --limit 50
+python scripts/refresh.py --offline
+```
+
+The existing website reads the generated GitHub data feed. All processing workflows remain manual; configuring a key does not create an automatic paid schedule.
+
+Official references: [Decisions API](https://developers.openai.com/api/docs/guides/decisions), [Luna model](https://developers.openai.com/api/docs/models/gpt-6-luna).
 
 ## Reusable capped Instagram pilot
 
-The **Instagram pilot (50 posts, 25 cent cap)** GitHub Actions workflow is manual only. It reads the existing `APIFY_TOKEN` Actions secret and `data/apify-pilot.json`. The initial batch is ten verified society accounts, up to five recent posts each. Both caption and all supplied images are inspected, including image-only posts. Videos receive cover-image OCR; video frames/audio and missing carousel panels are explicitly incomplete.
+The **Instagram pilot (50 posts, 25 cent cap)** GitHub Actions workflow is manual only. It reads the `APIFY_TOKEN` and `OPENAI_API_KEY` Actions secrets and `data/apify-pilot.json`. The initial batch is ten verified society accounts, up to five recent posts each. Both caption and all supplied images are inspected, including image-only posts. Videos receive cover-image inspection; video frames/audio and missing carousel panels are explicitly incomplete. OpenAI API charges are separate from the Apify cap.
 
 1. Open **Actions → Instagram pilot (50 posts, 25 cent cap) → Run workflow**. Leave `resume_run_id` blank only when intentionally buying a new batch. Each new dispatch is a separate paid run.
 2. The collector explicitly selects `detailedData` to include carousel panels, disables music extras, skips pinned posts, validates a maximum of 50 requested posts, and sends `maxTotalChargeUsd=0.25` to Apify. The provider enforces this actor-run charge cap; tiny post-run dataset access costs are separate. At the current free-tier rate, 50 detailed posts cost about $0.135 before storage access. There is no automatic monthly spending or daily Apify schedule.
 3. The job saves a journal before the one non-retrying start request and records the returned run ID immediately. An uncertain start is never automatically repeated. Workflow reruns cannot start a new paid run. To recover, inspect Apify and pass the existing run ID via `resume_run_id`. The original configuration must match. Recovery fetches the existing dataset, without starting another actor.
 4. Download the `instagram-pilot-...` workflow artifact. It contains the run receipt/actual charge, cached source fields, normalized posts, OCR evidence, and PNGs for visual review. No token, comments, or follower data are included. Artifacts expire after 30 days; public normalized data and the latest receipt are committed to the repository.
-5. Review the caption **and** PNGs together. Only confirmed upcoming events go into `data/reviewed-events.json`. Then run `python scripts/refresh.py --offline` to rebuild events and review candidates without fetching social platforms again. Publish the static `dist/` snapshot through the existing website hosting process.
+5. Decisions checks each caption and its images, then Luna extracts qualifying events into the schema. Valid upcoming events are merged into the website feed automatically. Review ambiguous candidates against the caption **and** PNGs; human-approved corrections still belong in `data/reviewed-events.json`. Run `python scripts/refresh.py --offline` after corrections without fetching social platforms again.
 
 For repeated local processing of a downloaded artifact (Tesseract English and Python requirements installed):
 
 ```sh
 python scripts/post_images.py --posts work/apify-pilot/posts.json --output work/apify-pilot/posts-with-images.json --report work/apify-pilot/images.json --cache-dir work/apify-pilot/image-cache
 python scripts/import_apify.py
+python scripts/ai_posts.py --folder work/apify-pilot --limit 50
 python scripts/refresh.py --offline
 ```
 

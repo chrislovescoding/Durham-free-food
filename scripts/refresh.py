@@ -600,6 +600,12 @@ def main() -> int:
     social["registry_errors"] = registry_errors
     write_json(args.root / "dist/data/social-posts.json", social)
     integrate_social(events, queue, social, now)
+    try:
+        from scripts.ai_events import integrate_ai
+    except ModuleNotFoundError:
+        from ai_events import integrate_ai
+    ai_events = load_json(args.root / "data/ai-events.json", {"events": [], "queue": []})
+    integrate_ai(events, queue, ai_events, now, posts=social.get("posts", []))
     write_json(args.root / "dist/data/events.json", events)
     write_json(args.root / "data/review-queue.json", queue)
     print(json.dumps(events["status"], indent=2))

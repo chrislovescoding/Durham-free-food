@@ -1,0 +1,109 @@
+name: Extract food events from saved Instagram posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_workflow_run_id:
+        description: 'GitHub run containing the purchased Instagram post and image artifact'
+        required: true
+        default: '39036821230'
+        type: string
+      source_artifact_name:
+        description: 'Exact artifact name; use the newest artifact when resuming'
+        required: true
+        default: 'instagram-pilot-39036821230-1'
+        type: string
+      limit:
+        description: 'Maximum posts to inspect, from 1 to 50'
+        required: true
+        default: '50'
+        type: string
+      retry_errors:
+        description: 'Retry failed or interrupted API requests; an earlier request may already have been charged'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: refresh-food-events
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Check OpenAI access is configured
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo 'Add OPENAI_API_KEY in repository Settings > Secrets and variables > Actions.' >&2
+            exit 1
+          fi
+      - name: Restore purchased posts and image files without calling Apify
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.source_workflow_run_id }}
+          name: ${{ inputs.source_artifact_name }}
+          path: work/apify-pilot/
+      - name: Install and check pipeline
+        run: |
+          python -m pip install -r requirements.txt
+          python -m unittest discover -s tests -p 'test_*.py'
+      - name: Import source posts and image evidence
+        run: python scripts/import_apify.py
+      - name: Classify captions and images, then extract events with Luna
+        id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          POST_LIMIT: ${{ inputs.limit }}
+          RETRY_ERRORS: ${{ inputs.retry_errors }}
+        run: |
+          args=()
+          if [ "$RETRY_ERRORS" = 'true' ]; then args+=(--retry-errors); fi
+          python scripts/ai_posts.py --folder work/apify-pilot --limit "$POST_LIMIT" "${args[@]}"
+      - name: Rebuild the website feed from completed results
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        run: python scripts/refresh.py --offline
+      - name: Back up API checkpoints with the saved batch
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        run: |
+          mkdir -p work/apify-pilot/ai-checkpoints
+          for path in data/ai-post-cache.json data/ai-events.json; do
+            if [ -f "$path" ]; then cp -- "$path" work/apify-pilot/ai-checkpoints/; fi
+          done
+      - name: Preserve inputs, images and partial API progress
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-ai-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/apify-pilot/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Commit completed results and API checkpoints even after a partial failure
+        if: ${{ always() && steps.ai.outcome != 'skipped' }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for path in data/ai-post-cache.json data/ai-events.json data/review-queue.json data/apify-pilot-report.json dist/data/events.json dist/data/societies.json dist/data/social-posts.json; do
+            if [ -f "$path" ]; then git add -- "$path"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'Extract food events from cached Instagram captions and images'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
