@@ -146,6 +146,23 @@ class AIPostPipelineTests(unittest.TestCase):
         process(self.folder, root=self.root, client=client, retry_errors=True)
         self.assertEqual(len(client.calls), 2)
 
+    def test_luna_failure_keeps_decision_when_explicitly_retried(self):
+        class FailLunaOnce(FakeClient):
+            failed = False
+            def post(self, endpoint, body):
+                if endpoint == "responses" and not self.failed:
+                    self.failed = True
+                    self.calls.append((endpoint, deepcopy(body)))
+                    raise APIError("OpenAI request did not complete; no automatic retry")
+                return super().post(endpoint, body)
+        client = FailLunaOnce()
+        process(self.folder, root=self.root, client=client)
+        process(self.folder, root=self.root, client=client)
+        self.assertEqual([call[0] for call in client.calls], ["decisions", "responses"])
+        process(self.folder, root=self.root, client=client, retry_errors=True)
+        self.assertEqual([call[0] for call in client.calls], ["decisions", "responses", "responses"])
+        self.assertEqual(len(self.stored()["events"]), 1)
+
 
 class OpenAIClientTests(unittest.TestCase):
     def test_network_exception_does_not_expose_api_key(self):

@@ -143,8 +143,10 @@ def prepare_input(post, folder):
 
 
 def decision_probability(result):
+    if not isinstance(result, dict) or not isinstance(result.get('answers'), list):
+        raise APIError('Decisions returned an invalid answer structure')
     answers = result.get('answers', [])
-    answer = next((a for a in answers if a.get('name') == 'free_food'), {})
+    answer = next((a for a in answers if isinstance(a, dict) and a.get('name') == 'free_food'), {})
     p = answer.get('probability')
     if answer.get('type') != 'predicate' or isinstance(p, bool) or not isinstance(p, (int, float)) or not math.isfinite(p) or not 0 <= p <= 1:
         raise APIError('Decisions returned no usable free-food probability')
@@ -152,11 +154,15 @@ def decision_probability(result):
 
 
 def extraction_json(result):
-    if result.get('status') != 'completed':
+    if not isinstance(result, dict) or result.get('status') != 'completed':
         raise APIError('Luna response was incomplete or refused')
+    if not isinstance(result.get('output'), list):
+        raise APIError('Luna returned an invalid output structure')
     texts = [part['text'] for item in result.get('output', [])
-        if item.get('type') == 'message' for part in item.get('content', [])
-        if part.get('type') == 'output_text']
+        if isinstance(item, dict) and item.get('type') == 'message'
+        and isinstance(item.get('content'), list) for part in item['content']
+        if isinstance(part, dict) and part.get('type') == 'output_text'
+        and isinstance(part.get('text'), str)]
     try:
         return json.loads(''.join(texts))
     except (ValueError, TypeError):
