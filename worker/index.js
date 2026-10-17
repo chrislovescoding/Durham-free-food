@@ -318,6 +318,45 @@ async function completeJob(request, env) {
   return json({ ok: true, status: input.status, event_ids: events.map(event => event.id) });
 }
 
+async function retryUnstartedJob(request, env) {
+  const input = await boundedJson(request);
+  if (!input || typeof input !== 'object' || typeof input.job_id !== 'string' || input.job_id.length > 80
+    || typeof input.expected_updated_at !== 'string' || input.expected_updated_at.length > 40 || input.reset_unstarted !== true) {
+    validationError('An operator-confirmed unstarted job and its exact updated_at are required.');
+  }
+  const row = await env.DB.prepare('SELECT * FROM submission_jobs WHERE id = ?').bind(input.job_id).first();
+  if (!row || !['needs_review', 'failed'].includes(row.status) || row.updated_at !== input.expected_updated_at) {
+    return json({ error: 'This job has changed or is not eligible for operator recovery.' }, 409);
+  }
+  const checkpoint = JSON.parse(row.checkpoint), apify = checkpoint.apify;
+  const paidAiFields = ['decision', 'decisions', 'decision_started', 'extraction', 'extraction_started', 'extraction_usage', 'validation', 'fingerprint'];
+  if (!apify || typeof apify !== 'object' || Array.isArray(apify) || apify.phase !== 'start_unconfirmed'
+    || apify.run_id || apify.dataset_id || apify.cap_confirmed || apify.usage_total_usd
+    || paidAiFields.some(field => Object.hasOwn(checkpoint, field))
+    || JSON.parse(row.events_json).length || checkpoint.result?.events?.length) {
+    return json({ error: 'Saved collection or AI work cannot be reset. Resume or review its existing evidence.' }, 409);
+  }
+  // This endpoint is operator-only. The caller must independently verify that
+  // the ambiguous start created no Apify run before explicitly resetting it.
+  // Keep the original daily budget reservation and all existing receipt IDs.
+  const now = new Date().toISOString();
+  const recovered = JSON.stringify({ source_url: row.source_url, operator_recovery: {
+    confirmed_unstarted: true, at: now, previous_status: row.status, previous_updated_at: row.updated_at,
+  } });
+  const saved = await env.DB.prepare(`UPDATE submission_jobs SET status = 'pending', reason = NULL,
+    events_json = '[]', checkpoint = ?, lease_token = NULL, lease_expires_at = NULL,
+    completion_hash = NULL, updated_at = ?
+    WHERE id = ? AND updated_at = ? AND checkpoint = ? AND status IN ('needs_review', 'failed')
+    RETURNING id, status, updated_at`)
+    .bind(recovered, now, input.job_id, input.expected_updated_at, row.checkpoint).first();
+  if (!saved) return json({ error: 'This job changed while operator recovery was being applied.' }, 409);
+  await env.DB.prepare(`UPDATE event_suggestions SET
+    status = (SELECT status FROM submission_jobs WHERE id = ?),
+    reason = (SELECT reason FROM submission_jobs WHERE id = ?) WHERE job_id = ?`)
+    .bind(input.job_id, input.job_id, input.job_id).run();
+  return json({ ok: true, ...saved });
+}
+
 async function submittedEvents(env) {
   const rows = (await env.DB.prepare("SELECT events_json, updated_at FROM submission_jobs WHERE status = 'published' ORDER BY updated_at DESC LIMIT 1000").all()).results;
   return json({ updated_at: rows[0]?.updated_at || null, events: rows.flatMap(row => JSON.parse(row.events_json)) });
@@ -349,6 +388,7 @@ export default {
         if (url.pathname === '/api/collector/claim') return await claimJobs(request, env);
         if (url.pathname === '/api/collector/checkpoint') return await saveCheckpoint(request, env);
         if (url.pathname === '/api/collector/complete') return await completeJob(request, env);
+        if (url.pathname === '/api/collector/retry') return await retryUnstartedJob(request, env);
         return json({ error: 'Not found.' }, 404);
       }
       if (url.pathname === '/api/health') {

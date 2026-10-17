@@ -162,3 +162,57 @@ test('legacy Instagram suggestions join the queue while generic links require a 
   assert.equal(generic.job_id, null);
   assert.match(generic.reason, /Instagram/);
 });
+
+test('operator-confirmed nonstarts can be retried without replacing receipts or budget reservations', async t => {
+  const env = fixture(t), receipt = await submit(env);
+  const [job] = await claim(env);
+  const savedCheckpoint = { source_url: job.source_url, apify: { phase: 'start_unconfirmed', actor: 'apify~instagram-scraper', max_charge_usd: 0.05 },
+    result: { status: 'needs_review', reason: 'Collection start was unconfirmed.', events: [] } };
+  assert.equal((await worker.fetch(api('checkpoint', { job_id: job.id, lease_token: job.lease_token, checkpoint: savedCheckpoint }), env)).status, 200);
+  assert.equal((await worker.fetch(api('complete', { ...completion(job, 'needs_review', []), reason: 'Collection start was unconfirmed.' }), env)).status, 200);
+  const before = await env.DB.prepare('SELECT * FROM submission_jobs WHERE id = ?').bind(job.id).first();
+  const payload = { job_id: job.id, expected_updated_at: before.updated_at, reset_unstarted: true };
+  assert.equal((await worker.fetch(api('retry', payload, 'wrong-token'), env)).status, 401);
+  assert.equal((await worker.fetch(api('retry', { ...payload, reset_unstarted: false }), env)).status, 400);
+  assert.equal((await worker.fetch(api('retry', { ...payload, expected_updated_at: '2026-01-01T00:00:00Z' }), env)).status, 409);
+  const concurrent = await Promise.all([worker.fetch(api('retry', payload), env), worker.fetch(api('retry', payload), env)]);
+  assert.deepEqual(concurrent.map(response => response.status).sort(), [200, 409]);
+  const after = await env.DB.prepare('SELECT * FROM submission_jobs WHERE id = ?').bind(job.id).first();
+  assert.equal(after.started_day, before.started_day);
+  assert.equal(after.attempts, before.attempts);
+  assert.equal(after.lease_token, null);
+  assert.equal(after.completion_hash, null);
+  assert.equal(after.status, 'pending');
+  assert.equal(JSON.parse(after.checkpoint).apify, undefined);
+  assert.equal(JSON.parse(after.checkpoint).operator_recovery.confirmed_unstarted, true);
+  assert.deepEqual(await (await worker.fetch(new Request(`${origin}/api/suggestions/${receipt.result.id}`), env)).json(), { id: receipt.result.id, status: 'pending', reason: null, event_ids: [] });
+  const [resumed] = await claim(env);
+  assert.equal(resumed.id, job.id);
+  assert.equal(resumed.attempts, job.attempts + 1);
+  assert.equal((await worker.fetch(api('complete', completion(job, 'failed', [])), env)).status, 409, 'the previous lease cannot complete the retried job');
+});
+
+test('operator recovery refuses checkpoints with existing paid work or published/rejected jobs', async t => {
+  const env = fixture(t);
+  for (const [index, extra] of [
+    { apify: { phase: 'start_unconfirmed', run_id: 'existing-run' } },
+    { apify: { phase: 'start_unconfirmed', dataset_id: 'existing-dataset' } },
+    { apify: { phase: 'started' } },
+    { decision_started: true }, { decision: { free_food: 0.99 } }, { extraction_started: true },
+    { extraction: { events: [] } }, { validation: {} },
+  ].entries()) {
+    await submit(env, `RecoverBlocked${index}`);
+    const row = await env.DB.prepare('SELECT * FROM submission_jobs WHERE source_url = ?').bind(source(`RecoverBlocked${index}`)).first();
+    const checkpoint = { apify: { phase: 'start_unconfirmed' }, ...extra };
+    await env.DB.prepare("UPDATE submission_jobs SET status = 'failed', checkpoint = ? WHERE id = ?").bind(JSON.stringify(checkpoint), row.id).run();
+    const response = await worker.fetch(api('retry', { job_id: row.id, expected_updated_at: row.updated_at, reset_unstarted: true }), env);
+    assert.equal(response.status, 409, JSON.stringify(extra));
+    assert.equal((await env.DB.prepare('SELECT status FROM submission_jobs WHERE id = ?').bind(row.id).first()).status, 'failed');
+  }
+  for (const status of ['pending', 'processing', 'published', 'rejected']) {
+    await submit(env, `StatusBlocked${status}`);
+    const row = await env.DB.prepare('SELECT * FROM submission_jobs WHERE source_url = ?').bind(source(`StatusBlocked${status}`)).first();
+    await env.DB.prepare('UPDATE submission_jobs SET status = ?, checkpoint = ? WHERE id = ?').bind(status, JSON.stringify({ apify: { phase: 'start_unconfirmed' } }), row.id).run();
+    assert.equal((await worker.fetch(api('retry', { job_id: row.id, expected_updated_at: row.updated_at, reset_unstarted: true }), env)).status, 409);
+  }
+});
