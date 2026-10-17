@@ -3,6 +3,19 @@ name: Instagram pilot (50 posts, 25 cent cap)
 on:
   workflow_dispatch:
     inputs:
+      batch:
+        description: 'Pilot: 10 accounts x 5 posts; wide: 50 additional accounts x 1 post'
+        required: true
+        default: pilot
+        type: choice
+        options:
+          - pilot
+          - wide
+      posted_after:
+        description: 'Optional absolute ISO post-publication cutoff; leave blank to use the batch configuration. Reuse the same value when resuming.'
+        required: false
+        default: ''
+        type: string
       resume_run_id:
         description: 'Existing Apify run ID to reprocess without starting a paid run; leave empty for a new pilot'
         required: false
@@ -47,12 +60,20 @@ jobs:
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           RESUME_RUN_ID: ${{ inputs.resume_run_id }}
+          BATCH: ${{ inputs.batch }}
+          POSTED_AFTER: ${{ inputs.posted_after }}
         run: |
+          case "$BATCH" in
+            pilot) config=data/apify-pilot.json ;;
+            wide) config=data/apify-wide.json ;;
+            *) echo 'Invalid batch' >&2; exit 1 ;;
+          esac
+          args=(--config "$config")
+          if [ -n "$POSTED_AFTER" ]; then args+=(--posted-after "$POSTED_AFTER"); fi
           if [ -n "$RESUME_RUN_ID" ]; then
-            python scripts/apify_posts.py --resume-run-id "$RESUME_RUN_ID"
-          else
-            python scripts/apify_posts.py
+            args+=(--resume-run-id "$RESUME_RUN_ID")
           fi
+          python scripts/apify_posts.py "${args[@]}"
       - name: Inspect every available post image and carousel panel
         run: >-
           python scripts/post_images.py

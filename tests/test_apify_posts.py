@@ -50,6 +50,25 @@ class PilotTests(unittest.TestCase):
         body, _ = validate_config({**CONFIG, 'only_posts_newer_than': '2026-10-17T13:00:00+01:00'}, ACCOUNTS)
         self.assertEqual(body['onlyPostsNewerThan'], NOW)
 
+    def test_cutoff_discards_old_and_undated_provider_results(self):
+        items = [ITEM, {**ITEM, 'timestamp': '2026-01-01T00:00:00Z'},
+                 {**ITEM, 'timestamp': None}]
+        posts, rejected = normalize_items(items, ACCOUNTS, NOW, 'Run123', cutoff='2026-09-16T23:00:00Z')
+        self.assertEqual(len(posts), 1)
+        self.assertEqual(rejected, 2)
+
+    def test_collection_applies_cutoff_before_image_processing(self):
+        client = Mock()
+        client.start.return_value = deepcopy(RUN)
+        client.run.return_value = deepcopy(RUN)
+        client.items.return_value = [{**ITEM, 'timestamp': '2026-01-01T00:00:00Z'}]
+        config = {**CONFIG, 'only_posts_newer_than': '2026-09-17T00:00:00+01:00'}
+        with tempfile.TemporaryDirectory() as temp:
+            batch, report = collect(client, config, ACCOUNTS, temp, sleep=lambda _: None)
+        self.assertFalse(batch['posts'])
+        self.assertEqual(report['rejected_items'], 1)
+        self.assertEqual(client.start.call_args.args[0]['onlyPostsNewerThan'], '2026-09-16T23:00:00Z')
+
     def test_missing_carousel_panels_preserve_cover_with_partial_marker(self):
         posts, _ = normalize_items([{**ITEM, 'images': [], 'childPosts': [{'displayUrl': None}]}], ACCOUNTS, NOW, 'Run123')
         self.assertEqual(posts[0]['media_urls'], [ITEM['displayUrl']])

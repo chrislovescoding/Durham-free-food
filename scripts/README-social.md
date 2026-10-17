@@ -60,6 +60,8 @@ Official references: [Decisions API](https://developers.openai.com/api/docs/guid
 
 ## Reusable capped Instagram pilot
 
+The workflow's `batch` selector also offers **wide**: a first pass over 50 additional verified Instagram accounts, one latest post each, detailed carousel data and the same $0.25 actor cap. This 17 October selection excludes the original pilot accounts and only accepts posts published after 17 September 2026 (UK midnight). It prioritises food, faith, cultural, community and academic societies. It is a breadth sample, not a full timeline search. For a later search, set the optional `posted_after` ISO timestamp; use the same batch and cutoff when resuming a run. Publication age and event date are separate: an event announced recently can already have happened, and only current/future events reach the feed.
+
 The **Instagram pilot (50 posts, 25 cent cap)** GitHub Actions workflow is manual only. It reads the `APIFY_TOKEN` and `OPENAI_API_KEY` Actions secrets and `data/apify-pilot.json`. The initial batch is ten verified society accounts, up to five recent posts each. Both caption and all supplied images are inspected, including image-only posts. Videos receive cover-image inspection; video frames/audio and missing carousel panels are explicitly incomplete. OpenAI API charges are separate from the Apify cap.
 
 1. Open **Actions → Instagram pilot (50 posts, 25 cent cap) → Run workflow**. Leave `resume_run_id` blank only when intentionally buying a new batch. Each new dispatch is a separate paid run.

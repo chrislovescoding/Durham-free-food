@@ -1,0 +1,14 @@
+{
+  "description": "Manual wider first pass: one recent unpinned post each from 50 additional verified Durham society accounts, prioritising food, faith, cultural, community and academic organisers. Publication cutoff is 17 September 2026, 00:00 Europe/London. Coverage sampling only: this does not inspect every post or society. No scheduled paid runs.",
+  "usernames": [
+    "durhamabsoc", "durhamcathsoc", "nhsfdurham", "icmdurham", "durhamislamicstudiessociety", "durhamjsoc", "duorthodoxchristiansoc", "dubudsoc",
+    "du.bobasoc", "ducurryclub", "du.coffeesociety", "instantnoodlesoc", "plantbaseddurham", "duhotchocsoc",
+    "durhambiosoc", "duengineeringsoc", "dueconsoc", "dufsofficial", "durhambusinessociety", "durhamlawsociety", "dugeogsoc", "du_archsoc", "arthurholmesgeologicalsociety", "dumathsoc", "duanthsociety", "du.els", "du_philosophysociety", "duhistorysociety",
+    "arabsocietydurham", "dudutchsociety", "duiraniansoc", "duramacs", "du_asiansoc", "du_indiansoc", "du.paksoc", "durham.hks", "durham_msoc", "dusingsoc", "du_chisoc", "durhamthaisociety", "duks_official_", "isa_durhamuniversity", "esn_durham",
+    "93clubdurham", "daca.durham", "deace_association", "du.matsa", "durhampoca", "queerspheredurham", "du.neurodiversitysociety"
+  ],
+  "posts_per_account": 1,
+  "data_detail_level": "detailedData",
+  "max_charge_usd": 0.25,
+  "only_posts_newer_than": "2026-09-16T23:00:00Z"
+}

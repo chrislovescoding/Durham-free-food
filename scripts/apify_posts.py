@@ -150,7 +150,7 @@ def safe_run(run):
     return value
 
 
-def normalize_items(items, selected, observed_at, run_id):
+def normalize_items(items, selected, observed_at, run_id, *, cutoff=None):
     posts, rejected = {}, 0
     for item in items[:50]:
         if not isinstance(item, dict) or item.get("error"):
@@ -162,6 +162,11 @@ def normalize_items(items, selected, observed_at, run_id):
         if not source and isinstance(item.get("shortCode"), str):
             source = canonical_post_url("https://www.instagram.com/p/" + item["shortCode"] + "/")
         if account not in selected or not source or not source.startswith("https://www.instagram.com/"):
+            rejected += 1
+            continue
+        published_at = _timestamp(item.get("timestamp"))
+        # Enforce the requested window even if a provider returns old/undated data.
+        if cutoff and (not published_at or published_at <= cutoff):
             rejected += 1
             continue
         caption = item.get("caption") or ""
@@ -182,7 +187,7 @@ def normalize_items(items, selected, observed_at, run_id):
                 media.append(url)
         posts[source] = {"id": "social-" + hashlib.sha256(source.encode()).hexdigest()[:18],
             "platform": "instagram", "account_url": account, "society": selected[account],
-            "source_url": source, "text": caption[:12000], "published_at": _timestamp(item.get("timestamp")),
+            "source_url": source, "text": caption[:12000], "published_at": published_at,
             "observed_at": observed_at, "media_urls": media, "origin": "apify", "apify_run_id": run_id,
             "media_type": str(item.get("type") or "unknown")[:30],
             "media_coverage": "carousel_panels" if has_panels else "cover_only"}
@@ -282,7 +287,7 @@ def _collect_locked(client, config, accounts, output, *, resume_run_id=None, sle
     observed_at = stamp()
     # A requested timeline can include coauthored posts. Keep their real author
     # only when it is independently verified in the full society registry.
-    posts, rejected = normalize_items(dataset, accounts, observed_at, run["id"])
+    posts, rejected = normalize_items(dataset, accounts, observed_at, run["id"], cutoff=body.get('onlyPostsNewerThan'))
     reporting_accounts = {**selected, **{post['account_url']: post['society'] for post in posts}}
     payload = {"updated_at": observed_at, "posts": posts, "accounts": [
         {"url": account, "platform": "instagram", "society": society, "provider": "apify",
@@ -291,7 +296,7 @@ def _collect_locked(client, config, accounts, output, *, resume_run_id=None, sle
          "last_success_at": observed_at if any(p["account_url"] == account for p in posts) else None, "window_limited": True}
         for account, society in reporting_accounts.items()]}
     journal.update(phase="dataset_saved", returned_items=len(dataset), accepted_posts=len(posts), rejected_items=rejected,
-                   note="Actor run is capped. Post-run dataset access has separate platform costs. No paid image/model service is used.")
+                   note="Actor run is capped. Post-run dataset access and subsequent OpenAI image/model processing have separate costs.")
     write_json(posts_path, payload)
     write_json(journal_path, journal)
     return payload, journal
@@ -302,9 +307,12 @@ def main():
     parser.add_argument("--config", type=Path, default=ROOT / "data/apify-pilot.json")
     parser.add_argument("--output", type=Path, default=ROOT / "work/apify-pilot")
     parser.add_argument("--resume-run-id")
+    parser.add_argument("--posted-after", help="Absolute ISO publication cutoff; reuse the identical cutoff when resuming")
     args = parser.parse_args()
     try:
         config = json.loads(args.config.read_text(encoding="utf-8"))
+        if args.posted_after:
+            config['only_posts_newer_than'] = args.posted_after
         payload, report = collect(Client(os.environ.get("APIFY_TOKEN")), config, load_accounts(), args.output, resume_run_id=args.resume_run_id)
         print(json.dumps({"posts": len(payload["posts"]), "run": report["run"]}, indent=2))
         return 0
