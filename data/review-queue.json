@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T12:57:55.392381Z",
+  "updated_at": "2026-10-17T13:24:06.460122Z",
   "candidates": [
     {
       "title": "Spicy Noodle Challenge",
@@ -196,8 +196,32 @@
       "source_url": "https://www.instagram.com/p/DejspkriikV/",
       "post_id": "social-3239f6c6bae9999cdb",
       "society": "Computing",
+      "evidence": {
+        "caption": {
+          "text": "Come along on Monday! Free pizza as usual 🍕",
+          "free_food": "Free pizza"
+        },
+        "image_ocr": {
+          "text": "Career-Ready\n\nNight\n\nGet your professional profile\n\nGxjag\" October\n\nready For application season!\n\n©b6pm - 8pm\n\nJoin us For a career panel\n\n9 TLc1413\n\nand O&A to get valuable\n\ninsights For your Future, and\n\nA\n\nget a Free professional\n\noe\n\nO—\n\nheadshot taken For your\n\n——\n\n.-_\n\nLinkedIn profile.\n\n“a in| x) Cf) Qi compsoc.tech",
+          "free_food": null,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "84f16ecf768b864e7d8b2c5f",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fsyd8-1.fna.fbcdn.net/v/t51.82787-15/849773004_18099436316432410_2959202103875930426_n.webp?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_ht=instagram.fsyd8-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2gFh9090jT4_CyDSCkbI3SDHlcMIfdlw_7w6eYVha028uJht7Ag6qMrPhtjBtZmsIwvRsWcXg6jLv5sW-VCweMxJ&_nc_ohc=1Myoda3853YQ7kNvwESY1Ou&_nc_gid=bINvKNFliXk3BobBAUuaBQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQMdNkH6WXJNpV06G_C-O0VL185muBLpN86n0pFaIBhjlQ&oe=6AD9644C&_nc_sid=bc0c2c"
+      ],
       "kind": "social_post_review",
-      "reason": "Caption needs one unambiguous event date"
+      "reason": "Caption and image evidence need review together before publishing",
+      "needs_visual_review": true
     },
     {
       "title": "A late Halloween swing ball in Durham! We will have a beginner lesson, a live band - The Magpies of Swing, lots of social dancing and, most importantl",
@@ -214,8 +238,131 @@
       "source_url": "https://www.instagram.com/p/DehWwfbM61S/",
       "post_id": "social-af766e174752f97fe1",
       "society": "Vegetarian and Vegan",
+      "evidence": {
+        "caption": {
+          "text": "⭐️ 🧁 This SATURDAY- Come along for a chat and a slice of cake! 🎂 ⭐️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "‘ DURAaN Ur Veasac :\n\naf\n\nEGAN,",
+          "free_food": null,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "7ecdc3ccacedc4b01f646f3b",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/850184954_18153564640551967_4269705139231428425_n.webp?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=coZXvJtXFDUQ7kNvwHWP1o3&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPN3pNXcCmplahxQ9BAZ462MjZYk0AA-zXL13MedzyLfA&oe=6AD95ED1&_nc_sid=bc0c2c"
+      ],
       "kind": "social_post_review",
-      "reason": "Food mentioned without an explicit free-food promise"
+      "reason": "Caption and image evidence need review together before publishing",
+      "needs_visual_review": true
+    },
+    {
+      "title": "dmscf first fellowship! 🇲🇾🇸🇬",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DefsNShiHLR/",
+      "post_id": "social-fdc0e65242ab8ae2dd",
+      "society": "Malaysia Singapore Christian Fellowship",
+      "evidence": {
+        "caption": {
+          "text": "dmscf first fellowship! 🇲🇾🇸🇬\n\nso good to finally meet everyone! can’t wait for the next fellowship 💪🔥",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "Sweet friendships refresh the\n\nsoul and awaken our hearts\n\nwith joy,\n\nfor good friends are like the\n\nanointing oil\n\nthat yields the fragrant\n\nincense of God's presence.\n\n=\n\nGD,\n\n‘\n\n% t\n\n4.\n\n\\~\n\n4\n\nif\n\nv4\n\na",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "c7dcb585b14c123b29646709",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/846809145_18107156888123074_4607984117823996218_n.jpg?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=Rdc-DxKHg6AQ7kNvwGnU6Z8&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQO2qYdqKcamuBW0CgyDdmkTWhXBEZFzztj5AmRpIqnPag&oe=6AD946DC&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Hello everyone! Join us for our blood glucose talk on Wednesday 21 Oct!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Deew0AVCAm5/",
+      "post_id": "social-fb6e3a4e30e2b980bd",
+      "society": "Health & Wellbeing Society",
+      "evidence": {
+        "caption": {
+          "text": "Hello everyone! Join us for our blood glucose talk on Wednesday 21 Oct!\n\nWed 21 Oct · 7-8:30pm · ER143\n\nIt's a 20-minute talk learning about the impact of foods on our entire biology: how the foods we eat affect our blood glucose and, in turn, our health and experience of life, with an impact on our bodies now and in the long term, and what you can do about it. Including understanding why we get tired after lunch, crave sweet things, feel hungry again so soon, struggle to focus and struggle to lose weight, and how we can super easily improve it.\n\nThere'll be time to chat and ask questions afterwards, as we're all learning together! It's for everyone and no science background is needed. It's general information, not medical advice.\n\nHope to see you there ❤️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "A 20-MINUTE TALK\n\nBlood glucose\n\ntalk\n\nWed 21 Oct - 7-8:30pm\n\nEveryone welcome!!!\n\nhand Wi",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "161236071f42d91415097d71",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/848014602_17913225867499949_6626956290198029874_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=ZGJcIU9xN2gQ7kNvwEWbZQ_&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQMcLz6smIHErRjq_d6wbV4Nuk0qKtoptk4hl3dt7lAYrw&oe=6AD95B0D&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Please note that make your own tea has moved to Wed 4 Nov (it was Fri 6 Nov) and the relationships talk has moved to Mon 7 Dec (it was Tue 1 Dec), so ",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeeFC3RkYhi/",
+      "post_id": "social-ee8d7af0053306162b",
+      "society": "Health & Wellbeing Society",
+      "evidence": {
+        "caption": {
+          "text": "Please note that make your own tea has moved to Wed 4 Nov (it was Fri 6 Nov) and the relationships talk has moved to Mon 7 Dec (it was Tue 1 Dec), so update your diaries!\n\n📢Here's what's still to come this term! 🙌\n\nPut the dates in your diaries: blood glucose talk, November plan, make your own tea, \"Is it healthy?\", how we can optimise our performance and a relationships talk.\n\nMore details will be released closer to each event, so keep an eye out! In the meantime, join our WhatsApp group (QR code on the last slide) to ask any questions. ❤️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "MICHAELMAS TERM 2026 - UPDATED\n\nWhat's still to come\n\nHealth and Wellbeing Society\n\noe\n\n“Is it healthy?” discussion\n\nHow we can optimise our\n\nGm)\n\nperformance discussion\n\n(CSLDEE )\n\nRelationships talk\n\nMore will be announced\n\ncs\n\nas our term goes on!\n\nAdd them to your diary!",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "e5007edc8a20059fa8d0f3c2",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/847386823_17913223743499949_8661094796688688657_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=ZbbS8QOAFVQQ7kNvwFXBfH-&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOI_L5y4OwdIOk66hu8XeeJcczJJnTtZ4jUve6yegi_xQ&oe=6AD941C7&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
     },
     {
       "title": "Join the Anime and Manga Society for a day of Japanese culture, food, and festival fun at Teikyo University of Japan in Durham :D",
@@ -236,6 +383,72 @@
       "reason": "Food mentioned without an explicit free-food promise"
     },
     {
+      "title": "Night vision activated 🌙",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeZ5EaUEag3/",
+      "post_id": "social-1e3de2479c3c349e5d",
+      "society": "Vegetarian and Vegan",
+      "evidence": {
+        "caption": {
+          "text": "Night vision activated 🌙",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "a |\n\ni}\n\ni\n\n-\n\ni)\n\nx\n\n».\n\n\\»\n\nAlt\n\nic\n\ni\n\nLe\n\na,\n\nge\n\na\n\n—s\n\nc\n\nZa\n\nWEE\n\ni\n\nZa\n\nZa\n\n\\\n\n(\n\n>\n\n4",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "9da2543f6957b6dc1ca16791",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/846221437_18153195769551967_4961770178721624331_n.webp?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=8PQBUu4X7AcQ7kNvwFWa6tL&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQNPyxXz7r91tCQkT6pzE9Zw2Y7XUlz8HloPz8Gok9T6PA&oe=6AD933AE&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "fellowship night #1 · 14.10 · 7pm @ lizzie’s 🙌🔥",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeXEwo3iNAw/",
+      "post_id": "social-14da5e07bbdf6d4440",
+      "society": "Malaysia Singapore Christian Fellowship",
+      "evidence": {
+        "caption": {
+          "text": "fellowship night #1 · 14.10 · 7pm @ lizzie’s 🙌🔥\n\nwe’ll be having a fun time of fellowship and Bible study :) looking forward to seeing everyone! 💐\n\nfull address in whatsapp gc (sign up via link in bio to be added in)",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "Mow)\n\nTe\n\n+ By\n\new\n\nPPM 14/410 WED a LIZZIE'S (HATSAPP GC FOR LOCATION)\n\nSB om gs\n\nWw\n\nGonser",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "916d12439a7b932f054eb1cb",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/845747313_18106481333123074_4324985985405345478_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=YvH1iCM0AZ0Q7kNvwFCkg7N&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOWhkJ85oYx8sDUs1cix849K3cqHdmLiPRHWksOltRhyQ&oe=6AD93068&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
       "title": "⚠️🚨FIRST SOCIAL OF THE YEAR!🚨⚠️",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeUJgJzO0fg/",
@@ -245,19 +458,247 @@
       "reason": "Food mentioned without an explicit free-food promise"
     },
     {
+      "title": "Today’s coffee social was amazing 🌟🌟",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeSOzqgkSGg/",
+      "post_id": "social-e118a49a74b095a687",
+      "society": "English Literature (D.U.E.L.S)",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "It was amazing seeing everyone at the Toga Bar Crawl last Tuesday! We’re excited to close out week 1 with a Freshers’ coffee morning!!☕️🫖🏆🏛️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeRQ20kA1b1/",
+      "post_id": "social-a9c46faccaff0e2707",
+      "society": "Classics",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Come along to our coffee afternoon on Monday in the SU. Drop in anytime between 1-3PM to make new friends, learn more about WIPS, or just have a chat ",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeOqKkXIobh/",
+      "post_id": "social-16045a23d58fe42a53",
+      "society": "Women in Politics Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
       "title": "☕️🍵Coffee morning",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeMw-65IpG2/",
       "post_id": "social-443510db99036bb474",
       "society": "Durham AI Safety Initiative",
+      "evidence": {
+        "caption": {
+          "text": "☕️🍵Coffee morning\n-\n🗓️10th October\n🕚11:00-12:00\n📍Whitechurch Durham\n-\nThis Saturday (10th October 2026), we’ll be hosting our first coffee morning of the academic year! Coffee mornings are a springboard into the philosophy behind AI safety, AI ethics, AI consciousness, and other tangential topics. No background knowledge is required, and anyone is welcome. Likewise, who doesn’t love free coffee and a slice of cake?",
+          "free_food": "free coffee"
+        },
+        "image_ocr": {
+          "text": "FFEE\n\nMORI.\n\nI\n\nVv\n\nWH\n\nU\n\n11:00-12:00 10TH OCTOBER\n\nZ\n\nae\n\noN\n\naK\n\n %",
+          "free_food": null,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "e679c83b85cea5170e5a65c2",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/838939314_17981967069094081_6358430271826354490_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gFy3AGI3u03kuuCysduce2x3u7mILyDKjwjK5Qltj6Yn4WPMKA0rVTpb24we9SMDRM&_nc_ohc=uB3QazHehroQ7kNvwHJ4roA&_nc_gid=oYTDJ6P_zcNu9VNdCDFYsQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQMq1_wa_-rM5XSXAfPx13FbYdnAHMtAyLiE3_K9Y9oFsw&oe=6AD93499&_nc_sid=bc0c2c"
+      ],
       "kind": "social_post_review",
-      "reason": "Mixed explicit and relative date references need review"
+      "reason": "Caption and image evidence need review together before publishing",
+      "needs_visual_review": true
     },
     {
       "title": "Come along to our first session of term! We will share food and play games together to get to know one another. Everyone is welcome!",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeMkfvujGuT/",
       "post_id": "social-5caa38ceeb18b49fc9",
+      "society": "Inclusive Christian Movement Durham",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Hello everyone! This Saturday is World Mental Health Day, so come along to our mental health discussion!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeMZ9DKiJUs/",
+      "post_id": "social-3aa88a9d4b260f1c04",
+      "society": "Health & Wellbeing Society",
+      "evidence": {
+        "caption": {
+          "text": "Hello everyone! This Saturday is World Mental Health Day, so come along to our mental health discussion!\nSat 10 Oct · 2-4pm · TLC040\nIt's an open, relaxed conversation to learn what each other know about mental health and how to improve it. Everything from what causes it to what strategies work. It's for everyone, there's no pressure to share anything, and you can come and talk about something else if you like, as mental health is just the theme.\nHope to see you there ❤️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "RRS\n\nhe\n\nWORLD MENTAL HEALTH DAY\n\nMental health\n\ndiscussion\n\nSat10 Oct - 2-4pm\n\nTLCO40\n\nEveryone welcome!!!\n\nHealth and Wellbeing Society",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "fed69c18b7193aa6ec104105",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/837858231_17912229102499949_6337800012773106194_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=lBH0YUuZ2XAQ7kNvwFws0xV&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPh1zX9Z5roMmxvUzKzrykKE0nVc65kbw_XlOGEIZwAaw&oe=6AD93D62&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "FIRST THURSDAY SESSION OF THE YEAR!!! We’ll be hosting an introductory session with free pizzas and drinks 👀👀👀 Come along to learn a bit about the bas",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeK21vgN4x0/",
+      "post_id": "social-598528574f1a7b0543",
+      "society": "Bridge Club",
+      "evidence": {
+        "caption": {
+          "text": "FIRST THURSDAY SESSION OF THE YEAR!!! We’ll be hosting an introductory session with free pizzas and drinks 👀👀👀 Come along to learn a bit about the basic rules and play in the world’s best card game😁",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "en °@ ©)\n\nWL\n\n©? 05\n\n‘CY,\n\nBeginner’s\n\n)\n\nSession with\n\nFREE PIZZA AND\n\nDRINKS!\n\naS\n\nJOIN US FOR AN INTRODUCTION\n\nSESSION AIMED AT COMPLETE\n\nBEGINNERS -\n\nALL WELCOME!!!\n\nounon\n\nCA\n\n‘G)\n\nny\n\nMEET IN KINGSGATE\n\nAT THE STUDENT\n\nLIAIIOQALIL\n\nCGAAQ9?\n\nFEN",
+          "free_food": "FREE PIZZA",
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "5e641e5d182230e9e3cc011a",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/839280662_18028574006913343_3523312562897336487_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fktw4-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gHu_v4EAcw1ZPv1etRkT5u8_rpUb36CDYOvfbeEzRPBXLBMyaWpg-32iANGk1fhy9g&_nc_ohc=VFHKf0gAEPoQ7kNvwH4Dz6P&_nc_gid=oyIinYmpc9fL3i7e8y6O2w&edm=APU89FABAAAA&ccb=7-5&oh=00_AQMuC8fcGO7A5Nb4_hqWF4VZRR6TfqJk1gNBZbdfT6TD7w&oe=6AD951EC&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Caption and image evidence need review together before publishing",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Update: make your own tea has moved to Wed 4 Nov and the relationships talk has moved to Mon 7 Dec. See our latest post for the full list of dates! 🙌",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeJ75PpjMvw/",
+      "post_id": "social-f9890a68263922f2f2",
+      "society": "Health & Wellbeing Society",
+      "evidence": {
+        "caption": {
+          "text": "Update: make your own tea has moved to Wed 4 Nov and the relationships talk has moved to Mon 7 Dec. See our latest post for the full list of dates! 🙌\n\n📢 Hello everyone! Here's what we've got planned for Michaelmas term! 🙌\n\nPut them in your diaries now: mental health discussion, blood glucose talk, November plan, make your own tea, \"Is it healthy?\", how we optimise our performance and a relationships talk.\n\nMore details will be released when we get them, so keep an eye out! In the meantime, join our WhatsApp group (QR code on the last slide) to ask any questions. ❤️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "MICHAELMAS TERM 2026\n\nWhat's coming up\n\nHealth and Wellbeing Society\n\n“Is it healthy?” discussion\n\nHow we optimise our\n\nGr\n\nperformance discussion\n\nRelationships talk\n\nMore will be announced\n\nC=)\n\nas our term goes on!\n\nAdd them to your diary!",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "d9e5c4c7774cb9946621c6e0",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/837268819_17912098473499949_59238586354082816_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=s7uKRKBzerUQ7kNvwEP5C79&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPaULKTGpvuxKhALthouvxVbAWVnrVZHbH9UtlmuiuEJQ&oe=6AD930C5&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Want to get to know the people behind DILS? Come along to our Meet the Exec Coffee Chat and meet the team, ask us anything about the society, and find",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeJvyNUtyST/",
+      "post_id": "social-92ba62f3703a512d52",
+      "society": "International Law Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Looking for advice on navigating society events alongside your law degree? Or curious about what ELSA Durham has in store this year? ",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeJvQJjosLN/",
+      "post_id": "social-d9a52c35ec296dafd7",
+      "society": "European Law Students' Association",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "C O F F E E  D R O P  I N ☕️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeHixV3AfNb/",
+      "post_id": "social-3335ac3b1eac61c88e",
+      "society": "Geographical",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "If coffee mornings are more your vibe, come join the exec for coffee chat at Leonard’s next Thursday. The first 30 people to join will get a free cup ",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeHeRa-Ms8k/",
+      "post_id": "social-005c4ead300a05d918",
+      "society": "Bar Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "I hear you ask, “what’s going on at Durham CU this week?”",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeEzLTAjTkX/",
+      "post_id": "social-0c7923242393ceeeaf",
+      "society": "Christian Union",
+      "evidence": {
+        "caption": {
+          "text": "I hear you ask, “what’s going on at Durham CU this week?”\n\nLook no further. Here is what’s on this week, please do come along!\n\nWe would love to see you there 🕺🙌🏼🔥",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "DURHAMCU.ORG\n\nTHIS WEEK",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "e486badf8311788a32d98ce5",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/834678160_18639317623038286_4241789231588354426_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGF8WFTL8gHS5ytgNIzo33yuBJoPS4tWKu6KrGRLcNcU5SR1HuBd5FjCoSNvsxf7SUV8TfBXFA8FXT2aUP5KJzP&_nc_ohc=WuVcRNm-AqoQ7kNvwGofCOH&_nc_gid=fRYTllRPpqnVIIeMfE1imw&edm=APU89FABAAAA&ccb=7-5&oh=00_AQM8qK4nJGczTCGp61AZnF4WphBSzGx9r3lns13iRK-hVQ&oe=6AD95919&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Durham City Methodists are hosting a welcome lunch tomorrow, after their 10:30am service. The service will last around an hour. You’re welcome to come",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeCCVxKs8wT/",
+      "post_id": "social-ac95d2b5233b630a77",
       "society": "Inclusive Christian Movement Durham",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
@@ -272,13 +713,112 @@
       "reason": "Multiple or unsupported relative event dates need review"
     },
     {
+      "title": "Join us for a relaxed evening to meet the Pro Bono Society Exec, get to know fellow members, and have a chat about what we have planned for the year a",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd_3IvEhqi9/",
+      "post_id": "social-7029040818d7823af5",
+      "society": "Durham University Pro Bono Society (DUPBS)",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
       "title": "Sisters’ Games Night is TOMORROW! 🎲 Free food provided!!",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/Dd9ulKdsnXp/",
       "post_id": "social-4ae8da5ab7cc37b657",
       "society": "Islamic Society",
+      "evidence": {
+        "caption": {
+          "text": "Sisters’ Games Night is TOMORROW! 🎲 Free food provided!!\n\n📅 Friday, 2 October\n🕔 Starts at 5 PM\n📍 Grey Prayer Room\n\nBring your friends and join us for a fun evening! 🎉\nSee you there, inshallah! 🤍",
+          "free_food": "Free food"
+        },
+        "image_ocr": {
+          "text": "SISTERS ONLY\n\nfo OF\n\n(©)\n\nGAMES\n\nNIGHT\n\nSisters, come along and enjoy an evening of\n\ngames and laughter!\n\nAt Grey prayer room\n\nStart at 5PM\n\nou\n\n@ @\n\nSS\n\n7e\n\n¢ 0\n\nOO\n\nIZ\n\nY/N",
+          "free_food": null,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "098489024f3ce0927f6e75a1",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/829072488_18443108335135080_1547943259115970995_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFXKy-u9u2n5JwToSl9V12HjNX3rSJZ_Ynf5XNKnd3l5mVsJT9xRs4Wd67ZJZs5yat6B1kUnjn9OyWBy74jQeGA&_nc_ohc=470UWJbmkWkQ7kNvwF5-0tx&_nc_gid=V-3u3VzA_WFjdP6NB2aBHg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQMhZoRtBxWb7-zUBsZaySjd0ACr3P1WuUy5QbFWlOUtDg&oe=6AD94496&_nc_sid=bc0c2c"
+      ],
       "kind": "social_post_review",
-      "reason": "Mixed explicit and relative date references need review"
+      "reason": "Caption and image evidence need review together before publishing",
+      "needs_visual_review": true
+    },
+    {
+      "title": "First of all, we'd like to thank @effectivealtruismdurham for sharing their table with us yesterday at the fresher's fair, and another big thank you t",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd8xdpACLlU/",
+      "post_id": "social-fe80c7db89fcc86855",
+      "society": "Durham AI Safety Initiative",
+      "evidence": {
+        "caption": {
+          "text": "First of all, we'd like to thank @effectivealtruismdurham for sharing their table with us yesterday at the fresher's fair, and another big thank you to all of you who stopped to chat with us! \n-\nJoin us for our first event of Michaelmas, where we will be joined by Iyngkarran Kumar, a Research Associate currently contracted by Google DeepMind via Adecco to research frontier AI safety risks. \n-\nThe vision is to provide further insight into why those on the fringes of this field should still be concerned about the risks posed by advanced AI. A broad overview of the pathways to harm and recent incidents where these risks have played out in real time will provide students seeking a broader understanding of the AI sector with the relevant facts and objectives.\n-\nLocation: Elvet Riverside 1, ER142\nDate: Thursday 8th October\nTime: 18:30 - 19:30",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "WITH\n\nee\n\na\n\nIYNGKARRAN. KUMAR\n\nResearch Associate (Contract) @ Google DeepMind, via Adecco\n\nTHURSDAY 8TH OCTOBER | 18:30 — 19:30] ER142",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "16a6ae880863dac6bbc719e6",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/831768824_17981071905094081_141568078736352513_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gFy3AGI3u03kuuCysduce2x3u7mILyDKjwjK5Qltj6Yn4WPMKA0rVTpb24we9SMDRM&_nc_ohc=lhTDlRblELIQ7kNvwFUNhA4&_nc_gid=oYTDJ6P_zcNu9VNdCDFYsQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOoc9is3caa-BxP-qUb1FpnR0IRGCCkii_0OHIOIaFflQ&oe=6AD954E5&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "🙌 THANK YOU to everyone who came to say hello at the Welcome Fair! It was brilliant meeting so many of you ❤️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd8ptFLkWx-/",
+      "post_id": "social-6983358efad5fec3e7",
+      "society": "Health & Wellbeing Society",
+      "evidence": {
+        "caption": {
+          "text": "🙌 THANK YOU to everyone who came to say hello at the Welcome Fair! It was brilliant meeting so many of you ❤️\n\nScan the QR code on the next slide (or use the link below) to join our WhatsApp community to get up-to-date info on what's coming up, ask any questions you like and keep the conversations going!\nhttps://chat.whatsapp.com/G2iSNKGYw2JK5M5iorewcK\n\nWant to join the society officially? Link in bio to join on the SU website. It's completely free, so there's nothing to lose!\n\nWe look forward to seeing you at our events and we will be releasing an agenda soon!",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "WELCOME FAIR 2026\n\nil ime\n\n—\n\nTHANK YOU\n\n1Oly\n\nLO\n\nif\n\nHt\n\nSa\n\n—\n\ni oa\n\ncay\n\niaray |\n\n: ~~\n\n~\n\n~ Soe\n\net\n\nry,\n\ner,\n\n%\n\nasi\n\n‘\n\nLa\n\n——\n\n—_\n\nky\n\na\n\n4\n\n=\n\n/\n\n|\n\nSwipe to join the community —>\n\nHERALTH\n\ni\n\n‘ome and say hello!",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "d4b61f7ca7710c31d5a726cc",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fsvq2-2.fna.fbcdn.net/v/t51.82787-15/833107081_17911325178499949_2287202660033266124_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq2-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gESjpszbaU4lnX-cZP4uANQycQmpwobSFGxh48veUtCaD2ZHBZlwpNCr89Vr-zB2rQ&_nc_ohc=Q0xBdBahuNsQ7kNvwF5m-pg&_nc_gid=U2p6cExu3fLBETLGsWD15Q&edm=APU89FABAAAA&ccb=7-5&oh=00_AQNlAog_-YyzllPkUID6XI_CPO5KvQP5lJ0Eofy94rVFvg&oe=6AD93FB6&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
     },
     {
       "title": "We loved meeting you all today at the freshers fair. If you missed us or want to meet even more of the society then join us at our annual welcome pizz",
@@ -290,13 +830,121 @@
       "reason": "Food mentioned without an explicit free-food promise"
     },
     {
+      "title": "⭐️Introducing the 2026/2027 Vegsoc exec!!⭐️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dd11S8cCOHM/",
+      "post_id": "social-d991d49957bb6b3d38",
+      "society": "Vegetarian and Vegan",
+      "evidence": {
+        "caption": {
+          "text": "⭐️Introducing the 2026/2027 Vegsoc exec!!⭐️\n\nVegsoc is back with exciting plans for the the coming academic year \nMake sure to visit our stand at the freshers fair on Wednesday the 30th :)\n🍄🌿🥬🐰💚",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "——\n\nrem,\n\nPa Le\n\nPp\n\na\n\na\n\noi\n\ntee |\n\nLi\n\nfi\n\nA)\n\ney\n\nd\n\np\n\nmeet\n\nalle, -P\n\np,\n\n— waa.\n\ndj\n\n| f\n\nvf\n\nfr)\n\n“i\n\ne 2\n\n\\ a ize W\n\nSs\n\n<€\n\nnemeom\n\nmare",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "7099e8f242ada9be2dabb474",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/830137888_18151040404551967_3277821911678066520_n.webp?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=hwKAJmIPdh4Q7kNvwG-DMy_&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPZ5YbgWVT1T4GosJqyPsKTfx0SX3AOC7FXnZCF0jCfVA&oe=6AD94037&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
       "title": "📣 IT’S FRESHER’S WEEK ‼️",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/Dd1Vkf_DRE8/",
       "post_id": "social-7a36f4d4ffe2f24ef4",
       "society": "Christian Union",
+      "evidence": {
+        "caption": {
+          "text": "📣 IT’S FRESHER’S WEEK ‼️\n\nWe have lots of events happening this week and we’d love to see you coming along to them!\n\nHave a look 👀👉\n\nFresher’s Bring and Share Picnic\n🗓️ Tuesday 29th September\n📍 The Racecourse\n⏰ 2pm-3:30pm\n\nCoffee and Cake\n🗓️ Thursday 1st October \n📍 St Nics, Durham Marketplace*\n⏰ 2pm-4pm\n\n*NOTE: the location of the coffee and cake has CHANGED. It is NOW being held at St Nic’s, Durham Marketplace NOT at Dunelm House, Durham SU.\n\nParkrun and Pancakes\n🗓️ Saturday 3rd October \n📍 Maiden Castle (for Parkrun), outside Starbucks at Elvet Bridge (for just Pancakes)\n⏰ 8:50am (for Parkrun), 9:45am (for just pancakes) \n\nIf Parkrun is not your thing then we’d still love you to come for pancakes - meet outside Starbucks (Framwelgate Bridge) at 9:45am where there will be a walkdown with some CU members to the location of pancakes!\n\nThere will be gluten free options available!",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "FRESHERS\n\nWHAT'S ON\n\nTHIS WEEK\n\n—>",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "1c3678895ed80863b7e0c664",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/828018361_18637166296038286_3824400592696862293_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGF8WFTL8gHS5ytgNIzo33yuBJoPS4tWKu6KrGRLcNcU5SR1HuBd5FjCoSNvsxf7SUV8TfBXFA8FXT2aUP5KJzP&_nc_ohc=2kVPtPqCsxAQ7kNvwGaWVRI&_nc_gid=fRYTllRPpqnVIIeMfE1imw&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPGClRjgVtplNv_iYE94r4Eo_-Mbqf2V8Gq38rwdlNAxQ&oe=6AD93166&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Meet Shade, instant noodle society’s secretary!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dds25OEIgbY/",
+      "post_id": "social-8686f17432afa2eef5",
+      "society": "Instant Noodle Society",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "🍜🍜🍜",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Ddo1eFzhD-n/",
+      "post_id": "social-d34718f4893271ec17",
+      "society": "Instant Noodle Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "🗓️ 【 Term 1 聚會 Schedule 出爐！ 】 ",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DdlyySICnU4/",
+      "post_id": "social-8a81c569b5d678ed7d",
+      "society": "Durham Chinese Christian Fellowship",
+      "evidence": {
+        "caption": {
+          "text": "🗓️ 【 Term 1 聚會 Schedule 出爐！ 】 \n新學期開始，大家準備好了嗎？❤️‍🔥\nTerm 1 聚會內容包括：迎新遊戲、主題分享、專題查經、問答環節、詩歌分享及禱告會等。不論你是想探索信仰的新朋友，還是想建立屬靈同路的基督徒，都歡迎加入我們！\n\n星期五的團契若設有晚餐，活動將於晚上六點半開始，而正式聚會時間則為晚上七點半。\n\n我們每周日下午兩點也有主日崇拜，也歡迎所有有興趣的弟兄姊妹出席 ❤️\n\n 💡 迎新福利：第一次出席的新朋友可享用免費晚餐 🍚（其後聚會晚餐費用也只是£4)\n詳細日期、地點及時間請參閱圖中 Schedule。如聚會安排有任何調整，我們將透過社交平台即時公佈 🔔 如有任何問題，歡迎dm我們！",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "TERM 1: 48+ FARE\n\nARR\n\nPy)\n\nSoBh\n\nBEER 2\n\n30/9\n\nFreshers’ Fair\n\nMaiden Castle\n\nN/A\n\nWeek 1:\n\nNorth Road Methodist\n\n09/10\n\nChurch\n\nWelcoming & Games\n\nWeek 2:\n\n16/10\n\nBF&e- wat\n\nElvet Methodist Church\n\n23/10\n\nWeek 3:\n\nElvet Methodist Church\n\nRBS\n\nWeek 4:\n\n30/10\n\nFUR\n\nElvet Methodist Church\n\nWeek 5:\n\nElvet Methodist Church\n\n06/11\n\nme\n\nWeek 6:\n\n13/11\n\nElvet Methodist Church\n\nBae\n\n‘4\n\n’\n\ni\n\nv\n\n@DGCE22 62%\n\naneees",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "c9e01657d5a2c564944bdd81",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fnap2-1.fna.fbcdn.net/v/t51.82787-15/818062535_18091836101655492_2717601534275379993_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fnap2-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFtMNiasnoy7luGVf48XP1wAETSsLfwFbfWyTuqCYcT-_SlVFYQhyz42_bQ3zH9RMw&_nc_ohc=uGnMbnTxWNQQ7kNvwEz6Xmb&_nc_gid=EgIIVNonX1YyKHA2uVAYxg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQP7s8F7fE7Lt21F8Jg3kIC2mMIQMfQGUpQOsX9q3ZKEtg&oe=6AD958AA&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
     },
     {
       "title": "🌟Join the AW26 cohort of DAISI's Foundations of AI Safety Fellowship, starting at 18:30 BST on Thursday 15th October (subject to change due to fellow ",
@@ -304,8 +952,197 @@
       "source_url": "https://www.instagram.com/p/DdlrJSWCApx/",
       "post_id": "social-08307e0da2d64c2534",
       "society": "Durham AI Safety Initiative",
+      "evidence": {
+        "caption": {
+          "text": "🌟Join the AW26 cohort of DAISI's Foundations of AI Safety Fellowship, starting at 18:30 BST on Thursday 15th October (subject to change due to fellow availability).🌟\n\nThis is a chance to build a strong foundation in AI safety, get involved in Durham’s community, and eat free Rudy's pizza with lots of like-minded people!\n\nWe're running a free 8-week programme to help students develop their big-picture understanding of AI safety and AGI.\n\nThe fellowship consists of a 90-minute session each week between 18:30 and 20:00, where you will meet with a group and a facilitator to read, discuss, and debate how advanced AI develops, the pathways to harm, and the narrative portrayed in the media. You'll be placed in a group of applicants with similar AI safety experience and interests to ensure your engagement with the content. The curriculum covers foundational arguments in AI safety and helps you build a strong basis for your future decisions in the field. \n\nApply now through the link in our bio! The deadline for applications is Friday 9th October.",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "CURIOUS ABOUT\n\nATS BIGGEST\n\nCHALLENGES?\n\nSC als SI pees NIGH CST)\n\nApply now to join the AW26 cohort of our selective\n\n8-week programme, starting 15th of October,\n\ncovering how advanced AI develops, the pathways to\n\nharm, and the narrative portrayed in the media. It\n\ninvolves weekly discussion—based sessions and\n\nincludes a certificate upon completion.\n\nApplication—basedpbut open to’anyone!\n\ndurhamaisafety.\n\nFriday, 9th October",
+          "free_food": null,
+          "status": "complete",
+          "coverage_complete": true,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "f892cc82cb74232f1864058f",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/820292147_17979733086094081_557023373831147755_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gFy3AGI3u03kuuCysduce2x3u7mILyDKjwjK5Qltj6Yn4WPMKA0rVTpb24we9SMDRM&_nc_ohc=k8tMr59z4foQ7kNvwGZGf23&_nc_gid=oYTDJ6P_zcNu9VNdCDFYsQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPiDYLFRnNK0xaVw9B4i_jNzxN8U24iYd0DyVlOBgpPmQ&oe=6AD94FAE&_nc_sid=bc0c2c"
+      ],
       "kind": "social_post_review",
-      "reason": "Food mentioned without an explicit free-food promise"
+      "reason": "Caption and image evidence need review together before publishing",
+      "needs_visual_review": true
+    },
+    {
+      "title": "📣We're back!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Ddlo-6KCNvR/",
+      "post_id": "social-1511e6740b6945c4cd",
+      "society": "Durham AI Safety Initiative",
+      "evidence": {
+        "caption": {
+          "text": "📣We're back!\n\nDurham Artificial Intelligence Safety Initiative (DAISI) is excited to be running a range of events and programmes this term to help students engage with AI safety - from introductory fellowships to policy hackathons, mixed socials, and watch parties (some in collaboration with Durham Effective Altruism). \n\nHere are a few highlights you won't want to miss:\n⭐Introduction to AI safety talk by Google DeepMind Research Associate Iyngkarran Kumar (18:30 BST, Thursday 8th October) - Kick off the term with an overview of AI safety, our work, and guidance on how to get involved. \n⭐Foundations of AI Safety Fellowship: AW26 (Starts 18:30 BST, Thursday 15th October) - Applications are now open for our selective 8-week programme covering how advanced AI develops, the pathways to harm, and the narrative being portrayed in media. It involves discussion-based sessions and includes a certificate upon completion (Application form linked in bio!).\n\n👉Check out our website to learn more about what we’re planning for this term and how to get involved: https://durhamaisafety.uk\n-\n-\n-\n-\n-\n#aisafety #aiethics #durham #durhamuniversity #durhamuni #computerscience #philosophy #ai #ethics #aigovernance #aialignment #politics",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "TERM\n\nDurham AI Saf\n\ntive (D\n\nto be running a\n\nof events\n\nthis term to help\n\n— from introd\n\neget!\n\nhackathons,\n\nals,\n\nSEE THE NEXT SLIDE FOR\n\nEVENTS YOU WON'T W.\n\no>\n\ndurhamaisafety.uk",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "d385176410774b723a551284",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/820180390_17979730551094081_3294393670369930757_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gFy3AGI3u03kuuCysduce2x3u7mILyDKjwjK5Qltj6Yn4WPMKA0rVTpb24we9SMDRM&_nc_ohc=AxvqxDLrK3oQ7kNvwGTqyVX&_nc_gid=oYTDJ6P_zcNu9VNdCDFYsQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOlqE9B7YO7Uq22KqbvfGFSmu-A4KFY55RrfCUoAANsCA&oe=6AD95D51&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Exciting things coming this Monday 👀",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DdbYDdTNSVt/",
+      "post_id": "social-a8a8553a3b5a9abf47",
+      "society": "Christian Union",
+      "evidence": {
+        "caption": {
+          "text": "Exciting things coming this Monday 👀",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "! :\n\n. «\n\ni a\n\nFRESHERS LAUNCH\n\nMonday, 21 Sep 2026",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "9b046b32e1482e11b45d1e94",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/814535093_18633645736038286_2019967095978028643_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGF8WFTL8gHS5ytgNIzo33yuBJoPS4tWKu6KrGRLcNcU5SR1HuBd5FjCoSNvsxf7SUV8TfBXFA8FXT2aUP5KJzP&_nc_ohc=htJcQ2-x2h8Q7kNvwHhMXdA&_nc_gid=fRYTllRPpqnVIIeMfE1imw&edm=APU89FABAAAA&ccb=7-5&oh=00_AQOJrik4gJafVnWmlJCMCqlWpPbqbF0ab3k0PVzW-Ni8fA&oe=6AD93102&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "meet the 26/27 DMSCF exec team",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DdVkIyNAaB-/",
+      "post_id": "social-5bad06c5d95e3f24b2",
+      "society": "Malaysia Singapore Christian Fellowship",
+      "evidence": {
+        "caption": {
+          "text": "meet the 26/27 DMSCF exec team\n\nhere to serve you, one another and most importantly, serve God 🇲🇾🇸🇬🇬🇧\n\nwe can’t wait to journey with you this year 🙌🙌",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "Lf\n\nKaw\n\nLzneg\n\nds\n\nDU YURH/\n\nM MILos\n\nSIMG AY\n\nco. CH\n\nmeet the 26/27 eat\n\nrer (AMV\n\nFELLOWH\n\neo\n\nomscr",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "3d68a803c0155e693c163dc8",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/795662387_18100372475123074_703348121329361495_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=sdIh-eMV2u0Q7kNvwGm0bL1&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQP0i13EGDE6IDfM5cXS-LME-JEVRy6T_EdYDfWMGcOp8g&oe=6AD93F31&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "DMSCF 26/27 is LIVE!! 🇸🇬🇲🇾🇬🇧",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DdVjhkDAdR4/",
+      "post_id": "social-4c401dfbafdf6b2fa5",
+      "society": "Malaysia Singapore Christian Fellowship",
+      "evidence": {
+        "caption": {
+          "text": "DMSCF 26/27 is LIVE!! 🇸🇬🇲🇾🇬🇧\n\nJoin us today to grow in faith away from home 🙌",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "ee\n\n=,\n\n[else tm]\n\nOty\n\npdm &\n\n—S\n\n- *\n\neS se\n\n==,\n\nRH\n\nM-\n\nY SIAN é SINGA\n\nEANN\n\naes\n\nTt OWSH)\n\na\n\nA flows om pha and vt singapore ss\n\nanother\n\n~ Me ,\n\nwf\n\nZa\n\n\\) CID,",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "d43c827991b84f289ae9c69e",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/797024129_18100371737123074_7633656391221044331_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEURVmyLA8O8A7NPPtGQqnNJIOfBq1XYw61__tZppG38sUXe7gdeu01ZxBGd54yrOSGufxVHQKuRvAXoet1SCQq&_nc_ohc=DLmbo_TTPwgQ7kNvwF1861p&_nc_gid=v0c37Zq85ur2R1HGOdF3hQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPA0kp98ckmGE0wZV1L-TOvLJmfu_zp-2_C5O5ykIMQ3g&oe=6AD964EC&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Appreciate the sights and sounds of Freshaway without any distractions 🔥🔊",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DdNBY2EttHA/",
+      "post_id": "social-5c311767236d7fd553",
+      "society": "Christian Union",
+      "evidence": {
+        "caption": {
+          "text": "Appreciate the sights and sounds of Freshaway without any distractions 🔥🔊\n\nWe hope all those who came to Freshaway had a great time (we certainly did). It was so good to meet you all!!\n\nFear not for those who did not make it, we have a bunch of things planned for Freshers with more details to come! \n\nKeep your eyes peeled 👀",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "we\n\nfieshavigy without trending \"i \\\n\na,\n\nig \\\n\n,\n\nae\n\nak\n\nCal?\n\nanf\n\nca,\n\nee\n\nv\n\n£-",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "202fe26ce07dd97f09f0decc",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/800165149_18631802452038286_5643238601474849020_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGF8WFTL8gHS5ytgNIzo33yuBJoPS4tWKu6KrGRLcNcU5SR1HuBd5FjCoSNvsxf7SUV8TfBXFA8FXT2aUP5KJzP&_nc_ohc=MQi-56jsPsMQ7kNvwEfM1r1&_nc_gid=fRYTllRPpqnVIIeMfE1imw&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPcWW3_3Chd0fSNfDDhKHVLEUSuwKwjv_xm8tGu_pepiw&oe=6AD954FC&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
     },
     {
       "title": "✨MEET THE EXEC✨",
@@ -315,6 +1152,114 @@
       "society": "Inclusive Christian Movement Durham",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Meet the 26/27 exec✨: Toby (Treasurer)",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/Dc3m6UXDWhQ/",
+      "post_id": "social-2d261f5a6bf9b729a1",
+      "society": "Meditation Society",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Exec form is out in bio 🍐 Apply now to get involved!!!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DXz_zoMDDXQ/",
+      "post_id": "social-9609826e1ba8ccbbd8",
+      "society": "Vegetarian and Vegan",
+      "evidence": {
+        "caption": {
+          "text": "Exec form is out in bio 🍐 Apply now to get involved!!!\nOpen to all, including 1st years. DM for any questions :)\n\n Let's make next year ⭐️ VEGTASTIC ⭐️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "og Mary\n\nAPPLICATIONS OPEN\n\nf President 3\n\na\n\nte,\n\n\\\n\nq\n\nSecretary\n\n15h 0 .\n\ny\n\nSoria Social sec\n\n6) * tase, ©\n\nLINK TO NOMINATE YOURSELF\n\n\\\n\nIN BIO",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "999bd48ec1cdc0e927037371",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/683200751_18135767704551967_9083151793397232802_n.webp?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFA2Vtzx81aGAxI-IIIF4F76hR7nh9DCcK6aNcKzRK2jIw1eOGTnOal4qH8QWqHXGM&_nc_ohc=pr0dFWPOdtEQ7kNvwHeFqTt&_nc_gid=6kitT_gXUdOmXLjBSthxEg&edm=APU89FABAAAA&ccb=7-5&oh=00_AQON1rtWPSw9zUObHQk5MeQSBGE8oCWRPdqwEdmLcePQLg&oe=6AD93FE2&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Let us know through the group chat if you’ll be attending!!!! We are so excited ♠️♥️♦️♣️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DRiSDn2D9fk/",
+      "post_id": "social-8099bf48b367cb87ec",
+      "society": "Bridge Club",
+      "evidence": {
+        "caption": {
+          "text": "Let us know through the group chat if you’ll be attending!!!! We are so excited ♠️♥️♦️♣️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "Did someone s(t...\n\nWa\n\n—=\n\nNG\n\nEOS OXES\n\nEXP\n\nAY\n\n>\n\nwe\n\nXS\n\nsek\n\nPu“",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "d9d2fa6da3b08d438a631732",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/587608596_17987506397913343_9062141632306638973_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fktw4-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gHu_v4EAcw1ZPv1etRkT5u8_rpUb36CDYOvfbeEzRPBXLBMyaWpg-32iANGk1fhy9g&_nc_ohc=HUfIa6uUm-4Q7kNvwFD9LEe&_nc_gid=oyIinYmpc9fL3i7e8y6O2w&edm=APU89FABAAAA&ccb=7-5&oh=00_AQP-96vbwzLZ_uW2OfWyh1EItweBUpuARfyrcSSlG1Q4Gw&oe=6AD934D1&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Long overdue… We present you with this years exec ♠️♥️♦️♣️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DRfHqnNDcJW/",
+      "post_id": "social-fb6d5971c25174981c",
+      "society": "Bridge Club",
+      "evidence": {
+        "caption": {
+          "text": "Long overdue… We present you with this years exec ♠️♥️♦️♣️",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "Long overdue...\n\n+\n\nPresenting our\n\nExec for the\n\nyear\n\n» 26\n\n—\n\nK\n\nawe! AO]\n\nv\n\n-\n\nq\n\nFWY,\n\n|\n\na4\n\n@durhambridgeclub",
+          "free_food": null,
+          "status": "partial",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 1,
+          "images": [
+            {
+              "image_id": "b6693bb425cfb6b0ea9c07dd",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "media_urls": [
+        "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/587705207_17987384447913343_5650465006440157477_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fktw4-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gHu_v4EAcw1ZPv1etRkT5u8_rpUb36CDYOvfbeEzRPBXLBMyaWpg-32iANGk1fhy9g&_nc_ohc=Mor-ha71hNIQ7kNvwEUwH4d&_nc_gid=oyIinYmpc9fL3i7e8y6O2w&edm=APU89FABAAAA&ccb=7-5&oh=00_AQPMSt1tUDRM0wrCTZNAyLpe95IKCgN71TuppqXZDYU5YQ&oe=6AD95A1A&_nc_sid=bc0c2c"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
     }
   ]
 }

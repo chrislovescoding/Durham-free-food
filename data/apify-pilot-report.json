@@ -1,0 +1,59 @@
+{
+  "collection": {
+    "created_at": "2026-10-17T13:22:40.189209Z",
+    "input": {
+      "username": [
+        "ducompsoc",
+        "duisoc",
+        "ais_durham",
+        "dubridgeclub",
+        "durham_cu",
+        "durhamvegsoc",
+        "durhamccf",
+        "dmscf.du",
+        "du.abacus",
+        "du_healthandwellbeing_soc"
+      ],
+      "resultsLimit": 5,
+      "dataDetailLevel": "basicData",
+      "includeMusicData": false,
+      "skipPinnedPosts": true
+    },
+    "requested_posts": 50,
+    "max_charge_usd": 0.25,
+    "phase": "dataset_saved",
+    "run": {
+      "id": "7EOGOoWdaamKJMH0W",
+      "actId": "nH2AHrwxeTRJoN5hX",
+      "status": "SUCCEEDED",
+      "startedAt": "2026-10-17T13:22:40.425Z",
+      "finishedAt": "2026-10-17T13:22:59.020Z",
+      "defaultDatasetId": "LKsceqXHcEh2A63Qr",
+      "usageTotalUsd": 0.0833,
+      "chargedEventCounts": {
+        "post": 49,
+        "post-details": 0,
+        "music-data": 0
+      },
+      "max_charge_usd": 0.25
+    },
+    "returned_items": 49,
+    "accepted_posts": 48,
+    "rejected_items": 1,
+    "note": "Actor run is capped. Post-run dataset access has separate platform costs. No paid image/model service is used."
+  },
+  "image_inspection": {
+    "generated_at": "2026-10-17T13:23:11.117313Z",
+    "engine": "tesseract-eng-psm11",
+    "posts": 48,
+    "posts_complete": 27,
+    "images_expected": 48,
+    "images_inspected": 48,
+    "images_cached": 0,
+    "images_downloaded": 48,
+    "downloaded_bytes": 7145911,
+    "images_failed_or_skipped": 0,
+    "notice": "OCR is machine reading, not verification. Read image text together with the organiser caption before publishing.",
+    "coverage_complete": false
+  }
+}

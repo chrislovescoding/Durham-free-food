@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T12:57:55.392381Z",
+  "updated_at": "2026-10-17T13:24:06.460122Z",
   "timezone": "Europe/London",
   "events": [
     {
@@ -81,12 +81,12 @@
       "url": "https://www.instagram.com/",
       "status": "partial",
       "parsed_count": 0,
-      "posts_stored": 417,
+      "posts_stored": 424,
       "account_count": 290,
-      "accounts_checked": 290,
+      "accounts_checked": 0,
       "accounts_with_posts": 0,
-      "last_attempt_at": "2026-10-17T12:40:13.285104Z",
-      "last_success_at": "2026-10-17T11:45:15.076711Z"
+      "last_attempt_at": "2026-10-17T13:23:10.927069Z",
+      "last_success_at": "2026-10-17T13:23:10.925350Z"
     },
     {
       "id": "social-facebook",
@@ -97,9 +97,9 @@
       "parsed_count": 0,
       "posts_stored": 0,
       "account_count": 154,
-      "accounts_checked": 115,
+      "accounts_checked": 0,
       "accounts_with_posts": 0,
-      "last_attempt_at": "2026-10-17T12:40:13.285104Z",
+      "last_attempt_at": "2026-10-17T13:23:10.927069Z",
       "last_success_at": null
     }
   ],
@@ -112,13 +112,13 @@
     "parse_error_count": 0,
     "live_event_count": 1,
     "reviewed_event_count": 1,
-    "candidate_count": 41,
-    "expired_count": 6,
+    "candidate_count": 74,
+    "expired_count": 0,
     "manual_errors": [],
-    "social_ingestion": "Public Instagram/Facebook posts are collected where exposed; full-directory coverage and account access status are in social-posts.json.",
+    "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
     "society_count": 319,
     "directory_status": "partial",
-    "social_post_count": 417,
+    "social_post_count": 424,
     "social_account_count": 444,
     "society_coverage": {
       "total_societies": 319,
@@ -127,7 +127,7 @@
       "societies_needing_accounts": 25,
       "societies_needing_attention": 204,
       "societies_stale": 0,
-      "post_count": 417
+      "post_count": 424
     }
   }
 }
