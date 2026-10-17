@@ -1,5 +1,4 @@
 const stage = document.querySelector('#munch-stage');
-const replay = document.querySelector('#hero-replay');
 const mascot = document.querySelector('#mascot-travel');
 const facing = mascot?.querySelector('.mascot-facing');
 const body = mascot?.querySelector('.mascot-body');
@@ -76,9 +75,6 @@ function finish() {
   animations.forEach(animation => animation.cancel()); animations = [];
   stage.classList.remove('is-playing');
   stage.dataset.state = 'settled';
-  replay.innerHTML = '<span aria-hidden="true">↻</span> Replay the munch';
-  replay.setAttribute('aria-label', 'Replay the mascot animation');
-  replay.hidden = reducedMotion.matches;
   if (reducedMotion.matches) centreEye(); else requestGaze();
 }
 function point(rect, bounds) { return { x: rect.left - bounds.left, y: rect.top - bounds.top }; }
@@ -88,9 +84,6 @@ function play() {
   const run = generation;
   playing = true; stage.classList.add('is-playing'); stage.dataset.state = 'playing';
   centreEye();
-  replay.hidden = false;
-  replay.innerHTML = '<span aria-hidden="true">→</span> Skip animation';
-  replay.setAttribute('aria-label', 'Skip the mascot animation');
   try {
     const bounds = stage.getBoundingClientRect();
     const rest = mascot.getBoundingClientRect();
@@ -220,7 +213,6 @@ function play() {
     travel.finished.then(() => { if (generation === run) finish(); }).catch(() => {});
   } catch { finish(); }
 }
-replay.addEventListener('click', () => playing ? finish() : play());
 reducedMotion.addEventListener('change', finish);
 document.addEventListener('visibilitychange', () => { if (document.hidden) { if (playing) finish(); pointer = null; centreEye(); } });
 window.addEventListener('resize', () => { if (playing) finish(); else requestGaze(); });

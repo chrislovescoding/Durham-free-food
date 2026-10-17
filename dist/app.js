@@ -19,7 +19,6 @@ function allEvents() { return state.data.events; }
 function focusFinder(){ $('#finder').scrollIntoView({behavior:'smooth',block:'start'}); }
 $('.brand').addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
 $('.footer-brand').addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
-$('.hero-link').addEventListener('click',e=>{e.preventDefault();focusFinder();});
 $('.skip-link').addEventListener('click',e=>{e.preventDefault();focusFinder();$('#event-search').focus();});
 $('#event-search').addEventListener('input',e => {state.search=e.target.value;render();});
 $$('[data-date]').forEach(button => button.addEventListener('click',() => {state.date=button.dataset.date;render();}));
