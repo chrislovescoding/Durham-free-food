@@ -12,7 +12,7 @@ assert.equal(manifest.static, undefined);
 const moduleUrl = `data:text/javascript;base64,${Buffer.from(source).toString('base64')}`;
 const { default: worker } = await import(moduleUrl);
 assert.equal(typeof worker.fetch, 'function');
-for (const path of ['/', '/app.js', '/events.js', '/styles.css', '/hero-mascot.js', '/hero-mascot.css', '/favicon.svg', '/data/events.json']) {
+for (const path of ['/', '/app.js', '/events.js', '/styles.css', '/hero-mascot.js', '/hero-mascot.css', '/promotions.js', '/promotions.css', '/favicon.svg', '/data/events.json']) {
   const response = await worker.fetch(new Request(`https://grubr.example${path}`), {});
   assert.equal(response.status, 200, `${path} is served from the Worker`);
   assert.ok((await response.text()).length > 0);

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const required = ['index.html', 'app.js', 'events.js', 'styles.css', 'favicon.svg', 'data/events.json'];
-const optional = ['event-details.js', 'event-details.css', 'hero-mascot.js', 'hero-mascot.css'];
+const optional = ['event-details.js', 'event-details.css', 'hero-mascot.js', 'hero-mascot.css', 'promotions.js', 'promotions.css'];
 const files = [...required];
 for (const filename of optional) {
   try { await readFile(resolve(root, 'dist', filename)); files.push(filename); }

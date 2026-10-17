@@ -1,4 +1,5 @@
 import { eventStatus, formatDate, entryLabel, signupLabel, safeUrl } from './events.js';
+import { promotionFor } from './promotions.js';
 
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const icons = {
@@ -59,6 +60,7 @@ export function renderEventDetails(event, { now = new Date() } = {}) {
   const date = formatDate(event.starts_at, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
   const time = formatDate(event.starts_at, { hour: '2-digit', minute: '2-digit' }) + (event.ends_at ? `–${formatDate(event.ends_at, { hour: '2-digit', minute: '2-digit' })}` : '');
   const map = eventMapData(event);
+  const promotion = promotionFor(event, { now });
   const deadline = event.signup_required === true
     ? `<span class="event-fact-note">${event.signup_deadline ? `Sign up by ${escape(formatDate(event.signup_deadline, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }))}` : 'Deadline not stated — check the original post.'}</span>`
     : '';
@@ -67,6 +69,7 @@ export function renderEventDetails(event, { now = new Date() } = {}) {
       <div class="event-detail-title-block"><p class="event-detail-society">${escape(event.society)}</p><h2 id="dialog-title">${escape(event.title)}</h2></div>
       <div class="event-detail-date" aria-hidden="true"><span>${formatDate(event.starts_at, { month: 'short' })}</span><strong>${formatDate(event.starts_at, { day: 'numeric' })}</strong><span>${formatDate(event.starts_at, { weekday: 'short' })}</span></div>
     </header>
+    ${promotion ? `<p class="sponsor-disclosure"><strong>Sponsored${promotion.demo ? ' · Demo placement' : ''}</strong>${promotion.demo ? 'This real event demonstrates a promoted listing. Its organiser has not sponsored Grubr.' : 'The organiser paid for priority placement. Event details are checked in the same way as other listings.'}</p>` : ''}
     ${finished ? '<p class="event-past-message"><strong>Past event</strong><span>This event has already happened. Here’s what was on offer.</span></p>' : status === 'started' ? '<p class="event-past-message"><strong>Already started</strong><span>Check with the organiser before heading over.</span></p>' : ''}
     <section class="event-food-offer" aria-label="Food on offer">${icon('food')}<div><span>On the menu</span><p>${escape(event.food || 'Free food')}</p></div></section>
     <div class="event-detail-body">

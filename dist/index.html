@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./event-details.css">
   <link rel="stylesheet" href="./hero-mascot.css">
+  <link rel="stylesheet" href="./promotions.css">
   <script type="module" src="./hero-mascot.js"></script>
   <script type="module" src="./app.js"></script>
 </head>
@@ -63,6 +64,14 @@
     <footer><a class="footer-brand" href="#" aria-label="Grubr home"><img src="./assets/grubr-wordmark.svg" alt="Grubr" width="104" height="40"></a><p>Good food. Better company.</p></footer>
   </main>
   <dialog id="event-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close event details" data-close="event-dialog">×</button><div id="event-dialog-content"></div></dialog>
+  <dialog id="sponsor-dialog" aria-labelledby="sponsor-title">
+    <button class="dialog-close" aria-label="Close sponsorship information" data-close="sponsor-dialog">×</button>
+    <p class="sponsor-dialog-brand">Grubr for partners</p><h2 id="sponsor-title">Good food.<br>Great exposure.</h2>
+    <p>Reach Durham students while they’re choosing where to go next.</p>
+    <div class="sponsor-options"><article><span class="sponsor-option-symbol" aria-hidden="true">↑</span><h3>A spot at the top.</h3><p>Sponsor a free-food event to put it above standard listings in matching results. Clearly labelled, with all the usual event details.</p><strong>Sponsored events</strong></article><article><span class="sponsor-option-symbol" aria-hidden="true">▦</span><h3>Your brand in the feed.</h3><p>A dedicated advert between event cards, with room for your message and a link to your business.</p><strong>Grid advertising</strong></article></div>
+    <p class="sponsor-preview-note">These are example placements showing how Grubr could fund the service. No organiser or business has paid for the placements shown, and sponsorships are not available to buy yet.</p>
+    <button class="primary-button" data-close="sponsor-dialog">Back to the food</button>
+  </dialog>
   <dialog id="submit-dialog" aria-labelledby="submit-title">
     <button class="dialog-close" aria-label="Close suggestion form" data-close="submit-dialog">×</button>
     <div class="suggest-intro"><span class="suggest-icon" data-icon="food"></span><h2 id="submit-title">Share a good find.</h2><p>Spotted free food? Send us the event link and we’ll check the details before adding it.</p></div>

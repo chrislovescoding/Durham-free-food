@@ -1,5 +1,6 @@
 import { eventStatus, filterEvents, formatDate, friendlyDay, entryLabel, signupLabel, calendarFile, safeUrl, isValidEvent } from './events.js';
 import { renderEventDetails } from './event-details.js';
+import { buildGridItems } from './promotions.js';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -36,12 +37,15 @@ function saveEvent(id) {
   render(); toast(exists?'Removed from your saved events.':'Saved to your food plan.');
   if(state.activeEvent) updateDialogSave();
 }
-function card(event) {
+function advertCard(advert) {
+  return `<aside class="advert-card advert-${escape(advert.theme)}" aria-label="Advertisement — demo placement"><div class="advert-label"><span>Advertisement</span><span>Demo placement</span></div><div class="advert-visual" aria-hidden="true"><img src="./assets/grubr-symbol.svg" width="621" height="794" alt=""><span>${advert.theme === 'green' ? 'Pull up a chair.' : 'A little local love.'}</span></div><div class="advert-copy"><p class="advert-audience">${escape(advert.audience)}</p><h3>${escape(advert.title)}</h3><p>${escape(advert.description)}</p><button class="advert-cta" data-advertise>${escape(advert.action)} <span aria-hidden="true">↗</span></button></div></aside>`;
+}
+function card(event, promotion = null) {
   const status=eventStatus(event),started=status!=='upcoming';
   const foodIcons=[['pizza','🍕'],['coffee','🥐'],['curry','🍛'],['snack','🍿'],['cake','🧁']];
   const visual=foodIcons.find(([keyword])=>`${event.title} ${event.food}`.toLowerCase().includes(keyword))||['','🥪'];
   const signup=signupLabel(event);
-  return `<article class="event-card ${started?'started':''}"><div class="card-art"><div class="date-stamp"><strong>${formatDate(event.starts_at,{day:'numeric'})}</strong><span>${formatDate(event.starts_at,{month:'short'})}</span></div><span class="food-drawing" aria-hidden="true">${escape(visual[1])}</span><button class="bookmark-button" data-save="${escape(event.id)}" aria-label="${state.savedIds.includes(event.id)?'Unsave':'Save'} ${escape(event.title)}" aria-pressed="${state.savedIds.includes(event.id)}">${icon('bookmark')}</button>${started?`<span class="started-tag">${status==='past'?'Past event':status==='ended'?'Ended today':'Already started'}</span>`:''}</div><div class="card-body"><div class="society-label"><span class="society-dot" aria-hidden="true">${escape(event.society.slice(0,1))}</span>${escape(event.society)}</div><h3 class="event-title"><button data-details="${escape(event.id)}">${escape(event.title)}</button></h3><div class="event-meta"><div>${icon('clock')}<span>${friendlyDay(event.starts_at)} · ${formatDate(event.starts_at,{hour:'2-digit',minute:'2-digit'})}${event.ends_at?'–'+formatDate(event.ends_at,{hour:'2-digit',minute:'2-digit'}):''}</span></div><div>${icon('pin')}<span>${escape(event.location||'Location to be confirmed')}</span></div><div class="food-meta">${icon('food')}<span>${escape(event.food||'Free food')}</span></div></div><div class="card-tags"><span class="tag ${event.signup_required===false?'free':event.signup_required===true?'warning':''}">${signup}</span><span class="tag free">Free food confirmed</span></div><div class="card-bottom"><span class="card-price">${entryLabel(event.price)}<small>${event.price>0?'Food included with entry':'Food on the house'}</small></span><button class="details-button" data-details="${escape(event.id)}">View details <span aria-hidden="true">↗</span></button></div></div></article>`;
+  return `<article class="event-card ${promotion?'is-sponsored ':''}${started?'started':''}">${promotion?`<button class="sponsor-ribbon" data-advertise aria-label="About this sponsored ${promotion.demo?'demo ':''}placement"><span>${icon('sparkles')} Sponsored</span><span>${promotion.demo?'Demo placement':'Promoted event'} ↗</span></button>`:''}<div class="card-art"><div class="date-stamp"><strong>${formatDate(event.starts_at,{day:'numeric'})}</strong><span>${formatDate(event.starts_at,{month:'short'})}</span></div><span class="food-drawing" aria-hidden="true">${escape(visual[1])}</span><button class="bookmark-button" data-save="${escape(event.id)}" aria-label="${state.savedIds.includes(event.id)?'Unsave':'Save'} ${escape(event.title)}" aria-pressed="${state.savedIds.includes(event.id)}">${icon('bookmark')}</button>${started?`<span class="started-tag">${status==='past'?'Past event':status==='ended'?'Ended today':'Already started'}</span>`:''}</div><div class="card-body"><div class="society-label"><span class="society-dot" aria-hidden="true">${escape(event.society.slice(0,1))}</span>${escape(event.society)}</div><h3 class="event-title"><button data-details="${escape(event.id)}">${escape(event.title)}</button></h3><div class="event-meta"><div>${icon('clock')}<span>${friendlyDay(event.starts_at)} · ${formatDate(event.starts_at,{hour:'2-digit',minute:'2-digit'})}${event.ends_at?'–'+formatDate(event.ends_at,{hour:'2-digit',minute:'2-digit'}):''}</span></div><div>${icon('pin')}<span>${escape(event.location||'Location to be confirmed')}</span></div><div class="food-meta">${icon('food')}<span>${escape(event.food||'Free food')}</span></div></div><div class="card-tags"><span class="tag ${event.signup_required===false?'free':event.signup_required===true?'warning':''}">${signup}</span><span class="tag free">Free food confirmed</span></div><div class="card-bottom"><span class="card-price">${entryLabel(event.price)}<small>${event.price>0?'Food included with entry':'Food on the house'}</small></span><button class="details-button" data-details="${escape(event.id)}">View details <span aria-hidden="true">↗</span></button></div></div></article>`;
 }
 function render() {
   const focused=document.activeElement;
@@ -57,7 +61,8 @@ function render() {
   const past=statuses.filter(s=>s==='past'||s==='ended').length;
   $('#history-summary').textContent=state.loaded?[`${upcoming} upcoming`,...(ongoing?[`${ongoing} already started`]:[]),`${past} past`].join(' · '):'';
   $('#range-note').textContent=({recent:'All upcoming events plus the last 14 days. Past events are grey and have already happened.',upcoming:'Upcoming events and any still in progress. Check the original post before going.',past:'All past events we have confirmed, newest first. These events have already happened.',all:'Every event we have confirmed. Upcoming first, then past events from newest to oldest.',today:'Events dated today in Durham. Finished events are marked clearly.',tomorrow:'Events dated tomorrow in Durham.',week:'Events over the next seven calendar days in Durham.'})[state.date];
-  $('#event-grid').innerHTML=shown.map(card).join('');
+  const placements=buildGridItems(shown,{adsEnabled:!state.savedOnly&&!state.search.trim()&&state.date!=='past'});
+  $('#event-grid').innerHTML=placements.map(item=>item.kind==='advert'?advertCard(item.advert):card(item.event,item.promotion)).join('');
   $('#event-grid').hidden=!count;
   const empty=$('#empty-state');empty.hidden=count>0||(!state.loaded);
   const noLive=all.length===0;
@@ -67,6 +72,7 @@ function render() {
   $('#empty-action').onclick=state.loadError?init:state.savedOnly?resetFilters:noLive?openSuggestions:resetFilters;
   $$('[data-save]').forEach(el=>el.addEventListener('click',()=>saveEvent(el.dataset.save)));
   $$('[data-details]').forEach(el=>el.addEventListener('click',()=>showDetails(el.dataset.details)));
+  $$('[data-advertise]').forEach(el=>el.addEventListener('click',()=>$('#sponsor-dialog').showModal()));
   if(focusKey){
     const replacement=$$(focusKey.save?'[data-save]':'[data-details]').find(el=>focusKey.save?el.dataset.save===focusKey.save:el.dataset.details===focusKey.details&&!!el.closest('.event-title')===focusKey.isTitle);
     if(replacement)replacement.focus({preventScroll:true});
