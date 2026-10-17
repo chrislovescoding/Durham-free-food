@@ -19646,7 +19646,9 @@
       "status": "ok",
       "posts_collected": 49,
       "run_id": "7EOGOoWdaamKJMH0W",
-      "run_charge_usd": 0.0833,
+      "run_charge_usd": 0.13729999999999998,
+      "primary_run_charge_usd": 0.0833,
+      "image_enrichment_run_id": "oZ2AamolPZKl7aTnb",
       "max_charge_usd": 0.25,
       "images": {
         "generated_at": "2026-10-17T13:31:05.540496Z",
@@ -19666,7 +19668,7 @@
     "posts_stored": 424
   },
   "coverage": {
-    "updated_at": "2026-10-17T13:33:14.483852Z",
+    "updated_at": "2026-10-17T13:39:32.839826Z",
     "summary": {
       "total_societies": 319,
       "societies_with_accounts": 294,
