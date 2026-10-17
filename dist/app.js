@@ -43,7 +43,7 @@ function advertCard(advert) {
 function card(event, promotion = null) {
   const status=eventStatus(event),started=status!=='upcoming';
   const saved=state.savedIds.includes(event.id);
-  const conditions=[...(event.price>0?[entryLabel(event.price)]:[]),...(!started&&event.signup_required===true?[signupLabel(event)]:[])];
+  const conditions=[...(event.price>0?[entryLabel(event.price)]:[]),...(!['past','ended'].includes(status)&&event.signup_required===true?[signupLabel(event)]:[])];
   return `<article class="event-card ${promotion?'is-sponsored ':''}${started?'started':''}">
     ${promotion?`<button class="sponsor-ribbon" data-advertise aria-label="About this sponsored ${promotion.demo?'demo ':''}placement"><span>${icon('sparkles')} Sponsored</span><span>${promotion.demo?'Demo placement':'Promoted event'} ↗</span></button>`:''}
     <div class="card-body">

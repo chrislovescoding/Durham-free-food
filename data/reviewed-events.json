@@ -199,6 +199,34 @@
       "post_id": "social-598528574f1a7b0543",
       "verification_notes": "Assistant visual review of complete archived source PNG 767792408ac2981a5c70ed69.png (1408x1877). Poster explicitly states 08.10.2026 at 7:30PM, meet in Kingsgate at the Student Union, FREE PIZZA AND DRINKS, complete beginners, ALL WELCOME. Caption independently confirms free pizzas and drinks. The AI review queue had incorrectly described the location as cut off; the full saved poster shows UNION at the bottom. No model result was altered.",
       "resolves_post_review": true
+    },
+    {
+      "id": "entrepreneurs-build-day-2026-10-17",
+      "reviewed": true,
+      "title": "Build Day — a First Principles hackathon",
+      "society": "Entrepreneurs Durham",
+      "starts_at": "2026-10-17T11:00:00+01:00",
+      "ends_at": "2026-10-17T19:00:00+01:00",
+      "location": "Durham University Venture Lab, Mathematical Sciences and Computer Science Building",
+      "food": "Free food provided",
+      "food_is_free": true,
+      "price": 0,
+      "signup_required": true,
+      "signup_deadline": null,
+      "eligibility": "No experience, team or idea needed. Sign-up is required; use the organiser’s Instagram bio link.",
+      "dietary": [],
+      "source_url": "https://www.instagram.com/p/DeEVClHESd9/",
+      "source_label": "Entrepreneurs Durham Instagram — caption and carousel posters reviewed",
+      "description": "A one-day hackathon built around solving a real problem. Teams form in the morning and pitch at 5pm. Free entry and food are provided, with prizes for the top three teams. Registration is required through the organiser’s bio link; no registration deadline or dietary options are stated. The event has already started, so check with the organiser before travelling.",
+      "verified_at": "2026-10-17T16:45:08.161048+00:00",
+      "verification_notes": "Reviewed the live Instagram caption and first two carousel images, plus the user-provided final carousel image. Caption and poster agree on Saturday 17 October, 11am–7pm, at Durham University Venture Lab. Final poster names the Mathematical Sciences and Computer Science Building and explicitly states Free. Food provided. and Sign-up required. Year 2026 is supported by the live post date, #Freshers2026, and the matching Saturday. No deadline or dietary claim has been inferred.",
+      "evidence": {
+        "food": "Free. Food provided.",
+        "date": "Build Day · Saturday 17 October",
+        "time": "11am to 7pm",
+        "location": "Durham University Venture Lab; Mathematical Sciences and Computer Science Building",
+        "signup": "Sign-up required. Sign up, link in bio."
+      }
     }
   ]
 }
