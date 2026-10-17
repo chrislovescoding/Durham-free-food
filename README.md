@@ -4,7 +4,7 @@ A hackathon prototype for finding free food at Durham student events, with a sou
 
 **[Open the prototype](https://durham-free-food-chris.chris9p.chatgpt.site)** · **[Try the clearly labelled example feed](https://durham-free-food-chris.chris9p.chatgpt.site/?demo=1)**
 
-The hosted preview is private to its owner. The source repository is public. The default live feed contains only source-backed, explicitly confirmed free-food events. If none are found, it shows an honest empty state. Demo listings are fictional, marked on every card and in every calendar download, and kept separate from real data.
+The hosted Grubr website and the source repository are public. The default live feed contains only source-backed, explicitly confirmed free-food events. If none are found, it shows an honest empty state. Demo listings are fictional, marked on every card and in every calendar download, and kept separate from real data.
 
 ## Run locally
 
@@ -80,7 +80,7 @@ data/reviewed-events.json   Explicitly reviewed real event inputs
 data/review-queue.json      Candidates requiring human review
 tests/                     Date, feed and parser regression checks
 .github/workflows/          Evening data refresh
-.openai/hosting.json        Private Sites preview configuration
+.openai/hosting.json        Sites hosting configuration
 ```
 
 The frontend is ordinary HTML, CSS and JavaScript, so it can be hosted on any static host.
