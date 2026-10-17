@@ -265,12 +265,13 @@ def _collect_locked(client, config, accounts, output, *, resume_run_id=None, sle
     if not isinstance(dataset, list):
         raise ApifyError("Dataset did not contain a JSON array.")
     write_json(dataset_path, cached_items(dataset))
-    posts, rejected = normalize_items(dataset, selected, stamp(), run["id"])
-    payload = {"updated_at": stamp(), "posts": posts, "accounts": [
+    observed_at = stamp()
+    posts, rejected = normalize_items(dataset, selected, observed_at, run["id"])
+    payload = {"updated_at": observed_at, "posts": posts, "accounts": [
         {"url": account, "platform": "instagram", "society": society, "provider": "apify",
          "status": "ok" if any(p["account_url"] == account for p in posts) and run["status"] == "SUCCEEDED" else "partial",
-         "posts_collected": sum(p["account_url"] == account for p in posts), "last_attempt_at": journal["created_at"],
-         "last_success_at": stamp() if any(p["account_url"] == account for p in posts) else None, "window_limited": True}
+         "posts_collected": sum(p["account_url"] == account for p in posts), "last_attempt_at": observed_at,
+         "last_success_at": observed_at if any(p["account_url"] == account for p in posts) else None, "window_limited": True}
         for account, society in selected.items()]}
     journal.update(phase="dataset_saved", returned_items=len(dataset), accepted_posts=len(posts), rejected_items=rejected,
                    note="Actor run is capped. Post-run dataset access has separate platform costs. No paid image/model service is used.")

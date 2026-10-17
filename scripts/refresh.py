@@ -680,8 +680,10 @@ def refresh_social_sources(config, societies, previous, now):
 def integrate_social(events, queue, social, now):
     try:
         from scripts.social_events import posts_to_events
+        from scripts.social_posts import canonical_account_url, canonical_post_url, _unsupported_group_url
     except ModuleNotFoundError:
         from social_events import posts_to_events
+        from social_posts import canonical_account_url, canonical_post_url, _unsupported_group_url
     found, pending = posts_to_events(social.get("posts", []), now, food_evidence)
     queue["candidates"] = [c for c in queue.get("candidates", []) if not c.get("source_id", "").startswith("social-")] + pending
     identity = lambda e: (e["source_url"].rstrip("/"), parse_datetime(e["starts_at"]).astimezone(timezone.utc))
@@ -690,19 +692,46 @@ def integrate_social(events, queue, social, now):
         unique.setdefault(identity(event), event)
     events["events"] = sorted(unique.values(), key=lambda e: parse_datetime(e["starts_at"]))
     events["sources"] = [s for s in events.get("sources", []) if not s.get("id", "").startswith("social-")]
+    def account_key(value):
+        return canonical_account_url(value) or _unsupported_group_url(value)
+
+    def current_observation(value):
+        if not value or not social.get("updated_at"):
+            return False
+        try:
+            return parse_datetime(value) == parse_datetime(social["updated_at"])
+        except (ValueError, TypeError):
+            return False
+
+    social_accounts = set()
     for platform in ("instagram", "facebook"):
-        accounts = [a for a in social.get("accounts", []) if a.get("platform") == platform and a.get("provider") == "public_html"]
-        posts = [p for p in social.get("posts", []) if p.get("platform") == platform]
-        observed = [p for p in posts if p.get("observed_at") == social.get("updated_at")]
-        checked = [a for a in accounts if a.get("last_attempt_at") == social.get("updated_at")]
-        accessible = [a for a in accounts if a.get("posts_collected", 0) > 0]
-        healthy = accounts and len(checked) == len(accounts) and all(a.get("status") == "ok" for a in accounts)
+        # Account coverage is independent of the provider that succeeded. An
+        # old public login wall must not erase a fresh accessible Apify result.
+        by_account = {}
+        for society in social.get("coverage", {}).get("societies", []):
+            for account in society.get("accounts", []):
+                if account.get("platform") == platform and (key := account_key(account.get("url"))):
+                    by_account.setdefault(key, [])
+        for account in social.get("accounts", []):
+            if account.get("platform") == platform and (key := account_key(account.get("url"))):
+                by_account.setdefault(key, []).append(account)
+        social_accounts.update(by_account)
+        posts = list({canonical_post_url(p.get("source_url")) or p.get("source_url") or p.get("id"): p
+                      for p in social.get("posts", []) if p.get("platform") == platform}.values())
+        observed = [p for p in posts if current_observation(p.get("observed_at"))]
+        checked = {key for key, providers in by_account.items()
+                   if any(current_observation(a.get("last_attempt_at")) for a in providers)}
+        successful = {key for key, providers in by_account.items()
+                      if any(a.get("status") == "ok" and current_observation(a.get("last_attempt_at")) for a in providers)}
+        accessible = {account_key(p.get("account_url")) for p in posts} & by_account.keys()
+        healthy = bool(by_account) and len(successful) == len(by_account)
+        attempts = [a.get("last_attempt_at") for providers in by_account.values() for a in providers if a.get("last_attempt_at")]
         events["sources"].append({"id": "social-" + platform, "type": "social", "name": platform.capitalize() + " society posts",
             "url": "https://www." + platform + ".com/", "status": "ok" if healthy else "partial" if posts else "unavailable",
-            "parsed_count": len(observed), "posts_stored": len(posts), "account_count": len(accounts), "accounts_checked": len(checked), "accounts_with_posts": len(accessible),
-            "last_attempt_at": social.get("updated_at"), "last_success_at": max((p.get("observed_at") or "" for p in posts), default=None)})
+            "parsed_count": len(observed), "posts_stored": len(posts), "account_count": len(by_account), "accounts_checked": len(checked), "accounts_with_posts": len(accessible),
+            "last_attempt_at": max(attempts, default=None), "last_success_at": max((p.get("observed_at") or "" for p in posts), default=None)})
     events["status"].update(live_event_count=len(events["events"]), candidate_count=len(queue["candidates"]),
-        social_post_count=len(social.get("posts", [])), social_account_count=social.get("status", {}).get("account_count", 0),
+        social_post_count=len(social.get("posts", [])), social_account_count=len(social_accounts),
         social_ingestion="Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.")
     coverage = social.get("coverage", {}).get("summary", {})
     events["status"]["society_coverage"] = coverage

@@ -54,7 +54,7 @@ The first GitHub-hosted collection test completed successfully but Instagram rat
 
 An official Meta API adapter is included for accounts with authorised access. It has not been connected because no API credentials are configured. See [the social access guide](scripts/README-social.md) for repository secrets, account mapping and the difference between public professional Instagram accounts and Facebook Page permissions. No password, session cookie or access token belongs in the source repository.
 
-The social caption parser only publishes unambiguous date/time/location and free-food offers. Publication time is never used as event time. Relative wording is anchored to the original post's timestamp. Multiple event times, poster-only details, unsupported language or ambiguous signup deadlines require manual review; the automated candidate queue only detects supported caption phrases. The site displays collected posts separately from confirmed events.
+The social caption parser only publishes unambiguous date/time/location and free-food offers. Publication time is never used as event time. Relative wording is anchored to the original post's timestamp. The manual Apify pilot checks captions plus every supplied poster/carousel image using free local OCR, saving separate evidence and images for visual review. Multiple event times, poster-only details, unsupported language or ambiguous signup deadlines require review. The site displays collected posts separately from confirmed events.
 
 The collector uses conservative text rules, not a language-model service. Nuanced captions, image-only posters and recurrence require human review. Failed sources keep their last good records and verification timestamps, and the site reports incomplete coverage. Source assertions are not a guarantee that an organiser will run the event unchanged.
 
@@ -73,6 +73,9 @@ scripts/refresh.py          Public-source collector
 scripts/social_posts.py     Public Instagram/Facebook post collection
 scripts/meta_posts.py       Optional authorised Meta Graph API adapter
 scripts/social_events.py    Conservative caption-to-event extraction
+scripts/apify_posts.py      Manual, resumable 50-post Instagram pilot with a $0.25 actor cap
+scripts/post_images.py      Free, cached poster and carousel image OCR
+scripts/import_apify.py     Merge purchased posts without another collection charge
 data/sources.json           Supported source configuration
 data/society-accounts.json  Reviewed social-account mappings and ownership evidence
 data/account-research-audit.json  Research coverage and unresolved account cases
@@ -84,5 +87,7 @@ tests/                     Date, feed and parser regression checks
 ```
 
 The frontend is ordinary HTML, CSS and JavaScript, so it can be hosted on any static host.
+
+The reusable **Instagram pilot (50 posts, 25 cent cap)** workflow uses the `APIFY_TOKEN` Actions secret. It runs only on manual dispatch, explicitly selects basic data, records the actual charge, and saves the purchased posts and inspected images as a workflow artifact. Retry image analysis from that artifact or resume the saved Apify run ID; do not start a new paid run to repeat processing. See [the pilot instructions](scripts/README-social.md#reusable-capped-instagram-pilot).
 
 The post-expansion live collection run on 17 October checked 405 configured public profiles/Pages: 290 redirected to login and 115 exposed no owned post captions. Another 39 configured references were unsupported groups and were not fetched. No new posts were observed; the 417 earlier Instagram posts were retained with their original observation times. This is an account-discovery improvement, not proof of reliable social-platform access.

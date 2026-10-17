@@ -172,6 +172,59 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(events['sources'][0]['status'], 'partial')
         self.assertNotEqual(events['status']['state'], 'ok')
 
+    def test_apify_provider_success_counts_once_despite_old_public_denial(self):
+        events = {'events': [], 'sources': [], 'status': {}}
+        social = {'updated_at': '2026-10-17T12:00:00Z', 'posts': [{**POST, 'origin': 'apify'}],
+                  'accounts': [
+                      {'platform': 'instagram', 'url': POST['account_url'], 'provider': 'public_html',
+                       'status': 'login_required', 'last_attempt_at': '2026-10-16T12:00:00Z'},
+                      {'platform': 'instagram', 'url': 'https://instagram.com/EXAMPLE', 'provider': 'apify',
+                       'status': 'ok', 'posts_collected': 1, 'last_attempt_at': '2026-10-17T13:00:00+01:00'},
+                      {'platform': 'instagram', 'url': POST['account_url'], 'provider': 'meta_api',
+                       'status': 'disabled', 'last_attempt_at': None}], 'status': {'account_count': 3}}
+        integrate_social(events, {'candidates': []}, social, NOW)
+        source = events['sources'][0]
+        self.assertEqual(source['status'], 'ok')
+        self.assertEqual(source['account_count'], 1)
+        self.assertEqual(source['accounts_checked'], 1)
+        self.assertEqual(source['accounts_with_posts'], 1)
+        self.assertEqual(source['parsed_count'], 1)
+        self.assertEqual(events['status']['social_account_count'], 1)
+        self.assertEqual(social['accounts'][0]['status'], 'login_required')
+
+    def test_partial_apify_batch_keeps_unchecked_registry_accounts_in_denominator(self):
+        events = {'events': [], 'sources': [], 'status': {}}
+        social = {'updated_at': '2026-10-17T12:00:00Z', 'posts': [{**POST, 'origin': 'apify'}],
+                  'accounts': [{'platform': 'instagram', 'url': POST['account_url'], 'provider': 'apify',
+                                'status': 'ok', 'posts_collected': 1, 'last_attempt_at': '2026-10-17T12:00:00Z'}],
+                  'coverage': {'summary': {'societies_needing_attention': 1}, 'societies': [{'accounts': [
+                      {'platform': 'instagram', 'url': POST['account_url']},
+                      {'platform': 'instagram', 'url': 'https://www.instagram.com/unchecked/'}]}]}, 'status': {}}
+        integrate_social(events, {'candidates': []}, social, NOW)
+        source = events['sources'][0]
+        self.assertEqual(source['status'], 'partial')
+        self.assertEqual(source['account_count'], 2)
+        self.assertEqual(source['accounts_checked'], 1)
+        self.assertEqual(source['parsed_count'], 1)
+        self.assertEqual(events['status']['social_account_count'], 2)
+
+    def test_old_apify_success_does_not_make_current_denial_healthy(self):
+        events = {'events': [], 'sources': [], 'status': {}}
+        social = {'updated_at': '2026-10-17T12:00:00Z',
+                  'posts': [{**POST, 'origin': 'apify', 'observed_at': '2026-10-16T12:00:00Z'}],
+                  'accounts': [
+                      {'platform': 'instagram', 'url': POST['account_url'], 'provider': 'public_html',
+                       'status': 'login_required', 'last_attempt_at': '2026-10-17T12:00:00Z'},
+                      {'platform': 'instagram', 'url': POST['account_url'], 'provider': 'apify',
+                       'status': 'ok', 'posts_collected': 1, 'last_attempt_at': '2026-10-16T12:00:00Z'}], 'status': {}}
+        integrate_social(events, {'candidates': []}, social, NOW)
+        source = events['sources'][0]
+        self.assertEqual(source['status'], 'partial')
+        self.assertEqual(source['account_count'], 1)
+        self.assertEqual(source['accounts_checked'], 1)
+        self.assertEqual(source['parsed_count'], 0)
+        self.assertEqual(source['posts_stored'], 1)
+
 
 if __name__ == '__main__':
     unittest.main()

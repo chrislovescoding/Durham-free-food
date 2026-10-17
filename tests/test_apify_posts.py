@@ -46,6 +46,15 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(posts[0]['media_urls'], ITEM['images'])
         self.assertEqual(posts[0]['text'], '')
 
+    def test_offset_cutoff_is_normalized_to_utc(self):
+        body, _ = validate_config({**CONFIG, 'only_posts_newer_than': '2026-10-17T13:00:00+01:00'}, ACCOUNTS)
+        self.assertEqual(body['onlyPostsNewerThan'], NOW)
+
+    def test_missing_carousel_panels_preserve_cover_with_partial_marker(self):
+        posts, _ = normalize_items([{**ITEM, 'images': [], 'childPosts': [{'displayUrl': None}]}], ACCOUNTS, NOW, 'Run123')
+        self.assertEqual(posts[0]['media_urls'], [ITEM['displayUrl']])
+        self.assertEqual(posts[0]['media_coverage'], 'cover_only')
+
     def test_uncertain_start_is_not_retried(self):
         client = Mock()
         client.start.side_effect = ApifyError('Uncertain start')
