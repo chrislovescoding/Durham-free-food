@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./event-details.css">
+  <link rel="stylesheet" href="./hero-mascot.css">
+  <script type="module" src="./hero-mascot.js"></script>
   <script type="module" src="./app.js"></script>
 </head>
 <body>
@@ -23,14 +25,17 @@
     </div>
   </header>
   <main class="page-wrap">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="local-note"><span data-icon="pin"></span>Hungry in Durham?</p>
-        <h1 id="hero-title">Free food.<br>Found.</h1>
-        <p class="hero-description">Good food brings people together. Find a free bite at your next society event.</p>
-        <a href="#finder" class="hero-link primary-button">Find your next bite <span data-icon="arrow-down"></span></a>
+    <section class="hero grubr-hero" aria-labelledby="hero-title">
+      <div class="hero-intro"><p class="local-note"><span data-icon="pin"></span>Hungry in Durham?</p><button class="hero-replay" id="hero-replay" hidden><span aria-hidden="true">↻</span> Replay the munch</button></div>
+      <h1 id="hero-title" class="hero-accessible-title">Free food. New friends. Zero dishes.</h1>
+      <div class="munch-stage" id="munch-stage" aria-hidden="true">
+        <div class="munch-phrase"><span class="munch-before">Pricey lunches</span><span class="munch-after"><span>Free</span><span>food.</span></span></div>
+        <div class="munch-phrase"><span class="munch-before">Solo meals</span><span class="munch-after"><span>New</span><span>friends.</span></span></div>
+        <div class="munch-phrase"><span class="munch-before">Washing up</span><span class="munch-after"><span>Zero</span><span>dishes.</span></span></div>
+        <div class="mascot-travel" id="mascot-travel"><div class="mascot-facing"><div class="mascot-body"><img src="./assets/grubr-symbol.svg" width="621" height="794" alt=""><span class="mascot-mouth"></span><span class="mascot-eye"></span></div></div></div>
+        <span class="munch-crumb crumb-one"></span><span class="munch-crumb crumb-two"></span><span class="munch-crumb crumb-three"></span>
       </div>
-      <div class="hero-art" aria-hidden="true"><img class="hero-logo" src="./assets/grubr-logo.svg" alt="" width="764" height="1050"><span class="hero-art-caption">A little less scrolling. A little more eating.</span></div>
+      <div class="hero-bottom"><p class="hero-description">Find free food at Durham society events.<br>Come for a bite. Stay for the company.</p><a href="#finder" class="hero-link primary-button">Find your next bite <span data-icon="arrow-down"></span></a></div>
     </section>
 
     <section id="events-view" class="view" aria-labelledby="finder-title">

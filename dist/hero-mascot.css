@@ -1,0 +1,29 @@
+/* One little performance, followed by a quiet, useful page. */
+.hero.grubr-hero{display:block;position:relative;min-height:0;padding:36px 0 38px;margin:0 0 38px;background:transparent;border-radius:0;box-shadow:none;border-bottom:1px solid var(--line)}
+.hero-intro{display:flex;align-items:center;justify-content:space-between;min-height:36px;gap:15px}
+.hero-intro .local-note{font-size:13px}
+.hero-replay{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-size:11px;min-height:36px;padding:5px 0 5px 12px}
+.hero-replay:hover{color:var(--ink)}.hero-replay>span{font-size:18px;line-height:1}
+.hero-accessible-title{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.munch-stage{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding-right:164px;height:262px;isolation:isolate}
+.munch-phrase{position:relative;min-width:0;height:100%}
+.munch-after{position:absolute;top:36px;left:0;display:flex;flex-direction:column;font-size:clamp(46px,6vw,76px);font-weight:800;letter-spacing:-.066em;line-height:1.04;color:var(--ink)}
+.munch-after>span{display:block;white-space:nowrap}
+.munch-before{position:absolute;left:0;top:158px;white-space:nowrap;font-size:clamp(17px,2.1vw,27px);font-weight:650;letter-spacing:-.04em;color:#777772;opacity:0;visibility:hidden}
+.munch-letter{display:inline-block;transform-origin:50% 60%;white-space:pre;will-change:transform,opacity}
+.munch-stage.is-playing .munch-before{opacity:1;visibility:visible}
+.mascot-travel{position:absolute;right:0;top:31px;width:142px;aspect-ratio:621/794;z-index:3;pointer-events:none;transform-origin:50% 90%}
+.mascot-facing,.mascot-body{position:relative;width:100%;height:100%;transform-origin:50% 76%}
+.mascot-facing{transform-style:preserve-3d}.mascot-body img{display:block;width:100%;height:100%;max-width:none}
+.mascot-eye{position:absolute;left:47%;top:36%;width:6.5%;height:7.5%;background:var(--ink);border-radius:50%;transform:rotate(-12deg);transform-origin:50% 50%}
+.mascot-mouth{position:absolute;left:23%;top:69%;width:20%;height:4%;border-radius:50%;background:white;opacity:0;transform:rotate(16deg)}
+.munch-crumb{position:absolute;left:0;top:0;width:6px;height:6px;border-radius:50%;background:var(--orange);opacity:0;pointer-events:none;z-index:4}
+.crumb-two{width:4px;height:4px}.crumb-three{width:3px;height:3px}
+.hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.hero-bottom .hero-description{max-width:55ch;font-size:15px;line-height:1.8;color:var(--muted)}
+.hero-bottom .hero-link{margin:0;padding:15px 21px;font-size:13px;flex-shrink:0}
+@media(min-width:1350px){.munch-after{font-size:79px}}
+@media(max-width:1000px){.munch-stage{padding-right:130px;height:235px}.mascot-travel{width:115px;top:40px}.munch-after{top:39px;font-size:clamp(40px,5.9vw,60px)}.munch-before{top:143px;font-size:20px}.hero-bottom .hero-description{font-size:13px}}
+@media(max-width:700px){.hero.grubr-hero{padding:24px 0 28px;margin:0 0 30px}.hero-intro .local-note{font-size:11px}.hero-replay{font-size:10px}.munch-stage{display:block;padding:0;height:286px;margin-top:18px}.munch-phrase{height:82px;width:100%}.munch-after{top:0;font-size:clamp(36px,8.5vw,58px);line-height:1.16;letter-spacing:-.065em;display:flex;flex-direction:row;gap:.24em}.munch-before{top:25px;left:3px;font-size:25px}.mascot-travel{width:90px;top:167px;right:0}.hero-bottom{align-items:flex-start;flex-direction:column;gap:20px}.hero-bottom .hero-description{max-width:40ch;font-size:13px}.hero-bottom .hero-link{font-size:12px;padding:13px 17px}.munch-phrase:nth-child(3) .munch-after{padding-right:80px}}
+@media(max-width:380px){.munch-after{font-size:36px}.mascot-travel{width:72px;top:174px}.munch-before{font-size:23px}.munch-stage{height:271px}.hero-intro{gap:6px}}
+@media(prefers-reduced-motion:reduce){.munch-before{display:none}.mascot-mouth{display:none}.hero-replay{display:none!important}}
