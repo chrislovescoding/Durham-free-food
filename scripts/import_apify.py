@@ -29,7 +29,10 @@ def merge_batch(previous, batch, run_report, image_report):
     result['updated_at'] = batch['updated_at']
     result['status']['apify'] = {'status': 'ok' if run_report['run']['status'] == 'SUCCEEDED' else 'partial',
         'posts_collected': len(batch['posts']), 'run_id': run_report['run']['id'],
-        'run_charge_usd': run_report['run'].get('usageTotalUsd'), 'max_charge_usd': run_report['run'].get('max_charge_usd'),
+        'run_charge_usd': run_report.get('combined_charge_usd', run_report['run'].get('usageTotalUsd')),
+        'primary_run_charge_usd': run_report['run'].get('usageTotalUsd'),
+        'image_enrichment_run_id': run_report.get('image_enrichment', {}).get('run', {}).get('id'),
+        'max_charge_usd': run_report['run'].get('max_charge_usd'),
         'images': image_report}
     result['status']['posts_stored'] = len(result['posts'])
     return result

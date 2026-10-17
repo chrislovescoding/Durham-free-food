@@ -129,7 +129,10 @@ def posts_to_events(posts, now, food_evidence):
             image.get('coverage_complete') is not True or not image_text.strip()
             or image.get('status') not in ('ok', 'complete')
         )
-        if not food and not image_food and not FOOD_MENTION_RE.search(text + '\n' + image_text) and not incomplete_images:
+        # Purchased/image-reviewed posts need a human review even when the
+        # English keyword/OCR passes find nothing: another language or an OCR
+        # miss can contain the offer, including eligibility conditions.
+        if not image_review and not food and not image_food and not FOOD_MENTION_RE.search(text + '\n' + image_text):
             continue
         source_id = 'social-' + post.get('platform', 'unknown')
         heading = text.strip() or image_text.strip() or 'Society post'

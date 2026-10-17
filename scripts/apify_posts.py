@@ -280,13 +280,16 @@ def _collect_locked(client, config, accounts, output, *, resume_run_id=None, sle
         raise ApifyError("Dataset did not contain a JSON array.")
     write_json(dataset_path, cached_items(dataset))
     observed_at = stamp()
-    posts, rejected = normalize_items(dataset, selected, observed_at, run["id"])
+    # A requested timeline can include coauthored posts. Keep their real author
+    # only when it is independently verified in the full society registry.
+    posts, rejected = normalize_items(dataset, accounts, observed_at, run["id"])
+    reporting_accounts = {**selected, **{post['account_url']: post['society'] for post in posts}}
     payload = {"updated_at": observed_at, "posts": posts, "accounts": [
         {"url": account, "platform": "instagram", "society": society, "provider": "apify",
          "status": "ok" if any(p["account_url"] == account for p in posts) and run["status"] == "SUCCEEDED" else "partial",
          "posts_collected": sum(p["account_url"] == account for p in posts), "last_attempt_at": observed_at,
          "last_success_at": observed_at if any(p["account_url"] == account for p in posts) else None, "window_limited": True}
-        for account, society in selected.items()]}
+        for account, society in reporting_accounts.items()]}
     journal.update(phase="dataset_saved", returned_items=len(dataset), accepted_posts=len(posts), rejected_items=rejected,
                    note="Actor run is capped. Post-run dataset access has separate platform costs. No paid image/model service is used.")
     write_json(posts_path, payload)

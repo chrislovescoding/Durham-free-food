@@ -148,10 +148,23 @@ class SocialEventsTests(unittest.TestCase):
                 self.assertIn('inspect the original images', queue[0]['reason'])
                 self.assertEqual(queue[0]['title'], 'Society social' if image and image.get('text') else 'Society post')
 
-    def test_successful_non_food_ocr_does_not_create_an_event_candidate(self):
+    def test_successful_non_food_ocr_still_requires_visual_review(self):
         post = {**self.post('Committee elections'), 'origin': 'apify',
                 'image_ocr': {'status': 'ok', 'coverage_complete': True, 'text': 'Voting opens next week'}}
-        self.assertEqual(parser.posts_to_events([post], NOW, refresh.food_evidence), ([], []))
+        events, queue = parser.posts_to_events([post], NOW, refresh.food_evidence)
+        self.assertFalse(events)
+        self.assertEqual(len(queue), 1)
+        self.assertTrue(queue[0]['needs_visual_review'])
+
+    def test_chinese_offer_is_not_dropped_after_english_ocr_completes(self):
+        caption = '欢迎新朋友！第一次来的朋友可以免费享用晚餐。'
+        post = {**self.post(caption), 'origin': 'apify',
+                'image_ocr': {'status': 'ok', 'coverage_complete': True, 'text': 'TERM PLAN 2026'}}
+        events, queue = parser.posts_to_events([post], NOW, refresh.food_evidence)
+        self.assertFalse(events)
+        self.assertEqual(len(queue), 1)
+        self.assertEqual(queue[0]['evidence']['caption']['text'], caption)
+        self.assertTrue(queue[0]['needs_visual_review'])
 
     def test_apify_caption_without_ocr_still_requires_image_review(self):
         post = {**self.post('Free pizza 18 October 2026 at 6pm\nLocation: Durham SU'), 'origin': 'apify'}
