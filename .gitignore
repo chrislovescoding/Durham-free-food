@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+.sites-local/
+*.tar.gz
+*.tar

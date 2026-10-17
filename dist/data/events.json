@@ -1,0 +1,70 @@
+{
+  "updated_at": "2026-10-17T11:13:18.810319Z",
+  "timezone": "Europe/London",
+  "events": [],
+  "sources": [
+    {
+      "id": "durham-su-native",
+      "type": "native",
+      "url": "https://durhamsu.native.fm/events",
+      "label": "Durham SU · What's On",
+      "name": "Durham SU · What's On",
+      "last_attempt_at": "2026-10-17T11:13:18.810319Z",
+      "status": "ok",
+      "last_success_at": "2026-10-17T11:13:18.810319Z",
+      "events_seen": 55,
+      "parsed_count": 55,
+      "eligible_count": 0,
+      "candidate_count": 11,
+      "parse_error_count": 0,
+      "retained_count": 0
+    },
+    {
+      "id": "daisi-luma",
+      "type": "ics",
+      "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
+      "label": "DAISI · Luma calendar",
+      "name": "DAISI · Luma calendar",
+      "last_attempt_at": "2026-10-17T11:13:18.810319Z",
+      "status": "ok",
+      "last_success_at": "2026-10-17T11:13:18.810319Z",
+      "events_seen": 31,
+      "parsed_count": 31,
+      "eligible_count": 3,
+      "candidate_count": 0,
+      "parse_error_count": 0,
+      "retained_count": 0
+    },
+    {
+      "id": "durham-su",
+      "type": "directory",
+      "url": "https://www.durhamsu.com/groups/studentgroups/",
+      "label": "Durham Students' Union",
+      "last_attempt_at": "2026-10-17T11:06:52.352705Z",
+      "status": "ok",
+      "last_success_at": "2026-10-17T11:06:52.352705Z",
+      "society_count": 319,
+      "profiles_failed": 0,
+      "profile_errors": [],
+      "social_account_count": 77,
+      "name": "Durham Students' Union",
+      "parsed_count": 319
+    }
+  ],
+  "status": {
+    "state": "ok",
+    "source_count": 2,
+    "successful_sources": 2,
+    "failed_sources": 0,
+    "partial_sources": 0,
+    "parse_error_count": 0,
+    "live_event_count": 0,
+    "reviewed_event_count": 0,
+    "candidate_count": 11,
+    "expired_count": 3,
+    "manual_errors": [],
+    "social_ingestion": "Public social account links are discovered; Instagram and Facebook posts are not automatically ingested.",
+    "society_count": 319,
+    "directory_status": "ok"
+  }
+}

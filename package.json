@@ -1,0 +1,12 @@
+{
+  "name": "durham-free-food",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A source-linked guide to free food at Durham events.",
+  "scripts": {
+    "start": "python -m http.server 4173 --directory dist --bind 127.0.0.1",
+    "test": "node --test tests/events.test.js",
+    "refresh": "python scripts/refresh.py"
+  }
+}
