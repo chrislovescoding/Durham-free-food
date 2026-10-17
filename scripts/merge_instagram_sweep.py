@@ -15,10 +15,12 @@ import re
 
 try:
     from scripts.ai_events import evidence_signature
+    from scripts.ai_posts import THRESHOLD
     from scripts.import_apify import merge_batch
     from scripts.refresh import load_json, write_json
 except ImportError:
     from ai_events import evidence_signature
+    from ai_posts import THRESHOLD
     from import_apify import merge_batch
     from refresh import load_json, write_json
 
@@ -157,6 +159,36 @@ def _merge_ai(item, cache, stored, social_posts):
     return accepted, stale
 
 
+def _current_success(post, cache, stored, social_posts):
+    """A newer saved success can satisfy an older batch's identical evidence.
+
+    A processed ID alone is insufficient: failed API requests also checkpoint
+    IDs/signatures. Require an actual completed decision and, when positive, an
+    extraction, with no unresolved cache error or mismatched stored evidence.
+    """
+    post_id = post['id']
+    signature = evidence_signature(post)
+    if (post_id not in social_posts or evidence_signature(social_posts[post_id]) != signature
+            or post_id not in stored.get('processed_post_ids', [])
+            or stored.get('processed_signatures', {}).get(post_id) != signature):
+        return False
+    entry = cache['posts'].get(post_id, {})
+    probability = entry.get('decision', {}).get('probability')
+    if (not entry.get('fingerprint') or entry.get('error') or isinstance(probability, bool)
+            or not isinstance(probability, (float, int)) or not math.isfinite(probability)
+            or not 0 <= probability <= 1):
+        return False
+    if probability >= THRESHOLD:
+        payload = entry.get('extraction')
+        if (not isinstance(payload, dict) or set(payload) != {'events', 'review_reason'}
+                or not isinstance(payload['events'], list)
+                or payload['review_reason'] is not None and not isinstance(payload['review_reason'], str)):
+            return False
+    records = [record for field in ('events', 'queue') for record in stored.get(field, [])
+               if record.get('post_id') == post_id]
+    return all(record.get('input_signature') == signature for record in records)
+
+
 def merge_sweep(folder, root=ROOT):
     folder, root = Path(folder), Path(root)
     plan, batches, sum_caps = _read_batches(folder)
@@ -170,8 +202,8 @@ def merge_sweep(folder, root=ROOT):
               'expected_batches': len(batches), 'completed_batches': 0, 'max_charge_usd': plan['max_charge_usd'],
               'sum_batch_caps_usd': round(sum_caps, 6), 'run_charge_usd': 0, 'returned_items': 0,
               'accepted_posts': 0, 'images_inspected': 0, 'images_failed_or_skipped': 0,
-              'errors': [], 'batches': [], **{key: 0 for key in COUNTS}}
-    seen, processed = set(), set()
+              'errors': [], 'superseded_errors': [], 'batches': [], **{key: 0 for key in COUNTS}}
+    seen, processed, completed, retained = set(), set(), set(), set()
     # Merge all observations first, so stale results cannot replace newer evidence
     # when the same coauthored post appears in two different account batches.
     for item in batches:
@@ -181,23 +213,39 @@ def merge_sweep(folder, root=ROOT):
             if _time(previous_updated_at) > _time(social.get('updated_at')):
                 social['updated_at'] = previous_updated_at
     current_posts = {post['id']: post for post in social['posts']}
+    merged = {}
+    for item in batches:
+        merged[item['id']] = _merge_ai(item, cache, stored, current_posts)
+    # Assess final coverage only after every checkpoint has been merged. Shared
+    # posts can be recovered by a later batch, irrespective of batch ordering.
     for item in batches:
         run, ai = item['receipt'].get('run', {}), item['ai']
-        accepted, stale = _merge_ai(item, cache, stored, current_posts)
+        accepted, _ = merged[item['id']]
         posts = item['batch'].get('posts', [])
+        successful = {post['id'] for post in posts if _current_success(post, cache, stored, current_posts)}
+        retained_ids = successful - set(accepted)
+        stale = sorted({post['id'] for post in posts} - successful)
         seen.update(post['id'] for post in posts)
         processed.update(accepted)
-        errors = [{'batch_id': item['id'], **error} for error in ai.get('errors', [])]
+        completed.update(successful)
+        retained.update(retained_ids)
+        historical_errors = [{'batch_id': item['id'], **error} for error in ai.get('errors', [])]
+        errors = [error for error in historical_errors if error.get('post_id') not in successful]
+        superseded_errors = [error for error in historical_errors if error.get('post_id') in successful]
         report['errors'].extend(errors)
+        report['superseded_errors'].extend(superseded_errors)
         complete = (run.get('status') == 'SUCCEEDED' and item['charge'] is not None
                     and 'posts' in item['batch'] and (not posts or (item['has_images']
-                    and ai.get('finished_at') and len(accepted) == len(posts) and not errors and not stale)))
+                    and ai.get('finished_at') and len(successful) == len(posts) and not errors and not stale)))
         status = {'id': item['id'], 'status': 'complete' if complete else 'partial',
                   'collection_status': run.get('status', 'missing'), 'run_id': run.get('id'),
                   'run_charge_usd': item['charge'], 'max_charge_usd': item['cap'],
                   'returned_items': _count(item['receipt'].get('returned_items', 0), 'returned items'),
                   'accepted_posts': len(posts), 'ai_posts_merged': len(accepted),
-                  'stale_or_missing_ai_post_ids': stale, 'errors': errors}
+                  'ai_posts_completed': len(successful), 'ai_posts_retained': len(retained_ids),
+                  'retained_ai_post_ids': sorted(retained_ids),
+                  'stale_or_missing_ai_post_ids': stale, 'errors': errors,
+                  'superseded_errors': superseded_errors}
         report['batches'].append(status)
         report['completed_batches'] += int(complete)
         report['run_charge_usd'] += item['charge'] or 0
@@ -209,6 +257,7 @@ def merge_sweep(folder, root=ROOT):
             report[key] += _count(ai.get(key, 0), key)
     report['run_charge_usd'] = round(report['run_charge_usd'], 6)
     report.update(unique_posts=len(seen), unique_ai_posts_merged=len(processed),
+                  unique_ai_posts_completed=len(completed), unique_ai_posts_retained=len(retained),
                   planned_accounts=plan.get('planned_accounts'), requested_posts=plan.get('requested_posts'))
     if report['completed_batches'] != report['expected_batches']:
         report['status'] = 'partial'

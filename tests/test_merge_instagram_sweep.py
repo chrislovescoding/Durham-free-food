@@ -66,7 +66,9 @@ class MergeInstagramSweepTests(unittest.TestCase):
                        'processed_post_ids': processed, 'processed_signatures': {
                            post['id']: evidence_signature(post) for post in posts if post['id'] in processed}, 'updated_at': at})
             self.write(folder / 'ai-checkpoints/ai-post-cache.json', {'posts': {post['id']: {
-                'fingerprint': 'fingerprint-' + post['id'], 'updated_at': at} for post in posts if post['id'] in processed}})
+                'fingerprint': 'fingerprint-' + post['id'], 'updated_at': at,
+                'decision': {'probability': 0.9}, 'extraction': {'events': [], 'review_reason': None}}
+                for post in posts if post['id'] in processed}})
         return folder
 
     def test_full_merge_preserves_human_reviews_and_unique_posts(self):
@@ -186,6 +188,88 @@ class MergeInstagramSweepTests(unittest.TestCase):
         self.write(folder / 'run.json', run)
         with self.assertRaisesRegex(ValueError, 'date cutoff'):
             merge_sweep(self.folder, self.root)
+
+    def saved_success(self, post, *, error=None, signature=None, probability=0.9):
+        signature = signature or evidence_signature(post)
+        entry = {'fingerprint': 'newer-result', 'updated_at': LATE, 'decision': {'probability': probability},
+                 'extraction': {'events': [], 'review_reason': None}}
+        if error:
+            entry['error'] = error
+        self.write(self.root / 'data/ai-post-cache.json', {'posts': {post['id']: entry}})
+        result = {'events': [], 'queue': [], 'processed_post_ids': [post['id']],
+                  'processed_signatures': {post['id']: signature}, 'processed_at_by_post': {post['id']: LATE},
+                  'updated_at': LATE}
+        self.write(self.root / 'data/ai-events.json', result)
+        return entry, result
+
+    def test_newer_same_evidence_success_counts_complete_without_overwriting(self):
+        post = self.post('post01')
+        self.batch('01', [post], at=EARLY)
+        self.batch('02', [])
+        entry, _ = self.saved_success(post)
+        report = merge_sweep(self.folder, self.root)
+        self.assertEqual(report['status'], 'complete')
+        self.assertEqual(report['batches'][0]['ai_posts_retained'], 1)
+        self.assertEqual(report['batches'][0]['ai_posts_merged'], 0)
+        self.assertEqual(report['unique_ai_posts_completed'], 1)
+        self.assertEqual(report['batches'][0]['stale_or_missing_ai_post_ids'], [])
+        self.assertEqual(self.read(self.root / 'data/ai-post-cache.json')['posts']['post01'], entry)
+        self.assertEqual(self.read(self.root / 'data/ai-events.json')['events'], [])
+
+    def test_newer_error_or_changed_signature_does_not_count_as_success(self):
+        for mode in ('error', 'signature', 'missing_extraction'):
+            with self.subTest(mode=mode):
+                post = self.post('post01')
+                self.batch('01', [post], at=EARLY)
+                self.batch('02', [])
+                self.saved_success(post, error='Unknown API outcome' if mode == 'error' else None,
+                                   signature='different-evidence' if mode == 'signature' else None)
+                if mode == 'missing_extraction':
+                    cache = self.read(self.root / 'data/ai-post-cache.json')
+                    del cache['posts']['post01']['extraction']
+                    self.write(self.root / 'data/ai-post-cache.json', cache)
+                report = merge_sweep(self.folder, self.root)
+                self.assertEqual(report['status'], 'partial')
+                self.assertEqual(report['batches'][0]['ai_posts_retained'], 0)
+                self.assertEqual(report['batches'][0]['stale_or_missing_ai_post_ids'], ['post01'])
+
+    def test_negative_decision_is_a_completed_result_without_extraction(self):
+        post = self.post('post01')
+        self.batch('01', [post], at=EARLY)
+        self.batch('02', [])
+        self.saved_success(post, probability=0.05)
+        cache = self.read(self.root / 'data/ai-post-cache.json')
+        del cache['posts']['post01']['extraction']
+        self.write(self.root / 'data/ai-post-cache.json', cache)
+        self.assertEqual(merge_sweep(self.folder, self.root)['status'], 'complete')
+
+    def test_later_batch_recovery_supersedes_earlier_error_in_final_report(self):
+        post = self.post('shared')
+        failed = self.batch('01', [post], at=EARLY)
+        self.batch('02', [post], at=LATE)
+        cache = self.read(failed / 'ai-checkpoints/ai-post-cache.json')
+        cache['posts']['shared']['error'] = 'HTTP 413'
+        self.write(failed / 'ai-checkpoints/ai-post-cache.json', cache)
+        report = self.read(failed / 'ai-report.json')
+        report['errors'] = [{'post_id': 'shared', 'reason': 'HTTP 413'}]
+        self.write(failed / 'ai-report.json', report)
+        report = merge_sweep(self.folder, self.root)
+        self.assertEqual(report['status'], 'complete')
+        self.assertEqual(report['errors'], [])
+        self.assertEqual(len(report['superseded_errors']), 1)
+        self.assertEqual(report['unique_ai_posts_completed'], 1)
+
+    def test_newer_failed_batch_makes_shared_post_incomplete_in_both_reports(self):
+        post = self.post('shared')
+        self.batch('01', [post], at=EARLY)
+        failed = self.batch('02', [post], at=LATE)
+        cache = self.read(failed / 'ai-checkpoints/ai-post-cache.json')
+        cache['posts']['shared']['error'] = 'Unknown API outcome'
+        self.write(failed / 'ai-checkpoints/ai-post-cache.json', cache)
+        report = merge_sweep(self.folder, self.root)
+        self.assertEqual(report['status'], 'partial')
+        self.assertEqual(report['unique_ai_posts_completed'], 0)
+        self.assertEqual([batch['status'] for batch in report['batches']], ['partial', 'partial'])
 
 
 if __name__ == '__main__':
