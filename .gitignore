@@ -10,3 +10,5 @@ node_modules/
 *.tar.gz
 *.tar
 work/
+dist/server/
+dist/.openai/

@@ -5,8 +5,15 @@
   "type": "module",
   "description": "A source-linked guide to free food at Durham events.",
   "scripts": {
-    "start": "python -m http.server 4173 --directory dist --bind 127.0.0.1",
-    "test": "node --test tests/events.test.js",
+    "start": "node scripts/preview-worker.mjs",
+    "build": "node scripts/build-worker.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "db:generate": "drizzle-kit generate",
+    "test": "node --test tests/*.test.js",
     "refresh": "python scripts/refresh.py"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2"
   }
 }

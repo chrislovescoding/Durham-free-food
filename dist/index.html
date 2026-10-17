@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./event-details.css">
   <script type="module" src="./app.js"></script>
 </head>
 <body>
@@ -18,11 +19,6 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#" aria-label="Grubr home"><img src="./assets/grubr-wordmark.svg" alt="Grubr" width="104" height="40"></a>
-      <nav aria-label="Main navigation">
-        <button class="nav-item active" data-view="events" aria-current="page">Find food</button>
-        <button class="nav-item" data-view="societies">Societies</button>
-        <button class="nav-item" data-view="about">How it works</button>
-      </nav>
       <button class="saved-button" id="saved-toggle" aria-pressed="false"><span data-icon="bookmark"></span><span>Saved</span><span id="saved-count">0</span></button>
     </div>
   </header>
@@ -40,10 +36,7 @@
     <section id="events-view" class="view" aria-labelledby="finder-title">
       <div class="finder-heading" id="finder">
         <div><h2 id="finder-title">What’s on the menu?</h2><p>Find the food. Check the details. Make a plan.</p></div>
-        <div class="feed-switch" role="group" aria-label="Choose event feed"><button id="live-mode" class="selected" aria-pressed="true">Live listings</button><button id="demo-mode" aria-pressed="false">Try the demo</button></div>
       </div>
-      <div id="demo-banner" class="notice demo-notice" hidden><span data-icon="sparkles"></span><p><strong>You’re exploring example events.</strong> These show how Grubr works. They are not real events to attend.</p><button id="return-live">Back to live</button></div>
-      <div id="feed-warning" class="notice" role="status" hidden></div>
       <div class="finder-layout">
         <div class="feed-column">
           <div class="search-box"><span data-icon="search"></span><input id="event-search" type="search" placeholder="A society, a place, a slice of pizza…" aria-label="Search events"><kbd aria-hidden="true">/</kbd></div>
@@ -57,36 +50,29 @@
           <div id="event-grid" class="event-grid" aria-label="Events"></div>
           <div id="empty-state" class="empty-state" hidden><img class="empty-symbol" src="./assets/grubr-symbol.svg" alt="" width="621" height="794"><h3 id="empty-title"></h3><p id="empty-copy"></p><button id="empty-action" class="primary-button"></button></div>
         </div>
-        <aside class="sidebar" aria-label="Useful information">
-          <section class="little-guide"><div class="guide-heading"><span data-icon="food"></span><span>A good place to start</span></div><h3>Your next bite.<br>All in one place.</h3><ul><li><span data-icon="check"></span>Who’s hosting</li><li><span data-icon="check"></span>When and where to go</li><li><span data-icon="check"></span>The original event link</li></ul><button data-view="about" class="text-button">How Grubr finds food <span aria-hidden="true">↗</span></button></section>
-          <section class="pantry-card"><span class="pantry-icon" data-icon="basket"></span><div><h3>Need food today?</h3><p>The SU Pantry is a free student supermarket in Dunelm House. Check opening times and availability before you go.</p><a href="https://www.durhamsu.com/support/pantry/" target="_blank" rel="noopener noreferrer">Visit the SU Pantry <span aria-hidden="true">↗</span></a></div></section>
-          <div class="freshness"><span data-icon="clock"></span><p id="freshness-text">Loading source information…</p></div>
-        </aside>
       </div>
+      <p class="listing-freshness" id="freshness-text"></p>
+      <section class="pantry-note"><div><h3>Need food today?</h3><p>The SU Pantry is a free student supermarket in Dunelm House.</p></div><a href="https://www.durhamsu.com/support/pantry/" target="_blank" rel="noopener noreferrer">Check opening times ↗</a></section>
       <div class="contribute-strip"><div><h3>Found something good?</h3><p>Help someone else find their next free bite.</p></div><button class="secondary-button" id="submit-event"><span data-icon="plus"></span>Suggest an event</button></div>
     </section>
 
-    <section id="societies-view" class="view" aria-labelledby="societies-title" hidden>
-      <div class="section-heading"><div><h2 id="societies-title">Find your people.</h2><p>Explore societies and see which accounts Grubr can check.</p></div><a class="secondary-button" href="https://www.durhamsu.com/groups/studentgroups/" target="_blank" rel="noopener noreferrer">SU directory <span aria-hidden="true">↗</span></a></div>
-      <div class="society-tools"><div class="search-box society-search"><span data-icon="search"></span><input type="search" id="society-search" aria-label="Search societies" placeholder="Find a society…"></div><label class="coverage-filter">Collection coverage<select id="society-coverage-filter"><option value="all">All societies</option><option value="collected">Recent posts collected</option><option value="missing_accounts">Account links needed</option><option value="needs_attention">Collection needs attention</option><option value="stale">Stale collection</option></select></label></div>
-      <p class="muted" id="society-count" aria-live="polite"></p><div id="society-grid" class="society-grid"></div><button class="secondary-button" id="load-societies" hidden>Show more societies</button>
-    </section>
-
-    <section id="about-view" class="view about-view" aria-labelledby="about-title" hidden>
-      <div class="about-heading"><img src="./assets/grubr-symbol.svg" alt="" width="621" height="794"><div><h2 id="about-title">Less scrolling.<br>More showing up.</h2><p class="section-intro">Grubr brings Durham’s free-food events together, with the details you need and the original source close by.</p></div></div>
-      <div class="about-grid">
-        <article><span class="about-icon" data-icon="search"></span><h3>Find the useful posts</h3><p>We find society accounts through SU profiles and linked society websites, then collect accessible posts. Each society has a coverage status. Authorised connections and organiser submissions help fill the gaps.</p></article>
-        <article><span class="about-icon" data-icon="check"></span><h3>Check the details</h3><p>We check captions and available event posters for a clear date, time, place and free-food offer. Unclear or conflicting details go for review before becoming a listing.</p></article>
-        <article><span class="about-icon" data-icon="clock"></span><h3>Keep things fresh</h3><p>Sources are checked each evening around 8pm UK time. Started events turn grey. The default view includes the last two weeks, and “All found” keeps the full confirmed history. Entry fees are shown separately from free food, and unknown details stay clearly labelled.</p></article>
-      </div>
-      <div class="source-panel"><h3>What we’re checking</h3><p id="coverage-summary">Checking source status…</p><div id="source-status"></div><p class="muted">Public feeds expose a limited recent window. Some accounts require login or API access. Check the organiser’s latest post before heading out.</p></div>
-      <div class="source-panel"><h3>Society coverage</h3><p id="directory-coverage-summary">Checking coverage across the society directory…</p><button class="text-button coverage-link" data-view="societies">Browse society coverage <span aria-hidden="true">↗</span></button><p id="social-coverage-summary">Loading social collection status…</p><details class="social-account-details"><summary>See account-by-account coverage</summary><div id="social-account-status"></div></details><h3 class="collected-posts-title">From the societies</h3><p class="muted">Real organiser captions, including posts that don’t qualify as free-food events.</p><div id="collected-posts"></div><button class="secondary-button" id="more-posts" hidden>Show more posts</button></div>
-      <button class="primary-button" data-view="events">Find food</button>
-    </section>
-    <footer><a class="footer-brand" href="#" aria-label="Grubr home"><img src="./assets/grubr-wordmark.svg" alt="Grubr" width="104" height="40"></a><p>Good food. Better company.</p><div><span>Independent student prototype</span><a href="https://github.com/chrislovescoding/Durham-free-food" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></footer>
+    <footer><a class="footer-brand" href="#" aria-label="Grubr home"><img src="./assets/grubr-wordmark.svg" alt="Grubr" width="104" height="40"></a><p>Good food. Better company.</p></footer>
   </main>
   <dialog id="event-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close event details" data-close="event-dialog">×</button><div id="event-dialog-content"></div></dialog>
-  <dialog id="submit-dialog" aria-labelledby="submit-title"><button class="dialog-close" aria-label="Close suggestion form" data-close="submit-dialog">×</button><span class="dialog-eyebrow">Pass it on</span><h2 id="submit-title">Share a good find.</h2><p>Add the original post or event link. This opens a pre-filled GitHub issue for review. You’ll need a GitHub account to send it.</p><form id="suggest-form"><label>Event name<input name="title" required maxlength="150" placeholder="e.g. Welcome social with free pizza"></label><label>Original event or post link<input name="source" type="url" required placeholder="https://…"></label><label>Anything else we should know?<textarea name="details" rows="3" maxlength="2000" placeholder="Date, time, society or sign-up details"></textarea></label><button type="submit" class="primary-button">Continue to GitHub <span aria-hidden="true">↗</span></button></form></dialog>
+  <dialog id="submit-dialog" aria-labelledby="submit-title">
+    <button class="dialog-close" aria-label="Close suggestion form" data-close="submit-dialog">×</button>
+    <div class="suggest-intro"><span class="suggest-icon" data-icon="food"></span><h2 id="submit-title">Share a good find.</h2><p>Spotted free food? Send us the event link and we’ll check the details before adding it.</p></div>
+    <form id="suggest-form">
+      <label>Event name<input name="title" required minlength="3" maxlength="150" placeholder="e.g. Welcome social with free pizza"></label>
+      <label>Original event or post link<input name="source" type="url" required maxlength="2000" placeholder="https://…"></label>
+      <label>Anything else we should know? <span class="optional">Optional</span><textarea name="details" rows="3" maxlength="2000" placeholder="When, where, and what’s on the menu"></textarea></label>
+      <div class="form-trap" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p id="suggest-error" class="form-error" role="alert" hidden></p>
+      <button id="send-suggestion" type="submit" class="primary-button">Send suggestion <span data-icon="arrow-down" class="send-arrow"></span></button>
+      <p class="suggest-note">No account needed. Your suggestion is saved for review.</p>
+    </form>
+    <div id="suggest-success" class="suggest-success" role="status" hidden><span class="success-icon" data-icon="check"></span><h3>Thanks for sharing.</h3><p>We’ve received your suggestion. We’ll check the original post before adding it to Grubr.</p><button class="primary-button" data-close="submit-dialog">Back to the food</button></div>
+  </dialog>
   <div id="toast" class="toast" role="status" hidden></div>
 </body>
 </html>

@@ -2,24 +2,26 @@
 
 A hackathon prototype for finding free food at Durham student events, with a source-linked event feed and an evening data collector. The public source repository is **Durham-free-food**.
 
-**[Open the prototype](https://durham-free-food-chris.chris9p.chatgpt.site)** · **[Try the clearly labelled example feed](https://durham-free-food-chris.chris9p.chatgpt.site/?demo=1)**
+**[Open Grubr](https://durham-free-food-chris.chris9p.chatgpt.site)**
 
-The hosted Grubr website and the source repository are public. The default live feed contains only source-backed, explicitly confirmed free-food events. If none are found, it shows an honest empty state. Demo listings are fictional, marked on every card and in every calendar download, and kept separate from real data.
+The hosted Grubr website and the source repository are public. The feed contains only source-backed, explicitly confirmed free-food events. The default view includes upcoming events and the last two weeks of past listings; **All found** includes older confirmed events. Past events are clearly labelled. Suggestions are saved privately for review and never automatically added to the feed.
 
 ## Run locally
 
-Requires Python 3.11+; Node 20+ is used only for frontend tests and optional npm commands. There is no frontend build or package installation.
+Requires Python 3.11+ for the collector and Node 24+ for the website's local Worker preview and API tests. The website build and preview use only Node built-ins. Development dependencies are needed only when generating a new database migration.
 
 ```sh
-python -m http.server 4173 --directory dist --bind 127.0.0.1
+node scripts/build-worker.mjs
+node scripts/preview-worker.mjs --port 4177
 ```
 
-Open `http://127.0.0.1:4173` for live listings or `http://127.0.0.1:4173/?demo=1` for demo events.
+Open `http://127.0.0.1:4177`. Suggestions persist in the ignored `.sites-local/suggestions.sqlite` database. This local database is separate from the production Sites D1 database.
 
 ```sh
 python -m pip install -r requirements.txt
 python scripts/refresh.py
-node --test tests/events.test.js
+node --test tests/*.test.js
+node scripts/validate-artifact.mjs
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
@@ -27,11 +29,11 @@ python -m unittest discover -s tests -p 'test_*.py' -v
 
 - Search by event, food, society or location; filter by today, tomorrow, the next seven days, entry price and registration.
 - Event details show food, entry cost, date, time, place, sign-up rules/deadline, eligibility, dietary information and original source. Unknown information stays unknown.
-- Started events remain grey for the rest of their London calendar day, then disappear. Date filtering is repeated every minute and when returning to the tab.
+- Started and past events are labelled and greyed. Date filtering is repeated every minute and when returning to the tab.
 - Save events on the current browser and download an `.ics` calendar entry. No account is required; saved events do not sync across devices.
-- Browse every SU society, filter collection coverage, and suggest missing or corrected account links with ownership evidence.
-- Collect recent public Instagram captions, publication times and original post links through public profile embeds; inspect per-account results under **How it works**. Facebook public HTML and authorised Meta API adapters are also included.
-- Suggest an event through a pre-filled GitHub issue. The visitor reviews and submits it; it is not automatically published.
+- The collector retains society account coverage and source records in repository data. The public interface focuses on finding food.
+- Collect recent public Instagram captions, publication times and original post links, then review captions and poster images for explicit free-food claims. Facebook public HTML and authorised Meta API adapters are also included.
+- Suggest an event directly on the website. A server-side API saves the event link and details to a private review queue in Sites D1; no GitHub account or sign-in is required. See [the suggestions workflow](docs/event-suggestions.md).
 - The refresh workflow runs around **20:00 Europe/London** each day, handling British Summer Time. GitHub may delay scheduled runs. It can also be run manually from the Actions tab.
 
 The frontend checks the public repository's latest `main/dist/data/*.json` data when opened, falling back to its bundled snapshot if the repository is unavailable. This lets the scheduled workflow update the hosted site's content without redeploying the frontend. A running tab recalculates dates every minute; refresh the page to fetch newly collected data.

@@ -1,4 +1,5 @@
-import { dayKey, eventStatus, filterEvents, formatDate, friendlyDay, entryLabel, signupLabel, calendarFile, demoEvents, safeUrl, isValidEvent } from './events.js';
+import { eventStatus, filterEvents, formatDate, friendlyDay, entryLabel, signupLabel, calendarFile, safeUrl, isValidEvent } from './events.js';
+import { renderEventDetails } from './event-details.js';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -11,33 +12,15 @@ function icon(name) { return `<svg class="icon" viewBox="0 0 24 24" fill="none" 
 $$('[data-icon]').forEach(node => node.innerHTML = icon(node.dataset.icon));
 let storedSaved = [];
 try { const stored = JSON.parse(localStorage.getItem('dff:saved') || '[]'); if(Array.isArray(stored)) storedSaved = stored.filter(id => typeof id === 'string'); } catch {}
-const state = { mode:new URLSearchParams(location.search).get('demo') === '1' ? 'demo' : 'live', view:'events', search:'', date:'recent', freeEntry:false, signup:'all', savedOnly:false, savedIds:storedSaved, data:{events:[],sources:[]}, societies:[], societyLimit:30, loaded:false, activeEvent:null };
-state.social={posts:[],accounts:[],status:{}};
-state.postLimit=6;
+const state = { search:'', date:'recent', freeEntry:false, signup:'all', savedOnly:false, savedIds:storedSaved, data:{events:[]}, loaded:false, loadError:false, activeEvent:null };
 let toastTimer;
 function toast(message) { $('#toast').textContent = message; $('#toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('#toast').hidden = true, 3500); }
-function allEvents() { return state.mode === 'demo' ? demoEvents() : state.data.events; }
-function chooseView(view, scroll = true) {
-  state.view = view;
-  $$('section.view').forEach(el => el.hidden = el.id !== `${view}-view`);
-  $$('.nav-item').forEach(el => {const active=el.dataset.view === view;el.classList.toggle('active',active);if(active)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');});
-  if(scroll) $(`#${view}-view`).scrollIntoView({behavior:'smooth',block:'start'});
-  if(view === 'societies') renderSocieties();
-}
-$$('[data-view]').forEach(el => el.addEventListener('click',() => chooseView(el.dataset.view)));
-$('.brand').addEventListener('click',e => {e.preventDefault();chooseView('events',false);window.scrollTo({top:0,behavior:'smooth'});});
-$('.hero-link').addEventListener('click',e => {e.preventDefault();chooseView('events');});
-$('.skip-link').addEventListener('click',e => {e.preventDefault();chooseView('events');$('#event-search').focus();});
-$('.footer-brand').addEventListener('click',e => {e.preventDefault();chooseView('events',false);window.scrollTo({top:0,behavior:'smooth'});});
-function setMode(mode) {
-  state.mode = mode; state.savedOnly = false;
-  const url = new URL(location.href); mode === 'demo' ? url.searchParams.set('demo','1') : url.searchParams.delete('demo');
-  history.replaceState({},'',url);
-  render();
-}
-$('#live-mode').addEventListener('click',() => setMode('live'));
-$('#demo-mode').addEventListener('click',() => setMode('demo'));
-$('#return-live').addEventListener('click',() => setMode('live'));
+function allEvents() { return state.data.events; }
+function focusFinder(){ $('#finder').scrollIntoView({behavior:'smooth',block:'start'}); }
+$('.brand').addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+$('.footer-brand').addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+$('.hero-link').addEventListener('click',e=>{e.preventDefault();focusFinder();});
+$('.skip-link').addEventListener('click',e=>{e.preventDefault();focusFinder();$('#event-search').focus();});
 $('#event-search').addEventListener('input',e => {state.search=e.target.value;render();});
 $$('[data-date]').forEach(button => button.addEventListener('click',() => {state.date=button.dataset.date;render();}));
 $('#filters-toggle').addEventListener('click',() => {const expanded=$('#more-filters').hidden;$('#more-filters').hidden=!expanded;$('#filters-toggle').setAttribute('aria-expanded',String(expanded));});
@@ -45,8 +28,8 @@ $('#free-entry').addEventListener('change',e => {state.freeEntry=e.target.checke
 $('#signup-filter').addEventListener('change',e => {state.signup=e.target.value;render();});
 function resetFilters(){state.search='';state.date='recent';state.freeEntry=false;state.signup='all';state.savedOnly=false;$('#event-search').value='';$('#free-entry').checked=false;$('#signup-filter').value='all';render();}
 $('#reset-filters').addEventListener('click',resetFilters);
-$('#saved-toggle').addEventListener('click',() => {state.savedOnly=!state.savedOnly;if(state.savedOnly)state.date='all';chooseView('events');render();});
-document.addEventListener('keydown',e => { if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')) {e.preventDefault();chooseView('events');$('#event-search').focus();} });
+$('#saved-toggle').addEventListener('click',() => {state.savedOnly=!state.savedOnly;if(state.savedOnly)state.date='all';focusFinder();render();});
+document.addEventListener('keydown',e => { if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')) {e.preventDefault();focusFinder();$('#event-search').focus();} });
 function saveEvent(id) {
   const exists=state.savedIds.includes(id);
   state.savedIds=exists?state.savedIds.filter(saved=>saved!==id):[...state.savedIds,id];
@@ -59,32 +42,30 @@ function card(event) {
   const foodIcons=[['pizza','🍕'],['coffee','🥐'],['curry','🍛'],['snack','🍿'],['cake','🧁']];
   const visual=foodIcons.find(([keyword])=>`${event.title} ${event.food}`.toLowerCase().includes(keyword))||['','🥪'];
   const signup=signupLabel(event);
-  return `<article class="event-card ${started?'started':''}"><div class="card-art"><div class="date-stamp"><strong>${formatDate(event.starts_at,{day:'numeric'})}</strong><span>${formatDate(event.starts_at,{month:'short'})}</span></div><span class="food-drawing" aria-hidden="true">${escape(event.demo?event.emoji:visual[1])}</span><button class="bookmark-button" data-save="${escape(event.id)}" aria-label="${state.savedIds.includes(event.id)?'Unsave':'Save'} ${escape(event.title)}" aria-pressed="${state.savedIds.includes(event.id)}">${icon('bookmark')}</button>${started?`<span class="started-tag">${status==='past'?'Past event':status==='ended'?'Ended today':'Already started'}</span>`:''}</div><div class="card-body"><div class="society-label"><span class="society-dot" aria-hidden="true">${escape(event.society.slice(0,1))}</span>${escape(event.society)}</div><h3 class="event-title"><button data-details="${escape(event.id)}">${escape(event.title)}</button></h3><div class="event-meta"><div>${icon('clock')}<span>${friendlyDay(event.starts_at)} · ${formatDate(event.starts_at,{hour:'2-digit',minute:'2-digit'})}${event.ends_at?'–'+formatDate(event.ends_at,{hour:'2-digit',minute:'2-digit'}):''}</span></div><div>${icon('pin')}<span>${escape(event.location||'Location to be confirmed')}</span></div><div class="food-meta">${icon('food')}<span>${escape(event.food||'Free food')}</span></div></div><div class="card-tags"><span class="tag ${event.signup_required===false?'free':event.signup_required===true?'warning':''}">${signup}</span>${event.demo?'<span class="tag example">Example event</span>':'<span class="tag free">Free food confirmed</span>'}</div><div class="card-bottom"><span class="card-price">${entryLabel(event.price)}<small>${event.price>0?'Food included with entry':'Food on the house'}</small></span><button class="details-button" data-details="${escape(event.id)}">View details <span aria-hidden="true">↗</span></button></div></div></article>`;
+  return `<article class="event-card ${started?'started':''}"><div class="card-art"><div class="date-stamp"><strong>${formatDate(event.starts_at,{day:'numeric'})}</strong><span>${formatDate(event.starts_at,{month:'short'})}</span></div><span class="food-drawing" aria-hidden="true">${escape(visual[1])}</span><button class="bookmark-button" data-save="${escape(event.id)}" aria-label="${state.savedIds.includes(event.id)?'Unsave':'Save'} ${escape(event.title)}" aria-pressed="${state.savedIds.includes(event.id)}">${icon('bookmark')}</button>${started?`<span class="started-tag">${status==='past'?'Past event':status==='ended'?'Ended today':'Already started'}</span>`:''}</div><div class="card-body"><div class="society-label"><span class="society-dot" aria-hidden="true">${escape(event.society.slice(0,1))}</span>${escape(event.society)}</div><h3 class="event-title"><button data-details="${escape(event.id)}">${escape(event.title)}</button></h3><div class="event-meta"><div>${icon('clock')}<span>${friendlyDay(event.starts_at)} · ${formatDate(event.starts_at,{hour:'2-digit',minute:'2-digit'})}${event.ends_at?'–'+formatDate(event.ends_at,{hour:'2-digit',minute:'2-digit'}):''}</span></div><div>${icon('pin')}<span>${escape(event.location||'Location to be confirmed')}</span></div><div class="food-meta">${icon('food')}<span>${escape(event.food||'Free food')}</span></div></div><div class="card-tags"><span class="tag ${event.signup_required===false?'free':event.signup_required===true?'warning':''}">${signup}</span><span class="tag free">Free food confirmed</span></div><div class="card-bottom"><span class="card-price">${entryLabel(event.price)}<small>${event.price>0?'Food included with entry':'Food on the house'}</small></span><button class="details-button" data-details="${escape(event.id)}">View details <span aria-hidden="true">↗</span></button></div></div></article>`;
 }
 function render() {
   const focused=document.activeElement;
   const focusKey=focused?.closest('#event-grid') ? {save:focused.dataset.save,details:focused.dataset.details,isTitle:!!focused.closest('.event-title')} : null;
-  $('#demo-banner').hidden=state.mode!=='demo';
-  ['live','demo'].forEach(mode => {const el=$(`#${mode}-mode`);el.classList.toggle('selected',state.mode===mode);el.setAttribute('aria-pressed',String(state.mode===mode));});
   $$('[data-date]').forEach(el => {el.classList.toggle('active',el.dataset.date===state.date);el.setAttribute('aria-pressed',String(el.dataset.date===state.date));});
   const all=allEvents(), shown=filterEvents(all,state), count=shown.length;
   const activeSaved=all.filter(e=>state.savedIds.includes(e.id)).length;
   $('#saved-count').textContent=activeSaved;$('#saved-toggle').setAttribute('aria-pressed',String(state.savedOnly));
   const filterCount=Number(state.freeEntry)+Number(state.signup!=='all');$('#filter-count').hidden=!filterCount;$('#filter-count').textContent=filterCount;
-  $('#results-count').textContent=!state.loaded&&state.mode==='live'?'Checking the menu…':`${count} ${state.mode==='demo'?'example ':''}${state.savedOnly?'saved ':''}event${count===1?'':'s'}${state.date==='today'?' today':state.date==='tomorrow'?' tomorrow':''}`;
+  $('#results-count').textContent=!state.loaded?'Checking the menu…':`${count} ${state.savedOnly?'saved ':''}event${count===1?'':'s'}${state.date==='today'?' today':state.date==='tomorrow'?' tomorrow':''}`;
   const statuses=shown.map(e=>eventStatus(e));
   const upcoming=statuses.filter(s=>s==='upcoming').length, ongoing=statuses.filter(s=>s==='started').length;
   const past=statuses.filter(s=>s==='past'||s==='ended').length;
-  $('#history-summary').textContent=state.loaded||state.mode==='demo'?[`${upcoming} upcoming`,...(ongoing?[`${ongoing} already started`]:[]),`${past} past`].join(' · '):'';
+  $('#history-summary').textContent=state.loaded?[`${upcoming} upcoming`,...(ongoing?[`${ongoing} already started`]:[]),`${past} past`].join(' · '):'';
   $('#range-note').textContent=({recent:'All upcoming events plus the last 14 days. Past events are grey and have already happened.',upcoming:'Upcoming events and any still in progress. Check the original post before going.',past:'All past events we have confirmed, newest first. These events have already happened.',all:'Every event we have confirmed. Upcoming first, then past events from newest to oldest.',today:'Events dated today in Durham. Finished events are marked clearly.',tomorrow:'Events dated tomorrow in Durham.',week:'Events over the next seven calendar days in Durham.'})[state.date];
   $('#event-grid').innerHTML=shown.map(card).join('');
   $('#event-grid').hidden=!count;
-  const empty=$('#empty-state');empty.hidden=count>0||(!state.loaded&&state.mode==='live');
-  const noLive=state.mode==='live'&&all.length===0;
-  $('#empty-title').textContent=state.savedOnly?'Your food plan starts here.':noLive?'Nothing confirmed on the menu yet.':'No bites match those filters.';
-  $('#empty-copy').textContent=state.savedOnly?'Tap the bookmark on an event to save it on this device.':noLive?'We haven’t verified a free-food event from the sources checked. Explore the demo, browse the societies, or suggest a post.':'Try another date, a different search, or fewer filters.';
-  $('#empty-action').textContent=state.savedOnly?'Browse events':noLive?'Explore example events':'Clear filters';
-  $('#empty-action').onclick=state.savedOnly?resetFilters:noLive?()=>setMode('demo'):resetFilters;
+  const empty=$('#empty-state');empty.hidden=count>0||(!state.loaded);
+  const noLive=all.length===0;
+  $('#empty-title').textContent=state.loadError?'The menu couldn’t load.':state.savedOnly?'Your food plan starts here.':noLive?'Nothing on the menu yet.':'No bites match those filters.';
+  $('#empty-copy').textContent=state.loadError?'Please try loading the events again.':state.savedOnly?'Tap the bookmark on an event to save it on this device.':noLive?'Know of a free-food event? Share the original post and help us add it.':'Try another date, a different search, or fewer filters.';
+  $('#empty-action').textContent=state.loadError?'Try again':state.savedOnly?'Browse events':noLive?'Suggest an event':'Clear filters';
+  $('#empty-action').onclick=state.loadError?init:state.savedOnly?resetFilters:noLive?openSuggestions:resetFilters;
   $$('[data-save]').forEach(el=>el.addEventListener('click',()=>saveEvent(el.dataset.save)));
   $$('[data-details]').forEach(el=>el.addEventListener('click',()=>showDetails(el.dataset.details)));
   if(focusKey){
@@ -95,42 +76,46 @@ function render() {
 }
 function showDetails(id) {
   const event=allEvents().find(e=>e.id===id);if(!event)return;state.activeEvent=event;
-  const finished=['past','ended'].includes(eventStatus(event));
-  const date=formatDate(event.starts_at,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-  const deadline=event.signup_required===false?'Not needed':event.signup_deadline?formatDate(event.signup_deadline,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'Not stated — check the organiser';
-  const mapUrl=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((event.location||'')+' Durham UK')}`;
-  $('#event-dialog-content').innerHTML=`<span class="dialog-eyebrow">${escape(event.society)}</span><h2 id="dialog-title">${escape(event.title)}</h2>${finished?'<p class="past-detail-note"><strong>Past event.</strong> This event has already happened. The listing is kept as a record of the original offer.</p>':''}${event.demo?'<p class="demo-detail-note">Example event. This listing is only here to demonstrate the prototype. Please don’t travel to it.</p>':''}<p>${escape(event.description||'Check the original event for the latest details.')}</p><dl class="detail-list"><dt>When</dt><dd>${date}<br>${formatDate(event.starts_at,{hour:'2-digit',minute:'2-digit'})}${event.ends_at?'–'+formatDate(event.ends_at,{hour:'2-digit',minute:'2-digit'}):''} (UK time)</dd><dt>Where</dt><dd>${escape(event.location||'Not confirmed')}${!event.demo&&event.location?`<br><a href="${escape(mapUrl)}" target="_blank" rel="noopener noreferrer">Open directions ↗</a>`:''}</dd><dt>On the menu</dt><dd>${escape(event.food||'Free food')}</dd><dt>Entry</dt><dd>${entryLabel(event.price)}</dd><dt>Sign-up</dt><dd>${signupLabel(event)}</dd><dt>Deadline</dt><dd>${deadline}</dd><dt>Who can go</dt><dd>${escape(event.eligibility||'Not stated — check the organiser')}</dd><dt>Dietary options</dt><dd>${escape(event.dietary?.length?event.dietary.join(', '):'Not stated — ask the organiser')}</dd></dl><div class="dialog-actions">${!event.demo&&safeUrl(event.source_url)?`<a class="primary-button" href="${escape(safeUrl(event.source_url))}" target="_blank" rel="noopener noreferrer">Original event ↗</a>`:''}<button id="dialog-save" class="secondary-button"></button><button id="add-calendar" class="secondary-button" ${finished?'disabled':''}>${icon('calendar')}${finished?'Event finished':'Add to calendar'}</button></div><p class="detail-note">${event.demo?'Calendar downloads are clearly marked as demo events.':`Source: ${escape(event.source_label||'Original organiser listing')}. ${event.verified_at?'Checked '+formatDate(event.verified_at,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})+'.':''} ${finished?'Original organiser post retained for reference.':'Details can change; check the original post before setting off.'}`}</p>`;
+  $('#event-dialog-content').innerHTML=renderEventDetails(event);
   updateDialogSave();$('#dialog-save').addEventListener('click',()=>saveEvent(event.id));
-  $('#add-calendar').addEventListener('click',()=> { if(['past','ended'].includes(eventStatus(event)))return; const blob=new Blob([calendarFile(event)],{type:'text/calendar;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=`${event.demo?'DEMO-':''}grubr-${String(event.id).replace(/[^a-zA-Z0-9-]/g,'')}.ics`;link.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Calendar file downloaded.'); });
+  $('#add-calendar').addEventListener('click',()=> {
+    if(['past','ended'].includes(eventStatus(event)))return;
+    const blob=new Blob([calendarFile(event)],{type:'text/calendar;charset=utf-8'}),url=URL.createObjectURL(blob),link=document.createElement('a');
+    link.href=url;link.download=`grubr-${String(event.id).replace(/[^a-zA-Z0-9-]/g,'')}.ics`;link.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Calendar file downloaded.');
+  });
   $('#event-dialog').showModal();
 }
 function updateDialogSave(){if(!$('#dialog-save'))return;const saved=state.savedIds.includes(state.activeEvent.id);$('#dialog-save').innerHTML=icon('bookmark')+(saved?' Saved':' Save event');$('#dialog-save').setAttribute('aria-pressed',String(saved));}
 $$('[data-close]').forEach(button=>button.addEventListener('click',()=>document.getElementById(button.dataset.close).close()));
 $$('dialog').forEach(dialog=>dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}}));
-$('#event-dialog').addEventListener('close',()=>state.activeEvent=null);
-$('#submit-event').addEventListener('click',()=>$('#submit-dialog').showModal());
-$('#suggest-form').addEventListener('submit',event=>{
-  event.preventDefault();const data=new FormData(event.target);const url=safeUrl(data.get('source'));if(!url){toast('Use a full http or https event link.');return;}
-  const issue=new URL('https://github.com/chrislovescoding/Durham-free-food/issues/new');issue.searchParams.set('title',`Event suggestion: ${data.get('title')}`);issue.searchParams.set('body',`Original source: ${url}\n\nDetails:\n${data.get('details')||'No further details provided.'}\n\nPlease review the source, free-food offer, event date, entry price, eligibility and sign-up requirements before publishing.`);
-  window.open(issue.href,'_blank','noopener,noreferrer');
-});
-$('#society-search').addEventListener('input',()=>{state.societyLimit=30;renderSocieties();});
-$('#society-coverage-filter').addEventListener('change',()=>{state.societyLimit=30;renderSocieties();});
-$('#load-societies').addEventListener('click',()=>{state.societyLimit+=30;renderSocieties();});
-function renderSocieties(){
-  const search=$('#society-search').value.trim().toLowerCase(), filter=$('#society-coverage-filter').value;
-  const coverage=new Map((state.social.coverage?.societies||[]).map(s=>[s.url,s]));
-  const labels={collected:'Recent posts seen · limited coverage',missing_accounts:'Account links needed',needs_attention:'Posts not accessible yet',stale:'Collection needs a refresh'};
-  const matches=state.societies.filter(s=>s.name.toLowerCase().includes(search)&&(filter==='all'||coverage.get(s.url)?.status===filter));
-  $('#society-count').textContent=state.loaded?`${matches.length} ${matches.length===1?'society':'societies'}${search?' matching your search':''} · Collection status is shown for every society`:'Loading societies…';
-  $('#society-grid').innerHTML=matches.slice(0,state.societyLimit).map(s=>{
-    const row=coverage.get(s.url), links=row?.accounts||['instagram','facebook'].filter(p=>s[p+'_url']).map(p=>({platform:p,url:s[p+'_url']}));
-    const issue=new URL('https://github.com/chrislovescoding/Durham-free-food/issues/new');issue.searchParams.set('template','society-account.yml');issue.searchParams.set('title',`Society account: ${s.name}`);issue.searchParams.set('society',s.url);
-    return `<article class="society-card"><span class="society-avatar" aria-hidden="true">${escape(s.name.slice(0,1))}</span><div><h3><a href="${escape(safeUrl(s.url)||'https://www.durhamsu.com/groups/studentgroups/')}" target="_blank" rel="noopener noreferrer">${escape(s.name)}</a></h3><p class="society-coverage ${escape(row?.status||'')}">${escape(labels[row?.status]||'Coverage not checked')}${row?.posts_stored?` · ${row.posts_stored} posts`:''}</p><div class="society-links"><a href="${escape(safeUrl(s.url)||'https://www.durhamsu.com/groups/studentgroups/')}" target="_blank" rel="noopener noreferrer">SU profile ↗</a>${links.filter(a=>safeUrl(a.url)).map(a=>`<a href="${escape(safeUrl(a.url))}" target="_blank" rel="noopener noreferrer">${a.platform==='instagram'?'Instagram':'Facebook'} ↗</a>`).join('')}<a href="${escape(issue.href)}" target="_blank" rel="noopener noreferrer">Add / correct account ↗</a></div></div></article>`;
-  }).join('');
-  if(!matches.length&&state.loaded)$('#society-grid').innerHTML='<p class="muted">No societies found. Try a shorter search, or open the SU directory above.</p>';
-  $('#load-societies').hidden=matches.length<=state.societyLimit;
+$('#event-dialog').addEventListener('close',()=>{state.activeEvent=null;$('#event-dialog-content').replaceChildren();});
+let suggestionAttempt=null;
+function openSuggestions(){
+  if(!$('#suggest-success').hidden){$('#suggest-form').reset();suggestionAttempt=null;}
+  $('#suggest-form').hidden=false;$('#suggest-success').hidden=true;$('.suggest-intro').hidden=false;$('#suggest-error').hidden=true;
+  $('#submit-dialog').showModal();
 }
+$('#submit-event').addEventListener('click',openSuggestions);
+$('#suggest-form').addEventListener('submit',async event=>{
+  event.preventDefault();
+  const form=event.target,fields=new FormData(form),source=safeUrl(fields.get('source'));
+  const error=$('#suggest-error'),button=$('#send-suggestion');
+  error.hidden=true;
+  if(!source){error.textContent='Please add a full event or post link, beginning with https://.';error.hidden=false;return;}
+  const payload={title:String(fields.get('title')||'').trim(),source_url:source,details:String(fields.get('details')||'').trim(),website:String(fields.get('website')||'')};
+  const signature=JSON.stringify(payload);
+  if(!suggestionAttempt||suggestionAttempt.signature!==signature)suggestionAttempt={signature,id:crypto.randomUUID()};
+  button.disabled=true;button.textContent='Sending…';
+  try{
+    const response=await fetch('/api/suggestions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...payload,idempotency_key:suggestionAttempt.id}),signal:AbortSignal.timeout(15000)});
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok)throw new Error(response.status===429?'A few too many suggestions at once. Please try again in a little while.':response.status===400?'Please check the event name and link, then try again.':'We couldn’t save your suggestion. Your details are still here—please try again.');
+    if(result.status!=='pending'||typeof result.id!=='string')throw new Error('We couldn’t confirm your suggestion was saved. Please try again.');
+    form.hidden=true;$('.suggest-intro').hidden=true;$('#suggest-success').hidden=false;suggestionAttempt=null;
+    $('#suggest-success button').focus();
+  }catch(problem){error.textContent=problem.name==='TimeoutError'||problem.name==='TypeError'?'The connection was interrupted. Your details are still here—please try again.':problem.message;error.hidden=false;}
+  finally{button.disabled=false;button.textContent='Send suggestion';}
+});
 async function fetchJson(url){const response=await fetch(url,{signal:AbortSignal.timeout(7000),cache:'no-cache'});if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json();}
 async function loadFeed(name, arrayKey=name) {
   const local=fetchJson(`./data/${name}.json`).then(value=>({value,origin:'bundled'}));
@@ -140,43 +125,16 @@ async function loadFeed(name, arrayKey=name) {
   if(!valid.length)throw new Error('No feed available');
   valid.sort((a,b)=>(Date.parse(b.value.updated_at)||0)-(Date.parse(a.value.updated_at)||0));return valid[0];
 }
-function renderCoverage() {
+function renderFreshness(){
   const updated=state.data.updated_at;
-  const age=updated?Date.now()-new Date(updated).getTime():Infinity;
-  const healthy=state.data.status?.state==='ok'||state.data.status?.state==='success';
-  $('#freshness-text').textContent=updated?`Listings updated ${formatDate(updated,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})} UK time. Evening source checks around 8pm.`:'No source check is available yet.';
-  if(age>36*3600000){$('#feed-warning').hidden=false;$('#feed-warning').textContent='The latest feed is more than a day old. Check the original event links for updates.';}
-  else if(state.data.status?.state&&!healthy){$('#feed-warning').hidden=false;$('#feed-warning').textContent='Some sources could not be checked. Existing listings retain their last checked dates.';}
-  const sources=Array.isArray(state.data.sources)?state.data.sources:[];
-  const eventSourceCount=sources.filter(source=>source.type!=='directory').length;
-  $('#coverage-summary').textContent=`${state.societies.length} societies in the directory. ${eventSourceCount} configured event and social sources. ${state.social.posts.length} real social posts in the latest snapshot. See collection coverage below.`;
-  $('#source-status').innerHTML=sources.map(source=>{const url=safeUrl(source.url||source.source_url);const title=source.name||source.label||source.id||'Event source';const status=source.status||'Not checked';return `<div class="source-row">${url?`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(title)}</a>`:`<strong>${escape(title)}</strong>`}<span>${escape(status)}${source.type==='social'?` · ${source.parsed_count||0} posts observed this run · ${source.posts_stored||0} stored`:typeof source.parsed_count==='number'?` · ${source.parsed_count} entries checked`:''}</span></div>`;}).join('')||'<p class="muted">No source report is available yet.</p>';
+  $('#freshness-text').textContent=updated?`Listings updated ${formatDate(updated,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}. Times shown are local to Durham.`:'';
 }
-function renderSocial(){
-  const publicAccounts=state.social.accounts.filter(a=>a.provider==='public_html');
-  const withPosts=publicAccounts.filter(a=>a.posts_collected>0).length;
-  const instagram=state.social.posts.filter(p=>p.platform==='instagram').length;
-  const facebook=state.social.posts.filter(p=>p.platform==='facebook').length;
-  const meta=state.social.status.meta||{};
-  const metaReady=meta.accounts_checked>0;
-  const coverage=state.social.coverage?.summary||{};
-  $('#social-coverage-summary').textContent=`${instagram} Instagram posts and ${facebook} Facebook posts stored. Public posts were collected from ${withPosts} of ${publicAccounts.length} discovered accounts on the last run. ${metaReady?'An authorised API connection was also checked.':'Meta API access is not connected. Facebook and restricted accounts may need that connection.'}`;
-  $('#directory-coverage-summary').textContent=coverage.total_societies!==undefined?`${coverage.societies_with_recent_posts} of ${coverage.total_societies} societies have recently observed posts. ${coverage.societies_needing_accounts} need verified account links; ${coverage.societies_needing_attention} have accounts with no accessible recent posts; ${coverage.societies_stale} have stale collections. Recent posts do not mean a complete timeline. Browse Societies to inspect and help fill these gaps.`:'Full-directory coverage will appear after the next collection.';
-  const labels={ok:'Posts collected',partial:'Some posts collected',no_public_posts:'No posts exposed publicly',login_required:'Login required',access_denied:'Public access denied',rate_limited:'Rate limited',deferred:'Deferred this run',error:'Could not check',unavailable:'Posts unavailable',disabled:'Collection disabled',unsupported:'Unsupported profile'};
-  $('#social-account-status').innerHTML=publicAccounts.map(a=>`<div class="source-row"><div><a href="${escape(safeUrl(a.url)||'#')}" target="_blank" rel="noopener noreferrer">${escape(a.society||a.url)}</a><small>${escape(a.platform)}${a.last_success_at?' · Last collection '+formatDate(a.last_success_at,{day:'numeric',month:'short'}):''}</small></div><span>${escape(labels[a.status]||a.status)}${a.posts_collected?` · ${a.posts_collected}`:''}</span></div>`).join('')||'<p class="muted">No account checks are available yet.</p>';
-  $('#collected-posts').innerHTML=state.social.posts.slice(0,state.postLimit).map(post=>`<article class="collected-post"><div><strong>${escape(post.society)}</strong><span>${escape(post.platform)}${post.published_at&&Number.isFinite(Date.parse(post.published_at))?' · '+formatDate(post.published_at,{day:'numeric',month:'short',year:'numeric'}):' · Publication date unavailable'}</span></div><p>${escape((post.text||'').slice(0,320))}${post.text?.length>320?'…':''}</p><a href="${escape(safeUrl(post.source_url)||'#')}" target="_blank" rel="noopener noreferrer">Read the original post ↗</a></article>`).join('')||'<p class="muted">No post captions have been collected yet. The coverage list records access problems separately from empty feeds.</p>';
-  $('#more-posts').hidden=state.social.posts.length<=state.postLimit;
-}
-$('#more-posts').addEventListener('click',()=>{state.postLimit+=6;renderSocial();});
 async function init(){
-  render();
-  const [events,societies,social]=await Promise.allSettled([loadFeed('events'),loadFeed('societies'),loadFeed('social-posts','posts')]);
-  if(events.status==='fulfilled'){state.data=events.value.value;state.data.events=state.data.events.filter(isValidEvent);}else{$('#feed-warning').hidden=false;$('#feed-warning').textContent='The live feed could not be loaded. Refresh to try again, or explore the clearly labelled demo.';}
-  if(societies.status==='fulfilled')state.societies=societies.value.value.societies.filter(s=>typeof s.name==='string').sort((a,b)=>a.name.localeCompare(b.name));
-  if(social.status==='fulfilled'){state.social=social.value.value;state.social.accounts=Array.isArray(state.social.accounts)?state.social.accounts:[];state.social.status=state.social.status||{};}
-  state.loaded=true;render();renderSocieties();renderCoverage();renderSocial();
+  state.loaded=false;state.loadError=false;render();
+  try {const feed=await loadFeed('events');state.data=feed.value;state.data.events=state.data.events.filter(isValidEvent);}
+  catch {state.loadError=true;}
+  state.loaded=true;render();renderFreshness();
 }
 init();
-// Re-evaluate event status and the rolling history window while the page stays open.
 setInterval(()=>{if(state.loaded)render();},60000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&state.loaded)render();});
