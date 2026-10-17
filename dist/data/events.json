@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T13:54:26.515230Z",
+  "updated_at": "2026-10-17T14:07:52.921625Z",
   "timezone": "Europe/London",
   "events": [
     {
@@ -234,13 +234,13 @@
       "name": "Instagram society posts",
       "url": "https://www.instagram.com/",
       "status": "partial",
-      "parsed_count": 49,
-      "posts_stored": 424,
+      "parsed_count": 43,
+      "posts_stored": 450,
       "account_count": 290,
-      "accounts_checked": 11,
-      "accounts_with_posts": 91,
-      "last_attempt_at": "2026-10-17T13:31:05.357231Z",
-      "last_success_at": "2026-10-17T13:31:05.357231Z"
+      "accounts_checked": 51,
+      "accounts_with_posts": 114,
+      "last_attempt_at": "2026-10-17T14:04:44.639018Z",
+      "last_success_at": "2026-10-17T14:04:44.639018Z"
     },
     {
       "id": "social-facebook",
@@ -266,26 +266,26 @@
     "parse_error_count": 0,
     "live_event_count": 8,
     "reviewed_event_count": 8,
-    "candidate_count": 50,
+    "candidate_count": 53,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
     "society_count": 319,
     "directory_status": "partial",
-    "social_post_count": 424,
+    "social_post_count": 450,
     "social_account_count": 444,
     "society_coverage": {
       "total_societies": 319,
       "societies_with_accounts": 294,
-      "societies_with_recent_posts": 91,
+      "societies_with_recent_posts": 114,
       "societies_needing_accounts": 25,
-      "societies_needing_attention": 203,
+      "societies_needing_attention": 180,
       "societies_stale": 0,
-      "post_count": 424
+      "post_count": 450
     },
     "ai_event_count": 0,
-    "ai_review_count": 3,
-    "ai_processed_at": "2026-10-17T13:53:11.626511+00:00",
+    "ai_review_count": 7,
+    "ai_processed_at": "2026-10-17T14:07:11.345068+00:00",
     "ai_stale_post_count": 0
   }
 }

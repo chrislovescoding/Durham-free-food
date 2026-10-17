@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T13:54:26.515230Z",
+  "updated_at": "2026-10-17T14:07:52.921625Z",
   "candidates": [
     {
       "title": "Spicy Noodle Challenge",
@@ -209,15 +209,6 @@
       "reason": "Food mentioned without an explicit free-food promise"
     },
     {
-      "title": "This is our first event of the year! Come and join us on Friday the 16th of October to socialise and enjoy some delicious meals at our halal food craw",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/Deca1fCEdU9/",
-      "post_id": "social-b063c009a8f74ce008",
-      "society": "Islamic Studies Society",
-      "kind": "social_post_review",
-      "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
       "title": "⚠️🚨FIRST SOCIAL OF THE YEAR!🚨⚠️",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeUJgJzO0fg/",
@@ -401,6 +392,49 @@
       "society": "Durham AI Safety Initiative",
       "reason": "The post does not specify the venue, and says the start date is subject to change.",
       "input_signature": "8c28bce1bcda447234ff88d3346c8055241fe907c08abce1553e7483462e01e4"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-d6e6e373f8afe1ea4b",
+      "source_url": "https://www.instagram.com/p/Deb5AHRCJR8/",
+      "society": "Korean Society",
+      "title": "🎧 DJ ASTER IS COMING TO NEWCASTLE! 🇰🇷🔥",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "12546cd4c34b6fa0a858f028f6ce2a8bb7ac29e6e73eb29c02e55a31e66227d3"
+    },
+    {
+      "id": "ai-review-428d8b9a86105eae",
+      "source_id": "ai-instagram",
+      "kind": "ai_extraction_review",
+      "post_id": "social-315ad61d1371376c41",
+      "source_url": "https://www.instagram.com/p/DdrU0fIDAcS/",
+      "society": "Inclusive Christian Movement Durham",
+      "reason": "The 4 October programme lists a “Welcome Meal” but does not say whether food is free; other food imagery or party listings do not establish a free-food offer.",
+      "input_signature": "d0e746391ca5e30a18b6c57a0ac3515dda0d1874d47eff72273fd8a7747cd630"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-da6019b70680214649",
+      "source_url": "https://www.instagram.com/p/DegtM2FoqVG/",
+      "society": "Neurodiversity Society",
+      "title": "How to find us for our social at 7pm tonight!",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "a43f32824912e2c7b1d8526cc84481630a38107f84aef1a36d4b5a13c75dad89"
+    },
+    {
+      "kind": "ai_post_review",
+      "source_id": "ai-instagram",
+      "post_id": "social-30b8a9ed42a66e38c1",
+      "source_url": "https://www.instagram.com/p/Deg_-2ptNrY/",
+      "society": "Arthur Holmes Geological Society",
+      "title": "What a brilliant Hard Hat High Viz social! It was great to see all the new faces and we hope to see you at the next one!",
+      "reason": "No free food found in available images; video or remaining media still needs review",
+      "needs_visual_review": true,
+      "input_signature": "332186609eb3c8adc44d1f5a9a2049ea00aaad35cc5a8edcc106ff5c855fd146"
     }
   ]
 }

@@ -1578,6 +1578,1046 @@
           "total_tokens": 3381
         }
       }
+    },
+    "social-29ff85e6e2e68b94eb": {
+      "fingerprint": "e422bf6fceae8b7cb58681d0ab21c01b994c5000e0a1335f43278cbde1c4504b",
+      "post_id": "social-29ff85e6e2e68b94eb",
+      "source_url": "https://www.instagram.com/p/Dee7KLbg-M_/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2901,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2901
+        }
+      }
+    },
+    "social-2c325f1cc1c7dbc928": {
+      "fingerprint": "43edfd267cf417dd4cfec2f77ab7a03d1cceeefe1e0c87c09e6982405a32698a",
+      "post_id": "social-2c325f1cc1c7dbc928",
+      "source_url": "https://www.instagram.com/p/DeULLRKOKlS/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2349,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2349
+        }
+      }
+    },
+    "social-d6e6e373f8afe1ea4b": {
+      "fingerprint": "7695bb4872d52b9f67b53f81eb5d970d68a47adefa328826a1f1917bddb44a5e",
+      "post_id": "social-d6e6e373f8afe1ea4b",
+      "source_url": "https://www.instagram.com/p/Deb5AHRCJR8/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2403,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2403
+        }
+      }
+    },
+    "social-b5e08ade3b018d8169": {
+      "fingerprint": "22a0cb78df1792ffd4a1cf73eb354dfc9f91b562da4b647a95c2bbe60e35505d",
+      "post_id": "social-b5e08ade3b018d8169",
+      "source_url": "https://www.instagram.com/p/DeeZcZuCKGO/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 7663,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7663
+        }
+      }
+    },
+    "social-b063c009a8f74ce008": {
+      "fingerprint": "7e2bff87bbabbc121be999fd823baf6f372f942168de9ae9a017545471b8b900",
+      "post_id": "social-b063c009a8f74ce008",
+      "source_url": "https://www.instagram.com/p/Deca1fCEdU9/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 5220,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 5220
+        }
+      }
+    },
+    "social-a0d19c41a0e94a70ab": {
+      "fingerprint": "de9cb017d34155c788dbffecb0878ca924a9f5321f0f3e43bec7b5ec2d1b32e9",
+      "post_id": "social-a0d19c41a0e94a70ab",
+      "source_url": "https://www.instagram.com/p/Deeocs3NfGE/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1788,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1788
+        }
+      }
+    },
+    "social-877ad7696549d8ac32": {
+      "fingerprint": "bb295bbda3e3fc5dfcb3788764c631d775077cc796812b8ddc483d3eb3b580b3",
+      "post_id": "social-877ad7696549d8ac32",
+      "source_url": "https://www.instagram.com/p/DeW8BRdIQwK/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2742,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2742
+        }
+      }
+    },
+    "social-dd04861d8d55b8d625": {
+      "fingerprint": "c774e36aeedbc5fa0155fc9833782029f325b8116d8ca306a56ee096b1824c62",
+      "post_id": "social-dd04861d8d55b8d625",
+      "source_url": "https://www.instagram.com/p/Deb--QxovaJ/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2837,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2837
+        }
+      }
+    },
+    "social-651711157210f1179d": {
+      "fingerprint": "ce545403436443e123e0c7eb89813c3e4cca24338b1542bce4f99efa2b879654",
+      "post_id": "social-651711157210f1179d",
+      "source_url": "https://www.instagram.com/p/DeeTzwMNKwO/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2844,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2844
+        }
+      }
+    },
+    "social-315ad61d1371376c41": {
+      "fingerprint": "4123fc002c5fd8613a93324be67123118a55263cc17ece34bfb3202a1bde7e92",
+      "post_id": "social-315ad61d1371376c41",
+      "source_url": "https://www.instagram.com/p/DdrU0fIDAcS/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.41,
+        "id": null,
+        "usage": {
+          "input_tokens": 2694,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2694
+        }
+      },
+      "extraction": {
+        "events": [],
+        "review_reason": "The 4 October programme lists a “Welcome Meal” but does not say whether food is free; other food imagery or party listings do not establish a free-food offer."
+      },
+      "response_id": "resp_051a1af98b8794c2016ad3811bbddc87d2b41ab119bbb161e3",
+      "usage": {
+        "input_tokens": 3480,
+        "input_tokens_details": {
+          "cache_write_tokens": 3477,
+          "cached_tokens": 0
+        },
+        "output_tokens": 188,
+        "output_tokens_details": {
+          "reasoning_tokens": 136
+        },
+        "total_tokens": 3668
+      }
+    },
+    "social-a78f03b29f6d408ea6": {
+      "fingerprint": "1f6d9cc292f3ba8926af63a5143cc8b19e95704a1bb4df3da1b073687f94d16d",
+      "post_id": "social-a78f03b29f6d408ea6",
+      "source_url": "https://www.instagram.com/p/Dej4oGPDBXh/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 6239,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 6239
+        }
+      }
+    },
+    "social-620c60afb4d3dc7b92": {
+      "fingerprint": "be47b2574a7da555ef550f7cba3a7e093b93d4a49ef1ef232aeefa0a2fc10aa2",
+      "post_id": "social-620c60afb4d3dc7b92",
+      "source_url": "https://www.instagram.com/p/Del8eG-AFkk/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 14986,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 14986
+        }
+      }
+    },
+    "social-3d4905fb3261dd89fb": {
+      "fingerprint": "ac1e892ba42bf23f4c94b5ac57af108f15332da9957231bcd8ab9e90c2139f30",
+      "post_id": "social-3d4905fb3261dd89fb",
+      "source_url": "https://www.instagram.com/p/DehfqCJioNA/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 10031,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 10031
+        }
+      }
+    },
+    "social-4c692b2f9781915698": {
+      "fingerprint": "2391dc67f0ebe9e2720d1333207d73a5a667f9a30bdf3067b945791d918a874c",
+      "post_id": "social-4c692b2f9781915698",
+      "source_url": "https://www.instagram.com/p/Dd83paks5K1/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2759,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2759
+        }
+      }
+    },
+    "social-21760ec0e287bca649": {
+      "fingerprint": "d50e424e22e4828b1e0ae5ef0037f9d3a8484614c26852f1bc7ede0673dd3ed4",
+      "post_id": "social-21760ec0e287bca649",
+      "source_url": "https://www.instagram.com/p/DejUY9RCMXb/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3387,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3387
+        }
+      }
+    },
+    "social-4714121e58825be819": {
+      "fingerprint": "a4a42f94bdcbdf83d9c4cdc83219b49c438ca665e79d7b4453b0ede460c4db0a",
+      "post_id": "social-4714121e58825be819",
+      "source_url": "https://www.instagram.com/p/Dejn2Ipo8wP/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1721,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1721
+        }
+      }
+    },
+    "social-461f478102294f44a6": {
+      "fingerprint": "901083571e120441b53c4e89e4498f8e977ca37be6b01a04165ee680a278826f",
+      "post_id": "social-461f478102294f44a6",
+      "source_url": "https://www.instagram.com/p/DeHWHkdMnoO/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.69,
+        "id": null,
+        "usage": {
+          "input_tokens": 2855,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2855
+        }
+      },
+      "extraction": {
+        "events": [],
+        "review_reason": null
+      },
+      "response_id": "resp_0cf7d2cf91e1faa4016ad38124ddcc87d2ab7a5528f101b173",
+      "usage": {
+        "input_tokens": 3669,
+        "input_tokens_details": {
+          "cache_write_tokens": 3666,
+          "cached_tokens": 0
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 44
+        },
+        "total_tokens": 3732
+      }
+    },
+    "social-9b89148b3646a0f038": {
+      "fingerprint": "96f3ab9a6e657733a216cf93bb8268effce835544385a14e8cd2bf69d374e259",
+      "post_id": "social-9b89148b3646a0f038",
+      "source_url": "https://www.instagram.com/p/DeKut9WjjqR/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 4815,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 4815
+        }
+      }
+    },
+    "social-f125018c9e473bc15e": {
+      "fingerprint": "8a018a76415885c3a7a5ff771052e9196863b9c7cf6dd92f9bf9288dd5db77df",
+      "post_id": "social-f125018c9e473bc15e",
+      "source_url": "https://www.instagram.com/p/Dejsh7oDXxc/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1562,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1562
+        }
+      }
+    },
+    "social-6f8e88a045f1a4309b": {
+      "fingerprint": "41a051de92c6504a05229d90eaf920cf793fd100580fcc0c685d623722f01332",
+      "post_id": "social-6f8e88a045f1a4309b",
+      "source_url": "https://www.instagram.com/p/DejqiBtCpLJ/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3317,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3317
+        }
+      }
+    },
+    "social-da6019b70680214649": {
+      "fingerprint": "0cd1803dfbbdd53896a92329f15cb1d59c465e0c10f310cfb9d82ee5a09016ed",
+      "post_id": "social-da6019b70680214649",
+      "source_url": "https://www.instagram.com/p/DegtM2FoqVG/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2766,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2766
+        }
+      }
+    },
+    "social-500bf7a70a3593b8eb": {
+      "fingerprint": "807737baa39fa041548eb027698d3974887af85daf8660c06833a1f593e8ad36",
+      "post_id": "social-500bf7a70a3593b8eb",
+      "source_url": "https://www.instagram.com/p/DekbarosxX1/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1892,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1892
+        }
+      }
+    },
+    "social-9280470443643c7629": {
+      "fingerprint": "4e871a47356160d7074d0d345e161249c0084e7696502a099832195dac75f7ef",
+      "post_id": "social-9280470443643c7629",
+      "source_url": "https://www.instagram.com/p/DehZmFwiJsG/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3389,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3389
+        }
+      }
+    },
+    "social-d4ef871268e15d7a6b": {
+      "fingerprint": "7c5a9bd7ff281159629af969facd31ba585577bce499654584238fd6f6a38d4c",
+      "post_id": "social-d4ef871268e15d7a6b",
+      "source_url": "https://www.instagram.com/p/Dd6haNbiQB3/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.94,
+        "id": null,
+        "usage": {
+          "input_tokens": 2824,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2824
+        }
+      },
+      "extraction": {
+        "events": [],
+        "review_reason": null
+      },
+      "response_id": "resp_0677f89a5f46e909016ad3812afa3087d2ac1e07e6035375b3",
+      "usage": {
+        "input_tokens": 3638,
+        "input_tokens_details": {
+          "cache_write_tokens": 3635,
+          "cached_tokens": 0
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "reasoning_tokens": 101
+        },
+        "total_tokens": 3758
+      }
+    },
+    "social-db31b853090230f4a0": {
+      "fingerprint": "600f6e2ae953f7c789dd345be12427e52a34d6a46f37c6da930a90d1bb3a7cef",
+      "post_id": "social-db31b853090230f4a0",
+      "source_url": "https://www.instagram.com/p/Defku92oN4S/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2589,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2589
+        }
+      }
+    },
+    "social-5b47c2c9d1c6d55516": {
+      "fingerprint": "2e8a5f3dff3bdd176950e615e33415d3a01ff64abb716955e1542866a385ef84",
+      "post_id": "social-5b47c2c9d1c6d55516",
+      "source_url": "https://www.instagram.com/p/Dd4cuWgjqpV/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1508,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1508
+        }
+      }
+    },
+    "social-952d1afd8f99f320e1": {
+      "fingerprint": "d3a197442dbaa0d740fea24208fabaaf5cba25ed442a9620fd9fde9994874d48",
+      "post_id": "social-952d1afd8f99f320e1",
+      "source_url": "https://www.instagram.com/p/DeAFEbRDD0-/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 14984,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 14984
+        }
+      }
+    },
+    "social-85e3dff6ba288257df": {
+      "fingerprint": "155866498149a98f146ea4a3e27ec8cc17775ec79a73bf613a23ccd1613baba8",
+      "post_id": "social-85e3dff6ba288257df",
+      "source_url": "https://www.instagram.com/p/Dd_VtBlDf3x/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.01,
+        "id": null,
+        "usage": {
+          "input_tokens": 10154,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 10154
+        }
+      }
+    },
+    "social-2b6032222fe4ce2177": {
+      "fingerprint": "efb42e590edccb27c7adf913c5a1a64df23465fa8e65ff1a9d4fef3ff66d9f27",
+      "post_id": "social-2b6032222fe4ce2177",
+      "source_url": "https://www.instagram.com/p/DeZ90rpO9l-/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2779,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2779
+        }
+      }
+    },
+    "social-f9667459200a772e23": {
+      "fingerprint": "1002aeca6844f4a279315cc0aeda9cad4ac01d7cb87aeb6acb07faffa2d3a05c",
+      "post_id": "social-f9667459200a772e23",
+      "source_url": "https://www.instagram.com/p/Del0iLcRCFS/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1859,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1859
+        }
+      }
+    },
+    "social-b0638a39daafde5944": {
+      "fingerprint": "c549374fd2408f198a252caddc9d39a1642d26a438f375c8be4eb3a6edb764bd",
+      "post_id": "social-b0638a39daafde5944",
+      "source_url": "https://www.instagram.com/p/DeaZSB7IG8D/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2388,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2388
+        }
+      }
+    },
+    "social-ef601daa61542b59b5": {
+      "fingerprint": "8b3ec1dae2a45a72c2084103afbdf0045682e9a44d8c384047e45daa4e414428",
+      "post_id": "social-ef601daa61542b59b5",
+      "source_url": "https://www.instagram.com/p/DejjnncDGjh/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 6900,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 6900
+        }
+      }
+    },
+    "social-7f70f2d52f069e3d57": {
+      "fingerprint": "fa2a494e531813cda87f2001b7f487850a87f9495e4a893c3935908fc0702214",
+      "post_id": "social-7f70f2d52f069e3d57",
+      "source_url": "https://www.instagram.com/p/Dd18b1wgL3w/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 3294,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3294
+        }
+      }
+    },
+    "social-86cce3d91bdf9d71e4": {
+      "fingerprint": "077833d7ff866ffc29fe8089c9b777aafcb75f92141906db5c4f2ab5edf4198c",
+      "post_id": "social-86cce3d91bdf9d71e4",
+      "source_url": "https://www.instagram.com/p/Deb17b3N9Cf/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2640,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2640
+        }
+      }
+    },
+    "social-76018f64cd5d2b5498": {
+      "fingerprint": "1b6f2a7a66ef609a05236b738c186be980f02afca469c75fd96ae116eacdcc4d",
+      "post_id": "social-76018f64cd5d2b5498",
+      "source_url": "https://www.instagram.com/p/DeWzkr1CMtB/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 10581,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 10581
+        }
+      }
+    },
+    "social-7099d14a60617c4284": {
+      "fingerprint": "67d60a3bb38c7cf590688b648283b8403c37c01a447ed9c9f14dd005cb3082a2",
+      "post_id": "social-7099d14a60617c4284",
+      "source_url": "https://www.instagram.com/p/DejimFMCAHM/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2327,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2327
+        }
+      }
+    },
+    "social-db4302978a54230ea6": {
+      "fingerprint": "48a32d6bea0bb17af5c2e2d8345c422a9555905372f22986cb443496024cb928",
+      "post_id": "social-db4302978a54230ea6",
+      "source_url": "https://www.instagram.com/p/DeejwQ5IXTT/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1974,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1974
+        }
+      }
+    },
+    "social-3b01eb1efb906c392b": {
+      "fingerprint": "4ed90a737cb153745c1dbe55e2c4dddd4dfac69360a0ae682973deb166627b31",
+      "post_id": "social-3b01eb1efb906c392b",
+      "source_url": "https://www.instagram.com/p/DdwmsLAp_Cg/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 2690,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2690
+        }
+      }
+    },
+    "social-48ebdaa1427beacfaf": {
+      "fingerprint": "0ccfbd0a8d419048c58989dde383237c6de17b911066e0f468412dd4e07354a1",
+      "post_id": "social-48ebdaa1427beacfaf",
+      "source_url": "https://www.instagram.com/p/DekOhx7DUVy/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 8419,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 8419
+        }
+      }
+    },
+    "social-18a76767f0558b5013": {
+      "fingerprint": "d3eba9aab0e93d3e8462d4ae1f5a9e5b60592e2aad1773029ed068f293c9168e",
+      "post_id": "social-18a76767f0558b5013",
+      "source_url": "https://www.instagram.com/p/DeXWYB-DSeB/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 6240,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 6240
+        }
+      }
+    },
+    "social-a3d7683eda231879ee": {
+      "fingerprint": "92db30b0a8edd40a05bb58ab30cb23cd79a8d6bc83bc92dc5442ad72860a2009",
+      "post_id": "social-a3d7683eda231879ee",
+      "source_url": "https://www.instagram.com/p/Dd3v_pgMaUb/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1314,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1314
+        }
+      }
+    },
+    "social-30b8a9ed42a66e38c1": {
+      "fingerprint": "a95c5b2b52193f26bed7786945c44c51e4a3b63a0fcdaa7eab583c6071b44dd4",
+      "post_id": "social-30b8a9ed42a66e38c1",
+      "source_url": "https://www.instagram.com/p/Deg_-2ptNrY/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1264,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1264
+        }
+      }
+    },
+    "social-bda6ef7943b4f37a3c": {
+      "fingerprint": "6dffbe57dffb3a2266cb38b1b4bb4db852d97ff63499e6380dfacac9a2fed74d",
+      "post_id": "social-bda6ef7943b4f37a3c",
+      "source_url": "https://www.instagram.com/p/Dejz986o1P1/",
+      "model": "gpt-6-luna",
+      "updated_at": "2026-10-17T14:07:11.345068+00:00",
+      "decision": {
+        "probability": 0.0,
+        "id": null,
+        "usage": {
+          "input_tokens": 1768,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1768
+        }
+      }
     }
   }
 }
