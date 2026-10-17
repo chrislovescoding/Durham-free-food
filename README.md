@@ -1,6 +1,6 @@
-# Durham Free Food
+# Grubr
 
-A hackathon prototype for finding free food at Durham student events, with a source-linked event feed and an evening data collector.
+A hackathon prototype for finding free food at Durham student events, with a source-linked event feed and an evening data collector. The public source repository is **Durham-free-food**.
 
 **[Open the prototype](https://durham-free-food-chris.chris9p.chatgpt.site)** · **[Try the clearly labelled example feed](https://durham-free-food-chris.chris9p.chatgpt.site/?demo=1)**
 
@@ -42,7 +42,11 @@ The initial crawl found **319 societies** and **77 society profiles with a direc
 
 The initial calendar checks found no qualifying upcoming event. Reviewing a collected Instagram caption and its original poster subsequently confirmed **Computing Society’s Career-Ready Night, 19 October 2026, 18:00–20:00, TLC113, with free pizza**. Entry price and signup requirements remain unknown. It is published through the reviewed-event input with the original post link. An event with free entry or a mention of food is insufficient to assert that the food is free.
 
-The expanded crawl on 17 October 2026 discovered accounts for **113 societies** and stored **417 real Instagram posts from 90 societies**. **206 societies still need verified account links**, and no Facebook posts have been collected. These are social posts, not 417 confirmed free-food events.
+Account research on 17 October 2026 covered **all 206 societies** that lacked verified account links after the earlier crawl. Public ownership evidence supported **300 additional account mappings: 177 Instagram and 123 Facebook**, covering **181** of those societies. Combined with the earlier 113 societies, **294 of all 319 societies now have at least one verified account reference**; **25 remain unresolved on both platforms**. Some societies have only one platform identified. Unknown handles were not guessed, and similarly named groups without an ownership link were excluded.
+
+The reviewed mappings are stored in [the account registry](data/society-accounts.json), with evidence URLs and review timestamps. [The research audit](data/account-research-audit.json) records researched societies and unresolved cases. Facebook group links are retained as unsupported references and are **not fetched**. Account discovery measures verified references, not successful post collection.
+
+Before this account expansion, the 17 October 2026 collector snapshot stored **417 real Instagram posts from 90 societies**, with **no Facebook posts collected**. Those are the earlier collection results, not a claim that the newly researched accounts have all been collected. They are social posts, not 417 confirmed free-food events. The website's **How it works** view reports the latest collection results separately.
 
 **Instagram post collection now works without credentials for accounts whose public embeds expose posts.** It collects the society's captions, publication dates and permalinks, not bios, comments or followers. A public embed usually exposes only six recent posts; daily collection retains observed posts for 60 days. It cannot guarantee complete history or catch a post that leaves that window between runs. The public Facebook pages tested did not expose captions; their coverage is marked unavailable rather than reported as an empty successful feed.
 
@@ -70,6 +74,8 @@ scripts/social_posts.py     Public Instagram/Facebook post collection
 scripts/meta_posts.py       Optional authorised Meta Graph API adapter
 scripts/social_events.py    Conservative caption-to-event extraction
 data/sources.json           Supported source configuration
+data/society-accounts.json  Reviewed social-account mappings and ownership evidence
+data/account-research-audit.json  Research coverage and unresolved account cases
 data/reviewed-events.json   Explicitly reviewed real event inputs
 data/review-queue.json      Candidates requiring human review
 tests/                     Date, feed and parser regression checks
@@ -77,4 +83,4 @@ tests/                     Date, feed and parser regression checks
 .openai/hosting.json        Private Sites preview configuration
 ```
 
-The frontend is ordinary HTML, CSS and JavaScript, so it can be hosted on any static host. The prototype uses Durham-inspired purple but no official University or SU branding.
+The frontend is ordinary HTML, CSS and JavaScript, so it can be hosted on any static host.

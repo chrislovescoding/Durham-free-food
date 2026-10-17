@@ -1,6 +1,1851 @@
 {
   "accounts": [
     {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7317/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/93ClubDurham/",
+      "evidence_url": "https://uk.linkedin.com/company/93percentclubdurham",
+      "evidence_note": "The society's self-identifying LinkedIn company page names The 93% Club Durham, describes its Durham University student remit, and links this Facebook Page as its website.",
+      "verified_at": "2026-10-17T12:30:51Z",
+      "reviewed": true
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7317/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/93clubdurham/",
+      "evidence_url": "https://www.instagram.com/93clubdurham/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7488/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamabsoc/",
+      "evidence_url": "https://www.instagram.com/durhamabsoc/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6300/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUAikido/",
+      "evidence_url": "https://www.facebook.com/DUAikido/",
+      "verified_at": "2026-10-17T12:21:05Z",
+      "reviewed": true,
+      "evidence_note": "Resolved organic Google result and directly fetched public Facebook Page metadata; title and description explicitly identify this Durham University society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6300/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.university.aikido/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6300/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Official SU description explicitly names this Instagram handle; directly fetched public Instagram metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6561/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/albumsoc_du/",
+      "evidence_url": "https://www.instagram.com/albumsoc_du/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6309/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duamericansmooth_/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6309/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Official SU description explicitly names this Instagram handle; directly fetched public Instagram metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7326/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamUniversityAmnestyInternational/",
+      "evidence_url": "https://www.facebook.com/DurhamUniversityAmnestyInternational/",
+      "verified_at": "2026-10-17T12:21:05Z",
+      "reviewed": true,
+      "evidence_note": "Resolved organic Google result and directly fetched public Facebook Page metadata; title and description explicitly identify this Durham University society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7326/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamuniamnesty/",
+      "evidence_url": "https://www.instagram.com/durhamuniamnesty/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8010/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/AngloJapanese.Society/",
+      "evidence_url": "https://www.facebook.com/AngloJapanese.Society/",
+      "verified_at": "2026-10-17T12:21:05Z",
+      "reviewed": true,
+      "evidence_note": "Resolved organic Google result and directly fetched public Facebook Page metadata; title and description explicitly identify this Durham University society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8010/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.ajs/",
+      "evidence_url": "https://www.instagram.com/durham.ajs/",
+      "verified_at": "2026-10-17T12:32:27Z",
+      "reviewed": true,
+      "evidence_note": "Focused indexed first-party profile explicitly identifies Durham University Anglo-Japanese Society. Multiple indexed own posts use durham.ajs and the society name; a society Linktree corroborates its Durham identity. Live Instagram access unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7506/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_asiansoc/",
+      "evidence_url": "https://www.instagram.com/du_asiansoc/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6597/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dur.ams/",
+      "evidence_url": "https://www.instagram.com/dur.ams/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7515/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.azsoc/",
+      "evidence_url": "https://www.instagram.com/du.azsoc/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact account found through organic search or official SU description; direct public profile metadata confirms this Durham society's identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7524/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.balkan.society/",
+      "evidence_url": "https://www.instagram.com/du.balkan.society/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8037/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamuniversityballetcompany/",
+      "evidence_url": "https://www.facebook.com/durhamuniversityballetcompany/",
+      "verified_at": "2026-10-17T12:21:05Z",
+      "reviewed": true,
+      "evidence_note": "Resolved organic Google result and directly fetched public Facebook Page metadata; title and description explicitly identify this Durham University society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8037/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamuniversityballetcompany/",
+      "evidence_url": "https://www.instagram.com/durhamuniversityballetcompany/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6606/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhambananasociety/",
+      "evidence_url": "https://www.instagram.com/durhambananasociety/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Organic Google result identified this exact handle; directly fetched public Instagram profile title and description identify the matching Durham society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10625/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dubwilsoc/",
+      "evidence_url": "https://www.instagram.com/dubwilsoc/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: DU Black Women in Law Society (@dubwilsoc) • Instagram photos and videos; \"👩🏾‍⚖️ Driving Black Female Excellence in Law\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6624/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.bobasoc/",
+      "evidence_url": "https://www.instagram.com/du.bobasoc/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham Uni Boba Tea Society (@du.bobasoc) • Instagram photos and videos; \"DU’s *active* boba tea soc🧋👀\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11621/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamstudentsforbooks/",
+      "evidence_url": "https://www.instagram.com/durhamstudentsforbooks/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham Students For Books (@durhamstudentsforbooks) • Instagram photos and videos; \"Durham student led society supporting book aid International.    Aiming to make books accessible for all 🌍📚\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6633/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dubookclub/",
+      "evidence_url": "https://www.instagram.com/dubookclub/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham University Book Club (@dubookclub) • Instagram photos and videos; \"📖 Promoting reading for leisure\n💌 Giving book recommendations \n🔎 Exploring literature from around the world\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10603/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_baps/",
+      "evidence_url": "https://www.instagram.com/du_baps/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8055/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/p/Durham-University-Brazilian-Society-100070295374233/",
+      "evidence_url": "https://www.facebook.com/p/Durham-University-Brazilian-Society-100070295374233/",
+      "verified_at": "2026-10-17T12:35:41Z",
+      "reviewed": true,
+      "evidence_note": "Direct public Page metadata names Durham University Brazilian Society and describes bringing Brazilian students together. Historical Page; current committee ownership or activity is not established."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8055/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dubraziliansoc/",
+      "evidence_url": "https://www.instagram.com/dubraziliansoc/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham Brazilian Society (@dubraziliansoc) • Instagram photos and videos; \"Welcome to the Durham University Brazilian Society! 🇧🇷\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7578/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durham.bsl/",
+      "evidence_url": "https://www.facebook.com/durham.bsl/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact account found through organic search or official SU description; direct public profile metadata confirms this Durham society's identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7578/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.bsl/",
+      "evidence_url": "https://www.instagram.com/durham.bsl/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham British Sign Language Society (@durham.bsl) • Instagram photos and videos; \"👋 Promoting BSL & d/Deaf culture at Durham Uni\n👋 Offering BSL Level 1+2 qualifications with @deafempoweringnetwork\n☕️ Come to our weekly BSL Cafe!\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/9019/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/basoc.durham/",
+      "evidence_url": "https://www.instagram.com/basoc.durham/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham British Asian Society (BASOC) (@basoc.durham) • Instagram photos and videos; \"This is the first student led, British Asian Society for Durham students.\nEst. 2026\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8064/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamBurmeseSociety/",
+      "evidence_url": "https://www.facebook.com/DurhamBurmeseSociety/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact account found through organic search or official SU description; direct public profile metadata confirms this Durham society's identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8064/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duburmesesociety/",
+      "evidence_url": "https://www.instagram.com/duburmesesociety/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham Burmese Society (@duburmesesociety) • Instagram photos and videos; \"မင်္ဂလာပါ 🙏\n@durhamuniversity 🇲🇲🇬🇧\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6327/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/ducalisthenics/",
+      "evidence_url": "https://www.facebook.com/ducalisthenics/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact account found through organic search or official SU description; direct public profile metadata confirms this Durham society's identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6327/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_calisthenics/",
+      "evidence_url": "https://www.instagram.com/du_calisthenics/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham Calisthenics (@du_calisthenics) • Instagram photos and videos; \"Training times for Michaelmas term: Monday - 20:00-21:00; Thursday - 19:00-20:00\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7542/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUCS2020/",
+      "evidence_url": "https://www.facebook.com/DUCS2020/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact account found through organic search or official SU description; direct public profile metadata confirms this Durham society's identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7542/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ducanadiansociety/",
+      "evidence_url": "https://www.instagram.com/ducanadiansociety/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Durham University Canadian Society (@ducanadiansociety) • Instagram photos and videos; \"DUCS is a network of enthusiastic students who are excited to promote Canadian culture within the community 🍁❤️🤗🇨🇦\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7551/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_lei_lou_mou/",
+      "evidence_url": "https://www.instagram.com/du_lei_lou_mou/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact handle found in organic search. Direct public profile metadata: Cantonese Speaking Society Durham (廣東話學會) (@du_lei_lou_mou) • Instagram photos and videos; \"🗣️All Cantonese learners welcome\n🔥Speaking Sessions, Bar Crawls, Hotpot and More\n😯Free Membership!\""
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8073/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamUniCathsoc/",
+      "evidence_url": "https://www.facebook.com/DurhamUniCathsoc/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8073/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamcathsoc/",
+      "evidence_url": "https://www.instagram.com/durhamcathsoc/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8082/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUSASpeleology/",
+      "evidence_url": "https://www.facebook.com/DUSASpeleology/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8082/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusa_caving/",
+      "evidence_url": "https://www.instagram.com/dusa_caving/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7560/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.centralasiansoc/",
+      "evidence_url": "https://www.instagram.com/du.centralasiansoc/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6093/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUChemSoc/",
+      "evidence_url": "https://www.facebook.com/DUChemSoc/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6093/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duchemsoc/",
+      "evidence_url": "https://www.instagram.com/duchemsoc/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8091/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/375244182524381/",
+      "evidence_url": "https://www.facebook.com/groups/375244182524381/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity. Facebook group; public name/description verified, group posts not accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8091/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamunichess/",
+      "evidence_url": "https://www.instagram.com/durhamunichess/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8100/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.chinese_artensemble/",
+      "evidence_url": "https://www.instagram.com/du.chinese_artensemble/",
+      "verified_at": "2026-10-17T12:22:48Z",
+      "reviewed": true,
+      "evidence_note": "Exact result found in organic Google search and directly fetched profile metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7569/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_chisoc/",
+      "evidence_url": "https://www.instagram.com/du_chisoc/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile title is Durham University Chinese Society; own bio identifies a student-led Chinese culture and representation society. Distinct from Chinese Studies Society and CSSA. Live profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7587/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/cssadurham/",
+      "evidence_url": "https://www.facebook.com/cssadurham/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata title Durham Chinese Students & Scholars Association; own bio explicitly describes CSSA Durham, a student-led organisation for Chinese students in Durham."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7587/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamcssa/",
+      "evidence_url": "https://www.instagram.com/durhamcssa/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile identifies itself as Durham CSSA, the official Chinese Students and Scholars Association of Durham University. Live profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11754/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUCSSoc/",
+      "evidence_url": "https://www.facebook.com/DUCSSoc/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata title Durham University Chinese Studies Society; own bio states its aim to promote Chinese as a foreign language."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11754/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duchinesestudiessoc/",
+      "evidence_url": "https://www.instagram.com/duchinesestudiessoc/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile identifies Chinese Studies Society with Chinese talks, hot pot socials and calligraphy in Durham. Distinct from Chinese Society and CSSA. Live profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10651/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ducivilrights/",
+      "evidence_url": "https://www.instagram.com/ducivilrights/",
+      "verified_at": "2026-10-17T12:35:41Z",
+      "reviewed": true,
+      "evidence_note": "Focused indexed first-party profile explicitly identifies DUCRS / Durham University Civil Rights Society. No connection to the separate Justice, Human Rights or Corporate Social Responsibility societies is assumed. Live Instagram access unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6687/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamclassicfilms/",
+      "evidence_url": "https://www.facebook.com/durhamclassicfilms/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Classic Film Society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6687/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamclassicfilms/",
+      "evidence_url": "https://www.instagram.com/durhamclassicfilms/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile title DU Classic Film Society; bio specifies films in ER140 every Tuesday and Saturday. Matching Facebook Page directly confirms Durham University Classic Film Society. Live Instagram profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8109/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamcommercial/",
+      "evidence_url": "https://linktr.ee/duclj",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Society-owned Linktree explicitly names Durham Commercial Law Journal, links its Durham SU membership, and embeds this exact Instagram URL in socialLinks."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7614/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamconsulting/",
+      "evidence_url": "https://www.facebook.com/durhamconsulting/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Consulting Society; consulting career mission matches the directory."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7614/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamuniconsulting/",
+      "evidence_url": "https://linktr.ee/durhamuniconsultingsociety",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Verified society Linktree explicitly identifies Durham University's Consulting Society, links its SU membership, and embeds this exact Instagram URL in socialLinks."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6732/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.creativemindfulness/",
+      "evidence_url": "https://www.instagram.com/du.creativemindfulness/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile title Creative Mindfulness Society; own bio describes art projects and volunteering and gives creativemindfulness.society@durham.ac.uk. Live profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6741/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUCWS/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6741/",
+      "verified_at": "2026-10-17T12:22:03Z",
+      "reviewed": true,
+      "evidence_note": "Exact account found through organic search or official SU description; direct public profile metadata confirms this Durham society's identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6741/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ducreativewriting/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6741/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Official SU description explicitly names this Instagram handle; directly fetched public Instagram metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6750/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/ducrochetsoc/",
+      "evidence_url": "https://www.facebook.com/ducrochetsoc/",
+      "verified_at": "2026-10-17T12:35:41Z",
+      "reviewed": true,
+      "evidence_note": "Direct public Page metadata names Durham University Crochet Society and describes its meetings in the SU Learning Lounge. The older group search result points members to this Page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6750/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ducrochetsoc/",
+      "evidence_url": "https://www.instagram.com/ducrochetsoc/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile title Durham Uni Crochet Society; its posts describe meetings in Durham Student Union's Learning Lounge. Live profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6759/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/durhamuniversitycurryclub/",
+      "evidence_url": "https://www.facebook.com/groups/durhamuniversitycurryclub/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Public group landing metadata explicitly identifies Durham University Curry Club. Group reference only; no private/group posts accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6759/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ducurryclub/",
+      "evidence_url": "https://www.instagram.com/ducurryclub/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile title Durham University Curry Club and bio welcomes Durham Uni Curry Club members. Public event host's Facebook post also explicitly identifies @ducurryclub as Durham University's Curry Club. Live Instagram profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7623/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/CySoD/",
+      "evidence_url": "https://www.facebook.com/CySoD/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Cypriot Society of Durham and lists cypriot.society@durham.ac.uk. Page is older; present activity not assumed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7623/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamcypriotsociety/",
+      "evidence_url": "https://www.instagram.com/durhamcypriotsociety/",
+      "verified_at": "2026-10-17T12:27:12Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile title DU Cypriot Society; bio explicitly calls this the official Durham University Cypriot society Instagram. Indexed recent post introduces 2026/27 committee. Live profile currently returns a logged-out shell."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6768/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamdanandphilsociety/",
+      "evidence_url": "https://www.instagram.com/durhamdanandphilsociety/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title is Dan and Phil Society @ Durham. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6336/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamdancesport/",
+      "evidence_url": "https://www.facebook.com/durhamdancesport/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Dancesport Team. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6336/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/_dudt_/",
+      "evidence_url": "https://www.facebook.com/durhamdancesport/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook Page for Durham University Dancesport Team explicitly directs readers to @_dudt_, corroborating the indexed Instagram profile."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11586/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/debitdivas/",
+      "evidence_url": "https://www.instagram.com/debitdivas/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title Durham Debit Divas; bio describes a student-led accounting and finance society for Durham, distinct from the cheerleading Divas. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7632/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/1160202094565250/",
+      "evidence_url": "https://www.facebook.com/groups/1160202094565250/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public group landing metadata identifies Durham University Desi Society. Group reference only; no private/group posts accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7632/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.desisoc/",
+      "evidence_url": "https://www.instagram.com/du.desisoc/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile identifies Durham Desi Society, established 2022; distinct from Durham Indian Society. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7641/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=100085749777773",
+      "evidence_url": "https://www.facebook.com/profile.php?id=100085749777773",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Disabilities and Carers Association Durham. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7641/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/daca.durham/",
+      "evidence_url": "https://www.instagram.com/daca.durham/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile explicitly names Durham University Disabilities and Carers Association, matching the directly verified Facebook Page. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6777/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamdisneysoc/",
+      "evidence_url": "https://www.facebook.com/durhamdisneysoc/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Disney Society. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6777/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamdisneysoc/",
+      "evidence_url": "https://www.instagram.com/durhamdisneysoc/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile explicitly names Durham Disney Society, matching its directly verified Facebook Page. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6786/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamDJSoc/",
+      "evidence_url": "https://www.facebook.com/DurhamDJSoc/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham DJ Society. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6786/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamdjsociety/",
+      "evidence_url": "https://www.instagram.com/durhamdjsociety/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title Durham DJ Society and bio describes Durham's student DJ community. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6804/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dudragracesoc/",
+      "evidence_url": "https://www.instagram.com/dudragracesoc/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title du drag race society; bio concerns drag fandom, distinct from motor racing societies. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6813/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/ducoffeesoc/",
+      "evidence_url": "https://www.facebook.com/ducoffeesoc/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Coffee Society. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6813/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.coffeesociety/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6813/",
+      "verified_at": "2026-10-17T12:20:40Z",
+      "reviewed": true,
+      "evidence_note": "Official SU description explicitly names this Instagram handle; directly fetched public Instagram metadata confirms the matching Durham society identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8953/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamucfs/",
+      "evidence_url": "https://www.facebook.com/durhamucfs/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Charity Fashion Show - DUCFS. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8953/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ducfs/",
+      "evidence_url": "https://www.instagram.com/ducfs/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile identifies DUCFS and its 2027 campaign; official DUCFS Linktree links its Instagram presence. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8942/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamduck/",
+      "evidence_url": "https://www.facebook.com/durhamduck/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies DUCK Charities. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8942/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duck_charities/",
+      "evidence_url": "https://linktr.ee/duck_charities",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Society Linktree identifies Durham University Charities Kommittee and explicitly links this Instagram URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6354/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/1345594196279803/",
+      "evidence_url": "https://www.facebook.com/groups/1345594196279803/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public group landing metadata identifies Durham Dippers. Group reference only; no private/group posts accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6354/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamunidippers/",
+      "evidence_url": "https://www.instagram.com/durhamunidippers/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title durham uni wild swim soc; indexed own post explicitly calls the group Durham Dippers. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7668/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUHINDUSOC/",
+      "evidence_url": "https://www.facebook.com/DUHINDUSOC/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham Hindu Society. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7668/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/nhsfdurham/",
+      "evidence_url": "https://www.instagram.com/nhsfdurham/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title Durham Hindu Society; indexed own post names the society and new academic year. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8127/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUMASDurham/",
+      "evidence_url": "https://www.facebook.com/DUMASDurham/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Malaysian Society DUMAS. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8127/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_msoc/",
+      "evidence_url": "https://www.instagram.com/durham_msoc/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile explicitly names Durham University Malaysian Society (DUMAS). Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11064/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamnbasociety/",
+      "evidence_url": "https://www.instagram.com/durhamnbasociety/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title Durham NBA Society; bio describes its NBA focus, distinct from Durham University Basketball Club. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7380/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamPalestineSolidarityGroup/",
+      "evidence_url": "https://www.facebook.com/DurhamPalestineSolidarityGroup/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham University Palestine Solidarity Group. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7380/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dupalsoc/",
+      "evidence_url": "https://www.instagram.com/dupalsoc/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile explicitly names Durham University Palestine Solidarity Society. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6831/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duspritzsociety/",
+      "evidence_url": "https://www.instagram.com/duspritzsociety/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile explicitly names Durham University Aperol Spritz Society. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8136/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamstudentfilm/",
+      "evidence_url": "https://www.facebook.com/durhamstudentfilm/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Durham Student Film. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8136/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamstudentfilmmaking/",
+      "evidence_url": "https://www.instagram.com/durhamstudentfilmmaking/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile explicitly names Durham Student Filmmaking; its indexed own post announces the society's Facebook forum. Older Linktree uses a previous Instagram handle. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6678/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamctas/",
+      "evidence_url": "https://www.facebook.com/durhamctas/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public Page metadata identifies Chinese Tea Art Society. Description matches the Durham society's purpose."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6678/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamdtas/",
+      "evidence_url": "https://www.instagram.com/p/DeWlaY7IFDt/",
+      "verified_at": "2026-10-17T12:35:41Z",
+      "reviewed": true,
+      "evidence_note": "The indexed post identifies Durham Tea Art Society; its ordinary public captioned embed directly links author/profile durhamdtas and describes a Japanese tea ceremony in Durham SU Lounge. This current author replaces the stale indexed durhamctas handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7344/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duagainstsexualassault/",
+      "evidence_url": "https://www.instagram.com/p/DBUDa5oCPUx/",
+      "verified_at": "2026-10-17T12:35:41Z",
+      "reviewed": true,
+      "evidence_note": "The ordinary public captioned embed of this post returned author/profile links to duagainstsexualassault. Its own introduction explicitly names Durham University Against Sexual Assault and describes an on-campus student organisation, matching the directory."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11643/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/dufilsoc/",
+      "evidence_url": "https://www.facebook.com/dufilsoc/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party Page identifies Durham University Filipino Society and its event notices. Direct anonymous Page request currently returned no identity metadata; present activity not assumed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11643/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamfilsoc/",
+      "evidence_url": "https://linktr.ee/durhamfilipinosociety",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Society Linktree welcomes the DU Filsoc 2026/27 community and explicitly links this exact Instagram URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11053/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/766503427164821/",
+      "evidence_url": "https://www.facebook.com/groups/766503427164821/",
+      "verified_at": "2026-10-17T12:28:51Z",
+      "reviewed": true,
+      "evidence_note": "Public group landing metadata identifies Durham University Gaelic Football Club. Group reference only; no private/group posts accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11053/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/gaadurham/",
+      "evidence_url": "https://www.instagram.com/gaadurham/",
+      "verified_at": "2026-10-17T12:29:19Z",
+      "reviewed": true,
+      "evidence_note": "Indexed first-party profile title DUGAA and bio explicitly state Durham University Gaelic Football. Separate similarly named gaa_durham candidate remains unconfirmed. Evidence checked in search engine's indexed public profile; live Instagram profile access was unavailable."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10883/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dufashionlawbus/",
+      "evidence_url": "https://www.instagram.com/dufashionlawbus/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham Law and Business in Fashion Society (@dufashionlawbus) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10614/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/duphotosoc/",
+      "evidence_url": "https://www.facebook.com/duphotosoc/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham University Photography Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10614/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duphotosoc/",
+      "evidence_url": "https://www.instagram.com/duphotosoc/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University Photography Society (@duphotosoc) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11086/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duzzballz/",
+      "evidence_url": "https://www.instagram.com/duzzballz/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham BuzzBallz Society (@duzzballz) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6156/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/164868733561520/",
+      "evidence_url": "https://www.facebook.com/groups/164868733561520/",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "type=group. Public page title is Durham University Education Society (EdSoc); public description says a student-run primary education society providing academic help. Exact institution/society name and academic support remit match the official SU profile; no private group content accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6156/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_edsociety/",
+      "evidence_url": "https://www.instagram.com/durham_edsociety/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University Education Society (@durham_edsociety) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6372/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/p/Durham-Equestrian-Society-61551582283827/",
+      "evidence_url": "https://www.facebook.com/p/Durham-Equestrian-Society-61551582283827/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham Equestrian Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6372/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.equestrian.society/",
+      "evidence_url": "https://www.instagram.com/du.equestrian.society/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University Equestrian Society (@du.equestrian.society) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8964/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/ESNDurham/",
+      "evidence_url": "https://www.facebook.com/ESNDurham/",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "Public page title ESN Durham and description explicitly identify a section of Erasmus Student Network UK, matching the SU society. Rendered Bing organic result also identifies Durham."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8964/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/esn_durham/",
+      "evidence_url": "https://www.instagram.com/esn_durham/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify ESN Durham (@esn_durham) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7713/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamestranged/",
+      "evidence_url": "https://www.facebook.com/durhamestranged/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham Estranged Students. Search result outbound redirect resolved to exact URL. Matches relevant Durham student constituency; association name now combines this constituency with an additional group."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7713/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/deace_association/",
+      "evidence_url": "https://sites.google.com/view/eaces-handbook/the-eaces-handbook/6-community-and-activism/localunisu-groups",
+      "verified_at": "2026-10-17T12:26:52.433Z",
+      "reviewed": true,
+      "evidence_note": "EaCES peer support network directory explicitly identifies Durham University DEaCE (Estranged and Care Experienced Students Society), links its Durham SU profile, and links exact Instagram @deace_association."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6876/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/p/DU-Expedition-Society-61552033799388/",
+      "evidence_url": "https://www.facebook.com/p/DU-Expedition-Society-61552033799388/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify DU Expedition Society | Durham . Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6876/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duexpeditionsociety/",
+      "evidence_url": "https://www.instagram.com/duexpeditionsociety/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University Expedition Society (@duexpeditionsociety) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6885/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/401089544916447/",
+      "evidence_url": "https://www.facebook.com/groups/401089544916447/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP 200; title and description identify Durham University F1 Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6885/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duf1soc/",
+      "evidence_url": "https://www.instagram.com/duf1soc/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify DUF1 (@duf1soc) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11007/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/fides.et.veritas.durham/",
+      "evidence_url": "https://www.instagram.com/fides.et.veritas.durham/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify  (@fides.et.veritas.durham) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6894/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_filmandpints_soc/",
+      "evidence_url": "https://www.instagram.com/du_filmandpints_soc/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify The Film, Pints & Pop Culture Society (@du_filmandpints_soc) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11031/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duflyfishingsociety/",
+      "evidence_url": "https://www.instagram.com/duflyfishingsociety/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University Fly Fishing Society (@duflyfishingsociety) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6912/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUfolksoc/",
+      "evidence_url": "https://www.facebook.com/DUfolksoc/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham University Folk Society and Ceilidh Band. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6912/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/41793255925/",
+      "evidence_url": "https://www.facebook.com/groups/41793255925/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP 200; title and description identify Durham University Folk Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6912/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_university_folk_society/",
+      "evidence_url": "https://www.instagram.com/durham_university_folk_society/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify DuFolkSoc (@durham_university_folk_society) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6921/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duforagingsociety/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6921/",
+      "verified_at": "2026-10-17T12:19:21.291Z",
+      "reviewed": true,
+      "evidence_note": "Official SU profile explicitly names Instagram @duforagingsociety in the society description."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8181/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamfrenchsociety/",
+      "evidence_url": "https://www.facebook.com/durhamfrenchsociety/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham French Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8181/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.french.society/",
+      "evidence_url": "https://www.instagram.com/durham.french.society/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham French Society (@durham.french.society) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6948/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/girlsonfilmsoc/",
+      "evidence_url": "https://www.instagram.com/girlsonfilmsoc/",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic profile result identifies Girls on Film Society!! (@girlsonfilmsoc); indexed bio explicitly begins Durham University's newest film. Exact society and university identity verified from the public indexed profile text; direct Instagram reads currently encounter a login wall."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6957/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/girlsthatcan.du/",
+      "evidence_url": "https://www.instagram.com/girlsthatcan.du/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Girls That Can (@girlsthatcan.du) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7731/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/gwl.durham/",
+      "evidence_url": "https://uk.linkedin.com/company/girls-who-lead-durham-university",
+      "verified_at": "2026-10-17T12:26:52.433Z",
+      "reviewed": true,
+      "evidence_note": "Society's self-identifying LinkedIn organisation page describes Girls Who Lead - Durham University and explicitly lists this Instagram URL as its website. Also found society Linktree https://linktr.ee/gwldurham with matching Durham leadership identity."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7353/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/globalhealthdurham/",
+      "evidence_url": "https://www.facebook.com/globalhealthdurham/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Global Health Durham. Search result outbound redirect resolved to exact URL. Description marks page archived and directs current members to group /groups/799634725243381/."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7353/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/799634725243381/",
+      "evidence_url": "https://www.facebook.com/groups/799634725243381/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP 200; title and description self-identify Global Health Durham University Members (23/24). Exact URL resolved from organic search result or explicit link on society's public page. Linked by archived Global Health Durham public page; group title refers to 23/24 and description mentions reinstatement, so activity is uncertain."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7353/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.globalhealth/",
+      "evidence_url": "https://sites.google.com/view/global-health-durham/home",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "Society's public newsletter website identifies itself as Global Health Durham, a student-run society at Durham University and Durham SU student group; directly links this Instagram URL and the already verified Facebook group 799634725243381. The page contains 2024 newsletters; current posting activity is not confirmed. Candidate @du.sfgh was not mapped without a rename/ownership bridge."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6975/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/DUHarryPotter/",
+      "evidence_url": "https://www.facebook.com/groups/DUHarryPotter/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP 200; title and description identify Durham University Harry Potter Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6975/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dupottersoc/",
+      "evidence_url": "https://www.instagram.com/dupottersoc/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify DUHPS ✨️ (@dupottersoc) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7740/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamHellenic/",
+      "evidence_url": "https://www.facebook.com/DurhamHellenic/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham University Hellenic Society. Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7740/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamgreeksoc/",
+      "evidence_url": "https://www.instagram.com/durhamgreeksoc/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify DU Hellenic Society (@durhamgreeksoc) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8209/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durham.hispanic/",
+      "evidence_url": "https://www.facebook.com/durham.hispanic/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham Hispanic Society | Durham . Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8209/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/hispanicsocdurham/",
+      "evidence_url": "https://www.instagram.com/hispanicsocdurham/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University Hispanic Society (DUHS) (@hispanicsocdurham) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6993/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUHistoryofArtSociety/",
+      "evidence_url": "https://www.facebook.com/DUHistoryofArtSociety/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description identify Durham Students' History of Art Society | Durham . Search result outbound redirect resolved to exact URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6993/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duhistoryofart/",
+      "evidence_url": "https://www.instagram.com/duhistoryofart/",
+      "verified_at": "2026-10-17T12:23:17Z",
+      "reviewed": true,
+      "evidence_note": "Public profile fetched HTTP 200; title and biography self-identify Durham University, History of Art Society (@duhistoryofart) • Instagram photos and videos. Discovered through rendered Google organic search for the society; no handle inferred."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6201/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamUniversityHistorySociety/",
+      "evidence_url": "https://www.facebook.com/DurhamUniversityHistorySociety/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham University History Society. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6201/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duhistorysociety/",
+      "evidence_url": "https://www.instagram.com/duhistorysociety/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names History Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7749/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUHKS/",
+      "evidence_url": "https://www.facebook.com/DUHKS/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham University Hong Kong Society | Durham . Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7749/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.hks/",
+      "evidence_url": "https://www.instagram.com/durham.hks/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Hong Kong and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7002/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duhotchocsoc/",
+      "evidence_url": "https://www.instagram.com/duhotchocsoc/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Hot Chocolate Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8227/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duhumanrights/",
+      "evidence_url": "https://linktr.ee/duhumanrights",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "Self-identifying Linktree directly links instagram.com/duhumanrights and Human Rights Society @ Durham SU (legacy official SU slug /groups/human-rights-society-3037). Rendered Bing profile title explicitly names Durham University Human Rights Society. Justice Society and Law Society Human Rights accounts are distinct and were excluded."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6399/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamhyrox/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6399/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Hyrox Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content. Official SU profile explicitly names @durhamhyrox, independently matching Google platform result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6408/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamiaido/",
+      "evidence_url": "https://www.instagram.com/durhamiaido/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Iaido Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6417/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/duiceskatingsociety/",
+      "evidence_url": "https://www.facebook.com/duiceskatingsociety/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham University Ice Skating Society. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6417/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duiceskatingsoc/",
+      "evidence_url": "https://www.durhamsu.com/groups/studentgroup/6417/",
+      "verified_at": "2026-10-17T12:19:21.293Z",
+      "reviewed": true,
+      "evidence_note": "Official SU profile explicitly states Instagram: duiceskatingsoc in Contact us."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7011/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/shellshockimpro/",
+      "evidence_url": "https://durimprov.webspace.durham.ac.uk/",
+      "verified_at": "2026-10-17T12:19:37.372Z",
+      "reviewed": true,
+      "evidence_note": "Official society website linked by SU profile directly links this social account as its source of latest information."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7011/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/shellshock_improv/",
+      "evidence_url": "https://durimprov.webspace.durham.ac.uk/",
+      "verified_at": "2026-10-17T12:19:37.372Z",
+      "reviewed": true,
+      "evidence_note": "Official society website linked by SU profile directly links this social account as its source of latest information."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6318/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.indiandancesoc/",
+      "evidence_url": "https://www.instagram.com/du.indiandancesoc/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Indian Dance Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8245/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUIS2020/",
+      "evidence_url": "https://www.facebook.com/DUIS2020/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham University Indian Society. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8245/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_indiansoc/",
+      "evidence_url": "https://www.instagram.com/du_indiansoc/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Indian Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8975/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/PPIDurham/",
+      "evidence_url": "https://www.facebook.com/PPIDurham/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify PPI Durham - Durham Indonesian Student Community | Durham . Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8975/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ppidurham/",
+      "evidence_url": "https://www.instagram.com/ppidurham/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Indonesian Student Community (DISC) and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8254/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/instepdurham/",
+      "evidence_url": "https://www.facebook.com/instepdurham/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham Instep Dance Society. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8254/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/instepdurham/",
+      "evidence_url": "https://www.instagram.com/instepdurham/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Instep Dance Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7767/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamISA/",
+      "evidence_url": "https://www.facebook.com/DurhamISA/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham International Students Association - ISA Page. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7767/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/isa_durhamuniversity/",
+      "evidence_url": "https://www.instagram.com/isa_durhamuniversity/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names International Students' Association and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10917/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/IntFemSoc/",
+      "evidence_url": "https://www.facebook.com/IntFemSoc/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham Intersectional Feminism Society. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10917/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_intfemsoc/",
+      "evidence_url": "https://www.instagram.com/durham_intfemsoc/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Intersectional Feminist Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8272/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/duis2018/",
+      "evidence_url": "https://www.facebook.com/duis2018/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham University Irish Society - DUIS. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8272/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_irishsociety/",
+      "evidence_url": "https://www.instagram.com/du_irishsociety/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Irish Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8290/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamitaliansociety/",
+      "evidence_url": "https://www.facebook.com/durhamitaliansociety/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP 200; title and description self-identify Durham Italian Society. Exact URL resolved from organic search result or explicit link on society's public page."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8290/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/italiansocietydurham/",
+      "evidence_url": "https://www.instagram.com/italiansocietydurham/",
+      "verified_at": "2026-10-17T12:25:28.928Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Google organic result names Italian Society and exact account handle with Durham identity in title or biography. Direct profile request returned Instagram login wall; verification based on indexed public profile identity, not authenticated content."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8299/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamjsoc/",
+      "evidence_url": "https://www.facebook.com/durhamjsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham University Jewish Society. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8299/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/durhamjsoc/",
+      "evidence_url": "https://www.facebook.com/groups/durhamjsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham University Jewish Society 2025-2026 group. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8299/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamjsoc/",
+      "evidence_url": "https://www.instagram.com/durhamjsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Jewish Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7038/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamkaraoke/",
+      "evidence_url": "https://www.instagram.com/durhamkaraoke/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Karaoke Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8326/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/93167460963/",
+      "evidence_url": "https://www.facebook.com/groups/93167460963/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham University Korean Society (DUKS). Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8326/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duks_official_/",
+      "evidence_url": "https://www.instagram.com/duks_official_/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Korean Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7056/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/lageranddiscussion/",
+      "evidence_url": "https://www.instagram.com/lageranddiscussion/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Lager and Discussion Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8344/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.latam/",
+      "evidence_url": "https://www.instagram.com/du.latam/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Latin America Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8377/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamLWOB/",
+      "evidence_url": "https://www.facebook.com/DurhamLWOB/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham Lawyers Without Borders. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8377/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dulwob/",
+      "evidence_url": "https://www.instagram.com/dulwob/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Lawyers without Borders at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7362/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/847894731912587/",
+      "evidence_url": "https://www.facebook.com/groups/847894731912587/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham Liberal Association. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7362/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamliberals/",
+      "evidence_url": "https://www.instagram.com/durhamliberals/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Liberal Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10730/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/1054912955684256/",
+      "evidence_url": "https://www.facebook.com/groups/1054912955684256/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham University Libertarian Society. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10730/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_libertariansoc/",
+      "evidence_url": "https://www.instagram.com/du_libertariansoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Libertarian Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7803/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUMarketingSociety/",
+      "evidence_url": "https://www.facebook.com/DUMarketingSociety/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham University Marketing Society | Durham . Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7803/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dumarketingsociety/",
+      "evidence_url": "https://www.instagram.com/dumarketingsociety/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Marketing Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7812/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.matsa/",
+      "evidence_url": "https://www.instagram.com/du.matsa/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Mature Students' Association at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10636/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhammedlawsoc/",
+      "evidence_url": "https://linktr.ee/medlaw.society",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Society's Linktree describes a Durham University student-led medical law/bioethics society, links its SU membership, and directly links Instagram /durhammedlawsoc."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8386/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DURMEXSOC/",
+      "evidence_url": "https://www.facebook.com/DURMEXSOC/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham Mexican Society. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8386/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/751198994984045/",
+      "evidence_url": "https://www.facebook.com/groups/751198994984045/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham Mexican Society. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8386/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durmexsoc/",
+      "evidence_url": "https://www.instagram.com/durmexsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Mexican Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7083/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/murdermysterysoc_du/",
+      "evidence_url": "https://linktr.ee/murdermysterysoc",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Self-identifying DU Murder Mystery Society Linktree directly links Instagram /murdermysterysoc_du; indexed profile biography identifies Durham University's Murder Mystery Society."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7092/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_mythology_society/",
+      "evidence_url": "https://www.instagram.com/du_mythology_society/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Mythology & Folklore Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7101/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/du.NHsoc/",
+      "evidence_url": "https://www.facebook.com/du.NHsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham University Natural History Society. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7101/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dunhsoc/",
+      "evidence_url": "https://www.instagram.com/dunhsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Natural History Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7110/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.nytpuzzles.soc/",
+      "evidence_url": "https://www.instagram.com/durham.nytpuzzles.soc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying New York Times Puzzles Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7830/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/scansoc/",
+      "evidence_url": "https://www.facebook.com/groups/scansoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham University Scandinavian Society. Exact URL observed in rendered Bing organic result. Historical Scandinavian name; Nordic society's public page describes its return from the Scandinavian society. Current group activity not verified."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7830/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/nordicsoc/",
+      "evidence_url": "https://www.facebook.com/nordicsoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham University Nordic Society. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7830/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/nordicsoc.du/",
+      "evidence_url": "https://www.instagram.com/nordicsoc.du/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Nordic Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6444/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamoffbeatsociety/",
+      "evidence_url": "https://www.instagram.com/durhamoffbeatsociety/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Off Beat Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7839/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duorthodoxchristiansoc/",
+      "evidence_url": "https://durhamorthodox.church/community-groups/",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "Durham Orthodox Church's public Community Groups page has a dedicated Durham University Orthodox Christian Society section and directly links this exact Instagram URL."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7137/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhampaintandsip/",
+      "evidence_url": "https://www.instagram.com/durhampaintandsip/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic results name Durham Paint & Sip (@durhampaintandsip); indexed posts advertise annual society membership priced in pounds and the 2026 committee. Profile's socialise-and-drink description matches official SU society description; account identity inferred from these matching details. Corroborating self-authored FIXR organiser page https://fixr.co/organiser/durhampaintandsip is titled DU Paint & Sip and uses the same socialise-and-drink wording; Facebook candidate lacked public identity metadata."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8422/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUPAKSOC/",
+      "evidence_url": "https://www.facebook.com/DUPAKSOC/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham University Pakistan Society | Durham . Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8422/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.paksoc/",
+      "evidence_url": "https://www.instagram.com/du.paksoc/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Pakistan Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7848/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/PalTVUK/",
+      "evidence_url": "https://linktr.ee/PalTV",
+      "verified_at": "2026-10-17T12:19:50.210Z",
+      "reviewed": true,
+      "evidence_note": "Official PalTV website linked by SU profile links this Linktree; Linktree describes the Durham broadcaster and links this account."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7848/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/paltvuk/",
+      "evidence_url": "https://linktr.ee/PalTV",
+      "verified_at": "2026-10-17T12:19:50.210Z",
+      "reviewed": true,
+      "evidence_note": "Official PalTV website linked by SU profile links this Linktree; Linktree describes the Durham broadcaster and links this account."
+    },
+    {
       "society_url": "https://www.durhamsu.com/groups/studentgroup/7857/",
       "platform": "facebook",
       "url": "https://www.facebook.com/palatinate/",
@@ -15,6 +1860,861 @@
       "evidence_url": "https://www.palatinate.org.uk/",
       "verified_at": "2026-10-17T11:59:53.363632Z",
       "reviewed": true
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8431/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhampoca/",
+      "evidence_url": "https://www.facebook.com/durhampoca/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page fetched HTTP200; title and description self-identify Durham People of Colour Association - DPOCA. Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8431/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/dpoca/",
+      "evidence_url": "https://www.facebook.com/groups/dpoca/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) fetched HTTP200; title and description self-identify Durham People of Colour Association (DPOCA). Exact URL observed in rendered Bing organic result."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8431/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhampoca/",
+      "evidence_url": "https://www.instagram.com/durhampoca/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying People of Colour Association at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6219/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUPhilsoc/",
+      "evidence_url": "https://www.facebook.com/DUPhilsoc/",
+      "verified_at": "2026-10-17T12:28:48.273Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page HTTP200 title identifies Durham University Philosophy Society; exact URL observed in rendered Bing organic search."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6219/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_philosophysociety/",
+      "evidence_url": "https://www.instagram.com/du_philosophysociety/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Philosophy Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7389/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/pbudurham/",
+      "evidence_url": "https://www.instagram.com/pbudurham/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Plant Based Society at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7389/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/plantbaseddurham/",
+      "evidence_url": "https://linktr.ee/plantbaseddurham",
+      "verified_at": "2026-10-17T12:34:24Z",
+      "reviewed": true,
+      "evidence_note": "Public Linktree describes making Durham University 100% plant-based and links the national Plant-Based Universities campaign, matching the SU society's purpose. Its Follow us on Instagram link explicitly targets instagram.com/plantbaseddurham via an Outlook Safe Links URL. Also retaining separately indexed @pbudurham; whether one replaces the other is unconfirmed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7155/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/dupoetrysoc/",
+      "evidence_url": "https://www.facebook.com/groups/dupoetrysoc/",
+      "verified_at": "2026-10-17T12:28:48.273Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook group (type=group) HTTP200 title identifies Durham University Poetry Society; exact URL observed in rendered Bing organic search."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7155/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhampoetrysociety/",
+      "evidence_url": "https://www.instagram.com/durhampoetrysociety/",
+      "verified_at": "2026-10-17T12:28:24.275Z",
+      "reviewed": true,
+      "evidence_note": "Rendered Bing organic result provides exact account handle and profile title/biography self-identifying Poetry at Durham University. Direct Instagram collection currently reaches a login wall; identity verified from indexed public profile, with no guessed handle."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7164/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamPokemon/",
+      "evidence_url": "https://www.facebook.com/DurhamPokemon/",
+      "verified_at": "2026-10-17T12:28:48.273Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook page HTTP200 title identifies Durham University Pokémon Society; exact URL observed in rendered Bing organic search. Description's Tuesday 7:30 meetings match official SU profile."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7173/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/DurhamPokerSociety/",
+      "evidence_url": "https://www.facebook.com/groups/DurhamPokerSociety/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Poker Society | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7173/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/p/Durham-Poker-Society-100089072551814/",
+      "evidence_url": "https://www.facebook.com/p/Durham-Poker-Society-100089072551814/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Poker Society | Durham . Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7173/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhampoker/",
+      "evidence_url": "https://www.instagram.com/durhampoker/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Poker Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:52.978Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8440/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUPDS/",
+      "evidence_url": "https://www.facebook.com/DUPDS/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Pole Dancing Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8440/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dupoleofficial/",
+      "evidence_url": "https://www.instagram.com/dupoleofficial/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Pole Dancing at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:53.595Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7182/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhampotsoc/",
+      "evidence_url": "https://www.instagram.com/durhampotsoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Pottery Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:54.471Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6255/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUPSoc/",
+      "evidence_url": "https://www.facebook.com/DUPSoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Psychology Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6255/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dupsoc/",
+      "evidence_url": "https://www.instagram.com/dupsoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Psychology Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:55.240Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8449/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/PurpleRadio/",
+      "evidence_url": "https://www.facebook.com/PurpleRadio/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Purple Radio. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8449/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/purple_radio/",
+      "evidence_url": "https://www.purpleradio.co.uk/contact/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Purple Radio official contact page directly links @purple_radio; the page describes the Durham student radio station. Link verified by public HTTP request."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7875/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamlgbtqa/",
+      "evidence_url": "https://www.facebook.com/durhamlgbtqa/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University LGBT+ Association. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7875/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/queerspheredurham/",
+      "evidence_url": "https://www.instagram.com/queerspheredurham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "The indexed Queer Sphere Durham profile and matching SU title Queer Sphere: Durham LGBT+ Association establish this identity. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:57.182Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7191/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamuniquizsoc/",
+      "evidence_url": "https://www.facebook.com/durhamuniquizsoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Uni Quiz Soc. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7191/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamuniquizsoc/",
+      "evidence_url": "https://www.instagram.com/durhamuniquizsoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Quiz Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:58.043Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7884/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durefissoc/",
+      "evidence_url": "https://www.instagram.com/durefissoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Real Estate Finance and Investment Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:19:58.854Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6462/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DURTC/",
+      "evidence_url": "https://www.facebook.com/DURTC/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Real Tennis Club. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8461/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamunirussianspeaking/",
+      "evidence_url": "https://www.facebook.com/durhamunirussianspeaking/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Russian Speaking Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8461/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durusspeaking/",
+      "evidence_url": "https://www.instagram.com/durusspeaking/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Russian Speaking Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:04.432Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7218/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/du.scoutsandguides/",
+      "evidence_url": "https://www.facebook.com/du.scoutsandguides/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Scout & Guide Group. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7218/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusagg.durham/",
+      "evidence_url": "https://www.instagram.com/dusagg.durham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Scout and Guide at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:05.136Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7227/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/DUSewSoc/",
+      "evidence_url": "https://www.facebook.com/groups/DUSewSoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Sewing Society | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7227/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamsewsoc/",
+      "evidence_url": "https://www.instagram.com/durhamsewsoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Sewing at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:06.299Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8470/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/SexpressionDurham/",
+      "evidence_url": "https://www.facebook.com/SexpressionDurham/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata HTTP 200 confirms title Sexpression Durham. Description: Sexpression Durham. 394 followers. Durham branch of Sexpression:UK; bringing comprehensive & inclusive RSE to schools & universities.. Identity mapping does not claim current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8470/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/sexpression.durham/",
+      "evidence_url": "https://www.instagram.com/sexpression.durham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Sexpression Durham at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:47.182Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7893/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/durhamunisingsoc/",
+      "evidence_url": "https://www.facebook.com/groups/durhamunisingsoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Singapore Society | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7893/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusingsoc/",
+      "evidence_url": "https://www.instagram.com/dusingsoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Singapore Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:49.593Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7236/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusmartwomenthinkalike/",
+      "evidence_url": "https://www.instagram.com/dusmartwomenthinkalike/",
+      "verified_at": "2026-10-17T12:35:05.116664Z",
+      "reviewed": true,
+      "evidence_note": "Organic profile result 2026-10-17T12:33:59.887Z identifies this named Durham/DU society with the displayed account handle. Its title and purpose match the official SU society description. Direct Instagram access remains login-blocked and was not retried; this verifies identity rather than post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6489/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamsocietyleague/",
+      "evidence_url": "https://www.instagram.com/durhamsocietyleague/",
+      "verified_at": "2026-10-17T12:35:05.116664Z",
+      "reviewed": true,
+      "evidence_note": "Organic profile result 2026-10-17T12:34:00.574Z identifies this named Durham/DU society with the displayed account handle. Its title and purpose match the official SU society description. Direct Instagram access remains login-blocked and was not retried; this verifies identity rather than post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/9008/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/_duscs/",
+      "evidence_url": "https://www.instagram.com/_duscs/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Sociology and Criminology Society (DUSCS) at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:52.476Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7902/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamUniversitySouthAfricanSociety/",
+      "evidence_url": "https://www.facebook.com/DurhamUniversitySouthAfricanSociety/",
+      "verified_at": "2026-10-17T12:35:05.116664Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Title identifies South African Society in Durham; its description explicitly identifies it as the official Durham University society page. Current post access is not confirmed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7902/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_southafrican_society/",
+      "evidence_url": "https://www.instagram.com/du_southafrican_society/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names South African Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:53.265Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8488/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusportsbusiness/",
+      "evidence_url": "https://www.instagram.com/dusportsbusiness/",
+      "verified_at": "2026-10-17T12:35:05.116664Z",
+      "reviewed": true,
+      "evidence_note": "Organic profile result 2026-10-17T12:34:02.793Z identifies this named Durham/DU society with the displayed account handle. Its title and purpose match the official SU society description. Direct Instagram access remains login-blocked and was not retried; this verifies identity rather than post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11018/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusrilankansoc/",
+      "evidence_url": "https://www.instagram.com/dusrilankansoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Sri Lankan Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:54.884Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8997/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/408543127061182/",
+      "evidence_url": "https://www.facebook.com/groups/408543127061182/",
+      "verified_at": "2026-10-17T12:36:18.691297Z",
+      "reviewed": true,
+      "evidence_note": "Targeted public organic result and HTTP 200 Facebook group metadata both give the exact title Durham University Star Wars Society. Only group identity was verified; private posts were not accessed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8997/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dustarwarssoc/",
+      "evidence_url": "https://www.instagram.com/dustarwarssoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Star Wars at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:23:55.577Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7425/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/SSDPdurham/",
+      "evidence_url": "https://www.facebook.com/SSDPdurham/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata HTTP 200 confirms title SSDP Durham. Description: SSDP Durham. 1,020 followers. SSDP Durham aims to inform students about substances, the law, and their health implications.. Also explicitly linked by the indexed official SU society page https://www.durhamsu.com/groups/students-for-sensible-drug-policy-5cea . Identity mapping does not claim current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7425/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ssdp_durham/",
+      "evidence_url": "https://www.instagram.com/ssdp_durham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Indexed profile explicitly describes the Durham University (U.K.) chapter. Another similarly named profile mentions lost access; present control and activity of this historical account are not confirmed. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:26:22.086Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7911/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/mixedsoc/",
+      "evidence_url": "https://www.facebook.com/mixedsoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Students of Mixed Cultural Identities. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7911/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/mixedsocdurham/",
+      "evidence_url": "https://www.instagram.com/mixedsocdurham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Students of Mixed Cultural Identities at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:26:22.955Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7434/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUSEF-113236073785800/",
+      "evidence_url": "https://www.facebook.com/DUSEF-113236073785800/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: DUSEF. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7434/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dusef_/",
+      "evidence_url": "https://dusef9.wixsite.com/website",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Society-branded Durham University Sustainable and Ethical Fashion website directly links @dusef_. Public website retrieved successfully; direct Instagram access was not attempted."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6273/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/dusfs/",
+      "evidence_url": "https://www.facebook.com/dusfs/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Sustainable Finance Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6273/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du_sfs/",
+      "evidence_url": "https://www.instagram.com/du_sfs/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Sustainable Finance at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:26:24.701Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8497/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/61558647614375/",
+      "evidence_url": "https://www.facebook.com/61558647614375/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Taiwanese Society 杜倫大學臺灣學生會 . Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8497/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_tws/",
+      "evidence_url": "https://www.instagram.com/durham_tws/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Taiwanese Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:26:26.472Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7920/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamtamilsoc/",
+      "evidence_url": "https://www.instagram.com/durhamtamilsoc/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Tamil Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:26:27.386Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7254/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/SwiftSocDU/",
+      "evidence_url": "https://www.facebook.com/SwiftSocDU/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Taylor Swift Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7254/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/swiftsocdu/",
+      "evidence_url": "https://www.facebook.com/SwiftSocDU/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public HTTP 200 metadata for the Durham University Taylor Swift Society explicitly states Insta:swiftsocdu. Direct Instagram access is login-blocked and was not retried; present activity is not confirmed."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8506/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamUniversityThaiBoxing/",
+      "evidence_url": "https://www.facebook.com/DurhamUniversityThaiBoxing/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Thai Boxing Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8506/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_university_thai_boxing/",
+      "evidence_url": "https://www.instagram.com/durham_university_thai_boxing/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Thai Boxing at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:27:38.081Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8519/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamthaisoc/",
+      "evidence_url": "https://www.facebook.com/durhamthaisoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Thai Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8519/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamthaisociety/",
+      "evidence_url": "https://www.instagram.com/durhamthaisociety/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Thai Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:27:38.850Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7938/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dumidlandsociety/",
+      "evidence_url": "https://www.instagram.com/dumidlandsociety/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names The Midlands Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:27:39.696Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7272/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dutolkiensociety/",
+      "evidence_url": "https://www.instagram.com/dutolkiensociety/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Tolkien Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:27:42.693Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8528/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duinvestments/",
+      "evidence_url": "https://www.instagram.com/duinvestments/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Trading and Investment Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:27:43.425Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8537/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/treasuretrap/",
+      "evidence_url": "https://www.facebook.com/groups/treasuretrap/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Treasure Trap | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8537/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/treasuretrap/",
+      "evidence_url": "https://www.facebook.com/treasuretrap/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Treasure Trap. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8546/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/duturkishsoc/",
+      "evidence_url": "https://www.facebook.com/duturkishsoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Turkish Society - DUTS. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8546/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamturkish/",
+      "evidence_url": "https://www.instagram.com/durhamturkish/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Turkish Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:27:59.340Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8555/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham.ua/",
+      "evidence_url": "https://www.instagram.com/durham.ua/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Ukrainian Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:00.066Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7335/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/durhamunicefoncampus/",
+      "evidence_url": "https://www.facebook.com/durhamunicefoncampus/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Unicef On Campus. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7335/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/unicefsociety_durham/",
+      "evidence_url": "https://www.instagram.com/unicefsociety_durham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names UNICEF on Campus at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:00.801Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7956/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/Durham-University-Vietnamese-Society-105104847704203/",
+      "evidence_url": "https://www.facebook.com/Durham-University-Vietnamese-Society-105104847704203/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Vietnamese Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7956/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/1574854839521562/",
+      "evidence_url": "https://www.facebook.com/groups/1574854839521562/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Vietnamese Society (Vietsoc Durham) 2026/2027 | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7956/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/vietsoc.durham/",
+      "evidence_url": "https://www.instagram.com/vietsoc.durham/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Vietnamese Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:02.354Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7461/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/wear4warmth/",
+      "evidence_url": "https://www.instagram.com/wear4warmth/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Indexed Wear4Warmth profile describes clothes collection; its indexed posts and a Durham Pulse collaboration explicitly place the campaign in Durham. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:03.063Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7965/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/duwelshsociety/",
+      "evidence_url": "https://www.facebook.com/duwelshsociety/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Cymdeithas Gymraeg Prifysgol Durham University Welsh Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7965/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duwelshsociety/",
+      "evidence_url": "https://www.instagram.com/duwelshsociety/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Welsh Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:03.792Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7290/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/duwerewolfsoc/",
+      "evidence_url": "https://www.facebook.com/duwerewolfsoc/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: DU Werewolf Society. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7974/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DUWIB/",
+      "evidence_url": "https://www.facebook.com/DUWIB/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Women in Business (DUWIB) | Durham . Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7974/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duwibwomen/",
+      "evidence_url": "https://www.instagram.com/duwibwomen/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Women in Business at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:05.131Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8573/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/du.wim/",
+      "evidence_url": "https://www.instagram.com/du.wim/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Women in Maths at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:11.842Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7983/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamUniversityWomeninSTEM/",
+      "evidence_url": "https://www.facebook.com/DurhamUniversityWomeninSTEM/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Women in STEM. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7983/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duwomeninstem/",
+      "evidence_url": "https://www.instagram.com/duwomeninstem/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Women in STEM at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:12.574Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6525/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/298428576187084/",
+      "evidence_url": "https://www.facebook.com/groups/298428576187084/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Women’s darts | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6525/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duwomensdarts/",
+      "evidence_url": "https://www.instagram.com/duwomensdarts/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Women's Darts at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:13.345Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7992/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamWomxn/",
+      "evidence_url": "https://www.facebook.com/DurhamWomxn/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Womxn's Association. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7992/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durham_women/",
+      "evidence_url": "https://www.instagram.com/durham_women/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Womxn's Association at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:14.817Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8001/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/DurhamWCSA/",
+      "evidence_url": "https://www.facebook.com/DurhamWCSA/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham Working-Class Students' Association. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7308/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/WorldCinemaDurham/",
+      "evidence_url": "https://www.facebook.com/WorldCinemaDurham/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: World Cinema Society Durham Page. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7308/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/5652543379/",
+      "evidence_url": "https://www.facebook.com/groups/5652543379/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: World Cinema Society (Durham) | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7308/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/durhamworldcinema/",
+      "evidence_url": "https://www.instagram.com/durhamworldcinema/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names World Cinema at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:16.295Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6543/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/duwrestlingsociety/",
+      "evidence_url": "https://www.instagram.com/duwrestlingsociety/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Wrestling Society at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:17.000Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6552/",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/groups/395733417216096/",
+      "evidence_url": "https://www.facebook.com/groups/395733417216096/",
+      "verified_at": "2026-10-17T12:33:09.737190Z",
+      "reviewed": true,
+      "evidence_note": "Public Facebook metadata retrieved with HTTP 200. Page/group title: Durham University Yoga and Pilates Society (DUYAPS) | Facebook. Reviewed title and available description establish the named Durham society. This verifies account identity, not recent posting activity or access to private group posts."
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6552/",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/d.u.y.a.p.s/",
+      "evidence_url": "https://www.instagram.com/d.u.y.a.p.s/",
+      "verified_at": "2026-10-17T12:31:50.260761Z",
+      "reviewed": true,
+      "evidence_note": "Reviewed organic search profile result names Yoga and Pilates at Durham; the account URL/handle is visible in the result. Evidence is the publicly indexed profile title/bio captured 2026-10-17T12:28:17.697Z; direct Instagram access is login-blocked and was not retried. Identity mapping does not prove current post access."
     }
   ]
 }

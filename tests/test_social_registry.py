@@ -35,6 +35,23 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(len(result), 3)
         self.assertTrue(any('groups/example' in r.get('facebook_url', '') for r in result))
 
+    def test_reviewed_group_is_preserved_for_unsupported_coverage(self):
+        mapping = {**MAPPING, 'platform': 'facebook', 'url': 'https://facebook.com/groups/Example/'}
+        societies, errors = apply_registry([SOCIETY], {'accounts': [mapping]}, NOW)
+        self.assertFalse(errors)
+        self.assertEqual(expand_accounts(societies)[0]['facebook_url'],
+                         'https://www.facebook.com/groups/example/')
+
+    def test_group_post_and_foreign_host_cannot_be_registered_as_group(self):
+        for url in ('https://facebook.com/groups/example/posts/123/',
+                    'https://facebook.com.evil.test/groups/example/',
+                    'https://facebook.com/groups/../',
+                    'https://facebook.com:9999/groups/example/'):
+            with self.subTest(url=url):
+                _, errors = apply_registry([SOCIETY], {'accounts': [
+                    {**MAPPING, 'platform': 'facebook', 'url': url}]}, NOW)
+                self.assertEqual(len(errors), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

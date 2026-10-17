@@ -1,4 +1,4 @@
-# Instagram and Facebook collection
+# Grubr: Instagram and Facebook collection
 
 ## Working without credentials
 
@@ -6,7 +6,7 @@ The collector starts with every society in the SU directory. It reads direct soc
 
 Public Instagram embeds were verified with real posts from Durham Christian Union, VegSoc, Chinese Christian Fellowship, PPE and Bar Society. Embeds usually contain six recent posts. Collection runs daily and merges previously seen posts for the configured retention window. This is recent-post coverage, not a complete historical archive. Accounts with private/restricted or unavailable embeds cannot be collected through this route.
 
-Facebook public JSON-LD and Story records are supported only when their content is exposed and ownership matches the society Page. The Facebook pages and public Page Plugin timelines tested exposed profile information but no actual captions. This is reported per account. Profile biographies are never counted as posts.
+Facebook public JSON-LD and Story records are supported only when their content is exposed and ownership matches the society Page. The Facebook pages and public Page Plugin timelines tested exposed profile information but no actual captions. This is reported per account. Profile biographies are never counted as posts. Verified Facebook group links remain in the registry as unsupported references; the collector does not fetch group content.
 
 Run the collector using the saved directory:
 
@@ -42,6 +42,12 @@ Image-only event details, languages unsupported by the English phrase/date rules
 
 Collection cannot be guaranteed for every society by a universal scraper. Some SU profiles omit their accounts, some timelines require permissions, and public embeds expose a small window. Facebook groups are explicitly unsupported. A successful collection run is not complete coverage.
 
+The 17 October 2026 research pass investigated **all 206 societies** that had no verified accounts after the earlier discovery run. It added **300 mappings (177 Instagram and 123 Facebook)** for **181 societies**. Together with the existing 113, that establishes at least one verified account reference for **294 of the 319 directory societies**. **25 societies remain unresolved on both platforms**; additional societies still lack one platform. Counts include unsupported Facebook group references and do not imply that their posts can be collected.
+
+The evidence-audited mappings live in [`data/society-accounts.json`](../data/society-accounts.json), including public evidence URLs, review timestamps and evidence notes. [`data/account-research-audit.json`](../data/account-research-audit.json) records research coverage and unresolved cases. Searches included public society profiles, linked websites and self-identifying social profiles. Ambiguous national accounts, other universities and similarly named societies were left unresolved; handles were not guessed.
+
+The **pre-expansion** collector snapshot on 17 October 2026 contained **417 real Instagram posts from 90 societies and zero Facebook posts**. This historical result predates the new mappings. Use the generated coverage report and the website's **How it works** view for current collection results; a verified account reference is distinct from a successful post fetch.
+
 Every directory society appears in `social-posts.json.coverage.societies`, including missing accounts. The website's **Societies** view can filter account gaps, inaccessible posts and stale collections. A recently observed real post establishes limited coverage, not a complete timeline. Account-level records preserve provider failures and last-attempt times. GitHub Actions writes these counts in its run summary.
 
 For an account absent from the SU profile/linked website, use **Add / correct account** on the society card. A maintainer checks the public ownership evidence and adds a mapping to `data/society-accounts.json`:
@@ -54,7 +60,8 @@ For an account absent from the SU profile/linked website, use **Add / correct ac
     "url": "https://www.instagram.com/example_society/",
     "evidence_url": "https://example.org/society/",
     "verified_at": "2026-10-17T12:00:00Z",
-    "reviewed": true
+    "reviewed": true,
+    "evidence_note": "The society's public website directly links this account."
   }]
 }
 ```

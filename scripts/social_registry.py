@@ -5,9 +5,9 @@ from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 try:
-    from scripts.social_posts import canonical_account_url, platform_for
+    from scripts.social_posts import canonical_account_url, platform_for, _unsupported_group_url
 except ModuleNotFoundError:
-    from social_posts import canonical_account_url, platform_for
+    from social_posts import canonical_account_url, platform_for, _unsupported_group_url
 
 
 def apply_registry(societies, registry, now):
@@ -19,10 +19,17 @@ def apply_registry(societies, registry, now):
             society = by_url.get(str(record.get('society_url', '')).rstrip('/'))
             if society is None:
                 raise ValueError('Society must match a current SU directory URL')
-            account = canonical_account_url(record.get('url'))
+            raw_url = record.get('url')
+            account = canonical_account_url(raw_url)
+            # Reviewed groups remain visible in coverage, but the public collector
+            # deliberately reports them as unsupported without fetching content.
+            if not account and isinstance(raw_url, str):
+                parts = [part for part in urlparse(raw_url).path.split('/') if part]
+                if len(parts) == 2:
+                    account = _unsupported_group_url(raw_url)
             platform = record.get('platform')
             if not account or platform_for(account) != platform:
-                raise ValueError('A supported Instagram profile or Facebook Page URL is required')
+                raise ValueError('An Instagram profile, Facebook Page or Facebook group reference is required')
             evidence = urlparse(record.get('evidence_url', ''))
             if evidence.scheme != 'https' or not evidence.hostname or evidence.username or evidence.password:
                 raise ValueError('An HTTPS ownership evidence URL is required')

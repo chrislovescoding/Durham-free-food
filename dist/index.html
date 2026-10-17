@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#60377C">
-  <meta name="description" content="Find free food at Durham student events. Check dates, locations, entry prices, sign-up details and the original event source.">
-  <title>Durham Free Food — Good food. Good company.</title>
+  <meta name="theme-color" content="#FF5705">
+  <meta name="description" content="Grubr finds free food at Durham events. Discover what's on, check the details and go straight to the original event.">
+  <title>Grubr — Free food. Found.</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./app.js"></script>
 </head>
@@ -17,61 +17,75 @@
   <a href="#finder" class="skip-link">Skip to events</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="#" aria-label="Durham Free Food home"><span class="brand-icon" aria-hidden="true">✳</span><span>durham<span class="brand-second">free food</span></span></a>
-      <nav aria-label="Main navigation"><button class="nav-item active" data-view="events">Find food</button><button class="nav-item" data-view="societies">Societies</button><button class="nav-item" data-view="about">How it works</button></nav>
+      <a class="brand" href="#" aria-label="Grubr home"><img src="./assets/grubr-wordmark.svg" alt="Grubr" width="104" height="40"></a>
+      <nav aria-label="Main navigation">
+        <button class="nav-item active" data-view="events" aria-current="page">Find food</button>
+        <button class="nav-item" data-view="societies">Societies</button>
+        <button class="nav-item" data-view="about">How it works</button>
+      </nav>
       <button class="saved-button" id="saved-toggle" aria-pressed="false"><span data-icon="bookmark"></span><span>Saved</span><span id="saved-count">0</span></button>
     </div>
   </header>
   <main class="page-wrap">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy"><div class="local-note"><span></span>For hungry people in Durham</div><h1 id="hero-title">Good food.<br>Good company.<br>On the house.</h1><p>Find your next free bite. Discover society events,<br class="desktop-break"> meet new people, and make a meal of it.</p><a href="#finder" class="hero-link">See what’s on <span aria-hidden="true">↓</span></a></div>
-      <div class="hero-art" aria-hidden="true">
-        <span class="art-note note-one">a little less scrolling</span><span class="art-note note-two">a lot more snacking</span>
-        <svg viewBox="0 0 540 330" role="img" class="plate-art">
-          <ellipse cx="282" cy="285" rx="155" ry="14" fill="#ded3e8"/>
-          <path d="M105 165q-36-5-45-44m24 6-18-4 1-18M435 89q34 2 40 38m-20-7 19 10 9-20" fill="none" stroke="#9073a5" stroke-width="3" stroke-linecap="round"/>
-          <g transform="rotate(-12 275 173)"><circle cx="275" cy="173" r="118" fill="#fff" stroke="#e2d6eb" stroke-width="3"/><circle cx="275" cy="173" r="96" fill="#f5f1fa" stroke="#e7deef" stroke-width="2"/>
-          <path d="M204 109 Q268 66 339 113 L276 235Z" fill="#E6A64C" stroke="#CA8938" stroke-width="2"/><path d="M211 119Q269 84 330 120L276 224Z" fill="#FFD975"/><path d="M212 121Q226 133 240 124T265 123 290 126 330 121" fill="none" stroke="#E77559" stroke-width="7"/>
-          <circle cx="246" cy="146" r="13" fill="#C66555"/><circle cx="290" cy="145" r="13" fill="#C66555"/><circle cx="275" cy="188" r="11" fill="#C66555"/>
-          <path d="M264 126q-8-17-16-7 0 10 16 7M306 161q14-5 12 7-10 9-12-7M251 172q-15 0-11 11 12 3 11-11" fill="#58896D"/>
-          <path d="M197 109Q267 57 346 113" fill="none" stroke="#EFC18A" stroke-width="19" stroke-linecap="round"/>
-          </g>
-          <g transform="rotate(13 408 214)"><path d="M375 184h67l-7 77h-53Z" fill="#A2BEA6"/><ellipse cx="409" cy="184" rx="34" ry="9" fill="#52765B"/><path d="M410 181v-46l17-13" fill="none" stroke="#FFF" stroke-width="7" stroke-linecap="round"/><path d="M392 202q14 15 28 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></g>
-          <g transform="rotate(-15 135 241)"><rect x="102" y="214" width="65" height="52" rx="9" fill="#F7D985"/><path d="M113 214v-18m11 18v-25m11 25v-22m11 22v-27m11 27v-19" stroke="#EABD54" stroke-width="8" stroke-linecap="round"/><path d="M126 235h17m-9-8v16" stroke="#fff" stroke-width="3" stroke-linecap="round"/></g>
-          <path d="m169 57 3-11 3 11 11 3-11 3-3 11-3-11-11-3ZM450 259l2-8 3 8 8 3-8 2-3 8-2-8-8-2Z" fill="#A48AB7"/>
-        </svg><span class="food-sticker">£0<br><small>tastes better</small></span>
+      <div class="hero-copy">
+        <p class="local-note"><span data-icon="pin"></span>Hungry in Durham?</p>
+        <h1 id="hero-title">Free food.<br>Found.</h1>
+        <p class="hero-description">Good food brings people together. Find a free bite at your next society event.</p>
+        <a href="#finder" class="hero-link primary-button">Find your next bite <span data-icon="arrow-down"></span></a>
       </div>
+      <div class="hero-art" aria-hidden="true"><img class="hero-logo" src="./assets/grubr-logo.svg" alt="" width="764" height="1050"><span class="hero-art-caption">A little less scrolling. A little more eating.</span></div>
     </section>
 
-    <section id="events-view" class="view">
-      <div class="finder-heading" id="finder"><div><h2>What’s on the menu?</h2><p>Find a reason to leave the library.</p></div><div class="feed-switch" role="group" aria-label="Choose event feed"><button id="live-mode" class="selected" aria-pressed="true">Live listings</button><button id="demo-mode" aria-pressed="false">Try the demo <span>✦</span></button></div></div>
-      <div id="demo-banner" class="notice demo-notice" hidden><span data-icon="sparkles"></span><p><strong>You’re exploring example events.</strong> These demonstrate the prototype. They are not real events to attend.</p><button id="return-live">Back to live</button></div>
-      <div id="feed-warning" class="notice" hidden></div>
+    <section id="events-view" class="view" aria-labelledby="finder-title">
+      <div class="finder-heading" id="finder">
+        <div><h2 id="finder-title">What’s on the menu?</h2><p>Find the food. Check the details. Make a plan.</p></div>
+        <div class="feed-switch" role="group" aria-label="Choose event feed"><button id="live-mode" class="selected" aria-pressed="true">Live listings</button><button id="demo-mode" aria-pressed="false">Try the demo</button></div>
+      </div>
+      <div id="demo-banner" class="notice demo-notice" hidden><span data-icon="sparkles"></span><p><strong>You’re exploring example events.</strong> These show how Grubr works. They are not real events to attend.</p><button id="return-live">Back to live</button></div>
+      <div id="feed-warning" class="notice" role="status" hidden></div>
       <div class="finder-layout">
         <div class="feed-column">
-          <div class="search-box"><span data-icon="search"></span><input id="event-search" type="search" placeholder="Pizza, a society, a place…" aria-label="Search events"><kbd aria-hidden="true">/</kbd></div>
-          <div class="filter-row"><div class="date-filters" role="group" aria-label="Filter by date"><button data-date="all" class="active" aria-pressed="true">All upcoming</button><button data-date="today" aria-pressed="false">Today</button><button data-date="tomorrow" aria-pressed="false">Tomorrow</button><button data-date="week" aria-pressed="false">Next 7 days</button></div><button id="filters-toggle" class="filter-button" aria-expanded="false" aria-controls="more-filters"><span data-icon="sliders"></span>Filters<span id="filter-count" hidden></span></button></div>
+          <div class="search-box"><span data-icon="search"></span><input id="event-search" type="search" placeholder="A society, a place, a slice of pizza…" aria-label="Search events"><kbd aria-hidden="true">/</kbd></div>
+          <div class="filter-row">
+            <div class="date-filters" role="group" aria-label="Filter by date"><button data-date="all" class="active" aria-pressed="true">All upcoming</button><button data-date="today" aria-pressed="false">Today</button><button data-date="tomorrow" aria-pressed="false">Tomorrow</button><button data-date="week" aria-pressed="false">Next 7 days</button></div>
+            <button id="filters-toggle" class="filter-button" aria-expanded="false" aria-controls="more-filters"><span data-icon="sliders"></span>Filters<span id="filter-count" hidden></span></button>
+          </div>
           <div id="more-filters" class="more-filters" hidden><label><input type="checkbox" id="free-entry">Free entry only</label><label>Sign-up<select id="signup-filter"><option value="all">Any</option><option value="none">No sign-up needed</option><option value="required">Sign-up required</option></select></label><button class="text-button" id="reset-filters">Reset filters</button></div>
-          <div class="results-heading"><p id="results-count" aria-live="polite">Checking the menu…</p><span>By soonest first <span aria-hidden="true">↓</span></span></div>
+          <div class="results-heading"><p id="results-count" aria-live="polite">Checking the menu…</p><span>Soonest first <span data-icon="arrow-down"></span></span></div>
           <div id="event-grid" class="event-grid" aria-label="Events"></div>
-          <div id="empty-state" class="empty-state" hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h3 id="empty-title"></h3><p id="empty-copy"></p><button id="empty-action" class="primary-button"></button></div>
+          <div id="empty-state" class="empty-state" hidden><img class="empty-symbol" src="./assets/grubr-symbol.svg" alt="" width="621" height="794"><h3 id="empty-title"></h3><p id="empty-copy"></p><button id="empty-action" class="primary-button"></button></div>
         </div>
-        <aside class="sidebar">
-          <section class="little-guide"><span class="tiny-illustration" aria-hidden="true">✳</span><h3>Your next bite,<br>without the hunt.</h3><p>All the useful details, together in one place.</p><ul><li><span data-icon="check"></span>See who’s hosting</li><li><span data-icon="check"></span>Check the time & place</li><li><span data-icon="check"></span>Go straight to the source</li></ul><button data-view="about" class="text-button">How we find events <span aria-hidden="true">↗</span></button></section>
-          <section class="pantry-card"><div class="pantry-icon" data-icon="basket"></div><h3>Need food today?</h3><p>The SU Pantry is a free student supermarket in Dunelm House. Check the SU for opening times and availability.</p><a href="https://www.durhamsu.com/support/pantry/" target="_blank" rel="noopener noreferrer">Visit the SU Pantry <span aria-hidden="true">↗</span></a></section>
-          <div class="freshness"><span class="status-dot"></span><p id="freshness-text">Loading source information…</p></div>
+        <aside class="sidebar" aria-label="Useful information">
+          <section class="little-guide"><div class="guide-heading"><span data-icon="food"></span><span>A good place to start</span></div><h3>Your next bite.<br>All in one place.</h3><ul><li><span data-icon="check"></span>Who’s hosting</li><li><span data-icon="check"></span>When and where to go</li><li><span data-icon="check"></span>The original event link</li></ul><button data-view="about" class="text-button">How Grubr finds food <span aria-hidden="true">↗</span></button></section>
+          <section class="pantry-card"><span class="pantry-icon" data-icon="basket"></span><div><h3>Need food today?</h3><p>The SU Pantry is a free student supermarket in Dunelm House. Check opening times and availability before you go.</p><a href="https://www.durhamsu.com/support/pantry/" target="_blank" rel="noopener noreferrer">Visit the SU Pantry <span aria-hidden="true">↗</span></a></div></section>
+          <div class="freshness"><span data-icon="clock"></span><p id="freshness-text">Loading source information…</p></div>
         </aside>
       </div>
-      <div class="contribute-strip"><div><h3>Good food is better shared.</h3><p>Spotted an event we should know about?</p></div><button class="secondary-button" id="submit-event"><span data-icon="plus"></span>Suggest an event</button></div>
+      <div class="contribute-strip"><div><h3>Found something good?</h3><p>Help someone else find their next free bite.</p></div><button class="secondary-button" id="submit-event"><span data-icon="plus"></span>Suggest an event</button></div>
     </section>
 
-    <section id="societies-view" class="view" hidden><div class="section-heading"><div><h2>Meet the societies.</h2><p>Explore student groups from the Durham SU directory.</p></div><a class="secondary-button" href="https://www.durhamsu.com/groups/studentgroups/" target="_blank" rel="noopener noreferrer">SU directory <span aria-hidden="true">↗</span></a></div><div class="search-box society-search"><span data-icon="search"></span><input type="search" id="society-search" aria-label="Search societies" placeholder="Find a society…"></div><label class="coverage-filter">Collection coverage <select id="society-coverage-filter"><option value="all">All societies</option><option value="collected">Recent posts collected</option><option value="missing_accounts">Account links needed</option><option value="needs_attention">Collection needs attention</option><option value="stale">Stale collection</option></select></label><p class="muted" id="society-count" aria-live="polite"></p><div id="society-grid" class="society-grid"></div><button class="secondary-button" id="load-societies" hidden>Show more societies</button></section>
+    <section id="societies-view" class="view" aria-labelledby="societies-title" hidden>
+      <div class="section-heading"><div><h2 id="societies-title">Find your people.</h2><p>Explore societies and see which accounts Grubr can check.</p></div><a class="secondary-button" href="https://www.durhamsu.com/groups/studentgroups/" target="_blank" rel="noopener noreferrer">SU directory <span aria-hidden="true">↗</span></a></div>
+      <div class="society-tools"><div class="search-box society-search"><span data-icon="search"></span><input type="search" id="society-search" aria-label="Search societies" placeholder="Find a society…"></div><label class="coverage-filter">Collection coverage<select id="society-coverage-filter"><option value="all">All societies</option><option value="collected">Recent posts collected</option><option value="missing_accounts">Account links needed</option><option value="needs_attention">Collection needs attention</option><option value="stale">Stale collection</option></select></label></div>
+      <p class="muted" id="society-count" aria-live="polite"></p><div id="society-grid" class="society-grid"></div><button class="secondary-button" id="load-societies" hidden>Show more societies</button>
+    </section>
 
-    <section id="about-view" class="view about-view" hidden><h2>Less scrolling. More showing up.</h2><p class="section-intro">Free food brings people together. This student-built prototype puts event details in one place, with the original source always close by.</p><div class="about-grid"><article><span class="about-icon" data-icon="search"></span><h3>Find the useful posts</h3><p>We find society accounts through SU profiles and linked society websites, then collect accessible posts. Each society has a coverage status. Public collection has gaps; authorised connections and organiser submissions help fill them.</p></article><article><span class="about-icon" data-icon="check"></span><h3>Keep the details clear</h3><p>A collected post is not automatically an event. It needs a clear date, time, place and free-food offer. Ambiguous captions go for review. Details shown only in poster images need a person to check them.</p></article><article><span class="about-icon" data-icon="clock"></span><h3>Keep the menu fresh</h3><p>The repository checks sources each evening around 8pm UK time. Started events fade for the rest of that day, then disappear from the feed. All times use Europe/London.</p></article></div><div class="source-panel"><h3>Source coverage</h3><p id="coverage-summary">Checking source status…</p><div id="source-status"></div><p class="muted">Public embeds expose a limited recent window. Some accounts require login or API access. Always check the organiser’s latest post before heading out.</p></div><div class="source-panel"><h3>Social post collection</h3><p id="directory-coverage-summary">Checking coverage across the society directory…</p><button class="text-button" data-view="societies">Browse society coverage ↗</button><p id="social-coverage-summary">Loading social collection status…</p><details class="social-account-details"><summary>See account-by-account coverage</summary><div id="social-account-status"></div></details><h3 class="collected-posts-title">Recent collected posts</h3><p class="muted">Real organiser captions, including posts that do not qualify as free-food events.</p><div id="collected-posts"></div><button class="secondary-button" id="more-posts" hidden>Show more posts</button></div><button class="primary-button" data-view="events">Find food</button></section>
-    <footer><a class="footer-brand" href="#">durham free food <span>✳</span></a><p>Made for students. Open to a good time.</p><div><span>Independent student prototype</span><a href="https://github.com/chrislovescoding/Durham-free-food" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></footer>
+    <section id="about-view" class="view about-view" aria-labelledby="about-title" hidden>
+      <div class="about-heading"><img src="./assets/grubr-symbol.svg" alt="" width="621" height="794"><div><h2 id="about-title">Less scrolling.<br>More showing up.</h2><p class="section-intro">Grubr brings Durham’s free-food events together, with the details you need and the original source close by.</p></div></div>
+      <div class="about-grid">
+        <article><span class="about-icon" data-icon="search"></span><h3>Find the useful posts</h3><p>We find society accounts through SU profiles and linked society websites, then collect accessible posts. Each society has a coverage status. Authorised connections and organiser submissions help fill the gaps.</p></article>
+        <article><span class="about-icon" data-icon="check"></span><h3>Check the details</h3><p>A collected post needs a clear date, time, place and free-food offer to become a listing. Ambiguous captions go for review. Details shown only in poster images need a person to check them.</p></article>
+        <article><span class="about-icon" data-icon="clock"></span><h3>Keep things fresh</h3><p>Sources are checked each evening around 8pm UK time. Started events turn grey for the rest of the day, then disappear. Entry fees are shown separately from free food, and unknown details stay clearly labelled.</p></article>
+      </div>
+      <div class="source-panel"><h3>What we’re checking</h3><p id="coverage-summary">Checking source status…</p><div id="source-status"></div><p class="muted">Public feeds expose a limited recent window. Some accounts require login or API access. Check the organiser’s latest post before heading out.</p></div>
+      <div class="source-panel"><h3>Society coverage</h3><p id="directory-coverage-summary">Checking coverage across the society directory…</p><button class="text-button coverage-link" data-view="societies">Browse society coverage <span aria-hidden="true">↗</span></button><p id="social-coverage-summary">Loading social collection status…</p><details class="social-account-details"><summary>See account-by-account coverage</summary><div id="social-account-status"></div></details><h3 class="collected-posts-title">From the societies</h3><p class="muted">Real organiser captions, including posts that don’t qualify as free-food events.</p><div id="collected-posts"></div><button class="secondary-button" id="more-posts" hidden>Show more posts</button></div>
+      <button class="primary-button" data-view="events">Find food</button>
+    </section>
+    <footer><a class="footer-brand" href="#" aria-label="Grubr home"><img src="./assets/grubr-wordmark.svg" alt="Grubr" width="104" height="40"></a><p>Good food. Better company.</p><div><span>Independent student prototype</span><a href="https://github.com/chrislovescoding/Durham-free-food" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></footer>
   </main>
   <dialog id="event-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close event details" data-close="event-dialog">×</button><div id="event-dialog-content"></div></dialog>
-  <dialog id="submit-dialog" aria-labelledby="submit-title"><button class="dialog-close" aria-label="Close suggestion form" data-close="submit-dialog">×</button><span class="dialog-eyebrow">Pass it on</span><h2 id="submit-title">Know about a free bite?</h2><p>Add an original post or event link. This opens a pre-filled GitHub issue for review; you’ll need a GitHub account to send it.</p><form id="suggest-form"><label>Event name<input name="title" required maxlength="150" placeholder="e.g. Welcome social with free pizza"></label><label>Original event or post link<input name="source" type="url" required placeholder="https://…"></label><label>Anything else we should know?<textarea name="details" rows="3" maxlength="2000" placeholder="Date, time, society, or sign-up details"></textarea></label><button type="submit" class="primary-button">Continue to GitHub <span aria-hidden="true">↗</span></button></form></dialog>
+  <dialog id="submit-dialog" aria-labelledby="submit-title"><button class="dialog-close" aria-label="Close suggestion form" data-close="submit-dialog">×</button><span class="dialog-eyebrow">Pass it on</span><h2 id="submit-title">Share a good find.</h2><p>Add the original post or event link. This opens a pre-filled GitHub issue for review. You’ll need a GitHub account to send it.</p><form id="suggest-form"><label>Event name<input name="title" required maxlength="150" placeholder="e.g. Welcome social with free pizza"></label><label>Original event or post link<input name="source" type="url" required placeholder="https://…"></label><label>Anything else we should know?<textarea name="details" rows="3" maxlength="2000" placeholder="Date, time, society or sign-up details"></textarea></label><button type="submit" class="primary-button">Continue to GitHub <span aria-hidden="true">↗</span></button></form></dialog>
   <div id="toast" class="toast" role="status" hidden></div>
 </body>
 </html>

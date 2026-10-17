@@ -1,0 +1,2165 @@
+{
+  "researched_at": "2026-10-17T12:43:46.900208Z",
+  "summary": {
+    "societies_researched": 206,
+    "new_account_mappings": 300,
+    "new_instagram_mappings": 177,
+    "new_facebook_mappings": 123,
+    "new_facebook_group_references": 27,
+    "newly_covered_societies": 181,
+    "researched_societies_without_verified_accounts": 25,
+    "total_directory_societies": 319,
+    "total_societies_with_account_links": 294,
+    "researched_societies_with_both_platforms": 108
+  },
+  "method": "Reviewed all 206 missing societies against public organic search profile identities, SU descriptions and explicit links from society websites. Added only exact identity matches with evidence URLs and verification times. Account identity does not establish present committee control, activity or post accessibility.",
+  "limits": "27 Facebook group references are retained for coverage and original links; group posts are unsupported and not fetched. Indexed profile evidence can be stale. Ambiguous or unrelated matches were not imported. The collector reports access failures separately from missing accounts.",
+  "searched_societies": [
+    {
+      "name": "93% Club Durham",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7317/"
+    },
+    {
+      "name": "Aerial Systems",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10966/"
+    },
+    {
+      "name": "Ahlulbayt Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7488/"
+    },
+    {
+      "name": "Aikido",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6300/"
+    },
+    {
+      "name": "Album Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6561/"
+    },
+    {
+      "name": "American Smooth Dance Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6309/"
+    },
+    {
+      "name": "Amnesty International",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7326/"
+    },
+    {
+      "name": "Anglo-Japanese Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8010/"
+    },
+    {
+      "name": "Asian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7506/"
+    },
+    {
+      "name": "Automotive Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6597/"
+    },
+    {
+      "name": "Azerbaijan Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7515/"
+    },
+    {
+      "name": "Balkan Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7524/"
+    },
+    {
+      "name": "Ballet Company",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8037/"
+    },
+    {
+      "name": "Banana Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6606/"
+    },
+    {
+      "name": "Black Women in Law",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10625/"
+    },
+    {
+      "name": "Boba Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6624/"
+    },
+    {
+      "name": "Book Aid International Charity Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11621/"
+    },
+    {
+      "name": "Book Club",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6633/"
+    },
+    {
+      "name": "Books and Pints Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10603/"
+    },
+    {
+      "name": "Brazilian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8055/"
+    },
+    {
+      "name": "British Sign Language Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7578/"
+    },
+    {
+      "name": "British-Asian Society (BASOC)",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/9019/"
+    },
+    {
+      "name": "Burmese Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8064/"
+    },
+    {
+      "name": "Calisthenics",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6327/"
+    },
+    {
+      "name": "Canadian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7542/"
+    },
+    {
+      "name": "Cantanese speaking Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7551/"
+    },
+    {
+      "name": "Catholic Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8073/"
+    },
+    {
+      "name": "Caving (Durham University Speleological Association)",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8082/"
+    },
+    {
+      "name": "Central Asian & Turkic Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7560/"
+    },
+    {
+      "name": "Chem Soc",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6093/"
+    },
+    {
+      "name": "Chess",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8091/"
+    },
+    {
+      "name": "Chinese Art Ensemble",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8100/"
+    },
+    {
+      "name": "Chinese Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7569/"
+    },
+    {
+      "name": "Chinese Student & Scholars Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7587/"
+    },
+    {
+      "name": "Chinese Studies Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11754/"
+    },
+    {
+      "name": "Civil Rights Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10651/"
+    },
+    {
+      "name": "Classic Film",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6687/"
+    },
+    {
+      "name": "Cloud Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6696/"
+    },
+    {
+      "name": "College Bar Appreciation Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6705/"
+    },
+    {
+      "name": "Commercial Law Journal Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8109/"
+    },
+    {
+      "name": "Computational Finance Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7605/"
+    },
+    {
+      "name": "Consulting Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7614/"
+    },
+    {
+      "name": "Creative Health & Wellbeing Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6723/"
+    },
+    {
+      "name": "Creative Mindfulness",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6732/"
+    },
+    {
+      "name": "Creative Writing",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6741/"
+    },
+    {
+      "name": "Crochet",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6750/"
+    },
+    {
+      "name": "Curry Club",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6759/"
+    },
+    {
+      "name": "Cypriot Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7623/"
+    },
+    {
+      "name": "Dan & Phil Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6768/"
+    },
+    {
+      "name": "Dancesport Team",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6336/"
+    },
+    {
+      "name": "Debit Divas",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11586/"
+    },
+    {
+      "name": "Desi Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7632/"
+    },
+    {
+      "name": "Disabilities and Carers Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7641/"
+    },
+    {
+      "name": "Disney",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6777/"
+    },
+    {
+      "name": "DJ Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6786/"
+    },
+    {
+      "name": "Drag Race Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6804/"
+    },
+    {
+      "name": "DU Coffee Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6813/"
+    },
+    {
+      "name": "DUCFS",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8953/"
+    },
+    {
+      "name": "DUCK",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8942/"
+    },
+    {
+      "name": "Durham Dippers",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6354/"
+    },
+    {
+      "name": "Durham Hindu Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7668/"
+    },
+    {
+      "name": "Durham Malaysian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8127/"
+    },
+    {
+      "name": "Durham NBA Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11064/"
+    },
+    {
+      "name": "Durham Palestine Solidarity Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7380/"
+    },
+    {
+      "name": "Durham Spritz Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6831/"
+    },
+    {
+      "name": "Durham Student Filmmaking",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8136/"
+    },
+    {
+      "name": "Durham Tea Art",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6678/"
+    },
+    {
+      "name": "Durham University against Sexual Assult",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7344/"
+    },
+    {
+      "name": "Durham University Filipino Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11643/"
+    },
+    {
+      "name": "Durham University Gaelic Football",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11053/"
+    },
+    {
+      "name": "Durham University Law and Business in Fashion Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10883/"
+    },
+    {
+      "name": "Durham University Photography Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10614/"
+    },
+    {
+      "name": "DUZZBALLZ",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11086/"
+    },
+    {
+      "name": "Education Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6156/"
+    },
+    {
+      "name": "Equestrian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6372/"
+    },
+    {
+      "name": "ESN (Erasmus Student Network) Durham",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8964/"
+    },
+    {
+      "name": "Estranged and Care Leavers Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7713/"
+    },
+    {
+      "name": "Expedition Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6876/"
+    },
+    {
+      "name": "F1 Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6885/"
+    },
+    {
+      "name": "Fides Et Veritas",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11007/"
+    },
+    {
+      "name": "Film, Pints & Pop Culture Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6894/"
+    },
+    {
+      "name": "First Generation Scholars and North East Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7722/"
+    },
+    {
+      "name": "Fly Fishing Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11031/"
+    },
+    {
+      "name": "Folk Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6912/"
+    },
+    {
+      "name": "Foraging Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6921/"
+    },
+    {
+      "name": "French Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8181/"
+    },
+    {
+      "name": "Girls on Film",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6948/"
+    },
+    {
+      "name": "Girls that Can",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6957/"
+    },
+    {
+      "name": "Girls Who Lead",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7731/"
+    },
+    {
+      "name": "Global Health Durham",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7353/"
+    },
+    {
+      "name": "Harry Potter",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6975/"
+    },
+    {
+      "name": "Hellenistic Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7740/"
+    },
+    {
+      "name": "Hispanic Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8209/"
+    },
+    {
+      "name": "History of Art Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6993/"
+    },
+    {
+      "name": "History Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6201/"
+    },
+    {
+      "name": "Hong Kong",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7749/"
+    },
+    {
+      "name": "Hot Chocolate Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7002/"
+    },
+    {
+      "name": "Human Rights Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8227/"
+    },
+    {
+      "name": "Hyrox Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6399/"
+    },
+    {
+      "name": "Iaido Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6408/"
+    },
+    {
+      "name": "Ice Skating Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6417/"
+    },
+    {
+      "name": "Improvised Comedy/ Shellshock",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7011/"
+    },
+    {
+      "name": "Indian Dance Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6318/"
+    },
+    {
+      "name": "Indian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8245/"
+    },
+    {
+      "name": "Indonesian Student Community (DISC)",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8975/"
+    },
+    {
+      "name": "Instep Dance Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8254/"
+    },
+    {
+      "name": "International Students' Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7767/"
+    },
+    {
+      "name": "Intersectional Feminist Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10917/"
+    },
+    {
+      "name": "Irish Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8272/"
+    },
+    {
+      "name": "Italian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8290/"
+    },
+    {
+      "name": "Jewish Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8299/"
+    },
+    {
+      "name": "Karaoke Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7038/"
+    },
+    {
+      "name": "Korean Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8326/"
+    },
+    {
+      "name": "Lager and Discussion Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7056/"
+    },
+    {
+      "name": "Latin America Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8344/"
+    },
+    {
+      "name": "Lawyers without Borders",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8377/"
+    },
+    {
+      "name": "Liberal Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7362/"
+    },
+    {
+      "name": "Libertarian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10730/"
+    },
+    {
+      "name": "Marketing Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7803/"
+    },
+    {
+      "name": "Mature Students' Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7812/"
+    },
+    {
+      "name": "Medical Law & Ethics",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10636/"
+    },
+    {
+      "name": "Mexican Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8386/"
+    },
+    {
+      "name": "Murder Mystery Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7083/"
+    },
+    {
+      "name": "Mythology & Folklore Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7092/"
+    },
+    {
+      "name": "Natural History Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7101/"
+    },
+    {
+      "name": "Neuropsych of Women",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10977/"
+    },
+    {
+      "name": "New York Times Puzzles Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7110/"
+    },
+    {
+      "name": "Nicolas Cage Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7119/"
+    },
+    {
+      "name": "Nordic Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7830/"
+    },
+    {
+      "name": "Off Beat Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6444/"
+    },
+    {
+      "name": "Orthodox Christian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7839/"
+    },
+    {
+      "name": "Paint & Sip",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7137/"
+    },
+    {
+      "name": "Pakistan Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8422/"
+    },
+    {
+      "name": "Pal TV",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7848/"
+    },
+    {
+      "name": "Peep Show Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7146/"
+    },
+    {
+      "name": "People of Colour Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8431/"
+    },
+    {
+      "name": "Philosophy Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6219/"
+    },
+    {
+      "name": "Plant Based Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7389/"
+    },
+    {
+      "name": "Poetry",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7155/"
+    },
+    {
+      "name": "Pokemon",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7164/"
+    },
+    {
+      "name": "Poker Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7173/"
+    },
+    {
+      "name": "Pole Dancing",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8440/"
+    },
+    {
+      "name": "Pottery Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7182/"
+    },
+    {
+      "name": "Psychology Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6255/"
+    },
+    {
+      "name": "Purple Radio",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8449/"
+    },
+    {
+      "name": "Queer Sphere: Durham's LGBT+ Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7875/"
+    },
+    {
+      "name": "Quiz Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7191/"
+    },
+    {
+      "name": "Real Estate Finance and Investment Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7884/"
+    },
+    {
+      "name": "Real Tennis",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6462/"
+    },
+    {
+      "name": "Red Cross Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11610/"
+    },
+    {
+      "name": "Reform UK Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7398/"
+    },
+    {
+      "name": "Revoluntionary Communist Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7407/"
+    },
+    {
+      "name": "Roblox Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7200/"
+    },
+    {
+      "name": "Run Club",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11075/"
+    },
+    {
+      "name": "Russian Speaking Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8461/"
+    },
+    {
+      "name": "Scout and Guide",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7218/"
+    },
+    {
+      "name": "Sewing",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7227/"
+    },
+    {
+      "name": "Sexpression Durham",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8470/"
+    },
+    {
+      "name": "Side Quest Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11029/"
+    },
+    {
+      "name": "Singapore Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7893/"
+    },
+    {
+      "name": "Smart Women Think Alike",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7236/"
+    },
+    {
+      "name": "Society Football League",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6489/"
+    },
+    {
+      "name": "Sociology and Criminology Society (DUSCS)",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/9008/"
+    },
+    {
+      "name": "South African Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7902/"
+    },
+    {
+      "name": "Sports Business Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8488/"
+    },
+    {
+      "name": "Sri Lankan Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11018/"
+    },
+    {
+      "name": "Star Wars",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8997/"
+    },
+    {
+      "name": "Stigma Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7416/"
+    },
+    {
+      "name": "Students for Sensible Drug Policy",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7425/"
+    },
+    {
+      "name": "Students of Mixed Cultural Identities",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7911/"
+    },
+    {
+      "name": "Sustainable & Ethical Fashion",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7434/"
+    },
+    {
+      "name": "Sustainable Finance",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6273/"
+    },
+    {
+      "name": "Swimming Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11110/"
+    },
+    {
+      "name": "Taiwanese Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8497/"
+    },
+    {
+      "name": "Tamil Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7920/"
+    },
+    {
+      "name": "Taylor Swift",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7254/"
+    },
+    {
+      "name": "Test Demo Group - WOW",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8607/"
+    },
+    {
+      "name": "Test Society JJD",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8616/"
+    },
+    {
+      "name": "Thai Boxing",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8506/"
+    },
+    {
+      "name": "Thai Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8519/"
+    },
+    {
+      "name": "The Midlands Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7938/"
+    },
+    {
+      "name": "The Son Dur Mag",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11564/"
+    },
+    {
+      "name": "The White Rose Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10592/"
+    },
+    {
+      "name": "Tiramisu Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7263/"
+    },
+    {
+      "name": "Tolkien Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7272/"
+    },
+    {
+      "name": "Trading and Investment Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8528/"
+    },
+    {
+      "name": "Treasure Trap",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8537/"
+    },
+    {
+      "name": "Turkish Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8546/"
+    },
+    {
+      "name": "Ukrainian Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8555/"
+    },
+    {
+      "name": "UNICEF on Campus",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7335/"
+    },
+    {
+      "name": "Unicycling Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6516/"
+    },
+    {
+      "name": "Vietnamese Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7956/"
+    },
+    {
+      "name": "Wear 4 Warmth",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7461/"
+    },
+    {
+      "name": "Welsh Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7965/"
+    },
+    {
+      "name": "Werewolf Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7290/"
+    },
+    {
+      "name": "Women in Business",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7974/"
+    },
+    {
+      "name": "Women in Finance Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11575/"
+    },
+    {
+      "name": "Women in Maths",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8573/"
+    },
+    {
+      "name": "Women in STEM",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7983/"
+    },
+    {
+      "name": "Women's Darts",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6525/"
+    },
+    {
+      "name": "Women's Fitness Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6534/"
+    },
+    {
+      "name": "Womxn's Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7992/"
+    },
+    {
+      "name": "Working Class Students Association",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8001/"
+    },
+    {
+      "name": "World Cinema",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7308/"
+    },
+    {
+      "name": "Wrestling Society",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6543/"
+    },
+    {
+      "name": "Yoga and Pilates",
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6552/"
+    }
+  ],
+  "unresolved": [
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10966/",
+      "name": "Aerial Systems",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "No verified engineering/drone-society Instagram or Facebook found. Results for Aerial Arts are a different society; the Aerial Systems LinkedIn page confirms the engineering identity but supplies no confirmed social account.",
+      "search_queries": [
+        "Durham University Aerial Systems Instagram Facebook",
+        "Aerial Systems Durham Instagram Facebook",
+        "site:instagram.com Durham Aerial Systems",
+        "Durham University \"Aerial Systems\" instagram",
+        "Durham University \"Aerial Systems\" facebook",
+        "Durham Aerial Systems instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7488/",
+      "name": "Ahlulbayt Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Ahlulbayt Society Instagram Facebook",
+        "Ahlulbayt Society Durham Instagram Facebook",
+        "site:instagram.com Durham Ahlulbayt Society",
+        "Durham University \"Ahlulbayt Society\" facebook",
+        "Durham Ahlulbayt Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6561/",
+      "name": "Album Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Album Society Instagram Facebook",
+        "Durham \"Album Society\" Instagram Facebook",
+        "Durham Album Society",
+        "Durham University \"Album Society\" facebook",
+        "Durham Album Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6309/",
+      "name": "American Smooth Dance Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University American Smooth Dance Society Instagram Facebook",
+        "Durham \"American Smooth Dance Society\" Instagram Facebook",
+        "Durham American Smooth Dance Society",
+        "Durham University \"American Smooth Dance Society\" facebook",
+        "Durham American Smooth Dance Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7506/",
+      "name": "Asian Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Asian Society Instagram Facebook",
+        "Durham \"Asian Society\" Instagram Facebook",
+        "Durham University \"Asian Society\" facebook",
+        "Durham Asian Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6597/",
+      "name": "Automotive Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Automotive Society Instagram Facebook",
+        "Durham \"Automotive Society\" Instagram Facebook",
+        "Durham University \"Automotive Society\" facebook",
+        "Durham Automotive Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7515/",
+      "name": "Azerbaijan Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Azerbaijan Society Instagram Facebook",
+        "Durham \"Azerbaijan Society\" Instagram Facebook",
+        "Durham University \"Azerbaijan Society\" facebook",
+        "Durham Azerbaijan Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7524/",
+      "name": "Balkan Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Balkan Society Instagram Facebook",
+        "Durham \"Balkan Society\" Instagram Facebook",
+        "Durham University \"Balkan Society\" facebook",
+        "Durham Balkan Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6606/",
+      "name": "Banana Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Banana Society Instagram Facebook",
+        "Durham \"Banana Society\" Instagram Facebook",
+        "Durham University \"Banana Society\" facebook",
+        "Durham Banana Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10625/",
+      "name": "Black Women in Law",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Black Women in Law Instagram Facebook",
+        "Durham \"Black Women in Law\" Instagram Facebook",
+        "Durham University \"Black Women in Law\" facebook",
+        "Durham Black Women in Law facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6624/",
+      "name": "Boba Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Current Boba Instagram verified. An older Facebook Page named Durham University Bubble Tea SocieTea was found, but continuity with the current Boba Society is unconfirmed.",
+      "search_queries": [
+        "Durham University Boba Society Instagram Facebook",
+        "Durham \"Boba Society\" Instagram Facebook",
+        "Durham University \"Boba Society\" facebook",
+        "Durham Boba Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11621/",
+      "name": "Book Aid International Charity Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership. An additional indexed Instagram candidate bookaidinternationaldurham was found, but continuity with the directly verified Durham Students For Books account is unconfirmed.",
+      "search_queries": [
+        "Durham University Book Aid International Charity Society Instagram Facebook",
+        "\"Book Aid International Charity Society\" \"Durham\"",
+        "Durham University \"Book Aid International Charity Society\" facebook",
+        "Durham Book Aid International Charity Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6633/",
+      "name": "Book Club",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Book Club Instagram Facebook",
+        "\"Book Club\" \"Durham\"",
+        "Durham University \"Book Club\" facebook",
+        "Durham Book Club facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10603/",
+      "name": "Books and Pints Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Books and Pints Society Instagram Facebook",
+        "\"Books and Pints Society\" \"Durham\"",
+        "Durham University \"Books and Pints Society\" facebook",
+        "Durham Books and Pints Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/9019/",
+      "name": "British-Asian Society (BASOC)",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University British-Asian Society (BASOC) Instagram Facebook",
+        "Durham University \"British-Asian Society (BASOC)\" facebook",
+        "Durham British-Asian Society (BASOC) facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7551/",
+      "name": "Cantanese speaking Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Cantanese speaking Society Instagram Facebook",
+        "Durham University \"Cantanese speaking Society\" facebook",
+        "Durham Cantanese speaking Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7560/",
+      "name": "Central Asian & Turkic Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Central Asian & Turkic Society Instagram Facebook",
+        "Durham University \"Central Asian & Turkic Society\" facebook",
+        "Durham Central Asian & Turkic Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8100/",
+      "name": "Chinese Art Ensemble",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Chinese Art Ensemble Instagram Facebook",
+        "Durham University \"Chinese Art Ensemble\" facebook",
+        "Durham Chinese Art Ensemble facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7569/",
+      "name": "Chinese Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Chinese Society Instagram Facebook",
+        "Durham \"Chinese Society\" Instagram Facebook",
+        "Durham University \"Chinese Society\" facebook",
+        "Durham Chinese Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10651/",
+      "name": "Civil Rights Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Civil Rights Instagram is now verified by its exact first-party profile name. No matching Facebook found; Justice, Human Rights and Corporate Social Responsibility groups are distinct.",
+      "search_queries": [
+        "Durham University Civil Rights Society Instagram Facebook",
+        "Durham \"Civil Rights Society\" Instagram Facebook",
+        "Durham University \"Civil Rights Society\" instagram",
+        "Durham University \"Civil Rights Society\" facebook",
+        "Durham Civil Rights Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6696/",
+      "name": "Cloud Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "No matching Durham University Cloud Society social profile found; unrelated cloud computing and outdoor societies excluded.",
+      "search_queries": [
+        "Durham University Cloud Society Instagram Facebook",
+        "Durham \"Cloud Society\" Instagram Facebook",
+        "Durham University \"Cloud Society\" instagram",
+        "Durham University \"Cloud Society\" facebook",
+        "Durham Cloud Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6705/",
+      "name": "College Bar Appreciation Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Results point to the legal-career Bar Society, which is distinct from College Bar Appreciation Society. Official SU page says Instagram 'here' but provides no working URL.",
+      "search_queries": [
+        "Durham University College Bar Appreciation Society Instagram Facebook",
+        "Durham \"College Bar Appreciation Society\" Instagram Facebook",
+        "Durham University \"College Bar Appreciation Society\" instagram",
+        "Durham University \"College Bar Appreciation Society\" facebook",
+        "Durham College Bar Appreciation Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8109/",
+      "name": "Commercial Law Journal Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Commercial Law Journal Society Instagram Facebook",
+        "Durham \"Commercial Law Journal Society\" Instagram Facebook",
+        "Durham University \"Commercial Law Journal Society\" facebook",
+        "Durham Commercial Law Journal Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7605/",
+      "name": "Computational Finance Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Results point to Durham University Finance Society; no ownership or continuity evidence for separate Computational Finance Society.",
+      "search_queries": [
+        "Durham University Computational Finance Society Instagram Facebook",
+        "Durham \"Computational Finance Society\" Instagram Facebook",
+        "Durham University \"Computational Finance Society\" instagram",
+        "Durham University \"Computational Finance Society\" facebook",
+        "Durham Computational Finance Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6723/",
+      "name": "Creative Health & Wellbeing Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Official SU description concerns creative volunteering for disabilities, cancer survivors and chronic health conditions. Generic DU Health & Wellbeing and separate Creative Mindfulness results provide no clear ownership bridge; neither was assigned.",
+      "search_queries": [
+        "Durham University Creative Health & Wellbeing Society Instagram Facebook",
+        "Durham \"Creative Health & Wellbeing Society\" Instagram Facebook",
+        "Durham University \"Creative Health & Wellbeing Society\" instagram",
+        "Durham University \"Creative Health & Wellbeing Society\" facebook",
+        "Durham Creative Health & Wellbeing Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6732/",
+      "name": "Creative Mindfulness",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Creative Mindfulness Instagram Facebook",
+        "Durham \"Creative Mindfulness\" Instagram Facebook",
+        "Durham University \"Creative Mindfulness\" facebook",
+        "Durham Creative Mindfulness facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6768/",
+      "name": "Dan & Phil Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Dan & Phil Society Instagram Facebook",
+        "Durham University \"Dan & Phil Society\" facebook",
+        "Durham Dan & Phil Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11586/",
+      "name": "Debit Divas",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Debit Divas Instagram Facebook",
+        "Durham University \"Debit Divas\" facebook",
+        "Durham Debit Divas facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6804/",
+      "name": "Drag Race Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Drag Race Society Instagram Facebook",
+        "Durham University \"Drag Race Society\" facebook",
+        "Durham Drag Race Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11064/",
+      "name": "Durham NBA Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Durham NBA Society Instagram Facebook",
+        "Durham University \"Durham NBA Society\" facebook",
+        "Durham Durham NBA Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6831/",
+      "name": "Durham Spritz Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "The official SU page and public search results were reviewed. No authoritative matching account was confirmed for the missing platform; available results were unrelated, absent, or insufficient to establish ownership.",
+      "search_queries": [
+        "Durham University Durham Spritz Society Instagram Facebook",
+        "Durham University \"Durham Spritz Society\" facebook",
+        "Durham Durham Spritz Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7344/",
+      "name": "Durham University against Sexual Assult",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Instagram identity confirmed by the post's public captioned embed. No Facebook account established; society Linktree was unavailable and unrelated It's NOT OK, Safe Education and Durham Survivors accounts were excluded.",
+      "search_queries": [
+        "Durham University Durham University against Sexual Assult Instagram Facebook",
+        "Durham University \"Durham University against Sexual Assult\" instagram",
+        "Durham University \"Durham University against Sexual Assult\" facebook",
+        "Durham Durham University against Sexual Assult instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10883/",
+      "name": "Durham University Law and Business in Fashion Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Law and Business in Fashion Society Durham Instagram Facebook",
+        "\"Durham\" \"Law and Business in Fashion\" Instagram",
+        "Durham law business fashion society site:instagram.com OR site:facebook.com",
+        "Durham University Durham University Law and Business in Fashion Society Instagram Facebook",
+        "\"Durham\" \"Durham University Law and Business in Fashion Society\" facebook",
+        "Durham Durham University Law and Business in Fashion Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11086/",
+      "name": "DUZZBALLZ",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "DUZZBALLZ Durham Instagram Facebook",
+        "\"DUZZBALLZ\" Instagram Facebook",
+        "DUZZBALLZ site:instagram.com OR site:facebook.com",
+        "Durham University DUZZBALLZ Instagram Facebook",
+        "\"Durham\" \"DUZZBALLZ\" facebook",
+        "Durham DUZZBALLZ facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11007/",
+      "name": "Fides Et Veritas",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Fides Et Veritas Instagram Facebook",
+        "\"Durham\" \"Fides Et Veritas\" facebook",
+        "Durham Fides Et Veritas facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6894/",
+      "name": "Film, Pints & Pop Culture Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Film, Pints & Pop Culture Society Instagram Facebook",
+        "\"Durham\" \"Film, Pints & Pop Culture Society\" facebook",
+        "Durham Film, Pints & Pop Culture Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7722/",
+      "name": "First Generation Scholars and North East Association",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Candidate Facebook group https://www.facebook.com/groups/357356768777862/ publicly identifies Durham's First Generation Scholars and student support, but no ownership or rename bridge to the current combined First Generation Scholars and North East Association was established. Removed from reviewed mappings after evidence audit. Focused Instagram search did not establish an association-owned account.",
+      "search_queries": [
+        "Durham University First Generation Scholars and North East Association Instagram Facebook",
+        "\"Durham\" \"First Generation Scholars and North East Association\" instagram",
+        "\"Durham\" \"First Generation Scholars\" Instagram",
+        "Durham First Generation Scholars and North East Association instagram",
+        "\"357356768777862\" Durham",
+        "\"First Generation Scholars\" \"North East\" Durham facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11031/",
+      "name": "Fly Fishing Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Focused Facebook results include Durham University Angling Society, regional fly-fishing groups and a commercial fishing business. No ownership/rename bridge to the current Fly Fishing Society found; these candidates were not imported.",
+      "search_queries": [
+        "Durham University Fly Fishing Society Instagram Facebook",
+        "\"Durham\" \"Fly Fishing Society\" facebook",
+        "Durham Fly Fishing Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6921/",
+      "name": "Foraging Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Foraging Society Instagram Facebook",
+        "\"Durham\" \"Foraging Society\" facebook",
+        "Durham Foraging Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6948/",
+      "name": "Girls on Film",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Instagram identity verified. Separate Facebook search and targeted combined search found film groups and other Durham women's groups, but no society-owned Facebook account.",
+      "search_queries": [
+        "Durham University Girls on Film Instagram Facebook",
+        "\"Durham\" \"Girls on Film\" instagram",
+        "\"Durham\" \"Girls on Film\" facebook",
+        "Durham Girls on Film instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6957/",
+      "name": "Girls that Can",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Girls that Can Instagram Facebook",
+        "\"Durham\" \"Girls that Can\" Facebook",
+        "Durham Girls that Can facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7731/",
+      "name": "Girls Who Lead",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Girls Who Lead Instagram Facebook",
+        "\"Durham\" \"Girls Who Lead\" Instagram",
+        "\"Durham\" \"Girls Who Lead\" Facebook",
+        "Durham Girls Who Lead facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7002/",
+      "name": "Hot Chocolate Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook results concern separate Chocolate Society; no evidence of ownership by Hot Chocolate Society.",
+      "search_queries": [
+        "Durham University Hot Chocolate Society Instagram Facebook",
+        "\"Durham\" \"Hot Chocolate Society\" facebook",
+        "Durham Hot Chocolate Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8227/",
+      "name": "Human Rights Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Instagram verified through society Linktree linking official SU profile. Facebook results belong to the distinct Law Society Human Rights branch, Justice Society or Male Human Rights Society; no ownership bridge to this society.",
+      "search_queries": [
+        "Durham University Human Rights Society Instagram Facebook",
+        "\"Durham\" \"Human Rights Society\" instagram",
+        "\"Durham\" \"Human Rights Society\" facebook",
+        "Durham Human Rights Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6399/",
+      "name": "Hyrox Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "\"Durham\" \"Hyrox Society\" Instagram Facebook",
+        "Durham University Hyrox Society Instagram Facebook",
+        "\"Durham\" \"Hyrox Society\" facebook",
+        "Durham Hyrox Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6408/",
+      "name": "Iaido Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "\"Durham\" \"Iaido Society\" Instagram Facebook",
+        "Durham University Iaido Society Instagram Facebook",
+        "\"Durham\" \"Iaido Society\" facebook",
+        "Durham Iaido Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6318/",
+      "name": "Indian Dance Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "\"Durham\" \"Indian Dance Society\" Instagram Facebook",
+        "Durham University Indian Dance Society Instagram Facebook",
+        "\"Durham\" \"Indian Dance Society\" facebook",
+        "Durham Indian Dance Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7038/",
+      "name": "Karaoke Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Karaoke Society Instagram Facebook",
+        "\"Durham\" \"Karaoke Society\" Facebook",
+        "Durham Karaoke Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7056/",
+      "name": "Lager and Discussion Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook results identify Discussion and Debate Society (DurhamDADS) or Durham Lager League. No ownership/rename bridge to Lager and Discussion Society found.",
+      "search_queries": [
+        "Durham University Lager and Discussion Society Instagram Facebook",
+        "\"Durham\" \"Lager and Discussion\" Facebook",
+        "Durham Lager and Discussion Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8344/",
+      "name": "Latin America Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook Hispanic Society and Latin Social Dance results are different societies. A British Council-hosted Durham University presentation historically links https://www.facebook.com/DULatamSociety/; direct public read now returns generic Facebook title without identity metadata, so it was not imported as a currently verified account.",
+      "search_queries": [
+        "Durham University Latin America Society Instagram Facebook",
+        "\"Durham\" \"Latin American Society\" Facebook",
+        "Durham Latin America Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7812/",
+      "name": "Mature Students' Association",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook QC MATSA concerns Queen's Campus; no current whole-university ownership bridge found. Historic student-support material references https://www.facebook.com/MATSADC/, but direct public read now returns generic Facebook title without identity metadata, so it was not imported.",
+      "search_queries": [
+        "Durham University Mature Students' Association Instagram Facebook",
+        "\"Durham\" \"Mature Students\" Facebook",
+        "Durham Mature Students' Association facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10636/",
+      "name": "Medical Law & Ethics",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Medical Law & Ethics Instagram Facebook",
+        "\"Durham\" \"Medical Law & Ethics\" Facebook",
+        "Durham Medical Law & Ethics facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7083/",
+      "name": "Murder Mystery Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Murder Mystery Society Instagram Facebook",
+        "\"Durham\" \"Murder Mystery Society\" Facebook",
+        "Durham Murder Mystery Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7092/",
+      "name": "Mythology & Folklore Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University Mythology & Folklore Society Instagram Facebook",
+        "\"Durham\" \"Mythology & Folklore Society\" Facebook",
+        "Durham Mythology & Folklore Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10977/",
+      "name": "Neuropsych of Women",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Focused searches found @neuropsychofwomen and its Linktree, which self-identifies a national network across UK universities, plus York and Manchester chapters. No Durham chapter ownership bridge found; national and other-university accounts were excluded.",
+      "search_queries": [
+        "Durham University Neuropsych of Women Instagram Facebook",
+        "\"Durham\" \"Neuro-Psych\" Instagram",
+        "\"Durham\" \"Neuropsych\" Facebook",
+        "Durham Neuropsych of Women instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7110/",
+      "name": "New York Times Puzzles Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Official SU profile and public web search results reviewed; no sufficiently specific account identity found for remaining platform(s). This does not prove no account exists.",
+      "search_queries": [
+        "Durham University New York Times Puzzles Society Instagram Facebook",
+        "\"Durham\" \"New York Times Puzzles Society\" Facebook",
+        "Durham New York Times Puzzles Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7119/",
+      "name": "Nicolas Cage Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Focused Instagram and Facebook searches found general Nicolas Cage fan accounts and Lincoln University's society, but none self-identifying as the Durham society. @thenicolascagesociety has no Durham affiliation in the observed bio and was excluded.",
+      "search_queries": [
+        "Durham University Nicolas Cage Society Instagram Facebook",
+        "\"Durham\" \"Nicolas Cage Society\" Instagram",
+        "\"Durham\" \"Nicolas Cage Society\" Facebook",
+        "Durham Nicolas Cage Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6444/",
+      "name": "Off Beat Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook results are a mobile DJ business, a clothing/thrift brand, general dance group, or Durham Beat Society (eating-disorder awareness). No ownership bridge to Durham University's Off Beat dance society.",
+      "search_queries": [
+        "Durham University Off Beat Society Instagram Facebook",
+        "\"Durham\" \"Off Beat Society\" Facebook",
+        "Durham Off Beat Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7839/",
+      "name": "Orthodox Christian Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Society Instagram verified through Durham Orthodox Church website. Facebook results identify the separate parish page or the Ecumenical Christian Council; neither was mapped as the society's account.",
+      "search_queries": [
+        "Durham University Orthodox Christian Society Instagram Facebook",
+        "\"Durham\" \"Orthodox Christian Society\" Facebook",
+        "Durham Orthodox Christian Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7137/",
+      "name": "Paint & Sip",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Search found https://www.facebook.com/paintandsipdurham/, but public page and indexed result only show generic Facebook title without identity metadata. Kept unresolved; no login bypass.",
+      "search_queries": [
+        "Durham University Paint & Sip Instagram Facebook",
+        "\"Durham\" \"Paint & Sip\" Facebook",
+        "Durham Paint & Sip facebook",
+        "\"durhampaintandsip\" \"Facebook\""
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7146/",
+      "name": "Peep Show Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Candidate Instagram https://www.instagram.com/peepshowsociety/ has indexed title DU Peep Show Society, but the saved public bio does not expand DU or explicitly identify Durham University. Focused follow-up searches and the SU profile did not establish an ownership bridge; removed from reviewed mappings after evidence audit. Facebook results are unrelated television, theatrical or PPE societies. Reinstate only with explicit society ownership evidence.",
+      "search_queries": [
+        "Durham University Peep Show Society Instagram Facebook",
+        "\"Durham\" \"Peep Show Society\" Facebook",
+        "Durham Peep Show Society facebook",
+        "\"peepshowsociety\" Durham",
+        "\"DU Peep Show Society\" Durham",
+        "site:instagram.com/peepshowsociety Durham",
+        "\"Durham\" \"Peep Show Society\" \"Instagram\""
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7389/",
+      "name": "Plant Based Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Society Linktree provides Instagram accounts only. Facebook results are a general Plant-Based Society or different vegetarian groups without Durham University ownership evidence.",
+      "search_queries": [
+        "Durham University Plant Based Society Instagram Facebook",
+        "\"Durham\" \"Plant Based Society\" Facebook",
+        "Durham Plant Based Society facebook",
+        "\"plantbaseddurham\" Instagram"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7164/",
+      "name": "Pokemon",
+      "missing_platforms": [
+        "instagram"
+      ],
+      "reason": "Facebook society page verified. Focused Instagram results identify a Durham City Pokemon Go account without university affiliation and Durham NC accounts; no SU society ownership bridge found.",
+      "search_queries": [
+        "Durham University Pokemon Instagram Facebook",
+        "\"Durham\" \"Pokemon Society\" Instagram",
+        "Durham Pokemon instagram"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7182/",
+      "name": "Pottery Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Pottery Society Instagram Facebook",
+        "Durham Pottery Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7884/",
+      "name": "Real Estate Finance and Investment Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook results identify historical DURES (Real Estate Society), without evidence of continuity to the current Real Estate Finance and Investment Society. General Finance Society is separate.",
+      "search_queries": [
+        "Durham University Real Estate Finance and Investment Society Instagram Facebook",
+        "Durham Real Estate Finance and Investment Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6462/",
+      "name": "Real Tennis",
+      "missing_platforms": [
+        "instagram"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Real Tennis Instagram Facebook",
+        "Durham Real Tennis instagram"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11610/",
+      "name": "Red Cross Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Results identify First Aid, Blood Donation and a US Durham Academy Red Cross club, not this SU society.",
+      "search_queries": [
+        "Durham University Red Cross Society Instagram Facebook",
+        "Durham Red Cross Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7398/",
+      "name": "Reform UK Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Search returns Restore Britain, a repurposed account, not a currently identified Reform UK society account.",
+      "search_queries": [
+        "Durham University Reform UK Society Instagram Facebook",
+        "Durham Reform UK Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7407/",
+      "name": "Revoluntionary Communist Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "The indexed @durhamcommunists profile identifies the city RCP branch, not explicitly the SU society. Historical Marxist Student Federation page links different old accounts; current society ownership is not established.",
+      "search_queries": [
+        "Durham University Revoluntionary Communist Society Instagram Facebook",
+        "Durham Revoluntionary Communist Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7200/",
+      "name": "Roblox Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Only unrelated Games/Esports accounts found; no Roblox society account identity established.",
+      "search_queries": [
+        "Durham University Roblox Society Instagram Facebook",
+        "Durham Roblox Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11075/",
+      "name": "Run Club",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Multiple local and university running clubs appear, with no identity bridge to the SU Run Club.",
+      "search_queries": [
+        "Durham University Run Club Instagram Facebook",
+        "Durham Run Club instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11029/",
+      "name": "Side Quest Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "sidequestsoc title lacks a Durham affiliation; DUEG SideQuest is an Esports event, not this society.",
+      "search_queries": [
+        "Durham University Side Quest Society Instagram Facebook",
+        "Durham Side Quest Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7236/",
+      "name": "Smart Women Think Alike",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "A matching Instagram account was identified; no society-owned Facebook account could be established in either initial or targeted follow-up public results.",
+      "search_queries": [
+        "Durham University Smart Women Think Alike Instagram Facebook",
+        "Durham Smart Women Think Alike instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6489/",
+      "name": "Society Football League",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "A matching Instagram account was identified; no society-owned Facebook account could be established in either initial or targeted follow-up public results.",
+      "search_queries": [
+        "Durham University Society Football League Instagram Facebook",
+        "Durham Society Football League instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/9008/",
+      "name": "Sociology and Criminology Society (DUSCS)",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Sociology and Criminology Society (DUSCS) Instagram Facebook",
+        "Durham Sociology and Criminology Society (DUSCS) facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8488/",
+      "name": "Sports Business Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "A matching Instagram account was identified; no society-owned Facebook account could be established in either initial or targeted follow-up public results.",
+      "search_queries": [
+        "Durham University Sports Business Society Instagram Facebook",
+        "Durham Sports Business Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11018/",
+      "name": "Sri Lankan Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Sri Lankan Society Instagram Facebook",
+        "Durham Sri Lankan Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7416/",
+      "name": "Stigma Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Mental Health/Neurodiversity and general university accounts do not establish Stigma Society ownership.",
+      "search_queries": [
+        "Durham University Stigma Society Instagram Facebook",
+        "Durham Stigma Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11110/",
+      "name": "Swimming Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "SU listing has no description; Team Durham Swimming Club, Dippers and artistic swimming have no verified identity bridge.",
+      "search_queries": [
+        "Durham University Swimming Society Instagram Facebook",
+        "Durham Swimming Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7920/",
+      "name": "Tamil Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Tamil Society Instagram Facebook",
+        "Durham Tamil Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8607/",
+      "name": "Test Demo Group - WOW",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "SU test/demo record; no genuine society-specific social account established.",
+      "search_queries": [
+        "Durham University Test Demo Group - WOW Instagram Facebook",
+        "Durham Test Demo Group - WOW instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8616/",
+      "name": "Test Society JJD",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "SU test record; similarly named Jewish Society accounts are unrelated.",
+      "search_queries": [
+        "Durham University Test Society JJD Instagram Facebook",
+        "Durham Test Society JJD instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7938/",
+      "name": "The Midlands Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University The Midlands Society Instagram Facebook",
+        "Durham The Midlands Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11564/",
+      "name": "The Son Dur Mag",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "No Son Dur Mag identity match; university news and commercial magazines are unrelated.",
+      "search_queries": [
+        "Durham University The Son Dur Mag Instagram Facebook",
+        "Durham The Son Dur Mag instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/10592/",
+      "name": "The White Rose Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "DU White Rose Instagram is a candidate but neither title nor captured bio explicitly establishes Durham; unrelated national White Rose groups excluded.",
+      "search_queries": [
+        "Durham University The White Rose Society Instagram Facebook",
+        "Durham The White Rose Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7263/",
+      "name": "Tiramisu Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Italian, Turkish and Baking societies are not Tiramisu Society.",
+      "search_queries": [
+        "Durham University Tiramisu Society Instagram Facebook",
+        "Durham Tiramisu Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7272/",
+      "name": "Tolkien Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Tolkien Society Instagram Facebook",
+        "Durham Tolkien Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8528/",
+      "name": "Trading and Investment Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "Facebook results identify historical Trading Society and Global Trading and Investment Society; continuity to the current society is not established. Exact current Instagram identity is verified.",
+      "search_queries": [
+        "Durham University Trading and Investment Society Instagram Facebook",
+        "Durham Trading and Investment Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8537/",
+      "name": "Treasure Trap",
+      "missing_platforms": [
+        "instagram"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Treasure Trap Instagram Facebook",
+        "Durham Treasure Trap instagram"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8555/",
+      "name": "Ukrainian Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Ukrainian Society Instagram Facebook",
+        "Durham Ukrainian Society facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6516/",
+      "name": "Unicycling Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Cycling and Circus results do not identify the Unicycling Society.",
+      "search_queries": [
+        "Durham University Unicycling Society Instagram Facebook",
+        "Durham Unicycling Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7461/",
+      "name": "Wear 4 Warmth",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Wear 4 Warmth Instagram Facebook",
+        "Durham Wear 4 Warmth facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/7290/",
+      "name": "Werewolf Society",
+      "missing_platforms": [
+        "instagram"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Werewolf Society Instagram Facebook",
+        "Durham Werewolf Society instagram"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/11575/",
+      "name": "Women in Finance Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Candidate @durhamwifs has a matching Durham Women in Finance title, but its sparse indexed profile does not identify the university/SU society and the SU profile is blank. General Finance and Women in Business accounts are distinct.",
+      "search_queries": [
+        "Durham University Women in Finance Society Instagram Facebook",
+        "Durham Women in Finance Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8573/",
+      "name": "Women in Maths",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Women in Maths Instagram Facebook",
+        "Durham Women in Maths facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6534/",
+      "name": "Women's Fitness Society",
+      "missing_platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "reason": "Generic Fitness Society and Health & Fitness profiles do not establish ownership by this SU Women's Fitness Society.",
+      "search_queries": [
+        "Durham University Women's Fitness Society Instagram Facebook",
+        "Durham Women's Fitness Society instagram facebook"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/8001/",
+      "name": "Working Class Students Association",
+      "missing_platforms": [
+        "instagram"
+      ],
+      "reason": "Own Wix freshers guide links only Facebook. Indexed Linktree claims an Instagram link, but direct Linktree returned 406 and the account handle was not exposed in the public results. No access restriction was bypassed.",
+      "search_queries": [
+        "Durham University Working Class Students Association Instagram Facebook",
+        "Durham Working Class Students Association instagram"
+      ]
+    },
+    {
+      "society_url": "https://www.durhamsu.com/groups/studentgroup/6543/",
+      "name": "Wrestling Society",
+      "missing_platforms": [
+        "facebook"
+      ],
+      "reason": "No sufficiently clear society-owned account was identified for the missing platform in the reviewed public results.",
+      "search_queries": [
+        "Durham University Wrestling Society Instagram Facebook",
+        "Durham Wrestling Society facebook"
+      ]
+    }
+  ]
+}

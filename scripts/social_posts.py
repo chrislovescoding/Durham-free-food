@@ -64,6 +64,11 @@ def canonical_account_url(url: Any) -> str | None:
         return "https://www.facebook.com/" + identity + "/" if identity.isdigit() else None
     if len(parts) == 3 and parts[0].lower() in {"pages", "people"} and parts[2].isdigit():
         return "https://www.facebook.com/" + parts[2] + "/"
+    # Facebook's named Page route ends in its stable numeric Page identity.
+    # Match the complete path so posts and malformed routes cannot be profiles.
+    named_page = re.fullmatch(r"/p/[A-Za-z0-9][A-Za-z0-9._-]{0,199}-([0-9]{1,40})/?", parsed.path, re.IGNORECASE)
+    if named_page:
+        return "https://www.facebook.com/" + named_page[1] + "/"
     if len(parts) != 1 or parts[0].lower() in {"login", "login.php", "home.php", "groups", "watch", "share", "sharer", "sharer.php", "posts", "reel", "reels", "permalink.php", "story.php", "help", "privacy", "photo.php"}:
         return None
     if not re.fullmatch(r"[A-Za-z0-9._-]{1,100}", parts[0]):

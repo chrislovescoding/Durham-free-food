@@ -45,7 +45,7 @@ function icsEscape(value) { return String(value || '').replaceAll('\\','\\\\').r
 function icsDate(date) { return new Date(date).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z'); }
 function foldIcsLine(line) { let result = '', chunk = ''; for (const char of line) { if (new TextEncoder().encode(chunk + char).length > 74) { result += chunk + '\r\n'; chunk = ' '; } chunk += char; } return result + chunk; }
 export function calendarFile(event, now = new Date()) {
-  const lines = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Durham Free Food//Events//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:${icsEscape(event.id)}@durhamfreefood`,`DTSTAMP:${icsDate(now)}`,`DTSTART:${icsDate(event.starts_at)}`];
+  const lines = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Grubr//Events//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:${icsEscape(event.id)}@durhamfreefood`,`DTSTAMP:${icsDate(now)}`,`DTSTART:${icsDate(event.starts_at)}`];
   if(event.ends_at) lines.push(`DTEND:${icsDate(event.ends_at)}`);
   lines.push(`SUMMARY:${icsEscape((event.demo ? '[DEMO — not a real event] ' : '') + event.title)}`,`LOCATION:${icsEscape(event.location)}`,`DESCRIPTION:${icsEscape((event.demo ? 'Example only. Do not attend.\n' : '') + event.description + '\n' + entryLabel(event.price))}`);
   if(safeUrl(event.source_url)) lines.push(`URL:${safeUrl(event.source_url)}`);

@@ -125,10 +125,53 @@ class PublicParserTests(unittest.TestCase):
         self.assertIsNone(social.canonical_account_url("https://facebook.com/groups/123/"))
         self.assertIsNone(social.canonical_account_url("https://instagram.com/p/ABC/"))
 
+    def test_named_facebook_pages_normalize_to_stable_numeric_identity(self):
+        for url, identity in (
+            ("https://www.facebook.com/p/Durham-Poker-Society-100089072551814/", "100089072551814"),
+            ("https://www.facebook.com/p/DU-Expedition-Society-61552033799388/", "61552033799388"),
+            ("https://m.facebook.com/p/Durham-Poker-Society-100089072551814?ref=search#about", "100089072551814"),
+        ):
+            with self.subTest(url=url):
+                self.assertEqual(social.canonical_account_url(url), "https://www.facebook.com/" + identity + "/")
+
+    def test_named_facebook_page_route_rejects_untrusted_or_nonprofile_urls(self):
+        for url in (
+            "https://facebook.com/p/Durham-Poker-Society/",
+            "https://facebook.com/p/Durham-Poker-Society-abc/",
+            "https://facebook.com/p/-100089072551814/",
+            "https://facebook.com/p/Durham-Poker-Society-100089072551814/posts/123/",
+            "https://facebook.com/p/Durham-Poker-Society-100089072551814/../",
+            "https://facebook.com/p/Durham%2FPoker-Society-100089072551814/",
+            "https://facebook.com//p/Durham-Poker-Society-100089072551814/",
+            "https://facebook.com/p/Durham-Poker-Society-" + "1" * 41 + "/",
+            "https://facebook.com.attacker.example/p/Durham-Poker-Society-100089072551814/",
+            "https://someone:secret@facebook.com/p/Durham-Poker-Society-100089072551814/",
+            "https://facebook.com:9999/p/Durham-Poker-Society-100089072551814/",
+            "https://instagram.com/p/Durham-Poker-Society-100089072551814/",
+        ):
+            with self.subTest(url=url):
+                self.assertIsNone(social.canonical_account_url(url))
+
 
 class CollectionTests(unittest.TestCase):
     def collect(self, fetch, societies=None, previous=None, **settings):
         return social.collect_social_posts(societies or [SOCIETY], {"public_embeds": False, **settings}, previous or {}, NOW, fetch=fetch)
+
+    def test_named_facebook_page_deduplicates_and_retains_page_owned_posts(self):
+        named = "https://www.facebook.com/p/Durham-Poker-Society-100089072551814/"
+        canonical = "https://www.facebook.com/100089072551814/"
+        seen = []
+        def fetch(url):
+            seen.append(url)
+            return script(facebook_post(url=canonical + "posts/123/", author={"url": named}))
+        society = {"name": "Durham Poker Society", "facebook_url": named,
+                   "social_accounts": [{"platform": "facebook", "url": canonical}]}
+        result = self.collect(fetch, [society])
+        self.assertEqual(seen, [canonical])
+        self.assertEqual(result["status"]["accounts_total"], 1)
+        self.assertEqual(result["accounts"][0]["status"], "ok")
+        self.assertEqual(result["posts"][0]["account_url"], canonical)
+        self.assertEqual(result["posts"][0]["source_url"], canonical + "posts/123/")
 
     def test_rate_limit_stops_platform_but_other_platform_can_complete(self):
         seen = []
