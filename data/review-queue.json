@@ -1,27 +1,6 @@
 {
-  "updated_at": "2026-10-17T21:11:09.477654Z",
+  "updated_at": "2026-10-18T21:13:12.570240Z",
   "candidates": [
-    {
-      "title": "Sun 18th Oct 13:00 Intermediate Hoop",
-      "source_url": "https://durhamsu.native.fm/event/sun-18th-oct-13-00-intermediate-hoop/293585",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Sun 18th Oct 14:10 Beginners Hoop",
-      "source_url": "https://durhamsu.native.fm/event/sun-18th-oct-14-10-beginners-hoop/293587",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Sun 18th 15:10 Beginners Hoop",
-      "source_url": "https://durhamsu.native.fm/event/sun-18th-15-10-beginners-hoop/293586",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "DUSAGG Freshers' Camp 2026",
       "source_url": "https://durhamsu.native.fm/event/dusagg-freshers-camp-2026/292967",
