@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T21:13:12.570240Z",
+  "updated_at": "2026-10-19T22:45:04.284450Z",
   "candidates": [
     {
       "title": "DUSAGG Freshers' Camp 2026",
@@ -11,6 +11,13 @@
     {
       "title": "Introduction to Self Defence",
       "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence-3/291609",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Scavenger Hunt",
+      "source_url": "https://durhamsu.native.fm/event/scavenger-hunt-19/294623",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
