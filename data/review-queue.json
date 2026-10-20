@@ -1,6 +1,41 @@
 {
-  "updated_at": "2026-10-19T22:45:04.284450Z",
+  "updated_at": "2026-10-20T22:00:25.373874Z",
   "candidates": [
+    {
+      "title": "Wed 21 Oct 13:30 Returning Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-21-oct-13-30-returning-beginners-silks/294750",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Wed 21 Oct 14:30 Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-21-oct-14-30-beginners-silks/294755",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 23 Oct 13:30 Intermediate Hoop",
+      "source_url": "https://durhamsu.native.fm/event/fri-23-oct-13-30-intermediate-hoop/294881",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 23 Oct 14:35 Beginners Hoop",
+      "source_url": "https://durhamsu.native.fm/event/fri-23-oct-14-35-beginners-hoop/294882",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 23 Oct 15:25 Beginners Hoop",
+      "source_url": "https://durhamsu.native.fm/event/fri-23-oct-15-25-beginners-hoop/294880",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
     {
       "title": "DUSAGG Freshers' Camp 2026",
       "source_url": "https://durhamsu.native.fm/event/dusagg-freshers-camp-2026/292967",
@@ -25,6 +60,20 @@
     {
       "title": "Run，Durham！",
       "source_url": "https://durhamsu.native.fm/event/run-durham/294213",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 25 Oct 13:00 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/sun-25-oct-13-00-open-training/294748",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 25 Oct 15:00 Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/sun-25-oct-15-00-beginners-silks/294749",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
