@@ -1,27 +1,6 @@
 {
-  "updated_at": "2026-10-22T22:02:30.899797Z",
+  "updated_at": "2026-10-23T21:47:51.606847Z",
   "candidates": [
-    {
-      "title": "Fri 23 Oct 13:30 Intermediate Hoop",
-      "source_url": "https://durhamsu.native.fm/event/fri-23-oct-13-30-intermediate-hoop/294881",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Fri 23 Oct 14:35 Beginners Hoop",
-      "source_url": "https://durhamsu.native.fm/event/fri-23-oct-14-35-beginners-hoop/294882",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Fri 23 Oct 15:25 Beginners Hoop",
-      "source_url": "https://durhamsu.native.fm/event/fri-23-oct-15-25-beginners-hoop/294880",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "DUSAGG Freshers' Camp 2026",
       "source_url": "https://durhamsu.native.fm/event/dusagg-freshers-camp-2026/292967",
@@ -72,6 +51,13 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "Course Rep Training (Online)",
+      "source_url": "https://durhamsu.native.fm/event/course-rep-training-online-28/295248",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Introduction to Self Defence",
       "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence/291605",
       "kind": "needs_food_confirmation",
@@ -81,6 +67,13 @@
     {
       "title": "From Platform 9¾ to Durham",
       "source_url": "https://durhamsu.native.fm/event/from-platform-9-3-4-to-durham/295040",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "From Platform 9¾ to Durham 1",
+      "source_url": "https://durhamsu.native.fm/event/from-platform-9-3-4-to-durham-1/295163",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
