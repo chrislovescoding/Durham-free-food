@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-10-25T22:23:13.990331Z",
+  "updated_at": "2026-10-26T23:39:34.603818Z",
   "candidates": [
+    {
+      "title": "Wed 28 Oct 13:30 Returning Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-28-oct-13-30-returning-beginners-silks/295371",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Wed 28 Oct 14:30 Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-28-oct-14-30-beginners-silks/295367",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
     {
       "title": "Cosy Craft Night",
       "source_url": "https://durhamsu.native.fm/event/cosy-craft-night/295092",
@@ -11,6 +25,27 @@
     {
       "title": "Course Rep Training (Online)",
       "source_url": "https://durhamsu.native.fm/event/course-rep-training-online-28/295248",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 30 Oct 13:30 Intermediate Hoop",
+      "source_url": "https://durhamsu.native.fm/event/fri-30-oct-13-30-intermediate-hoop/295368",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 30 Oct 14:30 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/fri-30-oct-14-30-open-training/295369",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 30 Oct 15:30 Beginners Hoop",
+      "source_url": "https://durhamsu.native.fm/event/fri-30-oct-15-30-beginners-hoop/295370",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
@@ -32,6 +67,13 @@
     {
       "title": "From Platform 9¾ to Durham 1",
       "source_url": "https://durhamsu.native.fm/event/from-platform-9-3-4-to-durham-1/295163",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "ISA x Desi Soc Diwali Silent Disco",
+      "source_url": "https://durhamsu.native.fm/event/isa-x-desi-soc-diwali-silent-disco/295435",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
