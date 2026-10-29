@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T23:56:25.402695Z",
+  "updated_at": "2026-10-29T23:51:16.701436Z",
   "candidates": [
     {
       "title": "Cosy Craft Night",
@@ -72,15 +72,22 @@
       "source_id": "durham-su-native"
     },
     {
-      "title": "Kielder Observatory Trip 2026",
-      "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
+      "title": "Wobble Week",
+      "source_url": "https://durhamsu.native.fm/event/wobble-week-2/295608",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
     },
     {
-      "title": "2026 Kielder Observatory Trip",
-      "source_url": "https://durhamsu.native.fm/event/2026-kielder-observatory-trip/294874",
+      "title": "Wobble Week: LGBTea",
+      "source_url": "https://durhamsu.native.fm/event/wobble-week-lgbtea/295573",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Kielder Observatory Trip 2026",
+      "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
@@ -170,6 +177,62 @@
       "source_id": "daisi-luma"
     },
     {
+      "title": "We’re so excited for another year of Durham Hindu Society!  Looking forward to bringing everyone together and meeting new faces. Can’t wait to see you",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeaZSB7IG8D/",
+      "post_id": "social-b0638a39daafde5944",
+      "society": "Durham Hindu Society",
+      "evidence": {
+        "caption": {
+          "text": "We’re so excited for another year of Durham Hindu Society!  Looking forward to bringing everyone together and meeting new faces. Can’t wait to see you all! 🙏🕉\nThis Wednesday at the SU, 2-5!",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "",
+          "free_food": null,
+          "status": "invalidated",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 0,
+          "images": []
+        }
+      },
+      "media_urls": [
+        "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/845100409_18131587504783451_5557239326606924279_n.heic?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_cat=100&ig_cache_key=NDAwNjYyNjAwODY3ODU1OTQ5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gr9C08UemZAQ7kNvwFUsj6W&_nc_oc=AdrFo5XAMGsu5pw3ga9LJOx8aZOIHH7QBAi1WBhaVN1yZJ-U0BTF4i8tCZhh7b-5mNc&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=5WSu4Yv-ARQtj2dcKzp0Zw&_nc_ss=7b60f&oh=00_AQS-tLW33pYpri08oGyHZ_fhc085VU3P1od5ePc3hi3W_Q&oe=6AE9B827"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "❤️✨Durham, let’s celebrate Navratri! 💃🪔",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeUHoaDoR8A/",
+      "post_id": "social-ff1539347e2a9d2290",
+      "society": "Durham Hindu Society",
+      "evidence": {
+        "caption": {
+          "text": "❤️✨Durham, let’s celebrate Navratri! 💃🪔",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "",
+          "free_food": null,
+          "status": "invalidated",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 0,
+          "images": []
+        }
+      },
+      "media_urls": [
+        "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/841398130_18131334364783451_149378816883706676_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_cat=103&ig_cache_key=NDAwNDg1OTUzMTcyMjAzOTA0MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM2NS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=DtNqizfTy7AQ7kNvwE2OiIr&_nc_oc=Adqd0x0XEIzBOHaO5jA5l4WGQqzBKF1FBQeu6kCSx-WMuKHKeiLdWSvNK2COfrMOysw&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=5WSu4Yv-ARQtj2dcKzp0Zw&_nc_ss=7b60f&oh=00_AQTIZ671VmlY-Sc6djDTQZRskpz3oO8aV3weMpUtsVy3EA&oe=6AE9C199"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
       "title": "Today’s coffee social was amazing 🌟🌟",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeSOzqgkSGg/",
@@ -177,6 +240,34 @@
       "society": "English Literature (D.U.E.L.S)",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
+      "title": "Welcome to Durham Hindu Society 2026/27! 🕉️",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeRrCFcIl_M/",
+      "post_id": "social-0f2d5ca0aef964d356",
+      "society": "Durham Hindu Society",
+      "evidence": {
+        "caption": {
+          "text": "Welcome to Durham Hindu Society 2026/27! 🕉️\n\nWe’re so excited for the year ahead and can’t wait to bring everyone together. Our first event is coming soon, so keep an eye on our socials for updates!",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "",
+          "free_food": null,
+          "status": "invalidated",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 0,
+          "images": []
+        }
+      },
+      "media_urls": [
+        "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/841480946_18131241988783451_1217735535164855647_n.heic?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_cat=104&ig_cache_key=NDAwNDE3MDgwMjk4ODczNjQ2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Y_VMLDpqeG0Q7kNvwHpLx0Z&_nc_oc=AdqIMvAxxoXphxM1bFGEFldcIoLwVDsGDUnXgXdUuz0I8rhugNvU5TycClMfxNYiVuc&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=5WSu4Yv-ARQtj2dcKzp0Zw&_nc_ss=7b60f&oh=00_AQQk8uSUwCFMJLl0jEz3TWGOCbK-H9Klo0f8iibaT5wgTg&oe=6AE9AA76"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
     },
     {
       "title": "We loved meeting you all today at the freshers fair. If you missed us or want to meet even more of the society then join us at our annual welcome pizz",
