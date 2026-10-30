@@ -1,41 +1,6 @@
 {
-  "updated_at": "2026-10-29T23:51:16.701436Z",
+  "updated_at": "2026-10-30T23:32:05.145507Z",
   "candidates": [
-    {
-      "title": "Cosy Craft Night",
-      "source_url": "https://durhamsu.native.fm/event/cosy-craft-night/295092",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Course Rep Training (Online)",
-      "source_url": "https://durhamsu.native.fm/event/course-rep-training-online-28/295248",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Fri 30 Oct 13:30 Intermediate Hoop",
-      "source_url": "https://durhamsu.native.fm/event/fri-30-oct-13-30-intermediate-hoop/295368",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Fri 30 Oct 14:30 Open Training",
-      "source_url": "https://durhamsu.native.fm/event/fri-30-oct-14-30-open-training/295369",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Fri 30 Oct 15:30 Beginners Hoop",
-      "source_url": "https://durhamsu.native.fm/event/fri-30-oct-15-30-beginners-hoop/295370",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Introduction to Self Defence",
       "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence/291605",
