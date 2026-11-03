@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T23:25:52.375130Z",
+  "updated_at": "2026-11-03T02:06:16.029314Z",
   "candidates": [
     {
       "title": "ISA x Desi Soc Diwali Silent Disco",
@@ -9,8 +9,50 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "Wed 4th Nov 13:30 Returning Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-4th-nov-13-30-returning-beginners-silks/296009",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Wed 4th Nov 14:30 Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-4th-nov-14-30-beginners-silks/296002",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Fri 6th 15:00 Nov Open Training",
+      "source_url": "https://durhamsu.native.fm/event/fri-6th-15-00-nov-open-training/296005",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Introduction to Self Defence",
       "source_url": "https://durhamsu.native.fm/event/introduction-to-self-defence-1/291606",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 8th Nov 13:00 Intermediate Hoop",
+      "source_url": "https://durhamsu.native.fm/event/sun-8th-nov-13-00-intermediate-hoop/296006",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 8th Nov 14:00 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/sun-8th-nov-14-00-open-training/296007",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 8th Nov 15:00 Beginners Hoop",
+      "source_url": "https://durhamsu.native.fm/event/sun-8th-nov-15-00-beginners-hoop/296008",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
@@ -30,8 +72,22 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "Bishop Auckland Trip",
+      "source_url": "https://durhamsu.native.fm/event/bishop-auckland-trip/295996",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Kielder Observatory Trip 2026",
       "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Bicester Village Day Trip",
+      "source_url": "https://durhamsu.native.fm/event/bicester-village-day-trip/296139",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
