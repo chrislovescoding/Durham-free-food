@@ -1,20 +1,6 @@
 {
-  "updated_at": "2026-11-04T00:30:08.348854Z",
+  "updated_at": "2026-11-05T00:47:42.244753Z",
   "candidates": [
-    {
-      "title": "Wed 4th Nov 13:30 Returning Beginners Silks",
-      "source_url": "https://durhamsu.native.fm/event/wed-4th-nov-13-30-returning-beginners-silks/296009",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Wed 4th Nov 14:30 Beginners Silks",
-      "source_url": "https://durhamsu.native.fm/event/wed-4th-nov-14-30-beginners-silks/296002",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Fri 6th 15:00 Nov Open Training",
       "source_url": "https://durhamsu.native.fm/event/fri-6th-15-00-nov-open-training/296005",
@@ -268,15 +254,6 @@
       "source_url": "https://www.instagram.com/p/Dd65922idCa/",
       "post_id": "social-380b119cfdf5603842",
       "society": "Computing",
-      "kind": "social_post_review",
-      "reason": "Food mentioned without an explicit free-food promise"
-    },
-    {
-      "title": "✨MEET THE EXEC✨",
-      "source_id": "social-instagram",
-      "source_url": "https://www.instagram.com/p/Dc51owNDKrw/",
-      "post_id": "social-eb12057fb1509d957e",
-      "society": "Inclusive Christian Movement Durham",
       "kind": "social_post_review",
       "reason": "Food mentioned without an explicit free-food promise"
     },

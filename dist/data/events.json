@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T00:30:08.348854Z",
+  "updated_at": "2026-11-05T00:47:42.244753Z",
   "timezone": "Europe/London",
   "events": [
     {
@@ -20,7 +20,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/der7ecxe\n\nAddress:\nWhitechurch Durham\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-04T00:30:08.348854Z",
+      "verified_at": "2026-11-05T00:47:42.244753Z",
       "temporal_status": "past"
     },
     {
@@ -41,7 +41,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/gm6exm7e\n\nAddress:\nWhitechurch Durham\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-04T00:30:08.348854Z",
+      "verified_at": "2026-11-05T00:47:42.244753Z",
       "temporal_status": "past"
     },
     {
@@ -62,7 +62,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/wyn0vecv\n\nAddress:\nDepartment of Mathematical Sciences & Department of Computer Science • Durham University\nMCS0001 (Scott Logic)\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-04T00:30:08.348854Z",
+      "verified_at": "2026-11-05T00:47:42.244753Z",
       "temporal_status": "past"
     },
     {
@@ -83,7 +83,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/decd0qva\n\nAddress:\nTeaching and Learning Centre • Durham University\nTLC033\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-04T00:30:08.348854Z",
+      "verified_at": "2026-11-05T00:47:42.244753Z",
       "temporal_status": "past"
     },
     {
@@ -104,7 +104,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/2y2d4wgl\n\nAddress:\nWhitechurch Durham\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-04T00:30:08.348854Z",
+      "verified_at": "2026-11-05T00:47:42.244753Z",
       "temporal_status": "past"
     },
     {
@@ -125,7 +125,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/bdqov43i\n\nAddress:\nTeaching and Learning Centre • Durham University\nTLC039\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-04T00:30:08.348854Z",
+      "verified_at": "2026-11-05T00:47:42.244753Z",
       "temporal_status": "past"
     },
     {
@@ -857,13 +857,13 @@
       "url": "https://durhamsu.native.fm/events",
       "label": "Durham SU · What's On",
       "name": "Durham SU · What's On",
-      "last_attempt_at": "2026-11-04T00:30:08.348854Z",
+      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
       "status": "ok",
-      "last_success_at": "2026-11-04T00:30:08.348854Z",
-      "events_seen": 80,
-      "parsed_count": 80,
+      "last_success_at": "2026-11-05T00:47:42.244753Z",
+      "events_seen": 74,
+      "parsed_count": 74,
       "eligible_count": 0,
-      "candidate_count": 12,
+      "candidate_count": 10,
       "parse_error_count": 0,
       "retained_count": 0
     },
@@ -873,9 +873,9 @@
       "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
       "label": "DAISI · Luma calendar",
       "name": "DAISI · Luma calendar",
-      "last_attempt_at": "2026-11-04T00:30:08.348854Z",
+      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
       "status": "ok",
-      "last_success_at": "2026-11-04T00:30:08.348854Z",
+      "last_success_at": "2026-11-05T00:47:42.244753Z",
       "events_seen": 32,
       "parsed_count": 32,
       "eligible_count": 6,
@@ -889,9 +889,9 @@
       "url": "https://www.durhamsu.com/groups/studentgroups/",
       "label": "Durham Students' Union",
       "name": "Durham Students' Union",
-      "last_attempt_at": "2026-11-04T00:30:08.348854Z",
+      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
       "status": "partial",
-      "last_success_at": "2026-11-04T00:30:08.348854Z",
+      "last_success_at": "2026-11-05T00:47:42.244753Z",
       "society_count": 319,
       "parsed_count": 319,
       "profiles_failed": 0,
@@ -906,11 +906,11 @@
       "url": "https://www.instagram.com/",
       "status": "partial",
       "parsed_count": 0,
-      "posts_stored": 824,
+      "posts_stored": 823,
       "account_count": 290,
       "accounts_checked": 1,
       "accounts_with_posts": 209,
-      "last_attempt_at": "2026-11-04T00:30:08.348854Z",
+      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
       "last_success_at": "2026-10-29T23:51:16.701436Z"
     },
     {
@@ -924,7 +924,7 @@
       "account_count": 154,
       "accounts_checked": 115,
       "accounts_with_posts": 0,
-      "last_attempt_at": "2026-11-04T00:30:08.348854Z",
+      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
       "last_success_at": null
     }
   ],
@@ -937,13 +937,13 @@
     "parse_error_count": 0,
     "live_event_count": 5,
     "reviewed_event_count": 10,
-    "candidate_count": 88,
+    "candidate_count": 85,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
     "society_count": 319,
     "directory_status": "partial",
-    "social_post_count": 824,
+    "social_post_count": 823,
     "social_account_count": 444,
     "society_coverage": {
       "total_societies": 319,
@@ -952,14 +952,14 @@
       "societies_needing_accounts": 25,
       "societies_needing_attention": 85,
       "societies_stale": 209,
-      "post_count": 824
+      "post_count": 823
     },
     "ai_event_count": 13,
     "ai_review_count": 58,
     "ai_processed_at": "2026-10-17T15:06:15.492510+00:00",
     "ai_stale_post_count": 3,
     "past_event_count": 24,
-    "past_14_day_event_count": 3,
+    "past_14_day_event_count": 2,
     "ended_today_event_count": 0,
     "started_today_event_count": 0,
     "upcoming_event_count": 5,
