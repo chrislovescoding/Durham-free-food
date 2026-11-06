@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T00:47:42.244753Z",
+  "updated_at": "2026-11-06T00:54:15.319815Z",
   "candidates": [
     {
       "title": "Fri 6th 15:00 Nov Open Training",
@@ -46,6 +46,13 @@
     {
       "title": "Wobble Week: LGBTea",
       "source_url": "https://durhamsu.native.fm/event/wobble-week-lgbtea/295573",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "University Challenge Trials: Round 1",
+      "source_url": "https://durhamsu.native.fm/event/university-challenge-trials-round-1/296437",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"

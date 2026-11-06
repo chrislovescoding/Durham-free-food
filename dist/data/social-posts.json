@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T00:47:42.244753Z",
+  "updated_at": "2026-11-06T00:54:15.319815Z",
   "posts": [
     {
       "id": "social-2659f0f64339ed8533",
@@ -37067,29 +37067,15 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.instagram.com/duramacs/",
+      "url": "https://www.instagram.com/durhamabsoc/",
       "platform": "instagram",
-      "society": "African and Caribbean Society",
+      "society": "Ahlulbayt Society",
       "status": "rate_limited",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
       "error": "HTTP 429; remaining platform requests deferred",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.instagram.com/durhamabsoc/",
-      "platform": "instagram",
-      "society": "Ahlulbayt Society",
-      "status": "deferred",
-      "last_attempt_at": "2026-11-01T23:25:52.375130Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Platform deferred after HTTP 429",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41113,20 +41099,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/93clubdurham/",
-      "platform": "facebook",
-      "society": "93% Club Durham",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duaerialarts/",
       "platform": "instagram",
       "society": "Aerial Arts",
@@ -41141,11 +41113,39 @@
       "provider": "public_html"
     },
     {
+      "url": "https://www.facebook.com/93clubdurham/",
+      "platform": "facebook",
+      "society": "93% Club Durham",
+      "status": "no_public_posts",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "No owned post captions are exposed in this public response",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.instagram.com/duramacs/",
+      "platform": "instagram",
+      "society": "African and Caribbean Society",
+      "status": "deferred",
+      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Platform deferred after HTTP 429",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
       "url": "https://www.facebook.com/duaikido/",
       "platform": "facebook",
       "society": "Aikido",
       "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41159,7 +41159,7 @@
       "platform": "facebook",
       "society": "Amnesty International",
       "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41173,7 +41173,7 @@
       "platform": "facebook",
       "society": "Anglo-Japanese Society",
       "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41186,12 +41186,12 @@
       "url": "https://www.facebook.com/ahgsdurham/",
       "platform": "facebook",
       "society": "Arthur Holmes Geological Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41201,7 +41201,7 @@
       "platform": "facebook",
       "society": "Ballet Company",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41215,7 +41215,7 @@
       "platform": "facebook",
       "society": "Bar Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41229,7 +41229,7 @@
       "platform": "facebook",
       "society": "Brazilian Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41243,7 +41243,7 @@
       "platform": "facebook",
       "society": "British Sign Language Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41257,7 +41257,7 @@
       "platform": "facebook",
       "society": "buddhist Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41271,7 +41271,7 @@
       "platform": "facebook",
       "society": "Burmese Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41285,7 +41285,7 @@
       "platform": "facebook",
       "society": "Calisthenics",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41299,7 +41299,7 @@
       "platform": "facebook",
       "society": "Canadian Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41313,7 +41313,7 @@
       "platform": "facebook",
       "society": "Catholic Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41327,7 +41327,7 @@
       "platform": "facebook",
       "society": "Caving (Durham University Speleological Association)",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41341,7 +41341,7 @@
       "platform": "facebook",
       "society": "Change Ringers",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41355,7 +41355,7 @@
       "platform": "facebook",
       "society": "Chem Soc",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41369,7 +41369,7 @@
       "platform": "facebook",
       "society": "Chinese Student & Scholars Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41383,7 +41383,7 @@
       "platform": "facebook",
       "society": "Chinese Studies Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41397,7 +41397,7 @@
       "platform": "facebook",
       "society": "Christian Union",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41411,7 +41411,7 @@
       "platform": "facebook",
       "society": "Classic Film",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41425,7 +41425,7 @@
       "platform": "facebook",
       "society": "Computing",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41439,7 +41439,7 @@
       "platform": "facebook",
       "society": "Consulting Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41453,7 +41453,7 @@
       "platform": "facebook",
       "society": "Creative Writing",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41466,12 +41466,12 @@
       "url": "https://www.facebook.com/ducrochetsoc/",
       "platform": "facebook",
       "society": "Crochet",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "no_public_posts",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "Source redirected to a login or verification page",
+      "error": "No owned post captions are exposed in this public response",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41481,7 +41481,7 @@
       "platform": "facebook",
       "society": "Cypriot Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41495,7 +41495,7 @@
       "platform": "facebook",
       "society": "Dancesport Team",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41509,7 +41509,7 @@
       "platform": "facebook",
       "society": "Disabilities and Carers Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41523,7 +41523,7 @@
       "platform": "facebook",
       "society": "Disney",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41537,7 +41537,7 @@
       "platform": "facebook",
       "society": "DJ Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41551,7 +41551,7 @@
       "platform": "facebook",
       "society": "DU Coffee Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41565,7 +41565,7 @@
       "platform": "facebook",
       "society": "DUCFS",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41579,7 +41579,7 @@
       "platform": "facebook",
       "society": "DUCK",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41593,7 +41593,7 @@
       "platform": "facebook",
       "society": "Durham Hindu Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41607,7 +41607,7 @@
       "platform": "facebook",
       "society": "Durham Malaysian Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41621,7 +41621,7 @@
       "platform": "facebook",
       "society": "Durham Palestine Solidarity Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41635,7 +41635,7 @@
       "platform": "facebook",
       "society": "Durham Student Filmmaking",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41649,7 +41649,7 @@
       "platform": "facebook",
       "society": "Durham Tea Art",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41663,7 +41663,7 @@
       "platform": "facebook",
       "society": "Durham University Economics Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41677,7 +41677,7 @@
       "platform": "facebook",
       "society": "Durham University Filipino Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41690,12 +41690,12 @@
       "url": "https://www.facebook.com/duphotosoc/",
       "platform": "facebook",
       "society": "Durham University Photography Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41705,7 +41705,7 @@
       "platform": "facebook",
       "society": "Equestrian Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41718,12 +41718,12 @@
       "url": "https://www.facebook.com/esndurham/",
       "platform": "facebook",
       "society": "ESN (Erasmus Student Network) Durham",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41732,12 +41732,12 @@
       "url": "https://www.facebook.com/durhamestranged/",
       "platform": "facebook",
       "society": "Estranged and Care Leavers Association",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41747,7 +41747,7 @@
       "platform": "facebook",
       "society": "Expedition Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41760,12 +41760,12 @@
       "url": "https://www.facebook.com/durhamunifirstaid/",
       "platform": "facebook",
       "society": "First Aid",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41774,12 +41774,12 @@
       "url": "https://www.facebook.com/dufolksoc/",
       "platform": "facebook",
       "society": "Folk Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41788,12 +41788,12 @@
       "url": "https://www.facebook.com/durhamfrenchsociety/",
       "platform": "facebook",
       "society": "French Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41802,12 +41802,12 @@
       "url": "https://www.facebook.com/glcsdurham/",
       "platform": "facebook",
       "society": "German Languages & Cultures Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41817,7 +41817,7 @@
       "platform": "facebook",
       "society": "Global Health Durham",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41831,7 +41831,7 @@
       "platform": "facebook",
       "society": "Hellenistic Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41845,7 +41845,7 @@
       "platform": "facebook",
       "society": "Hill Walking",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41859,7 +41859,7 @@
       "platform": "facebook",
       "society": "Hispanic Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41873,7 +41873,7 @@
       "platform": "facebook",
       "society": "History of Art Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41887,7 +41887,7 @@
       "platform": "facebook",
       "society": "History Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41901,7 +41901,7 @@
       "platform": "facebook",
       "society": "Hong Kong",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41915,7 +41915,7 @@
       "platform": "facebook",
       "society": "Ice Skating Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41929,7 +41929,7 @@
       "platform": "facebook",
       "society": "Improvised Comedy/ Shellshock",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41943,7 +41943,7 @@
       "platform": "facebook",
       "society": "Indian Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41957,7 +41957,7 @@
       "platform": "facebook",
       "society": "Indonesian Student Community (DISC)",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41971,7 +41971,7 @@
       "platform": "facebook",
       "society": "Instep Dance Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41985,7 +41985,7 @@
       "platform": "facebook",
       "society": "International Students' Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -41999,7 +41999,7 @@
       "platform": "facebook",
       "society": "Intersectional Feminist Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42013,7 +42013,7 @@
       "platform": "facebook",
       "society": "Irish Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42027,7 +42027,7 @@
       "platform": "facebook",
       "society": "Italian Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42041,7 +42041,7 @@
       "platform": "facebook",
       "society": "Jewish Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42055,7 +42055,7 @@
       "platform": "facebook",
       "society": "Justice Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42069,7 +42069,7 @@
       "platform": "facebook",
       "society": "Lawyers without Borders",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42083,7 +42083,7 @@
       "platform": "facebook",
       "society": "Marketing Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42097,7 +42097,7 @@
       "platform": "facebook",
       "society": "Marrow",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42111,7 +42111,7 @@
       "platform": "facebook",
       "society": "Mexican Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42125,7 +42125,7 @@
       "platform": "facebook",
       "society": "Natural History Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42139,7 +42139,7 @@
       "platform": "facebook",
       "society": "Nightline",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42153,7 +42153,7 @@
       "platform": "facebook",
       "society": "Nordic Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42167,7 +42167,7 @@
       "platform": "facebook",
       "society": "Northern Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42181,7 +42181,7 @@
       "platform": "facebook",
       "society": "Pakistan Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42195,7 +42195,7 @@
       "platform": "facebook",
       "society": "Pal TV",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42209,7 +42209,7 @@
       "platform": "facebook",
       "society": "Palatinate",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42223,7 +42223,7 @@
       "platform": "facebook",
       "society": "People of Colour Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42237,7 +42237,7 @@
       "platform": "facebook",
       "society": "Philosophy Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42251,7 +42251,7 @@
       "platform": "facebook",
       "society": "Pokemon",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42265,7 +42265,7 @@
       "platform": "facebook",
       "society": "Poker Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42279,7 +42279,7 @@
       "platform": "facebook",
       "society": "Pole Dancing",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42293,7 +42293,7 @@
       "platform": "facebook",
       "society": "Polish Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42307,7 +42307,7 @@
       "platform": "facebook",
       "society": "Psychology Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42321,7 +42321,7 @@
       "platform": "facebook",
       "society": "Purple Radio",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42335,7 +42335,7 @@
       "platform": "facebook",
       "society": "Queer Sphere: Durham's LGBT+ Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42349,7 +42349,7 @@
       "platform": "facebook",
       "society": "Quiz Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42363,7 +42363,7 @@
       "platform": "facebook",
       "society": "Real Tennis",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42377,7 +42377,7 @@
       "platform": "facebook",
       "society": "Rock Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42391,7 +42391,7 @@
       "platform": "facebook",
       "society": "Russian Speaking Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42405,7 +42405,7 @@
       "platform": "facebook",
       "society": "Scout and Guide",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42419,7 +42419,7 @@
       "platform": "facebook",
       "society": "Sexpression Durham",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42433,7 +42433,7 @@
       "platform": "facebook",
       "society": "South African Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42447,7 +42447,7 @@
       "platform": "facebook",
       "society": "Students for Sensible Drug Policy",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42461,7 +42461,7 @@
       "platform": "facebook",
       "society": "Students of Mixed Cultural Identities",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42475,7 +42475,7 @@
       "platform": "facebook",
       "society": "Sustainable & Ethical Fashion",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42489,7 +42489,7 @@
       "platform": "facebook",
       "society": "Sustainable Finance",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42503,7 +42503,7 @@
       "platform": "facebook",
       "society": "Swing",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42517,7 +42517,7 @@
       "platform": "facebook",
       "society": "Taiwanese Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42531,7 +42531,7 @@
       "platform": "facebook",
       "society": "Taylor Swift",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42545,7 +42545,7 @@
       "platform": "facebook",
       "society": "Thai Boxing",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42559,7 +42559,7 @@
       "platform": "facebook",
       "society": "Thai Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42573,7 +42573,7 @@
       "platform": "facebook",
       "society": "Theology Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42587,7 +42587,7 @@
       "platform": "facebook",
       "society": "Treasure Trap",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42601,7 +42601,7 @@
       "platform": "facebook",
       "society": "Turkish Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42615,7 +42615,7 @@
       "platform": "facebook",
       "society": "UNICEF on Campus",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42629,7 +42629,7 @@
       "platform": "facebook",
       "society": "Vietnamese Society",
       "status": "no_public_posts",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42643,7 +42643,7 @@
       "platform": "facebook",
       "society": "Welsh Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42657,7 +42657,7 @@
       "platform": "facebook",
       "society": "Werewolf Society",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42671,7 +42671,7 @@
       "platform": "facebook",
       "society": "Women in Business",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42685,7 +42685,7 @@
       "platform": "facebook",
       "society": "Women in STEM",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42699,7 +42699,7 @@
       "platform": "facebook",
       "society": "Womxn's Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42713,7 +42713,7 @@
       "platform": "facebook",
       "society": "Working Class Students Association",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -42727,7 +42727,7 @@
       "platform": "facebook",
       "society": "World Cinema",
       "status": "login_required",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "last_success_at": null,
       "posts_collected": 0,
       "window_limited": true,
@@ -51250,12 +51250,12 @@
       "type": "social_posts",
       "state": "partial",
       "status": "partial",
-      "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+      "last_attempt_at": "2026-11-06T00:54:15.319815Z",
       "accounts_total": 444,
       "accounts_checked": 116,
       "accounts_unsupported": 39,
       "accounts_successful": 0,
-      "accounts_blocked": 103,
+      "accounts_blocked": 110,
       "posts_collected": 0,
       "posts_stored": 74,
       "parsed_count": 0,
@@ -51363,12 +51363,12 @@
     }
   },
   "coverage": {
-    "updated_at": "2026-11-05T00:47:42.244753Z",
+    "updated_at": "2026-11-06T00:54:15.319815Z",
     "summary": {
-      "total_societies": 319,
+      "total_societies": 320,
       "societies_with_accounts": 294,
       "societies_with_recent_posts": 0,
-      "societies_needing_accounts": 25,
+      "societies_needing_accounts": 26,
       "societies_needing_attention": 85,
       "societies_stale": 209,
       "post_count": 823
@@ -51392,7 +51392,7 @@
               {
                 "provider": "public_html",
                 "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "No owned post captions are exposed in this public response"
@@ -51521,11 +51521,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "rate_limited",
+                "status": "deferred",
                 "last_attempt_at": "2026-11-05T00:47:42.244753Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "HTTP 429; remaining platform requests deferred"
+                "error": "Platform deferred after HTTP 429"
               },
               {
                 "provider": "meta_api",
@@ -51567,11 +51567,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "deferred",
-                "last_attempt_at": "2026-11-01T23:25:52.375130Z",
+                "status": "rate_limited",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "Platform deferred after HTTP 429"
+                "error": "HTTP 429; remaining platform requests deferred"
               },
               {
                 "provider": "meta_api",
@@ -51614,7 +51614,7 @@
               {
                 "provider": "public_html",
                 "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "No owned post captions are exposed in this public response"
@@ -51779,7 +51779,7 @@
               {
                 "provider": "public_html",
                 "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "No owned post captions are exposed in this public response"
@@ -51852,7 +51852,7 @@
               {
                 "provider": "public_html",
                 "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "No owned post captions are exposed in this public response"
@@ -52249,11 +52249,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -52718,7 +52718,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -52871,7 +52871,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53077,6 +53077,17 @@
         "discovery_errors": []
       },
       {
+        "name": "Board Games Society",
+        "url": "https://www.durhamsu.com/groups/studentgroup/11869/",
+        "account_count": 0,
+        "posts_stored": 0,
+        "latest_observation_at": null,
+        "status": "missing_accounts",
+        "accounts": [],
+        "discovery_status": "not_listed",
+        "discovery_errors": []
+      },
+      {
         "name": "Boba Society",
         "url": "https://www.durhamsu.com/groups/studentgroup/6624/",
         "account_count": 1,
@@ -53278,7 +53289,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53397,7 +53408,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53516,7 +53527,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53589,7 +53600,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53754,7 +53765,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53827,7 +53838,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53992,7 +54003,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54065,7 +54076,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54184,7 +54195,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54257,7 +54268,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54495,7 +54506,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54568,7 +54579,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54675,7 +54686,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54760,7 +54771,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55004,7 +55015,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55123,7 +55134,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55258,7 +55269,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55330,11 +55341,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "no_public_posts",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "Source redirected to a login or verification page"
+                "error": "No owned post captions are exposed in this public response"
               },
               {
                 "provider": "meta_api",
@@ -55477,7 +55488,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55669,7 +55680,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55912,7 +55923,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56065,7 +56076,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56104,7 +56115,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56223,7 +56234,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56296,7 +56307,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56369,7 +56380,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56685,7 +56696,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56758,7 +56769,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56877,7 +56888,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56996,7 +57007,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57069,7 +57080,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57406,7 +57417,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57445,7 +57456,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57801,11 +57812,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -58367,7 +58378,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58485,11 +58496,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -58558,11 +58569,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -58678,7 +58689,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58961,11 +58972,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -59091,11 +59102,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -59283,11 +59294,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -59448,11 +59459,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -59786,7 +59797,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60090,7 +60101,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60163,7 +60174,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60236,7 +60247,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60309,7 +60320,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60382,7 +60393,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60455,7 +60466,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60712,7 +60723,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60785,7 +60796,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60950,7 +60961,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61069,7 +61080,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61188,7 +61199,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61353,7 +61364,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61426,7 +61437,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61545,7 +61556,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61710,7 +61721,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61829,7 +61840,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61963,7 +61974,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62516,7 +62527,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62827,7 +62838,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62900,7 +62911,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63223,7 +63234,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63461,7 +63472,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63694,7 +63705,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63840,7 +63851,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63913,7 +63924,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64136,7 +64147,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64209,7 +64220,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64282,7 +64293,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64366,7 +64377,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64466,7 +64477,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64692,7 +64703,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64758,7 +64769,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64831,7 +64842,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64904,7 +64915,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65115,7 +65126,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65188,7 +65199,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65261,7 +65272,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65334,7 +65345,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65453,7 +65464,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65536,7 +65547,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65613,7 +65624,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65686,7 +65697,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65951,7 +65962,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66292,7 +66303,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66706,7 +66717,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66779,7 +66790,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66852,7 +66863,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66925,7 +66936,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67009,7 +67020,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67082,7 +67093,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67201,7 +67212,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67296,7 +67307,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67369,7 +67380,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67583,7 +67594,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67832,7 +67843,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67871,7 +67882,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68036,7 +68047,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68166,7 +68177,7 @@
               {
                 "provider": "public_html",
                 "status": "no_public_posts",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "No owned post captions are exposed in this public response"
@@ -68312,7 +68323,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68385,7 +68396,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68516,7 +68527,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68692,7 +68703,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68849,7 +68860,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68922,7 +68933,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68961,7 +68972,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-05T00:47:42.244753Z",
+                "last_attempt_at": "2026-11-06T00:54:15.319815Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
