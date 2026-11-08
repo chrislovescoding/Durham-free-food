@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T23:31:49.478289Z",
+  "updated_at": "2026-11-08T23:30:25.231520Z",
   "timezone": "Europe/London",
   "events": [
     {
@@ -20,7 +20,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/der7ecxe\n\nAddress:\nWhitechurch Durham\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-07T23:31:49.478289Z",
+      "verified_at": "2026-11-08T23:30:25.231520Z",
       "temporal_status": "past"
     },
     {
@@ -41,7 +41,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/gm6exm7e\n\nAddress:\nWhitechurch Durham\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-07T23:31:49.478289Z",
+      "verified_at": "2026-11-08T23:30:25.231520Z",
       "temporal_status": "past"
     },
     {
@@ -62,7 +62,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/wyn0vecv\n\nAddress:\nDepartment of Mathematical Sciences & Department of Computer Science • Durham University\nMCS0001 (Scott Logic)\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-07T23:31:49.478289Z",
+      "verified_at": "2026-11-08T23:30:25.231520Z",
       "temporal_status": "past"
     },
     {
@@ -83,7 +83,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/decd0qva\n\nAddress:\nTeaching and Learning Centre • Durham University\nTLC033\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-07T23:31:49.478289Z",
+      "verified_at": "2026-11-08T23:30:25.231520Z",
       "temporal_status": "past"
     },
     {
@@ -104,7 +104,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/2y2d4wgl\n\nAddress:\nWhitechurch Durham\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-07T23:31:49.478289Z",
+      "verified_at": "2026-11-08T23:30:25.231520Z",
       "temporal_status": "past"
     },
     {
@@ -125,7 +125,7 @@
       "source_label": "DAISI · Luma calendar",
       "description": "Get up-to-date information at: https://luma.com/bdqov43i\n\nAddress:\nTeaching and Learning Centre • Durham University\nTLC039\nDurham, England\nUnited Kingdom\n\nHosted by Theo Farrell",
       "dietary": [],
-      "verified_at": "2026-11-07T23:31:49.478289Z",
+      "verified_at": "2026-11-08T23:30:25.231520Z",
       "temporal_status": "past"
     },
     {
@@ -857,13 +857,13 @@
       "url": "https://durhamsu.native.fm/events",
       "label": "Durham SU · What's On",
       "name": "Durham SU · What's On",
-      "last_attempt_at": "2026-11-07T23:31:49.478289Z",
+      "last_attempt_at": "2026-11-08T23:30:25.231520Z",
       "status": "ok",
-      "last_success_at": "2026-11-07T23:31:49.478289Z",
-      "events_seen": 64,
-      "parsed_count": 64,
+      "last_success_at": "2026-11-08T23:30:25.231520Z",
+      "events_seen": 67,
+      "parsed_count": 67,
       "eligible_count": 0,
-      "candidate_count": 9,
+      "candidate_count": 6,
       "parse_error_count": 0,
       "retained_count": 0
     },
@@ -873,9 +873,9 @@
       "url": "https://api2.luma.com/ics/get?entity=calendar&id=cal-lvIwlKjJGAceOBN",
       "label": "DAISI · Luma calendar",
       "name": "DAISI · Luma calendar",
-      "last_attempt_at": "2026-11-07T23:31:49.478289Z",
+      "last_attempt_at": "2026-11-08T23:30:25.231520Z",
       "status": "ok",
-      "last_success_at": "2026-11-07T23:31:49.478289Z",
+      "last_success_at": "2026-11-08T23:30:25.231520Z",
       "events_seen": 32,
       "parsed_count": 32,
       "eligible_count": 6,
@@ -889,14 +889,14 @@
       "url": "https://www.durhamsu.com/groups/studentgroups/",
       "label": "Durham Students' Union",
       "name": "Durham Students' Union",
-      "last_attempt_at": "2026-11-07T23:31:49.478289Z",
+      "last_attempt_at": "2026-11-08T23:30:25.231520Z",
       "status": "partial",
-      "last_success_at": "2026-11-07T23:31:49.478289Z",
+      "last_success_at": "2026-11-08T23:30:25.231520Z",
       "society_count": 320,
       "parsed_count": 320,
       "profiles_failed": 0,
       "profile_errors": [],
-      "societies_with_accounts": 118,
+      "societies_with_accounts": 117,
       "discovery_partial": 4
     },
     {
@@ -906,11 +906,11 @@
       "url": "https://www.instagram.com/",
       "status": "partial",
       "parsed_count": 0,
-      "posts_stored": 822,
+      "posts_stored": 816,
       "account_count": 289,
-      "accounts_checked": 289,
+      "accounts_checked": 1,
       "accounts_with_posts": 209,
-      "last_attempt_at": "2026-11-07T23:31:49.478289Z",
+      "last_attempt_at": "2026-11-08T23:30:25.231520Z",
       "last_success_at": "2026-10-29T23:51:16.701436Z"
     },
     {
@@ -921,10 +921,10 @@
       "status": "unavailable",
       "parsed_count": 0,
       "posts_stored": 0,
-      "account_count": 154,
-      "accounts_checked": 115,
+      "account_count": 153,
+      "accounts_checked": 114,
       "accounts_with_posts": 0,
-      "last_attempt_at": "2026-11-07T23:31:49.478289Z",
+      "last_attempt_at": "2026-11-08T23:30:25.231520Z",
       "last_success_at": null
     }
   ],
@@ -937,14 +937,14 @@
     "parse_error_count": 0,
     "live_event_count": 4,
     "reviewed_event_count": 10,
-    "candidate_count": 84,
+    "candidate_count": 81,
     "expired_count": 0,
     "manual_errors": [],
     "social_ingestion": "Collected Instagram/Facebook captions and image text are reviewed for food events; full-directory coverage and provider status are in social-posts.json.",
     "society_count": 320,
     "directory_status": "partial",
-    "social_post_count": 822,
-    "social_account_count": 443,
+    "social_post_count": 816,
+    "social_account_count": 442,
     "society_coverage": {
       "total_societies": 320,
       "societies_with_accounts": 294,
@@ -952,7 +952,7 @@
       "societies_needing_accounts": 26,
       "societies_needing_attention": 85,
       "societies_stale": 209,
-      "post_count": 822
+      "post_count": 816
     },
     "ai_event_count": 13,
     "ai_review_count": 58,

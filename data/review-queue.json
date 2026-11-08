@@ -1,27 +1,6 @@
 {
-  "updated_at": "2026-11-07T23:31:49.478289Z",
+  "updated_at": "2026-11-08T23:30:25.231520Z",
   "candidates": [
-    {
-      "title": "Sun 8th Nov 13:00 Intermediate Hoop",
-      "source_url": "https://durhamsu.native.fm/event/sun-8th-nov-13-00-intermediate-hoop/296006",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Sun 8th Nov 14:00 Open Training",
-      "source_url": "https://durhamsu.native.fm/event/sun-8th-nov-14-00-open-training/296007",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Sun 8th Nov 15:00 Beginners Hoop",
-      "source_url": "https://durhamsu.native.fm/event/sun-8th-nov-15-00-beginners-hoop/296008",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Wobble Week",
       "source_url": "https://durhamsu.native.fm/event/wobble-week-2/295608",
