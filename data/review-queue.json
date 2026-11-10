@@ -1,20 +1,6 @@
 {
-  "updated_at": "2026-11-08T23:30:25.231520Z",
+  "updated_at": "2026-11-10T02:36:25.803732Z",
   "candidates": [
-    {
-      "title": "Wobble Week",
-      "source_url": "https://durhamsu.native.fm/event/wobble-week-2/295608",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Wobble Week: LGBTea",
-      "source_url": "https://durhamsu.native.fm/event/wobble-week-lgbtea/295573",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "University Challenge Trials: Round 1",
       "source_url": "https://durhamsu.native.fm/event/university-challenge-trials-round-1/296437",
@@ -30,6 +16,13 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "INSTANT NOODLE x AJS Slurpflix & Chill movie night",
+      "source_url": "https://durhamsu.native.fm/event/instant-noodle-x-ajs-slurpflix-chill-movie-night/296783",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Kielder Observatory Trip 2026",
       "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
       "kind": "needs_food_confirmation",
@@ -37,8 +30,22 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "2026 Kielder Observatory Trip",
+      "source_url": "https://durhamsu.native.fm/event/2026-kielder-observatory-trip/294874",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Bicester Village Day Trip",
       "source_url": "https://durhamsu.native.fm/event/bicester-village-day-trip/296139",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "York Trip",
+      "source_url": "https://durhamsu.native.fm/event/york-trip/296775",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
