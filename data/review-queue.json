@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-11-10T02:36:25.803732Z",
+  "updated_at": "2026-11-11T00:29:44.559662Z",
   "candidates": [
+    {
+      "title": "Wed 11th Nov 13:30 Returning Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-11th-nov-13-30-returning-beginners-silks/296803",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Wed 11th Nov 14:30 Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-11th-nov-14-30-beginners-silks/296804",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Thurs 12th Nov 14:30 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/thurs-12th-nov-14-30-open-training/296802",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
     {
       "title": "University Challenge Trials: Round 1",
       "source_url": "https://durhamsu.native.fm/event/university-challenge-trials-round-1/296437",
@@ -23,15 +44,29 @@
       "source_id": "durham-su-native"
     },
     {
-      "title": "Kielder Observatory Trip 2026",
-      "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
+      "title": "Sun 15th Nov 13:00 Intermediate Hoop",
+      "source_url": "https://durhamsu.native.fm/event/sun-15th-nov-13-00-intermediate-hoop/296807",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
     },
     {
-      "title": "2026 Kielder Observatory Trip",
-      "source_url": "https://durhamsu.native.fm/event/2026-kielder-observatory-trip/294874",
+      "title": "Sun 15th Nov 14:00 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/sun-15th-nov-14-00-open-training/296800",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 15th Nov 15:00 Beginners Hoop",
+      "source_url": "https://durhamsu.native.fm/event/sun-15th-nov-15-00-beginners-hoop/296801",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Kielder Observatory Trip 2026",
+      "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
