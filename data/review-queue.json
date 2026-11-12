@@ -1,20 +1,6 @@
 {
-  "updated_at": "2026-11-11T00:29:44.559662Z",
+  "updated_at": "2026-11-12T01:51:12.143200Z",
   "candidates": [
-    {
-      "title": "Wed 11th Nov 13:30 Returning Beginners Silks",
-      "source_url": "https://durhamsu.native.fm/event/wed-11th-nov-13-30-returning-beginners-silks/296803",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Wed 11th Nov 14:30 Beginners Silks",
-      "source_url": "https://durhamsu.native.fm/event/wed-11th-nov-14-30-beginners-silks/296804",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Thurs 12th Nov 14:30 Open Training",
       "source_url": "https://durhamsu.native.fm/event/thurs-12th-nov-14-30-open-training/296802",
@@ -170,6 +156,15 @@
       "source_id": "daisi-luma"
     },
     {
+      "title": "Event details and ticket information for this year's Adventure Ball!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/De933fRDQOd/",
+      "post_id": "social-299202f1e8637b80fe",
+      "society": "Caving (Durham University Speleological Association)",
+      "kind": "social_post_review",
+      "reason": "Food mentioned without an explicit free-food promise"
+    },
+    {
       "title": "We’re so excited for another year of Durham Hindu Society!  Looking forward to bringing everyone together and meeting new faces. Can’t wait to see you",
       "source_id": "social-instagram",
       "source_url": "https://www.instagram.com/p/DeaZSB7IG8D/",
@@ -257,6 +252,62 @@
       },
       "media_urls": [
         "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/841480946_18131241988783451_1217735535164855647_n.heic?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_cat=104&ig_cache_key=NDAwNDE3MDgwMjk4ODczNjQ2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Y_VMLDpqeG0Q7kNvwHpLx0Z&_nc_oc=AdqIMvAxxoXphxM1bFGEFldcIoLwVDsGDUnXgXdUuz0I8rhugNvU5TycClMfxNYiVuc&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=5WSu4Yv-ARQtj2dcKzp0Zw&_nc_ss=7b60f&oh=00_AQQk8uSUwCFMJLl0jEz3TWGOCbK-H9Klo0f8iibaT5wgTg&oe=6AE9AA76"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "FRESHERS TRIPS!",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DePD60SAAhD/",
+      "post_id": "social-a9d4816a1b14a54ba7",
+      "society": "Caving (Durham University Speleological Association)",
+      "evidence": {
+        "caption": {
+          "text": "FRESHERS TRIPS!\n\nDUSA's Freshers Trips are coming up! Whether you’ve never been underground before or you’re already a seasoned cave explorer, come along and give caving a go.\n\nNo previous caving experience needed! We’ll provide the guidance, gear, and help you need.\n\nInterested? Fill in our interest form here:\nhttps://forms.gle/tpqa7YXCbnakZB769",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "",
+          "free_food": null,
+          "status": "invalidated",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 0,
+          "images": []
+        }
+      },
+      "media_urls": [
+        "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/839960383_18371403757243956_8424872422358940265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzQzNTgyOTc2MTQxMTEzOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nQq_UDCufkkQ7kNvwFRjv0Q&_nc_oc=AdobPIkUTKmYK1Bsa6otjT08uW_Bn3ibkBDKKkNAMokehR9jv3UyORnIeofDPrW58L4&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=gcBimvws0fXZO90lB8C8TQ&_nc_ss=7b60f&oh=00_AQRECiSWLChqilWHZOuTQzMUki77Jvj6BFnW8SNlqN83Cw&oe=6AFAE855"
+      ],
+      "kind": "social_post_review",
+      "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
+      "needs_visual_review": true
+    },
+    {
+      "title": "Save the date for our annual Adventure Ball taking place on Sunday the 6th December this year! The ball will be a splendid event for all the adventuri",
+      "source_id": "social-instagram",
+      "source_url": "https://www.instagram.com/p/DeEnw7yturc/",
+      "post_id": "social-46a5f34377a16903c0",
+      "society": "Caving (Durham University Speleological Association)",
+      "evidence": {
+        "caption": {
+          "text": "Save the date for our annual Adventure Ball taking place on Sunday the 6th December this year! The ball will be a splendid event for all the adventuring societies, including hillwalking, canoeing, caving, climbing, wild swimming, and scouts! More details to come soon🌲🎊❄️🥾",
+          "free_food": null
+        },
+        "image_ocr": {
+          "text": "",
+          "free_food": null,
+          "status": "invalidated",
+          "coverage_complete": false,
+          "expected_images": 1,
+          "inspected_images": 0,
+          "images": []
+        }
+      },
+      "media_urls": [
+        "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/837858164_18376695460240385_1210207997032269327_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMDQ5NzI1NTU2MjI3NTU0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=RIxxzDLZmMIQ7kNvwH4uLXC&_nc_oc=Ado7JEYpdPC2QCtT8JKps2cG-JY4EPUNE9NbsejSBMZ4IZqsYBh01S0ZNox0U4yNNoY&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=gcBimvws0fXZO90lB8C8TQ&_nc_ss=7b60f&oh=00_AQQtQiuMtRNyVRWNtat5v5LR6_-JfgIt82EmX9a4a6i0AQ&oe=6AFAFED9"
       ],
       "kind": "social_post_review",
       "reason": "Image text is missing, unreadable or incomplete; inspect the original images and caption",
