@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-12T01:51:12.143200Z",
+  "updated_at": "2026-11-13T00:57:26.743415Z",
   "candidates": [
-    {
-      "title": "Thurs 12th Nov 14:30 Open Training",
-      "source_url": "https://durhamsu.native.fm/event/thurs-12th-nov-14-30-open-training/296802",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "University Challenge Trials: Round 1",
       "source_url": "https://durhamsu.native.fm/event/university-challenge-trials-round-1/296437",
@@ -25,6 +18,13 @@
     {
       "title": "INSTANT NOODLE x AJS Slurpflix & Chill movie night",
       "source_url": "https://durhamsu.native.fm/event/instant-noodle-x-ajs-slurpflix-chill-movie-night/296783",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "White Wine Tasting",
+      "source_url": "https://durhamsu.native.fm/event/white-wine-tasting/297082",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
@@ -60,6 +60,13 @@
     {
       "title": "Bicester Village Day Trip",
       "source_url": "https://durhamsu.native.fm/event/bicester-village-day-trip/296139",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Representation Fair",
+      "source_url": "https://durhamsu.native.fm/event/representation-fair/297037",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
