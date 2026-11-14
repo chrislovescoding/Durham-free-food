@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-13T00:57:26.743415Z",
+  "updated_at": "2026-11-14T00:47:34.164047Z",
   "candidates": [
-    {
-      "title": "University Challenge Trials: Round 1",
-      "source_url": "https://durhamsu.native.fm/event/university-challenge-trials-round-1/296437",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Bishop Auckland Trip",
       "source_url": "https://durhamsu.native.fm/event/bishop-auckland-trip/295996",
@@ -46,6 +39,13 @@
     {
       "title": "Sun 15th Nov 15:00 Beginners Hoop",
       "source_url": "https://durhamsu.native.fm/event/sun-15th-nov-15-00-beginners-hoop/296801",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Side by Side: Meet Up",
+      "source_url": "https://durhamsu.native.fm/event/side-by-side-meet-up/297131",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
