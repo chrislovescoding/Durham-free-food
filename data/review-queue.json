@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-11-15T23:51:36.166711Z",
+  "updated_at": "2026-11-17T02:50:22.456036Z",
   "candidates": [
+    {
+      "title": "Wed 18 Nov 13:30 Returning Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-18-nov-13-30-returning-beginners-silks/297280",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Wed 18 Nov 14:30 Beginners Silks",
+      "source_url": "https://durhamsu.native.fm/event/wed-18-nov-14-30-beginners-silks/297283",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
     {
       "title": "Side by Side: Meet Up",
       "source_url": "https://durhamsu.native.fm/event/side-by-side-meet-up/297131",
@@ -16,8 +30,43 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "Fri 20 Nov 14:30 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/fri-20-nov-14-30-open-training/297286",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Bicester Village Day Trip",
       "source_url": "https://durhamsu.native.fm/event/bicester-village-day-trip/296139",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 22 Nov 13:00 Intermediate Hoop",
+      "source_url": "https://durhamsu.native.fm/event/sun-22-nov-13-00-intermediate-hoop/297276",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 22Nov 14:00 Open Training",
+      "source_url": "https://durhamsu.native.fm/event/sun-22nov-14-00-open-training/297279",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Sun 22 Nov 15:00 Beginners Hoop",
+      "source_url": "https://durhamsu.native.fm/event/sun-22-nov-15-00-beginners-hoop/297277",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "Chrimmer Meet Food Ticket (OLDIE)",
+      "source_url": "https://durhamsu.native.fm/event/chrimmer-meet-food-ticket-oldie/297369",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
@@ -32,6 +81,20 @@
     {
       "title": "York Trip",
       "source_url": "https://durhamsu.native.fm/event/york-trip/296775",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "DUSAGG Christmas Sleepover 2026 - Saturday only (incl Christmas Dinner) and/or Driver Ticket",
+      "source_url": "https://durhamsu.native.fm/event/dusagg-christmas-sleepover-2026-saturday-only-incl-christmas-dinner-and-or-driver-ticket/297365",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "DUSAGG Christmas Sleepover 2026 - Standard Ticket (incl overnight)",
+      "source_url": "https://durhamsu.native.fm/event/dusagg-christmas-sleepover-2026-standard-ticket-incl-overnight/297370",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
