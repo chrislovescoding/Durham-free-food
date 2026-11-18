@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T02:50:22.456036Z",
+  "updated_at": "2026-11-18T02:14:43.197163Z",
   "candidates": [
     {
       "title": "Wed 18 Nov 13:30 Returning Beginners Silks",
@@ -65,6 +65,13 @@
       "source_id": "durham-su-native"
     },
     {
+      "title": "Dinner with Seb Pollington",
+      "source_url": "https://durhamsu.native.fm/event/dinner-with-seb-pollington/297476",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
       "title": "Chrimmer Meet Food Ticket (OLDIE)",
       "source_url": "https://durhamsu.native.fm/event/chrimmer-meet-food-ticket-oldie/297369",
       "kind": "needs_food_confirmation",
@@ -74,6 +81,13 @@
     {
       "title": "Representation Fair",
       "source_url": "https://durhamsu.native.fm/event/representation-fair/297037",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "DU x NU Scuba Diving Winter Ball",
+      "source_url": "https://durhamsu.native.fm/event/du-x-nu-scuba-diving-winter-ball/297477",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
