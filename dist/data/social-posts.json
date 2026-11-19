@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T02:14:43.197163Z",
+  "updated_at": "2026-11-19T01:47:57.743789Z",
   "posts": [
     {
       "id": "social-889843dd81778878da",
@@ -36786,43 +36786,15 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/93clubdurham/",
-      "platform": "facebook",
-      "society": "93% Club Durham",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.instagram.com/93clubdurham/",
-      "platform": "instagram",
-      "society": "93% Club Durham",
-      "status": "rate_limited",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "HTTP 429; remaining platform requests deferred",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duaerialarts/",
       "platform": "instagram",
       "society": "Aerial Arts",
-      "status": "deferred",
-      "last_attempt_at": "2026-11-17T02:50:22.456036Z",
+      "status": "rate_limited",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
       "last_success_at": "2026-10-17T11:45:15.076711Z",
       "posts_collected": 0,
       "window_limited": true,
-      "error": "Platform deferred after HTTP 429",
+      "error": "HTTP 429; remaining platform requests deferred",
       "retained_count": 3,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -36851,20 +36823,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duaikido/",
-      "platform": "facebook",
-      "society": "Aikido",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -36912,20 +36870,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamuniversityamnestyinternational/",
-      "platform": "facebook",
-      "society": "Amnesty International",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamuniamnesty/",
       "platform": "instagram",
       "society": "Amnesty International",
@@ -36935,20 +36879,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/anglojapanese.society/",
-      "platform": "facebook",
-      "society": "Anglo-Japanese Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37061,20 +36991,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/ahgsdurham/",
-      "platform": "facebook",
-      "society": "Arthur Holmes Geological Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37206,20 +37122,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamuniversityballetcompany/",
-      "platform": "facebook",
-      "society": "Ballet Company",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamuniversityballetcompany/",
       "platform": "instagram",
       "society": "Ballet Company",
@@ -37258,20 +37160,6 @@
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
       "retained_count": 2,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dubarsoc/",
-      "platform": "facebook",
-      "society": "Bar Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
     },
@@ -37388,20 +37276,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/100070295374233/",
-      "platform": "facebook",
-      "society": "Brazilian Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dubraziliansoc/",
       "platform": "instagram",
       "society": "Brazilian Society",
@@ -37425,20 +37299,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durham.bsl/",
-      "platform": "facebook",
-      "society": "British Sign Language Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37472,20 +37332,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dubudsoc/",
-      "platform": "facebook",
-      "society": "buddhist Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dubudsoc/",
       "platform": "instagram",
       "society": "buddhist Society",
@@ -37495,20 +37341,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamburmesesociety/",
-      "platform": "facebook",
-      "society": "Burmese Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37556,20 +37388,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/ducalisthenics/",
-      "platform": "facebook",
-      "society": "Calisthenics",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/du_calisthenics/",
       "platform": "instagram",
       "society": "Calisthenics",
@@ -37579,20 +37397,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/ducs2020/",
-      "platform": "facebook",
-      "society": "Canadian Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37640,20 +37444,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamunicathsoc/",
-      "platform": "facebook",
-      "society": "Catholic Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamcathsoc/",
       "platform": "instagram",
       "society": "Catholic Society",
@@ -37663,20 +37453,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dusaspeleology/",
-      "platform": "facebook",
-      "society": "Caving (Durham University Speleological Association)",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37710,20 +37486,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/duscr.bells/",
-      "platform": "facebook",
-      "society": "Change Ringers",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duscr_official/",
       "platform": "instagram",
       "society": "Change Ringers",
@@ -37733,20 +37495,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duchemsoc/",
-      "platform": "facebook",
-      "society": "Chem Soc",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37808,20 +37556,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/cssadurham/",
-      "platform": "facebook",
-      "society": "Chinese Student & Scholars Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamcssa/",
       "platform": "instagram",
       "society": "Chinese Student & Scholars Association",
@@ -37831,20 +37565,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/ducssoc/",
-      "platform": "facebook",
-      "society": "Chinese Studies Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37878,20 +37598,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/diccu/",
-      "platform": "facebook",
-      "society": "Christian Union",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/ducivilrights/",
       "platform": "instagram",
       "society": "Civil Rights Society",
@@ -37901,20 +37607,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamclassicfilms/",
-      "platform": "facebook",
-      "society": "Classic Film",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -37976,20 +37668,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamcompsoc/",
-      "platform": "facebook",
-      "society": "Computing",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/ducompsoc/",
       "platform": "instagram",
       "society": "Computing",
@@ -38013,20 +37691,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamconsulting/",
-      "platform": "facebook",
-      "society": "Consulting Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -38060,20 +37724,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/ducws/",
-      "platform": "facebook",
-      "society": "Creative Writing",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/ducreativewriting/",
       "platform": "instagram",
       "society": "Creative Writing",
@@ -38083,20 +37733,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/ducrochetsoc/",
-      "platform": "facebook",
-      "society": "Crochet",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -38125,20 +37761,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/cysod/",
-      "platform": "facebook",
-      "society": "Cypriot Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -38200,20 +37822,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamdancesport/",
-      "platform": "facebook",
-      "society": "Dancesport Team",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/_dudt_/",
       "platform": "instagram",
       "society": "Dancesport Team",
@@ -38270,20 +37878,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/100085749777773/",
-      "platform": "facebook",
-      "society": "Disabilities and Carers Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/daca.durham/",
       "platform": "instagram",
       "society": "Disabilities and Carers Association",
@@ -38326,34 +37920,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamdisneysoc/",
-      "platform": "facebook",
-      "society": "Disney",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamdjsoc/",
-      "platform": "facebook",
-      "society": "DJ Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamdjsociety/",
       "platform": "instagram",
       "society": "DJ Society",
@@ -38382,20 +37948,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/ducoffeesoc/",
-      "platform": "facebook",
-      "society": "DU Coffee Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/du.coffeesociety/",
       "platform": "instagram",
       "society": "DU Coffee Society",
@@ -38410,20 +37962,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamucfs/",
-      "platform": "facebook",
-      "society": "DUCFS",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/ducfs/",
       "platform": "instagram",
       "society": "DUCFS",
@@ -38433,20 +37971,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamduck/",
-      "platform": "facebook",
-      "society": "DUCK",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -38522,20 +38046,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/duhindusoc/",
-      "platform": "facebook",
-      "society": "Durham Hindu Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/nhsfdurham/",
       "platform": "instagram",
       "society": "Durham Hindu Society",
@@ -38546,20 +38056,6 @@
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
       "retained_count": 3,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dumasdurham/",
-      "platform": "facebook",
-      "society": "Durham Malaysian Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
     },
@@ -38587,20 +38083,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhampalestinesolidaritygroup/",
-      "platform": "facebook",
-      "society": "Durham Palestine Solidarity Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -38634,20 +38116,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamstudentfilm/",
-      "platform": "facebook",
-      "society": "Durham Student Filmmaking",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamstudentfilmmaking/",
       "platform": "instagram",
       "society": "Durham Student Filmmaking",
@@ -38657,20 +38125,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamctas/",
-      "platform": "facebook",
-      "society": "Durham Tea Art",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -38774,34 +38228,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dueconsoc/",
-      "platform": "facebook",
-      "society": "Durham University Economics Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dufilsoc/",
-      "platform": "facebook",
-      "society": "Durham University Filipino Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamfilsoc/",
       "platform": "instagram",
       "society": "Durham University Filipino Society",
@@ -38881,20 +38307,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duphotosoc/",
-      "platform": "facebook",
-      "society": "Durham University Photography Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39054,20 +38466,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/61551582283827/",
-      "platform": "facebook",
-      "society": "Equestrian Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/du.equestrian.society/",
       "platform": "instagram",
       "society": "Equestrian Society",
@@ -39096,20 +38494,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/esndurham/",
-      "platform": "facebook",
-      "society": "ESN (Erasmus Student Network) Durham",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/esn_durham/",
       "platform": "instagram",
       "society": "ESN (Erasmus Student Network) Durham",
@@ -39119,20 +38503,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamestranged/",
-      "platform": "facebook",
-      "society": "Estranged and Care Leavers Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39161,20 +38531,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/61552033799388/",
-      "platform": "facebook",
-      "society": "Expedition Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39250,20 +38606,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamunifirstaid/",
-      "platform": "facebook",
-      "society": "First Aid",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dufirstaid/",
       "platform": "instagram",
       "society": "First Aid",
@@ -39287,20 +38629,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dufolksoc/",
-      "platform": "facebook",
-      "society": "Folk Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39348,20 +38676,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamfrenchsociety/",
-      "platform": "facebook",
-      "society": "French Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durham.french.society/",
       "platform": "instagram",
       "society": "French Society",
@@ -39399,20 +38713,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/glcsdurham/",
-      "platform": "facebook",
-      "society": "German Languages & Cultures Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39502,20 +38802,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/globalhealthdurham/",
-      "platform": "facebook",
-      "society": "Global Health Durham",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/du.globalhealth/",
       "platform": "instagram",
       "society": "Global Health Durham",
@@ -39572,20 +38858,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamhellenic/",
-      "platform": "facebook",
-      "society": "Hellenistic Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamgreeksoc/",
       "platform": "instagram",
       "society": "Hellenistic Society",
@@ -39595,20 +38867,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamhillwalking/",
-      "platform": "facebook",
-      "society": "Hill Walking",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39628,20 +38886,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durham.hispanic/",
-      "platform": "facebook",
-      "society": "Hispanic Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/hispanicsocdurham/",
       "platform": "instagram",
       "society": "Hispanic Society",
@@ -39651,20 +38895,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duhistoryofartsociety/",
-      "platform": "facebook",
-      "society": "History of Art Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39684,20 +38914,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamuniversityhistorysociety/",
-      "platform": "facebook",
-      "society": "History Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duhistorysociety/",
       "platform": "instagram",
       "society": "History Society",
@@ -39707,20 +38923,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duhks/",
-      "platform": "facebook",
-      "society": "Hong Kong",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39796,20 +38998,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/duiceskatingsociety/",
-      "platform": "facebook",
-      "society": "Ice Skating Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duiceskatingsoc/",
       "platform": "instagram",
       "society": "Ice Skating Society",
@@ -39819,20 +39007,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/shellshockimpro/",
-      "platform": "facebook",
-      "society": "Improvised Comedy/ Shellshock",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39880,20 +39054,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/duis2020/",
-      "platform": "facebook",
-      "society": "Indian Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/du_indiansoc/",
       "platform": "instagram",
       "society": "Indian Society",
@@ -39917,20 +39077,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/ppidurham/",
-      "platform": "facebook",
-      "society": "Indonesian Student Community (DISC)",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -39960,20 +39106,6 @@
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
       "retained_count": 1,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/instepdurham/",
-      "platform": "facebook",
-      "society": "Instep Dance Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
     },
@@ -40020,20 +39152,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamisa/",
-      "platform": "facebook",
-      "society": "International Students' Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/isa_durhamuniversity/",
       "platform": "instagram",
       "society": "International Students' Association",
@@ -40043,20 +39161,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/intfemsoc/",
-      "platform": "facebook",
-      "society": "Intersectional Feminist Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -40086,20 +39190,6 @@
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
       "retained_count": 1,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duis2018/",
-      "platform": "facebook",
-      "society": "Irish Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
     },
@@ -40146,20 +39236,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamitaliansociety/",
-      "platform": "facebook",
-      "society": "Italian Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/italiansocietydurham/",
       "platform": "instagram",
       "society": "Italian Society",
@@ -40188,20 +39264,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamjsoc/",
-      "platform": "facebook",
-      "society": "Jewish Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamjsoc/",
       "platform": "instagram",
       "society": "Jewish Society",
@@ -40225,20 +39287,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamjusticesoc/",
-      "platform": "facebook",
-      "society": "Justice Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -40384,20 +39432,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamlwob/",
-      "platform": "facebook",
-      "society": "Lawyers without Borders",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dulwob/",
       "platform": "instagram",
       "society": "Lawyers without Borders",
@@ -40468,20 +39502,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dumarketingsociety/",
-      "platform": "facebook",
-      "society": "Marketing Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dumarketingsociety/",
       "platform": "instagram",
       "society": "Marketing Society",
@@ -40491,20 +39511,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhammarrow/",
-      "platform": "facebook",
-      "society": "Marrow",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -40580,20 +39586,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durmexsoc/",
-      "platform": "facebook",
-      "society": "Mexican Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durmexsoc/",
       "platform": "instagram",
       "society": "Mexican Society",
@@ -40645,20 +39637,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/du.nhsoc/",
-      "platform": "facebook",
-      "society": "Natural History Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -40720,20 +39698,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamnightline/",
-      "platform": "facebook",
-      "society": "Nightline",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamnightline/",
       "platform": "instagram",
       "society": "Nightline",
@@ -40762,20 +39726,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/nordicsoc/",
-      "platform": "facebook",
-      "society": "Nordic Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/nordicsoc.du/",
       "platform": "instagram",
       "society": "Nordic Society",
@@ -40785,20 +39735,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dunorthernsoc/",
-      "platform": "facebook",
-      "society": "Northern Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -40860,20 +39796,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dupaksoc/",
-      "platform": "facebook",
-      "society": "Pakistan Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/du.paksoc/",
       "platform": "instagram",
       "society": "Pakistan Society",
@@ -40883,20 +39805,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/paltvuk/",
-      "platform": "facebook",
-      "society": "Pal TV",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -40916,20 +39824,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/palatinate/",
-      "platform": "facebook",
-      "society": "Palatinate",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/palatinateuk/",
       "platform": "instagram",
       "society": "Palatinate",
@@ -40944,20 +39838,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhampoca/",
-      "platform": "facebook",
-      "society": "People of Colour Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhampoca/",
       "platform": "instagram",
       "society": "People of Colour Association",
@@ -40967,20 +39847,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duphilsoc/",
-      "platform": "facebook",
-      "society": "Philosophy Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41042,34 +39908,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhampokemon/",
-      "platform": "facebook",
-      "society": "Pokemon",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/100089072551814/",
-      "platform": "facebook",
-      "society": "Poker Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhampoker/",
       "platform": "instagram",
       "society": "Poker Society",
@@ -41084,20 +39922,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dupds/",
-      "platform": "facebook",
-      "society": "Pole Dancing",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dupoleofficial/",
       "platform": "instagram",
       "society": "Pole Dancing",
@@ -41107,20 +39931,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dupolishsociety/",
-      "platform": "facebook",
-      "society": "Polish Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41182,20 +39992,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dupsoc/",
-      "platform": "facebook",
-      "society": "Psychology Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dupsoc/",
       "platform": "instagram",
       "society": "Psychology Society",
@@ -41224,34 +40020,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/purpleradio/",
-      "platform": "facebook",
-      "society": "Purple Radio",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamlgbtqa/",
-      "platform": "facebook",
-      "society": "Queer Sphere: Durham's LGBT+ Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/queerspheredurham/",
       "platform": "instagram",
       "society": "Queer Sphere: Durham's LGBT+ Association",
@@ -41261,20 +40029,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamuniquizsoc/",
-      "platform": "facebook",
-      "society": "Quiz Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41308,48 +40062,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durtc/",
-      "platform": "facebook",
-      "society": "Real Tennis",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamrocksoc/",
-      "platform": "facebook",
-      "society": "Rock Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamunirussianspeaking/",
-      "platform": "facebook",
-      "society": "Russian Speaking Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durusspeaking/",
       "platform": "instagram",
       "society": "Russian Speaking Society",
@@ -41359,20 +40071,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/du.scoutsandguides/",
-      "platform": "facebook",
-      "society": "Scout and Guide",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41429,20 +40127,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/sexpressiondurham/",
-      "platform": "facebook",
-      "society": "Sexpression Durham",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41527,20 +40211,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamuniversitysouthafricansociety/",
-      "platform": "facebook",
-      "society": "South African Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41644,20 +40314,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/ssdpdurham/",
-      "platform": "facebook",
-      "society": "Students for Sensible Drug Policy",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/ssdp_durham/",
       "platform": "instagram",
       "society": "Students for Sensible Drug Policy",
@@ -41667,20 +40323,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/mixedsoc/",
-      "platform": "facebook",
-      "society": "Students of Mixed Cultural Identities",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41700,20 +40342,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/dusef-113236073785800/",
-      "platform": "facebook",
-      "society": "Sustainable & Ethical Fashion",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/dusef_/",
       "platform": "instagram",
       "society": "Sustainable & Ethical Fashion",
@@ -41723,20 +40351,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dusfs/",
-      "platform": "facebook",
-      "society": "Sustainable Finance",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41756,20 +40370,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamswingsoc/",
-      "platform": "facebook",
-      "society": "Swing",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duswingstagram/",
       "platform": "instagram",
       "society": "Swing",
@@ -41779,20 +40379,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/61558647614375/",
-      "platform": "facebook",
-      "society": "Taiwanese Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41826,20 +40412,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/swiftsocdu/",
-      "platform": "facebook",
-      "society": "Taylor Swift",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/swiftsocdu/",
       "platform": "instagram",
       "society": "Taylor Swift",
@@ -41854,20 +40426,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamuniversitythaiboxing/",
-      "platform": "facebook",
-      "society": "Thai Boxing",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durham_university_thai_boxing/",
       "platform": "instagram",
       "society": "Thai Boxing",
@@ -41877,20 +40435,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamthaisoc/",
-      "platform": "facebook",
-      "society": "Thai Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -41933,20 +40477,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/dutheology/",
-      "platform": "facebook",
-      "society": "Theology Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -42008,34 +40538,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/treasuretrap/",
-      "platform": "facebook",
-      "society": "Treasure Trap",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duturkishsoc/",
-      "platform": "facebook",
-      "society": "Turkish Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durhamturkish/",
       "platform": "instagram",
       "society": "Turkish Society",
@@ -42078,20 +40580,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamunicefoncampus/",
-      "platform": "facebook",
-      "society": "UNICEF on Campus",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/unicefsociety_durham/",
       "platform": "instagram",
       "society": "UNICEF on Campus",
@@ -42115,20 +40603,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durham-university-vietnamese-society-105104847704203/",
-      "platform": "facebook",
-      "society": "Vietnamese Society",
-      "status": "no_public_posts",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "No owned post captions are exposed in this public response",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -42162,20 +40636,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/duwelshsociety/",
-      "platform": "facebook",
-      "society": "Welsh Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duwelshsociety/",
       "platform": "instagram",
       "society": "Welsh Society",
@@ -42185,20 +40645,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duwerewolfsoc/",
-      "platform": "facebook",
-      "society": "Werewolf Society",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -42227,20 +40673,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/duwib/",
-      "platform": "facebook",
-      "society": "Women in Business",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -42288,20 +40720,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamuniversitywomeninstem/",
-      "platform": "facebook",
-      "society": "Women in STEM",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/duwomeninstem/",
       "platform": "instagram",
       "society": "Women in STEM",
@@ -42330,20 +40748,6 @@
       "provider": "public_html"
     },
     {
-      "url": "https://www.facebook.com/durhamwomxn/",
-      "platform": "facebook",
-      "society": "Womxn's Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
       "url": "https://www.instagram.com/durham_women/",
       "platform": "instagram",
       "society": "Womxn's Association",
@@ -42353,34 +40757,6 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/durhamwcsa/",
-      "platform": "facebook",
-      "society": "Working Class Students Association",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
-      "retained_count": 0,
-      "storage_limit_reached": false,
-      "provider": "public_html"
-    },
-    {
-      "url": "https://www.facebook.com/worldcinemadurham/",
-      "platform": "facebook",
-      "society": "World Cinema",
-      "status": "login_required",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
-      "last_success_at": null,
-      "posts_collected": 0,
-      "window_limited": true,
-      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -42437,6 +40813,1630 @@
       "posts_collected": 0,
       "window_limited": true,
       "error": "Platform deferred after HTTP 429",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/93clubdurham/",
+      "platform": "facebook",
+      "society": "93% Club Durham",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.instagram.com/93clubdurham/",
+      "platform": "instagram",
+      "society": "93% Club Durham",
+      "status": "deferred",
+      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Platform deferred after HTTP 429",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duaikido/",
+      "platform": "facebook",
+      "society": "Aikido",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniversityamnestyinternational/",
+      "platform": "facebook",
+      "society": "Amnesty International",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/anglojapanese.society/",
+      "platform": "facebook",
+      "society": "Anglo-Japanese Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ahgsdurham/",
+      "platform": "facebook",
+      "society": "Arthur Holmes Geological Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniversityballetcompany/",
+      "platform": "facebook",
+      "society": "Ballet Company",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dubarsoc/",
+      "platform": "facebook",
+      "society": "Bar Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/100070295374233/",
+      "platform": "facebook",
+      "society": "Brazilian Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durham.bsl/",
+      "platform": "facebook",
+      "society": "British Sign Language Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dubudsoc/",
+      "platform": "facebook",
+      "society": "buddhist Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamburmesesociety/",
+      "platform": "facebook",
+      "society": "Burmese Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ducalisthenics/",
+      "platform": "facebook",
+      "society": "Calisthenics",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ducs2020/",
+      "platform": "facebook",
+      "society": "Canadian Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamunicathsoc/",
+      "platform": "facebook",
+      "society": "Catholic Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dusaspeleology/",
+      "platform": "facebook",
+      "society": "Caving (Durham University Speleological Association)",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duscr.bells/",
+      "platform": "facebook",
+      "society": "Change Ringers",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duchemsoc/",
+      "platform": "facebook",
+      "society": "Chem Soc",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/cssadurham/",
+      "platform": "facebook",
+      "society": "Chinese Student & Scholars Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ducssoc/",
+      "platform": "facebook",
+      "society": "Chinese Studies Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/diccu/",
+      "platform": "facebook",
+      "society": "Christian Union",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamclassicfilms/",
+      "platform": "facebook",
+      "society": "Classic Film",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamcompsoc/",
+      "platform": "facebook",
+      "society": "Computing",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamconsulting/",
+      "platform": "facebook",
+      "society": "Consulting Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ducws/",
+      "platform": "facebook",
+      "society": "Creative Writing",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ducrochetsoc/",
+      "platform": "facebook",
+      "society": "Crochet",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/cysod/",
+      "platform": "facebook",
+      "society": "Cypriot Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamdancesport/",
+      "platform": "facebook",
+      "society": "Dancesport Team",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/100085749777773/",
+      "platform": "facebook",
+      "society": "Disabilities and Carers Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamdisneysoc/",
+      "platform": "facebook",
+      "society": "Disney",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamdjsoc/",
+      "platform": "facebook",
+      "society": "DJ Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ducoffeesoc/",
+      "platform": "facebook",
+      "society": "DU Coffee Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamucfs/",
+      "platform": "facebook",
+      "society": "DUCFS",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamduck/",
+      "platform": "facebook",
+      "society": "DUCK",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duhindusoc/",
+      "platform": "facebook",
+      "society": "Durham Hindu Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dumasdurham/",
+      "platform": "facebook",
+      "society": "Durham Malaysian Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhampalestinesolidaritygroup/",
+      "platform": "facebook",
+      "society": "Durham Palestine Solidarity Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamstudentfilm/",
+      "platform": "facebook",
+      "society": "Durham Student Filmmaking",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamctas/",
+      "platform": "facebook",
+      "society": "Durham Tea Art",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dueconsoc/",
+      "platform": "facebook",
+      "society": "Durham University Economics Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dufilsoc/",
+      "platform": "facebook",
+      "society": "Durham University Filipino Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duphotosoc/",
+      "platform": "facebook",
+      "society": "Durham University Photography Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/61551582283827/",
+      "platform": "facebook",
+      "society": "Equestrian Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/esndurham/",
+      "platform": "facebook",
+      "society": "ESN (Erasmus Student Network) Durham",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamestranged/",
+      "platform": "facebook",
+      "society": "Estranged and Care Leavers Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/61552033799388/",
+      "platform": "facebook",
+      "society": "Expedition Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamunifirstaid/",
+      "platform": "facebook",
+      "society": "First Aid",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dufolksoc/",
+      "platform": "facebook",
+      "society": "Folk Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamfrenchsociety/",
+      "platform": "facebook",
+      "society": "French Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/glcsdurham/",
+      "platform": "facebook",
+      "society": "German Languages & Cultures Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/globalhealthdurham/",
+      "platform": "facebook",
+      "society": "Global Health Durham",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamhellenic/",
+      "platform": "facebook",
+      "society": "Hellenistic Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamhillwalking/",
+      "platform": "facebook",
+      "society": "Hill Walking",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durham.hispanic/",
+      "platform": "facebook",
+      "society": "Hispanic Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duhistoryofartsociety/",
+      "platform": "facebook",
+      "society": "History of Art Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniversityhistorysociety/",
+      "platform": "facebook",
+      "society": "History Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duhks/",
+      "platform": "facebook",
+      "society": "Hong Kong",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duiceskatingsociety/",
+      "platform": "facebook",
+      "society": "Ice Skating Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/shellshockimpro/",
+      "platform": "facebook",
+      "society": "Improvised Comedy/ Shellshock",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duis2020/",
+      "platform": "facebook",
+      "society": "Indian Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ppidurham/",
+      "platform": "facebook",
+      "society": "Indonesian Student Community (DISC)",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/instepdurham/",
+      "platform": "facebook",
+      "society": "Instep Dance Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamisa/",
+      "platform": "facebook",
+      "society": "International Students' Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/intfemsoc/",
+      "platform": "facebook",
+      "society": "Intersectional Feminist Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duis2018/",
+      "platform": "facebook",
+      "society": "Irish Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamitaliansociety/",
+      "platform": "facebook",
+      "society": "Italian Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamjsoc/",
+      "platform": "facebook",
+      "society": "Jewish Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamjusticesoc/",
+      "platform": "facebook",
+      "society": "Justice Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamlwob/",
+      "platform": "facebook",
+      "society": "Lawyers without Borders",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dumarketingsociety/",
+      "platform": "facebook",
+      "society": "Marketing Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhammarrow/",
+      "platform": "facebook",
+      "society": "Marrow",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durmexsoc/",
+      "platform": "facebook",
+      "society": "Mexican Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/du.nhsoc/",
+      "platform": "facebook",
+      "society": "Natural History Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamnightline/",
+      "platform": "facebook",
+      "society": "Nightline",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/nordicsoc/",
+      "platform": "facebook",
+      "society": "Nordic Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dunorthernsoc/",
+      "platform": "facebook",
+      "society": "Northern Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dupaksoc/",
+      "platform": "facebook",
+      "society": "Pakistan Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/paltvuk/",
+      "platform": "facebook",
+      "society": "Pal TV",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/palatinate/",
+      "platform": "facebook",
+      "society": "Palatinate",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhampoca/",
+      "platform": "facebook",
+      "society": "People of Colour Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duphilsoc/",
+      "platform": "facebook",
+      "society": "Philosophy Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhampokemon/",
+      "platform": "facebook",
+      "society": "Pokemon",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/100089072551814/",
+      "platform": "facebook",
+      "society": "Poker Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dupds/",
+      "platform": "facebook",
+      "society": "Pole Dancing",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dupolishsociety/",
+      "platform": "facebook",
+      "society": "Polish Society",
+      "status": "no_public_posts",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "No owned post captions are exposed in this public response",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dupsoc/",
+      "platform": "facebook",
+      "society": "Psychology Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/purpleradio/",
+      "platform": "facebook",
+      "society": "Purple Radio",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamlgbtqa/",
+      "platform": "facebook",
+      "society": "Queer Sphere: Durham's LGBT+ Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniquizsoc/",
+      "platform": "facebook",
+      "society": "Quiz Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durtc/",
+      "platform": "facebook",
+      "society": "Real Tennis",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamrocksoc/",
+      "platform": "facebook",
+      "society": "Rock Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamunirussianspeaking/",
+      "platform": "facebook",
+      "society": "Russian Speaking Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/du.scoutsandguides/",
+      "platform": "facebook",
+      "society": "Scout and Guide",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/sexpressiondurham/",
+      "platform": "facebook",
+      "society": "Sexpression Durham",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniversitysouthafricansociety/",
+      "platform": "facebook",
+      "society": "South African Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/ssdpdurham/",
+      "platform": "facebook",
+      "society": "Students for Sensible Drug Policy",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/mixedsoc/",
+      "platform": "facebook",
+      "society": "Students of Mixed Cultural Identities",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dusef-113236073785800/",
+      "platform": "facebook",
+      "society": "Sustainable & Ethical Fashion",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dusfs/",
+      "platform": "facebook",
+      "society": "Sustainable Finance",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamswingsoc/",
+      "platform": "facebook",
+      "society": "Swing",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/61558647614375/",
+      "platform": "facebook",
+      "society": "Taiwanese Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/swiftsocdu/",
+      "platform": "facebook",
+      "society": "Taylor Swift",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniversitythaiboxing/",
+      "platform": "facebook",
+      "society": "Thai Boxing",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamthaisoc/",
+      "platform": "facebook",
+      "society": "Thai Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/dutheology/",
+      "platform": "facebook",
+      "society": "Theology Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/treasuretrap/",
+      "platform": "facebook",
+      "society": "Treasure Trap",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duturkishsoc/",
+      "platform": "facebook",
+      "society": "Turkish Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamunicefoncampus/",
+      "platform": "facebook",
+      "society": "UNICEF on Campus",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durham-university-vietnamese-society-105104847704203/",
+      "platform": "facebook",
+      "society": "Vietnamese Society",
+      "status": "no_public_posts",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "No owned post captions are exposed in this public response",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duwelshsociety/",
+      "platform": "facebook",
+      "society": "Welsh Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duwerewolfsoc/",
+      "platform": "facebook",
+      "society": "Werewolf Society",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/duwib/",
+      "platform": "facebook",
+      "society": "Women in Business",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamuniversitywomeninstem/",
+      "platform": "facebook",
+      "society": "Women in STEM",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamwomxn/",
+      "platform": "facebook",
+      "society": "Womxn's Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/durhamwcsa/",
+      "platform": "facebook",
+      "society": "Working Class Students Association",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
+      "retained_count": 0,
+      "storage_limit_reached": false,
+      "provider": "public_html"
+    },
+    {
+      "url": "https://www.facebook.com/worldcinemadurham/",
+      "platform": "facebook",
+      "society": "World Cinema",
+      "status": "login_required",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
+      "last_success_at": null,
+      "posts_collected": 0,
+      "window_limited": true,
+      "error": "Source redirected to a login or verification page",
       "retained_count": 0,
       "storage_limit_reached": false,
       "provider": "public_html"
@@ -50921,12 +50921,12 @@
       "type": "social_posts",
       "state": "partial",
       "status": "partial",
-      "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+      "last_attempt_at": "2026-11-19T01:47:57.743789Z",
       "accounts_total": 443,
       "accounts_checked": 116,
       "accounts_unsupported": 39,
       "accounts_successful": 0,
-      "accounts_blocked": 110,
+      "accounts_blocked": 114,
       "posts_collected": 0,
       "posts_stored": 59,
       "parsed_count": 0,
@@ -51034,12 +51034,12 @@
     }
   },
   "coverage": {
-    "updated_at": "2026-11-18T02:14:43.197163Z",
+    "updated_at": "2026-11-19T01:47:57.743789Z",
     "summary": {
-      "total_societies": 320,
+      "total_societies": 323,
       "societies_with_accounts": 294,
       "societies_with_recent_posts": 0,
-      "societies_needing_accounts": 26,
+      "societies_needing_accounts": 29,
       "societies_needing_attention": 85,
       "societies_stale": 209,
       "post_count": 806
@@ -51062,11 +51062,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -51089,11 +51089,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "rate_limited",
+                "status": "deferred",
                 "last_attempt_at": "2026-11-18T02:14:43.197163Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "HTTP 429; remaining platform requests deferred"
+                "error": "Platform deferred after HTTP 429"
               },
               {
                 "provider": "meta_api",
@@ -51135,11 +51135,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "deferred",
-                "last_attempt_at": "2026-11-17T02:50:22.456036Z",
+                "status": "rate_limited",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": "2026-10-17T11:45:15.076711Z",
                 "posts_collected": 0,
-                "error": "Platform deferred after HTTP 429"
+                "error": "HTTP 429; remaining platform requests deferred"
               },
               {
                 "provider": "meta_api",
@@ -51284,11 +51284,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -51449,11 +51449,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -51522,11 +51522,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -51920,11 +51920,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "no_public_posts",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "status": "login_required",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "No owned post captions are exposed in this public response"
+                "error": "Source redirected to a login or verification page"
               },
               {
                 "provider": "meta_api",
@@ -52389,7 +52389,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -52542,7 +52542,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -52653,6 +52653,17 @@
           }
         ],
         "discovery_status": "found",
+        "discovery_errors": []
+      },
+      {
+        "name": "Biotech & Data Society",
+        "url": "https://www.durhamsu.com/groups/studentgroup/11917/",
+        "account_count": 0,
+        "posts_stored": 0,
+        "latest_observation_at": null,
+        "status": "missing_accounts",
+        "accounts": [],
+        "discovery_status": "not_listed",
         "discovery_errors": []
       },
       {
@@ -52960,7 +52971,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53079,7 +53090,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53198,7 +53209,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53271,7 +53282,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53436,7 +53447,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53509,7 +53520,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53674,7 +53685,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53747,7 +53758,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53866,7 +53877,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -53939,7 +53950,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54177,7 +54188,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54250,7 +54261,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54357,7 +54368,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54442,7 +54453,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54686,7 +54697,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54805,7 +54816,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -54940,7 +54951,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55013,7 +55024,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55159,7 +55170,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55344,7 +55355,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55561,13 +55572,8 @@
             "method": "link"
           }
         ],
-        "discovery_status": "partial",
-        "discovery_errors": [
-          {
-            "url": "https://durhamdiplomaticdigest.substack.com/",
-            "error": "403 Client Error: Forbidden for url: https://durhamdiplomaticdigest.substack.com/"
-          }
-        ]
+        "discovery_status": "found",
+        "discovery_errors": []
       },
       {
         "name": "Disabilities and Carers Association",
@@ -55587,7 +55593,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55740,7 +55746,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55779,7 +55785,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55898,7 +55904,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -55971,7 +55977,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56044,7 +56050,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56360,7 +56366,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56433,7 +56439,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56552,7 +56558,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56671,7 +56677,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -56744,7 +56750,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57081,7 +57087,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57120,7 +57126,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -57460,6 +57466,17 @@
         "discovery_errors": []
       },
       {
+        "name": "Durham University Nuclear Fusion Society",
+        "url": "https://www.durhamsu.com/groups/studentgroup/11922/",
+        "account_count": 0,
+        "posts_stored": 0,
+        "latest_observation_at": null,
+        "status": "missing_accounts",
+        "accounts": [],
+        "discovery_status": "not_listed",
+        "discovery_errors": []
+      },
+      {
         "name": "Durham University Photography Society",
         "url": "https://www.durhamsu.com/groups/studentgroup/10614/",
         "account_count": 2,
@@ -57477,7 +57494,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58042,7 +58059,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58161,7 +58178,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58234,7 +58251,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58353,7 +58370,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58637,7 +58654,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58767,7 +58784,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -58959,7 +58976,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -59124,7 +59141,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -59427,7 +59444,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -59731,7 +59748,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -59804,7 +59821,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -59877,7 +59894,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -59950,7 +59967,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60023,7 +60040,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60096,7 +60113,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60353,7 +60370,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60426,7 +60443,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60591,7 +60608,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60710,7 +60727,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60829,7 +60846,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -60994,7 +61011,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61067,7 +61084,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61186,7 +61203,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61351,7 +61368,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61470,7 +61487,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -61604,7 +61621,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62157,7 +62174,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62468,7 +62485,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62541,7 +62558,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -62864,7 +62881,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63102,7 +63119,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63154,6 +63171,17 @@
             "method": "reviewed_registry"
           }
         ],
+        "discovery_status": "not_listed",
+        "discovery_errors": []
+      },
+      {
+        "name": "Natural Science Society",
+        "url": "https://www.durhamsu.com/groups/studentgroup/11897/",
+        "account_count": 0,
+        "posts_stored": 0,
+        "latest_observation_at": null,
+        "status": "missing_accounts",
+        "accounts": [],
         "discovery_status": "not_listed",
         "discovery_errors": []
       },
@@ -63335,7 +63363,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63481,7 +63509,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63554,7 +63582,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63777,7 +63805,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63850,7 +63878,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63902,8 +63930,13 @@
             "method": "reviewed_registry"
           }
         ],
-        "discovery_status": "not_listed",
-        "discovery_errors": []
+        "discovery_status": "error",
+        "discovery_errors": [
+          {
+            "url": "https://www.paltv.co.uk/",
+            "error": "Could not resolve the public website"
+          }
+        ]
       },
       {
         "name": "Palatinate",
@@ -63923,7 +63956,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -63938,7 +63971,7 @@
               }
             ],
             "evidence_url": "https://www.palatinate.org.uk/",
-            "method": "linked_page_link"
+            "method": "reviewed_registry"
           },
           {
             "platform": "instagram",
@@ -63972,10 +64005,10 @@
               }
             ],
             "evidence_url": "https://www.palatinate.org.uk/",
-            "method": "linked_page_link"
+            "method": "reviewed_registry"
           }
         ],
-        "discovery_status": "found",
+        "discovery_status": "not_listed",
         "discovery_errors": []
       },
       {
@@ -64007,7 +64040,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64107,7 +64140,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64333,7 +64366,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64399,7 +64432,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64472,7 +64505,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64544,11 +64577,11 @@
             "providers": [
               {
                 "provider": "public_html",
-                "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "status": "no_public_posts",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
-                "error": "Source redirected to a login or verification page"
+                "error": "No owned post captions are exposed in this public response"
               },
               {
                 "provider": "meta_api",
@@ -64756,7 +64789,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64863,7 +64896,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64902,7 +64935,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -64975,7 +65008,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65094,7 +65127,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65177,7 +65210,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65254,7 +65287,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65327,7 +65360,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65592,7 +65625,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -65933,7 +65966,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66347,7 +66380,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66420,7 +66453,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66493,7 +66526,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66566,7 +66599,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66650,7 +66683,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66723,7 +66756,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66842,7 +66875,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -66937,7 +66970,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67010,7 +67043,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67224,7 +67257,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67473,7 +67506,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67512,7 +67545,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67677,7 +67710,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -67807,7 +67840,7 @@
               {
                 "provider": "public_html",
                 "status": "no_public_posts",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "No owned post captions are exposed in this public response"
@@ -67953,7 +67986,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68026,7 +68059,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68157,7 +68190,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68333,7 +68366,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68490,7 +68523,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68563,7 +68596,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
@@ -68602,7 +68635,7 @@
               {
                 "provider": "public_html",
                 "status": "login_required",
-                "last_attempt_at": "2026-11-18T02:14:43.197163Z",
+                "last_attempt_at": "2026-11-19T01:47:57.743789Z",
                 "last_success_at": null,
                 "posts_collected": 0,
                 "error": "Source redirected to a login or verification page"
