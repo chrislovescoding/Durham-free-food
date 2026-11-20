@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-19T01:47:57.743789Z",
+  "updated_at": "2026-11-20T01:42:33.302065Z",
   "candidates": [
-    {
-      "title": "Kielder Observatory Trip 2026",
-      "source_url": "https://durhamsu.native.fm/event/kielder-observatory-trip-2026/295142",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Fri 20 Nov 14:30 Open Training",
       "source_url": "https://durhamsu.native.fm/event/fri-20-nov-14-30-open-training/297286",
@@ -53,13 +46,6 @@
     {
       "title": "Chrimmer Meet Food Ticket (OLDIE)",
       "source_url": "https://durhamsu.native.fm/event/chrimmer-meet-food-ticket-oldie/297369",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
-    {
-      "title": "Representation Fair",
-      "source_url": "https://durhamsu.native.fm/event/representation-fair/297037",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
