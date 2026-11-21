@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-20T01:42:33.302065Z",
+  "updated_at": "2026-11-21T01:13:45.917873Z",
   "candidates": [
-    {
-      "title": "Fri 20 Nov 14:30 Open Training",
-      "source_url": "https://durhamsu.native.fm/event/fri-20-nov-14-30-open-training/297286",
-      "kind": "needs_food_confirmation",
-      "reason": "Food mentioned without an explicit free-food promise",
-      "source_id": "durham-su-native"
-    },
     {
       "title": "Bicester Village Day Trip",
       "source_url": "https://durhamsu.native.fm/event/bicester-village-day-trip/296139",
@@ -74,6 +67,13 @@
     {
       "title": "DUSAGG Christmas Sleepover 2026 - Standard Ticket (incl overnight)",
       "source_url": "https://durhamsu.native.fm/event/dusagg-christmas-sleepover-2026-standard-ticket-incl-overnight/297370",
+      "kind": "needs_food_confirmation",
+      "reason": "Food mentioned without an explicit free-food promise",
+      "source_id": "durham-su-native"
+    },
+    {
+      "title": "PhysSoc and AstroSoc Christmas Dinner 2026",
+      "source_url": "https://durhamsu.native.fm/event/physsoc-and-astrosoc-christmas-dinner-2026/297040",
       "kind": "needs_food_confirmation",
       "reason": "Food mentioned without an explicit free-food promise",
       "source_id": "durham-su-native"
